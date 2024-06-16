@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">Dữ liệu</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">Khách hàng</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    Khách hàng
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh sách khách hàng mới
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh sách khách hàng
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhóm khách hàng cần quan tâm
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm khách hàng">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar">
+        <div class="s_group s_group_mobile">
+            <div class="g_menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <!--                <li class="nav-item">-->
+                    <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                    <!--                       data-bs-toggle="dropdown">-->
+                    <!--                        Tên user-->
+                    <!--                    </a>-->
+                    <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                    <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                    <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                    <!--                    </ul>-->
+                    <!--                </li>-->
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Ngôn ngữ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group s_group_mobile">
+            <div class="wrap_search">
+                <div class="form-group">
+                    <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                    <a href="javascript:void(0);" class="btn_search">
+                        <i class="icofont-search-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Tin tức về tất cả khách hàng
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Nhập tin mới theo khách</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Đăng ký khách hàng mới
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Đăng ký riêng</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Khiếu nại từ khách hàng
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Vấn đề</a>
+                    </li>
+                    <li>
+                        <a href="#">Đang giải quyết</a>
+                    </li>
+                    <li>
+                        <a href="#">Đã giải quyết</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Hỗ trợ và tư vấn khách hàng
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Tư vấn cá nhân</a>
+                    </li>
+                    <li>
+                        <a href="#">Tư vấn theo nhóm</a>
+                    </li>
+                    <li>
+                        <a href="#">Khách hàng đang được hỗ trợ</a>
+                    </li>
+                    <li>
+                        <a href="#">Gửi tin cho khách</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Thống kê và đồ thị mua hàng
+            </div>
+            <div class="g_menu">
+                <ul>
+                    <li>
+                        <a href="#">Theo doanh thu</a>
+                    </li>
+                    <li>
+                        <a href="#">Theo số lượng đơn hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Theo số lượng sản phẩm</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="label mt-2">
+                Trung bình
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <b>Tổng thể:</b>
+                    </li>
+                    <li>
+                        <a href="#">Thời gian/đơn hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Giá trị/đơn hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Số lượng/đơn hàng</a>
+                    </li>
+                    <li>
+                        <b>Khách cụ thể:</b>
+                    </li>
+                    <li>
+                        <a href="#">Thời gian/đơn hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Giá trị/đơn hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Số lượng/đơn hàng</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Marketing và chiến lược
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Nhu cầu của khách hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Gửi promo theo nhóm</a>
+                    </li>
+                    <li>
+                        <a href="#">Promo ads</a>
+                    </li>
+                    <li>
+                        <a href="#">Clip</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Thông tin về bảo mật
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Thông tin và quy định </a>
+                    </li>
+                    <li>
+                        <a href="#">Gửi thông tin cho khách</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Khóa tài khoản khách hàng
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Khóa tài khoản tạm thời </a>
+                    </li>
+                    <li>
+                        <a href="#">Khóa tài khoản lâu dài</a>
+                    </li>
+                    <li>
+                        <a href="#">Khách có vấn đề (cần quan tâm)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content">
+        <div class="section_title">
+            <div class="s_title d-flex flex-row align-items-center justify-content-between">
+                <div class="title">
+                    Danh sách khách hàng mới
+                </div>
+            </div>
+        </div>
+        <div class="section_content">
+            <div class="s_content mb-4">
+                <div class="exam">
+                    Khách hàng mới là khách hàng đăng ký 3 tháng trở lại và đã đặt ít nhất 2 đơn hàng.
+                </div>
+            </div>
+            <div class="s_content">
+                <div class="c_title d-flex flex-row align-items-center justify-content-between">
+                    <div class="title">
+                        <b>Danh sách khách hàng</b>
+                    </div>
+                </div>
+                <div class="wrap_table">
+                    <div class="table-responsive-xl table-scroll mb-3">
+                        <table class="table align-middle table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="text-nowrap" scope="col" style="width: 60px">
+                                    <div class="d-flex align-items-center">
+                                        <span>Số</span>
+                                        <a href="javascript:void(0);" class="ms-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="23" viewBox="0 0 11 23" fill="none" class="svgreplaced-svg">
+                                                <path d="M9.4686 13.9375H1.53152C1.29346 13.9375 1.16053 14.1889 1.30796 14.3605L5.2765 18.9622C5.39009 19.0939 5.60882 19.0939 5.72362 18.9622L9.69216 14.3605C9.83959 14.1889 9.70667 13.9375 9.4686 13.9375Z" fill="black" fill-opacity="0.25"></path>
+                                                <path d="M9.69216 10.6381L5.72362 6.03629C5.61003 5.90457 5.3913 5.90457 5.2765 6.03629L1.30796 10.6381C1.16053 10.8097 1.29346 11.061 1.53152 11.061H9.4686C9.70667 11.061 9.83959 10.8097 9.69216 10.6381Z" fill="black" fill-opacity="0.25"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 160px">
+                                    <div class="d-flex align-items-center">
+                                        <span>Tên khách hàng</span>
+                                        <a href="javascript:void(0);" class="ms-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="23" viewBox="0 0 11 23" fill="none" class="svgreplaced-svg">
+                                                <path d="M9.4686 13.9375H1.53152C1.29346 13.9375 1.16053 14.1889 1.30796 14.3605L5.2765 18.9622C5.39009 19.0939 5.60882 19.0939 5.72362 18.9622L9.69216 14.3605C9.83959 14.1889 9.70667 13.9375 9.4686 13.9375Z" fill="black" fill-opacity="0.25"></path>
+                                                <path d="M9.69216 10.6381L5.72362 6.03629C5.61003 5.90457 5.3913 5.90457 5.2765 6.03629L1.30796 10.6381C1.16053 10.8097 1.29346 11.061 1.53152 11.061H9.4686C9.70667 11.061 9.83959 10.8097 9.69216 10.6381Z" fill="black" fill-opacity="0.25"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 160px">
+                                    <div class="d-flex align-items-center">
+                                        <span>Thời gian lần cuối đăng ký</span>
+                                        <a href="javascript:void(0);" class="ms-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="23" viewBox="0 0 11 23" fill="none" class="svgreplaced-svg">
+                                                <path d="M9.4686 13.9375H1.53152C1.29346 13.9375 1.16053 14.1889 1.30796 14.3605L5.2765 18.9622C5.39009 19.0939 5.60882 19.0939 5.72362 18.9622L9.69216 14.3605C9.83959 14.1889 9.70667 13.9375 9.4686 13.9375Z" fill="black" fill-opacity="0.25"></path>
+                                                <path d="M9.69216 10.6381L5.72362 6.03629C5.61003 5.90457 5.3913 5.90457 5.2765 6.03629L1.30796 10.6381C1.16053 10.8097 1.29346 11.061 1.53152 11.061H9.4686C9.70667 11.061 9.83959 10.8097 9.69216 10.6381Z" fill="black" fill-opacity="0.25"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 160px">
+                                    <div class="d-flex align-items-center">
+                                        <span>Lần cuối đặt hàng</span>
+                                        <a href="javascript:void(0);" class="ms-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="23" viewBox="0 0 11 23" fill="none" class="svgreplaced-svg">
+                                                <path d="M9.4686 13.9375H1.53152C1.29346 13.9375 1.16053 14.1889 1.30796 14.3605L5.2765 18.9622C5.39009 19.0939 5.60882 19.0939 5.72362 18.9622L9.69216 14.3605C9.83959 14.1889 9.70667 13.9375 9.4686 13.9375Z" fill="black" fill-opacity="0.25"></path>
+                                                <path d="M9.69216 10.6381L5.72362 6.03629C5.61003 5.90457 5.3913 5.90457 5.2765 6.03629L1.30796 10.6381C1.16053 10.8097 1.29346 11.061 1.53152 11.061H9.4686C9.70667 11.061 9.83959 10.8097 9.69216 10.6381Z" fill="black" fill-opacity="0.25"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1239.</td>
+                                <td>Tên khách hàng</td>
+                                <td>02.12.2023, 15:00</td>
+                                <td>02.12.2023, 15:00</td>
+                            </tr>
+                            <tr>
+                                <td>1239.</td>
+                                <td>Tên khách hàng</td>
+                                <td>02.12.2023, 15:00</td>
+                                <td>02.12.2023, 15:00</td>
+                            </tr>
+                            <tr>
+                                <td>1239.</td>
+                                <td>Tên khách hàng</td>
+                                <td>02.12.2023, 15:00</td>
+                                <td>02.12.2023, 15:00</td>
+                            </tr>
+                            <tr>
+                                <td>1239.</td>
+                                <td>Tên khách hàng</td>
+                                <td>02.12.2023, 15:00</td>
+                                <td>02.12.2023, 15:00</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" class="text-center">
+                                    <img src="assets/images/2x/point_1@2x.png" alt="" style="width: 5px">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1500.</td>
+                                <td>Tên khách hàng</td>
+                                <td>02.12.2023, 15:00</td>
+                                <td>02.12.2023, 15:00</td>
+                            </tr>
+                            <tr>
+                                <td>1501.</td>
+                                <td>Tên khách hàng</td>
+                                <td>02.12.2023, 15:00</td>
+                                <td>02.12.2023, 15:00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="wrap_btn text-center mt-4">
+                    <a href="#" class="btn btn-style-default">
+                        Mở danh sách khách hàng mới
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

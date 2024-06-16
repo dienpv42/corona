@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">breadcrumb</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">breadcrumb</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    breadcrumb
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhập sản phẩm mới
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh mục
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhóm sản phẩm
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Sản phẩm đang được quan tâm
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar">
+        <div class="s_group s_group_mobile">
+            <div class="g_menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <!--                <li class="nav-item">-->
+                    <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                    <!--                       data-bs-toggle="dropdown">-->
+                    <!--                        Tên user-->
+                    <!--                    </a>-->
+                    <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                    <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                    <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                    <!--                    </ul>-->
+                    <!--                </li>-->
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Ngôn ngữ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group s_group_mobile">
+            <div class="wrap_search">
+                <div class="form-group">
+                    <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                    <a href="javascript:void(0);" class="btn_search">
+                        <i class="icofont-search-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Thông tin sản phẩm
+            </div>
+            <div class="g_menu">
+                <ul>
+                    <li>
+                        <a href="#">Aktual</a>
+                    </li>
+                    <li>
+                        <a href="#">Chỉnh sửa</a>
+                    </li>
+                    <li>
+                        <a href="#">Gửi thông tin về sản phẩm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Đánh giá và nhận xét
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Tất cả comment</a>
+                    </li>
+                    <li>
+                        <a href="#">Commnet cần quan tâm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử nhập hàng
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Đơn hàng và nhập hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Trả lại</a>
+                    </li>
+                    <li>
+                        <a href="#">Có vấn đề</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử nhập hàng
+            </div>
+            <div class="g_menu">
+                <ul>
+                    <li>
+                        <a href="#">Danh sách khách hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Trung bình</a>
+                        <ul class="child">
+                            <li>
+                                <a href="#">
+                                    Giá trị/khách
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Giá trị/đơn hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Số lượng/khách
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đơn hàng/khách
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử lưu trữ
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Ghi chú</a>
+                    </li>
+                    <li>
+                        <a href="#">Ảnh</a>
+                    </li>
+                    <li>
+                        <a href="#">Presentace</a>
+                    </li>
+                    <li>
+                        <a href="#">Clip</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Tạo nhóm
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Chiến lược sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategory</a>
+                    </li>
+                    <li>
+                        <a href="#">Những sản phẩm tương tự</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content">
+        <div class="section_title">
+            <div class="nav_category">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <div class="wrap_menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link active">
+                                    Tên sản phẩm
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Mã số sản phẩm
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Tổng số khách đã mua
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Tổng số đơn đã bán
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="section_content wrap_border">
+            <div class="info_list_product d-flex flex-row align-items-center mb-3">
+                <div class="item">
+                    Tên sản phẩm
+                </div>
+                <div class="item">
+                    Mã số sản phẩm
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img width="100%" src="assets/images/1x/a1.png"/>
+                </div>
+                <div class="col-md-6"><img width="100%" src="assets/images/1x/a1.png"/></div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-12">
+                    Thông tin sản phẩm
+                </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-md-4">
+                    Chiến lược sản phẩm
+
+                </div>
+                <div class="col-md-4">
+                    Công ty sản xuất
+
+                </div>
+                <div class="col-md-4">
+                    Đất nước xuất xứ
+
+                </div>
+            </div>
+            <hr/>
+            <div class="c_title d-flex flex-row align-items-center justify-content-between mb-5">
+                <div class="title">
+                    Marketing sản phẩm: presentation và clip
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6"><img width="100%" src="assets/images/1x/a1.png"/></div>
+                <div class="col-md-3">
+                </div>
+            </div>
+            <hr/>
+            <div class="c_title d-flex flex-row align-items-center justify-content-between">
+                <div class="title">
+                    Sản phẩm tương tự
+                </div>
+            </div>
+            <div class="wrap_tag_product d-flex flex-wrap align-items-center">
+                <a href="javascript:void(0);">
+                    Tên sản phẩm 1
+                </a>
+                <a href="javascript:void(0);">
+                    Tên sản phẩm 2
+                </a>
+                <a href="javascript:void(0);">
+                    Tên sản phẩm 3
+                </a>
+                <a href="javascript:void(0);">
+                    Tên sản phẩm 4
+                </a>
+                <a href="javascript:void(0);">
+                    Tên sản phẩm 5
+                </a>
+                <a href="javascript:void(0);">
+                    Tên sản phẩm 6
+                </a>
+            </div>
+        </div>
+        <hr class="mb-0 mt-4">
+        <div class="section_content">
+            <div class="s_content">
+                <div class="c_title d-flex flex-row align-items-center justify-content-between">
+                    <div class="title">
+                        <b>Gửi link và thông tin về sản phẩm</b>
+                    </div>
+                    <a href="#" class="btn btn-style-default">
+                        Gửi theo nhóm
+                    </a>
+                </div>
+                <div class="wrap_contact">
+                    <a href="#">
+                        <img src=assets/images/icon/mail.jpg alt="">
+                    </a>
+                    <a href="#">
+                        <img src=assets/images/icon/mess.jpg alt="">
+                    </a>
+                    <a href="#">
+                        <img src=assets/images/icon/messfb.jpg alt="">
+                    </a>
+                    <a href="#">
+                        <img src=assets/images/icon/call.jpg alt="">
+                    </a>
+                    <a href="#">
+                        <img src=assets/images/icon/whatsapp.jpg alt="">
+                    </a>
+                </div>
+            </div>
+            <hr>
+            <div class="s_content">
+                <div class="c_title d-flex flex-row align-items-center justify-content-between">
+                    <div class="title">
+                        <b>Tạo QR sản phẩm</b>
+                    </div>
+                    <a href="#" class="btn btn-style-default">
+                        Tạo QR
+                    </a>
+                </div>
+                <div class="wrap_qr text-center">
+                    <img src=assets/images/icon/qrcode.jpg alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

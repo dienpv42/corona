@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/vendors/apexcharts-bundle/dist/apexcharts.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">breadcrumb</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">breadcrumb</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    breadcrumb
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhập sản phẩm mới
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh mục
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhóm sản phẩm
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Sản phẩm đang được quan tâm
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar">
+        <div class="s_group s_group_mobile">
+            <div class="g_menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <!--                <li class="nav-item">-->
+                    <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                    <!--                       data-bs-toggle="dropdown">-->
+                    <!--                        Tên user-->
+                    <!--                    </a>-->
+                    <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                    <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                    <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                    <!--                    </ul>-->
+                    <!--                </li>-->
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Ngôn ngữ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group s_group_mobile">
+            <div class="wrap_search">
+                <div class="form-group">
+                    <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                    <a href="javascript:void(0);" class="btn_search">
+                        <i class="icofont-search-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Thông tin sản phẩm
+            </div>
+            <div class="g_menu">
+                <ul>
+                    <li>
+                        <a href="#">Aktual</a>
+                    </li>
+                    <li>
+                        <a href="#">Chỉnh sửa</a>
+                    </li>
+                    <li>
+                        <a href="#">Gửi thông tin về sản phẩm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Đánh giá và nhận xét
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Tất cả comment</a>
+                    </li>
+                    <li>
+                        <a href="#">Commnet cần quan tâm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử nhập hàng
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Đơn hàng và nhập hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Trả lại</a>
+                    </li>
+                    <li>
+                        <a href="#">Có vấn đề</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử nhập hàng
+            </div>
+            <div class="g_menu">
+                <ul>
+                    <li>
+                        <a href="#">Danh sách khách hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Trung bình</a>
+                        <ul class="child">
+                            <li>
+                                <a href="#">
+                                    Giá trị/khách
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Giá trị/đơn hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Số lượng/khách
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đơn hàng/khách
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử lưu trữ
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Ghi chú</a>
+                    </li>
+                    <li>
+                        <a href="#">Ảnh</a>
+                    </li>
+                    <li>
+                        <a href="#">Presentace</a>
+                    </li>
+                    <li>
+                        <a href="#">Clip</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Tạo nhóm
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Chiến lược sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategory</a>
+                    </li>
+                    <li>
+                        <a href="#">Những sản phẩm tương tự</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content">
+        <div class="section_title mb-4">
+            <div class="s_title unset_border d-flex flex-row align-items-center justify-content-between">
+                <div class="title">
+                    Thống kê và đồ thị bán hàng
+                </div>
+            </div>
+            <div class="nav_category mb-3">
+                <div class="d-flex flex-row align-items-center">
+                    <div class="wrap_menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Doanh thu
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Danh sách khách hàng
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_static d-flex flex-row align-items-center justify-content-center text-center">
+                <div class="item">
+                    Giá trị/khách
+                </div>
+                <div class="item">
+                    Giá trị/đơn hàng
+                </div>
+                <div class="item">
+                    Số lượng/khách
+                </div>
+                <div class="item">
+                    Đơn hàng/khách
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="section_content">
+            <div class="wrap_chart">
+                <div class="title">
+                    Đồ thị số lượng sản phẩm được bán theo thời gian thực
+                </div>
+                <div id="chart_1"></div>
+            </div>
+            <div class="wrap_chart">
+                <div class="title">
+                    Đồ thị doanh thu được bán theo thời gian thực
+                </div>
+                <div id="chart_2"></div>
+            </div>
+            <div class="wrap_chart">
+                <div class="title">
+                    Đồ thị số lượng đơn hàng được bán theo thời gian thực
+                </div>
+                <div id="chart_3"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    $(document).ready(function (){
+        // Dữ liệu của biểu đồ
+        var chartData = [
+            { x: '1/2023', y: 10 },
+            { x: '2/2023', y: 30 },
+            { x: '3/2023', y: 20 },
+            { x: '4/2023', y: 50 },
+            { x: '5/2023', y: 15 },
+            { x: '6/2023', y: 100 },
+            { x: '7/2023', y: 30 }
+        ];
+
+        var chartData1 = [
+            { x: '1/2023', y: 1000 },
+            { x: '2/2023', y: 30000 },
+            { x: '3/2023', y: 20000 },
+            { x: '4/2023', y: 5000 },
+            { x: '5/2023', y: 1500 },
+            { x: '6/2023', y: 10000 },
+            { x: '7/2023', y: 30000 }
+        ];
+
+        // Cấu hình biểu đồ 1
+        const options1 = {
+            series: [{
+                name: "Số lượng sản phẩm bán được theo tháng",
+                data: chartData
+            }],
+            chart: {
+                height: 300,
+                type: 'area',
+                zoom: {
+                    enabled: true,
+                    type: 'xy'
+                },
+                toolbar: {
+                    show: false
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'straight'
+            },
+            xaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Thời gian',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Số lượng',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                }
+            },
+            tooltip: {
+                followCursor: true,
+                custom: function ({series, seriesIndex, dataPointIndex, w}) {
+                    let title = w.globals.initialSeries[seriesIndex].name;
+                    let time = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
+                    let amount = w.globals.initialSeries[seriesIndex].data[dataPointIndex].y;
+                    return `<div class="wrap_tooltip">
+                            <div class="title d-flex flex-row align-items-center">
+                                ${title}: ${time}
+                            </div>
+                            <div class="record">
+                                <b>${amount}</b> sản phẩm
+                            </div>
+                        </div>`;
+                }
+            }
+        };
+        var chart1 = new ApexCharts(document.querySelector("#chart_1"), options1);
+
+        // Cấu hình biểu đồ 2
+        const options2 = {
+            series: [{
+                name: "Doanh thu được bán theo thời gian thực",
+                data: chartData1
+            }],
+            chart: {
+                height: 300,
+                type: 'area',
+                zoom: {
+                    enabled: true,
+                    type: 'xy'
+                },
+                toolbar: {
+                    show: false
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'straight'
+            },
+            xaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Thời gian',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                    formatter: function (value) {
+                        // Định dạng giá trị thành tiền tệ Euro
+                        return new Intl.NumberFormat('en-US', {
+                            style: 'currency',
+                            currency: 'EUR'
+                        }).format(value);
+                    }
+                },
+                title: {
+                    text: 'Số lượng',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                }
+            },
+            tooltip: {
+                followCursor: true,
+                custom: function ({series, seriesIndex, dataPointIndex, w}) {
+                    let title = w.globals.initialSeries[seriesIndex].name;
+                    let time = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
+                    let amount = new Intl.NumberFormat('en-US', {
+                        style: 'currency',
+                        currency: 'EUR'
+                    }).format(w.globals.initialSeries[seriesIndex].data[dataPointIndex].y);;
+                    return `<div class="wrap_tooltip">
+                            <div class="title d-flex flex-row align-items-center">
+                                ${title}: ${time}
+                            </div>
+                            <div class="record">
+                                <b>${amount}</b>
+                            </div>
+                        </div>`;
+                }
+            }
+        };
+        var chart2 = new ApexCharts(document.querySelector("#chart_2"), options2);
+
+        // Cấu hình biểu đồ 3
+        const options3 = {
+            series: [{
+                name: "Số lượng đơn hàng được bán theo thời gian thực",
+                data: chartData
+            }],
+            chart: {
+                height: 300,
+                type: 'area',
+                zoom: {
+                    enabled: true,
+                    type: 'xy'
+                },
+                toolbar: {
+                    show: false
+                },
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                curve: 'straight'
+            },
+            xaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Thời gian',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Số lượng',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                }
+            },
+            tooltip: {
+                followCursor: true,
+                custom: function ({series, seriesIndex, dataPointIndex, w}) {
+                    let title = w.globals.initialSeries[seriesIndex].name;
+                    let time = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
+                    let amount = w.globals.initialSeries[seriesIndex].data[dataPointIndex].y;
+                    return `<div class="wrap_tooltip">
+                            <div class="title d-flex flex-row align-items-center">
+                                ${title}: ${time}
+                            </div>
+                            <div class="record">
+                                <b>${amount}</b> sản phẩm
+                            </div>
+                        </div>`;
+                }
+            }
+        };
+        var chart3 = new ApexCharts(document.querySelector("#chart_3"), options3);
+
+        // render
+        chart1.render();
+        chart2.render();
+        chart3.render();
+
+    });
+</script>
+</body>
+</html>

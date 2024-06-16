@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">Đối tác</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    Thẻ đối tác
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu d-flex flex-row align-items-center justify-content-center">
+            <div class="nav-lang">
+                <a href="javascript:void(0)" class="btn-lang" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/3x/vn@3x.png" alt="">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownLang">
+                    <li>
+                        <a class="dropdown-item active" href="#">
+                            <span class="text">
+                                Vietnamese
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <span class="text">
+                                English
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh sách đối tác
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link active">
+                        Thẻ đối tác
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đối tác đang đăng ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm khách hàng">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main main_reverse">
+
+    <!-- sidebar -->
+    <div class="w_sidebar w_sidebar_customer">
+        <div class="wrap_customer_card">
+            <div class="card_head mb-4 d-flex flex-row align-items-center justify-content-between">
+                <div class="card_title">
+                    <div class="title fw-bold">
+                        Thẻ đối tác
+                    </div>
+                    <div class="sub_title">
+                        410634253
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-style-line">
+                    Khóa
+                </a>
+            </div>
+            <div class="card_body">
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Tên công ty:
+                    </div>
+                    <input type="text" class="form-control" value="ASPIRIN COMPLEX">
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Nhóm:
+                    </div>
+                    <input type="text" class="form-control mb-2" value="" placeholder="Nhà sản xuất">
+                    <input type="text" class="form-control mb-2" value="" placeholder="Nhà phân phối">
+                    <select name="" id="" class="form-control mb-2">
+                        <option value="" selected>Thêm nhóm mới </option>
+                    </select>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2 d-flex flex-row align-items-center justify-content-between">
+                        <span>Địa chỉ</span>
+                        <a href="javascrip:void(0);" class="btn_open_google_map">
+                            mở google maps
+                        </a>
+                    </div>
+                    <textarea name="mapGoogle" id="mapGoogle" cols="30" rows="4" class="form-control">Alboinstraße 11, 12103 Berlin, Germany</textarea>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Số điện thoại
+                    </div>
+                    <div class="group_phone">
+                        <input type="text" class="form-control" value="+84">
+                        <input type="text" class="form-control" value="174 234 4293">
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Email
+                    </div>
+                    <input type="email" class="form-control" value="nguyen.haihoan@hotmail.de">
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Số tài khoản nhà bank (IBAN):
+                    </div>
+                    <input type="text" class="form-control block" value="" disabled>
+                </div>
+                <div class="form-group mb-3 d-flex flex-row align-items-center">
+                    <textarea name="note" id="note" cols="30" rows="4" class="form-control" placeholder="Ghi chú"></textarea>
+                </div>
+                <div class="wrap_btn text-end">
+                    <a href="javascript:void(0);" class="btn btn-style-default">chỉnh sửa và bổ sung</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content w_content_product_c">
+        <div class="section_title">
+            <div class="nav_category_list">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Danh sách đơn hàng từ khách
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Danh sách sản phẩm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link active">
+                            Thống kê và dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Thông tin và liên lạc
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Marketing và quảng cáo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Danh sách khách hàng
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section_content">
+            <div class="wrap_statistical_customer">
+                <div class="wrap_title mb-3 d-flex flex-lg-row flex-wrap align-items-center justify-content-between">
+                    <div class="wrap_title_right d-flex flex-lg-row flex-wrap align-items-center">
+                        <div class="total_product d-flex flex-row align-items-center mb-3 mb-lg-0 me-5">
+                            <div class="label">
+                                Tổng doanh thu
+                            </div>
+                            <div class="data">
+                                <input type="text" class="form-control" value="4.320,23 Euro" disabled>
+                            </div>
+                        </div>
+                        <div class="total_product d-flex flex-row align-items-center mb-3 mb-lg-0">
+                            <div class="label">
+                                Tổng lãi thô
+                            </div>
+                            <div class="data">
+                                <input type="text" class="form-control" value="353,12 Euro" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_data_chart">
+                    <div class="wrap_data d-flex flex-row align-items-center justify-content-center">
+                        <div class="item m-3">
+                            <div class="label">
+                                Tổng số lượng đơn
+                            </div>
+                            <div class="data">
+                                <input type="text" class="form-control" value="45x" disabled>
+                            </div>
+                        </div>
+                        <div class="item m-3">
+                            <div class="label">
+                                Tổng số lượng hàng đã đặt
+                            </div>
+                            <div class="data">
+                                <input type="text" class="form-control" value="362x" disabled>
+                            </div>
+                        </div>
+                        <div class="item m-3">
+                            <div class="label">
+                                Trung bình số lượng sản phẩm/đơn
+                            </div>
+                            <div class="data">
+                                <input type="text" class="form-control" value="8,04" disabled>
+                            </div>
+                        </div>
+                        <div class="item m-3">
+                            <div class="label">
+                                Trung bình Euro/đơn
+                            </div>
+                            <div class="data">
+                                <input type="text" class="form-control" value="96,00 Euro" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap_filter">
+                        <div class="title fw-bold mb-3">
+                            Đơn hàng
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="active">
+                                    Số lượng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    Doanh thu
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wrap_chart">
+                        <div id="chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_btn text-end mt-4">
+                <a href="javascript:void(0)" class="btn btn-style-line">Khởi động lại thống kê khách hàng</a>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".btn_open_google_map").click(function() {
+            let address = $("#mapGoogle").val().trim();
+            if (address !== "") {
+                // Tạo URL tìm kiếm trên Google Maps
+                let searchURL = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address);
+                window.open(searchURL, "_blank");
+            } else {
+                alert("Vui lòng nhập địa chỉ trước khi mở Google Maps.");
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        // Dữ liệu của biểu đồ
+        var chartData = [
+            { x: '1/2023', y: 10 },
+            { x: '2/2023', y: 30 },
+            { x: '3/2023', y: 20 },
+            { x: '4/2023', y: 50 },
+            { x: '5/2023', y: 15 },
+            { x: '6/2023', y: 100 },
+            { x: '7/2023', y: 30 }
+        ];
+        const dataLabels = {
+            enabled: false,
+            style: {
+                colors: ['#E6332A'], // Thay đổi màu của data label thành đỏ
+                background: {
+                    borderRadius: 20,
+                    color: '#E6332A',
+                    borderColor: '#E6332A',
+                    borderWidth: 1,
+                    opacity: 1,
+                },
+                fontSize: '12px',
+                fontFamily: 'Helvetica, Arial, sans-serif',
+                fontWeight: 500,
+                textAnchor: 'center',
+            },
+            background: {
+                enabled: true,
+                padding: 5,
+                borderRadius: 6,
+                borderWidth: 1,
+                opacity: 0.9,
+            },
+            dropShadow: {
+                enabled: false,
+                top: 1,
+                left: 1,
+                blur: 1,
+                opacity: 0.45,
+                color: '#000'
+            },
+            shape: 'circle',
+        };
+        // Cấu hình biểu đồ 1
+        const options = {
+            colors: ['#EDEDED'],
+            series: [{
+                name: "Thống kê dữ liệu",
+                data: chartData
+            }],
+            chart: {
+                type: 'area',
+                stacked: false,
+                height: 350,
+                toolbar: false,
+            },
+            markers: {
+                colors: ['#E6332A'],
+                size: 8,
+                hover: {
+                    size: 9,
+                }
+            },
+            grid: {
+                show: false, // ẩn tất cả các đường line ngang
+                strokeDashArray: 0
+            },
+            dataLabels: dataLabels,
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shadeIntensity: 1,
+                    inverseColors: false,
+                    opacityFrom: 0,
+                    opacityTo: 0,
+                    stops: [20, 100, 100, 100]
+                },
+            },
+            stroke: {
+                width: 2,
+                curve: 'straight',
+                color: '#fff'
+            },
+            xaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Thời gian',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                },
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Số lượng',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                },
+            },
+            tooltip: {
+                followCursor: true,
+                custom: function ({series, seriesIndex, dataPointIndex, w}) {
+                    let title = w.globals.initialSeries[seriesIndex].name;
+                    let time = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
+                    let amount = w.globals.initialSeries[seriesIndex].data[dataPointIndex].y;
+                    return `<div class="wrap_tooltip">
+                                <div class="title d-flex flex-row align-items-center">
+                                    ${title}: ${time}
+                                </div>
+                                <div class="record">
+                                    <b>${amount}</b> sản phẩm
+                                </div>
+                            </div>`;
+                }
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+    });
+</script>
+</body>
+</html>

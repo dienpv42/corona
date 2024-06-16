@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">Khách hàng</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    Thẻ khách hàng
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh sách khách hàng
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link active">
+                        Thẻ khách hàng
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Khách hàng đang đăng ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm khách hàng">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar w_sidebar_customer">
+        <div class="wrap_customer_card">
+            <div class="card_head mb-4 d-flex flex-row align-items-center justify-content-between">
+                <div class="card_title">
+                    <div class="title fw-bold">
+                        Thẻ khách hàng
+                    </div>
+                    <div class="sub_title">
+                        410634253
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="btn btn-style-line">
+                    Khóa
+                </a>
+            </div>
+            <div class="card_body">
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Họ và tên
+                    </div>
+                    <input type="text" class="form-control" value="Nguyen Hai Hoan">
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2 d-flex flex-row align-items-center justify-content-between">
+                        <span>Họ và tên</span>
+                        <a href="javascrip:void(0);" class="btn_open_google_map">
+                            mở google maps
+                        </a>
+                    </div>
+                    <textarea name="mapGoogle" id="mapGoogle" cols="30" rows="4" class="form-control">Alboinstraße 11, 12103 Berlin, Germany</textarea>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Số điện thoại
+                    </div>
+                    <div class="group_phone">
+                        <input type="text" class="form-control" value="+84">
+                        <input type="text" class="form-control" value="174 234 4293">
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Email
+                    </div>
+                    <input type="email" class="form-control" value="nguyen.haihoan@hotmail.de">
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Số tài khoản nhà bank (IBAN):
+                    </div>
+                    <input type="text" class="form-control block" value="" disabled>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Đất nước đang định cư
+                    </div>
+                    <input type="text" class="form-control" value=Đức>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="forn-label mb-2">
+                        Ngày/tháng/năm sinh
+                    </div>
+                    <input type="text" class="form-control block" value="" disabled>
+                </div>
+                <div class="form-group mb-3 d-flex flex-row align-items-center">
+                    <div class="forn-label me-4 text-nowrap">
+                        Giới tính
+                    </div>
+                    <input type="text" class="form-control" value="Nam">
+                </div>
+                <div class="form-group mb-3 d-flex flex-row align-items-center">
+                    <textarea name="mapGoogle" id="note" cols="30" rows="4" class="form-control" placeholder="Ghi chú"></textarea>
+                </div>
+                <div class="form-group mb-4">
+                    <div class="forn-label mb-2">
+                        Tên hãng bảo hiểm
+                    </div>
+                    <input type="text" class="form-control block" value="" disabled>
+                </div>
+                <div class="wrap_btn text-end">
+                    <a href="javascript:void(0);" class="btn btn-style-default">chỉnh sửa và bổ sung</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content w_content_product_c">
+        <div class="section_title">
+            <div class="nav_category_list">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Gửi promo và tin nhắn
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Danh sách sản phẩm quan tâm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Những vấn đề về sức khỏe
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="section_title">
+            <div class="nav_category_list">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Thống kê và dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link active">
+                            Lịch sử mua hàng và trả lại hàng
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Lịch sử thời gian vào website skicoo
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section_content">
+            <div class="section_list_product">
+                <div class="wrap_table no_scroll">
+                    <div class="table-responsive-xl table-scroll">
+                        <table class="table align-middle table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3">
+                                            Số hóa đơn
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3 text-center">
+                                            Số lượng sản phẩm <br>đã mua
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3">
+                                            Số lượng mua
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3">
+                                            Trạng thái
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3">
+                                            Tổng tiền
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3">
+                                            Lãi thô
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-warning">
+                                        đang mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-success">
+                                        đã mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-danger">
+                                        đang trả lại
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-warning">
+                                        đang mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-success">
+                                        đã mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-danger">
+                                        đang trả lại
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-warning">
+                                        đang mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-success">
+                                        đã mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-danger">
+                                        đang trả lại
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-warning">
+                                        đang mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-success">
+                                        đã mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-danger">
+                                        đang trả lại
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-warning">
+                                        đang mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-success">
+                                        đã mua
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">
+                                    4902402120410053
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    <div class="text-danger">
+                                        đang trả lại
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="wrap_pagination d-flex justify-content-end">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">«</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link disabled" href="javascipt:void(0)">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item"><a class="page-link" href="#">11</a></li>
+                            <li class="page-item"><a class="page-link" href="#">12</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">»</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="wrap_btn d-flex flex-row align-items-center justify-content-between">
+                <div class="left d-flex flex-row align-items-center">
+                    <div class="wrap_small">
+                        <a href="#" class="btn-style-default btn-small"><i class="icofont-long-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".btn_open_google_map").click(function() {
+            let address = $("#mapGoogle").val().trim();
+            if (address !== "") {
+                // Tạo URL tìm kiếm trên Google Maps
+                let searchURL = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address);
+                window.open(searchURL, "_blank");
+            } else {
+                alert("Vui lòng nhập địa chỉ trước khi mở Google Maps.");
+            }
+        });
+    });
+</script>
+</body>
+</html>

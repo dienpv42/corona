@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">Đối tác</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    Thẻ đối tác
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu d-flex flex-row align-items-center justify-content-center">
+            <div class="nav-lang">
+                <a href="javascript:void(0)" class="btn-lang" id="dropdownLang" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/3x/vn@3x.png" alt="">
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownLang">
+                    <li>
+                        <a class="dropdown-item active" href="#">
+                            <span class="text">
+                                Vietnamese
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <span class="text">
+                                English
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh sách đối tác
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link active">
+                        Thẻ đối tác
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đối tác đang đăng ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm khách hàng">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main main_reverse">
+
+    <!-- content -->
+    <div class="w_content w_content_full">
+        <div class="section_title">
+            <div class="nav_category_list">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Danh sách đơn hàng từ khách
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Danh sách sản phẩm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Thống kê và dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Thông tin và liên lạc
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Marketing và quảng cáo
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link active">
+                            Danh sách khách hàng
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="section_content">
+            <div class="section_partner">
+                <div class="wrap_table no_scroll">
+                    <div class="table-responsive-xl table-scroll">
+                        <table class="table align-middle table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Số khách hàng
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px;">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3 text-center">
+                                            Họ và tên
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3 text-center">
+                                            Số lượng sản phẩm <br> đã mua
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3">
+                                            Số lượng mua
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3">
+                                            Doanh thu
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <div class="thl me-3">
+                                            Lãi thô
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text_color_gray">
+                                        435640
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    23
+                                </td>
+                                <td class="text-center">
+                                    543
+                                </td>
+                                <td class="text-center">
+                                    3 663.00 Euro
+                                </td>
+                                <td class="text-center">
+                                    242.00 Euro
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="wrap_pagination d-flex justify-content-end">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">«</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link disabled" href="javascipt:void(0)">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item"><a class="page-link" href="#">11</a></li>
+                            <li class="page-item"><a class="page-link" href="#">12</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">»</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".btn_open_google_map").click(function() {
+            let address = $("#mapGoogle").val().trim();
+            if (address !== "") {
+                // Tạo URL tìm kiếm trên Google Maps
+                let searchURL = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address);
+                window.open(searchURL, "_blank");
+            } else {
+                alert("Vui lòng nhập địa chỉ trước khi mở Google Maps.");
+            }
+        });
+    });
+</script>
+</body>
+</html>

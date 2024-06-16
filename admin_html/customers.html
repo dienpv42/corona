@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">Khách hàng</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    Danh sách khách hàng
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link active">
+                        Danh sách khách hàng
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Thẻ khách hàng
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Khách hàng đang đăng ký
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm khách hàng">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar w_sidebar_filter">
+        <div class="wrap_filter_checkbox mb-4">
+            <div class="title">
+                Đất nước định cư
+            </div>
+            <div class="wrap_choose_cate">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="cate-1">
+                    <label class="form-check-label" for="cate-1">
+                        Đức (13433)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="cate-2">
+                    <label class="form-check-label" for="cate-2">
+                        Pháp (10621)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="cate-3">
+                    <label class="form-check-label" for="cate-3">
+                        CH Séc (15976)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="cate-4">
+                    <label class="form-check-label" for="cate-4">
+                        Thụy Sĩ (3559)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="cate-5">
+                    <label class="form-check-label" for="cate-5">
+                        Ba Lan (8788)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="cate-6">
+                    <label class="form-check-label" for="cate-6">
+                        Slovakia (2517)
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" id="cate-7">
+                    <label class="form-check-label" for="cate-7">
+                        Hà Lan (3901)
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="wrap_order">
+            <div class="title">
+                Danh sách đơn hàng hiện tại
+            </div>
+            <div class="wrap_order_content">
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item border_bottom">
+                    <div class="info_item d-flex flex-row align-items-center mb-3">
+                        <div class="order_id me-3">
+                            440985531
+                        </div>
+                        <div class="name fw-bold text_line_1">
+                            Ta Ngoc Bich
+                        </div>
+                    </div>
+                    <div class="i_title d-flex flex-row align-items-center justify-content-between">
+                        <span>492402170230032</span>
+                        <a href="javascript:void(0);" class="btn btn-style-default-1">
+                            Mở đơn
+                        </a>
+                    </div>
+                    <div class="i_content">
+                        <ul>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                            <li>
+                                <div class="name">
+                                    Vigantol 1000 I.E. Vit
+                                </div>
+                                <div class="number">
+                                    10x
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content">
+        <div class="section_title">
+            <div class="nav_category_list">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link active">
+                            Danh sách khách hàng
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Khách hàng có nhiều đơn hàng nhất
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Khách hàng có doanh thu nhiều nhất
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Thời gian lần cuối khách đặt hàng
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="section_content">
+            <div class="section_list_product">
+                <div class="wrap_title d-flex flex-row align-items-center">
+                    <div class="title me-3 fw-bold">
+                        Danh sách khách hàng
+                    </div>
+                    <div class="w_filter me-5">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0);">50</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">100</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">200</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="total_product d-flex flex-row align-items-center">
+                        <div class="label">
+                            Tổng số khách hàng hiện tại
+                        </div>
+                        <div class="data">
+                            <input type="text" class="form-control" value="124" disabled>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap_table">
+                    <div class="table-responsive-xl table-scroll">
+                        <table class="table align-middle table-bordered valign-th-top">
+                            <thead>
+                            <tr>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Số khách hàng
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap bg_gr" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Họ và tên
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Thời gian đăng ký
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap bg_gr" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Doanh thu
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Lãi thô
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            <tr>
+                                <td>490531302</td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Tran Quoc Tuan
+                                    </div>
+                                </td>
+                                <td>01.02.2024 13:53</td>
+                                <td class="bg_gr">7.343 Euro</td>
+                                <td>7.343 Euro</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="wrap_pagination d-flex justify-content-end">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link disabled" href="javascipt:void(0)">
+                                    ...
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item"><a class="page-link" href="#">11</a></li>
+                            <li class="page-item"><a class="page-link" href="#">12</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="wrap_btn d-flex flex-row align-items-center justify-content-between">
+                <div class="left d-flex flex-row align-items-center">
+                    <div class="wrap_small">
+                        <a href="#" class="btn-style-default btn-small"><i class="icofont-long-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/vendors/apexcharts-bundle/dist/apexcharts.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">breadcrumb</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">breadcrumb</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    breadcrumb
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhập sản phẩm mới
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh sách sản phẩm
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh mục
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhập hàng
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar w_sidebar_product">
+        <div class="wrap_form_sidebar">
+            <div class="ws_group">
+                <div class="ws_title">
+                    Thông tin về sản phẩm
+                </div>
+                <div class="content">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="4" placeholder="Ghi chú ..."></textarea>
+                    </div>
+                    <div class="w_btn">
+                        <a href="javascript:void(0)" class="btn-style-green">OK+</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ws_group">
+                <div class="ws_title">
+                    Giá nhập hàng từ công ty:
+                </div>
+                <div class="content">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tên công ty">
+                    </div>
+                    <div class="w_fgroup d-flex flex-row align-items-center justify-content-between">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Ngày update">
+                        </div>
+                        <div class="form-group d-flex flex-row align-items-center">
+                            <input type="text" class="form-control" placeholder="Giá">
+                            <input type="text" class="form-control" placeholder="Thuế">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="w_btn">
+                    <a href="javascript:void(0)" class="btn-style-green">OK+</a>
+                </div>
+                <div class="w_data">
+                    <div class="item">
+                        <div class="title d-flex flex-row align-items-center justify-content-between">
+                            <span>
+                                Pharmacy ABC co.
+                            </span>
+                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                        </div>
+                        <div class="content d-flex flex-row align-items-center">
+                            <div class="info">
+                                10.02.2024
+                            </div>
+                            <div class="info">
+                                23.16 Euro
+                            </div>
+                            <div class="info">
+                                31.42 Euro
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title d-flex flex-row align-items-center justify-content-between">
+                            <span>
+                                Pharmacy ABC co.
+                            </span>
+                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                        </div>
+                        <div class="content d-flex flex-row align-items-center">
+                            <div class="info">
+                                10.02.2024
+                            </div>
+                            <div class="info">
+                                23.16 Euro
+                            </div>
+                            <div class="info">
+                                31.42 Euro
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ws_group">
+                <div class="ws_title">
+                    So sánh giá bán trên thị trường
+                </div>
+                <div class="content">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Tên công ty">
+                    </div>
+                    <div class="w_fgroup d-flex flex-row align-items-center justify-content-between">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Ngày update">
+                        </div>
+                        <div class="form-group d-flex flex-row align-items-center">
+                            <input type="text" class="form-control" placeholder="Giá">
+                            <input type="text" class="form-control" placeholder="Thuế">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Link">
+                    </div>
+                </div>
+                <div class="w_btn">
+                    <a href="javascript:void(0)" class="btn-style-green">OK+</a>
+                </div>
+                <div class="w_data">
+                    <div class="item">
+                        <div class="title d-flex flex-row align-items-center justify-content-between">
+                            <span>
+                                Pharmacy ABC co.
+                            </span>
+                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                        </div>
+                        <div class="content d-flex flex-row align-items-center">
+                            <div class="info">
+                                10.02.2024
+                            </div>
+                            <div class="info">
+                                31.42 Euro
+                            </div>
+                        </div>
+                        <div class="link">
+                            <input type="text" class="form-control" placeholder="Link" disabled>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title d-flex flex-row align-items-center justify-content-between">
+                            <span>
+                                Pharmacy ABC co.
+                            </span>
+                            <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                        </div>
+                        <div class="content d-flex flex-row align-items-center">
+                            <div class="info">
+                                10.02.2024
+                            </div>
+                            <div class="info">
+                                31.42 Euro
+                            </div>
+                        </div>
+                        <div class="link">
+                            <input type="text" class="form-control" placeholder="Link" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content w_content_product_c">
+        <div class="section_title">
+            <div class="nav_category">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <div class="wrap_menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Thẻ sản phẩm
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    số data 529432
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link active">
+                                    Lịch sử nhập hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Thống kê và dữ liệu
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="section_content">
+            <div class="wrap_form_create_product">
+                <div class="wf_group">
+                    <div class="title">
+                        Thông tin cơ bản
+                    </div>
+                    <div class="content">
+                        <div class="row mb-5">
+                            <div class="col-12 col-lg-7">
+                                <div class="wrap_slide">
+                                    <div class="slide_image_1 swiper-container position-relative">
+                                        <div class="swiper-wrapper">
+                                            <!-- item-->
+                                            <div class="swiper-slide">
+                                                <img src=assets/images/productn_1@3x.png alt="" class="image_1">
+                                            </div>
+                                            <!-- item-->
+                                            <div class="swiper-slide">
+                                                <img src=assets/images/productn_1@3x.png alt="" class="image_2">
+                                            </div>
+                                            <!-- item-->
+                                            <div class="swiper-slide">
+                                                <img src=assets/images/productn_1@3x.png alt="" class="image_3">
+                                            </div>
+                                            <!-- item-->
+                                            <div class="swiper-slide">
+                                                <img src=assets/images/productn_1@3x.png alt="" class="image_4">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-button-prev">
+                                        </div>
+                                        <div class="swiper-button-next">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_import_image d-flex flex-row align-items-center">
+                                    <div class="w_image">
+                                        <label for="imageProduct-1" class="label_file_banner_main">Ảnh đại diện</label>
+                                        <input type="file" class="form-control inp_img_1" id="imageProduct-1" hidden data-image="1">
+                                        <img src=assets/images/productn_1@3x.png alt="" class="image_1">
+                                    </div>
+                                    <div class="w_image">
+                                        <label for="imageProduct-2" class="label_file_banner_main">Ảnh 1</label>
+                                        <input type="file" class="form-control inp_img_2" id="imageProduct-2" hidden data-image="2">
+                                        <img src=assets/images/productn_1@3x.png alt="" class="image_2">
+                                    </div>
+                                    <div class="w_image">
+                                        <label for="imageProduct-3" class="label_file_banner_main">Ảnh 2</label>
+                                        <input type="file" class="form-control inp_img_3" id="imageProduct-3" hidden data-image="3">
+                                        <img src=assets/images/productn_1@3x.png alt="" class="image_3">
+                                    </div>
+                                    <div class="w_image">
+                                        <label for="imageProduct-4" class="label_file_banner_main">Ảnh 3</label>
+                                        <input type="file" class="form-control inp_img_4" id="imageProduct-4" hidden data-image="4">
+                                        <img src=assets/images/productn_1@3x.png alt="" class="image_4">
+                                    </div>
+                                </div>
+                                <div class="group_form d-flex flex-row align-items-center">
+                                    <div class="form-group me-0 me-lg-2">
+                                        <label for="" class="form-label">Dạng bào chế</label>
+                                        <input type="text" class="form-control" placeholder="Dạng bào chế" value="Lọ 30ml">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Số data</label>
+                                        <input type="text" class="form-control" placeholder="Số data" value="529432">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">Chiến lược của sản phẩm</label>
+                                    <input type="text" class="form-control" placeholder="Chiến lược của sản phẩm" value="Sản phẩm phổ thông">
+                                </div>
+                                <div class="group_form d-flex flex-row align-items-center">
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Giá bán chưa có thuế (Euro)</label>
+                                        <input type="text" class="form-control" placeholder="Giá bán (chưa có thuế)" value="23.42">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Tỉ lệ thuế (%)</label>
+                                        <input type="text" class="form-control" placeholder="" value="19">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="form-label">Thuế (Euro)</label>
+                                        <input type="text" class="form-control" placeholder="Thuế" value="27.87">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">Đơn bác sĩ</label>
+                                    <input type="text" class="form-control" placeholder="Đơn bác sĩ" value="Không cần đơn bác sĩ">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="form-group">
+                                    <label for="" class="form-label">Tên thuốc</label>
+                                    <input type="text" class="form-control" placeholder="Tên thuốc" value="SAB simplex suspensionfor oral use">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">Công dụng</label>
+                                    <textarea class="form-control" rows="4" placeholder="Công dụng ...">Chất lỏng Sab Simplex dung tích 30 ml được sử dụng để điều trị sự hình thành khí quá mức trong đường tiêu hóa và các triệu chứng đầy hơi và đau bụng ở trẻ sơ sinh và người lớn.</textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">Mã sản phẩm</label>
+                                    <input type="text" class="form-control" placeholder="Mã sản phẩm" value="00893334">
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">Công ty sản xuất</label>
+                                    <select class="form-select" id="basic-1" data-placeholder="Công ty">
+                                        <option></option>
+                                        <option value="Pfizer Pharma GmbH" selected>Pfizer Pharma GmbH</option>
+                                        <option>Solution</option>
+                                        <option>Conglomeration</option>
+                                        <option>Algoritm</option>
+                                        <option>Holistic</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">Nhóm sản phẩm</label>
+                                    <select class="form-select" id="basic-category" data-placeholder="Nhóm sản phẩm">
+                                        <option></option>
+                                        <option value="Thuốc đường tiêu hóa" selected>Thuốc đường tiêu hóa</option>
+                                        <option>Solution</option>
+                                        <option>Conglomeration</option>
+                                        <option>Algoritm</option>
+                                        <option>Holistic</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="" class="form-label">Thị trường</label>
+                                    <select class="form-select" id="basic-2" data-placeholder="Thuốc tại thị trường">
+                                        <option></option>
+                                        <option value="Thuốc tại thị trường Đức" selected>Thuốc tại thị trường Đức</option>
+                                        <option>Solution</option>
+                                        <option>Conglomeration</option>
+                                        <option>Algoritm</option>
+                                        <option>Holistic</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-select" id="basic-product-strategy" data-placeholder="Made in">
+                                        <option></option>
+                                        <option value="Made in Gerrmany" selected>Made in Gerrmany</option>
+                                        <option>Solution</option>
+                                        <option>Conglomeration</option>
+                                        <option>Algoritm</option>
+                                        <option>Holistic</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap_history mb-5">
+                            <div class="wrap_title d-flex flex-row align-items-center">
+                                <div class="title me-3">
+                                    Lịch sử nhập hàng
+                                </div>
+                                <div class="w_filter me-5">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">50</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">100</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">200</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="total_product d-flex flex-row align-items-center">
+                                    <div class="label">
+                                        Số lượng hàng hiện tại
+                                    </div>
+                                    <div class="data">
+                                        <input type="text" class="form-control" value="124" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap_table">
+                                <div class="table-responsive-xl table-scroll">
+                                    <table class="table align-middle table-bordered valign-th-top">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-nowrap" scope="col" style="width: 50px"></th>
+                                            <th class="text-nowrap bg_gr" scope="col" style="min-width: 120px">
+                                                <div class="d-flex flex-row">
+                                                    <div class="thl me-3">
+                                                        Thời gian nhập
+                                                    </div>
+                                                    <a href="javascript:void(0)">↑↓</a>
+                                                </div>
+                                            </th>
+                                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                                <div class="d-flex flex-row">
+                                                    <div class="thl me-3">
+                                                        Số lượng
+                                                    </div>
+                                                    <a href="javascript:void(0)">↑↓</a>
+                                                </div>
+                                            </th>
+                                            <th class="text-nowrap bg_gr" scope="col" style="min-width: 120px">
+                                                <div class="d-flex flex-row">
+                                                    <div class="thl me-3">
+                                                        Giá nhập <br> <span>(đã có thuế)</span>
+                                                    </div>
+                                                    <a href="javascript:void(0)">↑↓</a>
+                                                </div>
+                                            </th>
+                                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                                <div class="d-flex flex-row">
+                                                    <div class="thl me-3">
+                                                        Tổng tiền
+                                                    </div>
+                                                    <a href="javascript:void(0)">↑↓</a>
+                                                </div>
+                                            </th>
+                                            <th class="text-nowrap bg_gr" scope="col" style="min-width: 120px">
+                                                <div class="d-flex flex-row">
+                                                    <div class="thl me-3">
+                                                        Kho
+                                                    </div>
+                                                    <a href="javascript:void(0)">↑↓</a>
+                                                </div>
+                                            </th>
+                                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                                Hóa đơn
+                                            </th>
+                                            <th class="text-nowrap" scope="col" style="min-width: 20px">
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="bg_gr">13.02.2024   17:52</td>
+                                            <td>150</td>
+                                            <td class="bg_gr">24.42 Euro</td>
+                                            <td>3663.00 Euro</td>
+                                            <td class="bg_gr">43</td>
+                                            <td></td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000"><path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"></path></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="bg_gr">13.02.2024   17:52</td>
+                                            <td>150</td>
+                                            <td class="bg_gr">24.42 Euro</td>
+                                            <td>3663.00 Euro</td>
+                                            <td class="bg_gr">43</td>
+                                            <td></td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000"><path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"></path></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="bg_gr">13.02.2024   17:52</td>
+                                            <td>150</td>
+                                            <td class="bg_gr">24.42 Euro</td>
+                                            <td>3663.00 Euro</td>
+                                            <td class="bg_gr">43</td>
+                                            <td></td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000"><path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"></path></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="bg_gr">13.02.2024   17:52</td>
+                                            <td>150</td>
+                                            <td class="bg_gr">24.42 Euro</td>
+                                            <td>3663.00 Euro</td>
+                                            <td class="bg_gr">43</td>
+                                            <td></td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000"><path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"></path></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="bg_gr">13.02.2024   17:52</td>
+                                            <td>150</td>
+                                            <td class="bg_gr">24.42 Euro</td>
+                                            <td>3663.00 Euro</td>
+                                            <td class="bg_gr">43</td>
+                                            <td></td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000"><path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"></path></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="bg_gr">13.02.2024   17:52</td>
+                                            <td>150</td>
+                                            <td class="bg_gr">24.42 Euro</td>
+                                            <td>3663.00 Euro</td>
+                                            <td class="bg_gr">43</td>
+                                            <td></td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000"><path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"></path></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="bg_gr">13.02.2024   17:52</td>
+                                            <td>150</td>
+                                            <td class="bg_gr">24.42 Euro</td>
+                                            <td>3663.00 Euro</td>
+                                            <td class="bg_gr">43</td>
+                                            <td></td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000"><path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"></path></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="bg_gr">13.02.2024   17:52</td>
+                                            <td>150</td>
+                                            <td class="bg_gr">24.42 Euro</td>
+                                            <td>3663.00 Euro</td>
+                                            <td class="bg_gr">43</td>
+                                            <td></td>
+                                            <td>
+                                                <a href="javascript:void(0)">
+                                                    <svg width="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#000"><path d="M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z"></path></svg>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="wrap_pagination d-flex justify-content-end">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link disabled" href="javascipt:void(0)">
+                                                ...
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">11</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">12</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap_btn d-flex flex-row align-items-center justify-content-between">
+                <div class="left d-flex flex-row align-items-center">
+                    <div class="wrap_small">
+                        <a href="#" class="btn-style-default btn-small"><i class="icofont-long-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function() {
+        var slide_image_1 = new Swiper(".slide_image_1", {
+            slidesPerView: 1,
+            speed: 1000,
+            loop: false,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            autoplay: false,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // select 2 có nút tạo mới
+        var select2OptionsProductionCompany = {
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+            tags: true,
+            createTag: function (params) {
+                return {
+                    id: params.term,
+                    text: params.term,
+                    newOption: true
+                };
+            },
+            templateResult: function (data) {
+                if (data.newOption) {
+                    return $('<button class="btn btn-position btn-style-green btn-style-select btn_create_company">OK +</button>');
+                }
+                return data.text;
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }
+        };
+
+        $('#basic-1').select2(select2OptionsProductionCompany);
+
+        // Event listener for the creation of a new option
+        $('#basic-1').on('select2:select', function (e) {
+            if (e.params.data.newOption) {
+                // Append the new option to Select2
+                var newOption = new Option(e.params.data.id, e.params.data.text, true, true);
+                $('#basic-1').append(newOption).trigger('change');
+                saveNewOption(e.params.data);
+            }
+        });
+
+        // Event listener for the custom button
+        $('#basic-1').on('click', '.btn_create_company', function () {
+            $('#basic-1').select2('open');
+        });
+
+
+        var select2OptionsOrigin = {
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+            tags: true,
+            createTag: function (params) {
+                return {
+                    id: params.term,
+                    text: params.term,
+                    newOption: true
+                };
+            },
+
+            templateResult: function (data) {
+                if (data.newOption) {
+                    return $('<button class="btn btn-position btn-style-green btn-style-select btn_create_origin">OK +</button>');
+                }
+                return data.text;
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }
+        };
+
+        $('#basic-2').select2(select2OptionsOrigin);
+
+        // Event listener for the creation of a new option
+        $('#basic-2').on('select2:select', function (e) {
+            if (e.params.data.newOption) {
+                // Append the new option to Select2
+                var newOption = new Option(e.params.data.id, e.params.data.text, true, true);
+                $('#basic-2').append(newOption).trigger('change');
+                saveNewOption(e.params.data);
+            }
+        });
+
+        // Event listener for the custom button
+        $('#basic-2').on('click', '.btn_create_origin', function () {
+            $('#basic-2').select2('open');
+        });
+
+        $('#basic-category').select2({
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+        });
+
+        $('#basic-product-strategy').select2({
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+        });
+
+        // Function to sav  e the new option using AJAX
+        function saveNewOption(newOption) {
+            console.log(newOption);
+        }
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('input[type="file"]').change(function() {
+            let imageId = $(this).attr('data-image');
+            let file = this.files[0];
+            // Kiểm tra xem tệp có tồn tại không
+            if (file) {
+                let reader = new FileReader();
+                reader.readAsDataURL(file);
+                // Khi tệp đã được đọc hoàn tất
+                reader.onload = function(e) {
+                    // Đổi src của ảnh tương ứng
+                    $('.image_' + imageId).attr('src', e.target.result);
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

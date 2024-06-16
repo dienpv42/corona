@@ -1,0 +1,2806 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">Dữ liệu</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    www.skicoo.com/
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_title">
+            Cấu trúc và chỉnh sửa website skicoo
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar">
+        <div class="s_group s_group_mobile">
+            <div class="g_menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <!--                <li class="nav-item">-->
+                    <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                    <!--                       data-bs-toggle="dropdown">-->
+                    <!--                        Tên user-->
+                    <!--                    </a>-->
+                    <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                    <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                    <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                    <!--                    </ul>-->
+                    <!--                </li>-->
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Ngôn ngữ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group s_group_mobile">
+            <div class="wrap_search">
+                <div class="form-group">
+                    <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                    <a href="javascript:void(0);" class="btn_search">
+                        <i class="icofont-search-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Cấu trúc các trang trong hệ thống:
+            </div>
+            <div class="label mt-2 ps-2">
+                Trang chủ
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Thông tin về skicoo.com</a>
+                    </li>
+                    <li>
+                        <a href="#">Tư vấn và hỗ trợ</a>
+                    </li>
+                    <li>
+                        <a href="#">Vận chuyển</a>
+                    </li>
+                    <li>
+                        <a href="#">Kiểm tra đơn hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Đăng ký</a>
+                    </li>
+                    <li>
+                        <a href="#">Đăng nhập</a>
+                    </li>
+                    <li>
+                        <a href="#">Giỏ hàng</a>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="child">
+                    <li>
+                        <a href="#">www.conooran.com</a>
+                    </li>
+                    <li>
+                        <a href="#">Gửi tin nhắn</a>
+                    </li>
+                    <li>
+                        <a href="#">Tải ứng dụng để liên hệ</a>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="child">
+                    <li>
+                        <a href="#">Dành cho bà bầu</a>
+                    </li>
+                    <li>
+                        <a href="#">Dành cho người cao tuổi</a>
+                    </li>
+                    <li>
+                        <a href="#">Dành cho trẻ nhỏ</a>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="child">
+                    <li>
+                        <a href="#">Banner chính</a>
+                    </li>
+                    <li>
+                        <a href="#">Banner thứ 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Dược phẩm từ Germany</a>
+                    </li>
+                    <li>
+                        <a href="#">Dành cho trẻ nhỏ</a>
+                    </li>
+                    <li>
+                        <a href="#">Dành cho người cao tuổi</a>
+                    </li>
+                    <li>
+                        <a href="#">Thuốc cho hệ tiêu hóa</a>
+                    </li>
+                    <li>
+                        <a href="#">Dược phẩm từ France</a>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="child">
+                    <li>
+                        <a href="#">Tất cả danh mục</a>
+                    </li>
+                    <li>
+                        <a href="#">Dành cho phụ nữ có bầu</a>
+                    </li>
+                    <li>
+                        <a href="#">Vitamin</a>
+                    </li>
+                    <li>
+                        <a href="#">Mất ngủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Đau nhức</a>
+                    </li>
+                    <li>
+                        <a href="#">Tiểu đường</a>
+                    </li>
+                    <li>
+                        <a href="#">Thuốc bổ não</a>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="child">
+                    <li>
+                        <a href="#">Banner 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Dành cho trẻ nhỏ</a>
+                    </li>
+                    <li>
+                        <a href="#">Dành cho bà bầu & sau sinh</a>
+                    </li>
+                    <li>
+                        <a href="#">Thuốc cho hệ tiêu hóa</a>
+                    </li>
+                    <li>
+                        <a href="#">Dược phẩm từ Swiss</a>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="label mt-2 ps-2">
+                <a href="#">Lịch sử ảnh banner</a>
+            </div>
+            <hr>
+            <div class="label mt-2 ps-2">
+                <a href="#">Lịch sử ảnh sản phẩm</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content">
+        <div class="section_title">
+            <div class="s_title d-flex flex-row align-items-center justify-content-between">
+                <div class="title">
+                    www.skicoo.com
+                </div>
+            </div>
+        </div>
+        <div class="section_content">
+            <!-- menu-->
+            <div class="wrap_config_group">
+                <div class="w_title">
+                    Menu
+                </div>
+                <div class="w_content_config">
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="1">
+                            </div>
+                            <div class="name">
+                                Menu chính
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-1" checked>
+                                <label class="form-check-label" for="checkStatusConfig-1"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="w_edit_main w_edit_menu d-flex flex-column flex-lg-row">
+                                    <div class="w_current d-flex flex-column flex-lg-row">
+                                        <div class="current">
+                                            <div class="label">
+                                                Hiện tại
+                                            </div>
+                                            <div class="content">
+                                                <div class="form-group d-flex flex-row align-items-center">
+                                                    <div class="form-label">
+                                                        Số lượng mục:
+                                                    </div>
+                                                    <select name="select_num_menu_current"  class="form-select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3" selected>3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current_select">
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="" selected>Dành cho bà bầu & sau  sinh</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Dành cho người cao tuổi</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Dành cho trẻ nhỏ</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w_change d-flex flex-row">
+                                        <div class="change">
+                                            <div class="label">
+                                                Thay đổi
+                                            </div>
+                                            <div class="content">
+                                                <div class="form-group d-flex flex-row align-items-center">
+                                                    <div class="form-label">
+                                                        Số lượng mục:
+                                                    </div>
+                                                    <select name="select_num_menu_edit" class="form-select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="change_select">
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Chọn danh mục</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="2">
+                            </div>
+                            <div class="name">
+                                Menu thứ 2
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-2">
+                                <label class="form-check-label" for="checkStatusConfig-2"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="w_edit_main w_edit_menu d-flex flex-column flex-lg-row">
+                                    <div class="w_current d-flex flex-column flex-lg-row">
+                                        <div class="current">
+                                            <div class="label">
+                                                Hiện tại
+                                            </div>
+                                            <div class="content">
+                                                <div class="form-group d-flex flex-row align-items-center">
+                                                    <div class="form-label">
+                                                        Số lượng mục:
+                                                    </div>
+                                                    <select name="select_num_menu_current"  class="form-select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3" selected>3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current_select">
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="" selected>Dành cho bà bầu & sau  sinh</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Dành cho người cao tuổi</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Dành cho trẻ nhỏ</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w_change d-flex flex-row">
+                                        <div class="change">
+                                            <div class="label">
+                                                Thay đổi
+                                            </div>
+                                            <div class="content">
+                                                <div class="form-group d-flex flex-row align-items-center">
+                                                    <div class="form-label">
+                                                        Số lượng mục:
+                                                    </div>
+                                                    <select name="select_num_menu_edit" class="form-select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="change_select">
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Chọn danh mục</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="3">
+                            </div>
+                            <div class="name">
+                                Menu thứ 3
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-3">
+                                <label class="form-check-label" for="checkStatusConfig-3"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="w_edit_main w_edit_menu d-flex flex-column flex-lg-row">
+                                    <div class="w_current d-flex flex-column flex-lg-row">
+                                        <div class="current">
+                                            <div class="label">
+                                                Hiện tại
+                                            </div>
+                                            <div class="content">
+                                                <div class="form-group d-flex flex-row align-items-center">
+                                                    <div class="form-label">
+                                                        Số lượng mục:
+                                                    </div>
+                                                    <select name="select_num_menu_current"  class="form-select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3" selected>3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current_select">
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="" selected>Dành cho bà bầu & sau  sinh</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Dành cho người cao tuổi</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Dành cho trẻ nhỏ</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w_change d-flex flex-row">
+                                        <div class="change">
+                                            <div class="label">
+                                                Thay đổi
+                                            </div>
+                                            <div class="content">
+                                                <div class="form-group d-flex flex-row align-items-center">
+                                                    <div class="form-label">
+                                                        Số lượng mục:
+                                                    </div>
+                                                    <select name="select_num_menu_edit" class="form-select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="change_select">
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Chọn danh mục</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="4">
+                            </div>
+                            <div class="name">
+                                Menu thứ 4
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-4">
+                                <label class="form-check-label" for="checkStatusConfig-3"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="w_edit_main w_edit_menu d-flex flex-column flex-lg-row">
+                                    <div class="w_current d-flex flex-column flex-lg-row">
+                                        <div class="current">
+                                            <div class="label">
+                                                Hiện tại
+                                            </div>
+                                            <div class="content">
+                                                <div class="form-group d-flex flex-row align-items-center">
+                                                    <div class="form-label">
+                                                        Số lượng mục:
+                                                    </div>
+                                                    <select name="select_num_menu_current"  class="form-select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3" selected>3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current_select">
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="" selected>Dành cho bà bầu & sau  sinh</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Dành cho người cao tuổi</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Dành cho trẻ nhỏ</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w_change d-flex flex-row">
+                                        <div class="change">
+                                            <div class="label">
+                                                Thay đổi
+                                            </div>
+                                            <div class="content">
+                                                <div class="form-group d-flex flex-row align-items-center">
+                                                    <div class="form-label">
+                                                        Số lượng mục:
+                                                    </div>
+                                                    <select name="select_num_menu_edit" class="form-select">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="change_select">
+                                            <div class="form-group">
+                                                <select name="" class="form-select select2">
+                                                    <option value="">Chọn danh mục</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner-->
+            <div class="wrap_config_group">
+                <div class="w_title">
+                    Banner
+                </div>
+                <div class="w_content_config">
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="2">
+                            </div>
+                            <div class="name">
+                                Banner chính
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-5" checked>
+                                <label class="form-check-label" for="checkStatusConfig-5"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="w_edit_main w_edit_banner d-flex flex-column flex-lg-row">
+                                    <div class="w_current">
+                                        <div class="current">
+                                            <div class="c_title d-flex flex-row align-items-center">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    <div class="form-group d-flex flex-row align-items-center">
+                                                        <div class="form-label">
+                                                            Số lượng banner:
+                                                        </div>
+                                                        <select name="select_num_banner"  class="form-select">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6" selected>6</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current_image d-flex flex-wrap">
+                                            <div class="item_banner d-flex flex-row align-items-center" data-banner="1">
+                                                <div class="name">
+                                                    Banner 1
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_banner_main">
+                                            </div>
+                                            <div class="item_banner d-flex flex-row align-items-center" data-banner="2">
+                                                <div class="name">
+                                                    Banner 2
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_banner_main">
+                                            </div>
+                                            <div class="item_banner d-flex flex-row align-items-center" data-banner="3">
+                                                <div class="name">
+                                                    Banner 3
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_banner_main">
+                                            </div>
+                                            <div class="item_banner d-flex flex-row align-items-center" data-banner="4">
+                                                <div class="name">
+                                                    Banner 4
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_banner_main">
+                                            </div>
+                                            <div class="item_banner d-flex flex-row align-items-center" data-banner="5">
+                                                <div class="name">
+                                                    Banner 5
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_banner_main">
+                                            </div>
+                                            <div class="item_banner d-flex flex-row align-items-center" data-banner="6">
+                                                <div class="name">
+                                                    Banner 6
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_banner_main">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w_change">
+                                        <div class="change">
+                                            <div class="label">
+                                                Thay đổi
+                                            </div>
+                                        </div>
+                                        <div class="change_banner">
+                                            <div class="item_upload_banner_main form-group d-flex flex-row align-items-center"  data-banner="1">
+                                                <label class="form-label">
+                                                    Banner 1
+                                                </label>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageBannerMain-1" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_banner_main" id="imageBannerMain-1" hidden data-banner="1">
+                                                </div>
+                                            </div>
+                                            <div class="item_upload_banner_main form-group d-flex flex-row align-items-center"  data-banner="2">
+                                                <label class="form-label">
+                                                    Banner 2
+                                                </label>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageBannerMain-2" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_banner_main" id="imageBannerMain-2" hidden data-banner="2">
+                                                </div>
+                                            </div>
+                                            <div class="item_upload_banner_main form-group d-flex flex-row align-items-center"  data-banner="3">
+                                                <label class="form-label">
+                                                    Banner 3
+                                                </label>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageBannerMain-3" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_banner_main" id="imageBannerMain-3" hidden data-banner="3">
+                                                </div>
+                                            </div>
+                                            <div class="item_upload_banner_main form-group d-flex flex-row align-items-center"  data-banner="4">
+                                                <label class="form-label">
+                                                    Banner 4
+                                                </label>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageBannerMain-4" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_banner_main" id="imageBannerMain-4" hidden data-banner="4">
+                                                </div>
+                                            </div>
+                                            <div class="item_upload_banner_main form-group d-flex flex-row align-items-center"  data-banner="5">
+                                                <label class="form-label">
+                                                    Banner 5
+                                                </label>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageBannerMain-5" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_banner_main" id="imageBannerMain-5" hidden data-banner="5">
+                                                </div>
+                                            </div>
+                                            <div class="item_upload_banner_main form-group d-flex flex-row align-items-center"  data-banner="6">
+                                                <label class="form-label">
+                                                    Banner 6
+                                                </label>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageBannerMain-6" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_banner_main" id="imageBannerMain-6" hidden data-banner="6">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="9">
+                            </div>
+                            <div class="name">
+                                Banner thứ 2
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-6" checked>
+                                <label class="form-check-label" for="checkStatusConfig-6"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="w_edit_main w_edit_banner d-flex flex-column flex-lg-row">
+                                    <div class="w_current">
+                                        <div class="current">
+                                            <div class="label">
+                                                Hiện tại
+                                            </div>
+                                            <div class="content">
+                                                <div class="item_group_banner" data-group="3" data-item="3">
+                                                    <div class="label">
+                                                        Khung số 3
+                                                    </div>
+                                                    <div class="group">
+                                                        <img src="./assets/images/3x/group_3@3x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current_upload_image">
+                                            <div class="item_upload_image d-flex flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 1
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-1-1" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-1-1" hidden>
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-flex flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 2
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-1-2" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-1-2" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-flex flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 3
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-1-3" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-1-3" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 4
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-1-4" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-1-4" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 5
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-1-5" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-1-5" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w_change">
+                                        <div class="change">
+                                            <div class="label">
+                                                Thay đổi
+                                            </div>
+                                        </div>
+                                        <div class="change_group_banner">
+                                            <div class="item_group_banner" data-groupBanner="1" data-group="1" data-item="1">
+                                                <div class="label">
+                                                    Khung số 1
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_1@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="1" data-group="2" data-item="2">
+                                                <div class="label">
+                                                    Khung số 2
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_2@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner active" data-groupBanner="1" data-group="3" data-item="3">
+                                                <div class="label">
+                                                    Khung số 3
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_3@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="1" data-group="4" data-item="3">
+                                                <div class="label">
+                                                    Khung số 4
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_4@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="1" data-group="5" data-item="5">
+                                                <div class="label">
+                                                    Khung số 5
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_5@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="1" data-group="6" data-item="5">
+                                                <div class="label">
+                                                    Khung số 6
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_6@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="15">
+                            </div>
+                            <div class="name">
+                                Banner thứ 3
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-7" checked>
+                                <label class="form-check-label" for="checkStatusConfig-7"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="w_edit_main w_edit_banner d-flex flex-column flex-lg-row">
+                                    <div class="w_current">
+                                        <div class="current">
+                                            <div class="label">
+                                                Hiện tại
+                                            </div>
+                                            <div class="content">
+                                                <div class="item_group_banner" data-group="1" data-item="1">
+                                                    <div class="label">
+                                                        Khung số 1
+                                                    </div>
+                                                    <div class="group">
+                                                        <img src="./assets/images/3x/group_1@3x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current_upload_image">
+                                            <div class="item_upload_image d-flex flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 1
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-1" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-2-1" hidden>
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 2
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-2" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-2-2" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 3
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-3" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-2-3" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 4
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-4" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-2-4" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 5
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-5" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-2-5" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w_change">
+                                        <div class="change">
+                                            <div class="label">
+                                                Thay đổi
+                                            </div>
+                                        </div>
+                                        <div class="change_group_banner">
+                                            <div class="item_group_banner active" data-groupBanner="2" data-group="1" data-item="1">
+                                                <div class="label">
+                                                    Khung số 1
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_1@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="2" data-group="2" data-item="2">
+                                                <div class="label">
+                                                    Khung số 2
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_2@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="2" data-group="3" data-item="3">
+                                                <div class="label">
+                                                    Khung số 3
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_3@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="2" data-group="4" data-item="3">
+                                                <div class="label">
+                                                    Khung số 4
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_4@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="2" data-group="5" data-item="5">
+                                                <div class="label">
+                                                    Khung số 5
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_5@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="2" data-group="6" data-item="5">
+                                                <div class="label">
+                                                    Khung số 6
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_6@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="">
+                            </div>
+                            <div class="name">
+                                Banner thứ 4
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-8">
+                                <label class="form-check-label" for="checkStatusConfig-8"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="w_edit_main w_edit_banner d-flex flex-column flex-lg-row">
+                                    <div class="w_current">
+                                        <div class="current">
+                                            <div class="label">
+                                                Hiện tại
+                                            </div>
+                                            <div class="content">
+                                                <div class="item_group_banner" data-group="1" data-item="1">
+                                                    <div class="label">
+                                                        Khung số 1
+                                                    </div>
+                                                    <div class="group">
+                                                        <img src="./assets/images/3x/group_1@3x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="current_upload_image">
+                                            <div class="item_upload_image d-flex flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 1
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-1" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-3-1" hidden>
+                                                </div>
+                                                <img src="./assets/images/1x/demobanner.png" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 2
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-2" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-3-2" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 3
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-3" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-3-3" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 4
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-4" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-3-4" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                            <div class="item_upload_image d-none flex-row align-items-center">
+                                                <div class="name">
+                                                    Ảnh 5
+                                                </div>
+                                                <div class="group">
+                                                    <div class="icon">
+                                                        <i class="icofont-image"></i>
+                                                    </div>
+                                                    <label for="imageupload-banner-2-5" class="label_file_banner_main">Chọn ảnh</label>
+                                                    <input type="file" class="form-control inp_img_upload" id="imageupload-banner-3-5" hidden>
+                                                </div>
+                                                <img src="" alt="" class="img_uploaded">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w_change">
+                                        <div class="change">
+                                            <div class="label">
+                                                Thay đổi
+                                            </div>
+                                        </div>
+                                        <div class="change_group_banner">
+                                            <div class="item_group_banner active" data-groupBanner="3" data-group="1" data-item="1">
+                                                <div class="label">
+                                                    Khung số 1
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_1@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="3" data-group="2" data-item="2">
+                                                <div class="label">
+                                                    Khung số 2
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_2@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="3" data-group="3" data-item="3">
+                                                <div class="label">
+                                                    Khung số 3
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_3@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="3" data-group="4" data-item="3">
+                                                <div class="label">
+                                                    Khung số 4
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_4@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="3" data-group="5" data-item="5">
+                                                <div class="label">
+                                                    Khung số 5
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_5@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item_group_banner" data-groupBanner="3" data-group="6" data-item="5">
+                                                <div class="label">
+                                                    Khung số 6
+                                                </div>
+                                                <div class="group">
+                                                    <img src="./assets/images/3x/group_6@3x.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm nội địa ...-->
+            <div class="wrap_config_group">
+                <div class="w_title">
+                    Sản phẩm nội địa
+                </div>
+                <div class="w_content_config">
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="7">
+                            </div>
+                            <div class="name">
+                                France
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-9" checked>
+                                <label class="form-check-label" for="checkStatusConfig-9"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    France
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="3">
+                            </div>
+                            <div class="name">
+                                Germany
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-10" checked>
+                                <label class="form-check-label" for="checkStatusConfig-10"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    Germany
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Made in ... ...-->
+            <div class="wrap_config_group">
+                <div class="w_title">
+                    Made in ...
+                </div>
+                <div class="w_content_config">
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="11">
+                            </div>
+                            <div class="name">
+                                Swiss
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-11" checked>
+                                <label class="form-check-label" for="checkStatusConfig-11"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    Swiss
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="13">
+                            </div>
+                            <div class="name">
+                                USA
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-12" checked>
+                                <label class="form-check-label" for="checkStatusConfig-12"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    USA
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nhóm sản phẩm -->
+            <div class="wrap_config_group">
+                <div class="w_title">
+                    Nhóm sản phẩm
+                </div>
+                <div class="w_content_config">
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="4">
+                            </div>
+                            <div class="name">
+                                Dành cho trẻ nhỏ
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-13" checked>
+                                <label class="form-check-label" for="checkStatusConfig-13"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    Dành cho trẻ nhỏ
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="5">
+                            </div>
+                            <div class="name">
+                                Dành cho người cao tuổi
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-14" checked>
+                                <label class="form-check-label" for="checkStatusConfig-14"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    Dành cho người cao tuổi
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="6">
+                            </div>
+                            <div class="name">
+                                Thuốc cho hệ tiêu hóa
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-15" checked>
+                                <label class="form-check-label" for="checkStatusConfig-15"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    Thuốc cho hệ tiêu hóa
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="10">
+                            </div>
+                            <div class="name">
+                                Dành cho bà bầu
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-16" checked>
+                                <label class="form-check-label" for="checkStatusConfig-16"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    Dành cho bà bầu
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="10">
+                            </div>
+                            <div class="name">
+                                Thuốc dạ dày
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-17" checked>
+                                <label class="form-check-label" for="checkStatusConfig-17"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    Thuốc dạ dày
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w_item">
+                        <div class="r_item d-flex flex-row align-items-center">
+                            <div class="form-group">
+                                <input type="text" class="form-control" value="14">
+                            </div>
+                            <div class="name">
+                                Thuốc tiểu đường
+                            </div>
+                            <div class="updated_at">
+                                Lần cuối cùng: <span>31.01.2024 15:34</span>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="checkStatusConfig-18" checked>
+                                <label class="form-check-label" for="checkStatusConfig-18"></label>
+                            </div>
+                            <a href="javascript:void(0);" class="btn_edit">
+                                Thay đổi
+                            </a>
+                        </div>
+                        <div class="w_edit">
+                            <div class="d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap_content_choose d-flex flex-column flex-lg-row">
+                                    <div class="w_edit_main mb-3 mb-lg-0">
+                                        <div class="w_current mb-3">
+                                            <div class="current">
+                                                <div class="label">
+                                                    Hiện tại
+                                                </div>
+                                                <div class="content">
+                                                    Thuốc tiểu đường
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="w_change">
+                                            <div class="change">
+                                                <div class="label">
+                                                    Thay đổi
+                                                </div>
+                                            </div>
+                                            <div class="change_select">
+                                                <div class="form-group">
+                                                    <select name="" class="form-select select2">
+                                                        <option value="">Chọn danh mục</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="wrap_choose_product d-flex flex-wrap">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap_save">
+                                    <a href="javascript:void(0)" class="btb_save">
+                                        OK
+                                    </a>
+                                </div>
+                                <a href="javascript:void(0);" class="btn_close">
+                                    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#000' width="16" height="16"><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end content -->
+
+
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/js/app.js"></script>
+
+
+<script>
+    $(document).ready(function() {
+        // Khởi tạo tất cả các select có class select2
+        $('.select2').select2();
+
+        // show edit
+        $('.btn_edit').on('click', function() {
+            let $wItem = $(this).closest('.w_item');
+            let isActive = $wItem.find('.w_edit').hasClass('active');
+            if (!isActive) {
+                $('.w_item .w_edit').removeClass('active');
+                $wItem.find('.w_edit').addClass('active');
+            } else {
+                $wItem.find('.w_edit').removeClass('active');
+            }
+        });
+
+        $('.w_edit .btn_close').on('click', function() {
+            $(this).closest('.w_edit').removeClass('active');
+        });
+
+        // gán select theo số lượng chọn mới
+        $('select[name="select_num_menu_edit"]').on('change', function() {
+            let selectedValue = $(this).val();
+            let $wChange = $(this).closest('.w_change');
+            $wChange.find('.change_select .form-group').remove();
+            for (var i = 0; i < selectedValue; i++) {
+                var $select = $('<select name="" class="form-select select2 select2"><option value="">Chọn danh mục</option></select>');
+                $wChange.find('.change_select').append($('<div class="form-group"></div>').append($select));
+            }
+            $wChange.find('.change_select .select2').select2();
+        });
+
+        // gán select theo số lượng chọn cũ
+        $('select[name="select_num_menu_current"]').on('change', function() {
+            let selectedValue = $(this).val();
+            let $wChange = $(this).closest('.w_current');
+            $wChange.find('.current_select .form-group').remove();
+            for (var i = 0; i < selectedValue; i++) {
+                var $select = $('<select name="" class="form-select select2 select2"><option value="">Chọn danh mục</option></select>');
+                $wChange.find('.current_select').append($('<div class="form-group"></div>').append($select));
+            }
+            $wChange.find('.current_select .select2').select2();
+        });
+
+        // Banner main
+        $('select[name="select_num_banner"]').on('change', function() {
+            let numBanner = parseInt($(this).val());
+            $('.item_banner, .item_upload_banner_main').addClass('d-none');
+            for (let i = 1; i <= numBanner; i++) {
+                $('.item_banner[data-banner="' + i + '"]').removeClass('d-none');
+                $('.item_upload_banner_main[data-banner="' + i + '"]').removeClass('d-none');
+            }
+        });
+
+        $('.inp_img_banner_main').on('change', function() {
+            let bannerNumber = $(this).data('banner');
+            let input = $(this)[0];
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('.item_banner[data-banner="' + bannerNumber + '"]').find('.img_banner_main').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        });
+
+
+        // chọn khung banner
+        $('.item_group_banner').on('click', function () {
+            let w_item = $(this).closest('.w_item');
+            w_item.find('.item_group_banner').removeClass('active');
+            $(this).addClass('active');
+            let selectedGroup = $(this).data('group');
+            let selectedItem = $(this).data('item');
+            let selectedGroupBanner = $(this).data('groupBanner');
+            let currentGroupBanner = w_item.find('.w_current .item_group_banner');
+            currentGroupBanner.find('.label').text($(this).find('.label').text());
+            currentGroupBanner.find('.group img').attr('src', $(this).find('.group img').attr('src'));
+            currentGroupBanner.attr('data-group', selectedGroup);
+            currentGroupBanner.attr('data-item', selectedItem);
+
+            // Cập nhật số lượng item upload theo data-item
+            let numItems = parseInt(selectedItem);
+            console.log(numItems)
+            let currentUploadImage = w_item.find('.current_upload_image');
+            currentUploadImage.find('.item_upload_image').each(function (index) {
+                if (index < numItems) {
+                    $(this).find('.name').text('Ảnh ' + (index + 1));
+                    $(this).find('.inp_img_upload').attr('id', 'imageupload-banner-' + selectedGroupBanner + '-' + (index + 1));
+                    $(this).find('.label_file_banner_main').attr('for', 'imageupload-banner-' + selectedGroupBanner + '-' + (index + 1));
+                    $(this).find('.img_uploaded').attr('src', ''); // Đặt lại ảnh thành rỗng
+                    $(this).removeClass('d-none'); // Hiển thị item upload nếu index < numItems
+                    $(this).addClass('d-flex')
+                } else {
+                    $(this).addClass('d-none'); // Ẩn item upload nếu index >= numItems
+                }
+            });
+        });
+
+        // upload ảnh banner khác inp_img_upload
+        $('.inp_img_upload').on('change', function () {
+            let input = $(this)[0];
+            let imgUploaded = $(this).closest('.item_upload_image').find('.img_uploaded');
+
+            if (input.files && input.files[0]) {
+                let reader = new FileReader();
+                reader.onload = function (e) {
+                    imgUploaded.attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        });
+    });
+</script>
+</body>
+</html>

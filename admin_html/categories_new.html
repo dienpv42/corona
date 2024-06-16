@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">Sản phẩm</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    Danh mục
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh sách khách hàng mới
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh sách sản phẩm
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link active">
+                        Danh mục
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhập hàng
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm khách hàng">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar w_sidebar_cate">
+        <div class="wrap_select_action_cate">
+            <div class="title mb-3 fw-bold">
+                Tạo danh mục mới
+            </div>
+            <div class="form-group">
+                <select class="form-select mb-2">
+                    <option selected>Chọn khối</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <input type="text" class="form-control mb-3" placeholder="Tên nhóm">
+            </div>
+            <div class="wrap_btn text-end">
+                <a href="javascript:void(0);" class="btn btn-style-green">Tạo mới</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap_select_action_cate mb-4">
+            <div class="title mb-3 fw-bold">
+                Khóa Nhóm
+            </div>
+            <div class="form-group">
+                <select class="form-select mb-2">
+                    <option selected>Chọn khối</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select mb-3">
+                    <option selected>Chọn nhóm</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="wrap_btn text-end">
+                <a href="javascript:void(0);" class="btn btn-style-danger">Khóa</a>
+            </div>
+        </div>
+        <div class="wrap_select_action_cate mb-4">
+            <div class="title mb-3 fw-bold">
+                Mở khóa nhóm
+            </div>
+            <div class="form-group">
+                <select class="form-select mb-2">
+                    <option selected>Chọn khối</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select mb-3">
+                    <option selected>Chọn nhóm</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="wrap_btn text-end">
+                <a href="javascript:void(0);" class="btn btn-style-green">Mở khóa</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap_select_action_cate mb-4">
+            <div class="title mb-3 fw-bold">
+                Xoá Nhóm
+            </div>
+            <div class="form-group">
+                <select class="form-select mb-2">
+                    <option selected>Chọn khối</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select mb-3">
+                    <option selected>Chọn nhóm</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="wrap_btn text-end">
+                <a href="javascript:void(0);" class="btn btn-style-danger">Xoá</a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrap_select_action_cate mb-4">
+            <div class="title mb-3 fw-bold">
+                Đổi tên nhóm
+            </div>
+            <div class="form-group">
+                <select class="form-select mb-2">
+                    <option selected>Chọn khối</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select mb-3">
+                    <option selected>Chọn nhóm</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="wrap_btn text-end">
+                <a href="javascript:void(0);" class="btn btn-style-green">Đổi tên</a>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content">
+        <div class="section_content">
+            <div class="section_title mb-4">
+                <div class="title fw-bold">
+                    Danh sách sản phẩm
+                </div>
+            </div>
+
+            <div class="wrap_table no_scroll mb-4">
+                <div class="table-responsive-xl table-scroll">
+                    <table class="table align-middle table-bordered valign-th-top">
+                        <thead>
+                        <tr>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Khối
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Made in ...
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Sản phẩm
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Kho
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                % doanh thu
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="group">
+                                        A
+                                    </div>
+                                </td>
+                                <td class="bg_gr">
+                                    <div class="text_line_1">
+                                        Made in Germany
+                                    </div>
+                                </td>
+                                <td>545</td>
+                                <td class="bg_gr">
+                                    7 343
+                                </td>
+                                <td>
+                                    12,41 %
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="wrap_table no_scroll mb-4">
+                <div class="table-responsive-xl table-scroll">
+                    <table class="table align-middle table-bordered valign-th-top">
+                        <thead>
+                        <tr>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Khối
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Sản phẩm nội địa
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Sản phẩm
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Kho
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                % doanh thu
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    C
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Sản phẩm nội địa Đức
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    C
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Sản phẩm nội địa Đức
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    C
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Sản phẩm nội địa Đức
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    C
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Sản phẩm nội địa Đức
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    C
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Sản phẩm nội địa Đức
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    C
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Sản phẩm nội địa Đức
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    C
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Sản phẩm nội địa Đức
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="wrap_table no_scroll mb-4">
+                <div class="table-responsive-xl table-scroll">
+                    <table class="table align-middle table-bordered valign-th-top">
+                        <thead>
+                        <tr>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Khối
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Nhóm dược phẩm
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Sản phẩm
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                Kho
+                            </th>
+                            <th class="text-nowrap" scope="col" style="min-width: 120px">
+                                % doanh thu
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    M
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Thuốc giảm đau
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    M
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Thuốc giảm đau
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    M
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Thuốc giảm đau
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    M
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Thuốc giảm đau
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    M
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Thuốc giảm đau
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    M
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Thuốc giảm đau
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    M
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Thuốc giảm đau
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="group">
+                                    M
+                                </div>
+                            </td>
+                            <td class="bg_gr">
+                                <div class="text_line_1">
+                                    Thuốc giảm đau
+                                </div>
+                            </td>
+                            <td>545</td>
+                            <td class="bg_gr">
+                                7 343
+                            </td>
+                            <td>
+                                12,41 %
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="wrap_btn d-flex flex-row align-items-center justify-content-between">
+                <div class="left d-flex flex-row align-items-center">
+                    <div class="wrap_small">
+                        <a href="#" class="btn-style-default btn-small"><i class="icofont-long-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+
+    <div class="modal fade" id="modalNote" tabindex="-1" aria-labelledby="modalNoteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Tên sản phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Ghi chú:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-style-green">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

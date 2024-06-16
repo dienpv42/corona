@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>conooran.com</title>
+    <!-- css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl_admin">
+
+<!-- header -->
+<header class="header">
+    <div class="header_top d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_left d-flex flex-row align-items-center">
+            <div class="wrap_logo d-flex flex-row align-items-center">
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_1@2x.png" alt="logo_1">
+                </a>
+                <a href="javascript:void(0)">
+                    <img src="assets/images/2x/logo_2@2x.png" alt="logo_1">
+                </a>
+            </div>
+            <ul class="breadcrumb d-none d-md-flex">
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">breadcrumb</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <i class="icofont-rounded-double-right"></i>
+                    <a href="#">breadcrumb</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    <i class="icofont-rounded-double-right"></i>
+                    breadcrumb
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_right d-flex flex-row align-items-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Dữ liệu
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Đăng nhập
+                    </a>
+                </li>
+                <!--                <li class="nav-item">-->
+                <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                <!--                       data-bs-toggle="dropdown">-->
+                <!--                        Tên user-->
+                <!--                    </a>-->
+                <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                <!--                    </ul>-->
+                <!--                </li>-->
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Ngôn ngữ
+                    </a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="btn-sidebar">
+                <i class="icofont-navigation-menu"></i>
+            </a>
+        </div>
+    </div>
+    <div class="header_bottom d-flex flex-row align-items-center justify-content-between">
+        <div class="wrap_menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhập sản phẩm mới
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Danh mục
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Nhóm sản phẩm
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link">
+                        Sản phẩm đang được quan tâm
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="wrap_search">
+            <div class="form-group">
+                <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                <a href="javascript:void(0);" class="btn_search">
+                    <i class="icofont-search-1"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
+
+<!-- main -->
+<main class="main">
+
+    <!-- sidebar -->
+    <div class="w_sidebar">
+        <div class="s_group s_group_mobile">
+            <div class="g_menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <!--                <li class="nav-item">-->
+                    <!--                    <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                    <!--                       data-bs-toggle="dropdown">-->
+                    <!--                        Tên user-->
+                    <!--                    </a>-->
+                    <!--                    <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                    <!--                        <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                    <!--                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                    <!--                    </ul>-->
+                    <!--                </li>-->
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="nav-link">
+                            Ngôn ngữ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group s_group_mobile">
+            <div class="wrap_search">
+                <div class="form-group">
+                    <input type="text" class="form-control" class="inp_search" placeholder="Tìm sản phẩm">
+                    <a href="javascript:void(0);" class="btn_search">
+                        <i class="icofont-search-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Thông tin sản phẩm
+            </div>
+            <div class="g_menu">
+                <ul>
+                    <li>
+                        <a href="#">Aktual</a>
+                    </li>
+                    <li>
+                        <a href="#">Chỉnh sửa</a>
+                    </li>
+                    <li>
+                        <a href="#">Gửi thông tin về sản phẩm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Đánh giá và nhận xét
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Tất cả comment</a>
+                    </li>
+                    <li>
+                        <a href="#">Commnet cần quan tâm</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử nhập hàng
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Đơn hàng và nhập hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Trả lại</a>
+                    </li>
+                    <li>
+                        <a href="#">Có vấn đề</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử nhập hàng
+            </div>
+            <div class="g_menu">
+                <ul>
+                    <li>
+                        <a href="#">Danh sách khách hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Trung bình</a>
+                        <ul class="child">
+                            <li>
+                                <a href="#">
+                                    Giá trị/khách
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Giá trị/đơn hàng
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Số lượng/khách
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Đơn hàng/khách
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Lịch sử lưu trữ
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Ghi chú</a>
+                    </li>
+                    <li>
+                        <a href="#">Ảnh</a>
+                    </li>
+                    <li>
+                        <a href="#">Presentace</a>
+                    </li>
+                    <li>
+                        <a href="#">Clip</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="s_group">
+            <div class="label">
+                Tạo nhóm
+            </div>
+            <div class="g_menu">
+                <ul class="child">
+                    <li>
+                        <a href="#">Chiến lược sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="#">Kategory</a>
+                    </li>
+                    <li>
+                        <a href="#">Những sản phẩm tương tự</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end sidebar -->
+
+    <!-- content -->
+    <div class="w_content">
+        <div class="section_title">
+            <div class="nav_category">
+                <div class="d-flex flex-row align-items-center justify-content-between">
+                    <div class="wrap_menu">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Tên sản phẩm
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Mã số sản phẩm
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Tổng số khách đã mua
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link">
+                                    Tổng số đơn đã bán
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="section_content">
+            <div class="s_content">
+                <div class="wrap_history_scroll">
+                    <div class="item d-flex flex-row align-items-center">
+                        <a href=""><i class="icofont-close-line"></i></a>
+                        <div class="text">
+                            14:34, 28.11.2023, tên sản phẩm, người viết: không có hàng
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-row align-items-center">
+                        <a href=""><i class="icofont-close-line"></i></a>
+                        <div class="text">
+                            14:34, 28.11.2023, tên sản phẩm, người viết: không có hàng
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-row align-items-center">
+                        <a href=""><i class="icofont-close-line"></i></a>
+                        <div class="text">
+                            14:34, 28.11.2023, tên sản phẩm, người viết: không có hàng
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-row align-items-center">
+                        <a href=""><i class="icofont-close-line"></i></a>
+                        <div class="text">
+                            14:34, 28.11.2023, tên sản phẩm, người viết: không có hàng
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-row align-items-center">
+                        <a href=""><i class="icofont-close-line"></i></a>
+                        <div class="text">
+                            14:34, 28.11.2023, tên sản phẩm, người viết: không có hàng
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-row align-items-center">
+                        <a href=""><i class="icofont-close-line"></i></a>
+                        <div class="text">
+                            14:34, 28.11.2023, tên sản phẩm, người viết: không có hàng
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-row align-items-center">
+                        <a href=""><i class="icofont-close-line"></i></a>
+                        <div class="text">
+                            14:34, 28.11.2023, tên sản phẩm, người viết: không có hàng
+                        </div>
+                    </div>
+                    <div class="item d-flex flex-row align-items-center">
+                        <a href=""><i class="icofont-close-line"></i></a>
+                        <div class="text">
+                            14:34, 28.11.2023, tên sản phẩm, người viết: không có hàng
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group no-border">
+                    <textarea class="form-control " id="infoInternal" rows="3"
+                              placeholder="Cập nhật tin tức sản phẩm"></textarea>
+                    <div class="wrap_btn align-right" style="text-align:right;margin-top:5px;">
+                        <a href="javascript:void(0);" class="btn btn-style-default"><span class="icon">
+                                <i class="icofont-image"></i>
+                            </span></a>
+                        <a href="javascript:void(0);" class="btn btn-style-default">ok</a>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="s_content">
+                <div class="nav_category">
+                    <div class="d-flex flex-row align-items-center justify-content-between">
+                        <div class="wrap_menu">
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="nav-link">
+                                        Chỉnh sửa sản phẩm
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="nav-link">
+                                        Lịch sử ảnh sản phẩm
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img width="100%" src="assets/images/1x/a1.png"/>
+                    </div>
+                    <div class="col-md-6"><img width="100%" src="assets/images/1x/a1.png"/></div>
+                </div>
+            </div>
+            <hr/>
+            <div class="s_content">
+                <div class="c_title d-flex flex-row align-items-center justify-content-between">
+                    <div class="title">
+                        <b>Thông tin về sản phẩm (về dược phẩm: cách sử dụng):</b>
+                    </div>
+                    <a href="#">Chỉnh sửa</a>
+                </div>
+                <div class="c_content">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+            <hr/>
+            <div class="s_content">
+                <div class="c_title d-flex flex-row align-items-center justify-content-between">
+                    <div class="title">
+                        <b>Thông tin chi tiết (đáng chú ý) về sản phẩm: </b>
+                    </div>
+                    <a href="#">Chỉnh sửa</a>
+                </div>
+                <div class="c_content">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </div>
+            </div>
+            <hr/>
+            <div class="s_content">
+                <div class="s_content_title mb-3 d-flex flex-row align-items-center justify-content-between">
+                    <div class="info_list_product d-flex flex-row align-items-center">
+                        <div class="item">
+                            Chiến lược sản phẩm
+                        </div>
+                        <div class="item">
+                            Công ty sản xuất
+                        </div>
+                        <div class="item">
+                            Đất nước xuất xứ
+                        </div>
+                    </div>
+                    <a href="#">Chỉnh sửa</a>
+                </div>
+                <div>
+                    <hr/>
+                    <div class="s_content">
+                        <div class="c_title d-flex flex-row align-items-center justify-content-between mb-3">
+                            <div class="title">
+                                <b>Nhập hàng</b>
+                            </div>
+                            <div class="wrap_btn d-flex flex-row align-items-center">
+                                <a href="#" class="me-3">
+                                    Xem lịch sử
+                                </a>
+                                <a href="#">
+                                    Chỉnh sửa
+                                </a>
+                            </div>
+                        </div>
+                        <div class="wrap_table">
+                            <table class="table table-borderless">
+                                <tbody>
+                                <tr>
+                                    <td><a href="#"><i class="icofont-close-line"></i></a></td>
+                                    <td>Thời gian nhập</td>
+                                    <td>Số lượng</td>
+                                    <td>Tổng tiền</td>
+                                    <td>Giá/sản phẩm</td>
+                                    <td>Ghi chú</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="icofont-close-line"></i></a></td>
+                                    <td>Thời gian nhập</td>
+                                    <td>Số lượng</td>
+                                    <td>Tổng tiền</td>
+                                    <td>Giá/sản phẩm</td>
+                                    <td>Ghi chú</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="icofont-close-line"></i></a></td>
+                                    <td>Thời gian nhập</td>
+                                    <td>Số lượng</td>
+                                    <td>Tổng tiền</td>
+                                    <td>Giá/sản phẩm</td>
+                                    <td>Ghi chú</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="icofont-close-line"></i></a></td>
+                                    <td>Thời gian nhập</td>
+                                    <td>Số lượng</td>
+                                    <td>Tổng tiền</td>
+                                    <td>Giá/sản phẩm</td>
+                                    <td>Ghi chú</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="s_content">
+                        <div class="c_title d-flex flex-row align-items-center justify-content-between mb-5">
+                            <div class="title">
+                                <b>Marketing sản phẩm: presentation và clip</b>
+                            </div>
+                            <div class="wrap_btn d-flex flex-row align-items-center">
+                                <a href="#" class="me-3">
+                                    Xem lịch sử
+                                </a>
+                                <a href="#">
+                                    Chỉnh sửa
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-6"><img width="100%" src="assets/images/1x/a1.png"/></div>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="s_content">
+                        <div class="c_title d-flex flex-row align-items-center justify-content-between">
+                            <div class="title">
+                                <b>Sản phẩm tương tự</b>
+                            </div>
+                            <a href="#">
+                                Chỉnh sửa
+                            </a>
+                        </div>
+                        <div class="wrap_tag_product d-flex flex-wrap align-items-center">
+                            <a href="javascript:void(0);">
+                                Tên sản phẩm 1
+                            </a>
+                            <a href="javascript:void(0);">
+                                Tên sản phẩm 2
+                            </a>
+                            <a href="javascript:void(0);">
+                                Tên sản phẩm 3
+                            </a>
+                            <a href="javascript:void(0);">
+                                Tên sản phẩm 4
+                            </a>
+                            <a href="javascript:void(0);">
+                                Tên sản phẩm 5
+                            </a>
+                            <a href="javascript:void(0);">
+                                Tên sản phẩm 6
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end content -->
+
+        </div>
+    </div>
+</main>
+<!-- end main -->
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

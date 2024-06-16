@@ -1,0 +1,17 @@
+{
+  "name": "nom-html",
+  "version": "1.0.0",
+  "description": "nom by anothertattoo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "node-sass assets/scss/app.scss assets/css/app.css -w",
+    "dev-sass": "node-sass assets/scss/app.scss assets/css/app.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
