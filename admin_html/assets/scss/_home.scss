@@ -2366,6 +2366,252 @@
             }
           }
         }
+        .wrap_data_manager_banner{
+          max-width: 1200px;
+          margin: auto;
+          .item{
+            padding: 30px 0;
+            border-bottom: 1px solid #DADADA;
+            .iw_content{
+              max-width: 991px;
+              margin: auto;
+              .i_title{
+
+              }
+              .i_content{
+                .image{
+                  width: calc(100% - 155px);
+                  img{
+                    height: 200px;
+                    max-width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+        .wrap_data_nation{
+          max-width: 767px;
+          margin: auto;
+          .form_add{
+            .img-add{
+              background-color: #DADADA;
+              width: 54px;
+              height: 33px;
+              margin-left: 15px;
+            }
+            .group {
+              width: 100%;
+              position: relative;
+              background-color: #F6F6F6;
+              border: 1px solid #DADADA;
+              @media (max-width: 850px) {
+                width: 100%;
+              }
+
+              .icon {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 33px;
+                height: 33px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #dee2e63d;
+                border: 1px solid #DADADA;
+
+                i {
+                  font-size: 22px;
+
+                  &.icofont-clip {
+                    transform: rotate(-44deg);
+                  }
+                }
+              }
+
+              .form-control {
+                &.inp_icon {
+                  padding-left: 45px;
+                }
+              }
+
+              .group_info {
+                .label {
+                  padding-left: 6px;
+                  white-space: nowrap;
+                  margin-right: 8px;
+                }
+              }
+
+              .label_file {
+                display: block;
+                border-radius: 0;
+                min-height: 33px;
+                background-color: #fff;
+                padding: 5px 15px 5px 45px;
+              }
+            }
+          }
+          .form_add_data{
+            .item{
+              padding: 15px 0;
+              border-bottom: 1px solid #DADADA;
+              .image{
+                img{
+                  width: 50px;
+                }
+              }
+              .name{
+
+              }
+              .number{
+
+              }
+              .action{
+
+              }
+            }
+          }
+        }
+        .sd_content_lg{
+          max-width: 992px;
+          margin: auto;
+          .nav{
+            padding: 20px 0;
+            border-bottom: 1px solid #DADADA;
+            .nav-item{
+              .nav-link{
+                &.active{
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+        .item_info_account{
+          padding: 20px 0;
+          border-bottom: 1px solid #DADADA;
+          .wrap{
+            > div {
+              @include line_text(1);
+              @media (min-width: 850px) {
+                //width: calc(25% - 60px);
+              }
+              &:last-child{
+
+              }
+            }
+            @media (min-width: 850px) {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+            }
+          }
+
+        }
+        .wrap_account_history{
+          .item{
+            padding: 20px 0;
+            border-bottom: 1px solid #DADADA;
+            .it_content{
+              max-width: 727px;
+              margin: auto;
+            }
+            .info{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: 20px;
+              &:last-child{
+                margin-bottom: 0;
+              }
+              .label{
+                width: 130px;
+                margin-right: 15px;
+              }
+              .content{
+                width: 310px;
+                max-width: calc(100% - 145px);
+              }
+            }
+          }
+        }
+        .form_add_internal{
+          max-width: 525px;
+          margin: auto;
+          .form-group{
+            @media (min-width: 850px) {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+            }
+            .form-label{
+              width: 220px;
+            }
+            .form-control{
+
+            }
+          }
+        }
+        .wrap_account_partner_card{
+          .item_partner_card,.item_customer_card,.item_product_card{
+            padding: 20px 0;
+            border-bottom: 1px solid #DADADA;
+            .title{
+              margin-bottom: 15px;
+            }
+            .content{
+              max-width: 767px;
+              margin: auto;
+              .info{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                &:last-child{
+                  margin-bottom: 0;
+                }
+                .label{
+                  padding-left: 10px;
+                  &.label-title{
+                    padding-left: 0;
+                  }
+                  .icofont-link{
+                    font-size: 20px;
+                    margin-left: 5px;
+                  }
+                  .action_block{
+                    margin-bottom: 10px;
+                    &:last-child{
+                      margin-bottom: 0;
+                    }
+                  }
+                  .social{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    img{
+                      width: 20px;
+                      margin-right: 10px;
+                    }
+                  }
+                }
+                .action{
+
+                }
+              }
+            }
+          }
+        }
       }
 
       .wrap_border {
