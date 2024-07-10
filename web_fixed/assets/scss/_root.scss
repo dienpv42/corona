@@ -60,9 +60,6 @@
 ::-webkit-scrollbar {
   width: .5vw;
   height: .3vw;
-  @media only screen and (max-width: 990px){
-    height: 0;
-  }
 }
 
 /* Track */
