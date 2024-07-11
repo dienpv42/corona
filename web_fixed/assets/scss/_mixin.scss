@@ -39,7 +39,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-@function size($number, $windowWidth: 575) {
+@function size($number, $windowWidth: 375) {
   $result: 100 * $number / $windowWidth;
   @return $result * 1vw;
 }

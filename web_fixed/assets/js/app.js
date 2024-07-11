@@ -193,17 +193,21 @@
                 prevEl: ".slide_product_1 .swiper-button-prev",
             },
             breakpoints: {
+                1500: {
+                    slidesPerView: 7,
+                    slidesPerGroup: 7,
+                },
+                1200: {
+                    slidesPerView: 6,
+                    slidesPerGroup: 6,
+                },
                 992: {
                     slidesPerView: 7,
                     slidesPerGroup: 7,
                 },
                 0: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    pagination: {
-                        el: ".slide_product_1 .swiper-pagination",
-                        clickable: true,
-                    },
+                    slidesPerView: 2.1,
+                    slidesPerGroup: 2,
                 },
             },
         });
@@ -221,17 +225,21 @@
                 prevEl: ".slide_product_2 .swiper-button-prev",
             },
             breakpoints: {
-                992: {
+                1500: {
                     slidesPerView: 7,
                     slidesPerGroup: 7,
                 },
+                1200: {
+                    slidesPerView: 6,
+                    slidesPerGroup: 6,
+                },
+                992: {
+                    slidesPerView: 5,
+                    slidesPerGroup: 5,
+                },
                 0: {
-                    slidesPerView: 3,
-                    slidesPerGroup: 3,
-                    pagination: {
-                        el: ".slide_product_2 .swiper-pagination",
-                        clickable: true,
-                    },
+                    slidesPerView: 2.1,
+                    slidesPerGroup: 2,
                 },
             },
         });
@@ -317,8 +325,10 @@
     $(window).scroll(function () {
         var scrollPosition = $(window).scrollTop();
         if (scrollPosition > 2) {
+            $(".header").addClass("active");
             $(".header_top").addClass("active");
         } else {
+            $(".header").removeClass("active");
             $(".header_top").removeClass("active");
         }
     });
