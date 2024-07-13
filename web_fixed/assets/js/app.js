@@ -275,7 +275,7 @@
         if (isMobile) {
             var slideProduct3 = new Swiper(".slide_product_3", {
                 speed: 1000,
-                loop: false,
+                loop: true,
                 spaceBetween: 15,
                 slidesPerView: 3,
                 slidesPerGroup: 3,
@@ -289,11 +289,31 @@
                     clickable: true,
                 },
             });
+            var slideProductD = new Swiper(".slide_product_d", {
+                speed: 1000,
+                loop: true,
+                spaceBetween: 10,
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                autoplay: false,
+                breakpoints: {
+                    992: {
+                        slidesPerView: 4,
+                        navigation: false,
+                        slidesPerGroup: 4,
+                    },
+                    0: {
+                        slidesPerView: 2.1,
+                        navigation: false,
+                        slidesPerGroup: 2,
+                    },
+                },
+            });
         } else {
             var slideProduct3 = new Swiper(".slide_product_3", {
                 direction: 'vertical',
                 speed: 1000,
-                loop: false,
+                loop: true,
                 spaceBetween: 10,
                 slidesPerView: 4,
                 slidesPerGroup: 4,
@@ -302,6 +322,19 @@
                 navigation: {
                     nextEl: ".slide_product_3 .swiper-button-next",
                     prevEl: ".slide_product_3 .swiper-button-prev",
+                }
+            });
+            var slideProductD = new Swiper(".slide_product_d", {
+                direction: 'vertical',
+                speed: 1000,
+                loop: true,
+                slidesPerView: 4,
+                slidesPerGroup: 4,
+                mousewheel: true,
+                autoplay: false,
+                navigation: {
+                    nextEl: ".swiper-button-next-d",
+                    prevEl: ".swiper-button-prev-d",
                 }
             });
         }
