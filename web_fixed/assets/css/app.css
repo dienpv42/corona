@@ -4199,9 +4199,9 @@ input {
 }
 @media (max-width: 991px) {
   .section_cart .wrap_products .w_total .btn_back {
+    margin: 3.2vw 0 0 0 !important;
     width: 100%;
     text-align: center;
-    margin: 0 !important;
   }
 }
 .section_cart .wrap_products .w_link_another .nav {

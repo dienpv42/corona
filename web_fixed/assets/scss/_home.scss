@@ -4082,9 +4082,9 @@
       }
       .btn_back{
         @media (max-width: 991px) {
+          margin: size(12) 0 0 0 !important;
           width: 100%;
           text-align: center;
-          margin: 0 !important;
         }
       }
     }
