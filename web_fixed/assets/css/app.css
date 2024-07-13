@@ -817,7 +817,6 @@ input {
   display: flex;
   align-items: center;
   min-height: 76px;
-  justify-content: center;
   padding: 10px 0;
   overflow: auto;
 }
