@@ -1157,7 +1157,15 @@
     transform: translateX(-50%) rotate(270deg);
   }
 }
-
+.slide_product_1 {
+  .swiper-button-next,  .swiper-button-prev {
+    transform: unset;
+    top: 65px;
+    @media (max-width: 1921px) {
+      top: sizeP(65);
+    }
+  }
+}
 .section {
   padding: 35px 0;
   @media (max-width: 1921px) {
@@ -1235,18 +1243,15 @@
 
     .nation {
       img {
-        width: 56px;
         height: 40px;
         object-fit: cover;
         object-position: center;
         border-radius: 4px;
         @media (max-width: 1921px) {
-          width: sizeP(56);
           height: sizeP(40);
           border-radius: sizeP(4);
         }
         @media (max-width: 991px) {
-          width: size(36);
           height: size(24);
           border-radius: size(2);
         }
@@ -1685,11 +1690,9 @@
 
     .section_content {
       padding: 10px 0;
-      max-width: 1040px;
       margin: auto;
       @media (max-width: 1921px) {
         padding: sizeP(10) 0;
-        max-width: sizeP(1040);
       }
       @media (max-width: 991px) {
         padding: size(10) 0;
@@ -1708,10 +1711,24 @@
         }
 
         img {
-          height: 44px;
+          height: 50px;
           width: auto;
           @media (max-width: 1921px) {
-            height: sizeP(44);
+            height: sizeP(50);
+          }
+          @media (max-width: 991px) {
+            height: size(24);
+          }
+        }
+      }
+    }
+    &.section_infobp_h {
+      .section_content {
+        img {
+          height: 72px;
+          width: auto;
+          @media (max-width: 1921px) {
+            height: sizeP(72);
           }
           @media (max-width: 991px) {
             height: size(24);
@@ -2312,8 +2329,6 @@
   }
 
   &.follow {
-    border-color: #94C459;
-
     &:hover {
       border-color: #94C459;
     }
@@ -2566,10 +2581,8 @@
   }
 
   &.follow {
-    border-color: #94C459;
-
-    &:hover {
-      border-color: #94C459;
+    .btn_follow {
+      background-color: #94C459;
     }
   }
 }
@@ -2782,7 +2795,7 @@
         color: #5E6D7B;
         transition: all .3s;
         border-radius: 16px;
-        border: 1px solid #CCC;
+        border: 1px solid #aaa;
         background: #FFF;
         text-align: center;
         @media (max-width: 1921px) {
@@ -2792,7 +2805,7 @@
           font-size: sizeP(20);
           padding: sizeP(16);
           border-radius: sizeP(16);
-          border: sizeP(1) solid #CCC;
+          border: sizeP(1) solid #aaa;
         }
         @media (max-width: 991px) {
           $s8: size(8);
@@ -2800,7 +2813,7 @@
           margin-bottom: size(12);
           font-size: size(13);
           padding: size(8);
-          border: size(1) solid #CCC;
+          border: size(1) solid #aaa;
           border-radius: size(8);
         }
 
@@ -2810,7 +2823,7 @@
           }
         }
 
-        &:hover, &.active {
+        &.active {
           border: 1px solid #6FBE44;
           background: #6FBE44;
           color: #fff;
@@ -2820,6 +2833,24 @@
           @media (max-width: 991px) {
             border: size(1) solid #4ead334f;
 
+          }
+        }
+        &.active {
+          box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+          @media (max-width: 1921px) {
+            box-shadow: 0px sizeP(4) sizeP(12) 0px rgba(0, 0, 0, 0.25);
+          }
+          @media (max-width: 991px) {
+            box-shadow: 0px size(4) size(12) 0px rgba(0, 0, 0, 0.25);
+          }
+        }
+        &:hover{
+          box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+          @media (max-width: 1921px) {
+            box-shadow: 0px sizeP(4) sizeP(12) 0px rgba(0, 0, 0, 0.25);
+          }
+          @media (max-width: 991px) {
+            box-shadow: 0px size(4) size(12) 0px rgba(0, 0, 0, 0.25);
           }
         }
       }
@@ -4680,9 +4711,9 @@
 
   .wrap_checkout_info {
     margin: auto;
-    padding: 0 100px;
+    padding: 0 300px;
     @media (max-width: 1921px) {
-      padding: 0 sizeP(100);
+      padding: 0 sizeP(300);
     }
     @media (max-width: 991px) {
       padding: 0 size(20);
@@ -6239,7 +6270,7 @@
           font-size: 20px;
           color: #5E6D7B;
           margin-bottom: 40px;
-          border: 1px solid #CCC;
+          border: 1px solid #aaa;
           border-radius: 16px;
           text-align: center;
           transition: all .3s;
@@ -6249,7 +6280,7 @@
             min-height: sizeP(100);
             font-size: sizeP(20);
             margin-bottom: sizeP(40);
-            border: sizeP(1) solid #CCC;
+            border: sizeP(1) solid #aaa;
             border-radius: sizeP(16);
           }
           @media (max-width: 991px) {
@@ -6258,7 +6289,7 @@
             min-height: size(64);
             font-size: size(13);
             margin-bottom: size(12);
-            border: size(1) solid #CCC;
+            border: size(1) solid #aaa;
             border-radius: size(8);
           }
 
