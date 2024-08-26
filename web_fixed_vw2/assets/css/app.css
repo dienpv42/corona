@@ -2891,7 +2891,6 @@ input {
 @media (max-width: 991px) {
   .item_product_nation .content .price {
     font-size: 4.2666666667vw;
-    margin-top: -4vw;
   }
 }
 .item_product_nation .content .btn_follow {
