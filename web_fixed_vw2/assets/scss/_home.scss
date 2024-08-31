@@ -1605,7 +1605,7 @@
 
         .form-control {
           height: 56px;
-          width: 300px;
+          width: 400px;
           padding: 0 15px 0 54px;
           border-radius: 20px;
           border: 1px solid #9D9D9C;
@@ -1616,13 +1616,14 @@
           @include SegoeUIVariable();
           @media (max-width: 1921px) {
             height: sizeP(56);
-            width: sizeP(300);
+            width: sizeP(400);
             padding: 0 sizeP(15) 0 sizeP(54);
             border-radius: sizeP(100);
             border: sizeP(1) solid #9D9D9C;
             font-size: sizeP(21);
           }
           @media (max-width: 991px) {
+            width: size(300);
             height: size(40);
             padding: 0 6.4vw 0 13.3333333333vw;
             border: size(1) solid #9D9D9C;
