@@ -1,0 +1,48 @@
+@mixin SVNGilroy(){
+    font-family: 'SVN-Gilroy"', sans-serif;
+}
+
+@mixin text-style($fs, $lh, $cl, $fw:400){
+    font-size: $fs;
+    line-height: $lh;
+    color: $cl;
+    font-weight: $fw;
+}
+@mixin bg_gradient(){
+    background: linear-gradient(270deg, #CA0A2F 6.58%, #03174C 91.67%);
+}
+@mixin text_gradient(){
+    background: linear-gradient(90.87deg, #CA0A2F 11.79%, #5A6FE3 93.94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+@mixin stroke($color: #000, $size: 1px) {
+    text-shadow:
+      -#{$size} -#{$size} 0 $color,
+       0        -#{$size} 0 $color,
+       #{$size} -#{$size} 0 $color,
+       #{$size}  0        0 $color,
+       #{$size}  #{$size} 0 $color,
+       0         #{$size} 0 $color,
+      -#{$size}  #{$size} 0 $color,
+      -#{$size}  0        0 $color;
+}
+@mixin line_text($line){
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@function size($number, $windowWidth: 375) {
+  $result: 100 * $number / $windowWidth;
+  @return $result * 1vw;
+}
+
+@function sizeP($number, $windowWidth: 1440) {
+  $result: 100 * $number / $windowWidth;
+  @return $result * 1vw;
+}
