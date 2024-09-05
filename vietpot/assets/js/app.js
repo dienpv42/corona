@@ -5,7 +5,23 @@
         $body = $("body");
 
     var slideBanner, slideProduct1, slideProduct2; // Declare variables at the top level
-
+    slideBanner = new Swiper(".slide_banner", {
+        slidesPerView: 1,
+        speed: 2000,
+        loop: true,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        effect: "fade",
+        autoplay: false,
+        navigation: {
+            nextEl: ".section_banner .swiper-button-next",
+            prevEl: ".section_banner .swiper-button-prev",
+        },
+        pagination: {
+            clickable: true,
+            el: '.section_banner .swiper-pagination',
+        },
+    });
     $(document).ready(function() {
         // Set background image from data attribute
         $(".banner").each(function() {
@@ -22,10 +38,10 @@
 
         function calculateSpaceBetween() {
             var width = window.innerWidth;
-            if (width > 1921) {
-                return 16;
+            if (width > 1440) {
+                return 32;
             } else if (width >= 992) {
-                return width * 0.0083333333333; // 0.83333333333%
+                return width * 0.0222; // 0.83333333333%
             } else {
                 return width * 0.032; // 3.2%
             }
@@ -33,23 +49,7 @@
 
         var spaceBetweenVW = calculateSpaceBetween();
 
-        slideBanner = new Swiper(".slide_banner", {
-            slidesPerView: 1,
-            speed: 2000,
-            loop: true,
-            spaceBetween: 0,
-            slidesPerGroup: 1,
-            effect: "fade",
-            autoplay: false,
-            navigation: {
-                nextEl: ".section_banner .swiper-button-next",
-                prevEl: ".section_banner .swiper-button-prev",
-            },
-            pagination: {
-                clickable: true,
-                el: '.section_banner .swiper-pagination',
-            },
-        });
+
 
         slideProduct1 = new Swiper(".slide_product_1", {
             speed: 500,
