@@ -313,5 +313,19 @@
     <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/plugincollection.js"></script>
     <script src="assets/js/app.js"></script>
+    <script>
+        var swiperProductDetail = new Swiper('.swiper-detail', {
+            spaceBetween: 0,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            thumbs: {
+                swiper: {
+                    el: '.swiper-container-thumbs',
+                    slidesPerView: 4,
+                    spaceBetween: 25,
+                },
+            },
+        });
+    </script>
 </body>
 </html>

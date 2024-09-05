@@ -113,18 +113,6 @@
             },
         });
 
-        var swiperProductDetail = new Swiper('.swiper-detail', {
-            spaceBetween: 0,
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            thumbs: {
-                swiper: {
-                    el: '.swiper-container-thumbs',
-                    slidesPerView: 4,
-                    spaceBetween: 25,
-                },
-            },
-        });
 
         // window.addEventListener('resize', function() {
         //     var newSpaceBetweenVW = calculateSpaceBetween();
