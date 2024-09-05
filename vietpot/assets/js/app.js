@@ -4,7 +4,7 @@
     var $window = $(window),
         $body = $("body");
 
-    var slideProduct1, slideProduct2; // Declare variables at the top level
+    var slideBanner, slideProduct1, slideProduct2; // Declare variables at the top level
 
     $(document).ready(function() {
         // Set background image from data attribute
@@ -33,9 +33,9 @@
 
         var spaceBetweenVW = calculateSpaceBetween();
 
-        var slideBanner = new Swiper(".slide_banner", {
+        slideBanner = new Swiper(".slide_banner", {
             slidesPerView: 1,
-            speed: 1000,
+            speed: 2000,
             loop: true,
             spaceBetween: 0,
             slidesPerGroup: 1,
@@ -44,6 +44,10 @@
             navigation: {
                 nextEl: ".section_banner .swiper-button-next",
                 prevEl: ".section_banner .swiper-button-prev",
+            },
+            pagination: {
+                clickable: true,
+                el: '.section_banner .swiper-pagination',
             },
         });
 
@@ -109,7 +113,7 @@
             },
         });
 
-        var swiperProductDetail = new Swiper('.swiper-product-detail', {
+        var swiperProductDetail = new Swiper('.swiper-detail', {
             spaceBetween: 0,
             slidesPerView: 1,
             slidesPerGroup: 1,
