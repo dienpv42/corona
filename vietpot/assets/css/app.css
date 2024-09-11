@@ -104,6 +104,11 @@ input {
 @font-face {
   font-family: "SVN-Gilroy";
   font-weight: 700;
+  src: url("../fonts/SVN-Gilroy Bold.otf");
+}
+@font-face {
+  font-family: "SVN-Gilroy";
+  font-weight: 800;
   src: url("../fonts/SVN-Gilroy Black.otf");
 }
 :root {
@@ -143,11 +148,41 @@ input {
 }
 .btn:hover {
   border: 1px solid #2196F3;
+  background-color: #fff;
   color: #2196F3;
 }
 @media (max-width: 1441px) {
   .btn:hover {
     border: 0.0694444444vw solid #2196F3;
+  }
+}
+
+.btn-default {
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 16px;
+}
+@media (max-width: 1440px) {
+  .btn-default {
+    padding: 1.1111111111vw 2.2222222222vw;
+    font-size: 1.1111111111vw;
+    border-radius: 1.1111111111vw;
+  }
+}
+
+.btn-default-primary {
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 16px;
+  background: #2196F3;
+  color: #fff;
+  border-color: #2196F3;
+}
+@media (max-width: 1440px) {
+  .btn-default-primary {
+    padding: 1.1111111111vw 2.2222222222vw;
+    font-size: 1.1111111111vw;
+    border-radius: 1.1111111111vw;
   }
 }
 
@@ -332,7 +367,7 @@ input {
 }
 
 .bl_home {
-  font-family: 'SVN-Gilroy"', sans-serif;
+  font-family: "SVN-Gilroy", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
@@ -362,6 +397,12 @@ input {
 .bl_home .header {
   position: relative;
   background-color: #fff;
+  box-shadow: 0px 12px 24px 0px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 1440px) {
+  .bl_home .header {
+    box-shadow: 0px 0.8333333333vw 1.6666666667vw 0px rgba(0, 0, 0, 0.12);
+  }
 }
 .bl_home .header .wrapper {
   height: 88px;
@@ -496,6 +537,38 @@ input {
     font-size: 1.0416666667vw;
   }
 }
+.bl_home .main .row {
+  margin: 0 -16px;
+}
+@media (max-width: 1440px) {
+  .bl_home .main .row {
+    margin: 0 -1.1111111111vw;
+  }
+}
+.bl_home .main .row > * {
+  padding: 0 16px;
+}
+@media (max-width: 1440px) {
+  .bl_home .main .row > * {
+    padding: 0 1.1111111111vw;
+  }
+}
+.bl_home .main .section-padding-top {
+  padding-top: 80px;
+}
+@media (max-width: 1440px) {
+  .bl_home .main .section-padding-top {
+    padding-top: 5.5555555556vw;
+  }
+}
+.bl_home .main .section-padding-bottom {
+  padding-bottom: 80px;
+}
+@media (max-width: 1440px) {
+  .bl_home .main .section-padding-bottom {
+    padding-bottom: 5.5555555556vw;
+  }
+}
 .bl_home .main .section_title .title {
   margin-bottom: 32px;
 }
@@ -597,18 +670,6 @@ input {
 @media (max-width: 1440px) {
   .bl_home .main .section_about .wrap_content .content p {
     margin-bottom: 1.1111111111vw;
-  }
-}
-.bl_home .main .section_about .wrap_content .wrap_btn .btn {
-  padding: 16px 32px;
-  font-size: 16px;
-  border-radius: 16px;
-}
-@media (max-width: 1440px) {
-  .bl_home .main .section_about .wrap_content .wrap_btn .btn {
-    padding: 1.1111111111vw 2.2222222222vw;
-    font-size: 1.1111111111vw;
-    border-radius: 1.1111111111vw;
   }
 }
 .bl_home .main .section_about .images img {
@@ -1465,6 +1526,55 @@ input {
     font-size: 0.9722222222vw;
     line-height: 1.3888888889vw;
   }
+}
+.bl_home .section-about-detail .wrapper {
+  width: 872px;
+  margin: auto;
+}
+@media (max-width: 1440px) {
+  .bl_home .section-about-detail .wrapper {
+    width: 60.5555555556vw;
+  }
+}
+.bl_home .section-about-detail .wrapper .section_title {
+  color: #2196F3;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 32px;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  .bl_home .section-about-detail .wrapper .section_title {
+    font-size: 2.0833333333vw;
+    margin-bottom: 2.2222222222vw;
+  }
+}
+.bl_home .section-about-detail .wrapper .section_content .content {
+  color: #43464D;
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  margin-bottom: 32px;
+}
+@media (max-width: 1440px) {
+  .bl_home .section-about-detail .wrapper .section_content .content {
+    font-size: 1.3888888889vw;
+    margin-bottom: 2.2222222222vw;
+  }
+}
+.bl_home .section-about-detail .wrapper .section_content .content p {
+  margin-bottom: 20px;
+}
+@media (max-width: 1440px) {
+  .bl_home .section-about-detail .wrapper .section_content .content p {
+    margin-bottom: 1.3888888889vw;
+  }
+}
+.bl_home .section-about-detail .wrapper .section_content .image img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */

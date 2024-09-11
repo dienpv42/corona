@@ -27,12 +27,38 @@
   }
   &:hover{
     border: 1px solid #2196F3;
+    background-color: #fff;
     color: #2196F3;
     @media (max-width: 1441px) {
       border: sizeP(1) solid #2196F3;
     }
   }
 }
+.btn-default {
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 16px;
+  @media (max-width: 1440px) {
+    padding: sizeP(16) sizeP(32);
+    font-size: sizeP(16);
+    border-radius: sizeP(16);
+  }
+}
+
+.btn-default-primary{
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 16px;
+  background: #2196F3;
+  color: #fff;
+  border-color: #2196F3;
+  @media (max-width: 1440px) {
+    padding: sizeP(16) sizeP(32);
+    font-size: sizeP(16);
+    border-radius: sizeP(16);
+  }
+}
+
 @keyframes loading-1{
   0%{
     -webkit-transform: rotate(0deg);
