@@ -424,7 +424,9 @@
         @media (max-width: 991px) {
           margin-right: size(10);
         }
-
+        a{
+          display: block;
+        }
         img {
           height: 84px;
           width: auto;
@@ -2636,19 +2638,20 @@
     .info {
       min-height: 40px;
       align-items: center;
+      margin-bottom: 5px;
       @media (max-width: 1921px) {
+        margin-bottom: sizeP(5);
         min-height: sizeP(40);
       }
       @media (max-width: 991px) {
+        margin-bottom: size(3);
         min-height: size(40);
-
       }
 
       .number {
+        max-width: calc(100% - 60px);
         margin-top: 2px;
         display: inline-block;
-        width: 105px;
-        height: 21px;
         padding: 0 16px;
         border-radius: 8px;
         background: #FFF;
@@ -2658,19 +2661,19 @@
         text-align: center;
         color: #575756;
         @media (max-width: 1921px) {
+          $s60p: sizeP(60);
+          max-width: calc(100% - $s60p);
           margin-top: sizeP(2);
-          width: sizeP(105);
-          height: sizeP(21);
           padding: 0 sizeP(16);
           border-radius: sizeP(8);
           box-shadow: 0px 0px sizeP(4) 0px rgba(0, 0, 0, 0.14);
           font-size: sizeP(14);
         }
         @media (max-width: 991px) {
+          $s40: sizeP(40);
+          max-width: calc(100% - $s40);
           margin-top: size(2);
           display: inline-block;
-          width: size(80);
-          height: size(15);
           padding: 0;
           border-radius: size(4);
           box-shadow: 0px 0px size(4) 0px rgba(0, 0, 0, 0.14);
@@ -2679,6 +2682,7 @@
       }
 
       .nation {
+        width: 44px;
         @media (max-width: 1921px) {
           width: sizeP(44);
         }
@@ -3781,6 +3785,55 @@
         max-width: 100%;
       }
 
+      #pac-input {
+        color: #575756;
+        font-size: 20px;
+        border-radius: 16px;
+        border: 1px solid #9D9D9C;
+        box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        @media (max-width: 1921px) {
+          font-size: sizeP(20);
+          border-radius: sizeP(16);
+          border: sizeP(1) solid #9D9D9C;
+          box-shadow: 0px sizeP(2) sizeP(16) 0px rgba(0, 0, 0, 0.15);
+        }
+        @media (max-width: 991px) {
+          height: size(52);
+          width: 100%;
+          font-size: size(14);
+          border-radius: size(12);
+          border: size(1) solid #9D9D9C;
+          box-shadow: unset;
+        }
+
+        &.form-control {
+          height: 64px;
+          @media (max-width: 1921px) {
+            height: sizeP(64);
+          }
+          @media (max-width: 991px) {
+            height: size(52);
+          }
+        }
+
+        &:focus {
+          box-shadow: unset;
+          border-color: #F39200;
+        }
+        &.pac-target-input{
+          max-width: 70%;
+        }
+      }
+      #map-canvas{
+        margin-bottom: 30px;
+        @media (max-width: 1921px) {
+          margin-bottom: sizeP(30);
+        }
+        @media (max-width: 991px) {
+          margin-bottom: size(20);
+        }
+      }
       .form-group {
         margin-bottom: 30px;
         @media (max-width: 1921px) {
@@ -3835,13 +3888,13 @@
 
         input {
           color: #575756;
-          font-size: 16px;
+          font-size: 20px;
           border-radius: 16px;
           border: 1px solid #9D9D9C;
           box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
           width: calc(100% - 282px);
           @media (max-width: 1921px) {
-            font-size: sizeP(16);
+            font-size: sizeP(20);
             border-radius: sizeP(16);
             border: sizeP(1) solid #9D9D9C;
             box-shadow: 0px sizeP(2) sizeP(16) 0px rgba(0, 0, 0, 0.15);
@@ -3851,7 +3904,7 @@
           @media (max-width: 991px) {
             height: size(52);
             width: 100%;
-            font-size: size(13);
+            font-size: size(14);
             border-radius: size(12);
             border: size(1) solid #9D9D9C;
             box-shadow: unset;
@@ -3875,13 +3928,13 @@
 
         textarea {
           color: #575756;
-          font-size: 16px;
+          font-size: 20px;
           border-radius: 16px;
           border: 1px solid #9D9D9C;
           box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
           width: calc(100% - 282px);
           @media (max-width: 1921px) {
-            font-size: sizeP(16);
+            font-size: sizeP(20);
             border-radius: sizeP(16);
             border: sizeP(1) solid #9D9D9C;
             box-shadow: 0px sizeP(2) sizeP(16) 0px rgba(0, 0, 0, 0.15);
@@ -3890,7 +3943,7 @@
           }
           @media (max-width: 991px) {
             width: 100%;
-            font-size: size(13);
+            font-size: size(14);
             border-radius: size(12);
             border: size(1) solid #9D9D9C;
             box-shadow: unset;
@@ -3907,7 +3960,7 @@
           height: 64px;
           margin-right: 15px;
           color: #575756;
-          font-size: 16px;
+          font-size: 20px;
           border-radius: 16px;
           border: 1px solid #9D9D9C;
           box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
@@ -3915,7 +3968,7 @@
             width: sizeP(238);
             height: sizeP(64);
             margin-right: sizeP(15);
-            font-size: sizeP(16);
+            font-size: sizeP(20);
             border-radius: sizeP(16);
             border: sizeP(1) solid #9D9D9C;
             box-shadow: 0px sizeP(2) sizeP(16) 0px rgba(0, 0, 0, 0.15);
@@ -3924,7 +3977,7 @@
             width: size(112);
             height: size(52);
             margin-right: size(15);
-            font-size: size(13);
+            font-size: size(14);
             border-radius: size(12);
             border: size(1) solid #9D9D9C;
             box-shadow: unset;
