@@ -1,8 +1,9 @@
 @import "reset";
 @import "fonts";
-@import "variables";
 @import "mixin";
 @import "root";
+@import "variables";
+@import "template";
 .bl_home {
   @include SVNGilroy();
   font-size: 20px;
@@ -14,6 +15,10 @@
   @media (max-width: 991px) {
     font-size: size(14);
   }
+  @import "header";
+  @import "main";
   @import "home";
   @import "about";
+  @import "data";
+  @import "footer";
 }

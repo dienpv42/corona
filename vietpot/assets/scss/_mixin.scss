@@ -46,3 +46,8 @@
   $result: 100 * $number / $windowWidth;
   @return $result * 1vw;
 }
+
+@function calcC($d, $number) {
+  $size: sizeP($number);
+  @return calc($d - $size);
+}

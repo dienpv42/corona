@@ -1,0 +1,109 @@
+.lb-large{
+  padding: 35px 160px;
+  display: inline-block;
+  color: #6D727B;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5; /* 150% */
+  border-radius: 16px;
+  border: 1px solid #AFB5B9;
+  background: #FFF;
+  @media (max-width: 1441px) {
+    padding: sizeP(35) sizeP(160);
+    font-size: sizeP(20);
+    border-radius: sizeP(16);
+    border: sizeP(1) solid #AFB5B9;
+  }
+}
+.lb-small{
+  display: inline-block;
+  padding: 20px;
+  color: #6D727B;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5; /* 150% */
+  border-radius: 16px;
+  border: 1px solid #AFB5B9;
+  background: #FFF;
+  @media (max-width: 1441px) {
+    padding: sizeP(20);
+    font-size: sizeP(20);
+    border-radius: sizeP(16);
+    border: sizeP(1) solid #AFB5B9;
+  }
+}
+.lb-xsmall{
+  display: inline-block;
+  padding: 16px;
+  color: #6D727B;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5; /* 150% */
+  border-radius: 16px;
+  border: 1px solid #AFB5B9;
+  background: #FFF;
+  @media (max-width: 1441px) {
+    padding: sizeP(16);
+    font-size: sizeP(16);
+    border-radius: sizeP(16);
+    border: sizeP(1) solid #AFB5B9;
+  }
+}
+.pd-16{
+  padding: 16px;
+  @media (max-width: 1441px) {
+    padding: sizeP(16);
+  }
+}
+.pd-s-16{
+  padding-left: 16px;
+  @media (max-width: 1441px) {
+    padding-left: sizeP(16);
+  }
+}
+.pd-e-16{
+  padding-right: 16px;
+  @media (max-width: 1441px) {
+    padding-right: sizeP(16);
+  }
+}
+.wrap_list_link_lb{
+  .list_link_lb{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+    @media (max-width: 1440px) {
+      margin: 0 sizeP(16)*-1;
+    }
+
+    > * {
+      padding: 0 16px;
+      @media (max-width: 1440px) {
+        padding: 0 sizeP(16);
+      }
+    }
+
+    .list_link_item{
+      margin-bottom: 32px;
+      flex: 1 1 25%;
+      max-width: 25%;
+      box-sizing: border-box;
+      @media (max-width: 1440px) {
+        margin-bottom: sizeP(32);
+      }
+      .lb-link{
+        width: 100%;
+        text-align: center;
+        transition: all .3s;
+        &.active,&:hover{
+          background: #EEE;
+          color: #2196F3;
+        }
+      }
+      &.list_link_item_50{
+        flex: 1 1 50%;
+        max-width: 50%;
+      }
+    }
+  }
+}

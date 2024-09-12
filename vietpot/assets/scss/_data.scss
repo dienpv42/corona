@@ -1,0 +1,24 @@
+.section_link_data{
+  .wrapper{
+    padding: 56px 0;
+    border-bottom: 1px solid #D5D7DB;
+    @media (max-width: 1441px) {
+      padding: sizeP(56) 0;
+      border-bottom: sizeP(1) solid #D5D7DB;
+    }
+    .title{
+      margin-bottom: 32px;
+      @media (max-width: 1441px) {
+        margin-bottom: sizeP(32);
+      }
+    }
+  }
+}
+
+.section_admin {
+  padding: 48px 0;
+  @media (max-width: 1441px) {
+    padding: sizeP(48) 0;
+  }
+
+}
