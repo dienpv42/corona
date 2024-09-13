@@ -9,6 +9,24 @@
     --star-size: size(20);
   }
 }
+.lb-link{
+  color: #5E6D7B;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 150%;
+  @media (max-width: 1921px) {
+    font-size: sizeP(17);
+  }
+  @media (max-width: 991px) {
+    font-size: size(13);
+  }
+  &.lb-link-success{
+    color: #6EBD8F;
+  }
+  &.lb-link-danger{
+    color: #DA2462;
+  }
+}
 @keyframes loading-1{
   0%{
     -webkit-transform: rotate(0deg);

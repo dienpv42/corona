@@ -4012,6 +4012,16 @@
           }
         }
 
+        .wrap_link_text{
+          margin-top: 8px;
+          @media (max-width: 1921px) {
+            margin-top: sizeP(8);
+          }
+          @media (max-width: 991px) {
+            margin-top: size(5);
+          }
+        }
+
         .btn_submit_register {
           padding: 13px 32px;
           color: #fff;
