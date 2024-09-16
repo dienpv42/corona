@@ -699,7 +699,9 @@
                 { name: "Sản phẩm 4", code: "SP004", unit: "Cái", capacity: 10, quantity: 8, priceBefore: 3000, priceAfter: 3300 }
             ]
         };
-
+        $('#productTable tbody').on('click', 'a', function(event) {
+            event.stopPropagation();
+        });
         // Handle row click event
         $('#invoiceTable tbody').on('click', 'tr[data-invoice-id]', function() {
             // Remove any existing detail rows
