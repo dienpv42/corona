@@ -366,6 +366,25 @@ input {
   background-color: #2196F3;
 }
 
+.dropdown-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  width: 20px; /* Adjust the size of the icon */
+  height: 20px;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10.0003 13.5C9.54495 13.5 9.09018 13.3245 8.74548 12.9798L3.31215 7.54648C3.29062 7.52495 3.27734 7.49422 3.27734 7.45837C3.27734 7.42251 3.29062 7.39178 3.31215 7.37025C3.33367 7.34873 3.36441 7.33545 3.40026 7.33545C3.43611 7.33545 3.46685 7.34873 3.48837 7.37025L8.92171 12.8036C9.51697 13.3988 10.4836 13.3988 11.0788 12.8036L16.5121 7.37025C16.5337 7.34873 16.5644 7.33545 16.6003 7.33545C16.6361 7.33545 16.6668 7.34873 16.6884 7.37025C16.7099 7.39178 16.7232 7.42251 16.7232 7.45837C16.7232 7.49422 16.7099 7.52495 16.6884 7.54648L11.255 12.9798C10.9103 13.3245 10.4556 13.5 10.0003 13.5Z" fill="%236D727B" stroke="%236D727B"></path></svg>');
+  background-size: 100% 100%;
+  border: unset;
+}
+
 .flex-p-16 {
   margin: 0 -16px;
 }
@@ -1456,6 +1475,10 @@ input {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 24px;
+}
+.wrap_form_modal .form-group:last-child {
+  margin-bottom: 0;
 }
 .wrap_form_modal .form-group .form-check {
   padding-left: 36px;
