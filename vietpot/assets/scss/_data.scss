@@ -15,31 +15,10 @@
   }
 }
 
-.section_admin,.section_data_customer {
-  padding: 48px 0;
+.section_data, .section_admin,.section_data_customer {
+  padding: 48px 0 80px;
   @media (max-width: 1441px) {
-    padding: sizeP(48) 0;
+    padding: sizeP(48) 0 sizeP(80);
   }
 }
 
-.wrap_list_action{
-  margin-bottom: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  @media (max-width: 1441px) {
-    margin-bottom: sizeP(32);
-  }
-  >*{
-   margin-right: 32px;
-    @media (max-width: 1441px) {
-      margin-right: sizeP(32);
-    }
-  }
-  &.wrap_list_action_bw{
-    justify-content: space-between;
-    >*{
-      margin-right: 0;
-    }
-  }
-}

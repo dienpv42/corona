@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
 </head>
@@ -22,7 +25,8 @@
             <div class="wrap_left d-flex flex-row align-items-center">
                 <a href="javascript:void(0)" class="btn-menu d-none">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.5 5H17.5M2.5 10H17.5M2.5 15H17.5" stroke="#706F6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.5 5H17.5M2.5 10H17.5M2.5 15H17.5" stroke="#706F6F" stroke-width="2"
+                              stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
                 <a href="index.html" class="logo">
@@ -68,11 +72,15 @@
                     Tài khoản
                 </a>
                 <div class="w_lang">
-                    <a href="javascript:void(0);" class="btn_change_lang dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a href="javascript:void(0);" class="btn_change_lang dropdown-toggle" data-bs-toggle="dropdown"
+                       aria-expanded="false">
                         <img src="assets/images/png/flag_vn.png" alt="" class="flag">
-                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                             fill="none">
                             <g clip-path="url(#clip0_8003_52)">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7064 15.7071C12.5188 15.8946 12.2645 15.9999 11.9994 15.9999C11.7342 15.9999 11.4799 15.8946 11.2924 15.7071L5.63537 10.0501C5.53986 9.95785 5.46367 9.84751 5.41126 9.7255C5.35886 9.6035 5.33127 9.47228 5.33012 9.3395C5.32896 9.20672 5.35426 9.07504 5.40454 8.95215C5.45483 8.82925 5.52908 8.7176 5.62297 8.6237C5.71686 8.52981 5.82852 8.45556 5.95141 8.40528C6.07431 8.355 6.20599 8.32969 6.33877 8.33085C6.47155 8.332 6.60277 8.35959 6.72477 8.412C6.84677 8.46441 6.95712 8.54059 7.04937 8.6361L11.9994 13.5861L16.9494 8.6361C17.138 8.45394 17.3906 8.35315 17.6528 8.35542C17.915 8.3577 18.1658 8.46287 18.3512 8.64828C18.5366 8.83369 18.6418 9.0845 18.644 9.3467C18.6463 9.60889 18.5455 9.8615 18.3634 10.0501L12.7064 15.7071Z" fill="#989B9F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12.7064 15.7071C12.5188 15.8946 12.2645 15.9999 11.9994 15.9999C11.7342 15.9999 11.4799 15.8946 11.2924 15.7071L5.63537 10.0501C5.53986 9.95785 5.46367 9.84751 5.41126 9.7255C5.35886 9.6035 5.33127 9.47228 5.33012 9.3395C5.32896 9.20672 5.35426 9.07504 5.40454 8.95215C5.45483 8.82925 5.52908 8.7176 5.62297 8.6237C5.71686 8.52981 5.82852 8.45556 5.95141 8.40528C6.07431 8.355 6.20599 8.32969 6.33877 8.33085C6.47155 8.332 6.60277 8.35959 6.72477 8.412C6.84677 8.46441 6.95712 8.54059 7.04937 8.6361L11.9994 13.5861L16.9494 8.6361C17.138 8.45394 17.3906 8.35315 17.6528 8.35542C17.915 8.3577 18.1658 8.46287 18.3512 8.64828C18.5366 8.83369 18.6418 9.0845 18.644 9.3467C18.6463 9.60889 18.5455 9.8615 18.3634 10.0501L12.7064 15.7071Z"
+                                      fill="#989B9F"/>
                             </g>
                             <defs>
                                 <clipPath id="clip0_8003_52">
@@ -110,7 +118,7 @@
                     <div class="wrap_list_link_lb">
                         <ul class="list_link_lb">
                             <li class="list_link_item">
-                                <a href="data_admin.html" class="lb-small lb-link active">
+                                <a href="data_admin.html" class="lb-small lb-link">
                                     Admin
                                 </a>
                             </li>
@@ -120,7 +128,7 @@
                                 </a>
                             </li>
                             <li class="list_link_item">
-                                <a href="data_finance_accounting_invoice_add.html" class="lb-small lb-link">
+                                <a href="data_finance_accounting_invoice_add.html" class="lb-small lb-link active">
                                     Tài chính và kế toán
                                 </a>
                             </li>
@@ -155,63 +163,122 @@
             </div>
         </div>
     </section>
-    <section class="section_admin">
+    <section class="section_data">
         <div class="container-main">
             <div class="section_title d-flex flex-row align-items-center justify-content-between">
                 <div class="title">
                     <h2>
-                        Admin
+                        Tài chính và kế toán
                     </h2>
                 </div>
-                <a href="#" class="text_link">Lịch sử đăng nhập</a>
+                <div class="wrap_list_action_flex">
+                    <a href="#" class="lb-xsmall">
+                        <span>Thu và chi (không hóa đơn)</span>
+                    </a>
+                    <a href="#" class="lb-xsmall">
+                            <span>
+                                Tạo hóa đơn mới
+                            </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z" fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z" fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="section_content">
-                <div class="wrap_content">
-                    <div class="wrap_list_link_lb">
-                        <ul class="list_link_lb">
-                            <li class="list_link_item list_link_item_50">
-                                <a href="#" class="lb-xsmall lb-link">
-                                    Admin
+                <div class="wrap_head">
+                    <div class="wrap_list_link_lb wrap_list_link_lb_bd">
+                        <ul class="list_link_lb justify-content-center">
+                            <li class="list_link_item">
+                                <a href="data_finance_accounting_invoice_add.html" class="lb-xsmall lb-link active">
+                                    Nhập hóa đơn
                                 </a>
                             </li>
-                            <li class="list_link_item list_link_item_50">
-                                <a href="#" class="lb-xsmall lb-link">
-                                    Dữ liệu
+                            <li class="list_link_item">
+                                <a href="data_finance_accounting_invoice_list.html" class="lb-xsmall lb-link">
+                                    Danh sách hóa đơn và chi tiêu
+                                </a>
+                            </li>
+                            <li class="list_link_item">
+                                <a href="data_finance_accounting_invoice_statistical.html" class="lb-xsmall lb-link">
+                                    Thống kê tài chính
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="wrap_list_action">
-                        <a href="#" class="lb-xsmall">
-                            <span>
-                                Tạo tài khoản nội bộ
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z" fill="#6D727B" stroke="#6D727B"/>
-                                <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z" fill="#6D727B" stroke="#6D727B"/>
-                                <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="lb-xsmall">
-                            <span>
-                                Tạo tài khoản khách hàng
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z" fill="#6D727B" stroke="#6D727B"/>
-                                <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z" fill="#6D727B" stroke="#6D727B"/>
-                                <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="lb-xsmall">
-                            <span>
-                                Tạo tài khoản đối tác
-                            </span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z" fill="#6D727B" stroke="#6D727B"/>
-                                <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z" fill="#6D727B" stroke="#6D727B"/>
-                                <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"/>
-                            </svg>
-                        </a>
+                    <div class="wrap_content">
+                        <div class="wrap_form">
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Số hóa đơn
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Tên công ty
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Nhóm
+                                </div>
+                                <div class="group d-flex flex-row align-items-center">
+                                    <div class="form-check mr-32">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Nhập hóa đơn
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Xuất hóa đơn
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Ngày nhập hóa đơn
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control date" id="datepicker">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Ngày nhập hóa đơn
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control date" id="datepicker2">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Tổng số tiền
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Euro</button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">Euro</a></li>
+                                        <li><a class="dropdown-item" href="#">USD</a></li>
+                                        <li><a class="dropdown-item" href="#">VND</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group justify-content-end">
+                                <button type="button" class="lb-xsmall-primary pd-s-100 pd-e-100">Lưu</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,11 +329,15 @@
                                         <a href="#">Hỗ trợ và tư vấn</a>
                                     </li>
                                     <li>
-                                        <a href="javascript:void(0);" class="btn_change_lang dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a href="javascript:void(0);" class="btn_change_lang dropdown-toggle"
+                                           data-bs-toggle="dropdown" aria-expanded="false">
                                             Ngôn ngữ
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 24 24" fill="none">
                                                 <g clip-path="url(#clip0_6006_300)">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7073 15.7071C12.5198 15.8946 12.2655 15.9999 12.0003 15.9999C11.7352 15.9999 11.4809 15.8946 11.2933 15.7071L5.63634 10.0501C5.54083 9.95785 5.46465 9.84751 5.41224 9.7255C5.35983 9.6035 5.33225 9.47228 5.33109 9.3395C5.32994 9.20672 5.35524 9.07504 5.40552 8.95215C5.4558 8.82925 5.53006 8.7176 5.62395 8.6237C5.71784 8.52981 5.82949 8.45556 5.95239 8.40528C6.07529 8.355 6.20696 8.32969 6.33974 8.33085C6.47252 8.332 6.60374 8.35959 6.72575 8.412C6.84775 8.46441 6.9581 8.54059 7.05034 8.6361L12.0003 13.5861L16.9503 8.6361C17.1389 8.45394 17.3915 8.35315 17.6537 8.35542C17.9159 8.3577 18.1668 8.46287 18.3522 8.64828C18.5376 8.83369 18.6427 9.0845 18.645 9.3467C18.6473 9.60889 18.5465 9.8615 18.3643 10.0501L12.7073 15.7071Z" fill="#989B9F"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                          d="M12.7073 15.7071C12.5198 15.8946 12.2655 15.9999 12.0003 15.9999C11.7352 15.9999 11.4809 15.8946 11.2933 15.7071L5.63634 10.0501C5.54083 9.95785 5.46465 9.84751 5.41224 9.7255C5.35983 9.6035 5.33225 9.47228 5.33109 9.3395C5.32994 9.20672 5.35524 9.07504 5.40552 8.95215C5.4558 8.82925 5.53006 8.7176 5.62395 8.6237C5.71784 8.52981 5.82949 8.45556 5.95239 8.40528C6.07529 8.355 6.20696 8.32969 6.33974 8.33085C6.47252 8.332 6.60374 8.35959 6.72575 8.412C6.84775 8.46441 6.9581 8.54059 7.05034 8.6361L12.0003 13.5861L16.9503 8.6361C17.1389 8.45394 17.3915 8.35315 17.6537 8.35542C17.9159 8.3577 18.1668 8.46287 18.3522 8.64828C18.5376 8.83369 18.6427 9.0845 18.645 9.3467C18.6473 9.60889 18.5465 9.8615 18.3643 10.0501L12.7073 15.7071Z"
+                                                          fill="#989B9F"/>
                                                 </g>
                                                 <defs>
                                                     <clipPath id="clip0_6006_300">
@@ -369,6 +440,24 @@
 <script src="assets/js/jquery-migrate.js"></script>
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/plugincollection.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<!-- Ngôn ngữ tiếng Việt -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/vn.js"></script>
+
 <script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function (){
+        flatpickr("#datepicker", {
+            dateFormat: "d-m-Y", // Định dạng ngày
+            enableTime: false,   // Chỉ chọn ngày, không có thời gian
+            locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
+        });
+        flatpickr("#datepicker2", {
+            dateFormat: "d-m-Y", // Định dạng ngày
+            enableTime: false,   // Chỉ chọn ngày, không có thời gian
+            locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
+        });
+    });
+</script>
 </body>
 </html>

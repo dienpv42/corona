@@ -122,7 +122,7 @@
                                 </a>
                             </li>
                             <li class="list_link_item">
-                                <a href="#" class="lb-small lb-link">
+                                <a href="data_finance_accounting_invoice_add.html" class="lb-small lb-link">
                                     Tài chính và kế toán
                                 </a>
                             </li>
@@ -208,6 +208,40 @@
                                 <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"/>
                             </svg>
                         </a>
+                    </div>
+                    <div class="wrap_list_checkbox mb-32">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="productCompany1">
+                                <label class="form-check-label" for="productCompany1">
+                                    Hãng 1
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="productCompany2">
+                                <label class="form-check-label" for="productCompany2">
+                                    Hãng 2
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="productCompany3">
+                                <label class="form-check-label" for="productCompany3">
+                                    Hãng 3
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="productCompany4">
+                                <label class="form-check-label" for="productCompany5">
+                                    Hãng 4
+                                </label>
+                            </div>
+                        </div>
                     </div>
                     <div class="wrap_content">
                         <div class="wrap_table table-responsive-lg">
@@ -554,7 +588,7 @@
                         </div>
                         <div class="input-group">
                             <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">% thuế</button>
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">% thuế</button>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">7%</a></li>
                                 <li><a class="dropdown-item" href="#">19%</a></li>
@@ -572,8 +606,8 @@
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="">Save changes</button>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="lb-xsmall-primary pd-s-100 pd-e-100">Lưu</button>
             </div>
         </div>
     </div>
@@ -593,6 +627,21 @@
 <script src="assets/js/app.js"></script>
 <script>
     $(document).ready(function() {
+        $('#productTable').DataTable({
+            "paging": false,  // Không phân trang
+            "info": false,    // Ẩn phần hiển thị số bản ghi
+            "searching": false, // Ẩn phần tìm kiếm
+            "ordering": true,  // Cho phép sắp xếp
+            "order": [
+                [1, 'asc'],
+                [2, 'asc'],
+                [3, 'asc']
+            ],
+            "columnDefs": [
+                { "orderable": false, "targets": [0, 4, 5, 6, 7] },
+                { "orderable": true, "targets": [1, 2, 3] }
+            ]
+        });
         // Handle row click event
         $('#productTable tbody').on('click', '.btn-show-tr', function() {
             // Remove any existing detail rows
