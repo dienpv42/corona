@@ -180,9 +180,12 @@
                                 Tạo hóa đơn mới
                             </span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z" fill="#6D727B" stroke="#6D727B"/>
-                            <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z" fill="#6D727B" stroke="#6D727B"/>
-                            <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"/>
+                            <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z"
+                                  fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z"
+                                  fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z"
+                                  fill="#6D727B"/>
                         </svg>
                     </a>
                 </div>
@@ -209,7 +212,49 @@
                         </ul>
                     </div>
                     <div class="wrap_content">
-                        
+                        <div class="wrap_table table-responsive-lg">
+                            <table id="invoiceTable" class="table table-bordered" style="width:100%">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Số hóa đơn</th>
+                                    <th scope="col">Tên công ty</th>
+                                    <th scope="col">Nhóm</th>
+                                    <th scope="col">Ngày nhập hóa đơn</th>
+                                    <th scope="col">Hạn trả tiền</th>
+                                    <th scope="col">Tình trạng</th>
+                                    <th scope="col">Tổng số tiền</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr data-invoice-id="1">
+                                    <td>1</td>
+                                    <td>Địa chỉ</td>
+                                    <td>Nhóm 1</td>
+                                    <td>21/07/2024</td>
+                                    <td>21/07/2024</td>
+                                    <td>
+                                        <span class="text-warning">
+                                            Chưa thanh toán
+                                        </span>
+                                    </td>
+                                    <td>12345</td>
+                                </tr>
+                                <tr data-invoice-id="2">
+                                    <td>1</td>
+                                    <td>Địa chỉ</td>
+                                    <td>Nhóm 1</td>
+                                    <td>21/07/2024</td>
+                                    <td>21/07/2024</td>
+                                    <td>
+                                        <span class="text-success">
+                                            Đã thanh toán
+                                        </span>
+                                    </td>
+                                    <td>12345</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -371,23 +416,115 @@
 <script src="assets/js/jquery-migrate.js"></script>
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/plugincollection.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<!-- Ngôn ngữ tiếng Việt -->
-<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/vn.js"></script>
-
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script>
-    $(document).ready(function (){
-        flatpickr("#datepicker", {
-            dateFormat: "d-m-Y", // Định dạng ngày
-            enableTime: false,   // Chỉ chọn ngày, không có thời gian
-            locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
+    $(document).ready(function () {
+        // Initialize DataTable
+        var table = $('#invoiceTable').DataTable({
+            "paging": false,
+            "info": false,
+            "searching": false,
+            "ordering": true,
+            "order": [
+                [0, 'asc'],
+                [1, 'asc'],
+                [2, 'asc']
+            ],
+            "columnDefs": [
+                {"orderable": false, "targets": [3, 4, 5, 6]},
+                {"orderable": true, "targets": [0, 1, 2]}
+            ]
         });
-        flatpickr("#datepicker2", {
-            dateFormat: "d-m-Y", // Định dạng ngày
-            enableTime: false,   // Chỉ chọn ngày, không có thời gian
-            locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
+
+        $('#invoiceTable tbody').on('click', 'a', function (event) {
+            event.stopPropagation();
         });
+        // Handle row click event
+        $('#invoiceTable tbody').on('click', 'tr[data-invoice-id]', function () {
+            // Remove any existing detail rows
+            $('#invoiceTable tbody tr.details-row').remove();
+            $('#invoiceTable tbody tr').removeClass('selected');
+
+            // Highlight the clicked row
+            $(this).addClass('selected');
+
+            const invoiceId = $(this).data('invoice-id');
+
+            // Create a new row with both productTable and invoiceForm
+            let detailRow = `                                <tr class="details-row">
+                                    <td colspan="7">
+                                        <div class="wrap_invoice_print">
+                                            <div class="invoice-body" style="background-color: #C2C2C2">
+                                                <a href="#" class="lb-xxsmall btn-print">
+                                                    In hóa đơn
+                                                </a>
+                                                <div class="wrap">
+
+                                                </div>
+                                            </div>
+                                            <div class="invoice-action">
+                                                <ul class="nav-invoice-action">
+                                                    <li class="nav-invoice-item">
+                                                        <a href="#" class="lb-xsmall">
+                                                            Thanh toán
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-invoice-item">
+                                                        <a href="#" class="lb-xsmall dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Gửi hóa đơn
+                                                        </a>
+                                                        <ul class="dropdown-menu" style="">
+                                                            <li>
+                                                                <a href="javascript:void(0)" class="lb-btn-social">
+                                                                    <img src="assets/images/social/messenger.png" alt="" class="messenger">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0)" class="lb-btn-social">
+                                                                    <img src="assets/images/social/viper.png" alt="" class="viper">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0)" class="lb-btn-social">
+                                                                    <img src="assets/images/social/whatsapp.png" alt="" class="whatsapp">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0)" class="lb-btn-social">
+                                                                    <img src="assets/images/social/zalo.png" alt="" class="zalo">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:void(0)" class="lb-btn-social">
+                                                                    <img src="assets/images/social/gmail.png" alt="" class="gmail">
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="nav-invoice-item">
+                                                        <a href="#" class="lb-xsmall">
+                                                            Chỉnh sửa
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-invoice-item">
+                                                        <a href="#" class="lb-xsmall">
+                                                            Xóa
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+`;
+
+            // Insert the new detail row after the clicked row
+            $(this).after(detailRow);
+        });
+
     });
 </script>
 </body>

@@ -1,9 +1,9 @@
 .section_link_data{
   .wrapper{
-    padding: 56px 0;
+    padding: 48px 0 16px;
     border-bottom: 1px solid #D5D7DB;
     @media (max-width: 1441px) {
-      padding: sizeP(56) 0;
+      padding: sizeP(48) 0 sizeP(16);
       border-bottom: sizeP(1) solid #D5D7DB;
     }
     .title{
@@ -22,3 +22,20 @@
   }
 }
 
+.section_form_search{
+  margin-bottom: 32px;
+  @media (max-width: 1441px) {
+    margin-bottom: sizeP(32);
+  }
+  .wrap_content{
+    max-width: 100%;
+    width: 600px;
+    margin: 0 auto;
+    @media (max-width: 1441px) {
+      width: sizeP(600);
+    }
+    .wrap_search{
+
+    }
+  }
+}

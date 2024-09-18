@@ -28,6 +28,18 @@
     padding-right: sizeP(32);
   }
 }
+.pd-s-60{
+  padding-left: 60px;
+  @media (max-width: 1441px) {
+    padding-left: sizeP(60);
+  }
+}
+.pd-e-60{
+  padding-right: 60px;
+  @media (max-width: 1441px) {
+    padding-right: sizeP(60);
+  }
+}
 .pd-s-100{
   padding-left: 100px;
   @media (max-width: 1441px) {
@@ -53,5 +65,11 @@
   margin-bottom: 32px;
   @media (max-width: 1441px) {
     margin-bottom: sizeP(32);
+  }
+}
+.mb-48{
+  margin-bottom: 48px;
+  @media (max-width: 1441px) {
+    margin-bottom: sizeP(48);
   }
 }

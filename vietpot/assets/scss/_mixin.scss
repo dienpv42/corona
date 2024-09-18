@@ -45,6 +45,7 @@
 @function sizeP($number, $windowWidth: 1440) {
   $result: 100 * $number / $windowWidth;
   @return $result * 1vw;
+  //@return $number * 1px;
 }
 
 @function calcC($d, $number) {

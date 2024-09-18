@@ -180,9 +180,12 @@
                                 Tạo hóa đơn mới
                             </span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z" fill="#6D727B" stroke="#6D727B"/>
-                            <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z" fill="#6D727B" stroke="#6D727B"/>
-                            <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"/>
+                            <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z"
+                                  fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z"
+                                  fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z"
+                                  fill="#6D727B"/>
                         </svg>
                     </a>
                 </div>
@@ -208,8 +211,104 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="wrap_content">
 
+                    <div class="wrap_content">
+                        <div class="wrap_chart mb-48">
+                            <div class="wrap_filter_date">
+                                <div class="form-group">
+                                    <div class="form-label">
+                                        Từ
+                                    </div>
+                                    <div class="group">
+                                        <input type="text" class="form-control date" id="datepicker">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-label">
+                                        Đến
+                                    </div>
+                                    <div class="group">
+                                        <input type="text" class="form-control date" id="datepicker2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap_list_link_lb">
+                                <ul class="list_link_lb">
+                                    <li class="list_link_item">
+                                        <a href="#" class="lb-xsmall lb-link">
+                                            Tháng hiện tại
+                                        </a>
+                                    </li>
+                                    <li class="list_link_item">
+                                        <a href="#" class="lb-xsmall lb-link">
+                                            Tháng trước
+                                        </a>
+                                    </li>
+                                    <li class="list_link_item">
+                                        <a href="#" class="lb-xsmall lb-link">
+                                            Quý hiện tại
+                                        </a>
+                                    </li>
+                                    <li class="list_link_item">
+                                        <a href="#" class="lb-xsmall lb-link active">
+                                            Năm nay
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div id="chart"></div>
+                        </div>
+                        <div class="wrap_table table-responsive-lg">
+                            <table id="dataTable" class="table table-bordered" style="width:100%">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Cột 1</th>
+                                    <th scope="col">Cột 2</th>
+                                    <th scope="col">Cột 3</th>
+                                    <th scope="col">Cột 4</th>
+                                    <th scope="col">Cột 5</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr data-id="1">
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr data-id="1">
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr data-id="1">
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr data-id="1">
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr data-id="1">
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,7 +473,10 @@
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <!-- Ngôn ngữ tiếng Việt -->
 <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/vn.js"></script>
-
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script>
     $(document).ready(function (){
@@ -388,6 +490,150 @@
             enableTime: false,   // Chỉ chọn ngày, không có thời gian
             locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
         });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        // Initialize DataTable
+        var table = $('#dataTable').DataTable({
+            "paging": false,
+            "info": false,
+            "searching": false,
+            "ordering": true,
+            "order": [
+                [0, 'asc'],
+                [1, 'asc'],
+                [2, 'asc']
+            ],
+            "columnDefs": [
+                {"orderable": false, "targets": [3, 4]},
+                {"orderable": true, "targets": [0, 1, 2]}
+            ]
+        });
+
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        // Dữ liệu của biểu đồ
+        var chartData = [
+            {x: '1/2023', y: 10},
+            {x: '2/2023', y: 30},
+            {x: '3/2023', y: 20},
+            {x: '4/2023', y: 50},
+            {x: '5/2023', y: 15},
+            {x: '6/2023', y: 100},
+            {x: '7/2023', y: 30}
+        ];
+        const dataLabels = {
+            enabled: false,
+            style: {
+                colors: ['#E6332A'], // Thay đổi màu của data label thành đỏ
+                background: {
+                    borderRadius: 20,
+                    color: '#E6332A',
+                    borderColor: '#E6332A',
+                    borderWidth: 1,
+                    opacity: 1,
+                },
+                fontSize: '12px',
+                fontFamily: 'SVN-Gilroy, sans-serif',
+                fontWeight: 500,
+                textAnchor: 'center',
+            },
+            background: {
+                enabled: true,
+                padding: 5,
+                borderRadius: 6,
+                borderWidth: 1,
+                opacity: 0.9,
+            },
+            dropShadow: {
+                enabled: false,
+                top: 1,
+                left: 1,
+                blur: 1,
+                opacity: 0.45,
+                color: '#000'
+            },
+            shape: 'circle',
+        };
+        // Cấu hình biểu đồ 1
+        const options = {
+            colors: ['#EDEDED'],
+            series: [{
+                name: "Thống kê",
+                data: chartData
+            }],
+            chart: {
+                type: 'area',
+                stacked: false,
+                height: 500,
+                toolbar: false,
+            },
+            markers: {
+                colors: ['#E6332A'],
+                size: 8,
+                hover: {
+                    size: 9,
+                }
+            },
+            grid: {
+                show: false, // ẩn tất cả các đường line ngang
+                strokeDashArray: 0
+            },
+            dataLabels: dataLabels,
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shadeIntensity: 1,
+                    inverseColors: false,
+                    opacityFrom: 0,
+                    opacityTo: 0,
+                    stops: [20, 100, 100, 100]
+                },
+            },
+            stroke: {
+                width: 2,
+                curve: 'straight',
+                color: '#fff'
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SVN-Gilroy, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Dung lượng',
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'SVN-Gilroy, sans-serif',
+                        fontWeight: 700,
+                    },
+                },
+            },
+            tooltip: {
+                followCursor: true,
+                custom: function ({series, seriesIndex, dataPointIndex, w}) {
+                    let title = w.globals.initialSeries[seriesIndex].name;
+                    let time = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
+                    let amount = w.globals.initialSeries[seriesIndex].data[dataPointIndex].y;
+                    return `<div class="wrap_tooltip">
+                                <div class="title d-flex flex-row align-items-center">
+                                    ${title}: ${time}
+                                </div>
+                                <div class="record">
+                                    <b>${amount}</b>
+                                </div>
+                            </div>`;
+                }
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
     });
 </script>
 </body>

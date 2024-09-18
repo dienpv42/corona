@@ -411,7 +411,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="wrap_table table-responsive-lg">
+                    <div class="wrap_table table-scroll table-responsive-lg">
                         <table id="invoiceTable" class="table">
                             <thead>
                             <tr>
@@ -699,7 +699,7 @@
                 { name: "Sản phẩm 4", code: "SP004", unit: "Cái", capacity: 10, quantity: 8, priceBefore: 3000, priceAfter: 3300 }
             ]
         };
-        $('#productTable tbody').on('click', 'a', function(event) {
+        $('#invoiceTable tbody').on('click', 'a', function(event) {
             event.stopPropagation();
         });
         // Handle row click event

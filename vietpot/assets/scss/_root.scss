@@ -14,7 +14,7 @@
   border-radius: 12px;
   border: 1px solid #AFB5B9;
   background: #FFF;
-  color: #6D727B;
+  color: $--gray;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.15;
@@ -26,11 +26,11 @@
     font-size: sizeP(14);
   }
   &:hover{
-    border: 1px solid #2196F3;
+    border: 1px solid $--primary;
     background-color: #fff;
-    color: #2196F3;
+    color: $--primary;
     @media (max-width: 1441px) {
-      border: sizeP(1) solid #2196F3;
+      border: sizeP(1) solid $--primary;
     }
   }
 }
@@ -49,9 +49,9 @@
   padding: 16px 32px;
   font-size: 16px;
   border-radius: 16px;
-  background: #2196F3;
+  background: $--primary;
   color: #fff;
-  border-color: #2196F3;
+  border-color: $--primary;
   @media (max-width: 1440px) {
     padding: sizeP(16) sizeP(32);
     font-size: sizeP(16);
@@ -247,19 +247,19 @@
     height: 12px;
     margin-right: 16px;
     background-color: #fff;
-    border: 1px solid #2196F3;
+    border: 1px solid $--primary;
     transition: all .3s;
     @media (max-width: 1441px) {
       width: sizeP(12);
       height: sizeP(12);
       margin-right: sizeP(16);
-      border: sizeP(1) solid #2196F3;
+      border: sizeP(1) solid $--primary;
     }
     &:last-child{
       margin-right: 0;
     }
     &.swiper-pagination-bullet-active{
-      background-color: #2196F3;
+      background-color: $--primary;
     }
   }
 }
