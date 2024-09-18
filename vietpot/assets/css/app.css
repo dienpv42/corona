@@ -1089,6 +1089,10 @@ input {
   max-width: unset;
   flex: 1;
 }
+.wrap_list_link_lb .list_link_lb .list_link_item.list_link_item_33 {
+  flex: 1 1 33%;
+  max-width: 33%;
+}
 
 .wrap_list_link_text {
   margin-bottom: 32px;

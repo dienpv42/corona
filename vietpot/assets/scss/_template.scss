@@ -619,6 +619,10 @@
         max-width: unset;
         flex: 1;
       }
+      &.list_link_item_33{
+        flex: 1 1 33%;
+        max-width: 33%;
+      }
     }
   }
 }
