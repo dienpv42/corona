@@ -217,23 +217,6 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr data-order-id="1">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                </tr>
                                 <tr class="selected" data-order-id="2">
                                     <td>
                                         27/07/2024
@@ -443,7 +426,7 @@
                                                                 <ul class="dropdown-menu">
                                                                     <li><a class="dropdown-item" href="data_order_add.html">Bổ sung thêm hàng</a></li>
                                                                     <li><a class="dropdown-item" href="data_order_split.html">Tách đơn</a></li>
-                                                                 </ul>
+                                                                </ul>
                                                             </div>
                                                             <div class="w_tr_action">
                                                                 <a href="javascript:void(0);" class="lb-xsmall dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">Xác nhận đơn</a>
@@ -502,6 +485,185 @@
                                                             </div>
                                                             <a href="javascript:void(0);" class="lb-xsmall pd-s-100 pd-e-100">Gửi hóa đơn</a>
                                                         </div>
+                                                        <div class="wrap_table_split">
+
+                                                            <div class="wrap_table_detail wrap_table_detail_bd">
+                                                                <div class="wrap_select_cate">
+                                                                    <div class="group d-flex flex-row align-items-center">
+                                                                        <div class="form-label">
+                                                                            Số lượng đơn cần tách
+                                                                        </div>
+                                                                        <div class="form-check mr-32">
+                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                                                2x đơn
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check mr-32">
+                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
+                                                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                                                3x đơn
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked="">
+                                                                            <label class="form-check-label" for="flexRadioDefault3">
+                                                                                4x đơn
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                    <tr data-order-detail-product-id="1">
+                                                                        <td>
+                                                                            <a href="javascript:void(0)" class="lb-icon-bd dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                                    <path d="M3.05938 6.64994C3.06914 6.64994 3.07675 6.6517 3.08257 6.65405C3.08793 6.6562 3.09489 6.66006 3.10332 6.66849L7.99332 11.5585C8.54858 12.1138 9.45017 12.1138 10.0054 11.5585L14.8954 6.66849C14.9049 6.65905 14.9196 6.65182 14.9394 6.65182C14.9592 6.65182 14.9739 6.65905 14.9833 6.66849C14.9928 6.67794 15 6.69263 15 6.71244C15 6.73225 14.9928 6.74694 14.9833 6.75639L10.0933 11.6464C9.49475 12.245 8.51313 12.2476 7.90453 11.6455C7.90427 11.6452 7.90402 11.645 7.90376 11.6447L3.01543 6.75639C3.00598 6.74694 2.99875 6.73225 2.99875 6.71244C2.99875 6.69578 3.00387 6.68273 3.01112 6.67339C3.03745 6.65181 3.05724 6.64994 3.05938 6.64994Z" fill="#292D32" stroke="#6D727B"/>
+                                                                                </svg>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu" style="">
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 1
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 2
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 3
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 4
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                        <td>Bia hà nội</td>
+                                                                        <td>SDASSA</td>
+                                                                        <td>
+                                                                            20/1
+                                                                        </td>
+                                                                        <td>350ml</td>
+                                                                        <td>1500.000 đ</td>
+                                                                        <td>1500.000 đ</td>
+                                                                        <td>20</td>
+                                                                        <td class="td-quantity-control">
+                                                                            <div class="input-group quantity-control">
+                                                                                <button class="btn btn-outline-secondary btn-decrement" type="button">−</button>
+                                                                                <input type="text" class="form-control text-center quantity-input" value="1" readonly>
+                                                                                <button class="btn btn-outline-secondary btn-increment" type="button">+</button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr data-order-detail-product-id="1">
+                                                                        <td>
+                                                                            <a href="javascript:void(0)" class="lb-icon-bd dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                                    <path d="M3.05938 6.64994C3.06914 6.64994 3.07675 6.6517 3.08257 6.65405C3.08793 6.6562 3.09489 6.66006 3.10332 6.66849L7.99332 11.5585C8.54858 12.1138 9.45017 12.1138 10.0054 11.5585L14.8954 6.66849C14.9049 6.65905 14.9196 6.65182 14.9394 6.65182C14.9592 6.65182 14.9739 6.65905 14.9833 6.66849C14.9928 6.67794 15 6.69263 15 6.71244C15 6.73225 14.9928 6.74694 14.9833 6.75639L10.0933 11.6464C9.49475 12.245 8.51313 12.2476 7.90453 11.6455C7.90427 11.6452 7.90402 11.645 7.90376 11.6447L3.01543 6.75639C3.00598 6.74694 2.99875 6.73225 2.99875 6.71244C2.99875 6.69578 3.00387 6.68273 3.01112 6.67339C3.03745 6.65181 3.05724 6.64994 3.05938 6.64994Z" fill="#292D32" stroke="#6D727B"/>
+                                                                                </svg>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu" style="">
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 1
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 2
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 3
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 4
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                        <td>Bia hà nội</td>
+                                                                        <td>SDASSA</td>
+                                                                        <td>
+                                                                            20/1
+                                                                        </td>
+                                                                        <td>350ml</td>
+                                                                        <td>1500.000 đ</td>
+                                                                        <td>1500.000 đ</td>
+                                                                        <td>20</td>
+                                                                        <td class="td-quantity-control">
+                                                                            <div class="input-group quantity-control">
+                                                                                <button class="btn btn-outline-secondary btn-decrement" type="button">−</button>
+                                                                                <input type="text" class="form-control text-center quantity-input" value="1" readonly>
+                                                                                <button class="btn btn-outline-secondary btn-increment" type="button">+</button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr data-order-detail-product-id="1">
+                                                                        <td>
+                                                                            <a href="javascript:void(0)" class="lb-icon-bd dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                                                                    <path d="M3.05938 6.64994C3.06914 6.64994 3.07675 6.6517 3.08257 6.65405C3.08793 6.6562 3.09489 6.66006 3.10332 6.66849L7.99332 11.5585C8.54858 12.1138 9.45017 12.1138 10.0054 11.5585L14.8954 6.66849C14.9049 6.65905 14.9196 6.65182 14.9394 6.65182C14.9592 6.65182 14.9739 6.65905 14.9833 6.66849C14.9928 6.67794 15 6.69263 15 6.71244C15 6.73225 14.9928 6.74694 14.9833 6.75639L10.0933 11.6464C9.49475 12.245 8.51313 12.2476 7.90453 11.6455C7.90427 11.6452 7.90402 11.645 7.90376 11.6447L3.01543 6.75639C3.00598 6.74694 2.99875 6.73225 2.99875 6.71244C2.99875 6.69578 3.00387 6.68273 3.01112 6.67339C3.03745 6.65181 3.05724 6.64994 3.05938 6.64994Z" fill="#292D32" stroke="#6D727B"/>
+                                                                                </svg>
+                                                                            </a>
+                                                                            <ul class="dropdown-menu" style="">
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 1
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 2
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 3
+                                                                                    </a>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a class="dropdown-item" href="#">
+                                                                                        Đơn 4
+                                                                                    </a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                        <td>Bia hà nội</td>
+                                                                        <td>SDASSA</td>
+                                                                        <td>
+                                                                            20/1
+                                                                        </td>
+                                                                        <td>350ml</td>
+                                                                        <td>1500.000 đ</td>
+                                                                        <td>1500.000 đ</td>
+                                                                        <td>20</td>
+                                                                        <td class="td-quantity-control">
+                                                                            <div class="input-group quantity-control">
+                                                                                <button class="btn btn-outline-secondary btn-decrement" type="button">−</button>
+                                                                                <input type="text" class="form-control text-center quantity-input" value="1" readonly>
+                                                                                <button class="btn btn-outline-secondary btn-increment" type="button">+</button>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="wrap_action text-end">
+                                                                <a href="#" class="lb-xxsmall-primary pd-e-32 pd-s-32">OK</a>
+                                                            </div>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr data-order-detail-id="2">
@@ -547,142 +709,6 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                    </td>
-                                </tr>
-                                <tr data-order-id="3">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                </tr>
-                                <tr data-order-id="4">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                </tr>
-                                <tr data-order-id="5">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                </tr>
-                                <tr data-order-id="6">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                </tr>
-                                <tr data-order-id="7">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                </tr>
-                                <tr data-order-id="8">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                </tr>
-                                <tr data-order-id="9">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                </tr>
-                                <tr data-order-id="10">
-                                    <td>
-                                        27/07/2024
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        Tiền
-                                    </td>
-                                    <td>
-                                        SL
-                                    </td>
-                                    <td>
-                                        SL
                                     </td>
                                 </tr>
                                 </tbody>

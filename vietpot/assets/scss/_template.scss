@@ -605,11 +605,39 @@
   }
 }
 .lb-icon{
+  &.dropdown-toggle{
+    &::after{
+      display: none;
+    }
+  }
   img,svg{
     width: 32px;
     height: auto;
     @media (max-width: 1441px) {
       width: sizeP(32);
+    }
+  }
+}
+.lb-icon-bd{
+  padding: 3px !important;
+  display: flex;
+  width: min-content;
+  border-radius: 4px;
+  border: 1px solid #AFB5B9;
+  background: #FFF;
+  &.dropdown-toggle::after{
+    display: none;
+  }
+  @media (max-width: 1441px) {
+    padding: size(3) !important;
+    border-radius: size(4);
+    border: size(1) solid #AFB5B9;
+  }
+  img,svg{
+    width: 18px;
+    height: auto;
+    @media (max-width: 1441px) {
+      width: sizeP(18);
     }
   }
 }
