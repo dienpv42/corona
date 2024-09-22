@@ -5913,7 +5913,7 @@
                 gap: sizeP(80);
               }
               @media (max-width: 991px) {
-                width: size(100);
+                width: 24vw;
                 flex-direction: column;
                 gap: size(12);
               }
@@ -5933,7 +5933,27 @@
             }
             .info{
               width: auto;
-              flex: 1;
+              @media (max-width: 991px) {
+                flex: 1;
+              }
+              .row{
+                margin: 0 -12px;
+                @media (max-width: 1921px) {
+                  margin: 0 sizeP(12)*-1;
+                }
+                @media (max-width: 991px) {
+                  margin: 0;
+                }
+                >*{
+                  padding: 0 12px;
+                  @media (max-width: 1921px) {
+                    padding: 0 sizeP(12);
+                  }
+                  @media (max-width: 991px) {
+                    padding: 0;
+                  }
+                }
+              }
             }
           }
         }
