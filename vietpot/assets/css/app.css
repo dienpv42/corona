@@ -2514,7 +2514,20 @@ input {
   .wrap_form_modal .form-group .group .text-data, .wrap_form_modal .form-group .input-group .text-data {
     font-size: 1.3888888889vw;
     line-height: 1.3888888889vw; /* 125% */
-    min-height: 1.2;
+    min-height: 2.9166666667vw;
+  }
+}
+.wrap_form_modal .form-group .group .input-group, .wrap_form_modal .form-group .input-group .input-group {
+  width: 100%;
+}
+.wrap_form_modal .form-group .group .input-group .input-group-text, .wrap_form_modal .form-group .input-group .input-group .input-group-text {
+  border: 1px solid #989B9F;
+  border-radius: 16px;
+}
+@media (max-width: 1440px) {
+  .wrap_form_modal .form-group .group .input-group .input-group-text, .wrap_form_modal .form-group .input-group .input-group .input-group-text {
+    border-radius: 1.1111111111vw;
+    border: 0.0694444444vw solid #989B9F;
   }
 }
 

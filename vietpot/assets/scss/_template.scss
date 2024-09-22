@@ -1918,7 +1918,18 @@
         @media (max-width: 1440px) {
           font-size: sizeP(20);
           line-height: sizeP(20); /* 125% */
-          min-height: 1.2;
+          min-height: sizeP(42);
+        }
+      }
+      .input-group{
+        width: 100%;
+        .input-group-text{
+          border: 1px solid #989B9F;
+          border-radius: 16px;
+          @media (max-width: 1440px) {
+            border-radius: sizeP(16);
+            border: sizeP(1) solid #989B9F;
+          }
         }
       }
 

@@ -759,8 +759,8 @@
 
           .number {
             position: absolute;
-            background-color: #94C459;
-            color: #bfde99;
+            background-color: #f7931d;
+            color: #f7931d;
             font-size: 1px;
             display: flex;
             top: -3px;
@@ -1732,15 +1732,16 @@
     }
 
     .wrap_content {
-      width: 1500px;
+      padding: 0 56px;
       min-height: 80px;
       margin: auto;
       max-width: 100%;
       @media (max-width: 1921px) {
-        width: sizeP(1500);
+        padding: 0 sizeP(56);
         min-height: sizeP(80);
       }
       @media (max-width: 991px) {
+        padding: unset;
         width: max-content;
         max-width: unset;
         min-height: unset;
@@ -3585,15 +3586,15 @@
         margin-bottom: size(13);
       }
       .form-group {
-        width: calc(100% - 104px);
+        width: calc(100% - 180px);
         display: flex;
         align-items: center;
         padding: 30px 15px;
         border: 1px solid #9D9D9C;
         border-radius: 12px;
         @media (max-width: 1921px) {
-          $s104vw: sizeP(104);
-          width: calc(100% - $s104vw);
+          $s180vw: sizeP(180);
+          width: calc(100% - $s180vw);
           padding: sizeP(30) sizeP(15);
           border: sizeP(1) solid #9D9D9C;
           border-radius: sizeP(12);
@@ -3636,13 +3637,13 @@
         .form-control {
           padding: 0 15px;
           border: 0;
-          font-size: 17px;
+          font-size: 18px;
           font-weight: 400;
           text-align: center;
           color: #575756;
           @media (max-width: 1921px) {
             padding: 0 sizeP(15);
-            font-size: sizeP(17);
+            font-size: sizeP(18);
           }
           @media (max-width: 991px) {
             padding: 0 size(15);
@@ -3657,7 +3658,7 @@
       }
 
       .btn_add_cart {
-        width: 88px;
+        width: 164px;
         height: 87.5px;
         display: flex;
         flex-direction: column;
@@ -3665,16 +3666,16 @@
         justify-content: center;
         border: 1px solid #9D9D9C;
         border-radius: 12px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 400;
         color: #5E6D7B;
         transition: all .3s;
         @media (max-width: 1921px) {
-          width: sizeP(88);
+          width: sizeP(164);
           height: sizeP(87.5);
           border: sizeP(1) solid #9D9D9C;
           border-radius: sizeP(12);
-          font-size: sizeP(14);
+          font-size: sizeP(16);
         }
         @media (max-width: 991px) {
           width: size(52);
@@ -5396,8 +5397,8 @@
       max-width: sizeP(1500);
     }
     @media (max-width: 991px) {
-
     }
+
   }
 
   .wrap_products {
@@ -5880,6 +5881,63 @@
         }
       }
     }
+  }
+
+  &.section_cart_wishlist{
+    .wrap_products{
+        max-width: 1662px;
+        @media (max-width: 1921px) {
+          max-width: sizeP(1662);
+        }
+        .w_list{
+          .item{
+            padding-left: 70px;
+            padding-right: 70px;
+            gap: 32px;
+            @media (max-width: 1921px) {
+              padding-left: sizeP(70);
+              padding-right: sizeP(70);
+              gap: sizeP(32);
+            }
+            @media (max-width: 991px) {
+              padding-left: 0;
+              padding-right: 0;
+              gap: size(12);
+            }
+            .wrap_image{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 80px;
+              @media (max-width: 1921px) {
+                gap: sizeP(80);
+              }
+              @media (max-width: 991px) {
+                width: size(100);
+                flex-direction: column;
+                gap: size(12);
+              }
+              .action{
+                width: 100px;
+                @media (max-width: 1921px) {
+                  width: sizeP(100);
+                }
+                @media (max-width: 991px) {
+                  gap: size(12);
+                  width: 100%;
+                }
+              }
+              .image{
+                margin: 0;
+              }
+            }
+            .info{
+              width: auto;
+              flex: 1;
+            }
+          }
+        }
+      }
   }
 }
 
@@ -6466,6 +6524,7 @@
       .image{
         height: 162px;
         margin-bottom: 8px;
+        border: 0;
         @media (max-width: 1921px) {
           height: sizeP(162);
           margin-bottom: sizeP(8);

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/toastr.min.css">
+
     <script>
         var timestamp = new Date().getTime();
         document.write('<link rel="stylesheet" href="assets/css/app.css?v=' + timestamp + '">');
@@ -3714,6 +3716,7 @@
     </div>
 
 </footer>
+<a href="javascript:void(0)" class="test">Tesssssssss</a>
 <div class="bg_backgdrop">
 </div>
 
@@ -3799,13 +3802,19 @@
 <script src="assets/js/jquery-migrate.js"></script>
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/plugincollection.js"></script>
+<script src="assets/js/toastr.min.js"></script>
 <script src="assets/js/init.js"></script>
 <script>
     document.write('<script src="assets/js/app.js?v=' + timestamp + '"><\/script>');
 </script>
 <script>
+    $(document).on('click', '.test', function (){
+        init.showNoty('Bạn đang quan tâm đến sản phẩm này!', 'success');
+
+    });
     $(document).ready(function (){
-        $('#notyModalError').modal('show');
+
+        // $('#notyModalError').modal('show');
     })
 </script>
 </body>

@@ -101,6 +101,60 @@ input {
   font-family: "Bahnschrift";
   src: url("../fonts/BAHNSCHRIFT.TTF");
 }
+.lb-text-danger {
+  display: inline-block;
+  padding: 4px 8px;
+  color: #FFF;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 8px;
+  background: #DA2462;
+}
+@media (max-width: 1921px) {
+  .lb-text-danger {
+    padding: 0.2083333333vw 0.4166666667vw;
+    font-size: 0.6770833333vw;
+    border-radius: 0.4166666667vw;
+  }
+}
+@media (max-width: 991px) {
+  .lb-text-danger {
+    padding: 1.0666666667vw 2.1333333333vw;
+    font-size: 3.4666666667vw;
+    border-radius: 2.1333333333vw;
+  }
+}
+
+.lb-default {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 8px;
+  border: 2px solid #F7941D;
+  background: #6FBE44;
+  color: #FFF;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 120%;
+}
+@media (max-width: 1921px) {
+  .lb-default {
+    padding: 0.5208333333vw 1.6666666667vw;
+    border-radius: 0.4166666667vw;
+    border: 0.1041666667vw solid #F7941D;
+    font-size: 1.4583333333vw;
+  }
+}
+@media (max-width: 991px) {
+  .lb-default {
+    padding: 1.3333333333vw 3.2vw;
+    border-radius: 2.1333333333vw;
+    border: 0.2666666667vw solid #F7941D;
+    font-size: 3.4666666667vw;
+  }
+}
+
 :root {
   --star-size: 20px;
   --star-color: #d1d1d1;
@@ -1283,8 +1337,8 @@ input {
 }
 .bl_home .header .header_top .wrap_other .cart .number {
   position: absolute;
-  background-color: #94C459;
-  color: #bfde99;
+  background-color: #f7931d;
+  color: #f7931d;
   font-size: 1px;
   display: flex;
   top: -3px;
@@ -2250,19 +2304,20 @@ input {
   }
 }
 .section.section_other .wrap_content {
-  width: 1500px;
+  padding: 0 56px;
   min-height: 80px;
   margin: auto;
   max-width: 100%;
 }
 @media (max-width: 1921px) {
   .section.section_other .wrap_content {
-    width: 78.125vw;
+    padding: 0 2.9166666667vw;
     min-height: 4.1666666667vw;
   }
 }
 @media (max-width: 991px) {
   .section.section_other .wrap_content {
+    padding: unset;
     width: max-content;
     max-width: unset;
     min-height: unset;
@@ -4356,7 +4411,7 @@ input {
   }
 }
 .section_product_detail .wrap_info_detail .w_number .form-group {
-  width: calc(100% - 104px);
+  width: calc(100% - 180px);
   display: flex;
   align-items: center;
   padding: 30px 15px;
@@ -4365,7 +4420,7 @@ input {
 }
 @media (max-width: 1921px) {
   .section_product_detail .wrap_info_detail .w_number .form-group {
-    width: calc(100% - 5.4166666667vw);
+    width: calc(100% - 9.375vw);
     padding: 1.5625vw 0.78125vw;
     border: 0.0520833333vw solid #9D9D9C;
     border-radius: 0.625vw;
@@ -4415,7 +4470,7 @@ input {
 .section_product_detail .wrap_info_detail .w_number .form-group .form-control {
   padding: 0 15px;
   border: 0;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
   color: #575756;
@@ -4423,7 +4478,7 @@ input {
 @media (max-width: 1921px) {
   .section_product_detail .wrap_info_detail .w_number .form-group .form-control {
     padding: 0 0.78125vw;
-    font-size: 0.8854166667vw;
+    font-size: 0.9375vw;
   }
 }
 @media (max-width: 991px) {
@@ -4437,7 +4492,7 @@ input {
   box-shadow: unset;
 }
 .section_product_detail .wrap_info_detail .w_number .btn_add_cart {
-  width: 88px;
+  width: 164px;
   height: 87.5px;
   display: flex;
   flex-direction: column;
@@ -4445,18 +4500,18 @@ input {
   justify-content: center;
   border: 1px solid #9D9D9C;
   border-radius: 12px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #5E6D7B;
   transition: all 0.3s;
 }
 @media (max-width: 1921px) {
   .section_product_detail .wrap_info_detail .w_number .btn_add_cart {
-    width: 4.5833333333vw;
+    width: 8.5416666667vw;
     height: 4.5572916667vw;
     border: 0.0520833333vw solid #9D9D9C;
     border-radius: 0.625vw;
-    font-size: 0.7291666667vw;
+    font-size: 0.8333333333vw;
   }
 }
 @media (max-width: 991px) {
@@ -6890,6 +6945,72 @@ input {
 .section_cart .wrap_products .w_link_another .nav .nav-item .nav-link:hover {
   color: #F39200;
 }
+.section_cart.section_cart_wishlist .wrap_products {
+  max-width: 1662px;
+}
+@media (max-width: 1921px) {
+  .section_cart.section_cart_wishlist .wrap_products {
+    max-width: 86.5625vw;
+  }
+}
+.section_cart.section_cart_wishlist .wrap_products .w_list .item {
+  padding-left: 70px;
+  padding-right: 70px;
+  gap: 32px;
+}
+@media (max-width: 1921px) {
+  .section_cart.section_cart_wishlist .wrap_products .w_list .item {
+    padding-left: 3.6458333333vw;
+    padding-right: 3.6458333333vw;
+    gap: 1.6666666667vw;
+  }
+}
+@media (max-width: 991px) {
+  .section_cart.section_cart_wishlist .wrap_products .w_list .item {
+    padding-left: 0;
+    padding-right: 0;
+    gap: 3.2vw;
+  }
+}
+.section_cart.section_cart_wishlist .wrap_products .w_list .item .wrap_image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+@media (max-width: 1921px) {
+  .section_cart.section_cart_wishlist .wrap_products .w_list .item .wrap_image {
+    gap: 4.1666666667vw;
+  }
+}
+@media (max-width: 991px) {
+  .section_cart.section_cart_wishlist .wrap_products .w_list .item .wrap_image {
+    width: 26.6666666667vw;
+    flex-direction: column;
+    gap: 3.2vw;
+  }
+}
+.section_cart.section_cart_wishlist .wrap_products .w_list .item .wrap_image .action {
+  width: 100px;
+}
+@media (max-width: 1921px) {
+  .section_cart.section_cart_wishlist .wrap_products .w_list .item .wrap_image .action {
+    width: 5.2083333333vw;
+  }
+}
+@media (max-width: 991px) {
+  .section_cart.section_cart_wishlist .wrap_products .w_list .item .wrap_image .action {
+    gap: 3.2vw;
+    width: 100%;
+  }
+}
+.section_cart.section_cart_wishlist .wrap_products .w_list .item .wrap_image .image {
+  margin: 0;
+}
+.section_cart.section_cart_wishlist .wrap_products .w_list .item .info {
+  width: auto;
+  flex: 1;
+}
 
 .section_track_order_info {
   border-bottom: 5px solid #9D9D9C;
@@ -7555,6 +7676,7 @@ input {
 .section_side_d .swiper-slide .item_product .image {
   height: 162px;
   margin-bottom: 8px;
+  border: 0;
 }
 @media (max-width: 1921px) {
   .section_side_d .swiper-slide .item_product .image {
