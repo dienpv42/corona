@@ -993,6 +993,42 @@
           }
         }
       }
+      .wrap_sidebar_list_menu{
+        .list_menu_item{
+          padding: 16px 0;
+          border-bottom: 1px solid #CDCDCD;
+          &:last-child{
+            border-bottom: 0;
+          }
+          .wrap_title{
+
+          }
+          .content{
+            padding-left: 16px;
+            margin-top: 16px;
+            .list_group{
+              .title{
+
+              }
+              .list{
+                padding: 8px 0 8px 16px;
+                border-bottom: 1px solid #CDCDCD;
+                &:last-child{
+                  border-bottom: 0;
+                }
+                ul{
+                  li{
+                    margin-bottom: 8px;
+                    a{
+
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     .w_content {
@@ -2698,6 +2734,7 @@
           background-color: #fff;
         }
       }
+
     }
 
     &.main_reverse{

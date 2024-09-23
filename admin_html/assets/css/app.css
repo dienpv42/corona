@@ -301,6 +301,144 @@ input {
   }
 }
 
+.section_form_login {
+  padding: 80px 0;
+}
+.section_form_login hr {
+  border-radius: 16px;
+  max-width: 230px;
+  margin: 52px auto 52px;
+  border-top: 5px solid #D5D7DB;
+}
+.section_form_login .card_forms {
+  width: 735px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.section_form_login .card_forms {
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  margin-bottom: 40px;
+}
+.section_form_login .card_forms:last-child {
+  margin-bottom: 0;
+}
+.section_form_login .card_forms .card_logo {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section_form_login .card_forms .card_logo img {
+  height: 84px;
+}
+.section_form_login .card_forms .card_title {
+  color: #6D727B;
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 48px;
+}
+.section_form_login .card_forms .card_label, .section_form_login .card_forms .lb-small {
+  padding: 20px 32px;
+  border-radius: 16px;
+  border-radius: 16px;
+  border: 2px solid #F7941D;
+  background: #6FBE44;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+.section_form_login .card_forms .lb-small {
+  display: inline-block;
+  width: 100%;
+}
+.section_form_login .card_forms .card_form .form-group {
+  margin-bottom: 24px;
+}
+.section_form_login .card_forms .card_form .form-group .form-label {
+  color: #6D727B;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.section_form_login .card_forms .card_form .form-group .form-control {
+  color: #6D727B;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 50px;
+  border-radius: 16px;
+  border: 1px solid var(--gray3, #989B9F);
+  background: #FFF;
+  padding: 14px 24px;
+}
+.section_form_login .card_forms .card_form .form-group .text-forgot {
+  display: inline-block;
+  padding-top: 12px;
+  color: #4CAF50;
+  font-size: 16px;
+  font-weight: 400;
+}
+.section_form_login .card_forms .card_form .form-group.m-end {
+  margin-top: 50px;
+}
+.section_form_login .card_forms .wrap_btn_full .btn {
+  width: 100%;
+  text-align: center;
+}
+.section_form_login .lb-small-success {
+  border: 0;
+  margin-top: 30px;
+  padding: 16px 50px;
+  display: inline-block;
+  border-radius: 16px;
+  background: var(--orange, #F7941D);
+  color: var(--white, #FFF);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%; /* 24px */
+}
+
+.section_config_order .list-group .list-group-item {
+  border: 0;
+  gap: 16px;
+}
+.section_config_order .list-group .list-group-item .form-check {
+  width: 58px;
+}
+.section_config_order .list-group .list-group-item .wrap {
+  border-radius: 8px;
+  background: #F7F7F7;
+  padding: 8px 32px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.section_config_order .list-group .list-group-item .wrap .name, .section_config_order .list-group .list-group-item .wrap .cate {
+  flex: 1;
+}
+.section_config_order .list-group .list-group-item .wrap .number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #6FBE44;
+  color: #FFF;
+  text-align: center;
+  font-weight: 700;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section_config_order .list-group .list-group-item .btn-sortable:hover svg path {
+  fill: #f39200;
+}
+
 .bl_admin {
   background-color: #F2F2F2;
   color: #525251;
@@ -1175,6 +1313,27 @@ input {
   pointer-events: none;
   background-color: #E6332A;
   border-color: #E6332A;
+}
+.bl_admin .main .w_sidebar .wrap_sidebar_list_menu .list_menu_item {
+  padding: 16px 0;
+  border-bottom: 1px solid #CDCDCD;
+}
+.bl_admin .main .w_sidebar .wrap_sidebar_list_menu .list_menu_item:last-child {
+  border-bottom: 0;
+}
+.bl_admin .main .w_sidebar .wrap_sidebar_list_menu .list_menu_item .content {
+  padding-left: 16px;
+  margin-top: 16px;
+}
+.bl_admin .main .w_sidebar .wrap_sidebar_list_menu .list_menu_item .content .list_group .list {
+  padding: 8px 0 8px 16px;
+  border-bottom: 1px solid #CDCDCD;
+}
+.bl_admin .main .w_sidebar .wrap_sidebar_list_menu .list_menu_item .content .list_group .list:last-child {
+  border-bottom: 0;
+}
+.bl_admin .main .w_sidebar .wrap_sidebar_list_menu .list_menu_item .content .list_group .list ul li {
+  margin-bottom: 8px;
 }
 .bl_admin .main .w_content {
   width: calc(100% - 245px);
