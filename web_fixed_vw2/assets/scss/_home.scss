@@ -4321,6 +4321,111 @@
   }
 }
 
+.section_page_custom{
+  padding: 20px 0;
+  @media (max-width: 1921px) {
+    padding: sizeP(20) 0;
+  }
+  @media (max-width: 991px) {
+    padding: size(20) size(16);
+  }
+  .section_title_page{
+    margin-bottom: 32px;
+    @media (max-width: 1921px) {
+      margin-bottom: sizeP(32);
+    }
+    @media (max-width: 991px) {
+      margin-bottom: size(20);
+    }
+    >*{
+      color: #575756;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 120%;
+      @media (max-width: 1921px) {
+        font-size: sizeP(28);
+      }
+      @media (max-width: 991px) {
+        font-size: size(20);
+      }
+    }
+  }
+  .section_content{
+    color: #5E6D7B;
+    font-size: 20px;
+    line-height: 120%;
+    @media (max-width: 1921px) {
+      font-size: sizeP(20)
+    }
+    @media (max-width: 991px) {
+      font-size: size(14);
+    }
+    h2,h3,h4,h5{
+      color: #575756;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 120%;
+      @media (max-width: 1921px) {
+        font-size: sizeP(28);
+      }
+      @media (max-width: 991px) {
+        font-size: size(20);
+      }
+    }
+    img{
+      width: 100%;
+      margin: 40px 0 80px;
+      @media (max-width: 1921px) {
+        margin: sizeP(40) 0 sizeP(80);
+      }
+      @media (max-width: 991px) {
+        margin: size(4) 0 size(20);
+      }
+    }
+    p{
+      margin-bottom: 32px;
+      @media (max-width: 1921px) {
+        margin-bottom: sizeP(32);
+      }
+      @media (max-width: 991px) {
+        margin-bottom: size(16);
+      }
+    }
+    ol{
+      padding: 0 50px;
+      margin-bottom: 32px;
+      list-style: decimal;
+      @media (max-width: 1921px) {
+        padding: 0 sizeP(50);
+        margin-bottom: sizeP(32);
+      }
+      @media (max-width: 991px) {
+        padding: 0 size(20);
+        margin-bottom: size(16);
+      }
+      li{
+
+      }
+    }
+    ul{
+      padding: 0 50px;
+      margin-bottom: 32px;
+      list-style: disc;
+      @media (max-width: 1921px) {
+        padding: 0 sizeP(50);
+        margin-bottom: sizeP(32);
+      }
+      @media (max-width: 991px) {
+        padding: 0 size(30);
+        margin-bottom: size(16);
+      }
+      li{
+
+      }
+    }
+  }
+}
+
 .section_profile {
   padding-top: 18px;
   padding-bottom: 80px;
