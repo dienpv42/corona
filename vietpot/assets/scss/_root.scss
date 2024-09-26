@@ -206,7 +206,9 @@
     height: sizeP(100);
     box-shadow: 0px sizeP(4) sizeP(4) 0px rgba(0, 0, 0, 0.25);
   }
+  @media (max-width: 991px) {
 
+  }
   svg {
     width: 40px;
     height: 40px;
@@ -214,7 +216,9 @@
       width: sizeP(40);
       height: sizeP(40);
     }
+    @media (max-width: 991px) {
 
+    }
     path {
       transition: all .3s;
     }
@@ -231,6 +235,9 @@
   @media (max-width: 1441px) {
     border-radius: 0px sizeP(8) sizeP(8) 0px;
   }
+  @media (max-width: 991px) {
+
+  }
 }
 
 .swiper-button-next {
@@ -238,6 +245,9 @@
   right: 0;
   @media (max-width: 1441px) {
     border-radius: sizeP(8) 0px 0px sizeP(8);
+  }
+  @media (max-width: 991px) {
+
   }
 }
 
@@ -254,6 +264,9 @@
       height: sizeP(12);
       margin-right: sizeP(16);
       border: sizeP(1) solid $--primary;
+    }
+    @media (max-width: 991px) {
+
     }
     &:last-child{
       margin-right: 0;

@@ -13,16 +13,24 @@
 }
 .main {
   min-height: 100vh;
+  @media (max-width: 991px) {
+
+  }
   .row {
     margin: 0 -16px;
     @media (max-width: 1440px) {
       margin: 0 sizeP(16)*-1;
     }
+    @media (max-width: 991px) {
 
+    }
     > * {
       padding: 0 16px;
       @media (max-width: 1440px) {
         padding: 0 sizeP(16);
+      }
+      @media (max-width: 991px) {
+
       }
     }
   }

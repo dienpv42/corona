@@ -5,7 +5,9 @@
     @media (max-width: 1440px) {
       width: sizeP(872);
     }
+    @media (max-width: 991px) {
 
+    }
     .section_title {
       color: $--primary;
       font-size: 30px;
@@ -16,6 +18,9 @@
       @media (max-width: 1440px) {
         font-size: sizeP(30);
         margin-bottom: sizeP(32);
+      }
+      @media (max-width: 991px) {
+
       }
     }
 
@@ -32,10 +37,16 @@
           font-size: sizeP(20);
           margin-bottom: sizeP(32);
         }
+        @media (max-width: 991px) {
+
+        }
         p {
           margin-bottom: 20px;
           @media (max-width: 1440px) {
             margin-bottom: sizeP(20);
+          }
+          @media (max-width: 991px) {
+
           }
         }
       }

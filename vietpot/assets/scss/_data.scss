@@ -6,10 +6,16 @@
       padding: sizeP(48) 0 sizeP(16);
       border-bottom: sizeP(1) solid #D5D7DB;
     }
+    @media (max-width: 991px) {
+
+    }
     .title{
       margin-bottom: 32px;
       @media (max-width: 1441px) {
         margin-bottom: sizeP(32);
+      }
+      @media (max-width: 991px) {
+
       }
     }
   }
@@ -20,6 +26,9 @@
   @media (max-width: 1441px) {
     padding: sizeP(48) 0 sizeP(80);
   }
+  @media (max-width: 991px) {
+
+  }
 }
 
 .section_form_search{
@@ -27,12 +36,18 @@
   @media (max-width: 1441px) {
     margin-bottom: sizeP(32);
   }
+  @media (max-width: 991px) {
+
+  }
   .wrap_content{
     max-width: 100%;
     width: 600px;
     margin: 0 auto;
     @media (max-width: 1441px) {
       width: sizeP(600);
+    }
+    @media (max-width: 991px) {
+
     }
     .wrap_search{
 

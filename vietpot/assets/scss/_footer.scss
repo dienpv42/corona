@@ -5,7 +5,9 @@
     @media (max-width: 1440px) {
       padding: sizeP(40) 0;
     }
+    @media (max-width: 991px) {
 
+    }
     .wrapper {
       .wrapper-left {
         width: calc(100% - 444px);
@@ -13,11 +15,16 @@
           $s444p: sizeP(444);
           width: calc(100% - $s444p);
         }
+        @media (max-width: 991px) {
 
+        }
         .row {
           margin-bottom: 32px;
           @media (max-width: 1440px) {
             margin-bottom: sizeP(32);
+          }
+          @media (max-width: 991px) {
+
           }
         }
       }
@@ -30,14 +37,18 @@
         @media (max-width: 1440px) {
           font-size: sizeP(16);
         }
+        @media (max-width: 991px) {
 
+        }
         ul {
           li {
             margin-bottom: 8px;
             @media (max-width: 1440px) {
               margin-bottom: sizeP(8);
             }
+            @media (max-width: 991px) {
 
+            }
             &:last-child {
               margin-bottom: 0;
             }
@@ -52,6 +63,9 @@
                     margin-left: sizeP(5);
                     width: sizeP(24);
                     height: sizeP(24);
+                  }
+                  @media (max-width: 991px) {
+
                   }
                 }
 
@@ -84,6 +98,9 @@
                     border-radius: sizeP(4);
                     margin-right: sizeP(8);
                   }
+                  @media (max-width: 991px) {
+
+                  }
                 }
 
                 span {
@@ -93,6 +110,9 @@
                   line-height: 120%;
                   @media (max-width: 1440px) {
                     font-size: sizeP(15);
+                  }
+                  @media (max-width: 991px) {
+
                   }
                 }
               }
@@ -107,12 +127,17 @@
           @media (max-width: 1440px) {
             margin-right: sizeP(16);
           }
+          @media (max-width: 991px) {
 
+          }
           img {
             width: auto;
             height: 56px;
             @media (max-width: 1440px) {
               height: sizeP(56);
+            }
+            @media (max-width: 991px) {
+
             }
           }
 
@@ -125,6 +150,9 @@
               font-size: sizeP(16);
               line-height: sizeP(24);
             }
+            @media (max-width: 991px) {
+
+            }
           }
         }
       }
@@ -135,6 +163,9 @@
           max-width: 100%;
           @media (max-width: 1440px) {
             width: sizeP(420);
+          }
+          @media (max-width: 991px) {
+
           }
         }
       }
@@ -147,7 +178,9 @@
     @media (max-width: 1440px) {
       padding: sizeP(12) 0;
     }
+    @media (max-width: 991px) {
 
+    }
     .copyright {
       text-align: right;
       color: #FFF;
@@ -157,6 +190,9 @@
       @media (max-width: 1440px) {
         font-size: sizeP(14);
         line-height: sizeP(20);
+      }
+      @media (max-width: 991px) {
+
       }
     }
   }
