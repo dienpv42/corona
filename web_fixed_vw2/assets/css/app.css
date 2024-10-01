@@ -4466,7 +4466,7 @@ input {
 @media (max-width: 1921px) {
   .section_product_detail .wrap_info_detail .w_number .form-group {
     width: 15.625vw;
-    border: 0.0520833333vw solid #9D9D9C;
+    border: 0.0520833333vw solid #DDD;
     border-radius: 0.625vw;
   }
 }
@@ -4474,7 +4474,7 @@ input {
   .section_product_detail .wrap_info_detail .w_number .form-group {
     height: 13.8666666667vw;
     width: calc(100% - 16vw);
-    border: 0.2666666667vw solid #9D9D9C;
+    border: 0.2666666667vw solid #DDD;
     border-radius: 2.1333333333vw;
   }
 }
@@ -4523,6 +4523,20 @@ input {
 @media (max-width: 991px) {
   .section_product_detail .wrap_info_detail .w_number .form-group .btn_minus_sl {
     border-right: 0.2666666667vw solid #DDD;
+  }
+}
+.section_product_detail .wrap_info_detail .w_number .form-group .btn_minus_sl svg {
+  width: 32px;
+  height: auto;
+}
+@media (max-width: 1921px) {
+  .section_product_detail .wrap_info_detail .w_number .form-group .btn_minus_sl svg {
+    width: 1.7708333333vw;
+  }
+}
+@media (max-width: 991px) {
+  .section_product_detail .wrap_info_detail .w_number .form-group .btn_minus_sl svg {
+    width: 9.0666666667vw;
   }
 }
 .section_product_detail .wrap_info_detail .w_number .form-group .btn_plus_sl {

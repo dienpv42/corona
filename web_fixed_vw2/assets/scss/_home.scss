@@ -3601,14 +3601,14 @@
         overflow: hidden;
         @media (max-width: 1921px) {
           width: sizeP(300);
-          border: sizeP(1) solid #9D9D9C;
+          border: sizeP(1) solid #DDD;
           border-radius: sizeP(12);
         }
         @media (max-width: 991px) {
           height: size(52);
           $s60: size(60);
           width: calc(100% - $s60);
-          border: size(1) solid #9D9D9C;
+          border: size(1) solid #DDD;
           border-radius: size(8);
         }
         .btn_minus_sl, .btn_plus_sl {
@@ -3644,6 +3644,16 @@
           }
           @media (max-width: 991px) {
             border-right: size(1) solid #DDD;
+          }
+          svg{
+            width: 32px;
+            height: auto;
+            @media (max-width: 1921px) {
+              width: sizeP(34);
+            }
+            @media (max-width: 991px) {
+              width: size(34);
+            }
           }
         }
         .btn_plus_sl{
