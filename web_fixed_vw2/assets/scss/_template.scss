@@ -42,3 +42,38 @@
     font-size: size(13);
   }
 }
+.popup-noty{
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 999;
+  padding: 8px 16px;
+  width: 270px;
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  .wrap{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    .icon{
+      width: 24px;
+      svg{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .content{
+      flex: 1;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 150%;
+    }
+  }
+  &.success{
+    color: #6FBE44;
+  }
+  &.danger{
+    color: #DA2462;
+  }
+}

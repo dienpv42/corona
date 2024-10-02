@@ -332,11 +332,12 @@
                                         Hộp: <b>30 viên</b>
                                     </div>
                                 </div>
-                                <div class="wrap_info d-none d-lg-flex align-items-center justify-content-start">
+                                <div class="wrap_info d-none d-lg-flex align-items-center justify-content-between">
                                     <div class="item">
                                         Số data <b>53735</b>
                                     </div>
                                     <div class="item d-flex flex-row align-items-center">
+                                        <div class="label me-2">Đánh giá:</div>
                                         <div class="w_star me-1" style="--rating: 4.5;"></div>
                                         <span><b>4.5</b></span>
                                     </div>
@@ -361,7 +362,7 @@
                                         Hộp: <b>30 viên</b>
                                     </div>
                                 </div>
-                                <div class="wrap_info d-flex d-lg-none align-items-center">
+                                <div class="wrap_info d-flex d-lg-none align-items-center justify-content-between">
                                     <div class="item">
                                         Số data <b>53735</b>
                                     </div>
@@ -408,20 +409,19 @@
                                 </div>
                                 <div class="w_number d-flex flex-row align-items-center justify-content-between">
                                     <div class="form-group">
-                                        <label for="">Số lượng</label>
                                         <a href="javascript:void(0);" class="btn_minus_sl">
-                                            <i class="icofont-minus"></i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                                <path d="M19.5013 14.0812H6.5013C6.21398 14.0812 5.93843 13.9671 5.73527 13.7639C5.53211 13.5608 5.41797 13.2852 5.41797 12.9979C5.41797 12.7106 5.53211 12.435 5.73527 12.2319C5.93843 12.0287 6.21398 11.9146 6.5013 11.9146H19.5013C19.7886 11.9146 20.0642 12.0287 20.2673 12.2319C20.4705 12.435 20.5846 12.7106 20.5846 12.9979C20.5846 13.2852 20.4705 13.5608 20.2673 13.7639C20.0642 13.9671 19.7886 14.0812 19.5013 14.0812Z" fill="#5E6D7B"/>
+                                            </svg>
                                         </a>
                                         <input type="number" class="form-control inp_sl" id="inp_sl" name="inp_sl"
                                                value="1">
                                         <a href="javascript:void(0);" class="btn_plus_sl">
-                                            <i class="icofont-plus"></i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
+                                                <path d="M10.8125 1.46875C10.8125 1.14552 10.6841 0.835523 10.4555 0.606963C10.227 0.378403 9.91698 0.25 9.59375 0.25C9.27052 0.25 8.96052 0.378403 8.73196 0.606963C8.5034 0.835523 8.375 1.14552 8.375 1.46875V8.375H1.46875C1.14552 8.375 0.835523 8.5034 0.606963 8.73196C0.378403 8.96052 0.25 9.27052 0.25 9.59375C0.25 9.91698 0.378403 10.227 0.606963 10.4555C0.835523 10.6841 1.14552 10.8125 1.46875 10.8125H8.375V17.7188C8.375 18.042 8.5034 18.352 8.73196 18.5805C8.96052 18.8091 9.27052 18.9375 9.59375 18.9375C9.91698 18.9375 10.227 18.8091 10.4555 18.5805C10.6841 18.352 10.8125 18.042 10.8125 17.7188V10.8125H17.7188C18.042 10.8125 18.352 10.6841 18.5805 10.4555C18.8091 10.227 18.9375 9.91698 18.9375 9.59375C18.9375 9.27052 18.8091 8.96052 18.5805 8.73196C18.352 8.5034 18.042 8.375 17.7188 8.375H10.8125V1.46875Z" fill="#5E6D7B"/>
+                                            </svg>
                                         </a>
                                     </div>
-                                    <a href="javascript:void(0)" class="btn_add_cart">
-                                        <img src="assets/images/SVG/icon-cart.svg" alt="cart">
-                                        <span>Giỏ hàng</span>
-                                    </a>
                                 </div>
                                 <div class="group_order">
                                     <div class="wrap_btn">
@@ -2389,11 +2389,11 @@
                 </div>
                 <div class="col-12 col-lg-7">
                     <div class="group">
-                        <div class="label">
+                        <div class="label label-form">
                             Gửi tin nhắn
                         </div>
                         <div class="wrap_form">
-                            <div class="form-group d-flex flex-lg-row flex-column">
+                            <div class="form-group d-flex flex-lg-row flex-column align-items-lg-center">
                                 <div class="form-label mb-3 mb-lg-0">
                                     Số điện thoại*:
                                 </div>
@@ -2506,6 +2506,39 @@
 <div class="bg_backgdrop">
 </div>
 
+<div class="popup-noty danger">
+    <div class="wrap">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <g clip-path="url(#clip0_2740_12851)">
+                    <path d="M12 0.5C5.37262 0.5 0 5.87262 0 12.5C0 19.1278 5.37262 24.5 12 24.5C18.6278 24.5 24 19.1278 24 12.5C24 5.87262 18.6278 0.5 12 0.5ZM12 23.0236C6.21037 23.0236 1.5 18.2896 1.5 12.5C1.5 6.71033 6.21037 1.99995 12 1.99995C17.7896 1.99995 22.5 6.71035 22.5 12.5C22.5 18.2896 17.7896 23.0236 12 23.0236ZM16.2424 8.25763C15.9495 7.96475 15.4748 7.96475 15.1819 8.25763L12 11.4395L8.81812 8.25763C8.52525 7.96475 8.0505 7.96475 7.75725 8.25763C7.46438 8.5505 7.46438 9.02525 7.75725 9.31812L10.9391 12.5L7.75725 15.6819C7.46438 15.9744 7.46438 16.4499 7.75725 16.7424C8.05013 17.0353 8.52487 17.0353 8.81812 16.7424L12 13.5605L15.1819 16.7424C15.4748 17.0353 15.9495 17.0353 16.2424 16.7424C16.5352 16.4499 16.5352 15.9744 16.2424 15.6819L13.0605 12.5L16.2424 9.31812C16.5356 9.02487 16.5356 8.55013 16.2424 8.25763Z" fill="#DA2462"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_2740_12851">
+                        <rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div class="content">
+            Bạn <b>không còn quan tâm</b> đến sản phẩm này!
+        </div>
+    </div>
+</div>
+
+<div class="popup-noty success">
+    <div class="wrap">
+        <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M22 11.5799V12.4999C21.9988 14.6563 21.3005 16.7545 20.0093 18.4817C18.7182 20.2088 16.9033 21.4723 14.8354 22.0838C12.7674 22.6952 10.5573 22.6218 8.53447 21.8744C6.51168 21.1271 4.78465 19.746 3.61096 17.9369C2.43727 16.1279 1.87979 13.9879 2.02168 11.8362C2.16356 9.68443 2.99721 7.63619 4.39828 5.99694C5.79935 4.35768 7.69279 3.21525 9.79619 2.74001C11.8996 2.26477 14.1003 2.4822 16.07 3.35986" stroke="#6FBE44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 4.5L12 14.51L9 11.51" stroke="#6FBE44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div class="content">
+            Bạn <b>đang quan tâm</b> đến sản phẩm này!
+        </div>
+    </div>
+</div>
 
 <!-- js-->
 <script src="assets/js/jquery-main.js"></script>

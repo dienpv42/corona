@@ -2061,6 +2061,13 @@
           font-weight: 700;
           color: #fff;
           margin-bottom: 28px;
+          &.label-form{
+            margin-bottom: 16px;
+            @media (max-width: 1921px) {
+              font-size: sizeP(20);
+              margin-bottom: sizeP(16);
+            }
+          }
           @media (max-width: 1921px) {
             font-size: sizeP(20);
             margin-bottom: sizeP(28);
@@ -2152,13 +2159,13 @@
             .form-label {
               width: 130px;
               margin-right: 20px;
-              font-size: 17px;
+              font-size: 20px;
               font-weight: 400;
               color: #fff;
               @media (max-width: 1921px) {
                 width: sizeP(130);
                 margin-right: sizeP(20);
-                font-size: sizeP(17);
+                font-size: sizeP(20);
               }
               @media (max-width: 991px) {
                 width: size(130);
@@ -2170,14 +2177,14 @@
 
             textarea {
               width: calc(100% - 150px);
-              font-size: 17px;
+              font-size: 20px;
               padding: 14px 24px;
               border-radius: 16px;
               border: 1px solid #CCC;
               @media (max-width: 1921px) {
                 $s150vw: sizeP(150);
                 width: calc(100% - $s150vw);
-                font-size: sizeP(17);
+                font-size: sizeP(20);
                 padding: sizeP(14) sizeP(24);
                 border-radius: sizeP(16);
                 border: sizeP(1) solid #CCC;
@@ -2205,7 +2212,7 @@
               }
 
               .form-control {
-                font-size: 17px;
+                font-size: 20px;
                 border-radius: 16px;
                 border: 1px solid #CCC;
                 width: 60%;
@@ -2213,7 +2220,7 @@
                 padding: 14px;
                 color: #575756;
                 @media (max-width: 1921px) {
-                  font-size: sizeP(17);
+                  font-size: sizeP(20);
                   border-radius: sizeP(16);
                   border: sizeP(1) solid #CCC;
                   padding: sizeP(14);
@@ -2537,12 +2544,12 @@
 .item_product {
   transition: all .3s;
   height: 100%;
-  transition: all .3s;
   @media (max-width: 991px) {
     width: calc(100% - 0.34783vw);
   }
 
   .image {
+    padding: 10px;
     margin-bottom: 16px;
     height: 230px;
     overflow: hidden;
@@ -2555,6 +2562,7 @@
     background: #FFF;
 
     @media (max-width: 1921px) {
+      padding: sizeP(10);
       margin-bottom: sizeP(16);
       height: sizeP(230);
       border-radius: sizeP(8);
@@ -2562,7 +2570,6 @@
     }
     @media (max-width: 991px) {
       padding: size(10);
-      margin-bottom: size(16);
       height: size(162);
       overflow: hidden;
       margin-bottom: size(8);
@@ -2573,7 +2580,7 @@
     a {
       img {
         max-width: 100%;
-        max-height: 100px;
+        max-height: 100%;
         object-fit: cover;
         object-position: center;
         @media (max-width: 991px) {
@@ -3585,68 +3592,94 @@
         margin-bottom: size(13);
       }
       .form-group {
-        width: calc(100% - 180px);
+        width: 300px;
         display: flex;
         align-items: center;
-        padding: 30px 15px;
-        border: 1px solid #9D9D9C;
+        border: 1px solid #DDD;
         border-radius: 12px;
+        overflow: hidden;
         @media (max-width: 1921px) {
-          $s180vw: sizeP(180);
-          width: calc(100% - $s180vw);
-          padding: sizeP(30) sizeP(15);
-          border: sizeP(1) solid #9D9D9C;
+          width: sizeP(300);
+          border: sizeP(1) solid #DDD;
           border-radius: sizeP(12);
         }
         @media (max-width: 991px) {
           height: size(52);
           $s60: size(60);
           width: calc(100% - $s60);
-          padding: 0 size(15);
-          border: size(1) solid #9D9D9C;
+          border: size(1) solid #DDD;
           border-radius: size(8);
         }
-
-        label {
-          font-size: 18px;
-          font-weight: 400;
-          color: #5E6D7B;
-          white-space: nowrap;
-          margin-right: 15px;
+        .btn_minus_sl, .btn_plus_sl {
+          width: 64px;
+          height: 64px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #F7F7F7;
           @media (max-width: 1921px) {
-            font-size: sizeP(18);
-            margin-right: sizeP(15);
+            width: sizeP(64);
+            height: sizeP(64);
           }
           @media (max-width: 991px) {
-            font-size: size(17);
+            width: size(64);
+            height: size(64);
+          }
+          svg{
+            width: 26px;
+            height: auto;
+            @media (max-width: 1921px) {
+              width: sizeP(26);
+            }
+            @media (max-width: 991px) {
+              width: size(26);
+            }
           }
         }
-
-        .btn_minus_sl, .btn_minus_sl {
-          font-size: 15px;
-          display: flex;
+        .btn_minus_sl{
+          border-right: 1px solid #DDD;
           @media (max-width: 1921px) {
-            font-size: sizeP(15);
+            border-right: sizeP(1) solid #DDD;
           }
           @media (max-width: 991px) {
-            font-size: size(17);
+            border-right: size(1) solid #DDD;
+          }
+          svg{
+            width: 32px;
+            height: auto;
+            @media (max-width: 1921px) {
+              width: sizeP(34);
+            }
+            @media (max-width: 991px) {
+              width: size(34);
+            }
+          }
+        }
+        .btn_plus_sl{
+          border-left: 1px solid #DDD;
+          @media (max-width: 1921px) {
+            border-left: sizeP(1) solid #DDD;
+          }
+          @media (max-width: 991px) {
+            border-left: size(1) solid #DDD;
           }
         }
 
         .form-control {
+          flex: 1;
           padding: 0 15px;
           border: 0;
-          font-size: 18px;
+          font-size: 24px;
           font-weight: 400;
           text-align: center;
           color: #575756;
           @media (max-width: 1921px) {
             padding: 0 sizeP(15);
-            font-size: sizeP(18);
+            font-size: sizeP(24);
           }
           @media (max-width: 991px) {
             padding: 0 size(15);
-            font-size: size(17);
+            font-size: size(24);
           }
 
           &:focus {
@@ -3656,48 +3689,6 @@
         }
       }
 
-      .btn_add_cart {
-        width: 164px;
-        height: 87.5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #9D9D9C;
-        border-radius: 12px;
-        font-size: 16px;
-        font-weight: 400;
-        color: #5E6D7B;
-        transition: all .3s;
-        @media (max-width: 1921px) {
-          width: sizeP(164);
-          height: sizeP(87.5);
-          border: sizeP(1) solid #9D9D9C;
-          border-radius: sizeP(12);
-          font-size: sizeP(16);
-        }
-        @media (max-width: 991px) {
-          width: size(52);
-          height: size(52);
-          border: size(1) solid #9D9D9C;
-          border-radius: size(8);
-          font-size: size(8);
-        }
-
-        img {
-          width: 33px;
-          @media (max-width: 1921px) {
-            width: sizeP(33);
-          }
-          @media (max-width: 991px) {
-            width: size(31);
-          }
-        }
-
-        &:hover {
-          border-color: #F39200;
-        }
-      }
     }
 
     .group_order {
@@ -3720,21 +3711,20 @@
     }
 
     .wrap_btn {
-      width: calc(100% - 104px);
+      width: 300px;
       @media (max-width: 1921px) {
-        $s104: sizeP(104);
-        width: calc(100% - $s104);
+        width: sizeP(300);
       }
       @media (max-width: 991px) {
         $s60: size(60);
         width: calc(100% - $s60);
       }
       .btn_book_now {
-        font-size: 28px;
+        font-size: 20px;
         color: #fff;
         background-color: #86BC25;
         width: 100%;
-        height: 96px;
+        height: 64px;
         font-weight: 700;
         border-radius: 16px;
         display: flex;
@@ -3743,8 +3733,8 @@
         transition: all .3s;
         line-height: 1;
         @media (max-width: 1921px) {
-          font-size: sizeP(28);
-          height: sizeP(96);
+          font-size: sizeP(20);
+          height: sizeP(64);
           border-radius: sizeP(16);
         }
         @media (max-width: 991px) {
