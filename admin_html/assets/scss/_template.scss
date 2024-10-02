@@ -619,6 +619,7 @@
         }
         .wrap_content_choose{
           .w_edit_main{
+            padding-right: 15px;
             width: 250px;
             position: relative;
             @media (max-width: 991px) {
@@ -640,7 +641,7 @@
           }
           .wrap_choose_product{
             width: calc(100% - 260px);
-            padding-left: 20px;
+            padding-left: 25px;
             @media (max-width: 991px) {
               width : 100%;
               padding-left: 0px;
