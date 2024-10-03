@@ -678,6 +678,8 @@
                       display: flex;
                       flex-direction: column;
                       font-size: 17px;
+                      font-weight: 600;
+                      color: #575756;
                       @media (max-width: 1921px) {
                         $s85p: sizeP(85);
                         width: calc(100% - $s85p);
@@ -688,9 +690,6 @@
                         width: calc(100% - $s75);
                         font-size: size(15);
                       }
-                      font-size: 17px;
-                      font-weight: 600;
-                      color: #575756;
                       @include line_text(3);
                       @media (max-width: 1921px) {
                         font-size: sizeP(17);
