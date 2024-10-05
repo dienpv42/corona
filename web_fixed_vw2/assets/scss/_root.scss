@@ -1,13 +1,6 @@
 :root {
-  --star-size: 25px;
   --star-color: #d1d1d1;
   --star-background: #fc0;
-  @media (max-width: 1921px) {
-    --star-size: sizeP(25);
-  }
-  @media (max-width: 991px) {
-    --star-size: size(20);
-  }
 }
 .lb-link{
   color: #5E6D7B;

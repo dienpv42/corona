@@ -122,6 +122,61 @@
     }
   }
 }
+.select2-container {
+  .select2-selection--single {
+    border-radius: 16px;
+    border: 1px solid #989B9F;
+    color: $--gray; // Assuming $--gray is defined somewhere in your SCSS
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 10px 24px;
+    min-height: 40px;
+    @media (max-width: 1440px) {
+      border-radius: sizeP(16);
+      border: sizeP(1) solid #989B9F;
+      font-size: sizeP(16);
+      line-height: sizeP(20);
+      padding: sizeP(10) sizeP(24);
+      min-height: sizeP(40);
+    }
+    @media (max-width: 991px) {
+
+    }
+    .select2-selection__arrow {
+      height: 100%;
+      right: 10px;
+      @media (max-width: 1440px) {
+        right: sizeP(10);
+      }
+      @media (max-width: 991px) {
+
+      }
+    }
+
+    .select2-selection__rendered {
+      line-height: 40px;
+      padding-left: 24px;
+      @media (max-width: 1440px) {
+        right: sizeP(10);
+      }
+      @media (max-width: 991px) {
+
+      }
+    }
+  }
+
+  .select2-dropdown {
+    border-radius: 16px;
+    @media (max-width: 1440px) {
+      border-radius: sizeP(16);
+    }
+    @media (max-width: 991px) {
+
+    }
+  }
+}
+
 .flex-p-16{
   margin: 0 -16px;
   @media (max-width: 1440px) {
@@ -1671,9 +1726,9 @@
     }
   }
   .form-control{
-    height: 52px;
+    min-height: 52px;
     @media (max-width: 1440px) {
-      height: sizeP(52);
+      min-height: sizeP(52);
     }
     @media (max-width: 991px) {
 
