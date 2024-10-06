@@ -216,7 +216,7 @@
 
     window.addEventListener('load', initSwiper);
 
-    $(document).on('click', '.btn-sidebar', function() {
+    $(document).on('click', '.btn-menu', function() {
         $(this).toggleClass('open');
         $('.wrap_menu_fixed, .bg_backgdrop').toggleClass('active');
     });

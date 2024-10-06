@@ -8,13 +8,15 @@
     padding: 0 sizeP(70);
   }
   @media (max-width: 991px) {
-
+    padding: 0 size(20);
   }
 }
 .main {
   min-height: 100vh;
   @media (max-width: 991px) {
-
+    padding-top: size(50);
+    min-height: auto;
+    padding-bottom: size(50);
   }
   .row {
     margin: 0 -16px;
