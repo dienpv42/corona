@@ -3,11 +3,17 @@
   @media (max-width: 1441px) {
     padding: sizeP(16);
   }
+  @media (max-width: 991px) {
+    padding: size(16);
+  }
 }
 .pd-s-16{
   padding-left: 16px;
   @media (max-width: 1441px) {
     padding-left: sizeP(16);
+  }
+  @media (max-width: 991px) {
+    padding-left: size(16);
   }
 }
 .pd-e-16{
@@ -15,17 +21,26 @@
   @media (max-width: 1441px) {
     padding-right: sizeP(16);
   }
+  @media (max-width: 991px) {
+    padding-right: size(16);
+  }
 }
 .pd-s-32{
   padding-left: 32px;
   @media (max-width: 1441px) {
-    padding-left: sizeP(32);
+    padding-left: sizeP(16);
+  }
+  @media (max-width: 991px) {
+    padding-left: size(16);
   }
 }
 .pd-e-32{
   padding-right: 32px;
   @media (max-width: 1441px) {
-    padding-right: sizeP(32);
+    padding-right: sizeP(16);
+  }
+  @media (max-width: 991px) {
+    padding-right: size(16);
   }
 }
 .pd-s-60{
@@ -33,23 +48,35 @@
   @media (max-width: 1441px) {
     padding-left: sizeP(60);
   }
+  @media (max-width: 991px) {
+    padding-left: size(30);
+  }
 }
 .pd-e-60{
   padding-right: 60px;
   @media (max-width: 1441px) {
     padding-right: sizeP(60);
   }
+  @media (max-width: 991px) {
+    padding-right: size(30);
+  }
 }
 .pd-s-100{
   padding-left: 100px;
   @media (max-width: 1441px) {
-    padding-left: sizeP(100);
+    padding-left: sizeP(50);
+  }
+  @media (max-width: 991px) {
+    padding-left: size(50);
   }
 }
 .pd-e-100{
   padding-right: 100px;
   @media (max-width: 1441px) {
-    padding-right: sizeP(100);
+    padding-right: sizeP(50);
+  }
+  @media (max-width: 991px) {
+    padding-right: size(50);
   }
 }
 
@@ -60,16 +87,25 @@
   @media (max-width: 1441px) {
     margin-right: sizeP(32);
   }
+  @media (max-width: 991px) {
+    margin-right: size(16);
+  }
 }
 .mb-32{
   margin-bottom: 32px;
   @media (max-width: 1441px) {
     margin-bottom: sizeP(32);
   }
+  @media (max-width: 991px) {
+    margin-bottom: size(16);
+  }
 }
 .mb-48{
   margin-bottom: 48px;
   @media (max-width: 1441px) {
     margin-bottom: sizeP(48);
+  }
+  @media (max-width: 991px) {
+    margin-bottom: size(16);
   }
 }

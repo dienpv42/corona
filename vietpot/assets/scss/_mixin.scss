@@ -39,6 +39,20 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+@mixin pd_scroll_mb() {
+  margin-left: size(20)*-1;
+  margin-right: size(20)*-1;
+  padding-left: size(20);
+  padding-right: size(20);
+}
+@mixin no_scroll_bar() {
+  &::-webkit-scrollbar {
+    @media (max-width: 991px) {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
 @function size($number, $windowWidth: 375) {
   $result: math.div(100 * $number, $windowWidth);
   @return $result * 1vw;
@@ -53,6 +67,7 @@
   $size: sizeP($number);
   @return calc($d - $size);
 }
+
 
 @function calcCm($d, $number) {
   $sizeM: size($number);
