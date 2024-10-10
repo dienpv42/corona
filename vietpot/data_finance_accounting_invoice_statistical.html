@@ -530,10 +530,19 @@
             {x: '6/2023', y: 100},
             {x: '7/2023', y: 30}
         ];
+
+        // Tạo function để điều chỉnh chiều cao của biểu đồ
+        function getChartHeight() {
+            if ($(window).width() < 991) {
+                return $(window).width() * 0.65; // 65vw
+            }
+            return 500; // Chiều cao mặc định
+        }
+
         const dataLabels = {
             enabled: false,
             style: {
-                colors: ['#E6332A'], // Thay đổi màu của data label thành đỏ
+                colors: ['#E6332A'],
                 background: {
                     borderRadius: 20,
                     color: '#E6332A',
@@ -563,82 +572,93 @@
             },
             shape: 'circle',
         };
-        // Cấu hình biểu đồ 1
-        const options = {
-            colors: ['#EDEDED'],
-            series: [{
-                name: "Thống kê",
-                data: chartData
-            }],
-            chart: {
-                type: 'area',
-                stacked: false,
-                height: 500,
-                toolbar: false,
-            },
-            markers: {
-                colors: ['#E6332A'],
-                size: 8,
-                hover: {
-                    size: 9,
-                }
-            },
-            grid: {
-                show: false, // ẩn tất cả các đường line ngang
-                strokeDashArray: 0
-            },
-            dataLabels: dataLabels,
-            fill: {
-                type: 'gradient',
-                gradient: {
-                    shadeIntensity: 1,
-                    inverseColors: false,
-                    opacityFrom: 0,
-                    opacityTo: 0,
-                    stops: [20, 100, 100, 100]
-                },
-            },
-            stroke: {
-                width: 2,
-                curve: 'straight',
-                color: '#fff'
-            },
-            yaxis: {
-                labels: {
-                    style: {
-                        fontSize: '12px',
-                        fontFamily: 'SVN-Gilroy, sans-serif',
-                    },
-                },
-                title: {
-                    text: 'Dung lượng',
-                    style: {
-                        fontSize: '12px',
-                        fontFamily: 'SVN-Gilroy, sans-serif',
-                        fontWeight: 700,
-                    },
-                },
-            },
-            tooltip: {
-                followCursor: true,
-                custom: function ({series, seriesIndex, dataPointIndex, w}) {
-                    let title = w.globals.initialSeries[seriesIndex].name;
-                    let time = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
-                    let amount = w.globals.initialSeries[seriesIndex].data[dataPointIndex].y;
-                    return `<div class="wrap_tooltip">
-                                <div class="title d-flex flex-row align-items-center">
-                                    ${title}: ${time}
-                                </div>
-                                <div class="record">
-                                    <b>${amount}</b>
-                                </div>
-                            </div>`;
-                }
-            }
-        };
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
 
+        // Cấu hình biểu đồ 1
+        function renderChart() {
+            const options = {
+                colors: ['#EDEDED'],
+                series: [{
+                    name: "Thống kê",
+                    data: chartData
+                }],
+                chart: {
+                    type: 'area',
+                    stacked: false,
+                    height: getChartHeight(), // Sử dụng function để lấy chiều cao
+                    toolbar: false,
+                },
+                markers: {
+                    colors: ['#E6332A'],
+                    size: 8,
+                    hover: {
+                        size: 9,
+                    }
+                },
+                grid: {
+                    show: false, // ẩn tất cả các đường line ngang
+                    strokeDashArray: 0
+                },
+                dataLabels: dataLabels,
+                fill: {
+                    type: 'gradient',
+                    gradient: {
+                        shadeIntensity: 1,
+                        inverseColors: false,
+                        opacityFrom: 0,
+                        opacityTo: 0,
+                        stops: [20, 100, 100, 100]
+                    },
+                },
+                stroke: {
+                    width: 2,
+                    curve: 'straight',
+                    color: '#fff'
+                },
+                yaxis: {
+                    labels: {
+                        style: {
+                            fontSize: '12px',
+                            fontFamily: 'SVN-Gilroy, sans-serif',
+                        },
+                    },
+                    title: {
+                        text: 'Dung lượng',
+                        style: {
+                            fontSize: '12px',
+                            fontFamily: 'SVN-Gilroy, sans-serif',
+                            fontWeight: 700,
+                        },
+                    },
+                },
+                tooltip: {
+                    followCursor: true,
+                    custom: function ({series, seriesIndex, dataPointIndex, w}) {
+                        let title = w.globals.initialSeries[seriesIndex].name;
+                        let time = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
+                        let amount = w.globals.initialSeries[seriesIndex].data[dataPointIndex].y;
+                        return `<div class="wrap_tooltip">
+                                    <div class="title d-flex flex-row align-items-center">
+                                        ${title}: ${time}
+                                    </div>
+                                    <div class="record">
+                                        <b>${amount}</b>
+                                    </div>
+                                </div>`;
+                    }
+                }
+            };
+            var chart = new ApexCharts(document.querySelector("#chart"), options);
+            chart.render();
+        }
+
+        // Gọi function để render chart
+        renderChart();
+
+        // Lắng nghe sự kiện thay đổi kích thước của cửa sổ để cập nhật lại chiều cao biểu đồ
+        $(window).resize(function() {
+            $("#chart").empty(); // Xóa biểu đồ cũ
+            renderChart(); // Render lại biểu đồ với chiều cao mới
+        });
     });
 </script>
 </body>
