@@ -3610,17 +3610,32 @@
 </script>
 <script>
     $(document).ready(function() {
-        // Chỉ thêm class 'hide' vào các item sau item thứ 9
-        $('.wrap_cate_all').each(function() {
-            $(this).find('.cate_link').slice(9).addClass('hide');
-        });
+        // Hàm kiểm tra kích thước màn hình và lấy số lượng item cần hiển thị
+        function getItemLimit() {
+            return window.innerWidth > 991 ? 15 : 9;
+        }
+
+        // Hàm hiển thị các item dựa trên số lượng lấy từ hàm getItemLimit()
+        function showItems() {
+            let itemLimit = getItemLimit();
+
+            $('.wrap_cate_all').each(function() {
+                $(this).find('.cate_link').removeClass('hide'); // Hiển thị tất cả trước
+                $(this).find('.cate_link').slice(itemLimit).addClass('hide'); // Ẩn các item sau itemLimit
+            });
+        }
+
+        // Gọi hàm showItems khi tài liệu sẵn sàng
+        showItems();
 
         // Xử lý sự kiện khi click vào nút "Xem thêm"
         $('.btn-more-cate').on('click', function() {
             let $this = $(this);
             let $links = $this.closest('.tab-pane').find('.wrap_cate_all .cate_link');
+            let itemLimit = getItemLimit();
+
             if ($this.hasClass('expanded')) {
-                $links.slice(9).addClass('hide');
+                $links.slice(itemLimit).addClass('hide');
                 $this.removeClass('expanded');
                 $this.find('span').text('Xem thêm');
             } else {
@@ -3628,6 +3643,11 @@
                 $this.addClass('expanded');
                 $this.find('span').text('Thu gọn');
             }
+        });
+
+        // Gọi lại hàm showItems khi thay đổi kích thước cửa sổ
+        $(window).resize(function() {
+            showItems();
         });
     });
 </script>

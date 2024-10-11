@@ -1129,23 +1129,10 @@
 
     &.section_ads_mb {
       display: none;
-      overflow: auto;
       @media (max-width: 991px) {
         display: block;
       }
-
-      &::-webkit-scrollbar {
-        @media (max-width: 991px) {
-          height: 0;
-        }
-      }
-
-      .wrap_content {
-        display: flex;
-        flex-direction: row;
-        width: max-content;
-
-        .item {
+      .swiper-slide {
           @media (max-width: 991px) {
             margin-right: size(12);
           }
@@ -1158,14 +1145,13 @@
 
           a {
             img {
-              //@media (max-width: 991px) {
-              //  width: size(149);
-              //  height: auto;
-              //}
+              height: size(149);
+              width: 100%;
+              object-fit: cover;
+              object-position: center;
             }
           }
         }
-      }
     }
   }
 }
@@ -3145,9 +3131,7 @@
         }
 
         &.hide {
-          @media (max-width: 991px) {
-            display: none;
-          }
+          display: none;
         }
 
         &.active {
@@ -3184,31 +3168,26 @@
     }
 
     .wrap_more_link {
-      display: none;
       text-align: center;
-      @media (max-width: 991px) {
-        display: block;
-      }
-
       a, .btn-more-cate {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: #575756;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 20px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.2;
         @media (max-width: 1921px) {
-          font-size: sizeP(13);
-          line-height: sizeP(20);
+          font-size: sizeP(20);
         }
         @media (max-width: 991px) {
           font-size: size(13);
-          line-height: 20px;
         }
 
         span {
-          margin-right: 8px;
+          margin-right: 5px;
           @media (max-width: 1921px) {
-            margin-right: sizeP(8);
+            margin-right: sizeP(5);
           }
           @media (max-width: 991px) {
             margin-right: size(5);
@@ -3217,10 +3196,10 @@
 
         svg {
           transition: all .3s;
-          width: 20px;
+          width: 25px;
           height: auto;
           @media (max-width: 1921px) {
-            width: sizeP(20);
+            width: sizeP(25);
           }
           @media (max-width: 991px) {
             margin-top: size(2)*-1;

@@ -47,6 +47,15 @@
             },
         });
 
+        var adsBannerSlider = new Swiper(".ads_banner_slider", {
+            slidesPerView: 1.1,
+            speed: 500,
+            loop: true,
+            spaceBetween: spaceBetweenVW,
+            slidesPerGroup: 1,
+            autoplay: false,
+        });
+
         slideProduct1 = new Swiper(".slide_product_1", {
             speed: 500,
             loop: true,
