@@ -1,0 +1,243 @@
+.btn {
+  --bs-btn-padding-x: 16px;
+  --bs-btn-padding-y: 5px;
+  --bs-btn-font-size: 14px;
+  --bs-btn-line-height: 1.5;
+  --bs-btn-border-width: 1px;
+  --bs-btn-border-radius: 6px;
+}
+.btn{
+  svg{
+    margin-top: -2px;
+    margin-right: 5px;
+  }
+}
+.btn-primary {
+  --bs-btn-bg: #{$primary};
+  --bs-btn-border-color: #{$primary};
+  --bs-btn-disabled-bg: #{$primary};
+  --bs-btn-disabled-border-color: #{$primary};
+}
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #{$success};
+  --bs-btn-border-color: #{$success};
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #157347;
+  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #146c43;
+  --bs-btn-active-border-color: #13653f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #198754;
+  --bs-btn-disabled-border-color: #198754;
+}
+.btn-outline-secondary {
+  --bs-btn-color: #1F1F1F;
+  --bs-btn-border-color: #D9D9D9;
+  --bs-btn-hover-color: #{$primary};
+  --bs-btn-bg: #fff;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #{$primary};
+  --bs-btn-focus-shadow-rgb: 108, 117, 125;
+  --bs-btn-active-color: #{$primary};
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: #{$primary};
+  --bs-btn-disabled-color: #6c757d;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #6c757d;
+  --bs-gradient: none;
+}
+.btn-outline-primary {
+  --bs-btn-color: #{$primary};
+  --bs-btn-border-color: #{$primary};
+  --bs-btn-hover-color: #fff;
+  --bs-btn-bg: #fff;
+  --bs-btn-hover-bg: #{$primary};
+  --bs-btn-hover-border-color: #{$primary};
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #{$primary};
+  --bs-btn-active-border-color: #{$primary};
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #{$primary};
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #{$primary};
+  --bs-gradient: none;
+}
+.btn-outline-danger {
+  --bs-btn-color: #F5222D;
+  --bs-btn-border-color: #F5222D;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-bg: #fff;
+  --bs-btn-hover-bg: #F5222D;
+  --bs-btn-hover-border-color: #F5222D;
+  --bs-btn-focus-shadow-rgb: 220, 53, 69;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #F5222D;
+  --bs-btn-active-border-color: #F5222D;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #F5222D;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #F5222D;
+  --bs-gradient: none;
+}
+.card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-border-width: 0;
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: 8px;
+  --bs-card-box-shadow: ;
+  --bs-card-cap-padding-y: 24px;
+  --bs-card-cap-padding-x: 24px;
+  --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+  --bs-card-bg: #fff;
+}
+
+.breadcrumb{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  .breadcrumb-item{
+    a{
+      color: rgba(0, 0, 0, 0.45);
+    }
+    &.active{
+      color: rgba(0, 0, 0, 0.88);
+    }
+  }
+}
+
+.notification_empty{
+  text-align: center;
+  padding: 24px;
+  img{
+    width: 137px;
+    margin-bottom: 24px;
+  }
+  .text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.45);
+  }
+}
+
+.wrap_pagination{
+  .pagination{
+    .page-item{
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+      border: 1px solid #D9D9D9;
+      background: #FFF;
+      margin: 0 4px;
+      .page-link{
+        color: rgba(0, 0, 0, 0.85);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        border: 0;
+        margin: 0;
+        svg{
+
+        }
+      }
+      &.active{
+        border: 1px solid #1890FF;
+        background: #FFF;
+        .page-link{
+          color: #1890FF;
+          background-color: unset;
+          border-color: unset;
+          svg{
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  .step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 8px;
+    &-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #e0e0e0;
+      color: #6c757d;
+    }
+
+    &-name {
+      color: rgba(0, 0, 0, 0.45);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    &:before {
+      content: '';
+      width: 40px;
+      height: 2px;
+      background-color: #D9D9D9;
+      z-index: -1;
+      margin-right: 8px;
+    }
+
+    &:first-child:before {
+      display: none;
+    }
+
+    &.active {
+      .step-number {
+        background-color: #BAE0FF;
+        color: $primary;
+      }
+
+      .step-name {
+        color: rgba(0, 0, 0, 0.88);
+      }
+
+      &:before {
+        background-color: $primary;
+      }
+    }
+    &.done{
+      .step-number {
+        pointer-events: none;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6.08478 11.7946L6.08521 11.7943L6.08666 11.7932L13.4477 2.4682L13.4473 2.46786L13.4477 2.4682C13.5548 2.33084 13.7207 2.25056 13.8955 2.25056H15.1437C15.2629 2.25056 15.3287 2.38752 15.2558 2.47822L15.2558 2.47823L6.53434 13.53C6.3042 13.819 5.86535 13.819 5.637 13.53L0.745928 7.33358C0.673003 7.24109 0.738812 7.10413 0.85799 7.10413H2.1062C2.19243 7.10423 2.27752 7.12387 2.35507 7.16157C2.43262 7.19926 2.50063 7.25403 2.55398 7.32177L2.55442 7.32143L2.55398 7.32177L6.08434 11.795L6.08478 11.7946Z" fill="white" stroke="white" stroke-width="0.00111607"/></svg>');
+        background-color: $primary;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: transparent;
+      }
+      .step-name {
+        color: rgba(0, 0, 0, 0.88);
+      }
+    }
+  }
+}
+
+.card{
+
+}
