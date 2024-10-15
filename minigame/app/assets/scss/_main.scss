@@ -1,0 +1,38 @@
+.main{
+  min-height: 100vh;
+  padding-top: 64px;
+  transition: all .3s;
+  .container-main{
+    padding: 24px;
+  }
+  .section-head{
+    margin-bottom: 24px;
+    .wrap-title{
+      .title{
+        >*{
+          color: rgba(0, 0, 0, 0.88);
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 28px;
+        }
+      }
+    }
+    .wrap-action{
+      gap: 10px;
+    }
+  }
+  .section_action{
+    margin-bottom: 24px;
+    .wrap-action{
+      gap: 16px;
+      .action{
+        gap: 8px;
+      }
+    }
+  }
+  .section_content{
+    .card{
+      height: 100%;
+    }
+  }
+}
