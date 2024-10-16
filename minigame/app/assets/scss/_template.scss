@@ -812,3 +812,104 @@
 }
 
 // end line text
+
+// modal
+.modal{
+  .modal-dialog{
+    .modal-content{
+      border: 0;
+      border-radius: 8px;
+      background: #FFF;
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+      .modal-header{
+        position: relative;
+        padding: 16px 50px 8px 24px;
+        border-bottom: 0;
+        .modal-title{
+          color: rgba(0, 0, 0, 0.88);
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 1.5;
+        }
+        .btn-close{
+          margin: 0;
+          position: absolute;
+          right: 24px;
+          top: 20px;
+          padding: 0;
+          width: auto;
+          height: auto;
+          background: unset;
+          opacity: 1;
+          svg{
+            width: 16px;
+            height: 16px;
+            path{
+              transition: all .3s;
+            }
+          }
+          &:hover{
+            svg{
+              path{
+                fill: $primary;
+              }
+            }
+          }
+        }
+      }
+      .modal-body{
+        border: 0;
+        padding: 8px 24px 12px;
+      }
+      .modal-footer{
+        border: 0;
+        padding: 12px 24px 24px;
+      }
+    }
+  }
+}
+// end modal
+
+// template
+.wrap-info-customer{
+  .w-info{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-bottom: 8px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .label{
+      color: rgba(0, 0, 0, 0.65);
+    }
+    .info{
+    }
+  }
+}
+.wrap-info-card{
+  padding: 12px 24px;
+  border-radius: 8px;
+  background: #F5F5F5;
+  .title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .desc{
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+.wrap-flex-step-1{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  .card{
+    flex: 1;
+    &.card-wheel{
+      flex: unset;
+      width: 308px;
+    }
+  }
+}
+// end template

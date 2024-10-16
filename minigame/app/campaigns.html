@@ -1166,7 +1166,7 @@
                 </div>
             </div>
             <div class="wrap-action d-flex flex-row align-items-center">
-                <a href="javascript:void(0);" class="btn btn-primary">
+                <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCreate">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M8.53558 1.57227H7.46415C7.36891 1.57227 7.32129 1.61988 7.32129 1.71512V7.32227H2.00028C1.90504 7.32227 1.85742 7.36988 1.85742 7.46512V8.53655C1.85742 8.63179 1.90504 8.67941 2.00028 8.67941H7.32129V14.2866C7.32129 14.3818 7.36891 14.4294 7.46415 14.4294H8.53558C8.63081 14.4294 8.67843 14.3818 8.67843 14.2866V8.67941H14.0003C14.0955 8.67941 14.1431 8.63179 14.1431 8.53655V7.46512C14.1431 7.36988 14.0955 7.32227 14.0003 7.32227H8.67843V1.71512C8.67843 1.61988 8.63081 1.57227 8.53558 1.57227Z" fill="white"/>
                     </svg>
@@ -1305,6 +1305,36 @@
 <footer class="footer">
 
 </footer>
+
+<div class="modal fade" id="modalCreate" tabindex="-1" aria-labelledby="modalCreateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCreateLabel">Thêm chiến dịch mới</h5>
+                <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1404 1.82749C13.1407 1.82749 13.1411 1.82784 13.1418 1.82856L14.172 2.85891C14.1727 2.85945 14.1729 2.85981 14.1731 2.86034C14.1732 2.86069 14.1732 2.86106 14.1731 2.86141C14.1731 2.86195 14.1727 2.86231 14.172 2.86302L9.0345 8.00052L14.172 13.138C14.1727 13.1387 14.1729 13.1391 14.1731 13.1396C14.1732 13.14 14.1732 13.1405 14.1731 13.1409C14.1731 13.1412 14.1727 13.1416 14.172 13.1423L13.1416 14.1725C13.1411 14.1732 13.1407 14.1734 13.1404 14.1736C13.14 14.1737 13.1395 14.1737 13.1391 14.1736C13.1386 14.1736 13.1382 14.1732 13.1375 14.1725L8.00003 9.03499L2.86253 14.1725C2.86182 14.1732 2.86146 14.1734 2.86093 14.1736C2.86052 14.1737 2.86008 14.1737 2.85968 14.1736C2.85932 14.1736 2.85896 14.1732 2.85825 14.1725L1.82807 13.1421C1.82735 13.1416 1.82718 13.1412 1.827 13.1409C1.82687 13.1405 1.82687 13.14 1.827 13.1396C1.827 13.1391 1.82735 13.1387 1.82807 13.138L6.96557 8.00052L1.82807 2.86302C1.82735 2.86231 1.82718 2.86195 1.827 2.86141C1.82687 2.86101 1.82687 2.86057 1.827 2.86016C1.827 2.85981 1.82735 2.85945 1.82807 2.85874L2.85843 1.82856C2.85896 1.82784 2.85932 1.82766 2.85968 1.82749C2.86008 1.82736 2.86052 1.82736 2.86093 1.82749C2.86146 1.82749 2.86182 1.82784 2.86253 1.82856L8.00003 6.96606L13.1375 1.82856C13.1382 1.82784 13.1386 1.82766 13.1391 1.82749C13.1395 1.82736 13.14 1.82736 13.1404 1.82749Z" fill="black" fill-opacity="0.45"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="modal-body">
+                <div class="wrap_form">
+                    <div class="form-group">
+                        <label for="" class="form-label">
+                            <span class="text-danger">*</span> Tên chiến dịch
+                        </label>
+                        <input type="text" name="name" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Thêm mới</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery-main.js"></script>
 <script src="assets/js/jquery-migrate.js"></script>
