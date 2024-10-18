@@ -2095,6 +2095,7 @@
 
       .col-12 {
         @media (max-width: 991px) {
+          margin-bottom: 0 !important;
           padding: 0;
         }
       }
@@ -2625,7 +2626,7 @@
             border-radius: sizeP(16);
           }
           @media (max-width: 991px) {
-            padding: size(10) size(30);
+            padding: size(7) size(30);
             font-size: size(17);
             border: size(1) solid #868686;
             border-radius: size(8);
@@ -2701,7 +2702,8 @@
           font-size: sizeP(20);
         }
         @media (max-width: 991px) {
-          font-size: size(16);
+          @include line_text(2);
+          font-size: size(13);
         }
       }
     }
@@ -2798,7 +2800,7 @@
         min-height: sizeP(125);
       }
       @media (max-width: 991px) {
-        min-height: size(82);
+        min-height: size(105);
       }
     }
 
@@ -2821,7 +2823,7 @@
         }
         @media (max-width: 991px) {
           font-size: size(13);
-          @include line_text(2);
+          @include line_text(3);
         }
       }
     }
@@ -2830,13 +2832,16 @@
       min-height: 40px;
       align-items: center;
       margin-bottom: 5px;
+      gap: 8px;
       @media (max-width: 1921px) {
         margin-bottom: sizeP(5);
         min-height: sizeP(40);
+        gap: sizeP(8);
       }
       @media (max-width: 991px) {
         margin-bottom: size(3);
         min-height: size(40);
+        gap: size(8);
       }
 
       .number {
@@ -2865,10 +2870,10 @@
           max-width: calc(100% - $s40);
           margin-top: size(2);
           display: inline-block;
-          padding: 0;
+          padding: 0 size(4);
           border-radius: size(4);
           box-shadow: 0px 0px size(4) 0px rgba(0, 0, 0, 0.14);
-          font-size: size(11);
+          font-size: size(10);
         }
       }
 
@@ -3316,7 +3321,9 @@
 }
 
 .section_breadcrumb {
-
+  @media (max-width: 991px) {
+    display: none;
+  }
   .breadcrumb {
     margin: 0;
     .breadcrumb-item {
@@ -3948,6 +3955,7 @@
         padding-bottom: size(36);
         border-bottom: size(1) solid #6FBE44;
         margin-bottom: size(18);
+        padding-left: size(172);
       }
     }
   }
@@ -7510,12 +7518,11 @@
       .social {
         margin-right: 24px;
         @media (max-width: 1921px) {
-          margin: 0 size(6);
+          margin-right: sizeP(16);
         }
         @media (max-width: 991px) {
           display: flex;
-          margin-right: size(12);
-          margin-bottom: size(16);
+          margin: 0 size(6) size(12);
         }
         a{
           display: flex;
