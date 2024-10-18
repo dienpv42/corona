@@ -557,6 +557,10 @@ input {
   font-weight: 600;
   line-height: 1.5;
 }
+.card .card-body .card-title > * {
+  font-size: 16px;
+  font-weight: 600;
+}
 .card .card-body .wrap-filter {
   margin-bottom: 24px;
 }
@@ -676,6 +680,10 @@ input {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
+}
+.form-check.form-switch.form-switch-primary .form-check-input:checked {
+  background-color: #1677FF;
+  border-color: #1677FF;
 }
 
 .wrap_table .table {
@@ -900,11 +908,95 @@ input {
   gap: 24px;
 }
 .wrap-flex-step-1 .card {
-  flex: 1;
+  height: 100%;
 }
 .wrap-flex-step-1 .card.card-wheel {
   flex: unset;
   width: 308px;
+}
+.wrap-flex-step-1 .group-card {
+  flex: 1;
+}
+
+.wrap-wheel .wrap img {
+  width: 100%;
+}
+
+.wrap-upload {
+  gap: 24px;
+}
+.wrap-upload .image-upload-item .imageInput {
+  display: none;
+}
+.wrap-upload .image-upload-item .upload-box {
+  position: relative;
+  width: 159px;
+  height: 159px;
+  border-radius: 6px;
+  border: 1px solid #D9D9D9;
+  background-color: #FAFAFA;
+  overflow: hidden;
+}
+.wrap-upload .image-upload-item .upload-box::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.1607843137);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 0;
+}
+.wrap-upload .image-upload-item .upload-box .label-add-image {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+.wrap-upload .image-upload-item .upload-box .label-add-image svg {
+  margin-bottom: 4px;
+}
+.wrap-upload .image-upload-item .upload-box .label-add-image p {
+  color: #1677FF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 4px;
+}
+.wrap-upload .image-upload-item .upload-box .label-add-image p.note {
+  color: rgba(0, 0, 0, 0.45);
+}
+.wrap-upload .image-upload-item .upload-box .removeImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.wrap-upload .image-upload-item .upload-box .imagePreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.wrap-upload .image-upload-item .upload-box:hover::after, .wrap-upload .image-upload-item .upload-box:hover .removeImage {
+  opacity: 1;
+  visibility: visible;
 }
 
 .biz-body {
@@ -1697,6 +1789,11 @@ input {
 }
 .biz-body .main .container-main {
   padding: 24px;
+}
+.biz-body .main .container-main-xs {
+  padding: 24px;
+  max-width: 700px;
+  margin: auto;
 }
 .biz-body .main .section-head {
   margin-bottom: 24px;

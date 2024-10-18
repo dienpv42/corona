@@ -495,6 +495,12 @@
   }
 
   .card-body {
+    .card-title{
+      >*{
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
     .wrap-filter {
       margin-bottom: 24px;
     }
@@ -655,6 +661,14 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 1.5;
+    }
+    &.form-switch-primary{
+      .form-check-input {
+        &:checked {
+          background-color: $primary;
+          border-color: $primary;
+        }
+      }
     }
   }
 }
@@ -905,10 +919,100 @@
   flex-direction: row;
   gap: 24px;
   .card{
-    flex: 1;
+    height: 100%;
     &.card-wheel{
       flex: unset;
       width: 308px;
+    }
+  }
+  .group-card{
+    flex: 1;
+  }
+}
+.wrap-wheel{
+  .wrap{
+    img{
+      width: 100%;
+    }
+  }
+}
+.wrap-upload{
+  gap: 24px;
+  .image-upload-item{
+    .imageInput{
+      display: none;
+    }
+    .upload-box{
+      position: relative;
+      width: 159px;
+      height: 159px;
+      border-radius: 6px;
+      border: 1px solid #D9D9D9;
+      background-color: #FAFAFA;
+      overflow: hidden;
+      &::after{
+        content: '';
+        background-color: #00000029;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 0;
+      }
+      .label-add-image{
+        cursor: pointer;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        z-index: 1;
+        svg{
+          margin-bottom: 4px;
+        }
+        p{
+          color: $primary;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          margin-bottom: 4px;
+          &.note{
+            color: rgba(0, 0, 0, 0.45);
+          }
+        }
+      }
+      .removeImage{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s;
+        z-index: 1;
+      }
+      .imagePreview{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      &:hover{
+        &::after, .removeImage{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
   }
 }

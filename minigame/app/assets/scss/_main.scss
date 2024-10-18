@@ -5,6 +5,11 @@
   .container-main{
     padding: 24px;
   }
+  .container-main-xs{
+    padding: 24px;
+    max-width: 700px;
+    margin: auto;
+  }
   .section-head{
     margin-bottom: 24px;
     .wrap-title{

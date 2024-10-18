@@ -1195,7 +1195,7 @@
         </div>
 
         <div class="section_content">
-            <div class="wrap-flex-step-1">
+            <div class="wrap-flex-step-1 mb-4">
                 <div class="card card-wheel">
                     <div class="card-header d-flex flex-row align-items-center justify-content-between">
                         <div class="title">
@@ -1212,22 +1212,102 @@
                                 <option value="1" selected>Mẫu mặc định</option>
                             </select>
                         </div>
-
+                        <div class="wrap-wheel">
+                            <div class="wrap">
+                                <img src="assets/images/template/template_1.png" alt="">
+                            </div>
+                            <div class="wrap-iframe d-none">
+                                <iframe src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header d-flex flex-row align-items-center justify-content-between">
-                        <div class="title">
-                            <h3>
-                                Tùy chỉnh giao diện vòng quay
-                            </h3>
+                <div class="group-card">
+                    <div class="card">
+                        <div class="card-header d-flex flex-row align-items-center justify-content-between">
+                            <div class="title">
+                                <h3>
+                                    Tùy chỉnh giao diện vòng quay
+                                </h3>
+                            </div>
+                            <div class="action">
+                            </div>
                         </div>
-                        <div class="action">
-                        </div>
-                    </div>
-                    <div class="card-body">
+                        <div class="card-body">
+                            <div class="form-group d-flex flex-row align-items-center mb-4">
+                                <label class="form-label me-4">
+                                    Loại miếng ghép
+                                </label>
+                                <div class="form-check me-3">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Màu sắc
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Hình ảnh
+                                    </label>
+                                </div>
+                            </div>
 
+                            <div class="form-group d-flex flex-row align-items-center mb-4">
+                                <label class="form-label me-4 mb-0">
+                                    Đường dẫn custom
+                                </label>
+                                <input type="text" class="form-control w-25" placeholder="Nhập đường dẫn vòng quay custom">
+                            </div>
+
+                            <div class="form-group d-flex flex-row align-items-center mb-4">
+                                <label class="form-label me-4 mb-0">
+                                    Ẩn số lượt quay
+                                </label>
+                                <div class="form-check form-switch form-switch-primary">
+                                    <input class="form-check-input" type="checkbox" id="" checked>
+                                </div>
+                            </div>
+
+                            <div class="wrap-upload d-flex flex-wrap align-items-center">
+                                <div class="image-upload-item" data-label="Bục quay" data-key="1">
+                                    <label class="form-label">Bục quay:</label>
+                                    <input type="file" id="imageUpload-1" class="imageInput" accept="image/*">
+                                    <div class="upload-box">
+                                        <label for="imageUpload-1" class="label-add-image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                <path d="M9.03558 2.07227H7.96415C7.86891 2.07227 7.82129 2.11988 7.82129 2.21512V7.82227H2.50028C2.40504 7.82227 2.35742 7.86988 2.35742 7.96512V9.03655C2.35742 9.13179 2.40504 9.17941 2.50028 9.17941H7.82129V14.7866C7.82129 14.8818 7.86891 14.9294 7.96415 14.9294H9.03558C9.13081 14.9294 9.17843 14.8818 9.17843 14.7866V9.17941H14.5003C14.5955 9.17941 14.6431 9.13179 14.6431 9.03655V7.96512C14.6431 7.86988 14.5955 7.82227 14.5003 7.82227H9.17843V2.21512C9.17843 2.11988 9.13081 2.07227 9.03558 2.07227Z" fill="#1677FF"/>
+                                            </svg>
+                                            <p>Thêm ảnh</p>
+                                        </label>
+                                        <button class="removeImage btn btn-outline-danger" style="display: none;">Xóa</button>
+                                        <img id="imageUploadPreview-1" class="imagePreview" src="" alt="Preview Image" style="display: none;">
+                                    </div>
+                                </div>
+                                <div class="image-upload-item" data-label="Bục quay" data-key="2">
+                                    <label class="form-label">Bục quay:</label>
+                                    <input type="file" id="imageUpload-2" class="imageInput" accept="image/*">
+                                    <div class="upload-box">
+                                        <label for="imageUpload-2" class="label-add-image">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                <path d="M9.03558 2.07227H7.96415C7.86891 2.07227 7.82129 2.11988 7.82129 2.21512V7.82227H2.50028C2.40504 7.82227 2.35742 7.86988 2.35742 7.96512V9.03655C2.35742 9.13179 2.40504 9.17941 2.50028 9.17941H7.82129V14.7866C7.82129 14.8818 7.86891 14.9294 7.96415 14.9294H9.03558C9.13081 14.9294 9.17843 14.8818 9.17843 14.7866V9.17941H14.5003C14.5955 9.17941 14.6431 9.13179 14.6431 9.03655V7.96512C14.6431 7.86988 14.5955 7.82227 14.5003 7.82227H9.17843V2.21512C9.17843 2.11988 9.13081 2.07227 9.03558 2.07227Z" fill="#1677FF"/>
+                                            </svg>
+                                            <p>Thêm ảnh</p>
+                                        </label>
+                                        <button class="removeImage btn btn-outline-danger" style="display: none;">Xóa</button>
+                                        <img id="imageUploadPreview-2" class="imagePreview" src="" alt="Preview Image" style="display: none;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <div class="card-action d-flex flex-row align-items-center justify-content-between">
+                <div class="action">
+                    <a href="#" class="btn btn-outline-secondary">Huỷ</a>
+                </div>
+                <div class="action">
+                    <a href="javascript:void(0);" id="saveImages" class="btn btn-primary">Tiếp theo</a>
                 </div>
             </div>
         </div>
@@ -1240,5 +1320,75 @@
 <script src="assets/js/jquery-main.js"></script>
 <script src="assets/js/jquery-migrate.js"></script>
 <script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.imageInput').on('change', function (event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            const container = $(this).closest('.image-upload-item');
+            const preview = container.find('.imagePreview');
+            const labelAddImage = container.find('.label-add-image');
+            const removeButton = container.find('.removeImage');
+            if (file) {
+                reader.onload = function (e) {
+                    labelAddImage.hide();
+                    preview.attr('src', e.target.result).show();
+                    removeButton.show();
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+        $('.removeImage').on('click', function () {
+            const container = $(this).closest('.image-upload-item');
+            const input = container.find('.imageInput');
+            const preview = container.find('.imagePreview');
+            const labelAddImage = container.find('.label-add-image');
+            input.val('');
+            preview.hide().attr('src', '');
+            labelAddImage.show();
+            $(this).hide();
+        });
+
+        // Hàm lấy tất cả dữ liệu input ảnh kèm base64
+        function getAllImageInputsData() {
+            const imagesData = [];
+            const promises = [];
+
+            // Duyệt qua tất cả các phần tử có class 'image-upload-item'
+            $('.image-upload-item').each(function () {
+                const imageInput = $(this).find('.imageInput')[0];
+                const file = imageInput.files[0]; // Lấy file đã được chọn
+                const label = $(this).data('label'); // Lấy giá trị từ data-label
+                const key = $(this).data('key'); // Lấy giá trị từ data-key
+
+                if (file) {
+                    const reader = new FileReader();
+                    const promise = new Promise((resolve, reject) => {
+                        reader.onload = function (e) {
+                            imagesData.push({
+                                label: label,
+                                key: key,
+                                fileName: file.name,
+                                base64: e.target.result
+                            });
+                            resolve();
+                        };
+                        reader.onerror = reject;
+                    });
+
+                    reader.readAsDataURL(file);
+                    promises.push(promise);
+                }
+            });
+
+            return Promise.all(promises).then(() => imagesData);
+        }
+
+
+        $('#saveImages').on('click', function () {
+            console.log(getAllImageInputsData());
+        });
+    });
+</script>
 </body>
 </html>
