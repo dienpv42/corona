@@ -1200,8 +1200,8 @@
                 <div class="card-body">
                     <div class="card-action mb-4">
                         <a href="#" class="btn btn-primary me-2 btn-create-gift">Thêm giải thưởng</a>
-                        <a href="#" class="btn btn-outline-secondary me-2">Tạo kho quà tặng</a>
-                        <a href="#" class="btn btn-outline-secondary">Kho quà tặng</a>
+                        <a href="#" class="btn btn-outline-secondary me-2"  data-bs-toggle="modal" data-bs-target="#modalAddStorageVoucher">Tạo kho quà tặng</a>
+                        <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalStorageVoucher">Kho quà tặng</a>
                     </div>
                     <div class="wrap_table table-responsive">
                         <table class="table">
@@ -1510,6 +1510,91 @@
                             <div class="col-12">
                                 <div class="card-form">
                                     <div class="card-title">
+                                        Thiết kế miếng ghép
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="form-group d-flex flex-row align-items-center mb-3">
+                                            <label class="form-label me-3 mb-0">Loại miếng ghép</label>
+                                            <ul class="nav nav-pills nav-pills-custom" id="pills-tab-type" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-text-tab" data-bs-toggle="pill" data-bs-target="#pills-text" type="button" role="tab" aria-controls="pills-text" aria-selected="true">Text</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-image-tab" data-bs-toggle="pill" data-bs-target="#pills-image" type="button" role="tab" aria-controls="pills-image" aria-selected="false">Ảnh</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content" id="pills-tabTypeContent">
+                                            <div class="tab-pane fade show active" id="pills-text" role="tabpanel" aria-labelledby="pills-text-tab">
+                                                <div class="row g-4">
+                                                    <div class="col-12 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Màu nền</label>
+                                                            <div class="input-group input-group-color">
+                                                                <input type="color" class="form-control form-control-color" value="#1677FF" title="Chọn màu">
+                                                                <input type="text" class="form-control" value="#1677FF" aria-label="Mã màu">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Màu chữ</label>
+                                                            <div class="input-group input-group-color">
+                                                                <input type="color" class="form-control form-control-color" value="#FFFFFF" title="Chọn màu">
+                                                                <input type="text" class="form-control" value="#FFFFFF" aria-label="Mã màu">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-4">
+                                                        <div class="form-group">
+                                                            <label class="form-label">Cỡ chữ</label>
+                                                            <input type="text" class="form-control" value="16">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="pills-image" role="tabpanel" aria-labelledby="pills-image-tab">
+                                                <div class="wrap-type">
+                                                    <div class="form-group mb-4">
+                                                        <label class="form-label">Màu nền</label>
+                                                        <div class="input-group input-group-color">
+                                                            <input type="color" class="form-control form-control-color" value="#1677FF" title="Chọn màu">
+                                                            <input type="text" class="form-control" value="#1677FF" aria-label="Mã màu">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="single-upload image-upload-item image-upload-item-xs me-3" data-label="Ảnh miếng ghép" data-key="piecetext">
+                                                            <label class="form-label">Ảnh miếng ghép</label>
+                                                            <input type="file" id="imageUpload-piecetext" class="imageInput" accept="image/*">
+                                                            <div class="wrap d-flex flex-row align-items-center">
+                                                                <div class="upload-box me-3">
+                                                                    <label for="imageUpload-piece" class="label-add-image">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                                            <path d="M9.03558 2.07227H7.96415C7.86891 2.07227 7.82129 2.11988 7.82129 2.21512V7.82227H2.50028C2.40504 7.82227 2.35742 7.86988 2.35742 7.96512V9.03655C2.35742 9.13179 2.40504 9.17941 2.50028 9.17941H7.82129V14.7866C7.82129 14.8818 7.86891 14.9294 7.96415 14.9294H9.03558C9.13081 14.9294 9.17843 14.8818 9.17843 14.7866V9.17941H14.5003C14.5955 9.17941 14.6431 9.13179 14.6431 9.03655V7.96512C14.6431 7.86988 14.5955 7.82227 14.5003 7.82227H9.17843V2.21512C9.17843 2.11988 9.13081 2.07227 9.03558 2.07227Z" fill="#1677FF"/>
+                                                                        </svg>
+                                                                        <p>Thêm ảnh</p>
+                                                                    </label>
+                                                                    <button class="removeImage btn btn-outline-danger" style="display: none;">Xóa</button>
+                                                                    <img id="imageUploadPreview-piecetext" class="imagePreview" src="" alt="Preview Image" style="display: none;">
+                                                                </div>
+                                                                <div class="label-note">
+                                                                    <ul>
+                                                                        <li>Dung lượng file tối đa: 2MB</li>
+                                                                        <li>Định dạng file: PNG</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card-form">
+                                    <div class="card-title">
                                         Thông báo nhận quà
                                     </div>
                                     <div class="card-content">
@@ -1564,6 +1649,46 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Hủy</button>
                 <button type="button" class="btn btn-primary">Lưu lại</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalAddStorageVoucher" tabindex="-1" aria-labelledby="modalAddGiftLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalAddStorageVoucherLabel">Thêm kho quà tặng</h5>
+                <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1404 1.82749C13.1407 1.82749 13.1411 1.82784 13.1418 1.82856L14.172 2.85891C14.1727 2.85945 14.1729 2.85981 14.1731 2.86034C14.1732 2.86069 14.1732 2.86106 14.1731 2.86141C14.1731 2.86195 14.1727 2.86231 14.172 2.86302L9.0345 8.00052L14.172 13.138C14.1727 13.1387 14.1729 13.1391 14.1731 13.1396C14.1732 13.14 14.1732 13.1405 14.1731 13.1409C14.1731 13.1412 14.1727 13.1416 14.172 13.1423L13.1416 14.1725C13.1411 14.1732 13.1407 14.1734 13.1404 14.1736C13.14 14.1737 13.1395 14.1737 13.1391 14.1736C13.1386 14.1736 13.1382 14.1732 13.1375 14.1725L8.00003 9.03499L2.86253 14.1725C2.86182 14.1732 2.86146 14.1734 2.86093 14.1736C2.86052 14.1737 2.86008 14.1737 2.85968 14.1736C2.85932 14.1736 2.85896 14.1732 2.85825 14.1725L1.82807 13.1421C1.82735 13.1416 1.82718 13.1412 1.827 13.1409C1.82687 13.1405 1.82687 13.14 1.827 13.1396C1.827 13.1391 1.82735 13.1387 1.82807 13.138L6.96557 8.00052L1.82807 2.86302C1.82735 2.86231 1.82718 2.86195 1.827 2.86141C1.82687 2.86101 1.82687 2.86057 1.827 2.86016C1.827 2.85981 1.82735 2.85945 1.82807 2.85874L2.85843 1.82856C2.85896 1.82784 2.85932 1.82766 2.85968 1.82749C2.86008 1.82736 2.86052 1.82736 2.86093 1.82749C2.86146 1.82749 2.86182 1.82784 2.86253 1.82856L8.00003 6.96606L13.1375 1.82856C13.1382 1.82784 13.1386 1.82766 13.1391 1.82749C13.1395 1.82736 13.14 1.82736 13.1404 1.82749Z" fill="black" fill-opacity="0.45"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Lưu lại</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modalStorageVoucher" tabindex="-1" aria-labelledby="modalAddGiftLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalStorageVoucherLabel">Kho quà tặng</h5>
+                <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1404 1.82749C13.1407 1.82749 13.1411 1.82784 13.1418 1.82856L14.172 2.85891C14.1727 2.85945 14.1729 2.85981 14.1731 2.86034C14.1732 2.86069 14.1732 2.86106 14.1731 2.86141C14.1731 2.86195 14.1727 2.86231 14.172 2.86302L9.0345 8.00052L14.172 13.138C14.1727 13.1387 14.1729 13.1391 14.1731 13.1396C14.1732 13.14 14.1732 13.1405 14.1731 13.1409C14.1731 13.1412 14.1727 13.1416 14.172 13.1423L13.1416 14.1725C13.1411 14.1732 13.1407 14.1734 13.1404 14.1736C13.14 14.1737 13.1395 14.1737 13.1391 14.1736C13.1386 14.1736 13.1382 14.1732 13.1375 14.1725L8.00003 9.03499L2.86253 14.1725C2.86182 14.1732 2.86146 14.1734 2.86093 14.1736C2.86052 14.1737 2.86008 14.1737 2.85968 14.1736C2.85932 14.1736 2.85896 14.1732 2.85825 14.1725L1.82807 13.1421C1.82735 13.1416 1.82718 13.1412 1.827 13.1409C1.82687 13.1405 1.82687 13.14 1.827 13.1396C1.827 13.1391 1.82735 13.1387 1.82807 13.138L6.96557 8.00052L1.82807 2.86302C1.82735 2.86231 1.82718 2.86195 1.827 2.86141C1.82687 2.86101 1.82687 2.86057 1.827 2.86016C1.827 2.85981 1.82735 2.85945 1.82807 2.85874L2.85843 1.82856C2.85896 1.82784 2.85932 1.82766 2.85968 1.82749C2.86008 1.82736 2.86052 1.82736 2.86093 1.82749C2.86146 1.82749 2.86182 1.82784 2.86253 1.82856L8.00003 6.96606L13.1375 1.82856C13.1382 1.82784 13.1386 1.82766 13.1391 1.82749C13.1395 1.82736 13.14 1.82736 13.1404 1.82749Z" fill="black" fill-opacity="0.45"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="modal-body">
+
             </div>
         </div>
     </div>

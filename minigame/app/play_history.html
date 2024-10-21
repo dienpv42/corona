@@ -1442,13 +1442,13 @@
                 locale: {
                     cancelLabel: 'Clear',
                     applyLabel: 'Apply',
-                    format: 'MM/DD/YYYY'
+                    format: 'DD/MM/YYYY'
                 }
             });
 
             // Update input field when a date is selected
             $dateFilter.on('apply.daterangepicker', function (ev, picker) {
-                $(this).val(picker.startDate.format('MM/DD/YYYY'));
+                $(this).val(picker.startDate.format('DD/MM/YYYY'));
             });
 
             // Clear input field on cancel

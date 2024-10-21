@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/svg/logo_short.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <title>BizMinigame</title>
+</head>
+<body class="biz-template">
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<button id="spinButton">Quay</button>
+<button id="reset">reset</button>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/app.js"></script>
+
+<script>
+    const config = {
+        canvasId: 'myCanvas',
+        positionAbove: true, // true: kim chỉ ở trên, false: kim chỉ ở dưới
+        fontFamily: 'Arial',
+        imageSize: 70,
+        minSpinDuration: 3000, // Thời gian quay tối thiểu (ms)
+        maxSpinDuration: 5000, // Thời gian quay tối đa (ms)
+    };
+
+    const contents = [
+        { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#FF6666' },
+        { content: 'Đây là văn bản', fontSize: 11, color: '#000', isImage: false, background_color: '#FFCC66' },
+        { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#66FF66' },
+        { content: 'Quà 1223 aâaaaaaaaa', fontSize: 18, color: '#000', isImage: false, background_color: '#66CCFF' },
+        { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#FF99FF' },
+        { content: 'Chúc may mắn!', fontSize: 20, color: '#FF0000', isImage: false, background_color: '#FF9966' },
+        { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#66FF99' }
+    ];
+
+    let spinning = false;
+    let currentAngle = 0; // Góc hiện tại
+    const spinButton = document.getElementById('spinButton');
+
+    function preloadImages(contents, callback) {
+        let loadedImages = 0;
+        contents.forEach((content) => {
+            if (content.isImage && isImage(content.content)) {
+                const image = new Image();
+                image.src = content.content;
+                content.imageElement = image;
+                image.onload = () => {
+                    loadedImages++;
+                    if (loadedImages === contents.filter(c => c.isImage).length) {
+                        callback();
+                    }
+                };
+            }
+        });
+    }
+
+    function isImage(path) {
+        return path.match(/\.(jpeg|jpg|gif|png)$/i) != null;
+    }
+
+    function drawCircularSections(config, contents, angleOffset = 0) {
+        const canvas = document.getElementById(config.canvasId);
+        const ctx = canvas.getContext('2d');
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2;
+        const radius = Math.min(centerX, centerY);
+        const contentDistance = radius / 1.6;
+        const maxTextWidth = radius;
+        const padding = 50;
+
+        function drawWrappedText(ctx, text, x, y, maxWidth, fontSize, color) {
+            ctx.fillStyle = color;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.font = `${fontSize}px ${config.fontFamily || 'Arial'}`;
+            const segments = text.split(/\/n/g);
+            const lineHeight = fontSize + 4;
+            const lines = [];
+
+            segments.forEach(segment => {
+                const words = segment.split(' ');
+                let line = '';
+
+                words.forEach((word, i) => {
+                    const testLine = line + word + ' ';
+                    const metrics = ctx.measureText(testLine);
+                    const testWidth = metrics.width;
+
+                    if (testWidth > maxWidth && i > 0) {
+                        lines.push(line.trim());
+                        line = word + ' ';
+                    } else {
+                        line = testLine;
+                    }
+                });
+
+                if (line) {
+                    lines.push(line.trim());
+                }
+            });
+
+            const totalHeight = lines.length * lineHeight;
+            let startY = y - totalHeight / 2 + 10;
+
+            lines.forEach((line) => {
+                ctx.fillText(line, x, startY);
+                startY += lineHeight;
+            });
+
+            return totalHeight;
+        }
+
+        function drawSection(startAngle, endAngle, content) {
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY);
+            ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+            ctx.closePath();
+            ctx.fillStyle = content.background_color;
+            ctx.fill();
+
+            const angle = (startAngle + endAngle) / 2;
+            const contentX = centerX + (contentDistance) * Math.cos(angle);
+            const contentY = centerY + (contentDistance) * Math.sin(angle);
+
+            ctx.save();
+            ctx.translate(contentX, contentY);
+            ctx.rotate(angle); // Luôn quay theo một chiều
+
+            if (content.isImage && content.imageElement) {
+                ctx.drawImage(content.imageElement, -config.imageSize / 2, -config.imageSize / 2, config.imageSize, config.imageSize);
+            } else {
+                const totalHeight = drawWrappedText(ctx, content.content, 0, 0, maxTextWidth - padding * 2, content.fontSize || 16, content.color || '#000');
+                ctx.translate(0, totalHeight / 2);
+            }
+
+            ctx.restore();
+        }
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Xóa canvas
+        const angleStep = (2 * Math.PI) / contents.length; // Tính toán bước góc
+        for (let i = 0; i < contents.length; i++) {
+            const startAngle = i * angleStep - (config.positionAbove ? Math.PI / 2 : -Math.PI / 2) + angleOffset;
+            const endAngle = (i + 1) * angleStep - (config.positionAbove ? Math.PI / 2 : -Math.PI / 2) + angleOffset;
+            drawSection(startAngle, endAngle, contents[i % contents.length]);
+        }
+    }
+
+    function spinWheel(targetId) {
+        if (spinning) return;
+        spinning = true;
+
+        // Tính toán góc dừng cho miếng chỉ định
+        const angleStep = (2 * Math.PI) / contents.length;
+
+        // Tính góc dừng cho miếng chỉ định (kim ở phía trên)
+        const targetAngle = targetId * angleStep; // Trừ đi π/2 để điều chỉnh kim
+
+        // Tính khoảng góc của miếng chỉ định
+        const minTargetAngle = targetAngle; // Góc nhỏ nhất của miếng chỉ định
+        const maxTargetAngle = targetAngle + angleStep; // Góc lớn nhất của miếng chỉ định
+
+        // Tạo một góc ngẫu nhiên trong khoảng góc của miếng chỉ định
+        const randomAngle = Math.random() * (maxTargetAngle - minTargetAngle) + minTargetAngle;
+
+        // Số vòng quay ngẫu nhiên
+        const randomSpins = Math.floor(Math.random() * 5) + 10; // Từ 10 đến 14 vòng
+
+        const startTime = Date.now();
+        const duration = Math.random() * (config.maxSpinDuration - config.minSpinDuration) + config.minSpinDuration;
+        const totalRotation = randomSpins * 2 * Math.PI + randomAngle; // Quay số vòng ngẫu nhiên
+
+        // Easing function for smooth deceleration
+        const easing = (t) => 1 - Math.pow(1 - t, 3); // Hàm easing cho hiệu ứng quay chậm dần
+
+        function animate() {
+            const currentTime = Date.now();
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easedProgress = easing(progress);
+            currentAngle = (easedProgress * totalRotation) % (2 * Math.PI); // Đảm bảo góc không vượt quá 2π
+
+            drawCircularSections(config, contents, currentAngle); // Vẽ lại vòng quay với góc hiện tại
+
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                spinning = false; // Quay kết thúc
+            }
+        }
+
+        requestAnimationFrame(animate);
+    }
+
+
+    spinButton.addEventListener('click', () => {
+        if (!spinning) {
+            const randomPieceId = 5; // Chọn ngẫu nhiên miếng
+            console.log(contents[randomPieceId].content);
+            spinWheel(randomPieceId); // Gọi hàm quay với miếng ngẫu nhiên
+        }
+    });
+
+    preloadImages(contents, () => {
+        drawCircularSections(config, contents); // Vẽ vòng quay ban đầu
+    });
+
+    $('#reset').click(function () {
+        drawCircularSections(config, contents); // Vẽ vòng quay ban đầu
+        currentAngle = 0; // Đặt lại góc về 0
+    });
+</script>
+
+
+</body>
+</html>
