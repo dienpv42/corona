@@ -1333,74 +1333,18 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery-main.js"></script>
 <script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/imageUploadLib.js"></script>
 <script src="assets/js/app.js"></script>
 <script>
     $(document).ready(function () {
-        $('.imageInput').on('change', function (event) {
-            const file = event.target.files[0];
-            const reader = new FileReader();
-            const container = $(this).closest('.image-upload-item');
-            const preview = container.find('.imagePreview');
-            const labelAddImage = container.find('.label-add-image');
-            const removeButton = container.find('.removeImage');
-            if (file) {
-                reader.onload = function (e) {
-                    labelAddImage.hide();
-                    preview.attr('src', e.target.result).show();
-                    removeButton.show();
-                };
-                reader.readAsDataURL(file);
-            }
-        });
-        $('.removeImage').on('click', function () {
-            const container = $(this).closest('.image-upload-item');
-            const input = container.find('.imageInput');
-            const preview = container.find('.imagePreview');
-            const labelAddImage = container.find('.label-add-image');
-            input.val('');
-            preview.hide().attr('src', '');
-            labelAddImage.show();
-            $(this).hide();
-        });
+        // Khởi tạo chức năng upload ảnh
+        imageUploadLib.initImageUpload();
 
-        // Hàm lấy tất cả dữ liệu input ảnh kèm base64
-        function getAllImageInputsData() {
-            const imagesData = [];
-            const promises = [];
-
-            // Duyệt qua tất cả các phần tử có class 'image-upload-item'
-            $('.image-upload-item').each(function () {
-                const imageInput = $(this).find('.imageInput')[0];
-                const file = imageInput.files[0]; // Lấy file đã được chọn
-                const label = $(this).data('label'); // Lấy giá trị từ data-label
-                const key = $(this).data('key'); // Lấy giá trị từ data-key
-
-                if (file) {
-                    const reader = new FileReader();
-                    const promise = new Promise((resolve, reject) => {
-                        reader.onload = function (e) {
-                            imagesData.push({
-                                label: label,
-                                key: key,
-                                fileName: file.name,
-                                base64: e.target.result
-                            });
-                            resolve();
-                        };
-                        reader.onerror = reject;
-                    });
-
-                    reader.readAsDataURL(file);
-                    promises.push(promise);
-                }
-            });
-
-            return Promise.all(promises).then(() => imagesData);
-        }
-
-
+        // Sử dụng hàm để lấy dữ liệu khi bấm nút lưu
         $('#saveImages').on('click', function () {
-            console.log(getAllImageInputsData());
+            imageUploadLib.getAllImageInputsData().then(function (imagesData) {
+                console.log(imagesData); // Xử lý dữ liệu ảnh thu thập được
+            });
         });
     });
 </script>

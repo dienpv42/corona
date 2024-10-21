@@ -954,10 +954,11 @@ input {
 .wrap-upload {
   gap: 24px;
 }
-.wrap-upload .image-upload-item .imageInput {
+
+.image-upload-item .imageInput {
   display: none;
 }
-.wrap-upload .image-upload-item .upload-box {
+.image-upload-item .upload-box {
   position: relative;
   width: 159px;
   height: 159px;
@@ -966,7 +967,7 @@ input {
   background-color: #FAFAFA;
   overflow: hidden;
 }
-.wrap-upload .image-upload-item .upload-box::after {
+.image-upload-item .upload-box::after {
   content: "";
   background-color: rgba(0, 0, 0, 0.1607843137);
   position: absolute;
@@ -979,7 +980,7 @@ input {
   visibility: hidden;
   z-index: 0;
 }
-.wrap-upload .image-upload-item .upload-box .label-add-image {
+.image-upload-item .upload-box .label-add-image {
   cursor: pointer;
   position: absolute;
   width: 100%;
@@ -993,10 +994,10 @@ input {
   text-align: center;
   z-index: 1;
 }
-.wrap-upload .image-upload-item .upload-box .label-add-image svg {
+.image-upload-item .upload-box .label-add-image svg {
   margin-bottom: 4px;
 }
-.wrap-upload .image-upload-item .upload-box .label-add-image p {
+.image-upload-item .upload-box .label-add-image p {
   color: #1677FF;
   text-align: center;
   font-size: 12px;
@@ -1004,10 +1005,10 @@ input {
   line-height: 20px;
   margin-bottom: 4px;
 }
-.wrap-upload .image-upload-item .upload-box .label-add-image p.note {
+.image-upload-item .upload-box .label-add-image p.note {
   color: rgba(0, 0, 0, 0.45);
 }
-.wrap-upload .image-upload-item .upload-box .removeImage {
+.image-upload-item .upload-box .removeImage {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1017,15 +1018,31 @@ input {
   transition: all 0.3s;
   z-index: 1;
 }
-.wrap-upload .image-upload-item .upload-box .imagePreview {
+.image-upload-item .upload-box .imagePreview {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.wrap-upload .image-upload-item .upload-box:hover::after, .wrap-upload .image-upload-item .upload-box:hover .removeImage {
+.image-upload-item .upload-box:hover::after, .image-upload-item .upload-box:hover .removeImage {
   opacity: 1;
   visibility: visible;
+}
+.image-upload-item.image-upload-item-xs .upload-box {
+  width: 80px;
+  height: 80px;
+}
+
+.label-note {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.66;
+}
+.label-note ol, .label-note ul {
+  list-style: disc;
+  padding-left: 16px;
 }
 
 .w-info-status-image .image {
@@ -1052,6 +1069,18 @@ input {
   max-height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.card-form {
+  padding: 12px 24px 24px;
+  border-radius: 8px;
+  background: #F5F5F5;
+}
+.card-form .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 
 .biz-body {

@@ -1199,7 +1199,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="card-action mb-4">
-                        <a href="#" class="btn btn-primary me-2">Thêm giải thưởng</a>
+                        <a href="#" class="btn btn-primary me-2 btn-create-gift">Thêm giải thưởng</a>
                         <a href="#" class="btn btn-outline-secondary me-2">Tạo kho quà tặng</a>
                         <a href="#" class="btn btn-outline-secondary">Kho quà tặng</a>
                     </div>
@@ -1382,13 +1382,206 @@
 <footer class="footer">
 </footer>
 
+<div class="modal fade" id="modalAddGift" tabindex="-1" aria-labelledby="modalAddGiftLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalInfoLabel">Thêm giải thưởng mới</h5>
+                <a href="javascript:void(0)" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1404 1.82749C13.1407 1.82749 13.1411 1.82784 13.1418 1.82856L14.172 2.85891C14.1727 2.85945 14.1729 2.85981 14.1731 2.86034C14.1732 2.86069 14.1732 2.86106 14.1731 2.86141C14.1731 2.86195 14.1727 2.86231 14.172 2.86302L9.0345 8.00052L14.172 13.138C14.1727 13.1387 14.1729 13.1391 14.1731 13.1396C14.1732 13.14 14.1732 13.1405 14.1731 13.1409C14.1731 13.1412 14.1727 13.1416 14.172 13.1423L13.1416 14.1725C13.1411 14.1732 13.1407 14.1734 13.1404 14.1736C13.14 14.1737 13.1395 14.1737 13.1391 14.1736C13.1386 14.1736 13.1382 14.1732 13.1375 14.1725L8.00003 9.03499L2.86253 14.1725C2.86182 14.1732 2.86146 14.1734 2.86093 14.1736C2.86052 14.1737 2.86008 14.1737 2.85968 14.1736C2.85932 14.1736 2.85896 14.1732 2.85825 14.1725L1.82807 13.1421C1.82735 13.1416 1.82718 13.1412 1.827 13.1409C1.82687 13.1405 1.82687 13.14 1.827 13.1396C1.827 13.1391 1.82735 13.1387 1.82807 13.138L6.96557 8.00052L1.82807 2.86302C1.82735 2.86231 1.82718 2.86195 1.827 2.86141C1.82687 2.86101 1.82687 2.86057 1.827 2.86016C1.827 2.85981 1.82735 2.85945 1.82807 2.85874L2.85843 1.82856C2.85896 1.82784 2.85932 1.82766 2.85968 1.82749C2.86008 1.82736 2.86052 1.82736 2.86093 1.82749C2.86146 1.82749 2.86182 1.82784 2.86253 1.82856L8.00003 6.96606L13.1375 1.82856C13.1382 1.82784 13.1386 1.82766 13.1391 1.82749C13.1395 1.82736 13.14 1.82736 13.1404 1.82749Z" fill="black" fill-opacity="0.45"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="wrap-form-modal">
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <span class="text-danger">*</span> Tên giải thưởng
+                                    </label>
+                                    <input type="text" name="name" class="form-control" placeholder="Nhập tên">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <span class="text-danger">*</span> Trạng thái
+                                    </label>
+                                    <select name="status" class="form-select">
+                                        <option value="0">Dừng hoạt động</option>
+                                        <option value="1" selected>Hoạt động</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <span class="text-danger">*</span> Chọn loại quà
+                                    </label>
+                                    <select name="type" class="form-select">
+                                        <option value="" selected>Chọn loại quà</option>
+                                        <option value="1">Voucher</option>
+                                        <option value="2">Hiện vật</option>
+                                        <option value="3">Chúc may mắn</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <span class="text-danger">*</span> Kho quà tặng
+                                    </label>
+                                    <select name="storage" class="form-select">
+                                        <option value="" selected>Chọn kho</option>
+                                        <option value="1">kho 1</option>
+                                        <option value="2">kho 2</option>
+                                        <option value="3">kho 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <span class="text-danger">*</span> Thứ tự
+                                    </label>
+                                    <input type="number" name="index" class="form-control" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <span class="text-danger">*</span> Số lượng
+                                    </label>
+                                    <input type="number" name="num" class="form-control" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        <span class="text-danger">*</span> Tỉ lệ trúng (%)
+                                    </label>
+                                    <input type="number" name="ratio" class="form-control" placeholder="0">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label class="form-label">
+                                        Mô tả giải thưởng
+                                    </label>
+                                    <textarea name="description" id="" rows="4" class="form-control" placeholder="Nhập mô tả giải thưởng"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                 <div class="card-form">
+                                    <div class="card-title">
+                                        Thiết kế miếng ghép
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="form-group">
+                                            <div class="single-upload image-upload-item image-upload-item-xs me-3" data-label="Ảnh miếng ghép" data-key="piece">
+                                                <label class="form-label">Ảnh miếng ghép</label>
+                                                <input type="file" id="imageUpload-piece" class="imageInput" accept="image/*">
+                                                <div class="wrap d-flex flex-row align-items-center">
+                                                    <div class="upload-box me-3">
+                                                        <label for="imageUpload-piece" class="label-add-image">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                                <path d="M9.03558 2.07227H7.96415C7.86891 2.07227 7.82129 2.11988 7.82129 2.21512V7.82227H2.50028C2.40504 7.82227 2.35742 7.86988 2.35742 7.96512V9.03655C2.35742 9.13179 2.40504 9.17941 2.50028 9.17941H7.82129V14.7866C7.82129 14.8818 7.86891 14.9294 7.96415 14.9294H9.03558C9.13081 14.9294 9.17843 14.8818 9.17843 14.7866V9.17941H14.5003C14.5955 9.17941 14.6431 9.13179 14.6431 9.03655V7.96512C14.6431 7.86988 14.5955 7.82227 14.5003 7.82227H9.17843V2.21512C9.17843 2.11988 9.13081 2.07227 9.03558 2.07227Z" fill="#1677FF"/>
+                                                            </svg>
+                                                            <p>Thêm ảnh</p>
+                                                        </label>
+                                                        <button class="removeImage btn btn-outline-danger" style="display: none;">Xóa</button>
+                                                        <img id="imageUploadPreview-piece" class="imagePreview" src="" alt="Preview Image" style="display: none;">
+                                                    </div>
+                                                    <div class="label-note">
+                                                        <ul>
+                                                            <li>Dung lượng file tối đa: 2MB</li>
+                                                            <li>Định dạng file: PNG</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card-form">
+                                    <div class="card-title">
+                                        Thông báo nhận quà
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="form-group mb-4">
+                                            <div class="single-upload image-upload-item image-upload-item-xs me-3" data-label="Ảnh thông báo" data-key="result">
+                                                <label class="form-label">Ảnh thông báo</label>
+                                                <input type="file" id="imageUpload-result" class="imageInput" accept="image/*">
+                                                <div class="wrap d-flex flex-row align-items-center">
+                                                    <div class="upload-box me-3">
+                                                        <label for="imageUpload-result" class="label-add-image">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                                                <path d="M9.03558 2.07227H7.96415C7.86891 2.07227 7.82129 2.11988 7.82129 2.21512V7.82227H2.50028C2.40504 7.82227 2.35742 7.86988 2.35742 7.96512V9.03655C2.35742 9.13179 2.40504 9.17941 2.50028 9.17941H7.82129V14.7866C7.82129 14.8818 7.86891 14.9294 7.96415 14.9294H9.03558C9.13081 14.9294 9.17843 14.8818 9.17843 14.7866V9.17941H14.5003C14.5955 9.17941 14.6431 9.13179 14.6431 9.03655V7.96512C14.6431 7.86988 14.5955 7.82227 14.5003 7.82227H9.17843V2.21512C9.17843 2.11988 9.13081 2.07227 9.03558 2.07227Z" fill="#1677FF"/>
+                                                            </svg>
+                                                            <p>Thêm ảnh</p>
+                                                        </label>
+                                                        <button class="removeImage btn btn-outline-danger" style="display: none;">Xóa</button>
+                                                        <img id="imageUploadPreview-result" class="imagePreview" src="" alt="Preview Image" style="display: none;">
+                                                    </div>
+                                                    <div class="label-note">
+                                                        <ul>
+                                                            <li>Dung lượng file tối đa: 2MB</li>
+                                                            <li>Định dạng file: PNG</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label d-flex flex-row align-items-center">
+                                                <span class="me-2">Nội dung</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                                    <g clip-path="url(#clip0_15_24526)">
+                                                        <path d="M7 0.000976562C3.13437 0.000976562 0 3.13535 0 7.00098C0 10.8666 3.13437 14.001 7 14.001C10.8656 14.001 14 10.8666 14 7.00098C14 3.13535 10.8656 0.000976562 7 0.000976562ZM7 12.8135C3.79063 12.8135 1.1875 10.2104 1.1875 7.00098C1.1875 3.7916 3.79063 1.18848 7 1.18848C10.2094 1.18848 12.8125 3.7916 12.8125 7.00098C12.8125 10.2104 10.2094 12.8135 7 12.8135Z" fill="black" fill-opacity="0.45"/>
+                                                        <path d="M6.24976 4.25098C6.24976 4.44989 6.32877 4.64065 6.46943 4.78131C6.61008 4.92196 6.80084 5.00098 6.99976 5.00098C7.19867 5.00098 7.38943 4.92196 7.53009 4.78131C7.67074 4.64065 7.74976 4.44989 7.74976 4.25098C7.74976 4.05206 7.67074 3.8613 7.53009 3.72065C7.38943 3.57999 7.19867 3.50098 6.99976 3.50098C6.80084 3.50098 6.61008 3.57999 6.46943 3.72065C6.32877 3.8613 6.24976 4.05206 6.24976 4.25098ZM7.37476 6.00098H6.62476C6.55601 6.00098 6.49976 6.05723 6.49976 6.12598V10.376C6.49976 10.4447 6.55601 10.501 6.62476 10.501H7.37476C7.44351 10.501 7.49976 10.4447 7.49976 10.376V6.12598C7.49976 6.05723 7.44351 6.00098 7.37476 6.00098Z" fill="black" fill-opacity="0.45"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_15_24526">
+                                                            <rect width="14" height="14" fill="white" transform="translate(0 0.000976562)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </label>
+                                            <textarea name="description_result" rows="4" class="form-control" placeholder="Nhập tin nhắn bạn muốn gửi cho người chơi khi họ nhận quà "></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Hủy</button>
+                <button type="button" class="btn btn-primary">Lưu lại</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery-main.js"></script>
 <script src="assets/js/jquery-migrate.js"></script>
 <script src="assets/vendors/select2/dist/js/select2.min.js"></script>
+<script src="assets/js/imageUploadLib.js"></script>
 <script src="assets/js/app.js"></script>
+
 <script>
     $(document).ready(function () {
+        imageUploadLib.initImageUpload('.single-upload');
+        const $modalCreateGift = $('#modalAddGift');
+
         // Khởi tạo select2 cho các dropdown kho
         $('.select-warehouse').select2({
             placeholder: 'Chọn kho',
@@ -1449,8 +1642,17 @@
             var value = $(this).val();
             saveData(key, 'quantity', value);
         }, 500));
+
+
+        // Tạo quà - miếng ghép
+        $(document).on('click', '.btn-create-gift', function (){
+            $modalCreateGift.modal('show');
+        });
     });
 
 </script>
+
+
+
 </body>
 </html>
