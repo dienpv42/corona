@@ -156,27 +156,27 @@
         if (spinning) return;
         spinning = true;
 
-        // Tính toán góc dừng cho miếng chỉ định
+        // Đặt lại góc về vị trí ban đầu
+        currentAngle = 0; // Đặt góc về 0 trước khi quay
+        drawCircularSections(config, contents, currentAngle); // Vẽ lại vòng quay về vị trí ban đầu
+
+        // Tính toán góc dừng
         const angleStep = (2 * Math.PI) / contents.length;
+        console.log(angleStep)
+        const targetAngle = targetId * angleStep - (config.positionAbove ? Math.PI / 2 : -Math.PI / 2); // Tính góc dừng cho miếng chỉ định
+        console.log(targetAngle)
 
-        // Tính góc dừng cho miếng chỉ định (kim ở phía trên)
-        const targetAngle = targetId * angleStep; // Trừ đi π/2 để điều chỉnh kim
 
-        // Tính khoảng góc của miếng chỉ định
-        const minTargetAngle = targetAngle; // Góc nhỏ nhất của miếng chỉ định
-        const maxTargetAngle = targetAngle + angleStep; // Góc lớn nhất của miếng chỉ định
-
-        // Tạo một góc ngẫu nhiên trong khoảng góc của miếng chỉ định
-        const randomAngle = Math.random() * (maxTargetAngle - minTargetAngle) + minTargetAngle;
+        // Tạo một góc ngẫu nhiên trong miếng
+        const randomOffset = Math.random() * angleStep; // Chọn ngẫu nhiên trong miếng
+        const finalTargetAngle = targetAngle + randomOffset; // Tính góc dừng cuối cùng
 
         // Số vòng quay ngẫu nhiên
-        const randomSpins = Math.floor(Math.random() * 5) + 10; // Từ 10 đến 14 vòng
+        const randomSpins = Math.floor(Math.random() * 5) + 5; // Từ 5 đến 9 vòng
 
         const startTime = Date.now();
         const duration = Math.random() * (config.maxSpinDuration - config.minSpinDuration) + config.minSpinDuration;
-        const totalRotation = randomSpins * 2 * Math.PI + randomAngle; // Quay số vòng ngẫu nhiên
-
-        // Easing function for smooth deceleration
+        const totalRotation = randomSpins * 2 * Math.PI + finalTargetAngle; // Quay số vòng ngẫu nhiên
         const easing = (t) => 1 - Math.pow(1 - t, 3); // Hàm easing cho hiệu ứng quay chậm dần
 
         function animate() {
@@ -198,10 +198,9 @@
         requestAnimationFrame(animate);
     }
 
-
     spinButton.addEventListener('click', () => {
         if (!spinning) {
-            const randomPieceId = 5; // Chọn ngẫu nhiên miếng
+            const randomPieceId = Math.floor(Math.random() * contents.length); // Chọn ngẫu nhiên miếng
             console.log(contents[randomPieceId].content);
             spinWheel(randomPieceId); // Gọi hàm quay với miếng ngẫu nhiên
         }
