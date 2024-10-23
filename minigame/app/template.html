@@ -13,7 +13,7 @@
 <body class="biz-template">
 <canvas id="myCanvas" width="500" height="500"></canvas>
 <button id="spinButton">Quay</button>
-<button id="reset">reset</button>
+<button id="spinReset">Reset</button>
 
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/jquery-main.js"></script>
@@ -23,49 +23,75 @@
 <script>
     const config = {
         canvasId: 'myCanvas',
-        positionAbove: true, // true: kim chỉ ở trên, false: kim chỉ ở dưới
+        positionAbove: 1, // 1: kim chỉ ở trên, 0: kim chỉ ở dưới
         fontFamily: 'Arial',
         imageSize: 70,
-        minSpinDuration: 3000, // Thời gian quay tối thiểu (ms)
-        maxSpinDuration: 5000, // Thời gian quay tối đa (ms)
+        minSpinDuration: 4000, // Thời gian quay tối thiểu (ms)
+        maxSpinDuration: 6000, // Thời gian quay tối đa (ms)
+        typeWheel: 1, // 1 là content nền miếng text và ảnh ở trên, 2 là miếng sẵn
+        contents : [ // typeWheel 1
+            { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#FF6666' },
+            { content: 'Đây là văn bản 1', fontSize: 30, color: '#000', isImage: false, background_color: '#FFCC66' },
+            { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#66FF66' },
+            { content: 'Quà 1223 aâaaaaaaaa', fontSize: 18, color: '#000', isImage: false, background_color: '#66CCFF' },
+            { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#FF6666' },
+            { content: 'Đây là văn bản 2', fontSize: 30, color: '#000', isImage: false, background_color: '#FFCC66' },
+            { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#FF6666' },
+        ],
+        // contents : [ // typeWheel 2
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526391852.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526432155.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526391852.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526432155.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526391852.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526432155.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526391852.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526432155.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526391852.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706526432155.png',
+        //     'https://challenge.lotuscdn.vn/challenge/challenge/images/image-1706522226827.png',
+        // ]
     };
-
-    const contents = [
-        { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#FF6666' },
-        { content: 'Đây là văn bản', fontSize: 11, color: '#000', isImage: false, background_color: '#FFCC66' },
-        { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#66FF66' },
-        { content: 'Quà 1223 aâaaaaaaaa', fontSize: 18, color: '#000', isImage: false, background_color: '#66CCFF' },
-        { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#FF99FF' },
-        { content: 'Chúc may mắn!', fontSize: 20, color: '#FF0000', isImage: false, background_color: '#FF9966' },
-        { content: 'https://mybizfly.mediacdn.vn/mybizfly/dev/mybizfly/banner/1729046848-tk-02 (7).jpg', isImage: true, background_color: '#66FF99' }
-    ];
-
     let spinning = false;
     let currentAngle = 0; // Góc hiện tại
     const spinButton = document.getElementById('spinButton');
 
     function preloadImages(contents, callback) {
         let loadedImages = 0;
-        contents.forEach((content) => {
-            if (content.isImage && isImage(content.content)) {
-                const image = new Image();
-                image.src = content.content;
-                content.imageElement = image;
-                image.onload = () => {
-                    loadedImages++;
-                    if (loadedImages === contents.filter(c => c.isImage).length) {
+        if (config.typeWheel === 1) {
+            contents.forEach((content) => {
+                if (content.isImage && isImage(content.content)) {
+                    const image = new Image();
+                    image.src = content.content;
+                    content.imageElement = image;
+                    image.onload = () => {
+                        loadedImages++;
+                        if (loadedImages === contents.filter(c => c.isImage).length) {
+                            callback();
+                        }
+                    };
+                }
+            });
+        } else if (config.typeWheel === 2) {
+            contents.forEach((content) => {
+                if (content && isImage(content)) {
+                    const image = new Image();
+                    image.src = content;
+                    content.imageElement = image;
+                    image.onload = () => {
+                        loadedImages++;
                         callback();
-                    }
-                };
-            }
-        });
+                    };
+                }
+            });
+        }
     }
 
     function isImage(path) {
         return path.match(/\.(jpeg|jpg|gif|png)$/i) != null;
     }
 
-    function drawCircularSections(config, contents, angleOffset = 0) {
+    function drawCircularSections(config, angleOffset = 0) {
         const canvas = document.getElementById(config.canvasId);
         const ctx = canvas.getContext('2d');
         const centerX = canvas.width / 2;
@@ -74,6 +100,7 @@
         const contentDistance = radius / 1.6;
         const maxTextWidth = radius;
         const padding = 50;
+        const contents = config.contents;
 
         function drawWrappedText(ctx, text, x, y, maxWidth, fontSize, color) {
             ctx.fillStyle = color;
@@ -143,13 +170,50 @@
             ctx.restore();
         }
 
-        ctx.clearRect(0, 0, canvas.width, canvas.height); // Xóa canvas
-        const angleStep = (2 * Math.PI) / contents.length; // Tính toán bước góc
-        for (let i = 0; i < contents.length; i++) {
-            const startAngle = i * angleStep - (config.positionAbove ? Math.PI / 2 : -Math.PI / 2) + angleOffset;
-            const endAngle = (i + 1) * angleStep - (config.positionAbove ? Math.PI / 2 : -Math.PI / 2) + angleOffset;
-            drawSection(startAngle, endAngle, contents[i % contents.length]);
+        function drawSectionPiece(startAngle, endAngle, content){
+            // Vẽ miếng cung tròn
+            ctx.beginPath();
+            ctx.moveTo(centerX, centerY); // Bắt đầu từ tâm
+            ctx.arc(centerX, centerY, radius, startAngle, endAngle); // Vẽ cung tròn từ tâm
+            ctx.closePath();
+            ctx.fillStyle = '#ffffff'; // Màu nền của miếng
+
+            // Tính toán góc trung bình cho miếng hiện tại
+            const angle = (startAngle + endAngle) / 2;
+
+            const image = new Image();
+            image.src = content;
+
+            // Vẽ hình ảnh với kích thước khớp với cung tròn
+            ctx.save();
+            ctx.translate(centerX, centerY); // Di chuyển hệ tọa độ về tâm
+            ctx.rotate(angle); // Xoay theo góc của cung để ảnh khớp
+
+            // Chiều rộng hình ảnh là chiều dài cung tròn và chiều cao là bán kính
+            const arcLength = radius * (endAngle - startAngle);
+            ctx.drawImage(image, -arcLength / 2, -radius, arcLength, radius); // Vẽ hình ảnh phủ kín cung
+            ctx.restore();
         }
+
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Xóa canvas
+        const angleStep = (2 * Math.PI) / contents.length; // Bước góc theo typeWheel
+
+        if (config.typeWheel === 1) {
+            // Case 1: Vẽ từ contents như bình thường
+            for (let i = 0; i < contents.length; i++) {
+                const startAngle = i * angleStep - (config.positionAbove ? Math.PI / 2 : -Math.PI / 2) + angleOffset;
+                const endAngle = (i + 1) * angleStep - (config.positionAbove ? Math.PI / 2 : -Math.PI / 2) + angleOffset;
+                drawSection(startAngle, endAngle, contents[i % contents.length]);
+            }
+        } else if (config.typeWheel === 2) {
+            const offset = (config.positionAbove ? Math.PI / 2 : -Math.PI / 2);
+            for (let i = 0; i < contents.length; i++) {
+                const startAngle = i * angleStep - offset + angleOffset;
+                const endAngle = (i + 1) * angleStep - offset + angleOffset;
+                drawSectionPiece(startAngle, endAngle, contents[i % contents.length]);
+            }
+        }
+
     }
 
     function spinWheel(targetId) {
@@ -157,26 +221,25 @@
         spinning = true;
 
         // Đặt lại góc về vị trí ban đầu
-        currentAngle = 0; // Đặt góc về 0 trước khi quay
-        drawCircularSections(config, contents, currentAngle); // Vẽ lại vòng quay về vị trí ban đầu
+        let currentAngle = 0; // Đặt góc về 0 trước khi quay
+        let countPiece = config.contents.length;
+        drawCircularSections(config, currentAngle); // Vẽ lại vòng quay về vị trí ban đầu
 
         // Tính toán góc dừng
-        const angleStep = (2 * Math.PI) / contents.length;
-        console.log(angleStep)
-        const targetAngle = targetId * angleStep - (config.positionAbove ? Math.PI / 2 : -Math.PI / 2); // Tính góc dừng cho miếng chỉ định
-        console.log(targetAngle)
-
+        const angleStep = (2 * Math.PI) / countPiece;
+        const targetMinAngle = (countPiece - targetId - 1) * angleStep;
+        const targetMaxAngle = targetMinAngle + angleStep;
 
         // Tạo một góc ngẫu nhiên trong miếng
-        const randomOffset = Math.random() * angleStep; // Chọn ngẫu nhiên trong miếng
-        const finalTargetAngle = targetAngle + randomOffset; // Tính góc dừng cuối cùng
+        const randomOffset = Math.random() * (targetMaxAngle - targetMinAngle) + targetMinAngle; // Chọn ngẫu nhiên trong miếng
 
         // Số vòng quay ngẫu nhiên
-        const randomSpins = Math.floor(Math.random() * 5) + 5; // Từ 5 đến 9 vòng
+        const randomSpins = Math.floor(Math.random() * 5) + 10; // Từ 5 đến 9 vòng
+        console.log(randomSpins, angleStep, targetMinAngle/Math.PI*180, targetMaxAngle/Math.PI*180, randomOffset/Math.PI*180, angleStep/Math.PI*180)
 
         const startTime = Date.now();
         const duration = Math.random() * (config.maxSpinDuration - config.minSpinDuration) + config.minSpinDuration;
-        const totalRotation = randomSpins * 2 * Math.PI + finalTargetAngle; // Quay số vòng ngẫu nhiên
+        const totalRotation = randomSpins * 2 * Math.PI + randomOffset; // Quay số vòng ngẫu nhiên
         const easing = (t) => 1 - Math.pow(1 - t, 3); // Hàm easing cho hiệu ứng quay chậm dần
 
         function animate() {
@@ -185,9 +248,7 @@
             const progress = Math.min(elapsed / duration, 1);
             const easedProgress = easing(progress);
             currentAngle = (easedProgress * totalRotation) % (2 * Math.PI); // Đảm bảo góc không vượt quá 2π
-
-            drawCircularSections(config, contents, currentAngle); // Vẽ lại vòng quay với góc hiện tại
-
+            drawCircularSections(config, currentAngle); // Vẽ lại vòng quay với góc hiện tại
             if (progress < 1) {
                 requestAnimationFrame(animate);
             } else {
@@ -200,19 +261,19 @@
 
     spinButton.addEventListener('click', () => {
         if (!spinning) {
-            const randomPieceId = Math.floor(Math.random() * contents.length); // Chọn ngẫu nhiên miếng
-            console.log(contents[randomPieceId].content);
+            const randomPieceId = 3; // Chọn ngẫu nhiên miếng
+            console.log(config.contents[randomPieceId]);
             spinWheel(randomPieceId); // Gọi hàm quay với miếng ngẫu nhiên
         }
     });
 
-    preloadImages(contents, () => {
-        drawCircularSections(config, contents); // Vẽ vòng quay ban đầu
+    $('#spinReset').click(function (){
+        let currentAngle = 0;
+        drawCircularSections(config, currentAngle);
     });
 
-    $('#reset').click(function () {
-        drawCircularSections(config, contents); // Vẽ vòng quay ban đầu
-        currentAngle = 0; // Đặt lại góc về 0
+    preloadImages(config.contents, () => {
+        drawCircularSections(config); // Vẽ vòng quay ban đầu
     });
 </script>
 

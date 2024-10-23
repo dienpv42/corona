@@ -967,12 +967,23 @@ input {
   flex-direction: row;
   gap: 24px;
 }
+@media (max-width: 991px) {
+  .wrap-flex-step-1 {
+    flex-direction: column;
+  }
+}
 .wrap-flex-step-1 .card {
   height: 100%;
 }
 .wrap-flex-step-1 .card.card-wheel {
   flex: unset;
   width: 308px;
+}
+.wrap-flex-step-1 .group-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 360px;
 }
 .wrap-flex-step-1 .group-card {
   flex: 1;
@@ -1146,6 +1157,24 @@ input {
   white-space: nowrap;
 }
 
+.wrap-dropdown-more .dropdown-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: #1677FF;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: #E6F7FF;
+}
+.wrap-dropdown-more .dropdown-toggle::after {
+  content: unset;
+}
 .biz-body {
   background-color: #F0F0F0;
   min-height: 100vh;
