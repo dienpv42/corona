@@ -98,7 +98,31 @@
 .section_config_order{
   .list-group{
     .list-group-item{
+      padding: 0;
+      border: 0;
+      gap: 32px;
+      .form-switch{
+        gap: 0;
+      }
+      .wrap{
+        gap: 32px;
+        padding: 4px 32px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .info{
+          .time{
 
+          }
+          .btn_edit{
+
+          }
+          .number{
+
+          }
+        }
+      }
     }
   }
 }

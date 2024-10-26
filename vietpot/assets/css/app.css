@@ -742,10 +742,30 @@ input {
   background-color: #BFBFBF;
   border-color: #BFBFBF;
   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_i_8001_251)"><rect width="24" height="24" rx="12" fill="white"/></g><g filter="url(%23filter1_i_8001_251)"><rect x="2" y="2" width="20" height="20" rx="10" fill="white"/></g><path d="M8.5 8.5L15.5 15.5M8.5 15.5L15.5 8.5" stroke="%23989B9F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><defs><filter id="filter0_i_8001_251" x="-1" y="-2" width="25" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="-1" dy="-2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="shape" result="effect1_innerShadow_8001_251"/></filter><filter id="filter1_i_8001_251" x="2" y="2" width="23" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="3" dy="3"/><feGaussianBlur stdDeviation="4"/><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="shape" result="effect1_innerShadow_8001_251"/></filter></defs></svg>');
+  background-size: 24px;
   width: 60px;
   height: 30px;
   padding: 2px;
   margin: 0;
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1440px) {
+  .form-check.form-switch .form-check-input {
+    background-size: 1.6666666667vw;
+    width: 4.1666666667vw;
+    height: 2.0833333333vw;
+    padding: 0.1388888889vw 0.2777777778vw;
+    box-shadow: -0.1388888889vw 0.1388888889vw 0.2777777778vw 0px rgba(0, 0, 0, 0.25) inset, 0.0694444444vw 0.0694444444vw 0.2777777778vw 0px rgba(0, 0, 0, 0.25);
+  }
+}
+@media (max-width: 991px) {
+  .form-check.form-switch .form-check-input {
+    background-size: 6.4vw;
+    width: 16vw;
+    height: 8vw;
+    padding: 0.5333333333vw 1.0666666667vw;
+    box-shadow: -0.5333333333vw 0.5333333333vw 1.0666666667vw 0px rgba(0, 0, 0, 0.25) inset, 0.2666666667vw 0.2666666667vw 1.0666666667vw 0px rgba(0, 0, 0, 0.25);
+  }
 }
 .form-check.form-switch .form-check-input:focus {
   box-shadow: unset;
@@ -754,6 +774,17 @@ input {
   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_i_8001_5820)"><rect width="24" height="24" rx="12" fill="white"/></g><g filter="url(%23filter1_i_8001_5820)"><rect x="2" y="2" width="20" height="20" rx="10" fill="white"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5682 7.98158C17.7322 8.14566 17.8244 8.36818 17.8244 8.6002C17.8244 8.83222 17.7322 9.05474 17.5682 9.21883L11.0098 15.7772C10.9231 15.8639 10.8202 15.9327 10.707 15.9796C10.5937 16.0265 10.4723 16.0507 10.3497 16.0507C10.2271 16.0507 10.1058 16.0265 9.99251 15.9796C9.87926 15.9327 9.77636 15.8639 9.68969 15.7772L6.43119 12.5193C6.34762 12.4386 6.28096 12.3421 6.2351 12.2353C6.18924 12.1286 6.16511 12.0137 6.1641 11.8976C6.16309 11.7814 6.18523 11.6662 6.22922 11.5586C6.27322 11.4511 6.33819 11.3534 6.42034 11.2712C6.5025 11.1891 6.6002 11.1241 6.70773 11.0801C6.81526 11.0361 6.93048 11.014 7.04667 11.015C7.16285 11.016 7.27767 11.0401 7.38442 11.086C7.49117 11.1318 7.58772 11.1985 7.66844 11.2821L10.3494 13.9631L16.3304 7.98158C16.4116 7.90027 16.5081 7.83576 16.6143 7.79176C16.7205 7.74775 16.8343 7.7251 16.9493 7.7251C17.0642 7.7251 17.1781 7.74775 17.2843 7.79176C17.3904 7.83576 17.4869 7.90027 17.5682 7.98158Z" fill="%232196F3"/><defs><filter id="filter0_i_8001_5820" x="-1" y="-2" width="25" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="-1" dy="-2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="shape" result="effect1_innerShadow_8001_5820"/></filter><filter id="filter1_i_8001_5820" x="2" y="2" width="23" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="3" dy="3"/><feGaussianBlur stdDeviation="4"/><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="shape" result="effect1_innerShadow_8001_5820"/></filter></defs></svg>');
   background-color: #52C41A;
   border-color: #52C41A;
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1440px) {
+  .form-check.form-switch .form-check-input:checked {
+    box-shadow: -0.1388888889vw 0.1388888889vw 0.2777777778vw 0px rgba(0, 0, 0, 0.25) inset, 0.0694444444vw 0.0694444444vw 0.2777777778vw 0px rgba(0, 0, 0, 0.25);
+  }
+}
+@media (max-width: 991px) {
+  .form-check.form-switch .form-check-input:checked {
+    box-shadow: -0.5333333333vw 0.5333333333vw 1.0666666667vw 0px rgba(0, 0, 0, 0.25) inset, 0.2666666667vw 0.2666666667vw 1.0666666667vw 0px rgba(0, 0, 0, 0.25);
+  }
 }
 .form-check.form-switch .form-check-label {
   color: rgba(0, 0, 0, 0.88);
@@ -761,12 +792,22 @@ input {
   font-weight: 400;
   line-height: 1.5;
 }
+@media (max-width: 1440px) {
+  .form-check.form-switch .form-check-label {
+    box-shadow: -0.1388888889vw 0.1388888889vw 0.2777777778vw 0px rgba(0, 0, 0, 0.25) inset, 0.0694444444vw 0.0694444444vw 0.2777777778vw 0px rgba(0, 0, 0, 0.25);
+  }
+}
+@media (max-width: 991px) {
+  .form-check.form-switch .form-check-label {
+    box-shadow: -0.5333333333vw 0.5333333333vw 1.0666666667vw 0px rgba(0, 0, 0, 0.25) inset, 0.2666666667vw 0.2666666667vw 1.0666666667vw 0px rgba(0, 0, 0, 0.25);
+  }
+}
 .form-check.form-switch.form-switch-primary .form-check-input:checked {
   background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(%23filter0_i_8001_5820)"><rect width="24" height="24" rx="12" fill="white"/></g><g filter="url(%23filter1_i_8001_5820)"><rect x="2" y="2" width="20" height="20" rx="10" fill="white"/></g><path fill-rule="evenodd" clip-rule="evenodd" d="M17.5682 7.98158C17.7322 8.14566 17.8244 8.36818 17.8244 8.6002C17.8244 8.83222 17.7322 9.05474 17.5682 9.21883L11.0098 15.7772C10.9231 15.8639 10.8202 15.9327 10.707 15.9796C10.5937 16.0265 10.4723 16.0507 10.3497 16.0507C10.2271 16.0507 10.1058 16.0265 9.99251 15.9796C9.87926 15.9327 9.77636 15.8639 9.68969 15.7772L6.43119 12.5193C6.34762 12.4386 6.28096 12.3421 6.2351 12.2353C6.18924 12.1286 6.16511 12.0137 6.1641 11.8976C6.16309 11.7814 6.18523 11.6662 6.22922 11.5586C6.27322 11.4511 6.33819 11.3534 6.42034 11.2712C6.5025 11.1891 6.6002 11.1241 6.70773 11.0801C6.81526 11.0361 6.93048 11.014 7.04667 11.015C7.16285 11.016 7.27767 11.0401 7.38442 11.086C7.49117 11.1318 7.58772 11.1985 7.66844 11.2821L10.3494 13.9631L16.3304 7.98158C16.4116 7.90027 16.5081 7.83576 16.6143 7.79176C16.7205 7.74775 16.8343 7.7251 16.9493 7.7251C17.0642 7.7251 17.1781 7.74775 17.2843 7.79176C17.3904 7.83576 17.4869 7.90027 17.5682 7.98158Z" fill="%232196F3"/><defs><filter id="filter0_i_8001_5820" x="-1" y="-2" width="25" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="-1" dy="-2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="shape" result="effect1_innerShadow_8001_5820"/></filter><filter id="filter1_i_8001_5820" x="2" y="2" width="23" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dx="3" dy="3"/><feGaussianBlur stdDeviation="4"/><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="shape" result="effect1_innerShadow_8001_5820"/></filter></defs></svg>');
   background-color: #2196F3;
   border-color: #2196F3;
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
 }
-
 .form-select {
   background-position: right 10px center;
   background-size: 16px 12px;
@@ -5603,6 +5644,22 @@ input {
   .bl_home .section_form_search .wrap_content {
     width: 41.6666666667vw;
   }
+}
+.bl_home .section_config_order .list-group .list-group-item {
+  padding: 0;
+  border: 0;
+  gap: 32px;
+}
+.bl_home .section_config_order .list-group .list-group-item .form-switch {
+  gap: 0;
+}
+.bl_home .section_config_order .list-group .list-group-item .wrap {
+  gap: 32px;
+  padding: 4px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .bl_home .section_form_login {
   padding: 80px 0;
