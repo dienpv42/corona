@@ -47,7 +47,7 @@
 }
 @mixin no_scroll_bar() {
   &::-webkit-scrollbar {
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       height: 0;
       opacity: 0;
     }
@@ -60,7 +60,7 @@
 
 @function sizeP($number, $windowWidth: 1440) {
   $result: math.div(100 * $number, $windowWidth);
-  @return $result * 1vw;
+  @return $number * 1px;
 }
 
 @function calcC($d, $number) {

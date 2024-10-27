@@ -7,13 +7,13 @@
     max-width: 100%;
     padding: 0 sizeP(70);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
     padding: 0 size(20);
   }
 }
 .main {
   min-height: 100vh;
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
     padding-top: size(50);
     min-height: auto;
     padding-bottom: size(50);
@@ -23,7 +23,7 @@
     @media (max-width: 1440px) {
       margin: 0 sizeP(16)*-1;
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
     > * {
@@ -31,7 +31,7 @@
       @media (max-width: 1440px) {
         padding: 0 sizeP(16);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
     }

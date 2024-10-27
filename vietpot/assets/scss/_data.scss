@@ -6,7 +6,7 @@
       padding: sizeP(48) 0 sizeP(16);
       border-bottom: sizeP(1) solid #D5D7DB;
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       padding: size(26) 0 size(26);
       border-bottom: size(1) solid #D5D7DB;
     }
@@ -15,11 +15,11 @@
       @media (max-width: 1441px) {
         margin-bottom: sizeP(32);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         margin-bottom: size(12);
       }
       a{
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
           width: 100%;
           text-align: center;
         }
@@ -27,19 +27,19 @@
     }
   }
   .wrap_list_link_lb{
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       margin: 0 size(20)*-1;
       overflow: auto;
       padding-left: size(20);
     }
     &::-webkit-scrollbar {
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         height: 0;
         opacity: 0;
       }
     }
     .list_link_lb{
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         gap: size(12);
         flex-direction: row;
         align-items: center;
@@ -47,12 +47,12 @@
         margin-bottom: 0;
       }
       .list_link_item{
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
           flex: unset;
           max-width: unset;
         }
         .lb-link{
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
             padding-left: size(32);
             padding-right: size(32);
           }
@@ -67,7 +67,7 @@
   @media (max-width: 1441px) {
     padding: sizeP(48) 0 sizeP(80);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -77,7 +77,7 @@
   @media (max-width: 1441px) {
     margin-bottom: sizeP(32);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
   .wrap_content{
@@ -87,7 +87,7 @@
     @media (max-width: 1441px) {
       width: sizeP(600);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
     .wrap_search{
@@ -96,30 +96,201 @@
   }
 }
 .section_config_order{
+  margin-top: 48px;
+  @media (max-width: 1441px) {
+    margin-top: sizeP(48);
+  }
+  @media (max-width: $sizeMb) {
+    margin-top: size(16);
+  }
   .list-group{
     .list-group-item{
+      margin-bottom: 16px;
       padding: 0;
       border: 0;
-      gap: 32px;
-      .form-switch{
-        gap: 0;
+      &.sortable-item{
+        cursor: pointer;
       }
-      .wrap{
-        gap: 32px;
-        padding: 4px 32px;
+      .w_item{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        .info{
-          .time{
-
+        gap: 32px;
+        @media (max-width: 1441px) {
+          gap: sizeP(32);
+        }
+        @media (max-width: $sizeMb) {
+          gap: size(16);
+        }
+        .form-switch{
+          min-width: 60px;
+          gap: 0;
+          @media (max-width: 1441px) {
+            min-width: sizeP(60);
           }
-          .btn_edit{
-
+          @media (max-width: $sizeMb) {
+            min-width: size(60);
           }
-          .number{
-
+        }
+        .wrap{
+          background: #F7F7F7;
+          flex: 1;
+          gap: 32px;
+          padding: 4px 32px;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          @media (max-width: 1441px) {
+            gap: sizeP(32);
+            padding: sizeP(4) sizeP(32);
+            border-radius: sizeP(8);
+          }
+          @media (max-width: $sizeMb) {
+            flex-direction: column;
+            gap: size(16);
+            padding: size(4) size(16);
+            border-radius: size(8);
+          }
+          .info{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 48px;
+            @media (max-width: 1441px) {
+              gap: sizeP(48);
+            }
+            @media (max-width: $sizeMb) {
+              gap: size(15);
+            }
+            .name {
+              color: #575756;
+              font-size: 16px;
+              font-weight: 700;
+              line-height: 120%;
+              @media (max-width: 1441px) {
+                font-size: sizeP(16)
+              }
+              @media (max-width: $sizeMb) {
+                font-size: size(14)
+              }
+            }
+            .time{
+              color: #9D9D9C;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 120%;
+              @media (max-width: 1441px) {
+                font-size: sizeP(14);
+              }
+              @media (max-width: $sizeMb) {
+                flex: 1;
+                font-size: size(13);
+              }
+              span{
+                color: #575756;
+                font-size: 16px;
+                @media (max-width: 1441px) {
+                  font-size: sizeP(16);
+                }
+                @media (max-width: $sizeMb) {
+                  font-size: size(14);
+                }
+              }
+            }
+            .btn_edit{
+              display: flex;
+              width: 32px;
+              height: 32px;
+              justify-content: center;
+              align-items: center;
+              border-radius: 4px;
+              background: linear-gradient(0deg, rgba(33, 150, 243, 0.12) 0%, rgba(33, 150, 243, 0.12) 100%), #FFF;
+              @media (max-width: 1441px) {
+                width: sizeP(32);
+                height: sizeP(32);
+                border-radius: sizeP(4);
+              }
+              @media (max-width: $sizeMb) {
+                width: size(32);
+                height: size(32);
+                border-radius: size(4);
+              }
+              svg{
+                width: 25px;
+                height: auto;
+                @media (max-width: 1441px) {
+                  width: sizeP(25);
+                }
+                @media (max-width: $sizeMb) {
+                  width: size(25);
+                }
+              }
+            }
+            .number{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #FFF;
+              font-size: 13px;
+              font-weight: 700;
+              line-height: 150%;
+              width: 24px;
+              height: 24px;
+              border-radius: 50%;
+              background: #2196F3;
+              @media (max-width: 1441px) {
+                font-size: sizeP(13);
+                width: sizeP(24);
+                height: sizeP(24);
+              }
+              @media (max-width: $sizeMb) {
+                font-size: size(13);
+                width: size(24);
+                height: size(24);
+              }
+            }
+          }
+        }
+      }
+      .list-group{
+        padding-left: 90px;
+        margin-top: 16px;
+        @media (max-width: 1441px) {
+          padding-left: sizeP(90);
+          margin-top: sizeP(16);
+        }
+        @media (max-width: $sizeMb) {
+          padding-left: size(30);
+          margin-top: size(16);
+        }
+        .list-group-item{
+          .w_item{
+            position: relative;
+            &::before{
+              position: absolute;
+              left: -60px;
+              top: 25%;
+              transform: translateY(-50%);
+              content: '';
+              width: 49px;
+              height: 31px;
+              background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="51" height="36" viewBox="0 0 51 36" fill="none"><path d="M1.5 1C1.5 0.723858 1.27614 0.5 1 0.5C0.723858 0.5 0.5 0.723858 0.5 1H1.5ZM1 32H0.5V32.5H1V32ZM50.3536 32.3536C50.5488 32.1583 50.5488 31.8417 50.3536 31.6464L47.1716 28.4645C46.9763 28.2692 46.6597 28.2692 46.4645 28.4645C46.2692 28.6597 46.2692 28.9763 46.4645 29.1716L49.2929 32L46.4645 34.8284C46.2692 35.0237 46.2692 35.3403 46.4645 35.5355C46.6597 35.7308 46.9763 35.7308 47.1716 35.5355L50.3536 32.3536ZM0.5 1V32H1.5V1H0.5ZM1 32.5H50V31.5H1V32.5Z" fill="%23989B9F"/></svg>');
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+              @media (max-width: 1441px) {
+                left: sizeP(60)*-1;
+                width: sizeP(49);
+                height: sizeP(31);
+              }
+              @media (max-width: $sizeMb) {
+                left: size(30)*-1;
+                top: 50%;
+                width: size(20);
+                height: size(29);
+              }
+            }
           }
         }
       }

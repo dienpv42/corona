@@ -5,7 +5,7 @@
   @media (max-width: 1440px) {
     box-shadow: 0px sizeP(12) sizeP(24) 0px rgba(0, 0, 0, 0.12);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
     box-shadow: unset;
     position: fixed;
     z-index: 99;
@@ -14,7 +14,7 @@
     top: 0;
   }
   &.active{
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       box-shadow: 0px size(6) size(12) 0px rgba(0, 0, 0, 0.12);
     }
   }
@@ -23,7 +23,7 @@
     @media (max-width: 1440px) {
       height: sizeP(88);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       height: size(48);
     }
   }
@@ -34,14 +34,14 @@
       z-index: 99;
       margin-right: 8px;
       display: none;
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         margin-right: size(8);
         display: block;
       }
       img, svg {
         width: 20px;
         height: auto;
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
           width: size(20);
         }
       }
@@ -58,7 +58,7 @@
         @media (max-width: 1440px) {
           height: sizeP(56);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
           height: size(32);
         }
       }
@@ -67,7 +67,7 @@
 
   .wrap_menu {
     transition: all .3s;
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       position: fixed;
       z-index: 98;
       height: 100%;
@@ -80,13 +80,13 @@
       padding-left: size(20);
     }
     &.active{
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         transform: translateX(0);
         box-shadow: 0px size(12) size(24) 0px rgba(0, 0, 0, 0.12);
       }
     }
     .nav {
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         flex-direction: column;
       }
       .nav-item {
@@ -94,7 +94,7 @@
         @media (max-width: 1440px) {
           margin-right: sizeP(24);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         &:last-child {
@@ -112,7 +112,7 @@
             font-size: sizeP(20);
             padding: sizeP(12);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
             display: inline-block;
             font-size: size(16);
             padding: size(12) 0;
@@ -128,7 +128,7 @@
             @media (max-width: 1440px) {
               border-radius: sizeP(8);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
               border-radius: size(8);
               padding: size(12);
             }
@@ -144,7 +144,7 @@
       @media (max-width: 1440px) {
         margin-right: sizeP(16);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         margin-right: size(8);
       }
       &:last-child {
@@ -161,7 +161,7 @@
         @media (max-width: 1440px) {
           padding-right: 0 !important;
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
           padding-right: 0 !important;
         }
         &::after {
@@ -181,7 +181,7 @@
             border-radius: sizeP(4);
             margin-right: sizeP(8);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
             width: size(23.881);
             height: size(16);
             border-radius: size(4);
@@ -196,7 +196,7 @@
             width: sizeP(24);
             height: auto;
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
             width: size(16);
           }
         }
@@ -221,7 +221,7 @@
               border-radius: sizeP(4);
               margin-right: sizeP(8);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
               width: size(23.881);
               height: size(16);
               border-radius: size(4);
@@ -237,7 +237,7 @@
             @media (max-width: 1440px) {
               font-size: sizeP(15);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
               font-size: size(12);
             }
           }

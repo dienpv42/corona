@@ -5,7 +5,7 @@
   @media (max-width: 1921px) {
     --star-size: sizeP(20);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
     --star-size: size(20);
   }
 }
@@ -40,7 +40,7 @@
     border: sizeP(1) solid #AFB5B9;
     font-size: sizeP(14);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
     padding: size(4) size(8);
     border-radius: size(12);
     border: size(1) solid #AFB5B9;
@@ -153,21 +153,8 @@
 //::-webkit-scrollbar-thumb:hover {
 //  background: #555;
 //}
-.pagination{
-  .page-item{
-    .page-link{
-      color: #F39200;
-      &.active{
-        background-color: #F39200;
-        border-color: #F39200;
-        color: #fff;
-      }
-      &:focus{
-        box-shadow: unset;
-      }
-    }
-  }
-}
+
+
 .modal {
   &.modal_custom{
     .modal-dialog{
@@ -227,17 +214,17 @@
     height: sizeP(100);
     box-shadow: 0px sizeP(4) sizeP(4) 0px rgba(0, 0, 0, 0.25);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
   svg {
     width: 40px;
     height: 40px;
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       width: sizeP(40);
       height: sizeP(40);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
     path {
@@ -256,7 +243,7 @@
   @media (max-width: 1441px) {
     border-radius: 0px sizeP(8) sizeP(8) 0px;
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -267,7 +254,7 @@
   @media (max-width: 1441px) {
     border-radius: sizeP(8) 0px 0px sizeP(8);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -286,7 +273,7 @@
       margin-right: sizeP(16);
       border: sizeP(1) solid $--primary;
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
     &:last-child{

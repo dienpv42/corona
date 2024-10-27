@@ -14,7 +14,7 @@
   @media (max-width: 1440px) {
     font-size: sizeP(20);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
     font-size: size(14);
   }
   @import "header";

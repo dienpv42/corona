@@ -5,7 +5,7 @@
     @media (max-width: 1440px) {
       padding: sizeP(40) 0;
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       padding: size(34) 0;
     }
     .wrapper {
@@ -15,7 +15,7 @@
           $s444p: sizeP(444);
           width: calc(100% - $s444p);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
           width: 100%;
         }
         .row {
@@ -23,7 +23,7 @@
           @media (max-width: 1440px) {
             margin-bottom: sizeP(32);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
             margin-bottom: 0;
           }
         }
@@ -37,7 +37,7 @@
         @media (max-width: 1440px) {
           font-size: sizeP(16);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
           font-size: size(14);
           margin-bottom: size(18);
         }
@@ -47,7 +47,7 @@
             @media (max-width: 1440px) {
               margin-bottom: sizeP(8);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
               margin-bottom: size(8);
             }
             &:last-child {
@@ -65,7 +65,7 @@
                     width: sizeP(24);
                     height: sizeP(24);
                   }
-                  @media (max-width: 991px) {
+                  @media (max-width: $sizeMb) {
                     margin-left: size(5);
                     width: size(16);
                     height: size(16);
@@ -101,7 +101,7 @@
                     border-radius: sizeP(4);
                     margin-right: sizeP(8);
                   }
-                  @media (max-width: 991px) {
+                  @media (max-width: $sizeMb) {
                     width: size(23.881);
                     height: size(16);
                     border-radius: size(4);
@@ -117,7 +117,7 @@
                   @media (max-width: 1440px) {
                     font-size: sizeP(15);
                   }
-                  @media (max-width: 991px) {
+                  @media (max-width: $sizeMb) {
                     font-size: size(12);
                   }
                 }
@@ -128,7 +128,7 @@
       }
 
       .social {
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
           margin-bottom: size(18);
         }
         a {
@@ -136,7 +136,7 @@
           @media (max-width: 1440px) {
             margin-right: sizeP(16);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
             margin-right: size(8);
             margin-bottom: size(8);
           }
@@ -146,7 +146,7 @@
             @media (max-width: 1440px) {
               height: sizeP(56);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
               height: size(64);
             }
           }
@@ -154,7 +154,7 @@
         }
         .w_social{
           img {
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
               height: size(40);
             }
           }
@@ -168,7 +168,7 @@
             font-size: sizeP(16);
             line-height: sizeP(24);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
             font-size: size(16);
             line-height: size(24);
           }
@@ -182,7 +182,7 @@
           @media (max-width: 1440px) {
             width: sizeP(420);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
             width: 100%;
           }
         }
@@ -196,7 +196,7 @@
     @media (max-width: 1440px) {
       padding: sizeP(12) 0;
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       padding: size(12) 0;
     }
     .copyright {
@@ -209,7 +209,7 @@
         font-size: sizeP(14);
         line-height: sizeP(20);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         text-align: center;
         font-size: size(14);
         line-height: size(20);

@@ -3,7 +3,7 @@
   @media (max-width: 1440px) {
     padding: sizeP(80) 0;
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
     padding: size(26) 0;
   }
 }
@@ -13,7 +13,7 @@
   @media (max-width: 1440px) {
     padding-top: sizeP(80);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -23,7 +23,7 @@
   @media (max-width: 1440px) {
     padding-bottom: sizeP(80);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -33,7 +33,7 @@
   @media (max-width: 1440px) {
     padding-top: sizeP(80);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -43,7 +43,7 @@
   @media (max-width: 1440px) {
     padding: sizeP(40) 0;
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -53,7 +53,7 @@
   @media (max-width: 1440px) {
     padding-top: sizeP(40);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -63,7 +63,7 @@
   @media (max-width: 1440px) {
     padding-bottom: sizeP(40);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
 }
@@ -73,11 +73,11 @@
   @media (max-width: 1440px) {
     margin-bottom: sizeP(32);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
     margin-bottom: size(16);
   }
   .title {
-    > * {
+    > h1, > h2 {
       color: $--gray;
       font-size: 30px;
       font-weight: 700;
@@ -85,8 +85,20 @@
       @media (max-width: 1440px) {
         font-size: sizeP(30);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
         font-size: size(20);
+      }
+    }
+    > h3 {
+      color: $--gray;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 120%;
+      @media (max-width: 1440px) {
+        font-size: sizeP(20);
+      }
+      @media (max-width: $sizeMb) {
+        font-size: size(18);
       }
     }
   }
@@ -99,13 +111,23 @@
     @media (max-width: 1440px) {
       font-size: sizeP(16);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
       font-size: size(16);
     }
   }
 
   .wrap_list_action_flex {
     margin-bottom: 0;
+  }
+  .wrap-action{
+    min-width: 400px;
+    max-width: 100%;
+    @media (max-width: 1440px) {
+      min-width: sizeP(400);
+    }
+    @media (max-width: $sizeMb) {
+      min-width: 100%;
+    }
   }
 }
 
@@ -118,7 +140,7 @@
     @media (max-width: 1440px) {
       padding-bottom: sizeP(36);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
     .item-banner {
@@ -133,7 +155,7 @@
         @media (max-width: 1440px) {
           height: sizeP(540);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -151,7 +173,7 @@
     @media (max-width: 1440px) {
       padding-top: sizeP(30);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
     .wrapper {
@@ -163,7 +185,7 @@
           @media (max-width: 1440px) {
             height: sizeP(630);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -179,7 +201,7 @@
       @media (max-width: 1440px) {
         margin-bottom: sizeP(32);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
       > * {
@@ -190,7 +212,7 @@
         @media (max-width: 1440px) {
           font-size: sizeP(30);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         span {
@@ -209,7 +231,7 @@
         font-size: sizeP(20);
         margin-bottom: sizeP(32);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
       p {
@@ -217,7 +239,7 @@
         @media (max-width: 1440px) {
           margin-bottom: sizeP(16);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -233,7 +255,7 @@
         border-radius: sizeP(16);
         box-shadow: sizeP(5) sizeP(10) sizeP(24) 0px rgba(0, 0, 0, 0.24);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
     }
@@ -251,7 +273,7 @@
           padding-bottom: sizeP(2);
           margin-bottom: sizeP(30);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         .nav {
@@ -262,7 +284,7 @@
             padding-bottom: sizeP(32);
             border-bottom: sizeP(1) solid #AFB5B9;
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
           .nav-item {
@@ -270,7 +292,7 @@
             @media (max-width: 1440px) {
               margin-right: sizeP(32);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
             &:last-child {
@@ -297,7 +319,7 @@
                 border-radius: sizeP(16);
                 border: sizeP(1) solid #D5D7DB;
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeMb) {
 
               }
               &:after {
@@ -312,7 +334,7 @@
                 @media (max-width: 1440px) {
                   height: sizeP(52);
                 }
-                @media (max-width: 991px) {
+                @media (max-width: $sizeMb) {
 
                 }
               }
@@ -326,7 +348,7 @@
                   border: sizeP(1) solid $--primary;
                   box-shadow: sizeP(5) sizeP(10) sizeP(16) 0px rgba(33, 150, 243, 0.40);
                 }
-                @media (max-width: 991px) {
+                @media (max-width: $sizeMb) {
 
                 }
                 &:after {
@@ -343,7 +365,7 @@
                     background-color: $--primary;
                     bottom: sizeP(35)*-1;
                   }
-                  @media (max-width: 991px) {
+                  @media (max-width: $sizeMb) {
 
                   }
                 }
@@ -358,7 +380,7 @@
         @media (max-width: 1440px) {
           margin-bottom: sizeP(60);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         .row {
@@ -366,7 +388,7 @@
           @media (max-width: 1440px) {
             margin: 0 sizeP(16)*-1;
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
           > * {
@@ -374,7 +396,7 @@
             @media (max-width: 1440px) {
               padding: 0 sizeP(16);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
           }
@@ -388,7 +410,7 @@
               width: sizeP(189);
               margin-bottom: sizeP(32);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
             .image {
@@ -406,7 +428,7 @@
                 height: sizeP(189);
                 margin-bottom: sizeP(16);
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeMb) {
 
               }
               a {
@@ -434,7 +456,7 @@
                 @media (max-width: 1440px) {
                   font-size: sizeP(16);
                 }
-                @media (max-width: 991px) {
+                @media (max-width: $sizeMb) {
 
                 }
               }
@@ -463,7 +485,7 @@
             width: sizeP(466);
 
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
           .swiper-detail {
@@ -475,7 +497,7 @@
               border-radius: sizeP(16);
               box-shadow: sizeP(5) sizeP(10) sizeP(20) 0px rgba(0, 0, 0, 0.25);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
             .image {
@@ -489,7 +511,7 @@
                 @media (max-width: 1440px) {
                   height: sizeP(433);
                 }
-                @media (max-width: 991px) {
+                @media (max-width: $sizeMb) {
 
                 }
               }
@@ -508,7 +530,7 @@
                   height: sizeP(92);
                   border-radius: sizeP(16);
                 }
-                @media (max-width: 991px) {
+                @media (max-width: $sizeMb) {
 
                 }
               }
@@ -522,7 +544,7 @@
             $s498p: sizeP(498);
             width: calc(100% - $s498p);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
           .title {
@@ -535,7 +557,7 @@
               font-size: sizeP(44);
               margin-bottom: sizeP(32);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
           }
@@ -550,7 +572,7 @@
               font-size: sizeP(20);
               margin-bottom: sizeP(32);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
             p {
@@ -558,7 +580,7 @@
               @media (max-width: 1440px) {
                 margin-bottom: sizeP(16);
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeMb) {
 
               }
             }
@@ -580,7 +602,7 @@
                 @media (max-width: 1440px) {
                   margin-right: sizeP(32);
                 }
-                @media (max-width: 991px) {
+                @media (max-width: $sizeMb) {
 
                 }
               }
@@ -595,7 +617,7 @@
                 font-size: sizeP(16);
                 border-radius: sizeP(16);
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeMb) {
 
               }
             }
@@ -615,7 +637,7 @@
             margin-bottom: 0px;
             padding-bottom: sizeP(40);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
           .nav {
@@ -625,7 +647,7 @@
               padding-bottom: 0;
               border-bottom: 0;
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
             .nav-item {
@@ -644,7 +666,7 @@
         @media (max-width: 1440px) {
           margin-bottom: sizeP(60);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         .row {
@@ -652,7 +674,7 @@
           @media (max-width: 1440px) {
             margin: 0 sizeP(16)*-1;
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
           > * {
@@ -660,7 +682,7 @@
             @media (max-width: 1440px) {
               padding: 0 sizeP(16);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
           }
@@ -674,7 +696,7 @@
               width: sizeP(189);
               margin-bottom: sizeP(32);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
             .image {
@@ -692,7 +714,7 @@
                 height: sizeP(189);
                 margin-bottom: sizeP(16);
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeMb) {
 
               }
               a {
@@ -720,7 +742,7 @@
                 @media (max-width: 1440px) {
                   font-size: sizeP(16);
                 }
-                @media (max-width: 991px) {
+                @media (max-width: $sizeMb) {
 
                 }
               }
@@ -753,7 +775,7 @@
           padding-left: sizeP(60);
           padding-right: sizeP(212);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -765,7 +787,7 @@
           padding-right: sizeP(60);
           padding-left: sizeP(212);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -786,7 +808,7 @@
           border-radius: sizeP(16);
           box-shadow: sizeP(10) sizeP(32) sizeP(64) 0px rgba(0, 0, 0, 0.16);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         .image {
@@ -801,7 +823,7 @@
               width: sizeP(258);
               height: sizeP(258);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
           }
@@ -813,7 +835,7 @@
             $s298p: sizeP(298);
             width: calc(100% - $s298p);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
           .title {
@@ -826,7 +848,7 @@
               font-size: sizeP(27);
               margin-bottom: sizeP(24);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
           }
@@ -840,7 +862,7 @@
               font-size: sizeP(16);
               line-height: sizeP(24);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
           }
@@ -880,7 +902,7 @@
     @media (max-width: 1440px) {
       margin-bottom: sizeP(72);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
     .description {
@@ -904,7 +926,7 @@
         box-shadow: sizeP(5) sizeP(10) sizeP(24) 0px rgba(255, 255, 255, 0.50);
         margin-bottom: sizeP(72);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
     }
@@ -918,7 +940,7 @@
       @media (max-width: 1440px) {
         height: sizeP(628);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
       img {
@@ -928,7 +950,7 @@
           width: sizeP(461);
           height: sizeP(461);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -951,7 +973,7 @@
           font-size: sizeP(20);
           line-height: sizeP(30);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         &:hover {
@@ -961,7 +983,7 @@
             text-shadow: sizeP(2) sizeP(4) sizeP(8) #FFF;
             box-shadow: sizeP(2) sizeP(4) sizeP(8) 0px #FFF;
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -979,7 +1001,7 @@
             top: sizeP(115);
             right: sizeP(837);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -991,7 +1013,7 @@
           @media (max-width: 1440px) {
             right: sizeP(899);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -1003,7 +1025,7 @@
             top: sizeP(456);
             right: sizeP(844);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -1021,7 +1043,7 @@
             top: sizeP(456);
             left: sizeP(844);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -1033,7 +1055,7 @@
           @media (max-width: 1440px) {
             left: sizeP(899);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -1045,7 +1067,7 @@
             top: sizeP(115);
             left: sizeP(837);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -1073,7 +1095,7 @@
         font-size: sizeP(16);
         line-height: sizeP(20);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
       &:hover {
@@ -1090,7 +1112,7 @@
   @media (max-width: 1440px) {
     padding-bottom: sizeP(40);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeMb) {
 
   }
   .wrap_form {
@@ -1099,7 +1121,7 @@
     @media (max-width: 1440px) {
       max-width: sizeP(832);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
     .form-group {
@@ -1107,7 +1129,7 @@
       @media (max-width: 1440px) {
         margin-bottom: sizeP(32);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
       .form-control {
@@ -1124,7 +1146,7 @@
           border-radius: sizeP(16);
           border: sizeP(1) solid #989B9F;
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -1145,7 +1167,7 @@
           font-size: sizeP(16);
           line-height: sizeP(20);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -1170,7 +1192,7 @@
         @media (max-width: 1440px) {
           height: sizeP(386);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -1185,7 +1207,7 @@
       @media (max-width: 1440px) {
         margin-bottom: sizeP(32);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
       img{
@@ -1196,7 +1218,7 @@
         @media (max-width: 1440px) {
           height: sizeP(175);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -1207,7 +1229,7 @@
         @media (max-width: 1440px) {
           margin: 0 sizeP(16)*-1;
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         > * {
@@ -1215,7 +1237,7 @@
           @media (max-width: 1440px) {
             padding: 0 sizeP(16);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -1229,7 +1251,7 @@
             width: sizeP(189);
             margin-bottom: sizeP(32);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
           .image {
@@ -1247,7 +1269,7 @@
               height: sizeP(189);
               margin-bottom: sizeP(16);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeMb) {
 
             }
             a {
@@ -1275,7 +1297,7 @@
               @media (max-width: 1440px) {
                 font-size: sizeP(16);
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeMb) {
 
               }
             }
@@ -1303,7 +1325,7 @@
       @media (max-width: 1440px) {
         gap: sizeP(53) sizeP(32);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
       .lb_link_coop{
@@ -1325,7 +1347,7 @@
           border: sizeP(1) solid #AFB5B9;
           font-size: sizeP(27);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
         &:hover,&.active{
@@ -1334,7 +1356,7 @@
           @media (max-width: 1440px) {
             box-shadow: 0px sizeP(4) sizeP(24) 0px rgba(0, 0, 0, 0.25);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeMb) {
 
           }
         }
@@ -1349,7 +1371,7 @@
     @media (max-width: 1440px) {
       margin-bottom: sizeP(50);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
   }
@@ -1366,7 +1388,7 @@
         font-size: sizeP(22);
         margin-bottom: sizeP(50);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
     }
@@ -1377,7 +1399,7 @@
         @media (max-width: 1440px) {
           width: sizeP(872);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
@@ -1392,7 +1414,7 @@
     @media (max-width: 1440px) {
       margin-bottom: sizeP(50);
     }
-    @media (max-width: 991px) {
+    @media (max-width: $sizeMb) {
 
     }
   }
@@ -1408,7 +1430,7 @@
         border-radius: sizeP(16);
         width: sizeP(872);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeMb) {
 
       }
       .form-control{
@@ -1416,7 +1438,7 @@
         @media (max-width: 1440px) {
           min-height: sizeP(52);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeMb) {
 
         }
       }
