@@ -4995,7 +4995,6 @@ input {
   border-radius: 16px;
   border: 1px solid #9D9D9C;
   box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.15);
-  text-align: center;
 }
 @media (max-width: 1921px) {
   .section_register .wrap_form_register .wrap_form #pac-input {
@@ -5031,9 +5030,6 @@ input {
 .section_register .wrap_form_register .wrap_form #pac-input:focus {
   box-shadow: unset;
   border-color: #F39200;
-}
-.section_register .wrap_form_register .wrap_form #pac-input.pac-target-input {
-  max-width: 70%;
 }
 .section_register .wrap_form_register .wrap_form #map-canvas {
   margin-bottom: 30px;
