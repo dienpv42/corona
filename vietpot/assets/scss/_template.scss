@@ -3482,3 +3482,186 @@
     }
   }
 }
+
+.wrap_admin_config_banner{
+  max-width: 824px;
+  margin: auto;
+  @media (max-width: 1440px) {
+    max-width: sizeP(824);
+  }
+  @media (max-width: $sizeMb) {
+    max-width: 100%;
+  }
+  .group_input_btn {
+    width: 100%;
+    position: relative;
+    .form-control{
+      color: $--primary;
+      &:disabled{
+        background-color: #fff;
+      }
+    }
+    a {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      @media (max-width: 1440px) {
+        right: sizeP(8);
+      }
+      @media (max-width: $sizeMb) {
+        padding: size(8);
+        right: size(4);
+      }
+    }
+  }
+  .item_banner{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    margin-bottom: 48px;
+    @media (max-width: 1440px) {
+      flex-direction: row;
+      gap: sizeP(48);
+    }
+    @media (max-width: $sizeMb) {
+      flex-direction: column;
+      gap: sizeP(16);
+    }
+    .name{
+      width: 100px;
+      color: #706F6F;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 120%;
+      @media (max-width: 1440px) {
+        width: sizeP(100);
+        font-size: sizeP(20);
+      }
+      @media (max-width: $sizeMb) {
+        width: 100%;
+        font-size: size(16);
+      }
+    }
+    .wrap{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 16px;
+      @media (max-width: 1441px) {
+        gap: sizeP(16);
+      }
+      @media (max-width: $sizeMb) {
+        gap: size(16);
+      }
+    }
+    .wrap-top,.wrap-bottom, .left{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+      @media (max-width: 1441px) {
+        gap: sizeP(16);
+      }
+      @media (max-width: $sizeMb) {
+        gap: size(16);
+      }
+      .label{
+        width: 30px;
+        color: #706F6F;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        @media (max-width: 1441px) {
+          width: sizeP(30);
+          font-size: sizeP(16);
+        }
+        @media (max-width: $sizeMb) {
+          width: size(30);
+          font-size: size(14);
+        }
+      }
+    }
+    .wrap-top{
+      justify-content: space-between;
+      position: relative;
+      @media (max-width: 1441px) {
+
+      }
+      @media (max-width: $sizeMb) {
+        flex-direction: column;
+        align-items: start;
+      }
+      hr{
+        margin: 0;
+        width: 1px;
+        height: 40px;
+        border-top: unset;
+        background: #D5D7DB;
+        opacity: 1;
+        @media (max-width: $sizeMb) {
+          display: none;
+        }
+      }
+    }
+    .left{
+      .form-group{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        @media (max-width: 1440px) {
+          gap: sizeP(16);
+        }
+        @media (max-width: $sizeMb) {
+          gap: size(16);
+        }
+        .img-preview{
+          width: 120px;
+          height: 40px;
+          background: #D9D9D9;
+          object-fit: cover;
+          object-position: center;
+          @media (max-width: 1440px) {
+            width: sizeP(120);
+            height: sizeP(40);
+          }
+          @media (max-width: $sizeMb) {
+            width: size(120);
+            height: size(40);
+          }
+        }
+        .form-label{
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+          border: 1.5px solid $--primary;
+          background: #FFF;
+          margin: 0;
+          @media (max-width: 1440px) {
+            width: sizeP(40);
+            height: sizeP(40);
+          }
+          @media (max-width: $sizeMb) {
+            width: size(40);
+            height: size(40);
+          }
+          svg{
+            width: 24px;
+            height: auto;
+            @media (max-width: 1440px) {
+              width: sizeP(24);
+            }
+            @media (max-width: $sizeMb) {
+              width: size(24);
+            }
+          }
+        }
+      }
+    }
+  }
+}
