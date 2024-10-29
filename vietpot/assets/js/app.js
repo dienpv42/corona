@@ -5,6 +5,7 @@
         $body = $("body");
 
     var slideBanner, slideProduct1, slideProduct2; // Declare variables at the top level
+
     slideBanner = new Swiper(".slide_banner", {
         slidesPerView: 1,
         speed: 2000,
@@ -22,6 +23,7 @@
             el: '.section_banner .swiper-pagination',
         },
     });
+
     $(document).ready(function() {
         // Set background image from data attribute
         $(".banner").each(function() {
@@ -41,15 +43,15 @@
             if (width > 1440) {
                 return 32;
             } else if (width >= 992) {
-                return width * 0.0222; // 0.83333333333%
+                // return width * 0.0222; // 0.83333333333%
+                return 32;
             } else {
-                return width * 0.032; // 3.2%
+                // return width * 0.032; // 3.2%
+                return 16;
             }
         }
 
         var spaceBetweenVW = calculateSpaceBetween();
-
-
 
         slideProduct1 = new Swiper(".slide_product_1", {
             speed: 500,

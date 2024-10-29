@@ -297,7 +297,7 @@
     }
   }
 }
-.section_config_banner{
+.section_config_edit{
   padding: 48px 0 80px;
   @media (max-width: 1441px) {
     padding: sizeP(48) 0 sizeP(80);
@@ -305,15 +305,27 @@
   @media (max-width: $sizeMb) {
     padding: size(32) 0 size(32);
   }
+  .section_title, .wrap_head_title {
+    margin-bottom: 48px;
+    @media (max-width: 1440px) {
+      margin-bottom: sizeP(48);
+    }
+    @media (max-width: $sizeMb) {
+      margin-bottom: size(16);
+    }
+  }
   .wrap_btn{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 32px;
+    margin-top: 48px;
     @media (max-width: 1441px) {
+      margin-top: sizeP(48);
       gap: sizeP(32);
     }
     @media (max-width: $sizeMb) {
+      margin-top: size(16);
       gap: size(16);
     }
     .lb-xsmall{
