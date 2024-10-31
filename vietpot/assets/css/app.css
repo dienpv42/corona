@@ -583,14 +583,14 @@ input {
 }
 
 .form-control, .form-select {
-  padding: 16px;
+  padding: 10px 16px;
   border-radius: 16px;
   border: 1px solid #989B9F;
   color: #6D727B;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
-  min-height: 52px;
+  min-height: 48px;
 }
 @media (max-width: 1441px) {
   .form-control, .form-select {
@@ -598,7 +598,7 @@ input {
     padding: 16px;
     border-radius: 16px;
     border: 1px solid #989B9F;
-    min-height: 52px;
+    min-height: 48px;
   }
 }
 @media (max-width: 575px) {
@@ -1141,7 +1141,7 @@ input {
 }
 @media (max-width: 575px) {
   .lb-xsmall {
-    padding: 4.2666666667vw 4.2666666667vw;
+    padding: 2.6666666667vw 4.2666666667vw;
     font-size: 4.2666666667vw;
     border-radius: 4.2666666667vw;
     border: 0.2666666667vw solid #AFB5B9;
@@ -1438,6 +1438,27 @@ input {
 .lb-xsmall-img.active, .lb-xsmall-img:hover {
   background: #EEE;
   color: #2196F3;
+}
+
+.lb-text-xsmall-link {
+  color: #6D727B;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+@media (max-width: 1441px) {
+  .lb-text-xsmall-link {
+    font-size: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .lb-text-xsmall-link {
+    font-size: 3.7333333333vw;
+  }
+}
+.lb-text-xsmall-link.active {
+  font-weight: 700;
+  color: #43464D;
 }
 
 .lb-text {
@@ -4300,6 +4321,126 @@ input {
 @media (max-width: 575px) {
   .wrap_admin_config_banner .item_banner .left .form-group .form-label svg {
     width: 6.4vw;
+  }
+}
+
+.wrap-form-invoice {
+  margin-top: 48px;
+}
+@media (max-width: 1440px) {
+  .wrap-form-invoice {
+    margin-top: 48px;
+  }
+}
+@media (max-width: 575px) {
+  .wrap-form-invoice {
+    margin-top: 8.5333333333vw;
+  }
+}
+.wrap-form-invoice .wrap-form {
+  max-width: 1028px;
+  margin: 0 auto 48px;
+}
+@media (max-width: 1440px) {
+  .wrap-form-invoice .wrap-form {
+    margin-bottom: 48px;
+  }
+}
+@media (max-width: 575px) {
+  .wrap-form-invoice .wrap-form {
+    margin-bottom: 4.2666666667vw;
+  }
+}
+.wrap-form-invoice .wrap-form .wrap-title {
+  color: #575756;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 24px;
+}
+@media (max-width: 1440px) {
+  .wrap-form-invoice .wrap-form .wrap-title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .wrap-form-invoice .wrap-form .wrap-title {
+    font-size: 4.8vw;
+    margin-bottom: 2.1333333333vw;
+  }
+}
+.wrap-form-invoice .wrap-form .form-group {
+  max-width: 600px;
+  margin: 0 auto 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+@media (max-width: 1440px) {
+  .wrap-form-invoice .wrap-form .form-group {
+    margin: 0 auto 16px;
+    gap: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .wrap-form-invoice .wrap-form .form-group {
+    margin: 0 auto 2.1333333333vw;
+    gap: 4.2666666667vw;
+  }
+}
+.wrap-form-invoice .wrap-form .form-group .form-label, .wrap-form-invoice .wrap-form .form-group .group-label {
+  width: 190px;
+  margin: 0;
+}
+@media (max-width: 1440px) {
+  .wrap-form-invoice .wrap-form .form-group .form-label, .wrap-form-invoice .wrap-form .form-group .group-label {
+    width: 190px;
+  }
+}
+@media (max-width: 575px) {
+  .wrap-form-invoice .wrap-form .form-group .form-label, .wrap-form-invoice .wrap-form .form-group .group-label {
+    width: 40vw;
+  }
+}
+.wrap-form-invoice .wrap-form .form-group .group {
+  flex: 1;
+}
+.wrap-form-invoice .wrap-form .form-group .group.group-flex {
+  display: flex;
+  gap: 16px;
+}
+@media (max-width: 1440px) {
+  .wrap-form-invoice .wrap-form .form-group .group.group-flex {
+    gap: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .wrap-form-invoice .wrap-form .form-group .group.group-flex {
+    gap: 2.1333333333vw;
+    flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  .wrap-form-invoice .wrap-form .form-group .group.group-flex a {
+    width: min-content;
+    display: flex;
+  }
+}
+.wrap-form-invoice .wrap-form .form-label {
+  color: #6D727B;
+  font-weight: 400;
+  font-size: 16px;
+}
+@media (max-width: 1440px) {
+  .wrap-form-invoice .wrap-form .form-label {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .wrap-form-invoice .wrap-form .form-label {
+    font-size: 3.4666666667vw;
   }
 }
 

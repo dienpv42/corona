@@ -171,119 +171,272 @@
                         Tài chính và kế toán
                     </h2>
                 </div>
-                <div class="wrap_list_action_flex">
-                    <a href="#" class="lb-xsmall">
-                        <span>Thu và chi (không hóa đơn)</span>
-                    </a>
-                    <a href="data_finance_accounting_invoice_create.html" class="lb-xsmall">
-                            <span>
-                                Tạo hóa đơn mới
-                            </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z" fill="#6D727B" stroke="#6D727B"/>
-                            <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z" fill="#6D727B" stroke="#6D727B"/>
-                            <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"/>
-                        </svg>
-                    </a>
-                </div>
             </div>
             <div class="section_content">
                 <div class="wrap_head">
-                    <div class="wrap_list_link_lb wrap_list_link_lb_bd">
+                    <div class="wrap_list_link_lb">
                         <ul class="list_link_lb justify-content-center">
-                            <li class="list_link_item">
-                                <a href="data_finance_accounting_invoice_add.html" class="lb-xsmall lb-link active">
-                                    Nhập hóa đơn
-                                </a>
+                            <li class="list_link_item justify-content-center">
+                                <a href="#" class="lb-text-xsmall-link active">Tạo hóa đơn</a>
                             </li>
-                            <li class="list_link_item">
-                                <a href="data_finance_accounting_invoice_list.html" class="lb-xsmall lb-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Danh sách hóa đơn và chi tiêu
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="data_finance_accounting_invoice_list.html">Danh sách tổng thể</a></li>
-                                    <li><a class="dropdown-item" href="#">Hóa đơn nhập</a></li>
-                                    <li><a class="dropdown-item" href="#">Hóa đơn xuất</a></li>
-                                </ul>
+                            <li class="list_link_item justify-content-center">
+                                <a href="#" class="lb-text-xsmall-link">Xem PDF</a>
                             </li>
-                            <li class="list_link_item">
-                                <a href="data_finance_accounting_invoice_statistical.html" class="lb-xsmall lb-link">
-                                    Thống kê tài chính
-                                </a>
+                            <li class="list_link_item justify-content-center">
+                                <a href="#" class="lb-text-xsmall-link">Gửi hóa đơn vào email</a>
+                            </li>
+                            <li class="list_link_item justify-content-center">
+                                <a href="#" class="lb-text-xsmall-link">Nhớ vào xuất hóa đơn</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="wrap_content">
-                    <div class="wrap_form">
-                        <div class="form-group">
-                            <div class="form-label">
-                                Số hóa đơn
-                            </div>
-                            <div class="group">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-label">
-                                Tên công ty
-                            </div>
-                            <div class="group">
-                                <input type="text" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-label">
-                                Nhóm
-                            </div>
-                            <div class="group d-flex flex-row align-items-center">
-                                <div class="form-check mr-32">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Nhập hóa đơn
-                                    </label>
+                    <div class="wrap-form-invoice">
+                        <div class="wrap-form">
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Číslo faktury:
                                 </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Xuất hóa đơn
-                                    </label>
+                                <div class="group group-flex">
+                                    <input type="text" class="form-control">
+                                    <a href="#" class="lb-xsmall">Tự tạo số</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="form-label">
-                                Ngày nhập hóa đơn
+
+                        <!--  group -->
+                        <div class="wrap-form">
+                            <div class="wrap-title">
+                                Vystavovatel faktury
                             </div>
-                            <div class="group">
-                                <input type="text" class="form-control date" id="datepicker">
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Název společnosti:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="group-label">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Adresa:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Město:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Země:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="group-label">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="group-label">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="form-label">
-                                Ngày nhập hóa đơn
+
+                        <!--  group -->
+                        <div class="wrap-form">
+                            <div class="wrap-title">
+                                Příjemce faktury
                             </div>
-                            <div class="group">
-                                <input type="text" class="form-control date" id="datepicker2">
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Název společnosti:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Příjemce:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="group-label">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Adresa:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Město:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Země:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="group-label">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <div class="form-label">
-                                Tổng số tiền
+
+                        <!--  group -->
+                        <div class="wrap-form">
+                            <div class="wrap-title">
+                                Informace o faktuře
                             </div>
-                            <div class="input-group">
-                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Euro</button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                    <li><a class="dropdown-item" href="#">Euro</a></li>
-                                    <li><a class="dropdown-item" href="#">USD</a></li>
-                                    <li><a class="dropdown-item" href="#">VND</a></li>
-                                </ul>
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Datum vystavení faktury:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Číslo faktury:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Datum splatnosti:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="group-label">
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- item-->
+                            <div class="form-group">
+                                <div class="form-label">
+                                    Další informace:
+                                </div>
+                                <div class="group">
+                                    <input type="text" class="form-control">
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group justify-content-end">
-                            <button type="button" class="lb-xsmall-primary pd-s-100 pd-e-100">Lưu</button>
+
+                        <!--  group -->
+                        <div class="wrap-form">
+                            <div class="wrap-title">
+                                Podrobnosti faktury
+                            </div>
+                            <!-- item-->
+                            <div class="form-group-full">
+                                <div class="form-label">
+                                    Informace o faktuře:
+                                </div>
+                                <div class="group">
+                                    <textarea class="form-control" rows="6"></textarea>
+                                </div>
+                            </div>
                         </div>
+
+                        <!--  group -->
+                        <div class="wrap-form wrap-form-add">
+
+                        </div>
+
+
                     </div>
                 </div>
             </div>
