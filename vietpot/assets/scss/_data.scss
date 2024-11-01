@@ -63,12 +63,12 @@
 }
 
 .section_data, .section_admin,.section_data_customer {
-  padding: 48px 0 80px;
+  padding: 48px 0 48px;
   @media (max-width: 1441px) {
-    padding: sizeP(48) 0 sizeP(80);
+    padding: sizeP(48) 0 sizeP(48);
   }
   @media (max-width: $sizeMb) {
-
+    padding: size(32) 0 size(32);
   }
 }
 
@@ -298,13 +298,6 @@
   }
 }
 .section_config_edit{
-  padding: 48px 0 80px;
-  @media (max-width: 1441px) {
-    padding: sizeP(48) 0 sizeP(80);
-  }
-  @media (max-width: $sizeMb) {
-    padding: size(32) 0 size(32);
-  }
   .section_title, .wrap_head_title {
     margin-bottom: 48px;
     @media (max-width: 1440px) {

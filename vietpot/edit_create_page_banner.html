@@ -110,28 +110,36 @@
         <div class="container-main">
             <div class="section_title">
                 <div class="title">
-                    <h1>Strongbow</h1>
+                    <div class="form-group">
+                        <input type="text" name="" class="form-control" placeholder="Tiêu đề">
+                    </div>
                 </div>
             </div>
             <div class="section-content">
                 <div class="desc">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </p>
+                    <div class="form-group">
+                        <textarea name="" class="form-control" placeholder="Nội dung" rows="5"></textarea>
+                    </div>
                 </div>
-                <div class="image-upload-item">
+                <div class="image-upload-item" data-key="banner">
+                    <input type="file" id="imageUpload-banner" class="imageInput" accept="image/*">
+                    <input type="hidden" class="imgPath" value="">
                     <div class="upload-box">
-                        <img src="assets/images/item_banner.png" alt="" class="imagePreview">
+                        <label for="imageUpload-banner" class="label-add-image" style="">
+                            <span class="lb-xsmall">Chọn ảnh</span>
+                        </label>
+                        <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                        <img id="imageUploadPreview-banner" class="imagePreview" src="" alt="Preview Image">
                     </div>
                 </div>
                 <div class="desc">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    </p>
+                    <div class="form-group">
+                        <textarea name="" class="form-control" placeholder="Nội dung" rows="5"></textarea>
+                    </div>
                 </div>
-                <div class="wrap-btn text-center">
-                    <a href="#" class="lb-xsmall">
-                        Quay lại trang chủ
+                <div class="wrap_btn text-center">
+                    <a href="#" class="lb-xsmall-primary" id="submit">
+                        OK
                     </a>
                 </div>
             </div>
@@ -289,6 +297,23 @@
 <script src="assets/js/jquery-migrate.js"></script>
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/plugincollection.js"></script>
+<script src="assets/js/imageUploadLib.js"></script>
 <script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function () {
+        // Khởi tạo chức năng upload ảnh
+        imageUploadLib.initImageUpload();
+
+        // Sử dụng hàm để lấy dữ liệu khi bấm nút lưu
+        $('#submit').on('click', function () {
+            imageUploadLib.getAllImageInputsData().then(function (imagesData) {
+                let images = imagesData;
+                console.log(images)
+            });
+        });
+
+    });
+</script>
+
 </body>
 </html>
