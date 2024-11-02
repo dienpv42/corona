@@ -27,7 +27,7 @@
             removeButton.on('click', function () {
                 value.val('');
                 imageInput.val('');
-                preview.hide().attr('src', '');
+                preview.attr('src', '');
                 labelAddImage.show();
                 removeButton.hide();
             });
@@ -120,7 +120,7 @@
 
             value.val('');
             imageInput.val('');
-            preview.hide().attr('src', '');
+            preview.attr('src', '');
             labelAddImage.show();
             removeButton.hide();
         });

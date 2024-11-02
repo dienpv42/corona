@@ -32,12 +32,12 @@
             <div class="wrap_menu wrap_menu_fixed">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link active">
+                        <a href="about.html" class="nav-link">
                             Vietpot
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="customer.html" class="nav-link">
+                        <a href="customer.html" class="nav-link active">
                             Khách hàng
                         </a>
                     </li>
@@ -52,7 +52,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="data_admin.html" class="nav-link">
+                        <a href="data_login.html" class="nav-link">
                             Dữ liệu
                         </a>
                     </li>
@@ -96,149 +96,260 @@
 </header>
 
 <main class="main">
-    <section class="section-about-detail section-padding-top section-padding-bottom">
+    <!-- section about -->
+    <section class="section_about section-padding-top section-padding-bottom-50">
         <div class="container-main">
             <div class="wrapper">
-                <div class="section_title" data-aos="fade-up" data-aos-duration="1000">
-                    Giới thiệu
-                </div>
-                <div class="section_content" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="content">
-                        <p>
-                            Vietpot là cầu nối giữa nhà sản xuất, công ty và khách hàng người Việt trong lĩnh vực FMCG. Suốt 10 năm qua, chúng tôi đã cùng đối tác xây dựng và phát triển một nền tảng thị trường ổn định, hiệu quả và tiềm năng.
-                            Nhờ vào sự hợp tác đáng tin cậy và uy tín, chúng tôi được đối tác đánh giá là một cầu nối chất lượng đến thị trường gần 6.000 cửa hàng người Việt và 75 tổng kho.
-                        </p>
-                        <p>
-                            Vietpot cung cấp các dịch vụ chăm sóc khách hàng, bán hàng, quảng cáo sản phẩm, đăng ký khách hàng mới, cung cấp dữ liệu về thị trường, và hỗ trợ đàm phán hợp tác cùng các tổng kho và cửa hàng bán lẻ.
-                        </p>
-                        <p>
-                            Với sự chuyển đổi số và nền tảng dữ liệu mạnh mẽ, Vietpot có thể kết nối và tương tác với tất cả khách hàng và tổng kho trong thời gian ngắn nhất, tối ưu hóa hiệu quả và tiết kiệm cho đối tác. Mọi rào cản ngôn ngữ cũng sẽ không còn là vấn đề.
-                        </p>
-                        <p>
-                            Thị trường FMCG với 5.634 cửa hàng và 100 tổng kho của người Việt, đạt doanh thu hơn 70 tỷ Korun hàng năm, đã không ngừng phát triển và ngày càng ổn định hơn. Chúng tôi tin rằng sẽ còn nhiều cơ hội và tiềm năng để cùng đối tác của mình phát triển hơn nữa.
-                        </p>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="wrap_content">
+                            <div class="title">
+                                <div class="form-group">
+                                    <input type="text" name="" class="form-control" placeholder="Tiêu đề">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" placeholder="Nội dung" rows="5"></textarea>
+                                </div>
+                            </div>
+                            <div class="wrap_btn group-form-btn-input">
+                                <a href="#" class="lb-xxsmall">Tạo trang cho banner mới</a>
+                                <div class="group_input_btn">
+                                    <input type="text" class="form-control" placeholder="" value="https://skicoo.com/banner#2.3.1.4233" disabled>
+                                    <a href="#" class="lb-xxsmall-primary">
+                                        Thay đổi
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="image" data-aos="fade-up" data-aos-duration="1400">
-                        <img src="assets/images/image_about.png" alt="image_about">
+                    <div class="col-6">
+                        <div class="images">
+                            <div class="image-upload-item" data-key="image1">
+                                <input type="file" id="imageUpload-image1" class="imageInput" accept="image/*">
+                                <input type="hidden" class="imgPath" value="">
+                                <div class="upload-box">
+                                    <label for="imageUpload-image1" class="label-add-image" style="">
+                                        <span class="lb-xsmall">Chọn ảnh</span>
+                                    </label>
+                                    <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                                    <img id="imageUploadPreview-image1" class="imagePreview" src="" alt="Preview Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section end about -->
+    <!-- section about -->
+    <section class="section_about">
+        <div class="container-main">
+            <hr class="hr">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wrap_content">
+                            <div class="title">
+                                <div class="form-group">
+                                    <input type="text" name="" class="form-control" placeholder="Tiêu đề">
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" placeholder="Nội dung" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+        </div>
+    </section>
+    <!-- section end about -->
+
+    <section class="section_banner_short section-padding-50">
+        <div class="container-main">
+            <div class="wrapper">
+                <div class="image-upload-item" data-key="image2">
+                    <input type="file" id="imageUpload-image2" class="imageInput" accept="image/*">
+                    <input type="hidden" class="imgPath" value="">
+                    <div class="upload-box">
+                        <label for="imageUpload-image2" class="label-add-image" style="">
+                            <span class="lb-xsmall">Chọn ảnh</span>
+                        </label>
+                        <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                        <img id="imageUploadPreview-image2" class="imagePreview" src="" alt="Preview Image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- section cooperate -->
-    <section class="section_cooperate">
+    <section class="section_shop_store">
+        <div class="container-main">
+            <hr class="hr">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="group">
+                            <div class="section_title">
+                                <div class="title">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control" placeholder="Tiêu đề">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section_content">
+                                <div class="image-upload-item" data-key="image3">
+                                    <input type="file" id="imageUpload-image3" class="imageInput" accept="image/*">
+                                    <input type="hidden" class="imgPath" value="">
+                                    <div class="upload-box">
+                                        <label for="imageUpload-image3" class="label-add-image" style="">
+                                            <span class="lb-xsmall">Chọn ảnh</span>
+                                        </label>
+                                        <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                                        <img id="imageUploadPreview-image3" class="imagePreview" src="" alt="Preview Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="group">
+                            <div class="section_title">
+                                <div class="title">
+                                    <div class="form-group">
+                                        <input type="text" name="" class="form-control" placeholder="Tiêu đề">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section_content">
+                                <div class="image-upload-item" data-key="image4">
+                                    <input type="file" id="imageUpload-image4" class="imageInput" accept="image/*">
+                                    <input type="hidden" class="imgPath" value="">
+                                    <div class="upload-box">
+                                        <label for="imageUpload-image4" class="label-add-image" style="">
+                                            <span class="lb-xsmall">Chọn ảnh</span>
+                                        </label>
+                                        <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                                        <img id="imageUploadPreview-image4" class="imagePreview" src="" alt="Preview Image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+        </div>
+    </section>
+
+    <section class="section_form_login">
         <div class="container-main">
             <div class="section_title">
                 <div class="title">
-                    <h2>Đối tác nói về VIETPOT</h2>
+                    <h2>Dữ liệu khách hàng</h2>
                 </div>
             </div>
-            <div class="section_content">
-                <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="wrap d-flex flex-row align-items-center justify-content-between">
-                        <div class="image">
-                            <img src="assets/images/cooperate/cooperate_1.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                Budvar
-                            </div>
-                            <div class="sub-title">
-                                Tên tác giả, email
-                            </div>
-                            <div class="desc">
-                                Understanding the steps needed to beat your competitors is essential when understanding the length of the project, and how we will effectively tackle your digital marketing.​ We also make sure to get you the most value for your money.​
-                            </div>
-                        </div>
-                    </div>
+            <div class="card_forms">
+                <div class="card_title">
+                    Tài khoản
                 </div>
-                <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="wrap d-flex flex-row align-items-center justify-content-between">
-                        <div class="image">
-                            <img src="assets/images/cooperate/cooperate_2.png" alt="">
+                <div class="card_form">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="" class="form-label">
+                                Email
+                            </label>
+                            <input type="email" class="form-control">
                         </div>
-                        <div class="content">
-                            <div class="title">
-                                Unilever
-                            </div>
-                            <div class="sub-title">
-                                Tên tác giả, email
-                            </div>
-                            <div class="desc">
-                                Understanding the steps needed to beat your competitors is essential when understanding the length of the project, and how we will effectively tackle your digital marketing.​ We also make sure to get you the most value for your money.​
-                            </div>
+                        <div class="form-group">
+                            <label for="" class="form-label">
+                                Mật khẩu
+                            </label>
+                            <input type="password" class="form-control">
+                            <a href="javascript:void(0)" class="text-forgot">
+                                Quên mật khẩu?
+                            </a>
                         </div>
-                    </div>
+                        <div class="form-group text-end">
+                            <button class="lb-small-success pd-e-60 pd-s-60" type="submit">
+                                Đăng nhập
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="wrap d-flex flex-row align-items-center justify-content-between">
-                        <div class="image">
-                            <img src="assets/images/cooperate/cooperate_3.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                kofola
-                            </div>
-                            <div class="sub-title">
-                                Tên tác giả, email
-                            </div>
-                            <div class="desc">
-                                Understanding the steps needed to beat your competitors is essential when understanding the length of the project, and how we will effectively tackle your digital marketing.​ We also make sure to get you the most value for your money.​
-                            </div>
-                        </div>
-                    </div>
+            </div>
+            <hr>
+            <div class="card_forms">
+                <div class="card_title">
+                    Đăng ký
                 </div>
-                <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="wrap d-flex flex-row align-items-center justify-content-between">
-                        <div class="image">
-                            <img src="assets/images/cooperate/cooperate_4.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                Heineken
-                            </div>
-                            <div class="sub-title">
-                                Tên tác giả, email
-                            </div>
-                            <div class="desc">
-                                Understanding the steps needed to beat your competitors is essential when understanding the length of the project, and how we will effectively tackle your digital marketing.​ We also make sure to get you the most value for your money.​
-                            </div>
-                        </div>
-                    </div>
+                <div class="wrap_btn_full">
+                    <a href="javascript:void(0);" class="lb-small w-100 text-center">
+                        Tạo tài khoản mới
+                    </a>
                 </div>
-                <div class="item" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="wrap d-flex flex-row align-items-center justify-content-between">
-                        <div class="image">
-                            <img src="assets/images/cooperate/cooperate_5.png" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                R. JELÍNEK
-                            </div>
-                            <div class="sub-title">
-                                Tên tác giả, email
-                            </div>
-                            <div class="desc">
-                                Understanding the steps needed to beat your competitors is essential when understanding the length of the project, and how we will effectively tackle your digital marketing.​ We also make sure to get you the most value for your money.​
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
-    <!-- section end cooperate -->
 
-    <section class="section_banner_short section-padding-top section-padding-bottom">
+    </section>
+
+    <section class="section_about">
+        <div class="container-main">
+            <hr class="hr">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wrap_content">
+                            <div class="title">
+                                <h3>Hợp tác giữa Vietpot và khách hàng</h3>
+                            </div>
+                            <div class="content">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" placeholder="Nội dung" rows="8"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+        </div>
+    </section>
+
+    <section class="section_banner_short">
         <div class="container-main">
             <div class="wrapper">
-                <img src="assets/images/gray_banner.png" alt="banner" class="img-fluid">
+                <div class="image-upload-item" data-key="image4">
+                    <input type="file" id="imageUpload-image5" class="imageInput" accept="image/*">
+                    <input type="hidden" class="imgPath" value="">
+                    <div class="upload-box">
+                        <label for="imageUpload-image5" class="label-add-image" style="">
+                            <span class="lb-xsmall">Chọn ảnh</span>
+                        </label>
+                        <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                        <img id="imageUploadPreview-image5" class="imagePreview" src="" alt="Preview Image">
+                    </div>
+                </div>
             </div>
+            <hr class="hr">
         </div>
     </section>
 
+    <div class="section_page_detail section-padding-bottom-50">
+        <div class="container-main">
+            <div class="wrap_btn text-center">
+                <a href="#" class="lb-xsmall-primary" id="submit">
+                    OK
+                </a>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer class="footer">

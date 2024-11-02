@@ -23,6 +23,19 @@
   }
 }
 
+.hr{
+  margin: 48px auto;
+  border-top: 3px solid #D5D7DB;
+  opacity: 1;
+  @media (max-width: 1440px) {
+    margin: sizeP(48) auto;
+    border-top: sizeP(3) solid #D5D7DB;
+  }
+  @media (max-width: $sizeMb) {
+    margin: size(16) auto;
+    border-top: size(2) solid #D5D7DB;
+  }
+}
 
 .hr-section {
   max-width: 250px;
@@ -2220,6 +2233,7 @@
         }
       }
     }
+
   }
 }
 
@@ -3363,6 +3377,7 @@
           width: sizeP(216);
         }
         @media (max-width: $sizeMb) {
+          margin-bottom: size(8);
           width: size(139);
         }
       }
@@ -3370,11 +3385,25 @@
       .group, .input-group {
         width: calc(100% - 248px);
         @media (max-width: 1440px) {
-          width: calcC(100%, 248);
+          width: 100%;
         }
         @media (max-width: $sizeMb) {
-          width: calcCm(100%, 151);
+          width: 100%;
         }
+      }
+    }
+  }
+  .wrap_partner_form{
+    .item-partner{
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      .btn-remove{
+        width: 24px;
+        height: auto;
+      }
+      .wrap{
+        flex: 1;
       }
     }
   }
@@ -3606,6 +3635,61 @@
   }
 }
 
+.group_input_btn {
+  width: 100%;
+  position: relative;
+
+  .form-control {
+    color: $--primary;
+
+    &:disabled {
+      background-color: #fff;
+    }
+  }
+
+  a {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    @media (max-width: 1440px) {
+      right: sizeP(8);
+    }
+    @media (max-width: $sizeMb) {
+      padding: size(8);
+      right: size(4);
+    }
+  }
+}
+.group-form-btn-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  @media (max-width: 1441px) {
+    gap: sizeP(16);
+  }
+  @media (max-width: $sizeMb) {
+    flex-direction: column;
+    gap: size(16);
+  }
+
+  .label {
+    width: 30px;
+    color: #706F6F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    @media (max-width: 1441px) {
+      width: sizeP(30);
+      font-size: sizeP(16);
+    }
+    @media (max-width: $sizeMb) {
+      width: size(30);
+      font-size: size(14);
+    }
+  }
+}
 .wrap_admin_config_banner {
   max-width: 824px;
   margin: auto;
@@ -3614,33 +3698,6 @@
   }
   @media (max-width: $sizeMb) {
     max-width: 100%;
-  }
-
-  .group_input_btn {
-    width: 100%;
-    position: relative;
-
-    .form-control {
-      color: $--primary;
-
-      &:disabled {
-        background-color: #fff;
-      }
-    }
-
-    a {
-      position: absolute;
-      right: 8px;
-      top: 50%;
-      transform: translateY(-50%);
-      @media (max-width: 1440px) {
-        right: sizeP(8);
-      }
-      @media (max-width: $sizeMb) {
-        padding: size(8);
-        right: size(4);
-      }
-    }
   }
 
   .item_banner {
@@ -3899,7 +3956,7 @@
 }
 
 .image-upload-item {
-  max-width: 824px;
+  width: 100%;
   margin: auto;
   @media (max-width: 1440px) {
     max-width: sizeP(824);
@@ -3964,7 +4021,7 @@
     }
 
     .imagePreview {
-      max-width: 100%;
+      width: 100%;
       max-height: 100%;
       object-fit: cover;
       object-position: center;
