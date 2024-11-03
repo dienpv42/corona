@@ -229,7 +229,18 @@
       }
     }
   }
-
+  .wrap-image-3{
+    margin-bottom: 48px;
+    @media (max-width: 1440px) {
+      margin-bottom: sizeP(48);
+    }
+    @media (max-width: $sizeMb) {
+      margin-bottom: size(16);
+    }
+    img{
+      width: 100%;
+    }
+  }
   .wrap-image {
     max-width: 824px;
     margin: auto;
