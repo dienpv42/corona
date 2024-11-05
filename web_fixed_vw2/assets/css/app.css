@@ -3719,7 +3719,7 @@ input {
   color: #94C459;
   border-color: #94C459;
 }
-.item_product_nation.follow .btn_follow {
+.item_product_nation.follow .btn_follow, .item_product_nation .follow .btn_follow {
   background-color: #94C459;
 }
 
