@@ -3363,25 +3363,49 @@ hr{
     }
 
     .group-product-slider {
-      height: 158px;
+      height: 190px;
       @media (max-width: 1440px) {
-        height: sizeP(158);
+        height: sizeP(190);
       }
       @media (max-width: $sizeMb) {
-        height: size(130);
+        height: size(160);
       }
-
+      .group-input-upload{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        @media (max-width: 1440px) {
+          gap: sizeP(8);
+        }
+        @media (max-width: $sizeMb) {
+          gap: size(8);
+        }
+        .form-control{
+          flex: 1;
+        }
+        .group{
+          gap: 8px;
+          width: auto;
+          @media (max-width: 1440px) {
+            gap: sizeP(8);
+          }
+          @media (max-width: $sizeMb) {
+            gap: size(8);
+          }
+        }
+      }
       .swiper {
         width: 100%;
         height: 100%;
         margin-left: auto;
         margin-right: auto;
-        padding-bottom: 30px;
+        padding-bottom: 64px;
         @media (max-width: 1440px) {
-          padding-bottom: sizeP(30);
+          padding-bottom: sizeP(64);
         }
         @media (max-width: $sizeMb) {
-          padding-bottom: size(30);
+          padding-bottom: size(64);
         }
 
         .swiper-slide {
@@ -3409,9 +3433,23 @@ hr{
 
       .swiper-pagination {
         position: absolute;
-        bottom: 0;
+        bottom: 15px;
         left: 50%;
         transform: translateX(-50%);
+        z-index: 1;
+      }
+      .swiper-button-prev, .swiper-button-next{
+        top: unset;
+        transform: unset;
+        bottom: 5px;
+        width: 32px;
+        height: 48px;
+        box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+        z-index: 2 !important;
+        svg{
+          width: 24px;
+          height: 24px;
+        }
       }
     }
   }
@@ -3753,8 +3791,26 @@ hr{
   }
   @media (max-width: $sizeMb) {
     max-width: 100%;
+    width: 100%;
   }
-
+  &.wrap_admin_config_banner_full{
+    max-width: 100%;
+    width: 100%;
+    padding: 0 48px;
+    @media (max-width: 1440px) {
+      padding: 0 sizeP(48);
+    }
+    @media (max-width: $sizeMb) {
+      padding: 0 size(8);
+    }
+    .left,.right{
+      flex: 1;
+      >*{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
   .item_banner {
     display: flex;
     flex-direction: row;

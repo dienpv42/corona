@@ -176,6 +176,8 @@
       }
 
       .map {
+        display: flex;
+        position: relative;
         img {
           width: 420px;
           max-width: 100%;
@@ -184,6 +186,66 @@
           }
           @media (max-width: $sizeMb) {
             width: 100%;
+          }
+        }
+        .shop, .store{
+          position: absolute;
+          border-radius: 8px;
+          border: 1px solid #AFB5B9;
+          background: #FFF;
+          box-shadow: 2px 4px 16px 0px rgba(33, 150, 243, 0.32);
+          padding: 4px 16px;
+          display: flex;
+          align-items: end;
+          color: #989B9F;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 120%;
+          gap: 2px;
+          @media (max-width: 1440px) {
+            border-radius: sizeP(8);
+            border: sizeP(1) solid #AFB5B9;
+            box-shadow: sizeP(2) sizeP(4) sizeP(16) 0px rgba(33, 150, 243, 0.32);
+            padding: sizeP(4) sizeP(16);
+            font-size: sizeP(16);
+            gap: sizeP(2);
+          }
+          @media (max-width: $sizeMb) {
+
+          }
+          span{
+            color: #6D727B;
+            font-size: 27px;
+            font-weight: 700;
+            line-height: 1;
+            @media (max-width: 1440px) {
+              font-size: sizeP(27);
+            }
+            @media (max-width: $sizeMb) {
+
+            }
+          }
+        }
+        .shop{
+          top: 85px;
+          left: 69px;
+          @media (max-width: 1440px) {
+            top: sizeP(85);
+            left: sizeP(69);
+          }
+          @media (max-width: $sizeMb) {
+
+          }
+        }
+        .store{
+          top: 137px;
+          left: 202px;
+          @media (max-width: 1440px) {
+            top: sizeP(137);
+            left: sizeP(202);
+          }
+          @media (max-width: $sizeMb) {
+
           }
         }
       }

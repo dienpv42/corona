@@ -520,9 +520,9 @@
         }
 
         .wrap_list {
+          margin-bottom: 32px;
           .item {
             width: 189px;
-            margin-bottom: 32px;
             @media (max-width: 1440px) {
               width: sizeP(189);
               margin-bottom: sizeP(32);
@@ -1552,13 +1552,78 @@
 
       }
     }
-
+    .wrap_map{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     .map {
+      position: relative;
       img {
         max-width: 100%;
         width: 872px;
         @media (max-width: 1440px) {
           width: sizeP(872);
+        }
+        @media (max-width: $sizeMb) {
+
+        }
+      }
+      .shop, .store{
+        position: absolute;
+        border-radius: 16px;
+        border: 1px solid #AFB5B9;
+        background: #FFF;
+        box-shadow: 2px 4px 16px 0px rgba(33, 150, 243, 0.32);
+        padding: 8px 40px;
+        display: flex;
+        align-items: end;
+        color: #989B9F;
+        font-size: 27px;
+        font-weight: 700;
+        line-height: 120%;
+        gap: 2px;
+        @media (max-width: 1440px) {
+          border-radius: sizeP(16);
+          border: sizeP(1) solid #AFB5B9;
+          box-shadow: sizeP(2) sizeP(4) sizeP(16) 0px rgba(33, 150, 243, 0.32);
+          padding: sizeP(8) sizeP(40);
+          font-size: sizeP(27);
+          gap: sizeP(2);
+        }
+        @media (max-width: $sizeMb) {
+
+        }
+        span{
+          color: #2196F3;
+          font-size: 64px;
+          font-weight: 700;
+          line-height: 1;
+          @media (max-width: 1440px) {
+            font-size: sizeP(64);
+          }
+          @media (max-width: $sizeMb) {
+
+          }
+        }
+      }
+      .shop{
+        top: 169px;
+        left: 106px;
+        @media (max-width: 1440px) {
+          top: sizeP(169);
+          left: sizeP(106);
+        }
+        @media (max-width: $sizeMb) {
+
+        }
+      }
+      .store{
+        top: 281px;
+        left: 468px;
+        @media (max-width: 1440px) {
+          top: sizeP(281);
+          left: sizeP(468);
         }
         @media (max-width: $sizeMb) {
 

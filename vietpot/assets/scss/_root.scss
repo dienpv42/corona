@@ -209,6 +209,9 @@
   background: #FFF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: all .3s;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
   @media (max-width: 1441px) {
     width: sizeP(56);
     height: sizeP(100);
