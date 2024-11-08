@@ -101,182 +101,89 @@
         <div class="container-main">
             <div class="section_content">
                 <div class="wrapper">
+                    <div class="wrap-partner-add row align-items-center">
+                        <div class="item col-6 col-lg-2 col-md-3 mb-3">
+                            <div class="image-upload-item" data-key="image1">
+                                <input type="file" id="imageUpload-partner-1" class="imageInput" accept="image/*">
+                                <input type="hidden" class="imgPath" value="">
+                                <div class="upload-box">
+                                    <label for="imageUpload-partner-1" class="label-add-image" style="">
+                                        <span class="lb-xxsmall">Chọn logo đối tác 1</span>
+                                    </label>
+                                    <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                                    <img id="imageUploadPreview-partner-1" class="imagePreview" src="" alt="">
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="item item-btn col-6 col-lg-2 col-md-3 mb-3">
+                            <a href="javascript:void(0);" class="lb-xxsmall btn-add-partner">
+                                <span>Thêm logo đối tác</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                    <path d="M10.1634 18.4582C5.49789 18.4582 1.70508 14.6654 1.70508 9.99984C1.70508 5.33431 5.49789 1.5415 10.1634 1.5415C14.8289 1.5415 18.6217 5.33431 18.6217 9.99984C18.6217 14.6654 14.8289 18.4582 10.1634 18.4582ZM10.1634 1.7915C5.63727 1.7915 1.95508 5.4737 1.95508 9.99984C1.95508 14.526 5.63727 18.2082 10.1634 18.2082C14.6896 18.2082 18.3717 14.526 18.3717 9.99984C18.3717 5.4737 14.6896 1.7915 10.1634 1.7915Z" fill="#6D727B" stroke="#6D727B"/>
+                                    <path d="M13.4967 10.125H6.83008C6.79993 10.125 6.76865 10.1127 6.74301 10.0871C6.71736 10.0614 6.70508 10.0301 6.70508 10C6.70508 9.96985 6.71736 9.93857 6.74301 9.91293C6.76865 9.88728 6.79993 9.875 6.83008 9.875H13.4967C13.5269 9.875 13.5582 9.88728 13.5838 9.91293C13.6095 9.93857 13.6217 9.96985 13.6217 10C13.6217 10.0301 13.6095 10.0614 13.5838 10.0871C13.5582 10.1127 13.5269 10.125 13.4967 10.125Z" fill="#6D727B" stroke="#6D727B"/>
+                                    <path d="M10.1641 13.9582C9.8224 13.9582 9.53906 13.6748 9.53906 13.3332V6.6665C9.53906 6.32484 9.8224 6.0415 10.1641 6.0415C10.5057 6.0415 10.7891 6.32484 10.7891 6.6665V13.3332C10.7891 13.6748 10.5057 13.9582 10.1641 13.9582Z" fill="#6D727B"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- section end partner -->
-    <!-- section about -->
+
     <section class="section_about section-padding-50">
         <div class="container-main">
+            <div class="wrap_form wrap_form_full section-padding-bottom-50">
+                <div class="form-group">
+                    <div class="form-label">
+                        Chọn đối tác
+                    </div>
+                    <div class="group">
+                        <select name="" id="selectPartner" class="form-select">
+                            <option selected disabled>Chọn đối tác</option>
+                            <option value="1">Đối tác 1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <div class="wrapper">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6 mb-3 mb-lg-0">
                         <div class="wrap_content">
-                            <div class="title" data-aos="fade-up" data-aos-duration="1000">
-                                <h2>
-                                    Đối tác <br>
-                                    <span>- “Vietpot hỗ trợ khách hàng liên lạc và hợp tác với các công ty.”</span>
-                                </h2>
+                            <div class="title">
+                                <div class="form-group">
+                                    <input type="text" name="" class="form-control" placeholder="Tiêu đề">
+                                </div>
                             </div>
-                            <div class="content" data-aos="fade-up" data-aos-duration="1500">
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                </p>
-                                <p>
-                                    standard dummy text ever since the 1500s
-                                </p>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                </p>
-                                <p>
-                                    standard dummy text ever since the 1500s
-                                </p>
+                            <div class="content">
+                                <div class="form-group">
+                                    <textarea name="" class="form-control" placeholder="Nội dung" rows="5"></textarea>
+                                </div>
                             </div>
-                            <div class="wrap_btn" data-aos="fade-up" data-aos-duration="1500">
-                                <a href="javascript:void(0);" class="btn btn-default-primary">
-                                    Xem thêm
-                                </a>
+                            <div class="wrap_btn group-form-btn-input">
+                                <a href="edit_content_web_customer_create_page.html" class="lb-xxsmall">Tạo trang cho banner mới</a>
+                                <div class="group_input_btn">
+                                    <input type="text" class="form-control" placeholder="" value="https://skicoo.com/banner#2.3.1.4233" disabled>
+                                    <a href="#" class="lb-xxsmall-primary">
+                                        Thay đổi
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <div class="images" data-aos="fade-left" data-aos-duration="2000">
-                            <img src="assets/images/about.png" alt="about">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section end about -->
-
-    <section class="section_banner_and_product section-padding-50">
-        <div class="container-main">
-            <div class="wrapper">
-                <div class="banner" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="assets/images/gray_banner.png" alt="banner" class="img-fluid">
-                </div>
-                <div class="wrap_product" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="wrap_list row">
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
+                    <div class="col-12 col-lg-6">
+                        <div class="images">
+                            <div class="image-upload-item" data-key="image1">
+                                <input type="file" id="imageUpload-image1" class="imageInput" accept="image/*">
+                                <input type="hidden" class="imgPath" value="">
+                                <div class="upload-box">
+                                    <label for="imageUpload-image1" class="label-add-image" style="">
+                                        <span class="lb-xsmall">Chọn ảnh</span>
+                                    </label>
+                                    <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                                    <img id="imageUploadPreview-image1" class="imagePreview" src="" alt="Preview Image">
                                 </div>
                             </div>
                         </div>
@@ -286,469 +193,82 @@
         </div>
     </section>
 
+
     <section class="section_banner_and_product section-padding-50">
         <div class="container-main">
-            <div class="wrapper">
-                <div class="banner" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="assets/images/gray_banner.png" alt="banner" class="img-fluid">
-                </div>
-                <div class="wrap_product" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="wrap_list row">
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
+            <div class="wrapper section-padding-bottom-50">
+                <div class="banner">
+                    <div class="image-upload-item" data-key="image1">
+                        <input type="file" id="imageUpload-banner-1" class="imageInput" accept="image/*">
+                        <input type="hidden" class="imgPath" value="">
+                        <div class="upload-box">
+                            <label for="imageUpload-banner-1" class="label-add-image" style="">
+                                <span class="lb-xsmall">Chọn ảnh theo nhóm sản phẩm</span>
+                            </label>
+                            <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                            <img id="imageUploadPreview-banner-1" class="imagePreview" src="" alt="Preview Image">
                         </div>
                     </div>
                 </div>
+                <div class="wrap_product">
+                    <div class="wrap_list row align-items-center">
+                        <div class="col-6 col-md-3 col-lg-2 mb-3">
+                            <div class="item">
+                                <div class="image-upload-item mb-2" data-key="image1">
+                                    <input type="file" id="imageUpload-product-1" class="imageInput" accept="image/*">
+                                    <input type="hidden" class="imgPath" value="">
+                                    <div class="upload-box">
+                                        <label for="imageUpload-product-1" class="label-add-image" style="">
+                                            <span class="lb-xxsmall">Chọn ảnh 1</span>
+                                        </label>
+                                        <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                                        <img id="imageUploadPreview-product-1" class="imagePreview" src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="" class="form-control" placeholder="Nhập sản phẩm">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item item-btn col-6 col-lg-2 col-md-3 mb-3">
+                            <a href="javascript:void(0);" class="lb-xxsmall btn-add-product">
+                                <span>Thêm sản phẩm</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                    <path d="M10.1634 18.4582C5.49789 18.4582 1.70508 14.6654 1.70508 9.99984C1.70508 5.33431 5.49789 1.5415 10.1634 1.5415C14.8289 1.5415 18.6217 5.33431 18.6217 9.99984C18.6217 14.6654 14.8289 18.4582 10.1634 18.4582ZM10.1634 1.7915C5.63727 1.7915 1.95508 5.4737 1.95508 9.99984C1.95508 14.526 5.63727 18.2082 10.1634 18.2082C14.6896 18.2082 18.3717 14.526 18.3717 9.99984C18.3717 5.4737 14.6896 1.7915 10.1634 1.7915Z" fill="#6D727B" stroke="#6D727B"/>
+                                    <path d="M13.4967 10.125H6.83008C6.79993 10.125 6.76865 10.1127 6.74301 10.0871C6.71736 10.0614 6.70508 10.0301 6.70508 10C6.70508 9.96985 6.71736 9.93857 6.74301 9.91293C6.76865 9.88728 6.79993 9.875 6.83008 9.875H13.4967C13.5269 9.875 13.5582 9.88728 13.5838 9.91293C13.6095 9.93857 13.6217 9.96985 13.6217 10C13.6217 10.0301 13.6095 10.0614 13.5838 10.0871C13.5582 10.1127 13.5269 10.125 13.4967 10.125Z" fill="#6D727B" stroke="#6D727B"/>
+                                    <path d="M10.1641 13.9582C9.8224 13.9582 9.53906 13.6748 9.53906 13.3332V6.6665C9.53906 6.32484 9.8224 6.0415 10.1641 6.0415C10.5057 6.0415 10.7891 6.32484 10.7891 6.6665V13.3332C10.7891 13.6748 10.5057 13.9582 10.1641 13.9582Z" fill="#6D727B"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper-add">
+                <hr class="hr-section">
+                <a href="#" class="lb-xxsmall btn-add-partner">
+                        <span>
+                            Thêm nhóm sản phẩm
+                        </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9.99935 18.4584C5.33383 18.4584 1.54102 14.6656 1.54102 10.0001C1.54102 5.33456 5.33383 1.54175 9.99935 1.54175C14.6649 1.54175 18.4577 5.33456 18.4577 10.0001C18.4577 14.6656 14.6649 18.4584 9.99935 18.4584ZM9.99935 1.79175C5.47321 1.79175 1.79102 5.47394 1.79102 10.0001C1.79102 14.5262 5.47321 18.2084 9.99935 18.2084C14.5255 18.2084 18.2077 14.5262 18.2077 10.0001C18.2077 5.47394 14.5255 1.79175 9.99935 1.79175Z" fill="#6D727B" stroke="#6D727B"></path>
+                        <path d="M13.3327 10.125H6.66602C6.63587 10.125 6.60459 10.1127 6.57894 10.0871C6.5533 10.0614 6.54102 10.0301 6.54102 10C6.54102 9.96985 6.5533 9.93857 6.57894 9.91293C6.60459 9.88728 6.63587 9.875 6.66602 9.875H13.3327C13.3628 9.875 13.3941 9.88728 13.4198 9.91293C13.4454 9.93857 13.4577 9.96985 13.4577 10C13.4577 10.0301 13.4454 10.0614 13.4198 10.0871C13.3941 10.1127 13.3628 10.125 13.3327 10.125Z" fill="#6D727B" stroke="#6D727B"></path>
+                        <path d="M10 13.9584C9.65833 13.9584 9.375 13.6751 9.375 13.3334V6.66675C9.375 6.32508 9.65833 6.04175 10 6.04175C10.3417 6.04175 10.625 6.32508 10.625 6.66675V13.3334C10.625 13.6751 10.3417 13.9584 10 13.9584Z" fill="#6D727B"></path>
+                    </svg>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="section_banner_and_product section-padding-50">
+    <div class="section_page_detail section-padding-bottom-50">
         <div class="container-main">
-            <div class="wrapper">
-                <div class="banner" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="assets/images/gray_banner.png" alt="banner" class="img-fluid">
-                </div>
-                <div class="wrap_product" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="wrap_list row">
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="wrap_btn text-center">
+                <a href="#" class="lb-xsmall-primary" id="submit">
+                    OK
+                </a>
             </div>
         </div>
-    </section>
-
-    <section class="section_banner_and_product section-padding-50">
-        <div class="container-main">
-            <div class="wrapper">
-                <div class="banner" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="assets/images/gray_banner.png" alt="banner" class="img-fluid">
-                </div>
-                <div class="wrap_product" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="wrap_list row">
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section_banner_and_product section-padding-50">
-        <div class="container-main">
-            <div class="wrapper">
-                <div class="banner" data-aos="fade-up" data-aos-duration="1000">
-                    <img src="assets/images/gray_banner.png" alt="banner" class="img-fluid">
-                </div>
-                <div class="wrap_product" data-aos="fade-up" data-aos-duration="1200">
-                    <div class="wrap_list row">
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_1.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_2.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_3.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_4.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_5.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-lg-2">
-                            <div class="item">
-                                <div class="image">
-                                    <a href="#">
-                                        <img src="assets/images/product/product_6.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="#">Tên sản phẩm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
 </main>
 
@@ -917,5 +437,73 @@
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/plugincollection.js"></script>
 <script src="assets/js/app.js"></script>
+<script>
+    $(document).ready(function() {
+        let partnerIndex = 1; // Bắt đầu từ 1 để đồng bộ với đối tác đầu tiên
+
+        $('.btn-add-partner').on('click', function() {
+            partnerIndex++; // Tăng index mỗi khi thêm logo mới
+
+            // Tạo phần tử mới với id tăng dần cho input file và preview
+            let newItem = `
+            <div class="item col-6 col-lg-2 col-md-3 mb-3">
+                <div class="image-upload-item" data-key="image${partnerIndex}">
+                    <input type="file" id="imageUpload-partner-${partnerIndex}" class="imageInput" accept="image/*">
+                    <input type="hidden" class="imgPath" value="">
+                    <div class="upload-box">
+                        <label for="imageUpload-partner-${partnerIndex}" class="label-add-image" style="">
+                            <span class="lb-xxsmall">Chọn logo đối tác ${partnerIndex}</span>
+                        </label>
+                        <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                        <img id="imageUploadPreview-partner-${partnerIndex}" class="imagePreview" src="" alt="">
+                    </div>
+                </div>
+            </div>
+        `;
+
+            // Thêm phần tử mới trước phần tử `.item-btn`
+            $(newItem).insertBefore('.item-btn');
+
+            // Thêm option vào select với giá trị và text tương ứng với đối tác mới
+            $('#selectPartner').append(`<option value="${partnerIndex}">Đối tác ${partnerIndex}</option>`);
+        });
+
+
+        $('.wrap_list').each(function() {
+            let wrapList = $(this); // Lấy từng .wrap_list riêng biệt
+            let productIndex = 1; // Bắt đầu từ 1 cho mỗi danh sách sản phẩm
+
+            wrapList.find('.btn-add-product').on('click', function() {
+                productIndex++; // Tăng index mỗi khi thêm sản phẩm mới
+
+                // Tạo phần tử mới với id tăng dần cho input file và preview
+                let newItem = `
+                <div class="col-6 col-md-3 col-lg-2 mb-3">
+                    <div class="item">
+                        <div class="image-upload-item mb-2" data-key="image${productIndex}">
+                            <input type="file" id="imageUpload-product-${productIndex}" class="imageInput" accept="image/*">
+                            <input type="hidden" class="imgPath" value="">
+                            <div class="upload-box">
+                                <label for="imageUpload-product-${productIndex}" class="label-add-image">
+                                    <span class="lb-xxsmall">Chọn ảnh ${productIndex}</span>
+                                </label>
+                                <button class="removeImage lb-xsmall-danger" style="display: none;">Xoá</button>
+                                <img id="imageUploadPreview-product-${productIndex}" class="imagePreview" src="" alt="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Nhập sản phẩm">
+                        </div>
+                    </div>
+                </div>
+            `;
+
+                // Thêm phần tử mới vào trước phần tử `.item-btn` trong .wrap_list hiện tại
+                wrapList.find('.item-btn').before(newItem);
+            });
+        });
+    });
+
+</script>
 </body>
 </html>

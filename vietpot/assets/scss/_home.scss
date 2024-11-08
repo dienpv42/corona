@@ -4,7 +4,7 @@
     padding: sizeP(80) 0;
   }
   @media (max-width: $sizeMb) {
-    padding: size(26) 0;
+    padding: size(20) 0;
   }
 }
 
@@ -14,7 +14,7 @@
     padding-top: sizeP(80);
   }
   @media (max-width: $sizeMb) {
-
+    padding-top: size(40);
   }
 }
 
@@ -24,7 +24,7 @@
     padding-bottom: sizeP(80);
   }
   @media (max-width: $sizeMb) {
-
+    padding-bottom: size(40);
   }
 }
 
@@ -34,7 +34,7 @@
     padding-top: sizeP(80);
   }
   @media (max-width: $sizeMb) {
-
+    padding-top: size(40);
   }
 }
 
@@ -54,7 +54,7 @@
     padding-top: sizeP(40);
   }
   @media (max-width: $sizeMb) {
-
+    padding-top: size(20);
   }
 }
 
@@ -64,7 +64,7 @@
     padding-bottom: sizeP(40);
   }
   @media (max-width: $sizeMb) {
-
+    padding-bottom: size(20);
   }
 }
 
@@ -136,7 +136,9 @@
 
 .section_banner {
   overflow: hidden;
-
+  @media (max-width: $sizeMb) {
+    margin-top: size(26);
+  }
   .wrapper {
     position: relative;
     padding-bottom: 36px;
@@ -144,7 +146,7 @@
       padding-bottom: sizeP(36);
     }
     @media (max-width: $sizeMb) {
-
+      padding-bottom: size(20);
     }
 
     .item-banner {
@@ -160,7 +162,7 @@
           height: sizeP(540);
         }
         @media (max-width: $sizeMb) {
-
+          height: size(152);
         }
       }
     }
@@ -309,7 +311,7 @@
         margin-bottom: sizeP(32);
       }
       @media (max-width: $sizeMb) {
-
+        margin-bottom: size(12);
       }
 
       > * {
@@ -321,7 +323,7 @@
           font-size: sizeP(30);
         }
         @media (max-width: $sizeMb) {
-
+          font-size: size(20);
         }
 
         span {
@@ -341,7 +343,8 @@
         margin-bottom: sizeP(32);
       }
       @media (max-width: $sizeMb) {
-
+        font-size: size(14);
+        margin-bottom: size(12);
       }
 
       p {
@@ -350,7 +353,7 @@
           margin-bottom: sizeP(16);
         }
         @media (max-width: $sizeMb) {
-
+          margin-bottom: size(8);
         }
       }
     }
@@ -488,6 +491,85 @@
             }
           }
         }
+
+        .swiper{
+          padding-bottom: 16px;
+          .swiper-button-prev,.swiper-button-next{
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s;
+            margin-top: -9px;
+          }
+          &:hover{
+            .swiper-button-prev,.swiper-button-next{
+              opacity: 1;
+              visibility: visible;
+              margin-top: -9px;
+            }
+          }
+        }
+
+        .item {
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .nav-link {
+            width: 189px;
+            height: 100px;
+            padding: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            border: 1px solid #D5D7DB;
+            background: #FFF;
+            position: relative;
+            transition: all .3s;
+            @media (max-width: 1440px) {
+              width: sizeP(185);
+              height: sizeP(100);
+              padding: sizeP(8);
+              border-radius: sizeP(16);
+              border: sizeP(1) solid #D5D7DB;
+            }
+            @media (max-width: $sizeMb) {
+
+            }
+
+            &:after {
+              transition: all .3s;
+            }
+
+            img {
+              width: auto;
+              height: 52px;
+              max-width: 100%;
+              max-height: 100%;
+              @media (max-width: 1440px) {
+                height: sizeP(52);
+              }
+              @media (max-width: $sizeMb) {
+
+              }
+            }
+
+            &.active, &:hover {
+              border-radius: 16px;
+              border: 1px solid $--primary;
+              box-shadow: 5px 10px 16px 0px rgba(33, 150, 243, 0.40);
+              @media (max-width: 1440px) {
+                border-radius: sizeP(16);
+                border: sizeP(1) solid $--primary;
+                box-shadow: sizeP(5) sizeP(10) sizeP(16) 0px rgba(33, 150, 243, 0.40);
+              }
+              @media (max-width: $sizeMb) {
+
+              }
+            }
+          }
+        }
       }
 
       .wrap_product {
@@ -522,15 +604,6 @@
         .wrap_list {
           margin-bottom: 32px;
           .item {
-            width: 189px;
-            @media (max-width: 1440px) {
-              width: sizeP(189);
-              margin-bottom: sizeP(32);
-            }
-            @media (max-width: $sizeMb) {
-
-            }
-
             .image {
               padding: 16px;
               border-radius: 16px;
@@ -585,6 +658,23 @@
               .name {
                 a {
                   color: $--primary;
+                }
+              }
+            }
+
+            .image-upload-item{
+              .upload-box{
+                min-height: unset;
+                img{
+                  height: 189px;
+                  object-fit: cover;
+                  object-position: center;
+                  @media (max-width: 1440px) {
+                    height: sizeP(189);
+                  }
+                  @media (max-width: $sizeMb) {
+                    height: size(189);
+                  }
                 }
               }
             }
@@ -755,33 +845,13 @@
       .wrapper {
         .wrap_nav_partner {
           margin-bottom: 0px;
-          padding-bottom: 40px;
+          padding-bottom: 20px;
           @media (max-width: 1440px) {
             margin-bottom: 0px;
-            padding-bottom: sizeP(40);
+            padding-bottom: sizeP(20);
           }
           @media (max-width: $sizeMb) {
 
-          }
-
-          .nav {
-            padding-bottom: 0;
-            border-bottom: 0;
-            @media (max-width: 1440px) {
-              padding-bottom: 0;
-              border-bottom: 0;
-            }
-            @media (max-width: $sizeMb) {
-
-            }
-
-            .nav-item {
-              .nav-link {
-                &:after {
-                  display: none;
-                }
-              }
-            }
           }
         }
       }
@@ -817,16 +887,6 @@
 
         .wrap_list {
           .item {
-            width: 189px;
-            margin-bottom: 32px;
-            @media (max-width: 1440px) {
-              width: sizeP(189);
-              margin-bottom: sizeP(32);
-            }
-            @media (max-width: $sizeMb) {
-
-            }
-
             .image {
               padding: 16px;
               border-radius: 16px;
@@ -881,6 +941,22 @@
               .name {
                 a {
                   color: $--primary;
+                }
+              }
+            }
+            .image-upload-item{
+              .upload-box{
+                min-height: unset;
+                img{
+                  height: 189px;
+                  object-fit: cover;
+                  object-position: center;
+                  @media (max-width: 1440px) {
+                    height: sizeP(189);
+                  }
+                  @media (max-width: $sizeMb) {
+                    height: size(189);
+                  }
                 }
               }
             }
@@ -1398,12 +1474,17 @@
       }
 
       .wrap_list {
+        margin-bottom: 32px;
+        @media (max-width: 1440px) {
+          margin-bottom: sizeP(32);
+        }
+        @media (max-width: $sizeMb) {
+
+        }
         .item {
           width: 189px;
-          margin-bottom: 32px;
           @media (max-width: 1440px) {
             width: sizeP(189);
-            margin-bottom: sizeP(32);
           }
           @media (max-width: $sizeMb) {
 
@@ -1463,6 +1544,22 @@
             .name {
               a {
                 color: $--primary;
+              }
+            }
+          }
+          .image-upload-item{
+            .upload-box{
+              min-height: unset;
+              img{
+                height: 189px;
+                object-fit: cover;
+                object-position: center;
+                @media (max-width: 1440px) {
+                  height: sizeP(189);
+                }
+                @media (max-width: $sizeMb) {
+                  height: size(189);
+                }
               }
             }
           }
