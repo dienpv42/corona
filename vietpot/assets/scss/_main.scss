@@ -16,7 +16,6 @@
   @media (max-width: $sizeMb) {
     padding-top: size(50);
     min-height: auto;
-    padding-bottom: size(50);
   }
   .row {
     margin: 0 -16px;
@@ -24,7 +23,7 @@
       margin: 0 sizeP(16)*-1;
     }
     @media (max-width: $sizeMb) {
-
+      margin: 0 size(16)*-1;
     }
     > * {
       padding: 0 16px;
@@ -32,7 +31,7 @@
         padding: 0 sizeP(16);
       }
       @media (max-width: $sizeMb) {
-
+        padding: 0 size(16);
       }
     }
   }

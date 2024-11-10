@@ -232,6 +232,7 @@
         AOS.init({
             easing: "ease",
             once: true,
+            disable: 'mobile'
         });
     });
 

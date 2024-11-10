@@ -672,12 +672,12 @@
                         <form action="">
                             <div class="group">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-lg-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="E-mail của bạn">
                                         </div>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-lg-6">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Số điện thoại của bạn">
                                         </div>
@@ -686,7 +686,7 @@
                                 <div class="form-group">
                                     <textarea class="form-control" rows="6"></textarea>
                                 </div>
-                                <div class="form-group justify-content-end">
+                                <div class="form-group flex-row justify-content-end">
                                     <button type="submit" class="btn">
                                         Gửi
                                     </button>
@@ -916,6 +916,14 @@
                     spaceBetween: 32,
                     freeMode: true,
                     watchSlidesProgress: true,
+                    breakpoints: {
+                        992: {
+                            spaceBetween: 32
+                        },
+                        0: {
+                            spaceBetween: 12
+                        }
+                    }
                 },
             },
         });
