@@ -594,6 +594,12 @@ hr {
     border-radius: 16px;
   }
 }
+@media (max-width: 575px) {
+  .dropdown-menu {
+    padding: 0 3.2vw;
+    border-radius: 4.2666666667vw;
+  }
+}
 .dropdown-menu li {
   border-bottom: 1px solid #D5D7DB;
 }
@@ -618,6 +624,12 @@ hr {
   .dropdown-menu .dropdown-item {
     padding: 24px 0;
     font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .dropdown-menu .dropdown-item {
+    padding: 3.2vw 0;
+    font-size: 3.7333333333vw;
   }
 }
 .dropdown-menu .dropdown-item:last-child {
