@@ -1,4 +1,4 @@
-.lb-text-danger{
+.lb-text-danger {
   display: inline-block;
   padding: 4px 8px;
   color: #FFF;
@@ -13,13 +13,17 @@
     font-size: sizeP(13);
     border-radius: sizeP(8);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
     padding: size(4) size(8);
     font-size: size(13);
     border-radius: size(8);
   }
 }
-.lb-default{
+
+.lb-default {
   display: inline-block;
   padding: 10px 32px;
   border-radius: 8px;
@@ -35,14 +39,18 @@
     border: sizeP(2) solid #F7941D;
     font-size: sizeP(28);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
     padding: size(5) size(12);
     border-radius: size(8);
     border: size(1) solid #F7941D;
     font-size: size(13);
   }
 }
-.popup-noty{
+
+.popup-noty {
   position: fixed;
   top: 25px;
   right: 25px;
@@ -52,28 +60,34 @@
   border-radius: 8px;
   border: 1px solid #CCC;
   background: #FFF;
-  .wrap{
+
+  .wrap {
     display: flex;
     align-items: center;
     gap: 16px;
-    .icon{
+
+    .icon {
       width: 24px;
-      svg{
+
+      svg {
         width: 100%;
         height: auto;
       }
     }
-    .content{
+
+    .content {
       flex: 1;
       font-size: 17px;
       font-weight: 400;
       line-height: 150%;
     }
   }
-  &.success{
+
+  &.success {
     color: #6FBE44;
   }
-  &.danger{
+
+  &.danger {
     color: #DA2462;
   }
 }

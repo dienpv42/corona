@@ -10,7 +10,10 @@
   @media (max-width: 1921px) {
     font-size: sizeP(17);
   }
-  @media (max-width: 991px) {
+  @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
     font-size: size(13);
   }
   &.lb-link-success{
@@ -157,7 +160,10 @@
       @media (max-width: 1921px) {
         max-width: sizeP(900);
       }
-      @media (max-width: 991px) {
+      @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
         max-width: 100%;
       }
       .modal-content{
@@ -166,7 +172,10 @@
         @media (max-width: 1921px) {
           border-radius: sizeP(16);
         }
-        @media (max-width: 991px) {
+        @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
           border-radius: size(16);
         }
         .modal-header{
@@ -175,7 +184,10 @@
           @media (max-width: 1921px) {
             padding: sizeP(40) sizeP(40) 0;
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
             padding: size(20) size(20) 0;
           }
           .modal-title{
@@ -186,7 +198,10 @@
             @media (max-width: 1921px) {
               font-size: sizeP(20);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
               font-size: size(20);
             }
           }
@@ -199,7 +214,10 @@
                 width: sizeP(20);
                 height: sizeP(20);
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
                 width: size(20);
                 height: size(20);
               }
@@ -215,7 +233,10 @@
           @media (max-width: 1921px) {
             padding: sizeP(32) sizeP(40);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
             padding: size(18) size(20);
           }
           .wrap_noty{
@@ -225,7 +246,10 @@
               @media (max-width: 1921px) {
                 margin-bottom: sizeP(32);
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
                 margin-bottom: size(32);
               }
               img,svg{
@@ -234,7 +258,10 @@
                 @media (max-width: 1921px) {
                   width: sizeP(80);
                 }
-                @media (max-width: 991px) {
+                @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
                   width: size(40);
                 }
               }
@@ -251,7 +278,10 @@
                 margin-bottom: sizeP(16);
 
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
                 font-size: size(20);
                 margin-bottom: size(16);
               }
@@ -265,7 +295,10 @@
               @media (max-width: 1921px) {
                 font-size: sizeP(20);
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
                 font-size: size(15);
               }
               &.error{
@@ -281,7 +314,10 @@
           @media (max-width: 1921px) {
             padding: 0 sizeP(40) sizeP(40);
           }
-          @media (max-width: 991px) {
+          @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
             padding: 0 size(20) size(20);
           }
           .btn-noty{
@@ -301,7 +337,10 @@
               border-radius: sizeP(16);
               font-size: sizeP(28);
             }
-            @media (max-width: 991px) {
+            @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
               width: size(150);
               height: size(50);
               border-radius: size(16);
@@ -315,7 +354,10 @@
                 border-radius: sizeP(16);
                 border: sizeP(2) solid #F7941D;
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
                 border-radius: size(16);
                 border: size(2) solid #F7941D;
               }
@@ -328,7 +370,10 @@
                 border-radius: sizeP(16);
                 border: sizeP(2) solid #F7941D;
               }
-              @media (max-width: 991px) {
+              @media (max-width: $sizeTablet) {
+
+  }
+  @media (max-width: $sizeMobile) {
                 border-radius: size(16);
                 border: size(2) solid #F7941D;
               }
