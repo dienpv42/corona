@@ -42,12 +42,12 @@
     text-overflow: ellipsis;
 }
 
-@function size($number, $windowWidth: 575) {
+@function size($number, $windowWidth: 375) {
   $result: math.div(100 * $number, $windowWidth);
   @return $result * 1vw;
 }
 
-@function sizeT($number, $windowWidth: 991) {
+@function sizeT($number, $windowWidth: 767) {
   $result: math.div(100 * $number, $windowWidth);
   @return $result * 1vw;
 }
@@ -55,4 +55,19 @@
 @function sizeP($number, $windowWidth: 1920) {
   $result: math.div(100 * $number, $windowWidth);
   @return $number * 1px;
+}
+
+@function calcP($d, $number) {
+  $size: sizeP($number);
+  @return calc($d - $size);
+}
+
+@function calcT($d, $number) {
+  $sizeM: sizeT($number);
+  @return calc($d - $sizeM);
+}
+
+@function calcM($d, $number) {
+  $sizeM: size($number);
+  @return calc($d - $sizeM);
 }

@@ -7,7 +7,7 @@
     font-size: sizeP(14);
   }
   @media (max-width: $sizeTablet) {
-
+    font-size: sizeT(14);
   }
   @media (max-width: $sizeMobile) {
     font-size: size(14);
@@ -23,9 +23,6 @@
       padding: 0 sizeP(15);
     }
     @media (max-width: $sizeTablet) {
-
-    }
-    @media (max-width: $sizeMobile) {
       max-width: 100%;
       padding: 0;
     }
@@ -45,7 +42,7 @@
       border-bottom: sizeP(1) solid #6FBE44;
     }
     @media (max-width: $sizeTablet) {
-
+      border-bottom: sizeT(1) solid #6FBE44;
     }
     @media (max-width: $sizeMobile) {
       border-bottom: size(1) solid #6FBE44;
@@ -64,10 +61,7 @@
       max-width: sizeP(1920);
     }
     @media (max-width: $sizeTablet) {
-
-    }
-    @media (max-width: $sizeMobile) {
-      min-width: 100%;
+      max-width: 100%;
       padding: 0;
     }
   }
@@ -198,40 +192,17 @@
       margin-bottom: sizeP(32);
     }
     @media (max-width: $sizeTablet) {
-
+      border-top: sizeT(5) solid #EA5B0C;
+      margin-bottom: 0;
     }
     @media (max-width: $sizeMobile) {
       border-top: size(5) solid #EA5B0C;
-      //padding-top: size(112);
-      //margin-bottom: size(18);
-    }
-
-    &.active {
-      @media (max-width: $sizeTablet) {
-
-      }
-      @media (max-width: $sizeMobile) {
-        //padding-top: size(50);
-      }
     }
 
     .header_top {
       background-color: #fff;
-      @media (max-width: $sizeTablet) {
-
-      }
-      @media (max-width: $sizeMobile) {
-        //border-top: size(5) solid #EA5B0C;
-        //position: fixed;
-        //top: 0;
-        //left: 0;
-        //width: 100%;
-        //z-index: 999;
-      }
-
       .wrap_head_content {
         position: relative;
-
         .wrap_head {
           min-height: 120px;
           border-bottom: 1px solid #CCC;
@@ -239,7 +210,9 @@
             min-height: sizeP(120);
           }
           @media (max-width: $sizeTablet) {
-
+            min-height: sizeT(108);
+            padding: sizeT(10) sizeT(20) 0;
+            border-bottom: 0;
           }
           @media (max-width: $sizeMobile) {
             min-height: size(112);
@@ -251,9 +224,6 @@
         .hamburger_menu {
           display: none;
           @media (max-width: $sizeTablet) {
-
-          }
-          @media (max-width: $sizeMobile) {
             display: block;
           }
 
@@ -262,61 +232,24 @@
             z-index: 100;
             display: inline-block;
             cursor: pointer;
-            margin-bottom: size(2);
-            margin-top: size(10);
-
-            img, svg {
-              width: size(22);
-              margin-right: size(8);
-              height: auto;
+            @media (max-width: $sizeTablet) {
+              margin-bottom: sizeT(5);
+              margin-top: sizeT(10);
             }
-
-            //span {
-            //  position: absolute;
-            //  display: block;
-            //  width: 100%;
-            //  height: size(3);
-            //  background-color: #464646;
-            //  opacity: 1;
-            //  left: 0;
-            //  transition: all .5s ease-in-out;
-            //
-            //  &:nth-child(1) {
-            //    top: size(4);
-            //    transform-origin: left center;
-            //  }
-            //
-            //  &:nth-child(2) {
-            //    top: size(14);
-            //    transform-origin: left center;
-            //  }
-            //
-            //  &:nth-child(3) {
-            //    top: size(24);
-            //    transform-origin: left center;
-            //  }
-            //}
-            //
-            //&.open {
-            //  span:nth-child(2) {
-            //    opacity: 0;
-            //    visibility: hidden;
-            //  }
-            //
-            //  span:nth-child(1) {
-            //    transform: rotate(45deg);
-            //    transition: all .5s ease-in-out;
-            //    top: size(4);
-            //    left: size(4);
-            //  }
-            //
-            //  span:nth-child(3) {
-            //    transition: all .5s ease-in-out;
-            //    transform: rotate(-45deg);
-            //    top: size(25);
-            //    left: size(4);
-            //  }
-            //}
+            @media (max-width: $sizeMobile) {
+              margin-bottom: size(2);
+              margin-top: size(10);
+            }
+            img, svg {
+              height: auto;
+              @media (max-width: $sizeTablet) {
+                width: sizeT(32);
+              }
+              @media (max-width: $sizeMobile) {
+                width: size(22);
+                margin-right: size(8);
+              }
+            }
           }
 
           .wrap_menu_fixed {
@@ -333,6 +266,7 @@
             -webkit-overflow-scrolling: touch;
             padding: 24px 20px 24px;
             overflow-y: auto;
+            transition: all .3s;
             @media (max-width: 1921px) {
               width: sizeP(243);
               $s60vw: sizeP(60);
@@ -340,18 +274,17 @@
               padding: sizeP(24) sizeP(20) sizeP(24);
             }
             @media (max-width: $sizeTablet) {
-
-            }
-            @media (max-width: $sizeMobile) {
               width: 100%;
               height: 100%;
               top: 0;
               right: 0;
               background-color: #fff;
-              padding: size(60) size(20) size(24);
+              padding: sizeT(120) sizeT(20) sizeT(24);
               box-shadow: unset;
               transform: translateX(100%);
-              transition: all .3s;
+            }
+            @media (max-width: $sizeMobile) {
+              padding: size(60) size(20) size(24);
             }
 
             hr {
@@ -365,7 +298,7 @@
                   margin-bottom: sizeP(12);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  margin-bottom: sizeT(12);
                 }
                 @media (max-width: $sizeMobile) {
                   margin-bottom: size(12);
@@ -378,7 +311,7 @@
                     font-size: sizeP(14);
                   }
                   @media (max-width: $sizeTablet) {
-
+                    font-size: sizeT(20);
                   }
                   @media (max-width: $sizeMobile) {
                     font-size: size(17);
@@ -394,7 +327,7 @@
                   margin-right: sizeP(5);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  margin-right: sizeT(5);
                 }
                 @media (max-width: $sizeMobile) {
                   margin-right: size(5);
@@ -410,7 +343,7 @@
                     width: sizeP(40);
                   }
                   @media (max-width: $sizeTablet) {
-
+                    width: sizeT(50);
                   }
                   @media (max-width: $sizeMobile) {
                     width: size(40);
@@ -436,7 +369,10 @@
                   font-size: sizeP(16);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  padding: sizeT(10) sizeT(20);
+                  border: sizeT(2) solid #F39200;
+                  border-radius: sizeT(12);
+                  font-size: sizeT(17);
                 }
                 @media (max-width: $sizeMobile) {
                   padding: size(6) size(10);
@@ -452,7 +388,7 @@
                     border: sizeP(2) solid #94C459;
                   }
                   @media (max-width: $sizeTablet) {
-
+                    border: sizeT(2) solid #94C459;
                   }
                   @media (max-width: $sizeMobile) {
                     border: size(2) solid #94C459;
@@ -468,7 +404,7 @@
                 box-shadow: sizeP(4) 0 sizeP(8) rgba(0, 0, 0, 0.06);
               }
               @media (max-width: $sizeTablet) {
-
+                box-shadow: sizeT(4) 0 sizeT(8) rgba(0, 0, 0, 0.06);
               }
               @media (max-width: $sizeMobile) {
                 box-shadow: size(4) 0 size(8) rgba(0, 0, 0, 0.06);
@@ -486,13 +422,14 @@
           margin-right: sizeP(16);
         }
         @media (max-width: $sizeTablet) {
-
-        }
-        @media (max-width: $sizeMobile) {
           position: absolute;
-          top: size(4);
+          top: sizeT(10);
           left: 50%;
           transform: translateX(-50%);
+          margin-right: sizeT(10);
+        }
+        @media (max-width: $sizeMobile) {
+          top: size(4);
           margin-right: size(10);
         }
 
@@ -507,7 +444,7 @@
             height: sizeP(84);
           }
           @media (max-width: $sizeTablet) {
-
+            height: sizeT(48);
           }
           @media (max-width: $sizeMobile) {
             height: size(38);
@@ -529,15 +466,21 @@
           left: sizeP(195);
         }
         @media (max-width: $sizeTablet) {
-
-        }
-        @media (max-width: $sizeMobile) {
           width: 100%;
           left: 0;
-          padding: 0 size(20);
-          bottom: size(10);
+          padding: 0 sizeT(20);
+          bottom: 0;
           margin: 0;
           transform: unset;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: min-content;
+          top: unset;
+        }
+        @media (max-width: $sizeMobile) {
+          padding: 0 size(20);
+          bottom: size(10);
         }
 
         .nav {
@@ -556,9 +499,6 @@
                 padding: sizeP(4) sizeP(16);
               }
               @media (max-width: $sizeTablet) {
-
-              }
-              @media (max-width: $sizeMobile) {
                 max-width: 100%;
                 padding: 0;
               }
@@ -574,7 +514,8 @@
                 padding: sizeP(4) sizeP(16);
               }
               @media (max-width: $sizeTablet) {
-
+                font-size: sizeT(15);
+                padding: 0 sizeT(10);
               }
               @media (max-width: $sizeMobile) {
                 font-size: size(15);
@@ -597,7 +538,9 @@
                 border: sizeP(1) solid #CCC;
               }
               @media (max-width: $sizeTablet) {
-
+                padding: sizeT(4) sizeT(12);
+                border-radius: sizeT(8);
+                border: sizeT(1) solid #CCC;
               }
               @media (max-width: $sizeMobile) {
                 padding: size(4) size(12);
@@ -618,7 +561,9 @@
                   border-bottom: sizeP(1) solid #D5D7DB;
                 }
                 @media (max-width: $sizeTablet) {
-
+                  font-size: sizeT(13);
+                  padding: sizeT(8) 0;
+                  border-bottom: sizeT(1) solid #D5D7DB;
                 }
                 @media (max-width: $sizeMobile) {
                   font-size: size(13);
@@ -668,7 +613,11 @@
                   font-size: sizeP(21);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  height: sizeT(40);
+                  padding: 0 sizeT(24) 0 sizeT(60);
+                  border: sizeT(1) solid #CCC;
+                  border-radius: sizeT(16);
+                  font-size: sizeT(13);
                 }
                 @media (max-width: $sizeMobile) {
                   height: size(40);
@@ -718,7 +667,10 @@
                   border-bottom-right-radius: sizeP(12);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  width: sizeT(20);
+                  height: sizeT(20);
+                  color: #525151;
+                  left: sizeT(22);
                 }
                 @media (max-width: $sizeMobile) {
                   width: size(20);
@@ -748,7 +700,11 @@
                 padding: sizeP(15);
               }
               @media (max-width: $sizeTablet) {
-
+                box-shadow: 0px sizeT(4) sizeT(12) 0px rgba(0, 0, 0, 0.25);
+                border-radius: sizeT(8);
+                max-height: sizeT(350);
+                top: sizeT(50);
+                padding: sizeT(15);
               }
               @media (max-width: $sizeMobile) {
                 box-shadow: 0px size(4) size(12) 0px rgba(0, 0, 0, 0.25);
@@ -770,14 +726,12 @@
 
                     @media (max-width: 1921px) {
                       margin-bottom: sizeP(15);
-
                     }
                     @media (max-width: $sizeTablet) {
-
+                      margin-bottom: sizeT(15);
                     }
                     @media (max-width: $sizeMobile) {
                       margin-bottom: size(15);
-
                     }
 
                     img {
@@ -789,7 +743,7 @@
                         width: sizeP(70);
                       }
                       @media (max-width: $sizeTablet) {
-
+                        width: sizeT(60);
                       }
                       @media (max-width: $sizeMobile) {
                         width: size(60);
@@ -804,16 +758,15 @@
                       font-weight: 600;
                       color: #575756;
                       @media (max-width: 1921px) {
-                        $s85p: sizeP(85);
-                        width: calc(100% - $s85p);
+                        width: calcP(100%, 85);
                         font-size: sizeP(17);
                       }
                       @media (max-width: $sizeTablet) {
-
+                        width: calcT(100%, 75);
+                        font-size: size(14);
                       }
                       @media (max-width: $sizeMobile) {
-                        $s75: size(75);
-                        width: calc(100% - $s75);
+                        width: calcM(100%, 75);
                         font-size: size(13);
                       }
 
@@ -832,11 +785,7 @@
 
             &.nav-item-link {
               @media (max-width: $sizeTablet) {
-
-              }
-              @media (max-width: $sizeMobile) {
                 display: none;
-
               }
             }
           }
@@ -848,10 +797,10 @@
         margin-left: 10px;
         @media (max-width: 1921px) {
           margin-left: sizeP(10);
-
         }
         @media (max-width: $sizeTablet) {
-
+          padding-top: sizeT(4);
+          margin-left: sizeT(10);
         }
         @media (max-width: $sizeMobile) {
           padding-top: size(4);
@@ -864,7 +813,7 @@
             margin-left: sizeP(12);
           }
           @media (max-width: $sizeTablet) {
-
+            margin-left: sizeT(15);
           }
           @media (max-width: $sizeMobile) {
             margin-left: size(12);
@@ -884,11 +833,10 @@
                 width: sizeP(44);
               }
               @media (max-width: $sizeTablet) {
-
+                width: sizeT(29);
               }
               @media (max-width: $sizeMobile) {
                 width: size(30);
-
               }
             }
           }
@@ -942,7 +890,7 @@
 
         .other_link_icon {
           @media (max-width: $sizeTablet) {
-
+            margin-right: sizeT(3);
           }
           @media (max-width: $sizeMobile) {
             margin-right: size(3);
@@ -959,7 +907,9 @@
               width: 21px;
             }
             @media (max-width: $sizeTablet) {
-
+              padding-bottom: sizeT(1);
+              margin-bottom: sizeT(1)*-1;
+              width: sizeT(24);
             }
             @media (max-width: $sizeMobile) {
               padding-bottom: size(1);
@@ -1194,12 +1144,14 @@
           padding: sizeP(10) 0;
         }
         @media (max-width: $sizeTablet) {
-
+          justify-content: left;
+          padding: sizeT(20) 0 sizeT(20) sizeT(20);
+          min-height: sizeT(60);
         }
         @media (max-width: $sizeMobile) {
           justify-content: left;
-          padding: size(4) 0 size(4) size(20);
-          min-height: size(48);
+          padding: size(16) 0 size(20) size(16);
+          min-height: size(52);
         }
 
         &::-webkit-scrollbar {
@@ -1223,7 +1175,7 @@
               margin-right: sizeP(80);
             }
             @media (max-width: $sizeTablet) {
-
+              margin-right: sizeT(32);
             }
             @media (max-width: $sizeMobile) {
               margin-right: size(18);
@@ -1242,7 +1194,7 @@
                   font-size: sizeP(20);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  font-size: sizeT(17);
                 }
                 @media (max-width: $sizeMobile) {
                   font-size: size(13);
@@ -1261,14 +1213,17 @@
                 font-size: sizeP(20);
               }
               @media (max-width: $sizeTablet) {
-
+                font-size: sizeT(17);
+                white-space: nowrap;
               }
               @media (max-width: $sizeMobile) {
-                min-width: size(110);
                 font-size: size(13);
-                @include line_text(2)
               }
-
+              br{
+                @media (max-width: $sizeTablet) {
+                  display: none;
+                }
+              }
               &:hover {
                 text-decoration: underline;
               }
@@ -1298,7 +1253,7 @@
           height: sizeP(466);
         }
         @media (max-width: $sizeTablet) {
-
+          height: sizeT(260);
         }
         @media (max-width: $sizeMobile) {
           height: size(198);
@@ -1314,6 +1269,7 @@
 
     }
     @media (max-width: $sizeTablet) {
+      padding: sizeT(32) 0;
 
     }
     @media (max-width: $sizeMobile) {
@@ -1378,9 +1334,6 @@
 
     &.section_ads_pc {
       @media (max-width: $sizeTablet) {
-
-      }
-      @media (max-width: $sizeMobile) {
         display: none;
       }
     }
@@ -1388,9 +1341,6 @@
     &.section_ads_mb {
       display: none;
       @media (max-width: $sizeTablet) {
-
-      }
-      @media (max-width: $sizeMobile) {
         display: block;
       }
 
@@ -1413,10 +1363,15 @@
 
         a {
           img {
-            height: size(149);
             width: 100%;
             object-fit: cover;
             object-position: center;
+            @media (max-width: $sizeTablet) {
+              height: sizeT(260);
+            }
+            @media (max-width: $sizeMobile) {
+              height: size(149);
+            }
           }
         }
       }
