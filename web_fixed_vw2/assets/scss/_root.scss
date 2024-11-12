@@ -2,7 +2,8 @@
   --star-color: #d1d1d1;
   --star-background: #fc0;
 }
-.lb-link{
+
+.lb-link {
   color: #5E6D7B;
   font-size: 17px;
   font-weight: 400;
@@ -16,66 +17,77 @@
   @media (max-width: $sizeMobile) {
     font-size: size(13);
   }
-  &.lb-link-success{
+
+  &.lb-link-success {
     color: #6EBD8F;
   }
-  &.lb-link-danger{
+
+  &.lb-link-danger {
     color: #DA2462;
   }
 }
-@keyframes loading-1{
-  0%{
+
+@keyframes loading-1 {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
   }
 }
-@keyframes loading-2{
-  0%{
+
+@keyframes loading-2 {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     -webkit-transform: rotate(144deg);
     transform: rotate(144deg);
   }
 }
-@keyframes loading-3{
-  0%{
+
+@keyframes loading-3 {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
 }
-@keyframes loading-4{
-  0%{
+
+@keyframes loading-4 {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     -webkit-transform: rotate(36deg);
     transform: rotate(36deg);
   }
 }
-@keyframes loading-5{
-  0%{
+
+@keyframes loading-5 {
+  0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     -webkit-transform: rotate(126deg);
     transform: rotate(126deg);
   }
 }
-@media only screen and (max-width: 990px){
-  .progress{ margin-bottom: 20px; }
+
+@media only screen and (max-width: 990px) {
+  .progress {
+    margin-bottom: 20px;
+  }
 }
+
 /* width */
 //::-webkit-scrollbar {
 //  width: .5vw;
@@ -96,55 +108,64 @@
 //::-webkit-scrollbar-thumb:hover {
 //  background: #555;
 //}
-.pagination{
-  .page-item{
-    .page-link{
+.pagination {
+  .page-item {
+    .page-link {
       color: #F39200;
-      &.active{
+
+      &.active {
         background-color: #F39200;
         border-color: #F39200;
         color: #fff;
       }
-      &:focus{
+
+      &:focus {
         box-shadow: unset;
       }
     }
   }
 }
+
 .modal {
-  &.modal_custom{
-    .modal-dialog{
-      .modal-header{
-        .modal-title{
+  &.modal_custom {
+    .modal-dialog {
+      .modal-header {
+        .modal-title {
           font-size: 17px;
           color: #6D6E71;
         }
       }
-      .modal-body{
-        .wrap_list_cate{
+
+      .modal-body {
+        .wrap_list_cate {
           margin-bottom: 20px;
           max-height: 40vh;
           overflow: auto;
           padding-left: 6px;
-          .form-check{
+
+          .form-check {
             margin-bottom: 10px;
-            .form-check-input{
+
+            .form-check-input {
 
             }
-            .form-check-label{
+
+            .form-check-label {
               font-size: 16px;
               color: #6D6E71;
               @include line_text(1);
             }
           }
         }
-        .wrap_btn{
-          a{
+
+        .wrap_btn {
+          a {
             white-space: nowrap;
             padding: 6px 50px;
             border-radius: 12px;
             font-size: 16px;
-            &.btn_color{
+
+            &.btn_color {
               color: #fff;
               background-color: #94C459;
               border: 1px solid #F39200;
@@ -154,19 +175,21 @@
       }
     }
   }
-  &.modal-noty{
-    .modal-dialog{
+
+  &.modal-noty {
+    .modal-dialog {
       max-width: 900px;
       @media (max-width: 1921px) {
         max-width: sizeP(900);
       }
       @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+      }
+      @media (max-width: $sizeMobile) {
         max-width: 100%;
       }
-      .modal-content{
+
+      .modal-content {
         border: 0;
         border-radius: 16px;
         @media (max-width: 1921px) {
@@ -174,11 +197,12 @@
         }
         @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+        }
+        @media (max-width: $sizeMobile) {
           border-radius: size(16);
         }
-        .modal-header{
+
+        .modal-header {
           padding: 40px 40px 0;
           border: 0;
           @media (max-width: 1921px) {
@@ -186,11 +210,12 @@
           }
           @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+          }
+          @media (max-width: $sizeMobile) {
             padding: size(20) size(20) 0;
           }
-          .modal-title{
+
+          .modal-title {
             color: #5E6D7B;
             font-size: 20px;
             font-weight: 700;
@@ -200,14 +225,16 @@
             }
             @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+            }
+            @media (max-width: $sizeMobile) {
               font-size: size(20);
             }
           }
-          .btn-close{
+
+          .btn-close {
             background: unset;
-            svg{
+
+            svg {
               width: 20px;
               height: 20px;
               @media (max-width: 1921px) {
@@ -216,18 +243,20 @@
               }
               @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+              }
+              @media (max-width: $sizeMobile) {
                 width: size(20);
                 height: size(20);
               }
             }
-            &:focus{
+
+            &:focus {
               box-shadow: unset;
             }
           }
         }
-        .modal-body{
+
+        .modal-body {
           padding: 32px 40px;
           border: 0;
           @media (max-width: 1921px) {
@@ -235,12 +264,13 @@
           }
           @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+          }
+          @media (max-width: $sizeMobile) {
             padding: size(18) size(20);
           }
-          .wrap_noty{
-            .image{
+
+          .wrap_noty {
+            .image {
               text-align: center;
               margin-bottom: 32px;
               @media (max-width: 1921px) {
@@ -248,11 +278,12 @@
               }
               @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+              }
+              @media (max-width: $sizeMobile) {
                 margin-bottom: size(32);
               }
-              img,svg{
+
+              img, svg {
                 width: 80px;
                 height: auto;
                 @media (max-width: 1921px) {
@@ -260,13 +291,14 @@
                 }
                 @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+                }
+                @media (max-width: $sizeMobile) {
                   width: size(40);
                 }
               }
             }
-            .title{
+
+            .title {
               color: #575756;
               text-align: center;
               font-size: 28px;
@@ -280,13 +312,14 @@
               }
               @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+              }
+              @media (max-width: $sizeMobile) {
                 font-size: size(20);
                 margin-bottom: size(16);
               }
             }
-            .desc{
+
+            .desc {
               color: #575756;
               font-size: 20px;
               font-weight: 400;
@@ -297,17 +330,19 @@
               }
               @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+              }
+              @media (max-width: $sizeMobile) {
                 font-size: size(15);
               }
-              &.error{
+
+              &.error {
                 color: #DA2462;
               }
             }
           }
         }
-        .modal-footer{
+
+        .modal-footer {
           padding: 0 40px 40px;
           border: 0;
           text-align: center;
@@ -316,11 +351,12 @@
           }
           @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+          }
+          @media (max-width: $sizeMobile) {
             padding: 0 size(20) size(20);
           }
-          .btn-noty{
+
+          .btn-noty {
             width: 264px;
             height: 72px;
             display: flex;
@@ -339,14 +375,15 @@
             }
             @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+            }
+            @media (max-width: $sizeMobile) {
               width: size(150);
               height: size(50);
               border-radius: size(16);
               font-size: size(20);
             }
-            &.btn-noty-success{
+
+            &.btn-noty-success {
               border-radius: 16px;
               border: 2px solid #F7941D;
               background: #6FBE44;
@@ -356,13 +393,14 @@
               }
               @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+              }
+              @media (max-width: $sizeMobile) {
                 border-radius: size(16);
                 border: size(2) solid #F7941D;
               }
             }
-            &.btn-noty-error{
+
+            &.btn-noty-error {
               border-radius: 16px;
               border: 2px solid #F7941D;
               background: #F7941D;
@@ -372,8 +410,8 @@
               }
               @media (max-width: $sizeTablet) {
 
-  }
-  @media (max-width: $sizeMobile) {
+              }
+              @media (max-width: $sizeMobile) {
                 border-radius: size(16);
                 border: size(2) solid #F7941D;
               }

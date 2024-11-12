@@ -26,6 +26,8 @@
                 return 16;
             } else if (width >= 992) {
                 return width * 0.0083333333333; // 0.83333333333%
+            } else if (width >= 575) {
+                return width * 0.012;
             } else {
                 return width * 0.032; // 3.2%
             }
@@ -48,12 +50,22 @@
         });
 
         var adsBannerSlider = new Swiper(".ads_banner_slider", {
-            slidesPerView: 1.1,
+            slidesPerView: 2.1,
             speed: 500,
             loop: true,
             spaceBetween: spaceBetweenVW,
-            slidesPerGroup: 1,
+            slidesPerGroup: 2,
             autoplay: false,
+            breakpoints: {
+                576: {
+                    slidesPerView: 2.1,
+                    slidesPerGroup: 2,
+                },
+                0: {
+                    slidesPerView: 1.1,
+                    slidesPerGroup: 1,
+                },
+            },
         });
 
         slideProduct1 = new Swiper(".slide_product_1", {
@@ -78,6 +90,11 @@
                     slidesPerView: 7,
                     slidesPerGroup: 7,
                     spaceBetween: window.innerWidth * 0.0083333333333,
+                },
+                576: {
+                    slidesPerView: 4.3,
+                    slidesPerGroup: 4,
+                    spaceBetween: window.innerWidth * 0.012,
                 },
                 0: {
                     slidesPerView: 2.1,
@@ -109,6 +126,11 @@
                     slidesPerView: 6,
                     slidesPerGroup: 6,
                     spaceBetween: window.innerWidth * 0.0083333333333,
+                },
+                576: {
+                    slidesPerView: 4.3,
+                    slidesPerGroup: 4,
+                    spaceBetween: window.innerWidth * 0.012,
                 },
                 0: {
                     slidesPerView: 2.1,
