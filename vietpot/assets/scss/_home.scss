@@ -231,6 +231,42 @@
       padding: 0 size(1);
     }
   }
+  &.wrap_list_scroll{
+    overflow: auto;
+    margin-bottom: 10px;
+    @media (max-width: 1440px) {
+      margin-bottom: sizeP(10);
+    }
+    @media (max-width: $sizeMb) {
+      display: flex;
+      margin-bottom: size(10);
+      @include pd_scroll_mb();
+    }
+    .wrap{
+      display: flex;
+      flex-direction: row;
+      width: max-content;
+      gap: 16px;
+      padding-bottom: 16px;
+      @media (max-width: 1440px) {
+        gap: sizeP(16);
+        padding-bottom: sizeP(16);
+      }
+      @media (max-width: $sizeMb) {
+        gap: size(14);
+        padding-bottom: size(8);
+      }
+      .item{
+        width: 170px;
+        @media (max-width: 1440px) {
+          width: sizeP(170);
+        }
+        @media (max-width: $sizeMb) {
+          width: size(150);
+        }
+      }
+    }
+  }
 }
 
 .section_banner {
