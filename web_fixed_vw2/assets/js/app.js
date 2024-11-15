@@ -92,7 +92,7 @@
                     spaceBetween: window.innerWidth * 0.0083333333333,
                 },
                 576: {
-                    slidesPerView: 4.3,
+                    slidesPerView: 4.2,
                     slidesPerGroup: 4,
                     spaceBetween: window.innerWidth * 0.012,
                 },
@@ -128,7 +128,7 @@
                     spaceBetween: window.innerWidth * 0.0083333333333,
                 },
                 576: {
-                    slidesPerView: 4.3,
+                    slidesPerView: 4.2,
                     slidesPerGroup: 4,
                     spaceBetween: window.innerWidth * 0.012,
                 },
