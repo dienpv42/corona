@@ -42,6 +42,29 @@
     text-overflow: ellipsis;
 }
 
+@mixin pd_scroll() {
+  @media (max-width: $sizeTablet) {
+    margin-left: sizeT(20)*-1;
+    margin-right: sizeT(20)*-1;
+    padding-left: sizeT(20);
+    padding-right: sizeT(20);
+  }
+  @media (max-width: $sizeMobile) {
+    margin-left: size(20)*-1;
+    margin-right: size(20)*-1;
+    padding-left: size(20);
+    padding-right: size(20);
+  }
+}
+@mixin no_scroll_bar() {
+  &::-webkit-scrollbar {
+    @media (max-width: $sizeTablet) {
+      height: 0;
+      opacity: 0;
+    }
+  }
+}
+
 @function size($number, $windowWidth: 375) {
   $result: math.div(100 * $number, $windowWidth);
   @return $result * 1vw;
@@ -62,12 +85,27 @@
   @return calc($d - $size);
 }
 
+@function calcPL($d, $number) {
+  $size: sizeP($number);
+  @return calc($d + $size);
+}
+
 @function calcT($d, $number) {
   $sizeM: sizeT($number);
   @return calc($d - $sizeM);
 }
 
+@function calcTL($d, $number) {
+  $sizeM: sizeT($number);
+  @return calc($d + $sizeM);
+}
+
 @function calcM($d, $number) {
   $sizeM: size($number);
   @return calc($d - $sizeM);
+}
+
+@function calcML($d, $number) {
+  $sizeM: size($number);
+  @return calc($d + $sizeM);
 }

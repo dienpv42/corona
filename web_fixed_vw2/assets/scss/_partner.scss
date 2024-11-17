@@ -4,7 +4,7 @@
     border-top: sizeP(5) solid #EA5B0C;
   }
   @media (max-width: $sizeTablet) {
-
+    border-top: sizeT(3) solid #EA5B0C;
   }
   @media (max-width: $sizeMobile) {
     border-top: size(3) solid #EA5B0C;
@@ -20,7 +20,8 @@
       max-width: sizeP(1258);
     }
     @media (max-width: $sizeTablet) {
-
+      min-width: 100%;
+      padding: 0;
     }
     @media (max-width: $sizeMobile) {
 
@@ -45,7 +46,9 @@
       font-size: sizeP(20);
     }
     @media (max-width: $sizeTablet) {
-
+      padding: sizeT(14) sizeT(40);
+      border-radius: sizeT(8);
+      font-size: sizeT(20);
     }
     @media (max-width: $sizeMobile) {
 
@@ -71,7 +74,11 @@
       font-size: sizeP(20);
     }
     @media (max-width: $sizeTablet) {
-
+      padding: sizeT(5) sizeT(32);
+      border-radius: sizeT(8);
+      border: sizeT(1) solid #9D9D9C;
+      color: #575756;
+      font-size: sizeT(17);
     }
     @media (max-width: $sizeMobile) {
 
@@ -99,7 +106,11 @@
       font-size: sizeP(20);
     }
     @media (max-width: $sizeTablet) {
-
+      margin: 0 !important;
+      width: 100%;
+      padding: sizeT(12) sizeT(32);
+      border-radius: sizeT(16);
+      font-size: sizeT(16);
     }
     @media (max-width: $sizeMobile) {
 
@@ -121,7 +132,8 @@
         margin-bottom: sizeP(32);
       }
       @media (max-width: $sizeTablet) {
-
+        margin-top: sizeT(14);
+        margin-bottom: sizeT(18);
       }
       @media (max-width: $sizeMobile) {
 
@@ -144,7 +156,9 @@
       max-width: sizeP(830);
     }
     @media (max-width: $sizeTablet) {
-
+      max-width: 100%;
+      min-width: auto;
+      padding: 0 sizeT(20);
     }
     @media (max-width: $sizeMobile) {
 
@@ -157,9 +171,7 @@
 
   .container-fixed {
     @media (max-width: $sizeTablet) {
-
-    }
-    @media (max-width: $sizeTablet) {
+      padding: 0 sizeT(20);
 
     }
     @media (max-width: $sizeMobile) {
@@ -173,7 +185,7 @@
       padding: sizeP(60) 0 sizeP(60);
     }
     @media (max-width: $sizeTablet) {
-
+      padding: sizeT(40) 0 sizeT(40);
     }
     @media (max-width: $sizeMobile) {
       padding: size(40) 0 size(40);
@@ -185,7 +197,7 @@
         padding: sizeP(18) 0 0;
       }
       @media (max-width: $sizeTablet) {
-
+        padding: sizeT(10) 0 0;
       }
       @media (max-width: $sizeMobile) {
         padding: size(10) 0 0;
@@ -215,7 +227,9 @@
               margin-right: sizeP(8);
             }
             @media (max-width: $sizeTablet) {
-
+              width: sizeT(36);
+              height: sizeT(24);
+              margin-right: sizeT(4);
             }
             @media (max-width: $sizeMobile) {
               width: size(36);
@@ -232,16 +246,14 @@
           @media (max-width: 1921px) {
             width: sizeP(24);
           }
-
-          &.active {
-            transform: rotate(0deg);
-          }
-
           @media (max-width: $sizeTablet) {
-
+            width: sizeT(16);
           }
           @media (max-width: $sizeMobile) {
             width: size(16);
+          }
+          &.active {
+            transform: rotate(0deg);
           }
         }
       }
@@ -264,7 +276,9 @@
               margin-right: sizeP(11);
             }
             @media (max-width: $sizeTablet) {
-
+              width: sizeT(36);
+              height: sizeT(22);
+              margin-right: sizeT(11);
             }
             @media (max-width: $sizeMobile) {
               width: size(36);
@@ -281,7 +295,7 @@
               font-size: sizeP(15);
             }
             @media (max-width: $sizeTablet) {
-
+              font-size: sizeT(15);
             }
             @media (max-width: $sizeMobile) {
               font-size: size(15);
@@ -316,7 +330,8 @@
             margin-right: sizeP(8);
           }
           @media (max-width: $sizeTablet) {
-
+            font-size: sizeT(13);
+            margin-right: sizeT(4);
           }
           @media (max-width: $sizeMobile) {
             font-size: size(13);
@@ -337,6 +352,7 @@
           }
 
           @media (max-width: $sizeTablet) {
+            width: sizeT(16);
 
           }
           @media (max-width: $sizeMobile) {
@@ -363,7 +379,9 @@
               margin-right: sizeP(11);
             }
             @media (max-width: $sizeTablet) {
-
+              width: sizeT(36);
+              height: sizeT(22);
+              margin-right: sizeT(11);
             }
             @media (max-width: $sizeMobile) {
               width: size(36);
@@ -380,6 +398,7 @@
               font-size: sizeP(15);
             }
             @media (max-width: $sizeTablet) {
+              font-size: sizeT(15);
 
             }
             @media (max-width: $sizeMobile) {
@@ -402,7 +421,8 @@
         margin: 0 auto sizeP(18);
       }
       @media (max-width: $sizeTablet) {
-
+        max-width: 100%;
+        margin: 0 auto sizeT(10);
       }
       @media (max-width: $sizeMobile) {
         max-width: 100%;
@@ -418,6 +438,7 @@
               height: sizeP(60);
             }
             @media (max-width: $sizeTablet) {
+              height: sizeT(44);
 
             }
             @media (max-width: $sizeMobile) {
@@ -434,6 +455,7 @@
             margin-left: sizeP(40);
           }
           @media (max-width: $sizeTablet) {
+            margin-left: sizeT(18);
 
           }
           @media (max-width: $sizeMobile) {
@@ -451,7 +473,7 @@
         width: sizeP(735);
       }
       @media (max-width: $sizeTablet) {
-
+        width: sizeT(550);
       }
       @media (max-width: $sizeMobile) {
         width: size(335);
@@ -463,7 +485,7 @@
           margin-bottom: sizeP(32);
         }
         @media (max-width: $sizeTablet) {
-
+          margin-bottom: sizeT(18);
         }
         @media (max-width: $sizeMobile) {
           margin-bottom: size(18);
@@ -483,7 +505,13 @@
           margin-bottom: sizeP(40);
         }
         @media (max-width: $sizeTablet) {
-
+          border-radius: sizeT(16);
+          background: #FFF;
+          box-shadow: sizeT(2) sizeT(4) sizeT(32) 0px rgba(0, 0, 0, 0.20);
+          border: sizeT(1) solid #DADADA;
+          border-radius: sizeT(6);
+          padding: sizeT(20);
+          margin-bottom: sizeT(40);
         }
         @media (max-width: $sizeMobile) {
           border-radius: size(16);
@@ -506,6 +534,7 @@
             margin-bottom: sizeP(30);
           }
           @media (max-width: $sizeTablet) {
+            margin-bottom: sizeT(30);
 
           }
           @media (max-width: $sizeMobile) {
@@ -519,7 +548,8 @@
               margin: 0 auto sizeP(40);
             }
             @media (max-width: $sizeTablet) {
-
+              height: sizeT(42);
+              margin: 0 auto sizeT(18);
             }
             @media (max-width: $sizeMobile) {
               height: size(42);
@@ -540,7 +570,8 @@
             margin-bottom: sizeP(40);
           }
           @media (max-width: $sizeTablet) {
-
+            font-size: sizeT(20);
+            margin-bottom: sizeT(18);
           }
           @media (max-width: $sizeMobile) {
             font-size: size(20);
@@ -559,7 +590,9 @@
               border-top: sizeP(5) solid #CCC;
             }
             @media (max-width: $sizeTablet) {
-
+              max-width: sizeT(113);
+              margin: sizeT(18) auto sizeT(18);
+              border-top: sizeT(1) solid #CCC;
             }
             @media (max-width: $sizeMobile) {
               max-width: size(113);
@@ -574,7 +607,7 @@
               margin-bottom: sizeP(24);
             }
             @media (max-width: $sizeTablet) {
-
+              margin-bottom: sizeT(12);
             }
             @media (max-width: $sizeMobile) {
               margin-bottom: size(12);
@@ -590,7 +623,8 @@
                 margin-bottom: sizeP(15);
               }
               @media (max-width: $sizeTablet) {
-
+                font-size: sizeT(13);
+                margin-bottom: sizeT(15);
               }
               @media (max-width: $sizeMobile) {
                 font-size: size(13);
@@ -612,7 +646,10 @@
                 padding: sizeP(14) sizeP(24);
               }
               @media (max-width: $sizeTablet) {
-
+                padding: sizeT(14) sizeT(24);
+                font-size: sizeT(15);
+                border-radius: sizeT(8);
+                border: sizeT(1) solid #9D9D9C;
               }
               @media (max-width: $sizeMobile) {
                 padding: size(14) size(24);
@@ -630,7 +667,7 @@
                 font-size: sizeP(17);
               }
               @media (max-width: $sizeTablet) {
-
+                font-size: sizeT(13);
               }
               @media (max-width: $sizeMobile) {
                 font-size: size(13);
@@ -643,7 +680,7 @@
                 margin-top: sizeP(50);
               }
               @media (max-width: $sizeTablet) {
-
+                margin-top: sizeT(50);
               }
               @media (max-width: $sizeMobile) {
                 margin-top: size(50);
@@ -664,7 +701,9 @@
 
   .wrap_menu {
     @media (max-width: $sizeTablet) {
-
+      overflow: auto;
+      margin-left: sizeT(15)*-1;
+      margin-right: sizeT(15)*-1;
     }
     @media (max-width: $sizeMobile) {
       overflow: auto;
@@ -674,9 +713,6 @@
 
     &::-webkit-scrollbar {
       @media (max-width: $sizeTablet) {
-
-      }
-      @media (max-width: $sizeMobile) {
         height: 0;
         opacity: 0;
       }
@@ -684,9 +720,6 @@
 
     .nav {
       justify-content: space-between;
-      @media (max-width: $sizeTablet) {
-
-      }
       @media (max-width: $sizeMobile) {
         width: max-content;
         justify-content: unset;
@@ -706,7 +739,8 @@
           }
 
           @media (max-width: $sizeTablet) {
-
+            margin-right: sizeT(18);
+            font-size: sizeT(17);
           }
           @media (max-width: $sizeMobile) {
             margin-right: size(18);
@@ -715,7 +749,7 @@
 
           &:first-child {
             @media (max-width: $sizeTablet) {
-
+              margin-left: sizeT(15);
             }
             @media (max-width: $sizeMobile) {
               margin-left: size(15);
@@ -737,7 +771,8 @@
         margin-bottom: sizeP(32);
       }
       @media (max-width: $sizeTablet) {
-
+        font-size: sizeT(20);
+        margin-bottom: sizeT(18);
       }
       @media (max-width: $sizeMobile) {
         font-size: size(20);
@@ -751,7 +786,7 @@
         margin-bottom: sizeP(32);
       }
       @media (max-width: $sizeTablet) {
-
+        margin-bottom: sizeT(18);
       }
       @media (max-width: $sizeMobile) {
         margin-bottom: size(18);
@@ -775,7 +810,8 @@
             margin-right: sizeP(16);
           }
           @media (max-width: $sizeTablet) {
-
+            font-size: sizeT(13);
+            margin-right: sizeT(11);
           }
           @media (max-width: $sizeMobile) {
             font-size: size(13);
@@ -796,7 +832,7 @@
           }
 
           @media (max-width: $sizeTablet) {
-
+            width: sizeT(16);
           }
           @media (max-width: $sizeMobile) {
             width: size(16);
@@ -822,7 +858,9 @@
               margin-right: sizeP(11);
             }
             @media (max-width: $sizeTablet) {
-
+              width: sizeT(36);
+              height: sizeT(22);
+              margin-right: sizeT(11);
             }
             @media (max-width: $sizeMobile) {
               width: size(36);
@@ -839,7 +877,7 @@
               font-size: sizeP(15);
             }
             @media (max-width: $sizeTablet) {
-
+              font-size: sizeT(15);
             }
             @media (max-width: $sizeMobile) {
               font-size: size(15);
@@ -861,7 +899,7 @@
         padding-bottom: sizeP(40);
       }
       @media (max-width: $sizeTablet) {
-
+        padding-bottom: sizeT(40);
       }
       @media (max-width: $sizeMobile) {
         padding-bottom: size(40);
@@ -879,7 +917,8 @@
           padding: sizeP(32);
         }
         @media (max-width: $sizeTablet) {
-
+          border-top: sizeT(1) solid #ccc;
+          padding: sizeT(18) 0;
         }
         @media (max-width: $sizeMobile) {
           border-top: size(1) solid #ccc;
@@ -896,7 +935,7 @@
             border-top: sizeP(1) solid #9D9D9C;
           }
           @media (max-width: $sizeTablet) {
-
+            border-top: sizeT(1) solid #9D9D9C;
           }
           @media (max-width: $sizeMobile) {
             border-top: size(1) solid #9D9D9C;
@@ -916,7 +955,10 @@
             border: sizeP(1) solid #CCC;
           }
           @media (max-width: $sizeTablet) {
-
+            width: sizeT(44);
+            height: sizeT(44);
+            border-radius: sizeT(8);
+            border: sizeT(1) solid #CCC;
           }
           @media (max-width: $sizeMobile) {
             width: size(44);
@@ -936,11 +978,10 @@
         .info {
           width: calc(100% - 350px);
           @media (max-width: 1921px) {
-            $s350vw: sizeP(350);
-            width: calc(100% - $s350vw);
+            width: calcP(100%, 350);
           }
           @media (max-width: $sizeTablet) {
-
+            width: calc(100% - 25vw);
           }
           @media (max-width: $sizeMobile) {
             width: calc(100% - 40vw);
@@ -959,7 +1000,8 @@
             margin-right: sizeP(32);
           }
           @media (max-width: $sizeTablet) {
-
+            width: 100%;
+            font-size: sizeT(13);
           }
           @media (max-width: $sizeMobile) {
             width: 100%;
@@ -975,7 +1017,8 @@
             font-size: sizeP(22);
           }
           @media (max-width: $sizeTablet) {
-
+            width: 100%;
+            font-size: sizeT(13);
           }
           @media (max-width: $sizeMobile) {
             width: 100%;
@@ -1002,7 +1045,8 @@
                 margin-right: sizeP(8);
               }
               @media (max-width: $sizeTablet) {
-
+                font-size: sizeT(13);
+                margin-right: sizeT(4);
               }
               @media (max-width: $sizeMobile) {
                 font-size: size(13);
@@ -1023,6 +1067,7 @@
               }
 
               @media (max-width: $sizeTablet) {
+                width: sizeT(16);
 
               }
               @media (max-width: $sizeMobile) {
@@ -1053,7 +1098,9 @@
                   margin-right: sizeP(11);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  width: sizeT(36);
+                  height: sizeT(22);
+                  margin-right: sizeT(11);
                 }
                 @media (max-width: $sizeMobile) {
                   width: size(36);
@@ -1069,6 +1116,7 @@
                   font-size: sizeP(15);
                 }
                 @media (max-width: $sizeTablet) {
+                  font-size: sizeT(14);
 
                 }
                 @media (max-width: $sizeMobile) {
@@ -1146,7 +1194,8 @@
           border-top: sizeP(1) solid #DADADA;
         }
         @media (max-width: $sizeTablet) {
-
+          border-top: sizeT(1) solid #DADADA;
+          margin-bottom: sizeT(40);
         }
         @media (max-width: $sizeMobile) {
           border-top: size(1) solid #DADADA;
@@ -1159,7 +1208,7 @@
             font-size: sizeP(20);
           }
           @media (max-width: $sizeTablet) {
-
+            font-size: sizeT(13);
           }
           @media (max-width: $sizeMobile) {
             font-size: size(13);
@@ -1177,7 +1226,7 @@
               padding: sizeP(40) sizeP(10) sizeP(18);
             }
             @media (max-width: $sizeTablet) {
-
+              padding: sizeT(20) sizeT(10) sizeT(15);
             }
             @media (max-width: $sizeMobile) {
               padding: size(20) size(10) size(15);
@@ -1185,7 +1234,7 @@
 
             &:first-child {
               @media (max-width: $sizeTablet) {
-
+                padding-left: 0;
               }
               @media (max-width: $sizeMobile) {
                 padding-left: 0;
@@ -1201,7 +1250,7 @@
               padding: sizeP(32) sizeP(10) sizeP(32);
             }
             @media (max-width: $sizeTablet) {
-
+              padding: sizeT(18) 0 sizeT(18);
             }
             @media (max-width: $sizeMobile) {
               padding: size(18) 0 size(18);
@@ -1220,7 +1269,7 @@
                 border-bottom: sizeP(1) solid #DADADA;
               }
               @media (max-width: $sizeTablet) {
-
+                border-bottom: sizeT(1) solid #DADADA;
               }
               @media (max-width: $sizeMobile) {
                 border-bottom: size(1) solid #DADADA;
@@ -1231,7 +1280,7 @@
                 font-weight: 700;
                 color: #525251;
                 @media (max-width: $sizeTablet) {
-
+                  width: auto !important;
                 }
                 @media (max-width: $sizeMobile) {
                   width: auto !important;
@@ -1247,7 +1296,7 @@
                 border-bottom: sizeP(1) solid #DADADA;
               }
               @media (max-width: $sizeTablet) {
-
+                border-bottom: sizeT(1) solid #DADADA;
               }
               @media (max-width: $sizeMobile) {
                 border-bottom: size(1) solid #DADADA;
@@ -1284,7 +1333,11 @@
                     font-size: sizeP(22);
                   }
                   @media (max-width: $sizeTablet) {
-
+                    width: sizeT(136);
+                    height: sizeT(36);
+                    border-radius: sizeT(8);
+                    border: sizeT(1) solid #CCC;
+                    font-size: sizeT(13);
                   }
                   @media (max-width: $sizeMobile) {
                     width: size(136);
@@ -1313,7 +1366,7 @@
                     width: sizeP(40);
                   }
                   @media (max-width: $sizeTablet) {
-
+                    width: sizeT(19);
                   }
                   @media (max-width: $sizeMobile) {
                     width: size(19);
@@ -1327,7 +1380,7 @@
                     font-size: sizeP(25);
                   }
                   @media (max-width: $sizeTablet) {
-
+                    font-size: sizeT(25);
                   }
                   @media (max-width: $sizeMobile) {
                     font-size: size(25);
@@ -1377,7 +1430,9 @@
           border-top: sizeP(1) solid #ccc;
         }
         @media (max-width: $sizeTablet) {
-
+          border-top: sizeT(1) solid #ccc;
+          margin-bottom: sizeT(18);
+          padding-top: sizeT(18);
         }
         @media (max-width: $sizeMobile) {
           border-top: size(1) solid #ccc;
@@ -1392,7 +1447,7 @@
             font-size: sizeP(20);
           }
           @media (max-width: $sizeTablet) {
-
+            font-size: sizeT(13);
           }
           @media (max-width: $sizeMobile) {
             font-size: size(13);
@@ -1405,7 +1460,7 @@
               margin-bottom: sizeP(20);
             }
             @media (max-width: $sizeTablet) {
-
+              margin-bottom: sizeT(20);
             }
             @media (max-width: $sizeMobile) {
               margin-bottom: size(20);
@@ -1413,7 +1468,7 @@
 
             &::-webkit-scrollbar {
               @media (max-width: $sizeTablet) {
-
+                height: 0;
               }
               @media (max-width: $sizeMobile) {
                 height: 0;
@@ -1424,7 +1479,7 @@
               width: min-content;
               text-align: center;
               @media (max-width: $sizeTablet) {
-
+                margin-right: sizeT(28);
               }
               @media (max-width: $sizeMobile) {
                 margin-right: size(28);
@@ -1443,7 +1498,8 @@
                   margin-bottom: sizeP(13);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  font-size: sizeT(13);
+                  margin-bottom: sizeT(8);
                 }
                 @media (max-width: $sizeMobile) {
                   font-size: size(13);
@@ -1469,7 +1525,11 @@
                   margin: 0 auto sizeP(40);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  font-size: sizeT(17);
+                  padding: sizeT(5) sizeT(20);
+                  border: sizeT(1) solid #DADADA;
+                  border-radius: sizeT(8);
+                  margin: 0 auto 0;
                 }
                 @media (max-width: $sizeMobile) {
                   font-size: size(17);
@@ -1499,7 +1559,10 @@
                 margin-bottom: sizeP(24);
               }
               @media (max-width: $sizeTablet) {
-
+                font-size: sizeT(16);
+                border-bottom: sizeT(1) solid #ccc;
+                margin-bottom: sizeT(18);
+                padding-bottom: sizeT(18);
               }
               @media (max-width: $sizeMobile) {
                 font-size: size(16);
@@ -1521,7 +1584,7 @@
                   margin-right: sizeP(15);
                 }
                 @media (max-width: $sizeTablet) {
-
+                  margin-right: sizeT(12);
                 }
                 @media (max-width: $sizeMobile) {
                   margin-right: size(12);
@@ -1547,7 +1610,11 @@
                     font-size: sizeP(20);
                   }
                   @media (max-width: $sizeTablet) {
-
+                    font-size: sizeT(17);
+                    width: sizeT(160);
+                    border: sizeT(1) solid #9D9D9C;
+                    padding: sizeT(8) sizeT(20);
+                    border-radius: sizeT(8);
                   }
                   @media (max-width: $sizeMobile) {
                     font-size: size(17);
@@ -1566,7 +1633,7 @@
                       border: sizeP(1) solid #6FBE44;
                     }
                     @media (max-width: $sizeTablet) {
-
+                      border: sizeT(1) solid #6FBE44;
                     }
                     @media (max-width: $sizeMobile) {
                       border: size(1) solid #6FBE44;
@@ -1587,7 +1654,8 @@
           padding: sizeP(32) 0;
         }
         @media (max-width: $sizeTablet) {
-
+          border-top: sizeT(1) solid #ccc;
+          padding: sizeT(18) 0;
         }
         @media (max-width: $sizeMobile) {
           border-top: size(1) solid #ccc;
@@ -1603,7 +1671,8 @@
             margin-bottom: sizeP(24);
           }
           @media (max-width: $sizeTablet) {
-
+            font-size: sizeT(13);
+            margin-bottom: sizeT(12);
           }
           @media (max-width: $sizeMobile) {
             font-size: size(13);
@@ -1625,7 +1694,9 @@
               border-radius: sizeP(16);
             }
             @media (max-width: $sizeTablet) {
-
+              width: 100%;
+              height: sizeT(191);
+              border-radius: sizeT(16);
             }
             @media (max-width: $sizeMobile) {
               width: 100%;
@@ -1644,6 +1715,7 @@
       padding: sizeP(10);
     }
     @media (max-width: $sizeTablet) {
+      padding: sizeT(10);
     }
     @media (max-width: $sizeMobile) {
       padding: size(10);
@@ -1655,7 +1727,7 @@
         margin-bottom: sizeP(15);
       }
       @media (max-width: $sizeTablet) {
-
+        margin-bottom: sizeT(15);
       }
       @media (max-width: $sizeMobile) {
         margin-bottom: size(15);

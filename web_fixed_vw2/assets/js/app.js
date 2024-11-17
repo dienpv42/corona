@@ -91,7 +91,7 @@
                     slidesPerGroup: 7,
                     spaceBetween: window.innerWidth * 0.0083333333333,
                 },
-                576: {
+                575: {
                     slidesPerView: 4.2,
                     slidesPerGroup: 4,
                     spaceBetween: window.innerWidth * 0.012,
@@ -127,7 +127,7 @@
                     slidesPerGroup: 6,
                     spaceBetween: window.innerWidth * 0.0083333333333,
                 },
-                576: {
+                575: {
                     slidesPerView: 4.2,
                     slidesPerGroup: 4,
                     spaceBetween: window.innerWidth * 0.012,
@@ -149,6 +149,23 @@
                     el: '.swiper-container-thumbs',
                     slidesPerView: 4,
                     spaceBetween: 25,
+                    breakpoints: {
+                        1921: {
+                            spaceBetween: 25,
+
+                        },
+                        992: {
+                            spaceBetween: 25,
+                        },
+                        575: {
+                            spaceBetween: window.innerWidth * 0.012,
+                        },
+                        0: {
+                            slidesPerView: 2.1,
+                            slidesPerGroup: 2,
+                            spaceBetween: window.innerWidth * 0.032,
+                        },
+                    },
                 },
             },
         });
@@ -215,10 +232,15 @@
                         navigation: false,
                         slidesPerGroup: 4,
                     },
+                    575: {
+                        slidesPerView: 4.2,
+                        slidesPerGroup: 4,
+                        spaceBetween: window.innerWidth * 0.012,
+                    },
                     0: {
                         slidesPerView: 2.1,
-                        navigation: false,
                         slidesPerGroup: 2,
+                        spaceBetween: window.innerWidth * 0.032,
                     },
                 },
             });

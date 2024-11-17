@@ -14,7 +14,9 @@
     border-radius: sizeP(8);
   }
   @media (max-width: $sizeTablet) {
-
+    padding: sizeT(4) sizeT(8);
+    font-size: sizeT(13);
+    border-radius: sizeT(8);
   }
   @media (max-width: $sizeMobile) {
     padding: size(4) size(8);
@@ -33,6 +35,7 @@
   font-size: 28px;
   font-weight: 700;
   line-height: 120%;
+  text-align: center;
   @media (max-width: 1921px) {
     padding: sizeP(10) sizeP(32);
     border-radius: sizeP(8);
@@ -40,7 +43,10 @@
     font-size: sizeP(28);
   }
   @media (max-width: $sizeTablet) {
-
+    padding: sizeT(5) sizeT(12);
+    border-radius: sizeT(8);
+    border: sizeT(1) solid #F7941D;
+    font-size: sizeT(13);
   }
   @media (max-width: $sizeMobile) {
     padding: size(5) size(12);
