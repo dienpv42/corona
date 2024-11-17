@@ -781,7 +781,7 @@
             font-size: sizeP(13);
           }
           @media (max-width: $sizeTablet) {
-
+            font-size: sizeT(13);
           }
           @media (max-width: $sizeMobile) {
             font-size: size(13);
@@ -832,7 +832,9 @@
             border: sizeP(1) solid #CCC;
           }
           @media (max-width: $sizeTablet) {
-
+            padding: sizeT(4) sizeT(12);
+            border-radius: sizeT(8);
+            border: sizeT(1) solid #CCC;
           }
           @media (max-width: $sizeMobile) {
             padding: size(4) size(12);
@@ -853,7 +855,9 @@
               border-bottom: sizeP(1) solid #D5D7DB;
             }
             @media (max-width: $sizeTablet) {
-
+              font-size: sizeT(13);
+              padding: sizeT(8) 0;
+              border-bottom: sizeT(1) solid #D5D7DB;
             }
             @media (max-width: $sizeMobile) {
               font-size: size(13);
@@ -883,6 +887,7 @@
           box-shadow: 0 sizeP(5) sizeP(5) sizeP(5)*-1 #b9b9b96e;
         }
         @media (max-width: $sizeTablet) {
+          box-shadow: 0 sizeT(5) sizeT(5) sizeT(5)*-1 #b9b9b96e;
 
         }
         @media (max-width: $sizeMobile) {
@@ -923,6 +928,7 @@
         border-bottom: sizeP(1) solid #4ead334f;
       }
       @media (max-width: $sizeTablet) {
+        display: none !important;
 
       }
       @media (max-width: $sizeMobile) {
@@ -1059,7 +1065,7 @@
 
         &::-webkit-scrollbar {
           @media (max-width: $sizeTablet) {
-
+            height: 0;
           }
           @media (max-width: $sizeMobile) {
             height: 0;

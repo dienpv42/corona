@@ -12313,6 +12313,11 @@ input {
     font-size: 0.6770833333vw;
   }
 }
+@media (max-width: 991px) {
+  .bl_home .header .header_top .wrap_other .other_link {
+    font-size: 1.6949152542vw;
+  }
+}
 @media (max-width: 575px) {
   .bl_home .header .header_top .wrap_other .other_link {
     font-size: 3.4666666667vw;
@@ -12367,6 +12372,13 @@ input {
     border: 0.0520833333vw solid #CCC;
   }
 }
+@media (max-width: 991px) {
+  .bl_home .header .header_top .wrap_other .dropdown-menu {
+    padding: 0.5215123859vw 1.5645371578vw;
+    border-radius: 1.0430247718vw;
+    border: 0.1303780965vw solid #CCC;
+  }
+}
 @media (max-width: 575px) {
   .bl_home .header .header_top .wrap_other .dropdown-menu {
     padding: 1.0666666667vw 3.2vw;
@@ -12387,6 +12399,13 @@ input {
     font-size: 0.8854166667vw;
     padding: 0.625vw 0;
     border-bottom: 0.0520833333vw solid #D5D7DB;
+  }
+}
+@media (max-width: 991px) {
+  .bl_home .header .header_top .wrap_other .dropdown-menu .dropdown-item {
+    font-size: 1.6949152542vw;
+    padding: 1.0430247718vw 0;
+    border-bottom: 0.1303780965vw solid #D5D7DB;
   }
 }
 @media (max-width: 575px) {
@@ -12410,6 +12429,11 @@ input {
     box-shadow: 0 0.2604166667vw 0.2604166667vw -0.2604166667vw rgba(185, 185, 185, 0.431372549);
   }
 }
+@media (max-width: 991px) {
+  .bl_home .header .header_top.active {
+    box-shadow: 0 0.6518904824vw 0.6518904824vw -0.6518904824vw rgba(185, 185, 185, 0.431372549);
+  }
+}
 @media (max-width: 575px) {
   .bl_home .header .header_top.active {
     box-shadow: 0 1.3333333333vw 1.3333333333vw -1.3333333333vw rgba(185, 185, 185, 0.431372549);
@@ -12426,6 +12450,11 @@ input {
   .bl_home .header .header_center {
     height: 3.4375vw;
     border-bottom: 0.0520833333vw solid rgba(78, 173, 51, 0.3098039216);
+  }
+}
+@media (max-width: 991px) {
+  .bl_home .header .header_center {
+    display: none !important;
   }
 }
 @media (max-width: 575px) {
@@ -12511,6 +12540,11 @@ input {
     justify-content: left;
     padding: 4.2666666667vw 0 5.3333333333vw 4.2666666667vw;
     min-height: 13.8666666667vw;
+  }
+}
+@media (max-width: 991px) {
+  .bl_home .header .header_bottom .wrap_category::-webkit-scrollbar {
+    height: 0;
   }
 }
 @media (max-width: 575px) {
