@@ -837,13 +837,29 @@
             font-size: 44px;
             font-weight: 700;
             line-height: 120%; /* 52.8px */
-            margin-bottom: 32px;
+            margin-bottom: 16px;
             @media (max-width: 1440px) {
               font-size: sizeP(44);
-              margin-bottom: sizeP(32);
+              margin-bottom: sizeP(16);
             }
             @media (max-width: $sizeMb) {
               font-size: size(20);
+              margin-bottom: size(8);
+            }
+          }
+
+          .sub_title {
+            color: #43464D;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 120%; /* 52.8px */
+            margin-bottom: 32px;
+            @media (max-width: 1440px) {
+              font-size: sizeP(25);
+              margin-bottom: sizeP(32);
+            }
+            @media (max-width: $sizeMb) {
+              font-size: size(16);
               margin-bottom: size(8);
             }
           }
@@ -892,6 +908,7 @@
               display: flex;
               flex-direction: row;
               align-items: center;
+              gap: 32px;
               @media (max-width: 1440px) {
                 gap: sizeP(32);
               }
