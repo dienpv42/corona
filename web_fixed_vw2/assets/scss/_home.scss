@@ -6839,6 +6839,58 @@
       }
     }
   }
+  .wrap_checkout_info_success {
+    .w_icon{
+
+    }
+    .w_title{
+      margin-top: 24px;
+      font-size: 22px;
+      color: #58595B;
+      margin-bottom: 10px;
+      font-weight: 700;
+      @media (max-width: 1921px) {
+        margin-top: sizeP(24);
+        font-size: sizeP(25);
+        margin-bottom: sizeP(10);
+      }
+      @media (max-width: $sizeTablet) {
+        margin-top: sizeT(16);
+        font-size: sizeT(22);
+        margin-bottom: sizeT(10);
+        padding: 0 sizeT(15);
+      }
+      @media (max-width: $sizeMobile) {
+        margin-top: size(16);
+        font-size: size(22);
+        margin-bottom: size(10);
+        padding: 0 size(15);
+      }
+    }
+    .w_desc{
+      margin-top: 20px;
+      font-size: 16px;
+      color: #58595B;
+      margin-bottom: 10px;
+      @media (max-width: 1921px) {
+        margin-top: sizeP(20);
+        font-size: sizeP(20);
+        margin-bottom: sizeP(10);
+      }
+      @media (max-width: $sizeTablet) {
+        margin-top: sizeT(12);
+        font-size: sizeT(13);
+        margin-bottom: sizeT(10);
+        padding: 0 sizeT(15);
+      }
+      @media (max-width: $sizeMobile) {
+        margin-top: size(12);
+        font-size: size(13);
+        margin-bottom: size(10);
+        padding: 0 size(15);
+      }
+    }
+  }
 }
 
 .section_method_payment {
