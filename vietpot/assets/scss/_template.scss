@@ -4158,20 +4158,42 @@ hr{
     padding: sizeP(40) sizeP(99);
     border-radius: sizeP(16);
   }
-  @media (max-width: $sizeMb) {
-    border: size(1) solid #AFB5B9;
-    padding: size(15);
-    border-radius: size(8);
+  //@media (max-width: $sizeMb) {
+  //  border: size(1) solid #AFB5B9;
+  //  padding: size(15);
+  //  border-radius: size(8);
+  //}
+  .mb-4{
+    margin-bottom: 16px;
+    @media (max-width: 1440px) {
+      margin-bottom: sizeP(16) !important;
+    }
   }
-
+  .mb-5{
+    margin-bottom: 20px;
+    @media (max-width: 1440px) {
+      margin-bottom: sizeP(20) !important;
+    }
+  }
+  hr{
+    border-color: #CDCDCD;
+    opacity: 1;
+    margin: 24px 0;
+    @media (max-width: 1440px) {
+      margin: sizeP(24) 0;
+    }
+    @media (max-width: $sizeMb) {
+      margin: sizeP(24) 0;
+    }
+  }
   .card_header_title {
     margin-bottom: 48px;
     @media (max-width: 1440px) {
       margin-bottom: sizeP(48);
     }
-    @media (max-width: $sizeMb) {
-      margin-bottom: size(16);
-    }
+    //@media (max-width: $sizeMb) {
+    //  margin-bottom: size(16);
+    //}
     .title{
       color: #43464D;
       font-size: 64px;
@@ -4182,10 +4204,10 @@ hr{
         font-size: sizeP(64);
         margin-bottom: sizeP(16);
       }
-      @media (max-width: $sizeMb) {
-        font-size: size(32);
-        margin-bottom: size(8);
-      }
+      //@media (max-width: $sizeMb) {
+      //  font-size: size(32);
+      //  margin-bottom: size(8);
+      //}
     }
     .sub_title {
       color: #6D727B;
@@ -4195,9 +4217,9 @@ hr{
       @media (max-width: 1440px) {
         font-size: sizeP(20);
       }
-      @media (max-width: $sizeMb) {
-        font-size: size(15);
-      }
+      //@media (max-width: $sizeMb) {
+      //  font-size: size(15);
+      //}
     }
   }
 
@@ -4211,50 +4233,114 @@ hr{
       gap: sizeP(40);
       font-size: sizeP(20);
     }
-    @media (max-width: $sizeMb) {
-      gap: size(16);
-      font-size: size(15);
-    }
+    //@media (max-width: $sizeMb) {
+    //  gap: size(16);
+    //  font-size: size(15);
+    //}
     .card_info_title{
       margin-bottom: 16px;
       @media (max-width: 1440px) {
         margin-bottom: sizeP(16);
       }
-      @media (max-width: $sizeMb) {
-        margin-bottom: size(16);
-      }
+      //@media (max-width: $sizeMb) {
+      //  margin-bottom: size(16);
+      //}
     }
     .card_info_content{
       margin-bottom: 32px;
       @media (max-width: 1440px) {
         margin-bottom: sizeP(32);
       }
-      @media (max-width: $sizeMb) {
-        margin-bottom: size(16);
-      }
+      //@media (max-width: $sizeMb) {
+      //  margin-bottom: size(16);
+      //}
       .image{
         img{
           width: 154px;
           @media (max-width: 1440px) {
             width: sizeP(154);
           }
-          @media (max-width: $sizeMb) {
-            width: size(100);
-          }
+          //@media (max-width: $sizeMb) {
+          //  width: size(100);
+          //}
         }
       }
     }
 
   }
-  .wrap_table_transparent{
+  .wrap_table_transparent_2 {
     margin-bottom: 16px;
     @media (max-width: 1440px) {
       margin-bottom: sizeP(16);
     }
-    @media (max-width: $sizeMb) {
-      margin-bottom: size(16);
+    .table {
+      margin-bottom: 0;
+
+      th, td {
+        background-color: transparent;
+        padding: 20px 0;
+        text-align: center;
+        vertical-align: middle;
+        @media (max-width: 1441px) {
+          padding: sizeP(20) 0;
+        }
+      }
+
+      thead {
+        th {
+          color: $--gray;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 120%; /* 19.2px */
+          border-bottom: 1px solid #D5D7DB;
+          @media (max-width: 1441px) {
+            font-size: sizeP(16);
+            border-bottom: sizeP(1) solid #D5D7DB;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            color: $--gray;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            border-bottom: 1px solid #D5D7DB;
+            @media (max-width: 1441px) {
+              font-size: sizeP(16);
+              border-bottom: sizeP(1) solid #D5D7DB;
+            }
+
+            a {
+              text-decoration: none;
+              font-weight: 500;
+
+              &:hover {
+                text-decoration: underline; // Underline on hover
+              }
+            }
+          }
+
+          &:last-child {
+            td {
+              border-bottom: 0;
+            }
+          }
+
+          &:hover {
+            td {
+              a {
+                color: $--primary;
+              }
+            }
+          }
+        }
+      }
     }
   }
+
   .card-bg{
     border-radius: 16px;
     background: #F7F7F7;
@@ -4265,20 +4351,20 @@ hr{
       padding: sizeP(32) sizeP(48);
       margin-bottom: sizeP(48);
     }
-    @media (max-width: $sizeMb) {
-      border-radius: size(8);
-      padding: size(16);
-      margin-bottom: size(16);
-    }
+    //@media (max-width: $sizeMb) {
+    //  border-radius: size(8);
+    //  padding: size(16);
+    //  margin-bottom: size(16);
+    //}
   }
   .label_info{
     gap: 32px;
     @media (max-width: 1440px) {
       gap: sizeP(32);
     }
-    @media (max-width: $sizeMb) {
-      gap: size(8);
-    }
+    //@media (max-width: $sizeMb) {
+    //  gap: size(8);
+    //}
     span{
       padding: 10px 24px;
       display: inline-block;
@@ -4297,13 +4383,13 @@ hr{
         font-size: sizeP(16);
         min-width: sizeP(100);
       }
-      @media (max-width: $sizeMb) {
-        padding: size(4) size(8);
-        border-radius: size(8);
-        border: size(1) solid #D5D7DB;
-        font-size: size(13);
-        min-width: auto;
-      }
+      //@media (max-width: $sizeMb) {
+      //  padding: size(4) size(8);
+      //  border-radius: size(8);
+      //  border: size(1) solid #D5D7DB;
+      //  font-size: size(13);
+      //  min-width: auto;
+      //}
     }
   }
   .card_body_info {
@@ -4313,9 +4399,9 @@ hr{
     @media (max-width: 1440px) {
       font-size: sizeP(20);
     }
-    @media (max-width: $sizeMb) {
-      font-size: size(15);
-    }
+    //@media (max-width: $sizeMb) {
+    //  font-size: size(15);
+    //}
     .info_left {
       color: #989B9F;
     }
@@ -4333,9 +4419,9 @@ hr{
         @media (max-width: 1440px) {
           width: sizeP(155);
         }
-        @media (max-width: $sizeMb) {
-          width: size(155);
-        }
+        //@media (max-width: $sizeMb) {
+        //  width: size(155);
+        //}
       }
     }
     &.card_body_info_qr{
@@ -4343,9 +4429,9 @@ hr{
       @media (max-width: 1440px) {
         gap: sizeP(120);
       }
-      @media (max-width: $sizeMb) {
-        gap: size(16);
-      }
+      //@media (max-width: $sizeMb) {
+      //  gap: size(16);
+      //}
       .info_left_title{
         color: #43464D;
       }
@@ -4354,9 +4440,9 @@ hr{
         @media (max-width: 1440px) {
           gap: sizeP(48);
         }
-        @media (max-width: $sizeMb) {
-          gap: size(16);
-        }
+        //@media (max-width: $sizeMb) {
+        //  gap: size(16);
+        //}
         .label{
           font-size: 16px;
           width: 200px;
@@ -4364,10 +4450,10 @@ hr{
             font-size: sizeP(16);
             width: sizeP(200);
           }
-          @media (max-width: $sizeMb) {
-            font-size: size(14);
-            width: auto;
-          }
+          //@media (max-width: $sizeMb) {
+          //  font-size: size(14);
+          //  width: auto;
+          //}
         }
       }
     }
@@ -4381,9 +4467,9 @@ hr{
     @media (max-width: 1440px) {
       font-size: sizeP(16);
     }
-    @media (max-width: $sizeMb) {
-      font-size: size(14);
-    }
+    //@media (max-width: $sizeMb) {
+    //  font-size: size(14);
+    //}
   }
 }
 

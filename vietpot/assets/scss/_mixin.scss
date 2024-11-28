@@ -60,7 +60,7 @@
 
 @function sizeP($number, $windowWidth: 1440) {
   $result: math.div(100 * $number, $windowWidth);
-  @return $number * 1px;
+  @return $result * 1vw;
 }
 
 @function calcC($d, $number) {
