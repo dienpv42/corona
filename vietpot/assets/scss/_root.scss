@@ -83,6 +83,11 @@
     font-size: sizeP(16);
     border-radius: sizeP(16);
   }
+  @media (max-width: $sizeMb) {
+    padding: size(12) size(16);
+    font-size: size(14);
+    border-radius: size(12);
+  }
 }
 
 @keyframes loading-1{

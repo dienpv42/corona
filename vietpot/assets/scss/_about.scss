@@ -6,7 +6,7 @@
       width: sizeP(872);
     }
     @media (max-width: $sizeMb) {
-
+      width: 100%;
     }
     .section_title {
       color: $--primary;
@@ -20,7 +20,8 @@
         margin-bottom: sizeP(32);
       }
       @media (max-width: $sizeMb) {
-
+        font-size: size(30);
+        margin-bottom: size(16);
       }
     }
 
@@ -38,7 +39,8 @@
           margin-bottom: sizeP(32);
         }
         @media (max-width: $sizeMb) {
-
+          font-size: size(14);
+          margin-bottom: size(16);
         }
         p {
           margin-bottom: 20px;
@@ -46,7 +48,7 @@
             margin-bottom: sizeP(20);
           }
           @media (max-width: $sizeMb) {
-
+            margin-bottom: size(16);
           }
         }
       }
