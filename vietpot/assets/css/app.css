@@ -4867,14 +4867,12 @@ hr {
 }
 
 .card_invoice {
-  border: 2px solid #AFB5B9;
-  padding: 40px 99px;
+  padding: 20px 40px;
   border-radius: 16px;
 }
 @media (max-width: 1440px) {
   .card_invoice {
-    border: 0.1388888889vw solid #AFB5B9;
-    padding: 2.7777777778vw 6.875vw;
+    padding: 1.3888888889vw 2.7777777778vw;
     border-radius: 1.1111111111vw;
   }
 }
@@ -4887,11 +4885,11 @@ hr {
   }
 }
 .card_invoice .mb-5 {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 @media (max-width: 1440px) {
   .card_invoice .mb-5 {
-    margin-bottom: 1.3888888889vw !important;
+    margin-bottom: 1.1111111111vw !important;
   }
 }
 .card_invoice hr {

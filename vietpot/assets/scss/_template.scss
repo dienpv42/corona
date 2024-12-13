@@ -4154,12 +4154,10 @@ hr{
   }
 }
 .card_invoice {
-  border: 2px solid #AFB5B9;
-  padding: 40px 99px;
+  padding: 20px 40px;
   border-radius: 16px;
   @media (max-width: 1440px) {
-    border: sizeP(2) solid #AFB5B9;
-    padding: sizeP(40) sizeP(99);
+    padding: sizeP(20) sizeP(40);
     border-radius: sizeP(16);
   }
   //@media (max-width: $sizeMb) {
@@ -4174,9 +4172,9 @@ hr{
     }
   }
   .mb-5{
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     @media (max-width: 1440px) {
-      margin-bottom: sizeP(20) !important;
+      margin-bottom: sizeP(16) !important;
     }
   }
   hr{
