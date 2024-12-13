@@ -25,6 +25,88 @@
         }
       }
     }
+    .section_head{
+      gap: 32px;
+      margin-bottom: 64px;
+      @media (max-width: 1441px) {
+        gap: sizeP(32);
+        margin-bottom: sizeP(64);
+      }
+      @media (max-width: $sizeMb) {
+        gap: size(16);
+        margin-bottom: size(16);
+      }
+      .w-action{
+        .image{
+          img{
+            height: 64px;
+            @media (max-width: 1441px) {
+              height: sizeP(64);
+            }
+            @media (max-width: $sizeMb) {
+              height: size(40);
+            }
+          }
+        }
+      }
+      .w-title{
+        flex: 1;
+        .title{
+          margin-bottom: 16px;
+          @media (max-width: 1441px) {
+            margin-bottom: sizeP(16);
+          }
+          @media (max-width: $sizeMb) {
+            margin-bottom: size(12);
+          }
+          >*{
+            color: #6D727B;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 120%;
+            @media (max-width: 1441px) {
+              font-size: sizeP(30);
+            }
+            @media (max-width: $sizeMb) {
+              font-size: size(20);
+            }
+            span{
+              font-size: 20px;
+              @media (max-width: 1441px) {
+                font-size: sizeP(20);
+              }
+              @media (max-width: $sizeMb) {
+                font-size: size(15);
+              }
+            }
+          }
+        }
+      }
+      .sub-title{
+        @include no_scroll_bar();
+        @include pd_scroll_mb();
+        overflow: auto;
+        .info{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 32px;
+          color: #989B9F;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 150%;
+          @media (max-width: 1441px) {
+            font-size: sizeP(20);
+            gap: sizeP(32);
+          }
+          @media (max-width: $sizeMb) {
+            width: max-content;
+            font-size: size(16);
+            gap: size(12);
+          }
+        }
+      }
+    }
   }
   .wrap_list_link_lb{
     @media (max-width: $sizeMb) {
