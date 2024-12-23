@@ -7,13 +7,161 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>vietpot</title>
     <!-- css-->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/plugin-collection.css">
-    <link rel="stylesheet" href="assets/css/icofont.min.css">
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <!-- DataTables CSS -->
-    <link rel="stylesheet" href="assets/css/app.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .card_invoice {
+            page-break-inside: avoid;
+            padding: 20px 40px;
+            border-radius: 16px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .card_invoice .mb-4 {
+            margin-bottom: 16px;
+        }
+        .card_invoice .mb-5 {
+            margin-bottom: 16px;
+        }
+        .card_invoice hr {
+            border-color: #CDCDCD;
+            opacity: 1;
+            margin: 24px 0;
+        }
+        .card_invoice .card_header_title {
+            margin-bottom: 48px;
+        }
+        .card_invoice .card_header_title .title {
+            color: #43464D;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 120%;
+            margin-bottom: 16px;
+        }
+        .card_invoice .card_header_title .sub_title {
+            color: #6D727B;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        .card_invoice .card_info {
+            color: #6D727B;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 150%;
+            gap: 40px;
+        }
+        .card_invoice .card_info .card_info_title {
+            margin-bottom: 16px;
+        }
+        .card_invoice .card_info .card_info_content {
+            margin-bottom: 32px;
+        }
+        .card_invoice .card_info .card_info_content .image img {
+            width: 154px;
+        }
+        .card_invoice .wrap_table_transparent_2 {
+            margin-bottom: 16px;
+        }
+        .card_invoice .wrap_table_transparent_2 .table {
+            margin-bottom: 0;
+        }
+        .card_invoice .wrap_table_transparent_2 .table th, .card_invoice .wrap_table_transparent_2 .table td {
+            background-color: transparent;
+            padding: 20px 0;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .card_invoice .wrap_table_transparent_2 .table thead th {
+            color: #6D727B;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 120%; /* 19.2px */
+            border-bottom: 1px solid #D5D7DB;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr td {
+            color: #6D727B;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+            border-bottom: 1px solid #D5D7DB;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr td a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr td a:hover {
+            text-decoration: underline;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr:last-child td {
+            border-bottom: 0;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr:hover td a {
+            color: #2196F3;
+        }
+        .card_invoice .card-bg {
+            border-radius: 16px;
+            background: #F7F7F7;
+            padding: 32px 48px;
+            margin-bottom: 48px;
+        }
+        .card_invoice .label_info span{
+            margin: 0 16px;
+        }
+        .card_invoice .label_info span {
+            padding: 10px 24px;
+            display: inline-block;
+            border-radius: 8px;
+            border: 1px solid #D5D7DB;
+            color: #43464D;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 120%;
+            min-width: 100px;
+            text-align: center;
+        }
+        .card_invoice .card_body_info {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        .card_invoice .card_body_info .info_left {
+            color: #989B9F;
+        }
+        .card_invoice .card_body_info .info_left_content .label {
+            min-width: 130px;
+        }
+        .card_invoice .card_body_info .info_right {
+            color: #43464D;
+        }
+        .card_invoice .card_body_info .info_right .qr {
+            width: 155px;
+        }
+        .card_invoice .card_body_info.card_body_info_qr td.ps-120:last-child {
+            padding-left: 120px;
+        }
+        .card_invoice .card_body_info.card_body_info_qr .info_left_title {
+            color: #43464D;
+        }
+        .card_invoice .card_body_info.card_body_info_qr .info_left_content {
+            gap: 48px;
+        }
+        .card_invoice .card_body_info.card_body_info_qr .info_left_content .label {
+            font-size: 16px;
+            width: 200px;
+        }
+        .card_invoice .card_footer_info {
+            color: #43464D;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        .table{
+            width: 100%;
+        }
+    </style>
 </head>
 <body class="bl_home">
 <main class="main">
@@ -27,56 +175,66 @@
                     Číslo: 7206538
                 </div>
             </div>
-            <div class="row justify-content-between">
-                <div class="col-4">
-                    <div class="card_info">
-                        <div class="card_info_title fw-bold">
-                            Příjemce faktury
-                        </div>
-                        <div class="card_info_content">
-                            Yellow Swan Logistics s.r.o<br>
-                            Kurzova 2222/16 155 00 Praha <br>
-                            155 00 Praha <br>
-                            Česká republika <br>
-                            IČO: 09383280 <br>
-                            DIČ: CZ09383280
-                        </div>
-                        <div class="card_info_content">
-                            Datum vystavení: 26.08.2024<br>
-                            Datum splatnosti: 16.09.2024<br>
-                            Datum UZP: 26.08.2024<br>
-                            Variabilní symbol: 7206538<br>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-5">
-                    <div class="card_info">
-                        <div class="card_info_title fw-bold">
-                            Vystavovatel faktury
-                        </div>
-                        <div class="card_info_content d-flex flex-row align-items-center">
-                            <div class="info">
-                                Squirrels s.r.o. <br>
-                                Poličanská 1487 <br>
-                                190 16 Praha 9 <br>
+            <table style="width: 100%; border: 0; border-collapse: collapse;">
+                <tr style="vertical-align: top;">
+                    <td style="width: 60%">
+                        <div class="card_info">
+                            <div class="card_info_title fw-bold">
+                                Příjemce faktury
+                            </div>
+                            <div class="card_info_content">
+                                Yellow Swan Logistics s.r.o<br>
+                                Kurzova 2222/16 155 00 Praha <br>
+                                155 00 Praha <br>
                                 Česká republika <br>
-                                Tel.: +420 724 121 518 <br>
+                                IČO: 09383280 <br>
+                                DIČ: CZ09383280
                             </div>
-                            <div class="image">
-                                <img src="assets/images/logo_invoice.png" alt="">
+                            <div class="card_info_content">
+                                Datum vystavení: 26.08.2024<br>
+                                Datum splatnosti: 16.09.2024<br>
+                                Datum UZP: 26.08.2024<br>
+                                Variabilní symbol: 7206538<br>
                             </div>
                         </div>
-                    </div>
-                    <div class="card_info">
-                        <div class="card_info_content">
-                            Bankovní spojení: Česká spořitelna, a.s. <br>
-                            Číslo účtu: 6025744329/0800 <br>
-                            IČO: 11715979 <br>
-                            DIČ: CZ11715979
+                    </td>
+                    <td>
+                        <div class="card_info">
+                            <div class="card_info_title fw-bold">
+                                Vystavovatel faktury
+                            </div>
+                            <div class="card_info_content">
+                                <table style="border: 0; border-collapse: collapse;">
+                                    <tr style="vertical-align: top;">
+                                        <td>
+                                            <div class="info">
+                                                Squirrels s.r.o. <br>
+                                                Poličanská 1487 <br>
+                                                190 16 Praha 9 <br>
+                                                Česká republika <br>
+                                                Tel.: +420 724 121 518 <br>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="image" style="margin-left: 3vw">
+                                                <img src="assets/images/logo_invoice.png" alt="">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="card_info">
+                            <div class="card_info_content">
+                                Bankovní spojení: Česká spořitelna, a.s. <br>
+                                Číslo účtu: 6025744329/0800 <br>
+                                IČO: 11715979 <br>
+                                DIČ: CZ11715979
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
             <div class="card_info">
                 <div class="card_info_content">
                     Toto je faktura poslaná partnerům za služby a marketingové úkoly.
@@ -173,139 +331,220 @@
                 </div>
             </div>
             <div class="card-bg">
-                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
-                    <div class="info_left">
-                        <div class="label">
-                            Součet
-                        </div>
-                    </div>
-                    <div class="info_right">
-                        9 642,50 Euro
-                    </div>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 50%;">
+                                <div class="info_left">
+                                    <div class="label">
+                                        Součet
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 33%;">
+                                <div class="info_left d-flex flex-row align-items-center">
+                                    <div class="label">
+                                        Sleva
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 33%; text-align: center">
+                                <div class="label_info" style="display: inline-block;">
+                                    <span>15,00%</span>
+                                    <span>3</span>
+                                </div>
+                            </td>
+                            <td style="width: 33%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 50%;">
+                                <div class="info_left">
+                                    <div class="label">
+                                        Celkem bez DPH
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 33%;">
+                                <div class="info_left d-flex flex-row align-items-center">
+                                    <div class="label">
+                                        7% DPH
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 33%; text-align: center">
+                                <div class="label_info" style="display: inline-block;">
+                                    <span>7,00%</span>
+                                </div>
+                            </td>
+                            <td style="width: 33%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 33%;">
+                                <div class="info_left d-flex flex-row align-items-center">
+                                    <div class="label">
+                                        19% DPH
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 33%; text-align: center">
+                                <div class="label_info" style="display: inline-block;">
+                                    <span>7,00%</span>
+                                </div>
+                            </td>
+                            <td style="width: 33%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
                 <hr>
                 <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
-                    <div class="info_left d-flex flex-row align-items-center">
-                        <div class="label">
-                            Sleva
-                        </div>
-                    </div>
-                    <div class="label_info d-flex flex-row">
-                        <span>15,00%</span>
-                        <span>3</span>
-                    </div>
-                    <div class="info_right">
-                        9 642,50 Euro
-                    </div>
-                </div>
-                <hr>
-                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
-                    <div class="info_left">
-                        <div class="label">
-                            Celkem bez DPH
-                        </div>
-                    </div>
-                    <div class="info_right">
-                        8 304,62 Euro
-                    </div>
-                </div>
-                <hr>
-                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
-                    <div class="info_left d-flex flex-row align-items-center">
-                        <div class="label">
-                            7% DPH
-                        </div>
-                    </div>
-                    <div class="label_info d-flex flex-row">
-                        <span>7,00%</span>
-                    </div>
-                    <div class="info_right">
-                        140,00 Euro
-                    </div>
-                </div>
-                <hr>
-                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
-                    <div class="info_left d-flex flex-row align-items-center">
-                        <div class="label">
-                            19% DPH
-                        </div>
-                    </div>
-                    <div class="label_info d-flex flex-row">
-                        <span>19,00%</span>
-                    </div>
-                    <div class="info_right">
-                        1197,88 Euro
-                    </div>
-                </div>
-                <hr>
-                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
-                    <div class="info_left">
-                        <div class="label fw-bold">
-                            Celkem
-                        </div>
-                    </div>
-                    <div class="info_right fw-bold">
-                        9 321,50 Euro
-                    </div>
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 50%;">
+                                <div class="info_left">
+                                    <div class="label">
+                                        Celkem
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-            <div class="card_body_info card_body_info_qr d-flex flex-row align-items-lg-center">
-                <div class="info_left">
-                    <div class="info_left_title fw-bold mb-4">
-                        Platba pomocí QR kódu
-                    </div>
-                    <div class="info_left_content d-flex flex-row align-items-center mb-4">
-                        <div class="label">
-                            Datum splatnosti faktury:
-                        </div>
-                        <div class="label_info d-flex flex-row">
-                            <span>19,00%</span>
-                        </div>
-                    </div>
-                    <div class="info_left_content d-flex flex-row align-items-center">
-                        <div class="label">
-                            Číslo faktury:
-                        </div>
-                        <div class="label_info d-flex flex-row">
-                            <span>19,00%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="info_right">
-                    <img src="assets/images/qr_demo.png" alt="" class="qr">
-                </div>
+            <div class="card_body_info card_body_info_qr">
+                <table style="border: 0; border-collapse: collapse;">
+                    <tr style="vertical-align: center;">
+                        <td>
+                            <div class="info_left">
+                                <div class="info_left_title fw-bold mb-4">
+                                    Platba pomocí QR kódu
+                                </div>
+                                <div class="info_left_content d-flex flex-row align-items-center mb-4">
+                                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                                        <tr style="vertical-align: center;">
+                                            <td>
+                                                <div class="label">
+                                                    Datum splatnosti faktury:
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="label_info">
+                                                    <span>19,00%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="info_left_content d-flex flex-row align-items-center">
+                                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                                        <tr style="vertical-align: center;">
+                                            <td>
+                                                <div class="label">
+                                                    Číslo faktury:
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="label_info">
+                                                    <span>19,00%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ps-120">
+                            <div class="info_right">
+                                <img src="assets/images/qr_demo.png" alt="" class="qr">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
         </div>
-        <div class="card_footer d-flex flex-row justify-content-between">
-            <div class="card_footer_info">
-                Vietpot Agentura s.r.o. <br>
-                Politických vězňů 1658/8a, 110 00 Praha <br>
-                Tel.: +420 233 323 403<br>
-                Email: general@vietpot.cz<br>
-            </div>
-            <div class="card_footer_info">
-                Bankovní spojení:<br>
-                Česká spořitelna, a.s.<br>
-                Číslo účtu: 5206571389/0800<br>
-            </div>
-            <div class="card_footer_info">
-                Obchod a marketing pro vietnamské zákazníky<br>
-                IČO: 06697534, DIČ: CZ06697534<br>
-                Kontakt: + 420 233 323 403<br>
-                Email: faktury@vietpot.cz <br>
-                www.vietpot.cz
-            </div>
+        <div class="card_footer">
+            <table style="width: 100%; border: 0; border-collapse: collapse;">
+                <tr style="vertical-align: top;">
+                    <td style="width: 33%">
+                        <div class="card_footer_info">
+                            Vietpot Agentura s.r.o. <br>
+                            Politických vězňů 1658/8a, 110 00 Praha <br>
+                            Tel.: +420 233 323 403<br>
+                            Email: general@vietpot.cz<br>
+                        </div>
+                    </td>
+                    <td style="width: 33%">
+                        <div class="card_footer_info">
+                            Bankovní spojení:<br>
+                            Česká spořitelna, a.s.<br>
+                            Číslo účtu: 5206571389/0800<br>
+                        </div>
+                    </td>
+                    <td style="width: 33%">
+                        <div class="card_footer_info">
+                            Obchod a marketing pro vietnamské zákazníky<br>
+                            IČO: 06697534, DIČ: CZ06697534<br>
+                            Kontakt: + 420 233 323 403<br>
+                            Email: faktury@vietpot.cz <br>
+                            www.vietpot.cz
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </main>
 
-<!-- js-->
-<script src="assets/js/jquery-main.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/jquery-migrate.js"></script>
-<script src="assets/js/jquery-ui.min.js"></script>
-<script src="assets/js/plugincollection.js"></script>
-<script src="assets/js/app.js"></script>
 </body>
 </html>
