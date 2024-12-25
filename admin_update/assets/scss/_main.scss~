@@ -168,11 +168,8 @@
     }
   }
   .main{
-    .section-actions{
-      .wrap-search{
-        min-width: 300px;
-        max-width: 100%;
-      }
-    }
+  .section-actions{
+    
+  }
   }
 }

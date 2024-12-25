@@ -216,6 +216,42 @@ input {
   --bs-form-invalid-border-color: #dc3545;
 }
 
+.text-line-1 {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-line-2 {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-line-3 {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-line-4 {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .container-fluid {
   padding: 0 56px;
 }
@@ -236,9 +272,6 @@ input {
   line-height: 150%;
   padding-right: 16px;
 }
-.breadcrumb .breadcrumb-item:last-child::before {
-  display: none;
-}
 .breadcrumb .breadcrumb-item a {
   color: #FFF;
   font-size: 17px;
@@ -253,7 +286,7 @@ input {
 }
 
 .btn {
-  --bs-btn-padding-x: 32px;
+  --bs-btn-padding-x: 16px;
   --bs-btn-padding-y: 7px;
   --bs-btn-font-size: 17px;
   --bs-btn-font-weight: 400;
@@ -286,6 +319,75 @@ input {
   --bs-btn-disabled-border-color: #6c757d;
 }
 
+.w-dropdown .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.w-dropdown .dropdown-toggle svg {
+  transition: all 0.3s;
+}
+.w-dropdown .dropdown-toggle::after {
+  display: none;
+}
+.w-dropdown .dropdown-toggle.show svg {
+  transform: rotate(180deg);
+}
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.form-check .form-check-label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 3px;
+}
+.form-check .form-check-input {
+  float: unset;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  margin-left: 0;
+}
+.form-check .form-check-input:focus {
+  box-shadow: unset;
+}
+.form-check.form-switch {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.form-check.form-switch .form-check-input {
+  background-color: #EC2D37;
+  border-color: #EC2D37;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  background-size: 22px;
+  width: 44px;
+  height: 22px;
+  padding: 2px;
+  margin: 0;
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.form-check.form-switch .form-check-input:focus {
+  box-shadow: unset;
+}
+.form-check.form-switch .form-check-input:checked {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  background-color: #52C41A;
+  border-color: #52C41A;
+  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 1px 1px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.form-check.form-switch .form-check-label {
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 .wrap-search .form-group {
   position: relative;
 }
@@ -314,6 +416,35 @@ input {
   font-size: 18px;
 }
 .wrap-search .form-group .btn-search svg, .wrap-search .form-group .btn-search img {
+  width: 20px;
+  height: auto;
+}
+.wrap-search .wrap-search-left .form-group {
+  position: relative;
+}
+.wrap-search .wrap-search-left .form-group .form-control {
+  padding: 7px 34px 7px 34px;
+}
+.wrap-search .wrap-search-left .form-group .btn-search {
+  padding: 0;
+  background-color: unset;
+  outline: 0;
+  border: 0;
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrap-search .wrap-search-left .form-group .btn-search:focus {
+  padding: 0;
+  background-color: unset;
+  outline: 0;
+  border: 0;
+}
+.wrap-search .wrap-search-left .form-group .btn-search i {
+  font-size: 18px;
+}
+.wrap-search .wrap-search-left .form-group .btn-search svg, .wrap-search .wrap-search-left .form-group .btn-search img {
   width: 20px;
   height: auto;
 }
@@ -348,6 +479,92 @@ input {
 }
 .nav-pagination .pagination .page-item .page-link:focus {
   box-shadow: unset;
+}
+
+.wrap-table.table-scroll {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.wrap-table.table-scroll .table thead {
+  position: sticky;
+  top: 0;
+}
+.wrap-table table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+.wrap-table table thead th {
+  padding: 15px;
+  position: relative;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 20.4px */
+  color: #575756;
+}
+.wrap-table table tbody tr td {
+  padding: 15px;
+  vertical-align: middle;
+  color: #575756;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 150%;
+  transition: all 0.3s;
+  background-color: #FFF;
+}
+.wrap-table table tbody tr.bg-gray td {
+  background-color: #F1F1F1;
+}
+.wrap-table table.table-bg-odd tbody tr:nth-child(odd) td {
+  background-color: #F1F1F1;
+}
+.wrap-table table.table-bordered-bottom tbody tr td {
+  border-bottom: 1px solid #9D9D9C;
+}
+
+.modal-custom .modal-dialog {
+  max-width: 600px;
+}
+.modal-custom .modal-dialog .modal-content {
+  border-radius: 16px;
+  background: #FFF;
+  border: 0;
+}
+.modal-custom .modal-dialog .modal-content .modal-header {
+  position: relative;
+  padding: 40px 40px 16px;
+  border: 0;
+}
+.modal-custom .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.modal-custom .modal-dialog .modal-content .modal-header .btn-close {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background: unset;
+  opacity: 1;
+  display: flex;
+}
+.modal-custom .modal-dialog .modal-content .modal-header .btn-close svg {
+  width: 20px;
+  height: auto;
+}
+.modal-custom .modal-dialog .modal-content .modal-header .btn-close:hover {
+  box-shadow: unset;
+}
+.modal-custom .modal-dialog .modal-content .modal-body {
+  border: 0;
+  padding: 20px 40px 40px;
+}
+.modal-custom .modal-dialog .modal-content .modal-footer {
+  border: 0;
+  padding: 0 32px 32px;
 }
 
 .bl-body {
@@ -489,6 +706,10 @@ input {
 }
 .bl-body .header .header-bottom .wrap-nav .nav .nav-item:last-child .nav-link {
   border-right: none;
+}
+.bl-body .main .section-actions .wrap-search {
+  min-width: 300px;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=app.css.map */
