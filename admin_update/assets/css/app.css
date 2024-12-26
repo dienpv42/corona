@@ -319,6 +319,20 @@ input {
   --bs-btn-disabled-border-color: #6c757d;
 }
 
+.btn-action-icon {
+  display: inline-flex;
+}
+.btn-action-icon svg {
+  width: 18px;
+  height: auto;
+}
+.btn-action-icon svg path {
+  transition: all 0.3s;
+}
+.btn-action-icon:hover svg path {
+  fill: #6FBE44;
+}
+
 .w-dropdown .dropdown-toggle {
   display: flex;
   align-items: center;
@@ -567,6 +581,13 @@ input {
   padding: 0 32px 32px;
 }
 
+.wrap-title .title {
+  color: #5E6D7B;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
 .wrap-nestable .head {
   height: 56px;
   color: #575756;
@@ -592,6 +613,12 @@ input {
   width: 100px;
   position: relative;
   z-index: 2;
+}
+.wrap-nestable .nestable .action {
+  gap: 5px;
+}
+.wrap-nestable .nestable .dd3-handle {
+  cursor: move;
 }
 .wrap-nestable .dd {
   position: relative;
@@ -703,7 +730,6 @@ input {
   margin: 0;
   left: 0;
   top: 0;
-  cursor: move;
   border: 0;
   border-radius: 0;
   width: 100%;

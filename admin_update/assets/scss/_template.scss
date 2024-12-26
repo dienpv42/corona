@@ -206,6 +206,23 @@
   --bs-btn-disabled-border-color: #6c757d;
 }
 
+.btn-action-icon {
+  display: inline-flex;
+  svg{
+    width: 18px;
+    height: auto;
+    path{
+      transition: all .3s;
+    }
+  }
+  &:hover{
+    svg{
+      path{
+        fill: #6FBE44;
+      }
+    }
+  }
+}
 .w-dropdown {
   .dropdown-toggle {
     display: flex;
@@ -533,6 +550,15 @@
   }
 }
 
+.wrap-title{
+  .title{
+    color: #5E6D7B;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+
 // nestable
 .wrap-nestable {
   .head {
@@ -564,6 +590,15 @@
     width: 100px;
     position: relative;
     z-index: 2;
+  }
+
+  .nestable{
+    .action{
+      gap: 5px;
+    }
+    .dd3-handle {
+      cursor: move;
+    }
   }
 
   .dd {
@@ -702,7 +737,6 @@
     margin: 0;
     left: 0;
     top: 0;
-    cursor: move;
     border: 0;
     border-radius: 0;
     width: 100%;
