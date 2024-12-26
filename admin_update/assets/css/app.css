@@ -589,12 +589,26 @@ input {
 }
 
 .wrap-nestable .head {
-  height: 56px;
   color: #575756;
   font-size: 17px;
   font-weight: 700;
   line-height: 120%;
+}
+.wrap-nestable .head > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
   border-bottom: 1px solid #CDCDCD;
+}
+.wrap-nestable .head > *.text-center {
+  justify-content: center;
+}
+.wrap-nestable .head > *.text-end {
+  justify-content: end;
+}
+.wrap-nestable .head > *:last-child {
+  border-bottom: 0;
 }
 .wrap-nestable .block {
   padding: 0 16px;
@@ -710,14 +724,27 @@ input {
   }
 }
 .wrap-nestable .dd3-content {
-  height: 56px;
   display: flex;
   align-items: center;
   color: #5E6D7B;
-  min-height: 56px;
   font-size: 17px;
   line-height: 150%;
+}
+.wrap-nestable .dd3-content > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
   border-bottom: 1px solid #CDCDCD;
+}
+.wrap-nestable .dd3-content > *.text-center {
+  justify-content: center;
+}
+.wrap-nestable .dd3-content > *.text-end {
+  justify-content: end;
+}
+.wrap-nestable .dd3-content > *:last-child {
+  border-bottom: 0;
 }
 .wrap-nestable .dd3-content:hover {
   background: #fff;

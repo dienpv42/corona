@@ -562,12 +562,26 @@
 // nestable
 .wrap-nestable {
   .head {
-    height: 56px;
     color: #575756;
     font-size: 17px;
     font-weight: 700;
     line-height: 120%;
-    border-bottom: 1px solid #CDCDCD;
+    >* {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      border-bottom: 1px solid #CDCDCD;
+      &.text-center{
+        justify-content: center;
+      }
+      &.text-end{
+        justify-content: end;
+      }
+      &:last-child{
+          border-bottom: 0;
+      }
+    }
   }
 
   .block {
@@ -714,14 +728,27 @@
   }
 
   .dd3-content {
-    height: 56px;
     display: flex;
     align-items: center;
     color: #5E6D7B;
-    min-height: 56px;
     font-size: 17px;
     line-height: 150%;
-    border-bottom: 1px solid #CDCDCD;
+    >* {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 56px;
+      border-bottom: 1px solid #CDCDCD;
+      &.text-center{
+        justify-content: center;
+      }
+      &.text-end{
+        justify-content: end;
+      }
+      &:last-child{
+        border-bottom: 0;
+      }
+    }
   }
 
   .dd3-content:hover {
