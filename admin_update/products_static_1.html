@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -141,24 +141,42 @@
 <main class="main">
     <div class="container">
         <section class="section-actions pt-5 mb-5">
-            <div class="wrapper d-flex flex-wrap align-items-center justify-content-between mb-4">
-                <div class="wrap-action">
-                    <a href="#" class="btn btn-outline-secondary">
-                        Nhóm sản phẩm
-                    </a>
+            <div class="wrapper mb-5">
+                <div class="wrap-action row">
+                    <div class="col-12 col-lg-4">
+                        <a href="products_static_1.html" class="btn-large active">
+                            Thống kê <br>
+                            theo doanh thu
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <a href="products_static_2.html" class="btn-large">
+                            Thống kê <br>
+                            theo số đơn
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <a href="products_static_3.html" class="btn-large">
+                            Thống kê sản phẩm <br>
+                            được quan tâm
+                        </a>
+                    </div>
                 </div>
-                <div class="wrap-search">
+            </div>
+            <div class="wrapper d-flex flex-wrap align-items-center justify-content-between">
+                <div class="wrap-search wrap-search-left">
                     <form action="">
                         <div class="form-group">
                             <input type="text" placeholder="Tìm sản phẩm..." class="form-control">
                             <button type="submit" class="btn-search">
-                                <i class="icofont-search"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M8.9752 15.2502C7.73412 15.2502 6.52091 14.8822 5.48899 14.1927C4.45708 13.5032 3.65279 12.5231 3.17785 11.3765C2.70291 10.2299 2.57865 8.96824 2.82077 7.75101C3.06289 6.53378 3.66053 5.41568 4.5381 4.5381C5.41568 3.66053 6.53378 3.06289 7.75101 2.82077C8.96824 2.57865 10.2299 2.70291 11.3765 3.17785C12.5231 3.65279 13.5032 4.45708 14.1927 5.48899C14.8822 6.52091 15.2502 7.73412 15.2502 8.9752C15.2502 9.79924 15.0879 10.6152 14.7725 11.3765C14.4572 12.1379 13.995 12.8296 13.4123 13.4123C12.8296 13.995 12.1379 14.4572 11.3765 14.7725C10.6152 15.0879 9.79924 15.2502 8.9752 15.2502ZM8.9752 3.95853C7.98629 3.95853 7.01959 4.25178 6.19735 4.80118C5.3751 5.35059 4.73424 6.13148 4.3558 7.04511C3.97736 7.95875 3.87835 8.96408 4.07127 9.93398C4.2642 10.9039 4.7404 11.7948 5.43966 12.4941C6.13893 13.1933 7.02984 13.6695 7.99975 13.8625C8.96965 14.0554 9.97498 13.9564 10.8886 13.5779C11.8022 13.1995 12.5831 12.5586 13.1325 11.7364C13.682 10.9141 13.9752 9.94744 13.9752 8.95853C13.9752 7.63245 13.4484 6.36068 12.5107 5.423C11.5731 4.48532 10.3013 3.95853 8.9752 3.95853Z" fill="#5E6D7B"/>
+                                    <path d="M16.6663 17.2913C16.5842 17.2917 16.5028 17.2757 16.427 17.2442C16.3511 17.2127 16.2823 17.1664 16.2246 17.108L12.783 13.6663C12.6726 13.5478 12.6125 13.3911 12.6153 13.2292C12.6182 13.0673 12.6838 12.9128 12.7983 12.7983C12.9128 12.6838 13.0673 12.6182 13.2292 12.6153C13.3911 12.6125 13.5478 12.6726 13.6663 12.783L17.108 16.2246C17.225 16.3418 17.2908 16.5007 17.2908 16.6663C17.2908 16.8319 17.225 16.9908 17.108 17.108C17.0503 17.1664 16.9815 17.2127 16.9056 17.2442C16.8298 17.2757 16.7484 17.2917 16.6663 17.2913Z" fill="#5E6D7B"/>
+                                </svg>
                             </button>
                         </div>
                     </form>
                 </div>
-            </div>
-            <div class="wrapper d-flex flex-wrap align-items-center justify-content-end">
                 <div class="wrap-pagination">
                     <nav class="nav-pagination">
                         <ul class="pagination justify-content-center">
@@ -217,22 +235,21 @@
                                 <th class="text-nowrap " scope="col">
                                     <div class="d-flex flex-row">
                                         <div class="thl me-3">
-                                            Giá bán
+                                            Giá bán <span>Có thuế</span>
                                         </div>
                                         <a href="javascript:void(0)">↑↓</a>
                                     </div>
                                 </th>
                                 <th class="text-nowrap text-center" scope="col">
-                                    SL đã bán
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Số lượng đã bán
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
                                 </th>
                                 <th class="text-nowrap text-center" scope="col">
-                                    PDF SP
-                                </th>
-                                <th class="text-nowrap text-center" scope="col">
-                                    Cập nhập
-                                </th>
-                                <th class="text-nowrap text-end" scope="col">
-                                    Trạng thái
+                                    Doanh thu
                                 </th>
                             </tr>
                             </thead>
@@ -271,22 +288,7 @@
                                     1000
                                 </td>
                                 <td class="text-center">
-                                    <a href="javascript:void(0);" class="icon_file">
-                                        <img src="assets/images/pdf.png" alt="">
-                                    </a>
-                                </td>
-                                <td class="text-center">
-                                    <a href="javascript:void(0);" class="btn-view-log">
-                                        Xem
-                                    </a>
-                                </td>
-                                <td class="text-end">
-                                    <div class="d-flex justify-content-end">
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="checkStatus-1" checked>
-                                            <label class="form-check-label" for="checkStatus-1"></label>
-                                        </div>
-                                    </div>
+                                    1 000.00 Euro
                                 </td>
                             </tr>
                             <tr>
@@ -323,22 +325,7 @@
                                     1000
                                 </td>
                                 <td class="text-center">
-                                    <a href="javascript:void(0);" class="icon_file">
-                                        <img src="assets/images/pdf.png" alt="">
-                                    </a>
-                                </td>
-                                <td class="text-center">
-                                    <a href="javascript:void(0);" class="btn-view-log">
-                                        Xem
-                                    </a>
-                                </td>
-                                <td class="text-end">
-                                    <div class="d-flex justify-content-end">
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="checkStatus-3" checked>
-                                            <label class="form-check-label" for="checkStatus-3"></label>
-                                        </div>
-                                    </div>
+                                    1 000.00 Euro
                                 </td>
                             </tr>
                             <tr>
@@ -375,22 +362,118 @@
                                     1000
                                 </td>
                                 <td class="text-center">
-                                    <a href="javascript:void(0);" class="icon_file">
-                                        <img src="assets/images/pdf.png" alt="">
-                                    </a>
+                                    1 000.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
                                 </td>
                                 <td class="text-center">
-                                    <a href="javascript:void(0);" class="btn-view-log">
-                                        Xem
-                                    </a>
+                                    1 000.00 Euro
                                 </td>
-                                <td class="text-end">
-                                    <div class="d-flex justify-content-end">
-                                        <div class="form-check form-switch">
-                                            <input class="form-check-input" type="checkbox" id="checkStatus-4" checked>
-                                            <label class="form-check-label" for="checkStatus-4"></label>
-                                        </div>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
                                     </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1 000.00 Euro
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1 000.00 Euro
                                 </td>
                             </tr>
                             </tbody>
@@ -443,52 +526,6 @@
     </div>
 </footer>
 
-<!-- Modal -->
-<div class="modal modal-custom fade" id="logUpdateModal" tabindex="-1" aria-labelledby="logUpdateModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
-                <div class="title">
-                    <h5 class="modal-title" id="logUpdateModalLabel"></h5>
-                </div>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#5E6D7B"/>
-                    </svg>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="wrap-table">
-                    <div class="table-responsive-xl table-scroll">
-                        <table class="table table-bordered-bottom table-custom">
-                            <tbody>
-                            <tr class="bg-gray">
-                                <td>Hoàng Trần</td>
-                                <td>2024/12/07</td>
-                                <td>16:22:34</td>
-                                <td>người nhập</td>
-                            </tr>
-                            <tr>
-                                <td>Hoàng Trần</td>
-                                <td>2024/12/07</td>
-                                <td>16:22:34</td>
-                                <td>người sửa</td>
-                            </tr>
-                            <tr>
-                                <td>Hoàng Trần</td>
-                                <td>2024/12/07</td>
-                                <td>16:22:34</td>
-                                <td>người sửa</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--end modal-->
 
 <!-- js-->
 <script src="assets/js/jquery-main.js"></script>
@@ -502,12 +539,5 @@
 
 <script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
 
-<script>
-    $(document).ready(function () {
-        $('.btn-view-log').click(function (){
-            $('#logUpdateModal').modal('show');
-        });
-    });
-</script>
 </body>
 </html>

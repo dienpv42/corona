@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl-body">
+<header class="header">
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="wrapper d-flex flex-row align-items-center justify-content-between">
+                <div class="wrap-left d-flex flex-row align-items-center">
+                    <div class="wrap-logo d-flex flex-row align-items-center">
+                        <a href="index.html" class="item-logo d-flex flex-row align-items-center">
+                            <img src="assets/images/svg/logo_conooran.svg" alt="Logo">
+                            <span>
+                                conooran.com
+                            </span>
+                        </a>
+                        <a href="index.html" class="item-logo d-flex flex-row align-items-center">
+                            <img src="assets/images/svg/logo_skicoo.svg" alt="Logo">
+                            <span>
+                                skicoo.com
+                            </span>
+                        </a>
+                    </div>
+                    <nav class="flex-row align-items-center d-none d-lg-flex">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Sản phẩm</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Thống kê sản phẩm</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Thống kê SP được quan tâm</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="wrap-right d-flex flex-row align-items-center">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                Dữ liệu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <!--                                        <li class="nav-item">-->
+                        <!--                                            <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                        <!--                                               data-bs-toggle="dropdown">-->
+                        <!--                                                Tên user-->
+                        <!--                                            </a>-->
+                        <!--                                            <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                        <!--                                                <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                        <!--                                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                        <!--                                            </ul>-->
+                        <!--                                        </li>-->
+                        <li class="nav-item nav-item-language">
+                            <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                               role="button">
+                                <img src="assets/images/vn.png" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                     fill="none">
+                                    <g clip-path="url(#clip0_6004_1778)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M8.47026 10.4714C8.34524 10.5963 8.1757 10.6665 7.99893 10.6665C7.82215 10.6665 7.65261 10.5963 7.52759 10.4714L3.75626 6.70003C3.69259 6.63853 3.6418 6.56496 3.60686 6.48363C3.57192 6.40229 3.55353 6.31481 3.55276 6.22629C3.55199 6.13777 3.56886 6.04999 3.60238 5.96806C3.6359 5.88613 3.6854 5.81169 3.748 5.7491C3.81059 5.6865 3.88503 5.637 3.96696 5.60348C4.04889 5.56996 4.13667 5.55309 4.22519 5.55386C4.31371 5.55463 4.40119 5.57302 4.48253 5.60796C4.56387 5.6429 4.63743 5.69368 4.69893 5.75736L7.99893 9.05736L11.2989 5.75736C11.4247 5.63592 11.5931 5.56872 11.7679 5.57024C11.9427 5.57176 12.1099 5.64187 12.2335 5.76548C12.3571 5.88908 12.4272 6.05629 12.4287 6.23109C12.4302 6.40589 12.363 6.57429 12.2416 6.70003L8.47026 10.4714Z"
+                                              fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6004_1778">
+                                            <rect width="16" height="16" fill="white"
+                                                  transform="translate(-0.000976562)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lang">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/vn.png" alt="">
+                                        <span>
+                                            Tiếng Việt
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/en.png" alt="">
+                                        <span>
+                                            Tiếng Anh
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="btn-sidebar d-none">
+                        <i class="icofont-navigation-menu"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <div class="wrapper d-flex flex-wrap align-items-center justify-content-between">
+                <div class="wrap-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="products_list.html" class="nav-link">
+                                Danh sách sản phẩm
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product_create.html" class="nav-link">
+                                Nhập sản phẩm mới
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products_static_1.html" class="nav-link active">
+                                Thống kê sản phẩm
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap-action">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <section class="section-actions pt-5 mb-5">
+            <div class="wrapper mb-5">
+                <div class="wrap-action row">
+                    <div class="col-12 col-lg-4">
+                        <a href="products_static_1.html" class="btn-large">
+                            Thống kê <br>
+                            theo doanh thu
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <a href="products_static_2.html" class="btn-large">
+                            Thống kê <br>
+                            theo số đơn
+                        </a>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <a href="products_static_3.html" class="btn-large active">
+                            Thống kê sản phẩm <br>
+                            được quan tâm
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper d-flex flex-wrap align-items-center justify-content-between">
+                <div class="wrap-search wrap-search-left">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="text" placeholder="Tìm sản phẩm..." class="form-control">
+                            <button type="submit" class="btn-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M8.9752 15.2502C7.73412 15.2502 6.52091 14.8822 5.48899 14.1927C4.45708 13.5032 3.65279 12.5231 3.17785 11.3765C2.70291 10.2299 2.57865 8.96824 2.82077 7.75101C3.06289 6.53378 3.66053 5.41568 4.5381 4.5381C5.41568 3.66053 6.53378 3.06289 7.75101 2.82077C8.96824 2.57865 10.2299 2.70291 11.3765 3.17785C12.5231 3.65279 13.5032 4.45708 14.1927 5.48899C14.8822 6.52091 15.2502 7.73412 15.2502 8.9752C15.2502 9.79924 15.0879 10.6152 14.7725 11.3765C14.4572 12.1379 13.995 12.8296 13.4123 13.4123C12.8296 13.995 12.1379 14.4572 11.3765 14.7725C10.6152 15.0879 9.79924 15.2502 8.9752 15.2502ZM8.9752 3.95853C7.98629 3.95853 7.01959 4.25178 6.19735 4.80118C5.3751 5.35059 4.73424 6.13148 4.3558 7.04511C3.97736 7.95875 3.87835 8.96408 4.07127 9.93398C4.2642 10.9039 4.7404 11.7948 5.43966 12.4941C6.13893 13.1933 7.02984 13.6695 7.99975 13.8625C8.96965 14.0554 9.97498 13.9564 10.8886 13.5779C11.8022 13.1995 12.5831 12.5586 13.1325 11.7364C13.682 10.9141 13.9752 9.94744 13.9752 8.95853C13.9752 7.63245 13.4484 6.36068 12.5107 5.423C11.5731 4.48532 10.3013 3.95853 8.9752 3.95853Z" fill="#5E6D7B"/>
+                                    <path d="M16.6663 17.2913C16.5842 17.2917 16.5028 17.2757 16.427 17.2442C16.3511 17.2127 16.2823 17.1664 16.2246 17.108L12.783 13.6663C12.6726 13.5478 12.6125 13.3911 12.6153 13.2292C12.6182 13.0673 12.6838 12.9128 12.7983 12.7983C12.9128 12.6838 13.0673 12.6182 13.2292 12.6153C13.3911 12.6125 13.5478 12.6726 13.6663 12.783L17.108 16.2246C17.225 16.3418 17.2908 16.5007 17.2908 16.6663C17.2908 16.8319 17.225 16.9908 17.108 17.108C17.0503 17.1664 16.9815 17.2127 16.9056 17.2442C16.8298 17.2757 16.7484 17.2917 16.6663 17.2913Z" fill="#5E6D7B"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="wrap-pagination">
+                    <nav class="nav-pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M11.727 12L12.667 11.06L9.61366 8L12.667 4.94L11.727 4L7.72699 8L11.727 12Z" fill="#575756"/>
+                                        <path d="M7.33344 12L8.27344 11.06L5.2201 8L8.27344 4.94L7.33344 4L3.33344 8L7.33344 12Z" fill="#575756"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4.27301 12L3.33301 11.06L6.38634 8L3.33301 4.94L4.27301 4L8.27301 8L4.27301 12Z" fill="#575756"/>
+                                        <path d="M8.66656 12L7.72656 11.06L10.7799 8L7.72656 4.94L8.66656 4L12.6666 8L8.66656 12Z" fill="#575756"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="section-main mb-4">
+            <div class="wrapper">
+                <div class="wrap-table">
+                    <div class="table-responsive-xl table-scroll">
+                        <table class="table table-bg-odd align-middle table-bordered valign-th-top">
+                            <thead>
+                            <tr>
+                                <th class="text-nowrap" scope="col">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Số data
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Tên sản phẩm
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap" scope="col">
+                                    Nhóm SP
+                                </th>
+                                <th class="text-nowrap " scope="col">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Giá bán <span>Có thuế</span>
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap text-center" scope="col">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            Số lượng đã bán
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                                <th class="text-nowrap text-center" scope="col">
+                                    <div class="d-flex flex-row">
+                                        <div class="thl me-3">
+                                            SP được quan tâm
+                                        </div>
+                                        <a href="javascript:void(0)">↑↓</a>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>435640</td>
+                                <td>
+                                    <div class="text-line-1">
+                                        Grippostad C Grippostad C Grippostad C Grippostad C
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="w-dropdown">
+                                        <a href="#" class="nav-link dropdown-toggle" role="button"
+                                           data-bs-toggle="dropdown">
+                                            <span>Nhóm</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <g clip-path="url(#clip0_6004_19362)">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5893 13.0893C10.433 13.2455 10.2211 13.3333 10.0001 13.3333C9.77915 13.3333 9.56723 13.2455 9.41096 13.0893L4.69679 8.37512C4.6172 8.29825 4.55371 8.2063 4.51004 8.10463C4.46636 8.00296 4.44338 7.89361 4.44241 7.78296C4.44145 7.67231 4.46254 7.56258 4.50444 7.46016C4.54634 7.35775 4.60822 7.2647 4.68646 7.18646C4.7647 7.10822 4.85775 7.04634 4.96016 7.00444C5.06257 6.96254 5.17231 6.94145 5.28296 6.94241C5.39361 6.94338 5.50296 6.96636 5.60463 7.01004C5.7063 7.05371 5.79825 7.1172 5.87512 7.19679L10.0001 11.3218L14.1251 7.19679C14.2823 7.04499 14.4928 6.961 14.7113 6.96289C14.9298 6.96479 15.1388 7.05243 15.2933 7.20694C15.4478 7.36145 15.5355 7.57046 15.5374 7.78896C15.5393 8.00745 15.4553 8.21795 15.3035 8.37512L10.5893 13.0893Z" fill="#5E6D7B"/>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_6004_19362">
+                                                        <rect width="20" height="20" fill="white"/>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Nhóm 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Nhóm 2</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                                <td>12.42 Euro</td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                                <td class="text-center">
+                                    1000
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-actions-footer">
+            <div class="wrapper d-flex flex-wrap align-items-center justify-content-lg-between justify-content-start">
+                <div class="wrap-action">
+                    <a href="#" class="btn btn-outline-secondary">
+                        Quay lại trang chủ
+                    </a>
+                </div>
+                <div class="wrap-pagination">
+                    <nav class="nav-pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M11.727 12L12.667 11.06L9.61366 8L12.667 4.94L11.727 4L7.72699 8L11.727 12Z" fill="#575756"/>
+                                        <path d="M7.33344 12L8.27344 11.06L5.2201 8L8.27344 4.94L7.33344 4L3.33344 8L7.33344 12Z" fill="#575756"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">9</a></li>
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M4.27301 12L3.33301 11.06L6.38634 8L3.33301 4.94L4.27301 4L8.27301 8L4.27301 12Z" fill="#575756"/>
+                                        <path d="M8.66656 12L7.72656 11.06L10.7799 8L7.72656 4.94L8.66656 4L12.6666 8L8.66656 12Z" fill="#575756"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+
+    </div>
+</footer>
+
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+
+</body>
+</html>
