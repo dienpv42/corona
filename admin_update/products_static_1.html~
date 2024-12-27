@@ -36,7 +36,7 @@
                         <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Sản phẩm</a></li>
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Thống kê sản phẩm</a></li>
-                            <li class="breadcrumb-item">Thống kê theo doanh thu</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Thống kê theo doanh thu</a></li>
                         </ol>
                     </nav>
                 </div>
