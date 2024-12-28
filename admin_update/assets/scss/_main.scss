@@ -4,6 +4,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 25.5px */
+  color: #5E6D7B;
   .header{
     .header-top{
       padding: 16px 0;
@@ -175,5 +176,105 @@
         max-width: 100%;
       }
     }
+    .section_form_login {
+      padding: 80px 0;
+
+      hr {
+        border-radius: 16px;
+        max-width: 230px;
+        margin: 52px auto 52px;
+        border-top: 5px solid #D5D7DB;
+      }
+
+      .card_forms {
+        width: 735px;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .card_forms {
+        border-radius: 16px;
+        background: #FFF;
+        box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.20);
+        padding: 40px;
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .card_logo{
+          text-align: center;
+          margin-bottom: 48px;
+          img{
+            height: 84px;
+          }
+        }
+
+        .card_title {
+          color: #6D727B;
+          text-align: center;
+          font-size: 27px;
+          font-weight: 700;
+          line-height: 120%;
+          margin-bottom: 48px;
+        }
+
+        .card_form {
+          .form-group {
+            margin-bottom: 24px;
+
+            .form-label {
+              color: #6D727B;
+              font-size: 16px;
+              font-weight: 400;
+              margin-bottom: 12px;
+            }
+
+            .form-control {
+              color: #6D727B;
+              font-size: 16px;
+              font-weight: 400;
+              min-height: 50px;
+              border-radius: 16px;
+              border: 1px solid var(--gray3, #989B9F);
+              background: #FFF;
+              padding: 14px 24px;
+            }
+
+            .text-forgot {
+              display: inline-block;
+              padding-top: 12px;
+              color: #4CAF50;
+              font-size: 16px;
+              font-weight: 400;
+            }
+
+            &.m-end {
+              margin-top: 50px;
+            }
+          }
+        }
+
+        .wrap_btn_full {
+          .btn {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+      .lb-small-success{
+        border: 0;
+        margin-top: 30px;
+        padding: 16px 50px;
+        display: inline-block;
+        border-radius: 16px;
+        background: var(--orange, #F7941D);
+        color: var(--white, #FFF);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 120%; /* 24px */
+      }
+    }
+
   }
 }
