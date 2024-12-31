@@ -385,6 +385,43 @@ input {
   background: #F1F1F1;
 }
 
+.btn-medium {
+  padding: 14px 10px;
+  border-radius: 16px;
+  border: 1px solid #9D9D9C;
+  background: #FFF;
+  color: #5E6D7B;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 150%;
+  min-height: 80px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+}
+.btn-medium.active {
+  color: #FFF;
+  border: 1px solid #F7941D;
+  background: #F7941D;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-medium.active svg path {
+  fill: #fff;
+}
+.btn-medium:hover {
+  color: #5E6D7B;
+  border: 1px solid #9D9D9C;
+  background: #F1F1F1;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-medium:hover svg path {
+  fill: #5E6D7B;
+}
+
 .btn-outline-secondary {
   --bs-btn-color: #5E6D7B;
   --bs-btn-border-color: #CDCDCD;
@@ -914,6 +951,24 @@ input {
   font-size: 17px;
   font-weight: 700;
   line-height: 120%;
+}
+
+.sub-title {
+  color: #575756;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: underline;
+}
+
+.wrap-link-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.wrap-link-flex > * {
+  width: 180px;
 }
 
 .swiper {
