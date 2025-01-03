@@ -217,27 +217,27 @@
                         </span>
                         </div>
                         <div class="wrap-link-flex">
-                            <a href="#" class="btn btn-medium">
+                            <a href="#" class="btn btn-medium btn-edit-banner">
                                 Banner <br>
                                 trang chủ
                             </a>
-                            <a href="#" class="btn btn-medium">
+                            <a href="#" class="btn btn-medium btn-edit-banner">
                                 Banner <br>
                                 trang danh mục
                             </a>
-                            <a href="#" class="btn btn-medium">
+                            <a href="#" class="btn btn-medium btn-edit-banner">
                                 Banner <br>
                                 trang sản phẩm
                             </a>
-                            <a href="#" class="btn btn-medium">
+                            <a href="#" class="btn btn-medium btn-edit-banner">
                                 Banner <br>
                                 công ty vận chuyển
                             </a>
-                            <a href="#" class="btn btn-medium">
+                            <a href="#" class="btn btn-medium btn-edit-banner">
                                 Banner <br>
                                 hình thức thanh toán
                             </a>
-                            <a href="#" class="btn btn-medium">
+                            <a href="#" class="btn btn-medium btn-edit-banner">
                                 Banner header
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                                     <g clip-path="url(#clip0_6073_398)">
@@ -250,7 +250,7 @@
                                     </defs>
                                 </svg>
                             </a>
-                            <a href="#" class="btn btn-medium">
+                            <a href="#" class="btn btn-medium btn-edit-banner">
                                 Banner footer
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                                     <g clip-path="url(#clip0_6073_398)">
@@ -272,7 +272,7 @@
                         </span>
                         </div>
                         <div class="wrap-link-flex">
-                            <a href="#" class="btn btn-medium">
+                            <a href="#" class="btn btn-medium btn-edit-content">
                                 Thông tin về <br>
                                 skicoo
                             </a>
@@ -435,6 +435,559 @@
 
     </div>
 </footer>
+
+<!-- Modal banner -->
+<div class="modal modal-custom fade" id="editBannerModal" tabindex="-1" aria-labelledby="editBannerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title">
+                    <h5 class="modal-title" id="editBannerModalLabel">Banner ABC</h5>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#5E6D7B"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="group-card-title me-3 mb-2">
+                    Hiện tại
+                </div>
+                <div class="wrap-group-frame mb-2">
+                    <div class="group-frame d-none">
+                        <label class="me-2 label-frame">Khung số 1</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-12">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-frame d-none">
+                        <label class="me-2 label-frame">Khung số 2</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-6">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-frame">
+                        <label class="me-2 label-frame">Khung số 3</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">2</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-frame d-none">
+                        <label class="me-2 label-frame">Khung số 4</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-6">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row g-1">
+                                            <div class="col-12 h-50">
+                                                <div class="frame d-flex justify-content-center align-items-center">
+                                                    <div class="num">2</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 h-50">
+                                                <div class="frame d-flex justify-content-center align-items-center">
+                                                    <div class="num">3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-frame d-none">
+                        <label class="me-2 label-frame">Khung số 5</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-6">
+                                        <div class="row g-1">
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">2</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">3</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-frame d-none">
+                        <label class="me-2 label-frame">Khung số 6</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="row g-1">
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">2</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">3</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">5</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="row g-1">
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">6</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">7</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">8</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">9</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap-upload-frame row mb-3">
+                    <div class="col-12 group-upload d-flex flex-row align-items-center mb-2">
+                        <label class="label-frame me-3">Ảnh 1</label>
+                        <div class="form-group-upload-button">
+                            <input class="form-control" type="file" id="formFileFrame-1" hidden>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <label for="formFileFrame-1" class="btn-upload-image btn btn-sm btn-outline-secondary me-2"></label>
+                                <div class="image d-none">
+                                    <img src="assets/images/vn.png" alt="" class="imgPreviewFrame me-2">
+                                    <a href="javascript:void(0);" class="btn-icon-border btn-danger btn-delete-preview">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#EA2D37"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <input type="text" class="form-control input-link-upload w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 group-upload d-flex flex-row align-items-center mb-2">
+                        <label class="label-frame me-3">Ảnh 2</label>
+                        <div class="form-group-upload-button">
+                            <input class="form-control" type="file" id="formFileFrame-2" hidden>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <label for="formFileFrame-2" class="btn-upload-image btn btn-sm btn-outline-secondary me-2"></label>
+                                <div class="image d-none">
+                                    <img src="assets/images/vn.png" alt="" class="imgPreviewFrame me-2">
+                                    <a href="javascript:void(0);" class="btn-icon-border btn-danger btn-delete-preview">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#EA2D37"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <input type="text" class="form-control input-link-upload w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 group-upload d-flex flex-row align-items-center mb-2">
+                        <label class="label-frame me-3">Ảnh 3</label>
+                        <div class="form-group-upload-button">
+                            <input class="form-control" type="file" id="formFileFrame-3" hidden>
+                            <div class="form-group d-flex flex-row align-items-center">
+                                <label for="formFileFrame-3" class="btn-upload-image btn btn-sm btn-outline-secondary me-2"></label>
+                                <div class="image d-none">
+                                    <img src="assets/images/vn.png" alt="" class="imgPreviewFrame me-2">
+                                    <a href="javascript:void(0);" class="btn-icon-border btn-danger btn-delete-preview">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#EA2D37"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <input type="text" class="form-control input-link-upload w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card-title me-3 mb-2">
+                    Thay đổi
+                </div>
+
+                <div class="wrap-group-frame wrap-group-frame-select row g-2 mb-3">
+                    <div class="col-6 group-frame active">
+                        <label class="me-2 label-frame">Khung số 1</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-12">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 group-frame">
+                        <label class="me-2 label-frame">Khung số 2</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-6">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 group-frame">
+                        <label class="me-2 label-frame">Khung số 3</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">2</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 group-frame">
+                        <label class="me-2 label-frame">Khung số 4</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-6">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">1</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row g-1">
+                                            <div class="col-12 h-50">
+                                                <div class="frame d-flex justify-content-center align-items-center">
+                                                    <div class="num">2</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 h-50">
+                                                <div class="frame d-flex justify-content-center align-items-center">
+                                                    <div class="num">3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 group-frame">
+                        <label class="me-2 label-frame">Khung số 5</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-6">
+                                        <div class="row g-1">
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">2</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">3</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 group-frame">
+                        <label class="me-2 label-frame">Khung số 6</label>
+                        <div class="w-frame">
+                            <div class="frame-container h-100">
+                                <div class="row g-1">
+                                    <div class="col-4">
+                                        <div class="row g-1">
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">1</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">2</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">3</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">4</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="frame d-flex justify-content-center align-items-center">
+                                            <div class="num">5</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="row g-1">
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">6</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">7</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row g-1">
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">8</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 h-50">
+                                                        <div class="frame d-flex justify-content-center align-items-center">
+                                                            <div class="num">9</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button class="btn btn-success ps-5 pe-5">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
+
+<!-- Modal content  -->
+<div class="modal modal-custom fade" id="editContentModal" tabindex="-1" aria-labelledby="editContentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title">
+                    <h5 class="modal-title" id="editContentModalLabel ">Thông tin trang</h5>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#5E6D7B"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control mb-3" placeholder="Tiêu đề">
+                        <textarea name="" cols="30" rows="5" class="form-control mb-3" placeholder="Nội dung"></textarea>
+                        <div class="group group-upload-banner mb-3">
+                            <img src="" alt="" class="imgPreview d-none">
+                            <a href="javascript:void(0);" class="d-none btn-icon-border btn-danger btn-delete-preview-banner">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#EA2D37"></path>
+                                </svg>
+                            </a>
+                            <label for="formBanner" class="btn-label-image btn btn-outline-secondary">Banner</label>
+                            <input class="form-control" type="file" id="formBanner" hidden>
+                        </div>
+                        <textarea name="" cols="30" rows="5" class="form-control" placeholder="Nội dung"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button class="btn btn-outline-secondary">Chỉnh sửa</button>
+                <button class="btn btn-warning">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
 <!-- js-->
 <script src="assets/js/jquery-main.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -446,5 +999,16 @@
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 
 <script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.btn-edit-banner').on('click', function () {
+            $('#editBannerModal').modal('show');
+        });
+        $('.btn-edit-content').on('click', function () {
+            $('#editContentModal').modal('show');
+        });
+    });
+</script>
 </body>
 </html>

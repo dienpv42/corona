@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl-body">
+<header class="header">
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="wrapper d-flex flex-row align-items-center justify-content-between">
+                <div class="wrap-left d-flex flex-row align-items-center">
+                    <div class="wrap-logo d-flex flex-row align-items-center">
+                        <a href="index.html" class="item-logo d-flex flex-row align-items-center">
+                            <img src="assets/images/svg/logo_conooran.svg" alt="Logo">
+                            <span>
+                                conooran.com
+                            </span>
+                        </a>
+                        <a href="index.html" class="item-logo d-flex flex-row align-items-center">
+                            <img src="assets/images/svg/logo_skicoo.svg" alt="Logo">
+                            <span>
+                                skicoo.com
+                            </span>
+                        </a>
+                    </div>
+                    <nav class="flex-row align-items-center d-none d-lg-flex">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Sản phẩm</a></li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Thống kê và dữ liệu</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="wrap-right d-flex flex-row align-items-center">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                Dữ liệu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <!--                                        <li class="nav-item">-->
+                        <!--                                            <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                        <!--                                               data-bs-toggle="dropdown">-->
+                        <!--                                                Tên user-->
+                        <!--                                            </a>-->
+                        <!--                                            <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                        <!--                                                <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                        <!--                                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                        <!--                                            </ul>-->
+                        <!--                                        </li>-->
+                        <li class="nav-item nav-item-language">
+                            <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                               role="button">
+                                <img src="assets/images/vn.png" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                     fill="none">
+                                    <g clip-path="url(#clip0_6004_1778)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M8.47026 10.4714C8.34524 10.5963 8.1757 10.6665 7.99893 10.6665C7.82215 10.6665 7.65261 10.5963 7.52759 10.4714L3.75626 6.70003C3.69259 6.63853 3.6418 6.56496 3.60686 6.48363C3.57192 6.40229 3.55353 6.31481 3.55276 6.22629C3.55199 6.13777 3.56886 6.04999 3.60238 5.96806C3.6359 5.88613 3.6854 5.81169 3.748 5.7491C3.81059 5.6865 3.88503 5.637 3.96696 5.60348C4.04889 5.56996 4.13667 5.55309 4.22519 5.55386C4.31371 5.55463 4.40119 5.57302 4.48253 5.60796C4.56387 5.6429 4.63743 5.69368 4.69893 5.75736L7.99893 9.05736L11.2989 5.75736C11.4247 5.63592 11.5931 5.56872 11.7679 5.57024C11.9427 5.57176 12.1099 5.64187 12.2335 5.76548C12.3571 5.88908 12.4272 6.05629 12.4287 6.23109C12.4302 6.40589 12.363 6.57429 12.2416 6.70003L8.47026 10.4714Z"
+                                              fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6004_1778">
+                                            <rect width="16" height="16" fill="white"
+                                                  transform="translate(-0.000976562)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lang">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/vn.png" alt="">
+                                        <span>
+                                            Tiếng Việt
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/en.png" alt="">
+                                        <span>
+                                            Tiếng Anh
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="btn-sidebar d-none">
+                        <i class="icofont-navigation-menu"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <div class="wrapper d-flex flex-wrap align-items-center justify-content-between">
+                <div class="wrap-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="products_list.html" class="nav-link">
+                                Danh sách sản phẩm
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="product_create.html" class="nav-link active">
+                                Nhập sản phẩm mới
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="products_static_1.html" class="nav-link">
+                                Thống kê sản phẩm
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap-action">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container">
+        <section class="section-title pt-5">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="product_edit.html" class="text-link">Thẻ sản phẩm</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="product_edit_history.html" class="text-link">Lịch sử đơn hàng</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="product_edit_report.html" class="text-link active">Thống kê và dữ liệu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-5 mb-5">
+        <section class="section-main mb-5">
+            <div class="wrapper">
+                <div class="wrap-title mb-4">
+                    <h2 class="title">
+                        Thông tin cơ bản
+                    </h2>
+                </div>
+                <div class="wrap-content">
+                    <div class="row">
+                        <div class="col-12 col-lg-7">
+                            <div class="wrap-slide-product mb-3">
+                                <div class="slide_image_1 swiper position-relative">
+                                    <div class="swiper-wrapper">
+                                        <!-- item-->
+                                        <div class="swiper-slide">
+                                            <img src=assets/images/productn_1@3x.png alt="" class="image_1">
+                                        </div>
+                                        <!-- item-->
+                                        <div class="swiper-slide">
+                                            <img src=assets/images/productn_1@3x.png alt="" class="image_2">
+                                        </div>
+                                        <!-- item-->
+                                        <div class="swiper-slide">
+                                            <img src=assets/images/productn_1@3x.png alt="" class="image_3">
+                                        </div>
+                                        <!-- item-->
+                                        <div class="swiper-slide">
+                                            <img src=assets/images/productn_1@3x.png alt="" class="image_4">
+                                        </div>
+                                    </div>
+                                    <div class="wrap_swiper-button">
+                                        <div class="swiper-button-prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M16.8941 2.90553C17.0546 3.06461 17.1819 3.25357 17.2688 3.46158C17.3557 3.6696 17.4004 3.8926 17.4004 4.1178C17.4004 4.34301 17.3557 4.566 17.2688 4.77402C17.1819 4.98204 17.0546 5.171 16.8941 5.33008L10.1769 12.0019L16.8941 18.6737C17.2178 18.9952 17.3997 19.4313 17.3997 19.886C17.3997 20.3407 17.2178 20.7767 16.8941 21.0983C16.5704 21.4198 16.1314 21.6004 15.6736 21.6004C15.2158 21.6004 14.7768 21.4198 14.4531 21.0983L6.50668 13.2056C6.34619 13.0465 6.21886 12.8575 6.13198 12.6495C6.04511 12.4415 6.00039 12.2185 6.00039 11.9933C6.00039 11.7681 6.04511 11.5451 6.13198 11.3371C6.21886 11.1291 6.34619 10.9401 6.50668 10.781L14.4531 2.88833C15.1109 2.23491 16.2189 2.23491 16.8941 2.90553Z" fill="#575756"/>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button-next">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                <path d="M7.1059 2.90553C6.94541 3.06461 6.81808 3.25357 6.7312 3.46158C6.64433 3.6696 6.59961 3.8926 6.59961 4.1178C6.59961 4.34301 6.64433 4.566 6.7312 4.77402C6.81808 4.98204 6.94541 5.171 7.1059 5.33008L13.8231 12.0019L7.1059 18.6737C6.7822 18.9952 6.60034 19.4313 6.60034 19.886C6.60034 20.3407 6.7822 20.7767 7.1059 21.0983C7.4296 21.4198 7.86864 21.6004 8.32642 21.6004C8.78421 21.6004 9.22324 21.4198 9.54694 21.0983L17.4933 13.2056C17.6538 13.0465 17.7811 12.8575 17.868 12.6495C17.9549 12.4415 17.9996 12.2185 17.9996 11.9933C17.9996 11.7681 17.9549 11.5451 17.868 11.3371C17.7811 11.1291 17.6538 10.9401 17.4933 10.781L9.54694 2.88833C8.88907 2.23491 7.78108 2.23491 7.1059 2.90553Z" fill="#575756"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap-import-image d-flex flex-row align-items-center mb-3">
+                                <div class="w-image d-flex flex-column align-items-center justify-content-center">
+                                    <label for="imageProduct-1" class="btn btn-hover-shadow btn-outline-secondary text-center text-nowrap label_file_banner_main">
+                                        Ảnh đại diện <br>
+                                        600x600
+                                    </label>
+                                    <input type="file" class="form-control inp_img_1" id="imageProduct-1" hidden data-image="1">
+                                    <img src=assets/images/productn_1@3x.png alt="" class="image_1">
+                                </div>
+                                <div class="w-image d-flex flex-column align-items-center justify-content-center">
+                                    <label for="imageProduct-2" class="btn btn-hover-shadow btn-outline-secondary text-center text-nowrap label_file_banner_main">
+                                        Ảnh 2<br>
+                                        600x600
+                                    </label>
+                                    <input type="file" class="form-control inp_img_2" id="imageProduct-2" hidden data-image="2">
+                                    <img src=assets/images/productn_1@3x.png alt="" class="image_2">
+                                </div>
+                                <div class="w-image d-flex flex-column align-items-center justify-content-center">
+                                    <label for="imageProduct-3" class="btn btn-hover-shadow btn-outline-secondary text-center text-nowrap label_file_banner_main">
+                                        Ảnh 3<br>
+                                        600x600
+                                    </label>
+                                    <input type="file" class="form-control inp_img_3" id="imageProduct-3" hidden data-image="3">
+                                    <img src=assets/images/productn_1@3x.png alt="" class="image_3">
+                                </div>
+                                <div class="w-image d-flex flex-column align-items-center justify-content-center">
+                                    <label for="imageProduct-4" class="btn btn-hover-shadow btn-outline-secondary text-center text-nowrap label_file_banner_main">
+                                        Ảnh 4<br>
+                                        600x600
+                                    </label>
+                                    <input type="file" class="form-control inp_img_4" id="imageProduct-4" hidden data-image="4">
+                                    <img src=assets/images/productn_1@3x.png alt="" class="image_4">
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Dạng bào chế
+                                </label>
+                                <input type="text" class="form-control" placeholder="Dạng bào chế">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Quy cách đóng gói
+                                </label>
+                                <div class="group d-flex flex-wrap align-items-center">
+                                    <input type="text" class="form-control me-2 w-25" value="1234">
+                                    <a href="javascript:void(0)" class="btn btn-outline-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M15.0003 10.8337H10.8337V15.0003C10.8337 15.4587 10.4587 15.8337 10.0003 15.8337C9.54199 15.8337 9.16699 15.4587 9.16699 15.0003V10.8337H5.00033C4.54199 10.8337 4.16699 10.4587 4.16699 10.0003C4.16699 9.54199 4.54199 9.16699 5.00033 9.16699H9.16699V5.00033C9.16699 4.54199 9.54199 4.16699 10.0003 4.16699C10.4587 4.16699 10.8337 4.54199 10.8337 5.00033V9.16699H15.0003C15.4587 9.16699 15.8337 9.54199 15.8337 10.0003C15.8337 10.4587 15.4587 10.8337 15.0003 10.8337Z" fill="#5E6D7B"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Giá bán (chưa có thuế)
+                                </label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Giá bán (chưa có thuế)">
+                                    <input type="text" class="form-control" placeholder="Giá bán (chưa có thuế)">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Thuế</button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">10%</a></li>
+                                        <li><a class="dropdown-item" href="#">15%</a></li>
+                                        <li><a class="dropdown-item" href="#">20%</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <div class="row g-3">
+                                    <div class="col-6">
+                                        <label class="form-label">
+                                            Đơn bác sỹ
+                                        </label>
+                                        <select name="" class="form-select">
+                                            <option value="1">Đơn bác sĩ</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-6">
+                                        <label class="form-label">
+                                            Loại
+                                        </label>
+                                        <select name="" class="form-select">
+                                            <option value="1">Thuốc</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-lg-5 pt-3">
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Tên thuốc
+                                </label>
+                                <input type="text" class="form-control" placeholder="Tên thuốc">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Mô tả
+                                </label>
+                                <textarea class="form-control" rows="6" placeholder="Mô tả"></textarea>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Mã số EAN sản phẩm
+                                </label>
+                                <input type="text" class="form-control" placeholder="Mã số EAN sản phẩm">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Số PZN (dành cho dược phẩm tại Đức)
+                                </label>
+                                <input type="text" class="form-control" placeholder="Số PZN (dành cho dược phẩm tại Đức)">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Công ty
+                                </label>
+                                <select class="form-select" id="basic-1" data-placeholder="Công ty">
+                                    <option></option>
+                                    <option>Reactive</option>
+                                    <option>Solution</option>
+                                    <option>Conglomeration</option>
+                                    <option>Algoritm</option>
+                                    <option>Holistic</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Thị trường
+                                </label>
+                                <select class="form-select" id="basic-2" data-placeholder="Thị trường">
+                                    <option></option>
+                                    <option>Reactive</option>
+                                    <option>Solution</option>
+                                    <option>Conglomeration</option>
+                                    <option>Algoritm</option>
+                                    <option>Holistic</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Made in
+                                </label>
+                                <select class="form-select" id="basic-product-strategy" data-placeholder="Made in">
+                                    <option></option>
+                                    <option>Reactive</option>
+                                    <option>Solution</option>
+                                    <option>Conglomeration</option>
+                                    <option>Algoritm</option>
+                                    <option>Holistic</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Chiến lược sản phẩm
+                                </label>
+                                <select class="form-select" id="basic-campaign" data-placeholder="Chiến lược sản phẩm">
+                                    <option></option>
+                                    <option>Reactive</option>
+                                    <option>Solution</option>
+                                    <option>Conglomeration</option>
+                                    <option>Algoritm</option>
+                                    <option>Holistic</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="form-label">
+                                    Nhóm sản phẩm
+                                </label>
+                                <select class="form-select" id="basic-category" data-placeholder="Nhóm sản phẩm">
+                                    <option></option>
+                                    <option>Reactive</option>
+                                    <option>Solution</option>
+                                    <option>Conglomeration</option>
+                                    <option>Algoritm</option>
+                                    <option>Holistic</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr class="mt-4 mb-4 hr-success">
+                    <div class="wrap-info-product">
+                        <div class="wrap-title mb-4">
+                            <h2 class="title">Thông tin chi tiết</h2>
+                        </div>
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link btn btn-outline-secondary active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true">Hướng dẫn sử dụng</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link btn btn-outline-secondary" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false">Công dụng của thuốc</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link btn btn-outline-secondary" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" aria-controls="pills-3" aria-selected="false">Tác dụng phụ của thuốc</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link btn btn-outline-secondary" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" aria-controls="pills-4" aria-selected="false">Dùng thuốc cần lưu ý những gì</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link btn btn-outline-secondary" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5" type="button" role="tab" aria-controls="pills-5" aria-selected="false">Bản gốc thông tin về thuốc <i class="icofont-link"></i></button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                                <textarea class="form-control" rows="10" placeholder="Hướng dẫn sử dụng"></textarea>
+                            </div>
+                            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                                <textarea class="form-control" rows="10" placeholder="Công dụng của thuốc"></textarea>
+                            </div>
+                            <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                                <textarea class="form-control" rows="10" placeholder="Tác dụng phụ của thuốc"></textarea>
+                            </div>
+                            <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                                <textarea class="form-control" rows="10" placeholder="Dùng thuốc cần lưu ý những gì"></textarea>
+                            </div>
+                            <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                                <textarea class="form-control" rows="10" placeholder="Bản gốc thông tin về thuốc"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="hr-success mt-5 mb-5">
+        <section class="section-product-history mb-5">
+            <div class="wrapper">
+                <div class="wrap-title mb-4">
+                    <h2 class="title">
+                        Lịch sử đơn hàng
+                    </h2>
+                </div>
+                <div class="wrap-content mb-4">
+                    <div class="wrapper">
+                        <div class="wrap-data-chart">
+                            <div class="wrap-data row g-4 mb-4">
+                                <div class="item col-6 col-lg-3">
+                                    <div class="label">
+                                        Tổng số lượng
+                                    </div>
+                                    <div class="data">
+                                        <input type="text" class="form-control" value="4.583" disabled>
+                                    </div>
+                                    <div class="exam">
+                                        số lượng/tuần
+                                    </div>
+                                </div>
+                                <div class="item col-6 col-lg-3">
+                                    <div class="label">
+                                        Tổng số đơn
+                                    </div>
+                                    <div class="data">
+                                        <input type="text" class="form-control" value="362" disabled>
+                                    </div>
+                                    <div class="exam">
+                                        đơn/tuần
+                                    </div>
+                                </div>
+                                <div class="item col-6 col-lg-3">
+                                    <div class="label">
+                                        Tổng doanh thu
+                                    </div>
+                                    <div class="data">
+                                        <input type="text" class="form-control" value="111.916,86" disabled>
+                                    </div>
+                                    <div class="exam">
+                                        doanh thu/tuần
+                                    </div>
+                                </div>
+                                <div class="item col-6 col-lg-3">
+                                    <div class="label">
+                                        Tổng lãi thô
+                                    </div>
+                                    <div class="data">
+                                        <input type="text" class="form-control" value="3.357,50" disabled>
+                                    </div>
+                                    <div class="exam">
+                                        lãi thô/tuần
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap-type mb-4">
+                                <div class="wrap-title mb-3">
+                                    <h2 class="title fw-normal">
+                                        Thống kê đơn hàng
+                                    </h2>
+                                </div>
+                                <div class="wrap-action-type text-center">
+                                    <a href="javascript:void(0)" class="btn btn-outline-secondary me-3 active">
+                                        Số lượng
+                                    </a>
+                                    <a href="javascript:void(0)" class="btn btn-outline-secondary">
+                                        Doanh thu
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="wrap-chart mb-4">
+                                <div id="chart"></div>
+                            </div>
+                            <div class="wrap-filter text-center">
+                                <a href="javascript:void(0)" class="btn btn-outline-secondary me-3 active">
+                                    3 Tháng
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-outline-secondary me-3">
+                                    6 Tháng
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-outline-secondary me-3">
+                                    1 năm
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-outline-secondary me-3">
+                                    18 Tháng
+                                </a>
+                                <a href="javascript:void(0)" class="btn btn-outline-secondary me-3">
+                                    maximum
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-actions-footer">
+            <div class="wrapper d-flex flex-wrap align-items-center justify-content-lg-between justify-content-start">
+                <div class="wrap-action">
+                    <a href="#" class="btn btn-outline-secondary">
+                        Quay lại
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+
+    </div>
+</footer>
+
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var slide_image_1 = new Swiper(".slide_image_1", {
+            slidesPerView: 1,
+            speed: 1000,
+            loop: false,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            autoplay: false,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // select 2 có nút tạo mới
+        var select2OptionsProductionCompany = {
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+            tags: true,
+            createTag: function (params) {
+                return {
+                    id: params.term,
+                    text: params.term,
+                    newOption: true
+                };
+            },
+            templateResult: function (data) {
+                if (data.newOption) {
+                    return $('<button class="btn btn-position btn-style-green btn-style-select btn_create_company">OK +</button>');
+                }
+                return data.text;
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }
+        };
+
+        $('#basic-1').select2(select2OptionsProductionCompany);
+
+        // Event listener for the creation of a new option
+        $('#basic-1').on('select2:select', function (e) {
+            if (e.params.data.newOption) {
+                // Append the new option to Select2
+                var newOption = new Option(e.params.data.id, e.params.data.text, true, true);
+                $('#basic-1').append(newOption).trigger('change');
+                saveNewOption(e.params.data);
+            }
+        });
+
+        // Event listener for the custom button
+        $('#basic-1').on('click', '.btn_create_company', function () {
+            $('#basic-1').select2('open');
+        });
+
+
+        var select2OptionsOrigin = {
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+            tags: true,
+            createTag: function (params) {
+                return {
+                    id: params.term,
+                    text: params.term,
+                    newOption: true
+                };
+            },
+
+            templateResult: function (data) {
+                if (data.newOption) {
+                    return $('<button class="btn btn-position btn-style-green btn-style-select btn_create_origin">OK +</button>');
+                }
+                return data.text;
+            },
+            escapeMarkup: function (markup) {
+                return markup;
+            }
+        };
+
+        $('#basic-2').select2(select2OptionsOrigin);
+
+        // Event listener for the creation of a new option
+        $('#basic-2').on('select2:select', function (e) {
+            if (e.params.data.newOption) {
+                // Append the new option to Select2
+                var newOption = new Option(e.params.data.id, e.params.data.text, true, true);
+                $('#basic-2').append(newOption).trigger('change');
+                saveNewOption(e.params.data);
+            }
+        });
+
+        // Event listener for the custom button
+        $('#basic-2').on('click', '.btn_create_origin', function () {
+            $('#basic-2').select2('open');
+        });
+
+        $('#basic-category').select2({
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+        });
+
+        $('#basic-campaign').select2({
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+        });
+
+        $('#basic-product-strategy').select2({
+            theme: "bootstrap-5",
+            width: $( this ).data( 'width' ) ? $( this ).data( 'width' ) : $( this ).hasClass( 'w-100' ) ? '100%' : 'style',
+            placeholder: $( this ).data( 'placeholder' ),
+        });
+
+        // Function to sav  e the new option using AJAX
+        function saveNewOption(newOption) {
+            console.log(newOption);
+        }
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('input[type="file"]').change(function() {
+            let imageId = $(this).attr('data-image');
+            let file = this.files[0];
+            // Kiểm tra xem tệp có tồn tại không
+            if (file) {
+                let reader = new FileReader();
+                reader.readAsDataURL(file);
+                // Khi tệp đã được đọc hoàn tất
+                reader.onload = function(e) {
+                    // Đổi src của ảnh tương ứng
+                    $('.image_' + imageId).attr('src', e.target.result);
+                }
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        // Dữ liệu của biểu đồ
+        var chartData = [
+            { x: '1/2023', y: 10 },
+            { x: '2/2023', y: 30 },
+            { x: '3/2023', y: 20 },
+            { x: '4/2023', y: 50 },
+            { x: '5/2023', y: 15 },
+            { x: '6/2023', y: 100 },
+            { x: '7/2023', y: 30 }
+        ];
+        const dataLabels = {
+            enabled: false,
+            style: {
+                colors: ['#E6332A'], // Thay đổi màu của data label thành đỏ
+                background: {
+                    borderRadius: 20,
+                    color: '#E6332A',
+                    borderColor: '#E6332A',
+                    borderWidth: 1,
+                    opacity: 1,
+                },
+                fontSize: '12px',
+                fontFamily: 'Helvetica, Arial, sans-serif',
+                fontWeight: 500,
+                textAnchor: 'center',
+            },
+            background: {
+                enabled: true,
+                padding: 5,
+                borderRadius: 6,
+                borderWidth: 1,
+                opacity: 0.9,
+            },
+            dropShadow: {
+                enabled: false,
+                top: 1,
+                left: 1,
+                blur: 1,
+                opacity: 0.45,
+                color: '#000'
+            },
+            shape: 'circle',
+        };
+        // Cấu hình biểu đồ 1
+        const options = {
+            colors: ['#EDEDED'],
+            series: [{
+                name: "Thống kê dữ liệu",
+                data: chartData
+            }],
+            chart: {
+                type: 'area',
+                stacked: false,
+                height: 350,
+                toolbar: false,
+            },
+            markers: {
+                colors: ['#E6332A'],
+                size: 8,
+                hover: {
+                    size: 9,
+                }
+            },
+            grid: {
+                show: false, // ẩn tất cả các đường line ngang
+                strokeDashArray: 0
+            },
+            dataLabels: dataLabels,
+            fill: {
+                type: 'gradient',
+                gradient: {
+                    shadeIntensity: 1,
+                    inverseColors: false,
+                    opacityFrom: 0,
+                    opacityTo: 0,
+                    stops: [20, 100, 100, 100]
+                },
+            },
+            stroke: {
+                width: 2,
+                curve: 'straight',
+                color: '#fff'
+            },
+            xaxis: {
+                labels: {
+                    style: {
+                        fontSize: '17px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: '',
+                    style: {
+                        fontSize: '17px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                },
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        fontSize: '17px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                    },
+                },
+                title: {
+                    text: 'Số lượng',
+                    style: {
+                        fontSize: '17px',
+                        fontFamily: 'SegoeUIVariable, sans-serif',
+                        fontWeight: 700,
+                    },
+                },
+            },
+            tooltip: {
+                followCursor: true,
+                custom: function ({series, seriesIndex, dataPointIndex, w}) {
+                    let title = w.globals.initialSeries[seriesIndex].name;
+                    let time = w.globals.initialSeries[seriesIndex].data[dataPointIndex].x;
+                    let amount = w.globals.initialSeries[seriesIndex].data[dataPointIndex].y;
+                    return `<div class="wrap_tooltip">
+                                <div class="title d-flex flex-row align-items-center">
+                                    ${title}: ${time}
+                                </div>
+                                <div class="record">
+                                    <b>${amount}</b> sản phẩm
+                                </div>
+                            </div>`;
+                }
+            }
+        };
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+    });
+</script>
+
+</body>
+</html>
