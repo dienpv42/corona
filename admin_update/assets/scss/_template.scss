@@ -547,6 +547,14 @@
 
 }
 
+.form-group-2{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+  flex: 1;
+}
+
 .form-group-select{
 
 }
@@ -969,7 +977,10 @@
         font-weight: 400;
         line-height: 150%;
         transition: all .3s;
-        background-color: #FFF;
+         background-color: #FFF;
+        .text-secondary{
+          color: #9D9D9C !important;
+        }
       }
 
       &.bg-gray {
@@ -1443,6 +1454,8 @@
       }
 
       .form-control {
+        max-width: 210px;
+        margin: auto;
         &:disabled {
           background-color: #fff;
           text-align: center;
@@ -1582,4 +1595,46 @@
   padding: 24px;
   border-radius: 12px;
   background: #F1F1F1;
+}
+
+.wrap-partner-info{
+  .wrap-form-add{
+    gap: 16px;
+    padding-left: 32px;
+    .btn-add {
+      padding: 3.7px 16px;
+      width: 100px;
+      text-align: center;
+    }
+  }
+  .wrap-info-added{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .item{
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      width: 100%;
+      .btn-edit{
+        display: flex;
+      }
+      .content{
+        display: flex;
+        gap: 16px;
+        flex: 1;
+        >*{
+          flex: 1;
+          padding: 0 16px;
+        }
+      }
+      .action{
+        width: 100px;
+        text-align: center;
+        .text-success{
+          color: #6FBE44 !important;
+        }
+      }
+    }
+  }
 }
