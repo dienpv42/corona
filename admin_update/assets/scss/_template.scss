@@ -357,6 +357,7 @@
 
 .btn-outline-secondary {
   --bs-btn-color: #5E6D7B;
+  --bs-btn-bg: #fff;
   --bs-btn-border-color: #CDCDCD;
   --bs-btn-hover-color: #575756;
   --bs-btn-hover-bg: #F1F1F1;
@@ -550,6 +551,34 @@
 
 }
 
+.group-phone{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  .form-control {
+    &:first-child{
+      width: 70px;
+    }
+    &:last-child{
+      flex: 1;
+    }
+  }
+
+}
+.group-input-btn{
+  position: relative;
+  .form-control{
+    padding-right: 40px;
+  }
+  a{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+  }
+}
+
 .form-group-upload-button {
   flex: 1;
   gap: 15px;
@@ -596,6 +625,9 @@
   &.input-link-upload {
     flex: 1;
     color: #6FBE44;
+  }
+  &.block{
+    background: #FFCDCA;
   }
 }
 
@@ -943,6 +975,11 @@
       &.bg-gray {
         td {
           background-color: #F1F1F1;
+        }
+      }
+      &.active {
+        td {
+          background-color: #E8F5E1 !important;
         }
       }
     }
@@ -1539,4 +1576,10 @@
       }
     }
   }
+}
+
+.card-partner{
+  padding: 24px;
+  border-radius: 12px;
+  background: #F1F1F1;
 }
