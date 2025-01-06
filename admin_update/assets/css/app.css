@@ -1595,6 +1595,20 @@ input {
   color: #6FBE44 !important;
 }
 
+.card-info-list {
+  overflow: auto;
+  border-radius: 12px;
+  background: #F7941D;
+}
+.card-info-list .wrapper {
+  padding: 24px 32px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  gap: 16px;
+}
+
 .bl-body {
   font-family: "SegoeUIVariable", sans-serif;
   font-size: 17px;
