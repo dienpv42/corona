@@ -496,6 +496,27 @@ input {
   fill: #6FBE44;
 }
 
+.btn-social-icon {
+  border-radius: 8px;
+  border: 1px solid #9D9D9C;
+  background: #FFF;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+.btn-social-icon img, .btn-social-icon svg {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+.btn-social-icon.active {
+  border: 1px solid #6EBF63;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
 .w-dropdown .dropdown-toggle {
   display: flex;
   align-items: center;
@@ -840,6 +861,9 @@ input {
   color: #6FBE44;
 }
 
+.wrap-search {
+  max-width: 100%;
+}
 .wrap-search .form-group {
   position: relative;
 }
@@ -1609,6 +1633,92 @@ input {
   gap: 16px;
 }
 
+.item-card-per {
+  border-radius: 12px;
+  background: #F1F1F1;
+  padding: 32px;
+}
+.item-card-per .title {
+  color: #575756;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.item-card-per .content .ct-per {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #CDCDCD;
+}
+.item-card-per .content .ct-per:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.item-card-per .content .ct-per .name {
+  color: #5E6D7B;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.card-customer-map {
+  max-width: 600px;
+  padding: 40px;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.2);
+  max-height: 400px;
+  overflow: auto;
+  position: relative;
+}
+.card-customer-map .label-title {
+  color: #5E6D7B;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 120%;
+}
+.card-customer-map .label-title span {
+  font-size: 13px;
+  font-weight: 400;
+}
+.card-customer-map .value {
+  color: #575756;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.card-customer-map .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 8px;
+  background: #F1F1F1;
+  padding: 24px;
+}
+.card-customer-map .card-info .info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.card-customer-map .card-info .info > * {
+  width: calc(50% - 8px);
+}
+.card-customer-map .wrap-btn-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.card-customer-map .wrap-btn-social > * {
+  flex: 1;
+}
+.card-customer-map .btn_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+}
+
 .bl-body {
   font-family: "SegoeUIVariable", sans-serif;
   font-size: 17px;
@@ -1865,6 +1975,10 @@ input {
 }
 .bl-body .main .wrapper-layout .wrap-right .text-success {
   color: #6EBD8F !important;
+}
+.bl-body .main .wrap-list-permission {
+  max-width: 600px;
+  margin: auto;
 }
 
 /*# sourceMappingURL=app.css.map */

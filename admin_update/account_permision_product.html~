@@ -138,10 +138,10 @@
                         <a href="data_report.html" class="text-link">Thống kê</a>
                     </div>
                     <div class="col-12 col-lg-4 text-center">
-                        <a href="data_map.html" class="text-link active">Bản đồ khách hàng</a>
+                        <a href="data_map.html" class="text-link">Bản đồ khách hàng</a>
                     </div>
                     <div class="col-12 col-lg-4 text-center">
-                        <a href="data_account_list.html" class="text-link">Tài khoản nội bộ</a>
+                        <a href="data_account_list.html" class="text-link active">Tài khoản nội bộ</a>
                     </div>
                     <div class="col-12 col-lg-4 text-center">
                         <a href="data_financial_accounting.html" class="text-link">Tài chính và kế toán</a>
@@ -167,127 +167,92 @@
     </div>
     <hr class="mt-5 mb-5">
     <div class="container-fluid">
+        <div class="card-info-list">
+            <div class="wrapper d-flex flex-row align-items-center justify-content-between">
+                <div class="info">
+                    Robert Muller
+                </div>
+                <div class="info">
+                    robert.muller@skicoocom
+                </div>
+                <div class="info">
+                    +49 174 234 4293
+                </div>
+                <div class="info">
+                    Quản lý thị trường
+                </div>
+                <div class="info">
+                    DE 1242 4243 3245 3324 12
+                </div>
+            </div>
+        </div>
+        <hr class="mt-4 mb-4">
         <section class="section-main mb-5">
             <div class="wrapper">
                 <div class="wrap-title mb-4 d-flex align-items-center justify-content-between">
                     <h2 class="title-page">
-                        Bản đồ khách hàng
+                        Trình duyệt admin và phân quyền
                     </h2>
-                    <div class="wrap-search wrap-search-left" style="min-width: 400px">
-                        <form action="">
-                            <div class="form-group">
-                                <input type="text" placeholder="Tìm kiếm" class="form-control">
-                                <button type="submit" class="btn-search">
-                                    <i class="icofont-search"></i>
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="wrap-content">
-                    <div class="card-customer-map mb-4">
-                        <a href="#" class="btn_close">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99847 11.1798L14.7126 15.8939C14.8698 16.0457 15.0803 16.1297 15.2988 16.1278C15.5173 16.1259 15.7263 16.0383 15.8808 15.8838C16.0353 15.7293 16.123 15.5203 16.1249 15.3018C16.1268 15.0833 16.0428 14.8728 15.891 14.7156L11.1768 10.0014L15.891 5.28726C16.0428 5.13009 16.1268 4.91959 16.1249 4.70109C16.123 4.48259 16.0353 4.27358 15.8808 4.11908C15.7263 3.96457 15.5173 3.87693 15.2988 3.87503C15.0803 3.87313 14.8698 3.95713 14.7126 4.10893L9.99847 8.82309L5.2843 4.10893C5.12643 3.96088 4.91715 3.88006 4.70074 3.88358C4.48434 3.88709 4.2778 3.97466 4.12481 4.12775C3.97182 4.28085 3.8844 4.48746 3.88104 4.70386C3.87768 4.92027 3.95864 5.12949 4.1068 5.28726L8.82014 10.0014L4.10597 14.7156C4.02638 14.7925 3.96289 14.8844 3.91922 14.9861C3.87554 15.0878 3.85256 15.1971 3.85159 15.3078C3.85063 15.4184 3.87172 15.5281 3.91362 15.6306C3.95552 15.733 4.0174 15.826 4.09564 15.9043C4.17388 15.9825 4.26693 16.0444 4.36934 16.0863C4.47175 16.1282 4.58149 16.1493 4.69214 16.1483C4.80279 16.1473 4.91214 16.1244 5.01381 16.0807C5.11548 16.037 5.20743 15.9735 5.2843 15.8939L9.99847 11.1798Z" fill="#5E6D7B"/>
+                    <div class="action">
+                        <a href="#" class="btn btn-outline-secondary btn-edit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" fill="#5E6D7B"/>
                             </svg>
                         </a>
-                        <div class="wrap-title mb-4">
-                            <div class="title-page">
-                                Thẻ khách hàng
-                            </div>
-                        </div>
-                        <div class="card-info mb-4">
-                            <div class="info">
-                                <div class="label-title">
-                                    Tên khách hàng
-                                </div>
-                                <div class="value">
-                                    Nguyễn Văn A
-                                </div>
-                            </div>
-                            <div class="info">
-                                <div class="label-title">
-                                    Địa chỉ
-                                </div>
-                                <div class="value">
-                                    địa chỉ
-                                    địa chỉ
-                                    địa chỉ
-                                    địa chỉ
-                                </div>
-                            </div>
-                            <div class="info">
-                                <div class="label-title">
-                                    Số điện thoại
-                                </div>
-                                <div class="value">
-                                    0123456789
-                                </div>
-                            </div>
-                            <div class="info">
-                                <div class="label-title">
-                                    Email
-                                </div>
-                                <div class="value">
-                                    admin@gmail.com
-                                </div>
-                            </div>
-                            <div class="info">
-                                <div class="label-title">
-                                    Tài khoản nhà băng
-                                </div>
-                                <div class="value">
-                                    Tài khoản nhà băng
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info mb-4">
-                            <div class="label-title mb-1">
-                                Địa chỉ nhận hàng <span>*(trong trường hợp khác với địa chỉ chính)</span>
-                            </div>
-                            <div class="value">
-                                địa chỉ nhận hàng
-                            </div>
-                        </div>
-                        <div class="wrap-title mb-3">
-                            <div class="title">
-                                Gửi promo và tin nhắn
-                            </div>
-                        </div>
-                        <div class="wrap-btn-social mb-3">
-                            <a href="#" class="btn-social-icon active">
-                                <img src="assets/images/mess.png" alt="">
-                            </a>
-                            <a href="#" class="btn-social-icon active">
-                                <img src="assets/images/zalo.png" alt="">
-                            </a>
-                            <a href="#" class="btn-social-icon active">
-                                <img src="assets/images/viber.png" alt="">
-                            </a>
-                            <a href="#" class="btn-social-icon">
-                                <img src="assets/images/whatsap.png" alt="">
-                            </a>
-                            <a href="#" class="btn-social-icon">
-                                <img src="assets/images/imess.png" alt="">
-                            </a>
-                            <a href="#" class="btn-social-icon">
-                                <img src="assets/images/gmail.png" alt="">
-                            </a>
-                        </div>
-                        <div class="form-group mb-3">
-                            <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
-                        </div>
-                        <div class="wrap-btn d-flex flex-row align-items-center justify-content-between">
-                            <a href="#" class="btn btn-outline-secondary">
-                                <span>File đính kèm</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                                    <path d="M8.52718 8.52753C9.28313 7.77164 10.3007 7.33522 11.3694 7.30854C12.4381 7.28186 13.4761 7.66696 14.2689 8.38419L14.4197 8.52753L16.7764 10.885C17.5439 11.6539 17.9807 12.6922 17.9938 13.7785C18.0069 14.8648 17.5952 15.9133 16.8464 16.7005C16.0976 17.4876 15.071 17.9512 13.9853 17.9924C12.8997 18.0335 11.8409 17.649 11.0347 16.9209L10.8847 16.7775L9.11635 15.0092C8.96689 14.8592 8.88012 14.658 8.87366 14.4464C8.8672 14.2347 8.94153 14.0286 9.08156 13.8698C9.22159 13.711 9.41681 13.6114 9.62758 13.5914C9.83835 13.5713 10.0489 13.6322 10.2163 13.7617L10.2947 13.8309L12.063 15.5992C12.5214 16.0603 13.1414 16.3246 13.7915 16.3362C14.4415 16.3477 15.0705 16.1056 15.545 15.6611C16.0195 15.2167 16.3022 14.6048 16.3331 13.9554C16.364 13.306 16.1407 12.67 15.7105 12.1825L15.598 12.0634L13.2414 9.70669C13.0092 9.4745 12.7336 9.29031 12.4302 9.16465C12.1269 9.03899 11.8018 8.97431 11.4734 8.97431C11.1451 8.97431 10.82 9.03899 10.5166 9.16465C10.2133 9.29031 9.93767 9.4745 9.70552 9.70669C9.54915 9.86295 9.33711 9.95069 9.11606 9.95061C8.895 9.95053 8.68302 9.86264 8.52677 9.70628C8.37051 9.54991 8.28277 9.33787 8.28285 9.11681C8.28293 8.89576 8.37082 8.68378 8.52718 8.52753ZM3.22385 3.22419C3.97979 2.4683 4.99735 2.03188 6.06604 2.00521C7.13474 1.97853 8.1728 2.36363 8.96552 3.08086L9.11635 3.22419L10.8839 4.99336C11.0333 5.14332 11.1201 5.34455 11.1265 5.55618C11.133 5.7678 11.0587 5.97395 10.9186 6.13276C10.7786 6.29156 10.5834 6.39111 10.3726 6.41119C10.1619 6.43127 9.95134 6.37037 9.78385 6.24086L9.70552 6.17169L7.93802 4.40419C7.47882 3.94799 6.86059 3.68767 6.21338 3.678C5.56617 3.66834 4.94043 3.91007 4.46782 4.35235C3.9952 4.79463 3.71255 5.40298 3.67933 6.04941C3.64611 6.69584 3.8649 7.32996 4.28968 7.81836L4.40218 7.93836L6.75968 10.2959C7.2285 10.7645 7.86427 11.0278 8.52718 11.0278C9.19009 11.0278 9.82586 10.7645 10.2947 10.2959C10.3721 10.2184 10.4639 10.157 10.565 10.1151C10.6661 10.0732 10.7745 10.0516 10.884 10.0515C10.9934 10.0515 11.1018 10.073 11.203 10.1149C11.3041 10.1567 11.396 10.2181 11.4734 10.2954C11.5509 10.3728 11.6123 10.4647 11.6542 10.5658C11.6961 10.6669 11.7177 10.7753 11.7178 10.8847C11.7178 10.9942 11.6963 11.1026 11.6544 11.2037C11.6126 11.3049 11.5512 11.3968 11.4738 11.4742C10.7179 12.2301 9.70035 12.6665 8.63166 12.6932C7.56296 12.7199 6.5249 12.3348 5.73218 11.6175L5.58052 11.4742L3.22385 9.11669C2.44272 8.33533 2.00391 7.27571 2.00391 6.17086C2.00391 5.06601 2.44272 4.00556 3.22385 3.22419Z" fill="#5E6D7B"/>
-                                </svg>
-                            </a>
-                            <a href="#" class="btn btn-outline-secondary">Gửi</a>
-                        </div>
                     </div>
-                    <iframe style="width: 100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.980453127253!2d105.8163641202985!3d21.02277841920779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2sHanoi%2C%20Vietnam!5e0!3m2!1sen!2s!4v1736235829291!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="wrap-nav d-flex flex-row align-items-center justify-content-between gap-2">
+                    <a href="account_permision_system.html" class="text-link">
+                        Hệ thống điều hành skicoo
+                    </a>
+                    <a href="account_permision_web.html" class="text-link">
+                        Website skicoo
+                    </a>
+                    <a href="account_permision_product.html" class="text-link active">
+                        Product
+                    </a>
+                    <a href="account_permision_customer.html" class="text-link">
+                        Customer
+                    </a>
+                    <a href="account_permision_partner.html" class="text-link">
+                        Partner
+                    </a>
+                    <a href="account_permision_database.html" class="text-link">
+                        Database
+                    </a>
+                </div>
+                <hr class="mt-4 mb-5">
+                <div class="wrap-content">
+                    <div class="wrap-list-permission d-flex flex-column gap-4">
+                        <!-- item-->
+                        <div class="item-card-per">
+                            <div class="title mb-3">
+                                Product
+                            </div>
+                            <div class="content ps-3 ps-lg-4 pe-3 pe-lg-4">
+                                <div class="ct-per d-flex flex-row align-items-center justify-content-between">
+                                    <div class="name">
+                                        Cho phép xem
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" checked="">
+                                        <label class="form-check-label"></label>
+                                    </div>
+                                </div>
+                                <div class="ct-per d-flex flex-row align-items-center justify-content-between">
+                                    <div class="name">
+                                        Cho phép sửa đổi
+
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" checked="">
+                                        <label class="form-check-label"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                    </div>
                 </div>
             </div>
         </section>
