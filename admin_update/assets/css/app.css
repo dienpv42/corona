@@ -223,6 +223,31 @@ input {
   display: flex !important;
 }
 
+.mw-600 {
+  max-width: 600px;
+  margin: auto;
+}
+
+.mw-650 {
+  max-width: 650px;
+  margin: auto;
+}
+
+.mw-700 {
+  max-width: 700px;
+  margin: auto;
+}
+
+.mw-800 {
+  max-width: 800px;
+  margin: auto;
+}
+
+.mw-900 {
+  max-width: 900px;
+  margin: auto;
+}
+
 .text-link.active {
   font-weight: 700;
 }
@@ -463,6 +488,9 @@ input {
   --bs-btn-active-border-color: #CDCDCD;
   --bs-btn-disabled-color: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
+}
+.btn-outline-secondary svg {
+  margin-top: -4px;
 }
 
 .btn-success {
@@ -2031,6 +2059,34 @@ input {
 .bl-body .main .wrap-list-permission {
   max-width: 600px;
   margin: auto;
+}
+.bl-body .main .section-country-list .head, .bl-body .main .section-country-list .item {
+  gap: 16px;
+}
+.bl-body .main .section-country-list .content .item {
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #CDCDCD;
+}
+.bl-body .main .section-country-list .content .item:last-child {
+  border-bottom: 0;
+}
+.bl-body .main .section-country-list .action {
+  width: 104px;
+  text-align: end;
+}
+.bl-body .main .section-country-list .image-country {
+  width: 60px;
+}
+.bl-body .main .section-country-list .image-country img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
+  object-position: center;
+}
+.bl-body .main .section-country-list .country, .bl-body .main .section-country-list .phone {
+  flex: 1;
 }
 
 /*# sourceMappingURL=app.css.map */

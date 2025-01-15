@@ -313,9 +313,6 @@
           padding-bottom: 16px;
           margin-bottom: 16px;
           border-bottom: 1px solid #CDCDCD;
-          &:last-child{
-            border-bottom: 0;
-          }
         }
       }
       .action{

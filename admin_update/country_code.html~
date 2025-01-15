@@ -177,7 +177,7 @@
                     </div>
                 </div>
                 <div class="content">
-                    <div class="item d-flex flex-row align-items-center">
+                    <div class="item d-flex flex-row align-items-center mb-3">
                         <div class="image-country">
                             <img src="assets/images/vn.png" alt="">
                         </div>
@@ -193,7 +193,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="item d-flex flex-row align-items-center">
+                    <div class="item d-flex flex-row align-items-center mb-3">
                         <div class="image-country">
                             <img src="assets/images/vn.png" alt="">
                         </div>
@@ -209,7 +209,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="item d-flex flex-row align-items-center">
+                    <div class="item d-flex flex-row align-items-center mb-3">
                         <div class="image-country">
                             <img src="assets/images/vn.png" alt="">
                         </div>
@@ -225,7 +225,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="item d-flex flex-row align-items-center">
+                    <div class="item d-flex flex-row align-items-center mb-3">
                         <div class="image-country">
                             <img src="assets/images/vn.png" alt="">
                         </div>
@@ -241,7 +241,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="item d-flex flex-row align-items-center">
+                    <div class="item d-flex flex-row align-items-center mb-3">
                         <div class="image-country">
                             <img src="assets/images/vn.png" alt="">
                         </div>

@@ -126,6 +126,27 @@
   }
 }
 
+.mw-600 {
+  max-width: 600px;
+  margin: auto;
+}
+.mw-650 {
+  max-width: 650px;
+  margin: auto;
+}
+.mw-700 {
+  max-width: 700px;
+  margin: auto;
+}
+.mw-800 {
+  max-width: 800px;
+  margin: auto;
+}
+.mw-900 {
+  max-width: 900px;
+  margin: auto;
+}
+
 .text-link {
   &.active {
     font-weight: 700;
@@ -368,6 +389,9 @@
   --bs-btn-active-border-color: #CDCDCD;
   --bs-btn-disabled-color: #6c757d;
   --bs-btn-disabled-border-color: #6c757d;
+  svg{
+    margin-top: -4px;
+  }
 }
 
 .btn-success {
