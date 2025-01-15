@@ -125,6 +125,9 @@
     display: flex !important;
   }
 }
+.flex-1{
+  flex: 1;
+}
 
 .mw-600 {
   max-width: 600px;
@@ -173,6 +176,9 @@
   @include line_text(4);
 }
 
+.cursor-none{
+  cursor: unset;
+}
 .container-fluid {
   padding: 0 56px;
   @media (max-width: 991px) {
@@ -411,6 +417,16 @@
   --bs-btn-disabled-border-color: #F7941D;
 }
 
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #CDCDCD;
+  --bs-btn-border-color: #CDCDCD;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #CDCDCD;
+  --bs-btn-hover-border-color: #CDCDCD;
+  --bs-btn-active-color: #fff;
+}
+
 .btn-action-icon {
   display: inline-flex;
 
@@ -451,6 +467,14 @@
     border: 1px solid #6EBF63;
     box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.20);
   }
+}
+
+.btn-status{
+  padding: 4px;
+  border: unset;
+  min-width: 115px;
+  max-width: 100%;
+  border-radius: 12px;
 }
 
 .w-dropdown {
@@ -878,7 +902,7 @@
     .form-control {
       padding: 7px 34px 7px 24px;
       border-radius: 8px;
-      border: 1px solid #9D9D9C;
+      border: 1px solid #CDCDCD;
     }
 
     .btn-search {
@@ -989,25 +1013,47 @@
   }
 }
 
-.wrap-table {
-  &.table-scroll {
-    max-height: 600px;
-    overflow-y: auto;
-    overflow-x: hidden;
 
-    .table {
-      thead {
-        position: sticky;
-        top: 0;
-      }
-    }
+.wrap-table {
+
+  .table-scroll {
+    max-height: 700px;
+    overflow-y: auto;
   }
+
+  .table-width {
+    width: 100%;
+  }
+
+  .table-scroll-x {
+    overflow-x: auto; /* Bật cuộn ngang */
+    overflow-y: hidden; /* Tắt cuộn dọc */
+    white-space: nowrap; /* Đảm bảo không xuống dòng */
+    position: sticky; /* Cố định thanh cuộn trên cùng */
+    top: 0;
+    background-color: #f9f9f9; /* Màu nền thanh cuộn */
+    z-index: 2; /* Đặt trên bảng */
+    height: 16px; /* Chiều cao thanh cuộn */
+  }
+  .table-width {
+    width: 150%; /* Độ rộng đảm bảo cuộn được */
+    height: 1px; /* Chiều cao để chỉ tạo thanh cuộn */
+  }
+
+  .table-container {
+    overflow: hidden; /* Ẩn thanh cuộn mặc định của bảng */
+  }
+
 
   table {
     width: 100%;
     border-collapse: collapse;
     overflow: hidden;
-
+    position: relative;
+    thead{
+      position: sticky;
+      top: 0;
+    }
     thead th {
       padding: 15px;
       position: relative;
@@ -1016,7 +1062,7 @@
       font-weight: 700;
       line-height: 120%; /* 20.4px */
       color: #575756;
-
+      background-color: #fff;
       span {
         font-weight: 400;
         font-size: 13px;
@@ -1076,6 +1122,17 @@
       }
     }
   }
+  &.wrap-table-fe-nobg-first {
+    table {
+      tbody tr {
+        td {
+          &:first-child {
+            background-color: #FFF !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 // modal
@@ -1111,6 +1168,13 @@
             font-weight: 400;
             line-height: 150%;
           }
+        }
+
+        .modal-sub-title{
+          color: #5E6D7B;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 150%;
         }
 
         .btn-close {
@@ -1180,6 +1244,13 @@
   font-weight: 400;
   line-height: 150%;
   text-decoration: underline;
+}
+
+.sub-title-s {
+  color: #575756;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .wrap-link-flex {
@@ -1869,6 +1940,16 @@
   }
 }
 
+.wrap-btn-social{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  >*{
+    flex: 1;
+  }
+}
+
 .card-customer-map{
   max-width: 600px;
   padding: 40px;
@@ -1910,15 +1991,7 @@
       }
     }
   }
-  .wrap-btn-social{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    >*{
-      flex: 1;
-    }
-  }
+
   .btn_close{
     position: absolute;
     top: 20px;
@@ -1973,6 +2046,32 @@
     a{
       width: 177px;
       padding: 14px;
+    }
+  }
+}
+.wrap-info-customer{
+  gap: 16px;
+  .wrap{
+    flex: 1;
+    >*{
+      padding: 3px 16px;
+      border-right: 1px solid #CDCDCD;
+      &.id{
+        color: #9D9D9C;
+      }
+      &:last-child{
+        border-right: 0;
+      }
+    }
+  }
+}
+.wrap-message{
+  .form-group-mess{
+    position: relative;
+    .btn-link-file{
+      position: absolute;
+      top: 16px;
+      right: 48px;
     }
   }
 }
