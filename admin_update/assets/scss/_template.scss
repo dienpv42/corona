@@ -615,7 +615,15 @@
 }
 
 .form-group {
-
+  .group{
+    position: relative;
+    .btn-icon-inp{
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .form-group-2 {
@@ -1036,7 +1044,6 @@
     height: 16px; /* Chiều cao thanh cuộn */
   }
   .table-width {
-    width: 150%; /* Độ rộng đảm bảo cuộn được */
     height: 1px; /* Chiều cao để chỉ tạo thanh cuộn */
   }
 

@@ -593,9 +593,21 @@
 
 <script>
     $(document).ready(function () {
-        $('.btn-edit-info').click(function (){
-            $('#editInfoModal').modal('show');
-        });
+        // Tính toán và set chiều rộng cho .table-width
+        function adjustTableWidth() {
+            let totalWidth = 0;
+
+            // Tính tổng chiều rộng của tất cả các cột trong bảng
+            $('.table-container table thead th').each(function () {
+                totalWidth += $(this).outerWidth(true); // Bao gồm cả padding và border
+            });
+
+            // Set chiều rộng cho .table-width
+            $('.table-scroll-x .table-width').width(totalWidth);
+        }
+
+        // Gọi hàm để điều chỉnh chiều rộng khi tài liệu sẵn sàng
+        adjustTableWidth();
 
         // Đồng bộ thanh cuộn
         $(".table-scroll-x").on("scroll", function () {
@@ -604,6 +616,11 @@
 
         $(".table-container").on("scroll", function () {
             $(".table-scroll-x").scrollLeft($(this).scrollLeft());
+        });
+
+        // Nếu có thay đổi kích thước cửa sổ, cập nhật lại chiều rộng
+        $(window).resize(function () {
+            adjustTableWidth();
         });
     });
 </script>

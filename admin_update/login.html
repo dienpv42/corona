@@ -148,7 +148,12 @@
                             <label for="" class="form-label">
                                 Mật khẩu
                             </label>
-                            <input type="password" class="form-control">
+                            <div class="group">
+                                <input type="password" class="form-control" id="password">
+                                <a href="javascript:void(0);" class="btn-icon-inp" id="toggle-password">
+                                    Hiện
+                                </a>
+                            </div>
                             <a href="javascript:void(0)" class="text-forgot">
                                 Quên mật khẩu?
                             </a>
@@ -192,5 +197,26 @@
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
 
 <script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+<script>
+    $(document).ready(function () {
+        const passwordInput = $('#password');
+        const toggleButton = $('#toggle-password');
+
+        // Khi giữ chuột vào nút "Hiện"
+        toggleButton.mousedown(function () {
+            passwordInput.attr('type', 'text');
+        });
+
+        // Khi nhả chuột khỏi nút "Hiện"
+        toggleButton.mouseup(function () {
+            passwordInput.attr('type', 'password');
+        });
+
+        // Đảm bảo khi ra khỏi nút (mouseleave), mật khẩu không bị lộ
+        toggleButton.mouseleave(function () {
+            passwordInput.attr('type', 'password');
+        });
+    });
+</script>
 </body>
 </html>

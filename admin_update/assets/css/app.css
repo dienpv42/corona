@@ -684,6 +684,16 @@ input {
   border: unset;
 }
 
+.form-group .group {
+  position: relative;
+}
+.form-group .group .btn-icon-inp {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .form-group-2 {
   display: flex;
   align-items: center;
@@ -1031,7 +1041,6 @@ input {
   height: 16px; /* Chiều cao thanh cuộn */
 }
 .wrap-table .table-width {
-  width: 150%; /* Độ rộng đảm bảo cuộn được */
   height: 1px; /* Chiều cao để chỉ tạo thanh cuộn */
 }
 .wrap-table .table-container {
