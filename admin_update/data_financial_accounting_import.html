@@ -183,22 +183,22 @@
                 <div class="container">
                     <div class="wrap-action row g-4 mb-4 justify-content-center">
                         <div class="col-12 col-lg-4">
-                            <a href="data_financial_accounting.html" class="btn-large active">
+                            <a href="data_financial_accounting.html" class="btn-large">
                                 Xuất hóa đơn
                             </a>
                         </div>
                         <div class="col-12 col-lg-4">
-                            <a href="data_financial_accounting_import.html" class="btn-large">
+                            <a href="data_financial_accounting_import.html" class="btn-large active">
                                 Nhận hóa đơn
                             </a>
                         </div>
                     </div>
                 </div>
-                 <div class="wrap-title mb-5">
-                     <h3 class="title-page text-center">
-                         Thống kê tài chính
-                     </h3>
-                 </div>
+                <div class="wrap-title mb-5">
+                    <h3 class="title-page text-center">
+                        Thống kê tài chính
+                    </h3>
+                </div>
                 <div class="wrap-filter d-flex flex-row align-items-center justify-content-center gap-3 mw-800 mb-4">
                     <div class="form-group d-flex flex-row align-items-center gap-3 flex-1">
                         <div class="form-label mb-0">
@@ -223,13 +223,30 @@
                     </div>
                 </div>
                 <div class="wrap-action d-flex align-items-center justify-content-between mb-4">
-                    <a href="#" class="btn btn-outline-secondary btn-create ">Nhập hóa đơn</a>
-                    <a href="data_financial_accounting_create_bill.html" class="btn btn-outline-secondary">
-                        Tạo hóa đơn mới
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M14.9993 10.8346H10.8327V15.0013C10.8327 15.4596 10.4577 15.8346 9.99935 15.8346C9.54102 15.8346 9.16602 15.4596 9.16602 15.0013V10.8346H4.99935C4.54102 10.8346 4.16602 10.4596 4.16602 10.0013C4.16602 9.54297 4.54102 9.16797 4.99935 9.16797H9.16602V5.0013C9.16602 4.54297 9.54102 4.16797 9.99935 4.16797C10.4577 4.16797 10.8327 4.54297 10.8327 5.0013V9.16797H14.9993C15.4577 9.16797 15.8327 9.54297 15.8327 10.0013C15.8327 10.4596 15.4577 10.8346 14.9993 10.8346Z" fill="#5E6D7B"/>
-                        </svg>
-                    </a>
+                    <a href="#" class="btn btn-outline-secondary btn-create">Nhập hóa đơn</a>
+                </div>
+                <div class="wrap-filter d-flex flex-row align-items-center justify-content-center gap-3 mw-800 mb-4">
+                    <div class="form-group d-flex flex-row align-items-center gap-3 flex-1">
+                        <div class="form-label mb-0">
+                            Từ
+                        </div>
+                        <input type="text" class="form-control date" id="datepicker3">
+                    </div>
+                    <div class="form-group d-flex flex-row align-items-center gap-3 flex-1">
+                        <div class="form-label mb-0">
+                            Đến
+                        </div>
+                        <input type="text" class="form-control date" id="datepicker4">
+                    </div>
+                    <a href="#" class="btn btn-outline-secondary">Tìm kiếm</a>
+                </div>
+                <div class="wrap-filter-result d-flex flex-row align-items-center justify-content-center mb-4 gap-3 fs-20">
+                    <div class="time">
+                        01.11.2024 - 30.11.2024:
+                    </div>
+                    <div class="result fw-bold">
+                        500 000.00 Euro
+                    </div>
                 </div>
                 <div class="wrap-table mb-4 wrap-table-fe-nobg">
                     <div class="table-responsive-xl table-scroll">
@@ -620,6 +637,16 @@
             locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
         });
         flatpickr("#datepicker2", {
+            dateFormat: "d-m-Y", // Định dạng ngày
+            enableTime: false,   // Chỉ chọn ngày, không có thời gian
+            locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
+        });
+        flatpickr("#datepicker3", {
+            dateFormat: "d-m-Y", // Định dạng ngày
+            enableTime: false,   // Chỉ chọn ngày, không có thời gian
+            locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
+        });
+        flatpickr("#datepicker4", {
             dateFormat: "d-m-Y", // Định dạng ngày
             enableTime: false,   // Chỉ chọn ngày, không có thời gian
             locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt

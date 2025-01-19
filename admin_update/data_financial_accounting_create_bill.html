@@ -194,11 +194,11 @@
                         </div>
                     </div>
                 </div>
-                 <div class="wrap-title mb-5">
-                     <h3 class="title-page text-center">
-                         Thống kê tài chính
-                     </h3>
-                 </div>
+                <div class="wrap-title mb-5">
+                    <h3 class="title-page text-center">
+                        Thống kê tài chính
+                    </h3>
+                </div>
                 <div class="wrap-filter d-flex flex-row align-items-center justify-content-center gap-3 mw-800 mb-4">
                     <div class="form-group d-flex flex-row align-items-center gap-3 flex-1">
                         <div class="form-label mb-0">
@@ -222,211 +222,531 @@
                         500 000.00 Euro
                     </div>
                 </div>
-                <div class="wrap-action d-flex align-items-center justify-content-between mb-4">
+                <div class="wrap-action d-flex align-items-center justify-content-between">
                     <a href="#" class="btn btn-outline-secondary btn-create ">Nhập hóa đơn</a>
-                    <a href="data_financial_accounting_create_bill.html" class="btn btn-outline-secondary">
+                    <a href="data_financial_accounting_create_bill.html" class="btn btn-outline-secondary active">
                         Tạo hóa đơn mới
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M14.9993 10.8346H10.8327V15.0013C10.8327 15.4596 10.4577 15.8346 9.99935 15.8346C9.54102 15.8346 9.16602 15.4596 9.16602 15.0013V10.8346H4.99935C4.54102 10.8346 4.16602 10.4596 4.16602 10.0013C4.16602 9.54297 4.54102 9.16797 4.99935 9.16797H9.16602V5.0013C9.16602 4.54297 9.54102 4.16797 9.99935 4.16797C10.4577 4.16797 10.8327 4.54297 10.8327 5.0013V9.16797H14.9993C15.4577 9.16797 15.8327 9.54297 15.8327 10.0013C15.8327 10.4596 15.4577 10.8346 14.9993 10.8346Z" fill="#5E6D7B"/>
                         </svg>
                     </a>
                 </div>
-                <div class="wrap-table mb-4 wrap-table-fe-nobg">
-                    <div class="table-responsive-xl table-scroll">
-                        <table class="table table-bg-odd align-middle table-bordered valign-th-top">
-                            <thead>
-                            <tr>
-                                <th class="text-nowrap" scope="col" style="width: 50px"></th>
-                                <th class="text-nowrap" scope="col">
-                                    <div class="d-flex flex-row">
-                                        <div class="thl me-3">
-                                            Số hóa đơn
-                                        </div>
-                                        <a href="javascript:void(0)">↑↓</a>
-                                    </div>
-                                </th>
-                                <th class="text-nowrap" scope="col">
-                                    <div class="d-flex flex-row">
-                                        <div class="thl me-3">
-                                            Công ty nhận hóa đơn
-                                        </div>
-                                        <a href="javascript:void(0)">↑↓</a>
-                                    </div>
-                                </th>
-                                <th class="text-nowrap " scope="col">
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="thl me-3">
-                                            Ngày nhập
-                                        </div>
-                                        <a href="javascript:void(0)">↑↓</a>
-                                    </div>
-                                </th>
-                                <th class="text-nowrap" scope="col">
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="thl me-3">
-                                            Hạn trả
-                                        </div>
-                                        <a href="javascript:void(0)">↑↓</a>
-                                    </div>
-                                </th>
-                                <th class="text-nowrap " scope="col">
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="thl me-3">
-                                            Tổng tiền
-                                        </div>
-                                        <a href="javascript:void(0)">↑↓</a>
-                                    </div>
-                                </th>
-                                <th class="text-nowrap text-center" scope="col">
-                                    PDF
-                                </th>
-                                <th class="text-nowrap " scope="col">
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="thl me-3">
-                                            Kỳ thuế
-                                        </div>
-                                        <a href="javascript:void(0)">↑↓</a>
-                                    </div>
-                                </th>
-                                <th class="text-nowrap " scope="col">
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="thl me-3">
-                                            Trang thái
-                                        </div>
-                                        <a href="javascript:void(0)">↑↓</a>
-                                    </div>
-                                </th>
-                                <th class="text-nowrap" scope="col" style="width: 50px"></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>
-                                    <a href="#" class="btn-edit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                            <path d="M15.75 9.00044C15.5511 9.00044 15.3603 9.07946 15.2197 9.22011C15.079 9.36076 15 9.55153 15 9.75044V14.2504C15 14.4494 14.921 14.6401 14.7803 14.7808C14.6397 14.9214 14.4489 15.0004 14.25 15.0004H3.75C3.55109 15.0004 3.36032 14.9214 3.21967 14.7808C3.07902 14.6401 3 14.4494 3 14.2504V3.75044C3 3.55153 3.07902 3.36076 3.21967 3.22011C3.36032 3.07946 3.55109 3.00044 3.75 3.00044H8.25C8.44891 3.00044 8.63968 2.92142 8.78033 2.78077C8.92098 2.64012 9 2.44935 9 2.25044C9 2.05153 8.92098 1.86076 8.78033 1.72011C8.63968 1.57946 8.44891 1.50044 8.25 1.50044H3.75C3.15326 1.50044 2.58097 1.7375 2.15901 2.15945C1.73705 2.58141 1.5 3.15371 1.5 3.75044V14.2504C1.5 14.8472 1.73705 15.4195 2.15901 15.8414C2.58097 16.2634 3.15326 16.5004 3.75 16.5004H14.25C14.8467 16.5004 15.419 16.2634 15.841 15.8414C16.2629 15.4195 16.5 14.8472 16.5 14.2504V9.75044C16.5 9.55153 16.421 9.36076 16.2803 9.22011C16.1397 9.07946 15.9489 9.00044 15.75 9.00044ZM4.5 9.57044V12.7504C4.5 12.9494 4.57902 13.1401 4.71967 13.2808C4.86032 13.4214 5.05109 13.5004 5.25 13.5004H8.43C8.5287 13.501 8.62655 13.4821 8.71793 13.4448C8.80931 13.4074 8.89242 13.3525 8.9625 13.2829L14.1525 8.08544L16.2825 6.00044C16.3528 5.93072 16.4086 5.84777 16.4467 5.75638C16.4847 5.66498 16.5043 5.56695 16.5043 5.46794C16.5043 5.36893 16.4847 5.2709 16.4467 5.17951C16.4086 5.08812 16.3528 5.00516 16.2825 4.93544L13.1025 1.71794C13.0328 1.64765 12.9498 1.59185 12.8584 1.55377C12.767 1.5157 12.669 1.49609 12.57 1.49609C12.471 1.49609 12.373 1.5157 12.2816 1.55377C12.1902 1.59185 12.1072 1.64765 12.0375 1.71794L9.9225 3.84044L4.7175 9.03794C4.64799 9.10802 4.59299 9.19113 4.55567 9.28251C4.51835 9.37389 4.49943 9.47174 4.5 9.57044ZM12.57 3.30794L14.6925 5.43044L13.6275 6.49544L11.505 4.37294L12.57 3.30794ZM6 9.87794L10.4475 5.43044L12.57 7.55294L8.1225 12.0004H6V9.87794Z" fill="#5E6D7B"/>
-                                        </svg>
-                                    </a>
-                                </td>
-                                <td>490531302</td>
-                                <td>Tên công ty</td>
-                                <td class="text-center">10.12.2024</td>
-                                <td class="text-center fw-bold">10.12.2024</td>
-                                <td class="text-center">193 242.00 Euro</td>
-                                <td class="text-center">
-                                    <a href="javascript:void(0);" class="icon_file">
-                                        <img src="assets/images/pdf.png" alt="">
-                                    </a>
-                                </td>
-                                <td class="text-center fw-bold">11.2024</td>
-                                <td class="text-center fw-bold">
-                                    <div class="w-dropdown d-flex justify-content-center">
-                                        <a href="#" class="btn btn-success btn-status dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span>Đã thanh toán</span>
-                                            <img src="assets/images/svg/arr.svg" alt="">
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Đã thanh toán</a></li>
-                                            <li><a class="dropdown-item" href="#">Chưa thanh toán</a></li>
-                                            <li><a class="dropdown-item" href="#">Tạm dừng</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" checked>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" class="btn-edit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                            <path d="M15.75 9.00044C15.5511 9.00044 15.3603 9.07946 15.2197 9.22011C15.079 9.36076 15 9.55153 15 9.75044V14.2504C15 14.4494 14.921 14.6401 14.7803 14.7808C14.6397 14.9214 14.4489 15.0004 14.25 15.0004H3.75C3.55109 15.0004 3.36032 14.9214 3.21967 14.7808C3.07902 14.6401 3 14.4494 3 14.2504V3.75044C3 3.55153 3.07902 3.36076 3.21967 3.22011C3.36032 3.07946 3.55109 3.00044 3.75 3.00044H8.25C8.44891 3.00044 8.63968 2.92142 8.78033 2.78077C8.92098 2.64012 9 2.44935 9 2.25044C9 2.05153 8.92098 1.86076 8.78033 1.72011C8.63968 1.57946 8.44891 1.50044 8.25 1.50044H3.75C3.15326 1.50044 2.58097 1.7375 2.15901 2.15945C1.73705 2.58141 1.5 3.15371 1.5 3.75044V14.2504C1.5 14.8472 1.73705 15.4195 2.15901 15.8414C2.58097 16.2634 3.15326 16.5004 3.75 16.5004H14.25C14.8467 16.5004 15.419 16.2634 15.841 15.8414C16.2629 15.4195 16.5 14.8472 16.5 14.2504V9.75044C16.5 9.55153 16.421 9.36076 16.2803 9.22011C16.1397 9.07946 15.9489 9.00044 15.75 9.00044ZM4.5 9.57044V12.7504C4.5 12.9494 4.57902 13.1401 4.71967 13.2808C4.86032 13.4214 5.05109 13.5004 5.25 13.5004H8.43C8.5287 13.501 8.62655 13.4821 8.71793 13.4448C8.80931 13.4074 8.89242 13.3525 8.9625 13.2829L14.1525 8.08544L16.2825 6.00044C16.3528 5.93072 16.4086 5.84777 16.4467 5.75638C16.4847 5.66498 16.5043 5.56695 16.5043 5.46794C16.5043 5.36893 16.4847 5.2709 16.4467 5.17951C16.4086 5.08812 16.3528 5.00516 16.2825 4.93544L13.1025 1.71794C13.0328 1.64765 12.9498 1.59185 12.8584 1.55377C12.767 1.5157 12.669 1.49609 12.57 1.49609C12.471 1.49609 12.373 1.5157 12.2816 1.55377C12.1902 1.59185 12.1072 1.64765 12.0375 1.71794L9.9225 3.84044L4.7175 9.03794C4.64799 9.10802 4.59299 9.19113 4.55567 9.28251C4.51835 9.37389 4.49943 9.47174 4.5 9.57044ZM12.57 3.30794L14.6925 5.43044L13.6275 6.49544L11.505 4.37294L12.57 3.30794ZM6 9.87794L10.4475 5.43044L12.57 7.55294L8.1225 12.0004H6V9.87794Z" fill="#5E6D7B"/>
-                                        </svg>
-                                    </a>
-                                </td>
-                                <td>490531302</td>
-                                <td>Tên công ty</td>
-                                <td class="text-center">10.12.2024</td>
-                                <td class="text-center fw-bold">10.12.2024</td>
-                                <td class="text-center">193 242.00 Euro</td>
-                                <td class="text-center">
-                                    <a href="javascript:void(0);" class="icon_file">
-                                        <img src="assets/images/pdf.png" alt="">
-                                    </a>
-                                </td>
-                                <td class="text-center fw-bold">11.2024</td>
-                                <td class="text-center fw-bold">
-                                    <div class="w-dropdown d-flex justify-content-center">
-                                        <a href="#" class="btn btn-danger btn-status dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span>Chưa thanh toán</span>
-                                            <img src="assets/images/svg/arr.svg" alt="">
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Đã thanh toán</a></li>
-                                            <li><a class="dropdown-item" href="#">Chưa thanh toán</a></li>
-                                            <li><a class="dropdown-item" href="#">Tạm dừng</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" checked>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <a href="#" class="btn-edit">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                            <path d="M15.75 9.00044C15.5511 9.00044 15.3603 9.07946 15.2197 9.22011C15.079 9.36076 15 9.55153 15 9.75044V14.2504C15 14.4494 14.921 14.6401 14.7803 14.7808C14.6397 14.9214 14.4489 15.0004 14.25 15.0004H3.75C3.55109 15.0004 3.36032 14.9214 3.21967 14.7808C3.07902 14.6401 3 14.4494 3 14.2504V3.75044C3 3.55153 3.07902 3.36076 3.21967 3.22011C3.36032 3.07946 3.55109 3.00044 3.75 3.00044H8.25C8.44891 3.00044 8.63968 2.92142 8.78033 2.78077C8.92098 2.64012 9 2.44935 9 2.25044C9 2.05153 8.92098 1.86076 8.78033 1.72011C8.63968 1.57946 8.44891 1.50044 8.25 1.50044H3.75C3.15326 1.50044 2.58097 1.7375 2.15901 2.15945C1.73705 2.58141 1.5 3.15371 1.5 3.75044V14.2504C1.5 14.8472 1.73705 15.4195 2.15901 15.8414C2.58097 16.2634 3.15326 16.5004 3.75 16.5004H14.25C14.8467 16.5004 15.419 16.2634 15.841 15.8414C16.2629 15.4195 16.5 14.8472 16.5 14.2504V9.75044C16.5 9.55153 16.421 9.36076 16.2803 9.22011C16.1397 9.07946 15.9489 9.00044 15.75 9.00044ZM4.5 9.57044V12.7504C4.5 12.9494 4.57902 13.1401 4.71967 13.2808C4.86032 13.4214 5.05109 13.5004 5.25 13.5004H8.43C8.5287 13.501 8.62655 13.4821 8.71793 13.4448C8.80931 13.4074 8.89242 13.3525 8.9625 13.2829L14.1525 8.08544L16.2825 6.00044C16.3528 5.93072 16.4086 5.84777 16.4467 5.75638C16.4847 5.66498 16.5043 5.56695 16.5043 5.46794C16.5043 5.36893 16.4847 5.2709 16.4467 5.17951C16.4086 5.08812 16.3528 5.00516 16.2825 4.93544L13.1025 1.71794C13.0328 1.64765 12.9498 1.59185 12.8584 1.55377C12.767 1.5157 12.669 1.49609 12.57 1.49609C12.471 1.49609 12.373 1.5157 12.2816 1.55377C12.1902 1.59185 12.1072 1.64765 12.0375 1.71794L9.9225 3.84044L4.7175 9.03794C4.64799 9.10802 4.59299 9.19113 4.55567 9.28251C4.51835 9.37389 4.49943 9.47174 4.5 9.57044ZM12.57 3.30794L14.6925 5.43044L13.6275 6.49544L11.505 4.37294L12.57 3.30794ZM6 9.87794L10.4475 5.43044L12.57 7.55294L8.1225 12.0004H6V9.87794Z" fill="#5E6D7B"/>
-                                        </svg>
-                                    </a>
-                                </td>
-                                <td>490531302</td>
-                                <td>Tên công ty</td>
-                                <td class="text-center">10.12.2024</td>
-                                <td class="text-center fw-bold">10.12.2024</td>
-                                <td class="text-center">193 242.00 Euro</td>
-                                <td class="text-center">
-                                    <a href="javascript:void(0);" class="icon_file">
-                                        <img src="assets/images/pdf.png" alt="">
-                                    </a>
-                                </td>
-                                <td class="text-center fw-bold">11.2024</td>
-                                <td class="text-center fw-bold">
-                                    <div class="w-dropdown d-flex justify-content-center">
-                                        <a href="#" class="btn btn-secondary btn-status dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <span>Tạm dừng</span>
-                                            <img src="assets/images/svg/arr.svg" alt="">
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a class="dropdown-item" href="#">Đã thanh toán</a></li>
-                                            <li><a class="dropdown-item" href="#">Chưa thanh toán</a></li>
-                                            <li><a class="dropdown-item" href="#">Tạm dừng</a></li>
-                                        </ul>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" checked>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                <hr class="mb-5 mt-5">
+                <div class="wrap-link mb-5">
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-4 text-center">
+                            <a href="#" class="text-link">Xem PDF</a>
+                        </div>
+                        <div class="col-12 col-lg-4 text-center">
+                            <a href="#" class="text-link">Gửi hóa đơn vào email</a>
+                        </div>
+                        <div class="col-12 col-lg-4 text-center">
+                            <a href="#" class="text-link">Nhớ vào xuất hóa đơn</a>
+                        </div>
                     </div>
                 </div>
-                <div class="wrap-action d-flex align-items-center justify-content-center gap-4">
-                    <a href="#" class="btn btn-outline-secondary">Gửi email</a>
-                    <a href="#" class="btn btn-outline-secondary">
-                        Download
+                <div class="wrap-invoice-lang">
+                    <a href="#" class="btn-lang active">
+                        <img src="assets/images/en.png" alt="">
+                        <span>
+                            English
+                        </span>
+                    </a>
+                    <a href="#" class="btn-lang">
+                        <img src="assets/images/ge.png" alt="">
+                        <span>
+                            Deutsch
+                        </span>
+                    </a>
+                    <a href="#" class="btn-lang">
+                        <img src="assets/images/ce.png" alt="">
+                        <span>
+                            Česky
+                        </span>
+                    </a>
+                    <a href="#" class="btn-lang">
+                        <img src="assets/images/vn.png" alt="">
+                        <span>
+                            Tiếng Việt
+                        </span>
                     </a>
                 </div>
+                <div class="wrap-form-invoice mb-4">
+                    <!--  group -->
+                    <div class="wrap-form">
+                        <div class="wrap-title d-flex flex-row align-items-center gap-3 mb-4">
+                            <div class="title-page fw-bold">
+                                Invoice issuer
+                            </div>
+                            <a href="#" class="btn btn-outline-secondary">isn't from skicoo</a>
+                        </div>
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Company name:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Tax number:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                VAT number:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="group-label">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Address:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                City:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Country:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="group-label">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Invoice number:
+                            </div>
+                            <div class="group d-flex align-items-center gap-3">
+                                <input type="text" class="form-control flex-1">
+                                <a href="#" class="btn btn-outline-secondary text-nowrap fs-12">automatically generate a number</a>
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Bank:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Account number:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Kontakt:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--  group -->
+                    <div class="wrap-form">
+                        <div class="wrap-title d-flex flex-row align-items-center gap-3 mb-4">
+                            <div class="title-page fw-bold">
+                                Invoice recipient
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Company name:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Recipient:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="group-label">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="group-label">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Address:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                City:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Country:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="group-label">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  group -->
+                    <div class="wrap-form">
+                        <div class="wrap-title d-flex flex-row align-items-center gap-3 mb-4">
+                            <div class="title-page fw-bold">
+                                Invoice information
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Invoice date:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Invoice No:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Date payment due:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="group-label">
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group">
+                            <div class="form-label">
+                                Further information:
+                            </div>
+                            <div class="group">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  group -->
+                    <div class="wrap-form">
+                        <div class="wrap-title d-flex flex-row align-items-center gap-3 mb-4">
+                            <div class="title-page fw-bold">
+                                Invoice details
+                            </div>
+                        </div>
+
+                        <!-- item-->
+                        <div class="form-group-full">
+                            <div class="form-label">
+                                Information about the invoice:
+                            </div>
+                            <div class="group">
+                                <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--  group -->
+                    <div class="wrap-form wrap-form-add">
+                        <div class="wrap-table-transparent wrap_table_transparent_add table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                <tr>
+                                    <th scope="col" class="text-start">No:</th>
+                                    <th scope="col" class="text-start">Description:</th>
+                                    <th scope="col" class="text-start">QTY:</th>
+                                    <th scope="col" class="text-start">Rate:</th>
+                                    <th scope="col" class="text-start">VAT:</th>
+                                    <th scope="col" class="text-start">Amount:</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="wrap-btn-add">
+                            <a href="javascript:void(0);" class="btn-outline-secondary btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M23.9993 17.3327H17.3327V23.9993C17.3327 24.7327 16.7327 25.3327 15.9993 25.3327C15.266 25.3327 14.666 24.7327 14.666 23.9993V17.3327H7.99935C7.26602 17.3327 6.66602 16.7327 6.66602 15.9993C6.66602 15.266 7.26602 14.666 7.99935 14.666H14.666V7.99935C14.666 7.26602 15.266 6.66602 15.9993 6.66602C16.7327 6.66602 17.3327 7.26602 17.3327 7.99935V14.666H23.9993C24.7327 14.666 25.3327 15.266 25.3327 15.9993C25.3327 16.7327 24.7327 17.3327 23.9993 17.3327Z" fill="#5E6D7B"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--  group -->
+                    <div class="wrap-form wrap-form-add">
+                        <div class="wrap-table-transparent table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                <tr>
+                                    <th scope="col" class="text-start">Serial number:</th>
+                                    <th scope="col" class="text-start">Discount percentage:</th>
+                                    <th scope="col" class="text-start">Discount amount:</th>
+                                    <th scope="col" class="text-start"></th>
+                                    <th scope="col" class="text-start"></th>
+                                    <th scope="col" class="text-end">Total:</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        1 000.00 Euro
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td>
+                                    </td>
+                                    <td class="text-end fw-bold">
+                                        10 000.00 Euro
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="wrap-btn-add">
+                            <a href="javascript:void(0);" class="btn-outline-secondary btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                    <path d="M23.9993 17.3327H17.3327V23.9993C17.3327 24.7327 16.7327 25.3327 15.9993 25.3327C15.266 25.3327 14.666 24.7327 14.666 23.9993V17.3327H7.99935C7.26602 17.3327 6.66602 16.7327 6.66602 15.9993C6.66602 15.266 7.26602 14.666 7.99935 14.666H14.666V7.99935C14.666 7.26602 15.266 6.66602 15.9993 6.66602C16.7327 6.66602 17.3327 7.26602 17.3327 7.99935V14.666H23.9993C24.7327 14.666 25.3327 15.266 25.3327 15.9993C25.3327 16.7327 24.7327 17.3327 23.9993 17.3327Z" fill="#5E6D7B"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="wrap-form d-flex flex-row align-items-center mt-5">
+                        <div class="form-label">Dowload QR code:</div>
+                        <div class="wrap-qr text-center flex-1">
+                            <figure class="figure">
+                                <img src="assets/images/qr.png" class="figure-img img-fluid rounded" alt="...">
+                                <a class="btn btn-outline-secondary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path d="M10 3.33203H11.6667V8.33203H13.75L10 12.082M10 3.33203H8.33333V8.33203H6.25L10 12.082" fill="#5E6D7B"/>
+                                        <path d="M10 3.33203H11.6667V8.33203H13.75L10 12.082L6.25 8.33203H8.33333V3.33203H10Z" stroke="#5E6D7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5 15.832H15" stroke="#5E6D7B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--  group -->
+                    <div class="wrap-form">
+                        <!-- item-->
+                        <div class="form-group-full">
+                            <div class="form-label">
+                                Information about the invoice:
+                            </div>
+                            <div class="group">
+                                <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wrap-form d-flex flex-column flex-lg-row align-items-center justify-content-between">
+                        <div class="form-check mb-2 mb-lg-0">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                            <label class="form-check-label" for="flexCheckDefault1">
+                                Do not display QR code
+                            </label>
+                        </div>
+                        <div class="form-check mb-2 mb-lg-0">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                            <label class="form-check-label" for="flexCheckDefault2">
+                                Do not display logo
+                            </label>
+                        </div>
+                        <div class="form-check mb-2 mb-lg-0">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                            <label class="form-check-label" for="flexCheckDefault3">
+                                Do not display company information below
+                            </label>
+                        </div>
+                    </div>
+                    <div class="wrap-form text-end mb-0">
+                        <hr class="mb-4 mt-4">
+                        <a href="#" class="btn btn-outline-secondary">
+                            Delete
+                        </a>
+                    </div>
+                </div>
+
+
             </div>
         </section>
 
+        <section class="section-actions">
+            <div class="wrapper d-flex flex-wrap align-items-center justify-content-center">
+                <a href="#" class="btn btn-outline-secondary pe-5 ps-5">OK</a>
+            </div>
+        </section>
 
     </div>
 </main>
