@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugin-collection.css">
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.rtl.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="bl-body">
+<header class="header">
+    <div class="header-top">
+        <div class="container-fluid">
+            <div class="wrapper d-flex flex-row align-items-center justify-content-between">
+                <div class="wrap-left d-flex flex-row align-items-center">
+                    <div class="wrap-logo d-flex flex-row align-items-center">
+                        <a href="index.html" class="item-logo d-flex flex-row align-items-center">
+                            <img src="assets/images/svg/logo_conooran.svg" alt="Logo">
+                            <span>
+                                conooran.com
+                            </span>
+                        </a>
+                        <a href="index.html" class="item-logo d-flex flex-row align-items-center">
+                            <img src="assets/images/svg/logo_skicoo.svg" alt="Logo">
+                            <span>
+                                skicoo.com
+                            </span>
+                        </a>
+                    </div>
+                    <nav class="flex-row align-items-center d-none d-lg-flex">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Dữ liệu</a></li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="wrap-right d-flex flex-row align-items-center">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                Dữ liệu
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link">
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <!--                                        <li class="nav-item">-->
+                        <!--                                            <a href="#" class="nav-link dropdown-toggle" id="loginInfoDrop" role="button"-->
+                        <!--                                               data-bs-toggle="dropdown">-->
+                        <!--                                                Tên user-->
+                        <!--                                            </a>-->
+                        <!--                                            <ul class="dropdown-menu" aria-labelledby="loginInfoDrop">-->
+                        <!--                                                <li><a class="dropdown-item" href="#">Thông tin</a></li>-->
+                        <!--                                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>-->
+                        <!--                                            </ul>-->
+                        <!--                                        </li>-->
+                        <li class="nav-item nav-item-language">
+                            <a href="javascript:void(0)" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                               role="button">
+                                <img src="assets/images/vn.png" alt="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                     fill="none">
+                                    <g clip-path="url(#clip0_6004_1778)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M8.47026 10.4714C8.34524 10.5963 8.1757 10.6665 7.99893 10.6665C7.82215 10.6665 7.65261 10.5963 7.52759 10.4714L3.75626 6.70003C3.69259 6.63853 3.6418 6.56496 3.60686 6.48363C3.57192 6.40229 3.55353 6.31481 3.55276 6.22629C3.55199 6.13777 3.56886 6.04999 3.60238 5.96806C3.6359 5.88613 3.6854 5.81169 3.748 5.7491C3.81059 5.6865 3.88503 5.637 3.96696 5.60348C4.04889 5.56996 4.13667 5.55309 4.22519 5.55386C4.31371 5.55463 4.40119 5.57302 4.48253 5.60796C4.56387 5.6429 4.63743 5.69368 4.69893 5.75736L7.99893 9.05736L11.2989 5.75736C11.4247 5.63592 11.5931 5.56872 11.7679 5.57024C11.9427 5.57176 12.1099 5.64187 12.2335 5.76548C12.3571 5.88908 12.4272 6.05629 12.4287 6.23109C12.4302 6.40589 12.363 6.57429 12.2416 6.70003L8.47026 10.4714Z"
+                                              fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_6004_1778">
+                                            <rect width="16" height="16" fill="white"
+                                                  transform="translate(-0.000976562)"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lang">
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/vn.png" alt="">
+                                        <span>
+                                            Tiếng Việt
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="assets/images/en.png" alt="">
+                                        <span>
+                                            Tiếng Anh
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="javascript:void(0);" class="btn-sidebar d-none">
+                        <i class="icofont-navigation-menu"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container-fluid">
+            <div class="wrapper d-flex flex-wrap align-items-center justify-content-between">
+                <div class="wrap-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                Dữ liệu và quản lý
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrap-action">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <div class="container-fluid">
+        <section class="section-title pt-5">
+            <div class="wrapper">
+                <div class="row g-4">
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_report.html" class="text-link">Thống kê</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_map.html" class="text-link">Bản đồ khách hàng</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_account_list.html" class="text-link">Tài khoản nội bộ</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_financial_accounting.html" class="text-link active">Tài chính và kế toán</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_bill_create.html" class="text-link">Tạo hóa đơn</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_voucher_create.html" class="text-link">Tạo voucher</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_banner_history.html" class="text-link">Lịch sử banner</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_bills.html" class="text-link">Danh sách hóa đơn được tạo</a>
+                    </div>
+                    <div class="col-12 col-lg-4 text-center">
+                        <a href="data_voucher.html" class="text-link">Danh sách voucher</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <hr class="mt-5 mb-5">
+    <div class="container-fluid">
+        <section class="section-main mb-5">
+            <div class="wrapper">
+                <div class="wrap-title mb-4 d-flex align-items-center justify-content-between">
+                    <h2 class="title-page">
+                        Tài chính và kế toán
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-main mb-4">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="wrap-action row g-4 mb-4 justify-content-center">
+                        <div class="col-12 col-lg-4">
+                            <a href="data_financial_accounting.html" class="btn-large active">
+                                Xuất hóa đơn
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <a href="data_financial_accounting_import.html" class="btn-large">
+                                Nhận hóa đơn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-title mb-5">
+                    <h3 class="title-page text-center">
+                        Thống kê tài chính
+                    </h3>
+                </div>
+                <div class="wrap-filter d-flex flex-row align-items-center justify-content-center gap-3 mw-800 mb-4">
+                    <div class="form-group d-flex flex-row align-items-center gap-3 flex-1">
+                        <div class="form-label mb-0">
+                            Từ
+                        </div>
+                        <input type="text" class="form-control date" id="datepicker">
+                    </div>
+                    <div class="form-group d-flex flex-row align-items-center gap-3 flex-1">
+                        <div class="form-label mb-0">
+                            Đến
+                        </div>
+                        <input type="text" class="form-control date" id="datepicker2">
+                    </div>
+                    <a href="#" class="btn btn-outline-secondary">Tìm kiếm</a>
+                </div>
+                <div class="wrap-filter-result d-flex flex-row align-items-center justify-content-center mb-4 gap-3 fs-20">
+                    <div class="time">
+                        01.11.2024 - 30.11.2024:
+                    </div>
+                    <div class="result fw-bold">
+                        500 000.00 Euro
+                    </div>
+                </div>
+                <div class="wrap-action d-flex align-items-center justify-content-between">
+                    <a href="#" class="btn btn-outline-secondary btn-create ">Nhập hóa đơn</a>
+                    <a href="data_financial_accounting_create_bill.html" class="btn btn-outline-secondary active">
+                        Tạo hóa đơn mới
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M14.9993 10.8346H10.8327V15.0013C10.8327 15.4596 10.4577 15.8346 9.99935 15.8346C9.54102 15.8346 9.16602 15.4596 9.16602 15.0013V10.8346H4.99935C4.54102 10.8346 4.16602 10.4596 4.16602 10.0013C4.16602 9.54297 4.54102 9.16797 4.99935 9.16797H9.16602V5.0013C9.16602 4.54297 9.54102 4.16797 9.99935 4.16797C10.4577 4.16797 10.8327 4.54297 10.8327 5.0013V9.16797H14.9993C15.4577 9.16797 15.8327 9.54297 15.8327 10.0013C15.8327 10.4596 15.4577 10.8346 14.9993 10.8346Z" fill="#5E6D7B"/>
+                        </svg>
+                    </a>
+                </div>
+                <hr class="mb-5 mt-5">
+                <div class="wrap-link mb-5">
+                    <div class="row g-3">
+                        <div class="col-12 col-lg-3 text-center">
+                            <a href="#" class="text-link">Xem PDF</a>
+                        </div>
+                        <div class="col-12 col-lg-3 text-center">
+                            <a href="#" class="text-link">Tạm nhớ In hóa đơn</a>
+                        </div>
+                        <div class="col-12 col-lg-3 text-center">
+                            <a href="#" class="text-link">Gửi hóa đơn vào email</a>
+                        </div>
+                        <div class="col-12 col-lg-3 text-center">
+                            <a href="#" class="text-link">Nhớ vào xuất hóa đơn</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-title mb-4">
+                    <div class="title-page">
+                        Bản tiếng Việt
+                    </div>
+                </div>
+                <div class="wrap-invoice">
+                    <div class="card_invoice">
+                        <div class="card_header">
+                            <div class="card_header_title d-flex flex-row align-items-end justify-content-between">
+                                <div class="wrap">
+                                    <div class="title">
+                                        Hóa đơn
+                                    </div>
+                                    <div class="sub_title">
+                                        Số hóa đơn: 7206538
+                                    </div>
+                                </div>
+                                <div class="logo-head">
+                                    <img src="assets/images/logo_head.png" alt="">
+                                </div>
+                            </div>
+                            <div class="row justify-content-between">
+                                <div class="col-4">
+                                    <div class="card_info">
+                                        <div class="card_info_title fw-bold">
+                                            Bên nhận hóa đơn
+                                        </div>
+                                        <div class="card_info_content">
+                                            Yellow Swan Logistics s.r.o<br>
+                                            Kurzova 2222/16 155 00 Praha <br>
+                                            155 00 Praha <br>
+                                            Česká republika <br>
+                                            IČO: 09383280 <br>
+                                            DIČ: CZ09383280
+                                        </div>
+                                        <div class="card_info_content">
+                                            Ngày xuất hóa đơn: 01.07.2024<br>
+                                            Hạn thanh toán: 15.07.2024<br>
+                                            Số hóa đơn: 4235034532<br>
+                                            Mã số thuế: DE234324<br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="card_info">
+                                        <div class="card_info_title fw-bold">
+                                            Bên xuất hóa đơn
+                                        </div>
+                                        <div class="card_info_content">
+                                            <div class="info">
+                                                skicoo GmbH <br>
+                                                Eschborner Landstraße 42-50 Haus B <br>
+                                                60489 Frankfurt am Main <br>
+                                                Germany <br>
+                                                Tel.: +49 173 639 8535<br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card_info">
+                                        <div class="card_info_content">
+                                            Ngân hàng: Deutsche Bank <br>
+                                            Số tài khoản: 56834532047/5225 <br>
+                                            Số thuế: 11715979 <br>
+                                            VAT: CZ11715979
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_info">
+                                <div class="card_info_content">
+                                    Đây là hóa đơn gửi đối tác cho các công việc dịch vụ và marketing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_body mb-5">
+                            <div class="wrap_table_transparent_2">
+                                <div class="table-responsive">
+                                    <table class="table align-middle table-bordered valign-th-top mb-0">
+                                        <thead>
+                                        <tr>
+                                            <th class="text-nowrap text-center" scope="col">Thứ tự</th>
+                                            <th class="text-nowrap text-center" scope="col">
+                                                Mục
+                                            </th>
+                                            <th class="text-nowrap text-center" scope="col">
+                                                Số lượng
+                                            </th>
+                                            <th class="text-nowrap text-center" scope="col">
+                                                Đơn giá
+                                            </th>
+                                            <th class="text-nowrap text-center" scope="col">
+                                                Thuế suất GTGT
+                                            </th>
+                                            <th class="text-nowrap text-end" scope="col">
+                                                Amount
+                                            </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                1.
+                                            </td>
+                                            <td>
+                                                Dịch vụ chăm sóc khách hàng
+                                            </td>
+                                            <td class="text-center">
+                                                1
+                                            </td>
+                                            <td class="text-center">
+                                                3 250,00 Euro
+                                            </td>
+                                            <td class="text-center">
+                                                19%
+                                            </td>
+                                            <td class="text-end">
+                                                3 932,50 Euro
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1.
+                                            </td>
+                                            <td>
+                                                Dịch vụ chăm sóc khách hàng
+                                            </td>
+                                            <td class="text-center">
+                                                1
+                                            </td>
+                                            <td class="text-center">
+                                                3 250,00 Euro
+                                            </td>
+                                            <td class="text-center">
+                                                19%
+                                            </td>
+                                            <td class="text-end">
+                                                3 932,50 Euro
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                1.
+                                            </td>
+                                            <td>
+                                                Dịch vụ chăm sóc khách hàng
+                                            </td>
+                                            <td class="text-center">
+                                                1
+                                            </td>
+                                            <td class="text-center">
+                                                3 250,00 Euro
+                                            </td>
+                                            <td class="text-center">
+                                                19%
+                                            </td>
+                                            <td class="text-end">
+                                                3 932,50 Euro
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card-bg">
+                                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
+                                    <div class="info_left">
+                                        <div class="label">
+                                            Tổng số tiền các mục
+                                        </div>
+                                    </div>
+                                    <div class="info_right">
+                                        9 642,50 Euro
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
+                                    <div class="info_left d-flex flex-row align-items-center">
+                                        <div class="label">
+                                            Voucher giảm giá
+                                        </div>
+                                    </div>
+                                    <div class="label_info d-flex flex-row">
+                                        <span>15,00%</span>
+                                        <span>3</span>
+                                    </div>
+                                    <div class="info_right">
+                                        9 642,50 Euro
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
+                                    <div class="info_left">
+                                        <div class="label">
+                                            Tổng số tiền chưa gồm thuế
+                                        </div>
+                                    </div>
+                                    <div class="info_right">
+                                        8 304,62 Euro
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
+                                    <div class="info_left d-flex flex-row align-items-center">
+                                        <div class="label">
+                                            Thuế GTGT
+                                        </div>
+                                    </div>
+                                    <div class="label_info d-flex flex-row">
+                                        <span>7,00%</span>
+                                    </div>
+                                    <div class="info_right">
+                                        140,00 Euro
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
+                                    <div class="info_left d-flex flex-row align-items-center">
+                                        <div class="label">
+                                            Thuế GTGT
+                                        </div>
+                                    </div>
+                                    <div class="label_info d-flex flex-row">
+                                        <span>19,00%</span>
+                                    </div>
+                                    <div class="info_right">
+                                        1197,88 Euro
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
+                                    <div class="info_left">
+                                        <div class="label fw-bold">
+                                            Tổng
+                                        </div>
+                                    </div>
+                                    <div class="info_right fw-bold">
+                                        9 321,50 Euro
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card_body_info card_body_info_qr d-flex flex-row align-items-lg-center">
+                                <div class="info_left">
+                                    <div class="info_left_title fw-bold mb-4">
+                                        Thanh toán qua QR code
+                                    </div>
+                                    <div class="info_left_content d-flex flex-row align-items-center mb-4">
+                                        <div class="label">
+                                            Hạn thanh toán đến:
+                                        </div>
+                                        <div class="label_info d-flex flex-row">
+                                            <span>19,00%</span>
+                                        </div>
+                                    </div>
+                                    <div class="info_left_content d-flex flex-row align-items-center">
+                                        <div class="label">
+                                            Số hóa đơn:
+                                        </div>
+                                        <div class="label_info d-flex flex-row">
+                                            <span>19,00%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info_right">
+                                    <img src="assets/images/qr2.png" alt="" class="qr">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card_footer d-flex flex-row justify-content-between">
+                            <div class="card_footer_info">
+                                Skicoo GmbH <br>
+                                60489 Frankfurt am Main, Germany <br>
+                                Tel.: +49 173 639 8535<br>
+                                Email: info@skicoo.com<br>
+                            </div>
+                            <div class="card_footer_info">
+                                Nhà bank: Deutsche Bank<br>
+                                Iban: DE32 4353 5235 4500<br>
+                                BIC: COEA4V3GS<br>
+                            </div>
+                            <div class="card_footer_info">
+                                Skicoo hóa đơn <br>
+                                Phòng tài chính: +49 173 4233 124 <br>
+                                invoices@skicoo.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+
+    </div>
+</footer>
+
+
+<!-- Modal create -->
+<div class="modal modal-custom fade" id="createInfoModal" tabindex="-1" aria-labelledby="createInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title">
+                    <h5 class="modal-title" id="createInfoModalLabel">Nhập hóa đơn</h5>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#5E6D7B"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group mb-3">
+                        <label for="" class="form-label">Công ty <b>nhận</b> hóa đơn:</label>
+                        <input type="text" class="form-control" placeholder="Chọn hoặc điền tên công ty">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="form-label">Số hóa đơn:</label>
+                                <input type="text" class="form-control" placeholder="Nhập số hóa đơn">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="form-label">Tổng tiền:</label>
+                                <input type="text" class="form-control" placeholder="Nhập tổng tiền">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="form-label">Hạn trả:</label>
+                                <input type="text" class="form-control" placeholder="Nhập số hóa đơn">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="form-label">Kỳ thuế:</label>
+                                <input type="text" class="form-control" placeholder="Nhập tổng tiền">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group d-flex flex-row align-items-center gap-3 mb-3">
+                        <label for="" class="form-label">PDF:</label>
+                        <div class="form-group-upload-button form-group d-flex flex-wrap align-items-center">
+                            <label for="formFile" class="btn btn-outline-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M8.52621 8.52753C9.28215 7.77164 10.2997 7.33522 11.3684 7.30854C12.4371 7.28186 13.4752 7.66696 14.2679 8.38419L14.4187 8.52753L16.7754 10.885C17.5429 11.6539 17.9798 12.6922 17.9928 13.7785C18.0059 14.8648 17.5942 15.9133 16.8454 16.7005C16.0966 17.4876 15.07 17.9512 13.9844 17.9924C12.8987 18.0335 11.84 17.649 11.0337 16.9209L10.8837 16.7775L9.11537 15.0092C8.96592 14.8592 8.87915 14.658 8.87268 14.4464C8.86622 14.2347 8.94055 14.0286 9.08058 13.8698C9.22061 13.711 9.41583 13.6114 9.6266 13.5914C9.83737 13.5713 10.0479 13.6322 10.2154 13.7617L10.2937 13.8309L12.062 15.5992C12.5204 16.0603 13.1404 16.3246 13.7905 16.3362C14.4405 16.3477 15.0695 16.1056 15.544 15.6611C16.0185 15.2167 16.3012 14.6048 16.3321 13.9554C16.363 13.306 16.1397 12.67 15.7095 12.1825L15.597 12.0634L13.2404 9.70669C13.0082 9.4745 12.7326 9.29031 12.4293 9.16465C12.1259 9.03899 11.8008 8.97431 11.4725 8.97431C11.1441 8.97431 10.819 9.03899 10.5157 9.16465C10.2123 9.29031 9.93669 9.4745 9.70454 9.70669C9.54817 9.86295 9.33614 9.95069 9.11508 9.95061C8.89402 9.95053 8.68205 9.86264 8.52579 9.70628C8.36953 9.54991 8.28179 9.33787 8.28187 9.11681C8.28195 8.89576 8.36984 8.68378 8.52621 8.52753ZM3.22287 3.22419C3.97882 2.4683 4.99637 2.03188 6.06506 2.00521C7.13376 1.97853 8.17182 2.36363 8.96454 3.08086L9.11537 3.22419L10.8829 4.99336C11.0323 5.14332 11.1191 5.34455 11.1256 5.55618C11.132 5.7678 11.0577 5.97395 10.9177 6.13276C10.7776 6.29156 10.5824 6.39111 10.3716 6.41119C10.1609 6.43127 9.95037 6.37037 9.78287 6.24086L9.70454 6.17169L7.93704 4.40419C7.47785 3.94799 6.85961 3.68767 6.2124 3.678C5.56519 3.66834 4.93946 3.91007 4.46684 4.35235C3.99423 4.79463 3.71158 5.40298 3.67835 6.04941C3.64513 6.69584 3.86392 7.32996 4.28871 7.81836L4.40121 7.93836L6.75871 10.2959C7.22753 10.7645 7.8633 11.0278 8.52621 11.0278C9.18912 11.0278 9.82489 10.7645 10.2937 10.2959C10.3711 10.2184 10.4629 10.157 10.564 10.1151C10.6652 10.0732 10.7735 10.0516 10.883 10.0515C10.9925 10.0515 11.1008 10.073 11.202 10.1149C11.3031 10.1567 11.395 10.2181 11.4725 10.2954C11.5499 10.3728 11.6113 10.4647 11.6532 10.5658C11.6952 10.6669 11.7168 10.7753 11.7168 10.8847C11.7168 10.9942 11.6953 11.1026 11.6535 11.2037C11.6116 11.3049 11.5502 11.3968 11.4729 11.4742C10.7169 12.2301 9.69937 12.6665 8.63068 12.6932C7.56199 12.7199 6.52392 12.3348 5.73121 11.6175L5.57954 11.4742L3.22287 9.11669C2.44174 8.33533 2.00293 7.27571 2.00293 6.17086C2.00293 5.06601 2.44174 4.00556 3.22287 3.22419Z" fill="#5E6D7B"/>
+                                </svg>
+                            </label>
+                            <input class="form-control" type="file" id="formFile" hidden="">
+                            <div class="image">
+                                <div class="file-link">
+                                    <img src="assets/images/pdf.png" alt="" class="imgPreview">
+                                </div>
+                                <a href="javascript:void(0);" class="btn-icon-border btn-danger btn-delete-preview">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#EA2D37"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center ">
+                        <a href="#" class="btn btn-outline-secondary ps-5 pe-5">OK</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
+
+
+<!-- Modal edit -->
+<div class="modal modal-custom fade" id="editInfoModal" tabindex="-1" aria-labelledby="editInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header d-flex flex-row align-items-center justify-content-between">
+                <div class="title">
+                    <h5 class="modal-title" id="editInfoModalLabel">Chỉnh sửa hóa đơn</h5>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#5E6D7B"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group mb-3">
+                        <label for="" class="form-label">Công ty <b>nhận</b> hóa đơn:</label>
+                        <input type="text" class="form-control" placeholder="Chọn hoặc điền tên công ty">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="form-label">Số hóa đơn:</label>
+                                <input type="text" class="form-control" placeholder="Nhập số hóa đơn">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="form-label">Tổng tiền:</label>
+                                <input type="text" class="form-control" placeholder="Nhập tổng tiền">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="form-label">Hạn trả:</label>
+                                <input type="text" class="form-control" placeholder="Nhập số hóa đơn">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="form-group mb-3">
+                                <label for="" class="form-label">Kỳ thuế:</label>
+                                <input type="text" class="form-control" placeholder="Nhập tổng tiền">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group d-flex flex-row align-items-center gap-3 mb-3">
+                        <label for="" class="form-label">PDF:</label>
+                        <div class="form-group-upload-button form-group d-flex flex-wrap align-items-center">
+                            <label for="formFile" class="btn btn-outline-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M8.52621 8.52753C9.28215 7.77164 10.2997 7.33522 11.3684 7.30854C12.4371 7.28186 13.4752 7.66696 14.2679 8.38419L14.4187 8.52753L16.7754 10.885C17.5429 11.6539 17.9798 12.6922 17.9928 13.7785C18.0059 14.8648 17.5942 15.9133 16.8454 16.7005C16.0966 17.4876 15.07 17.9512 13.9844 17.9924C12.8987 18.0335 11.84 17.649 11.0337 16.9209L10.8837 16.7775L9.11537 15.0092C8.96592 14.8592 8.87915 14.658 8.87268 14.4464C8.86622 14.2347 8.94055 14.0286 9.08058 13.8698C9.22061 13.711 9.41583 13.6114 9.6266 13.5914C9.83737 13.5713 10.0479 13.6322 10.2154 13.7617L10.2937 13.8309L12.062 15.5992C12.5204 16.0603 13.1404 16.3246 13.7905 16.3362C14.4405 16.3477 15.0695 16.1056 15.544 15.6611C16.0185 15.2167 16.3012 14.6048 16.3321 13.9554C16.363 13.306 16.1397 12.67 15.7095 12.1825L15.597 12.0634L13.2404 9.70669C13.0082 9.4745 12.7326 9.29031 12.4293 9.16465C12.1259 9.03899 11.8008 8.97431 11.4725 8.97431C11.1441 8.97431 10.819 9.03899 10.5157 9.16465C10.2123 9.29031 9.93669 9.4745 9.70454 9.70669C9.54817 9.86295 9.33614 9.95069 9.11508 9.95061C8.89402 9.95053 8.68205 9.86264 8.52579 9.70628C8.36953 9.54991 8.28179 9.33787 8.28187 9.11681C8.28195 8.89576 8.36984 8.68378 8.52621 8.52753ZM3.22287 3.22419C3.97882 2.4683 4.99637 2.03188 6.06506 2.00521C7.13376 1.97853 8.17182 2.36363 8.96454 3.08086L9.11537 3.22419L10.8829 4.99336C11.0323 5.14332 11.1191 5.34455 11.1256 5.55618C11.132 5.7678 11.0577 5.97395 10.9177 6.13276C10.7776 6.29156 10.5824 6.39111 10.3716 6.41119C10.1609 6.43127 9.95037 6.37037 9.78287 6.24086L9.70454 6.17169L7.93704 4.40419C7.47785 3.94799 6.85961 3.68767 6.2124 3.678C5.56519 3.66834 4.93946 3.91007 4.46684 4.35235C3.99423 4.79463 3.71158 5.40298 3.67835 6.04941C3.64513 6.69584 3.86392 7.32996 4.28871 7.81836L4.40121 7.93836L6.75871 10.2959C7.22753 10.7645 7.8633 11.0278 8.52621 11.0278C9.18912 11.0278 9.82489 10.7645 10.2937 10.2959C10.3711 10.2184 10.4629 10.157 10.564 10.1151C10.6652 10.0732 10.7735 10.0516 10.883 10.0515C10.9925 10.0515 11.1008 10.073 11.202 10.1149C11.3031 10.1567 11.395 10.2181 11.4725 10.2954C11.5499 10.3728 11.6113 10.4647 11.6532 10.5658C11.6952 10.6669 11.7168 10.7753 11.7168 10.8847C11.7168 10.9942 11.6953 11.1026 11.6535 11.2037C11.6116 11.3049 11.5502 11.3968 11.4729 11.4742C10.7169 12.2301 9.69937 12.6665 8.63068 12.6932C7.56199 12.7199 6.52392 12.3348 5.73121 11.6175L5.57954 11.4742L3.22287 9.11669C2.44174 8.33533 2.00293 7.27571 2.00293 6.17086C2.00293 5.06601 2.44174 4.00556 3.22287 3.22419Z" fill="#5E6D7B"/>
+                                </svg>
+                            </label>
+                            <input class="form-control" type="file" id="formFile" hidden="">
+                            <div class="image">
+                                <div class="file-link">
+                                    <img src="assets/images/pdf.png" alt="" class="imgPreview">
+                                </div>
+                                <a href="javascript:void(0);" class="btn-icon-border btn-danger btn-delete-preview">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.0004 11.1788L14.7146 15.8929C14.8718 16.0447 15.0823 16.1287 15.3008 16.1268C15.5193 16.1249 15.7283 16.0373 15.8828 15.8828C16.0373 15.7283 16.1249 15.5193 16.1268 15.3008C16.1287 15.0823 16.0447 14.8718 15.8929 14.7146L11.1788 10.0004L15.8929 5.28628C16.0447 5.12911 16.1287 4.91861 16.1268 4.70012C16.1249 4.48162 16.0373 4.27261 15.8828 4.1181C15.7283 3.96359 15.5193 3.87595 15.3008 3.87405C15.0823 3.87216 14.8718 3.95615 14.7146 4.10795L10.0004 8.82212L5.28626 4.10795C5.12838 3.9599 4.9191 3.87909 4.7027 3.8826C4.4863 3.88612 4.27975 3.97368 4.12676 4.12678C3.97378 4.27987 3.88636 4.48648 3.88299 4.70288C3.87963 4.91929 3.9606 5.12851 4.10876 5.28628L8.82209 10.0004L4.10792 14.7146C4.02833 14.7915 3.96485 14.8834 3.92117 14.9851C3.8775 15.0868 3.85451 15.1961 3.85355 15.3068C3.85259 15.4174 3.87367 15.5272 3.91557 15.6296C3.95747 15.732 4.01935 15.825 4.09759 15.9033C4.17584 15.9815 4.26888 16.0434 4.37129 16.0853C4.47371 16.1272 4.58344 16.1483 4.69409 16.1473C4.80474 16.1464 4.91409 16.1234 5.01576 16.0797C5.11743 16.036 5.20938 15.9725 5.28626 15.8929L10.0004 11.1788Z" fill="#EA2D37"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group text-center d-flex flex-row align-items-center gap-3">
+                        <a href="#" class="btn btn-outline-secondary ps-5 pe-5 flex-1">Xóa</a>
+                        <a href="#" class="btn btn-outline-secondary ps-5 pe-5 flex-1">OK</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
+
+
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script>
+<script src="assets/vendors/apexcharts-bundle/dist/apexcharts.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<!-- Ngôn ngữ tiếng Việt -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/vn.js"></script>
+<script>
+    $(document).ready(function (){
+        flatpickr("#datepicker", {
+            dateFormat: "d-m-Y", // Định dạng ngày
+            enableTime: false,   // Chỉ chọn ngày, không có thời gian
+            locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
+        });
+        flatpickr("#datepicker2", {
+            dateFormat: "d-m-Y", // Định dạng ngày
+            enableTime: false,   // Chỉ chọn ngày, không có thời gian
+            locale: "vn",        // Sử dụng ngôn ngữ tiếng Việt
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.btn-edit').click(function (){
+            $('#editInfoModal').modal('show');
+        });
+
+        $('.btn-create').click(function (){
+            $('#createInfoModal').modal('show');
+        });
+    });
+</script>
+</body>
+</html>

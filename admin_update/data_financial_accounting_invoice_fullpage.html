@@ -1,0 +1,556 @@
+
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skicoo</title>
+    <!-- css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        .card_invoice {
+            page-break-inside: avoid;
+            padding: 20px 40px;
+            border-radius: 16px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .card_invoice .mb-4 {
+            margin-bottom: 10px;
+        }
+        .card_invoice .mb-5 {
+            margin-bottom: 16px;
+        }
+        .card_invoice hr {
+            border-color: #CDCDCD;
+            opacity: 1;
+            margin: 10px 0;
+        }
+        .card_invoice .card_header_title {
+            margin-bottom: 20px;
+        }
+        .card_invoice .card_header_title .title {
+            color: #43464D;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 120%;
+            margin-bottom: 10px;
+        }
+        .card_invoice .card_header_title .sub_title {
+            color: #6D727B;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        .card_invoice .card_info {
+            color: #6D727B;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 150%;
+            gap: 40px;
+        }
+        .card_invoice .card_info .card_info_title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .card_invoice .card_info .card_info_content {
+            margin-bottom: 10px;
+        }
+        .card_invoice .card_info .card_info_content .image img {
+            width: 154px;
+        }
+        .card_invoice .wrap_table_transparent_2 {
+            margin-bottom: 16px;
+        }
+        .card_invoice .wrap_table_transparent_2 .table {
+            margin-bottom: 0;
+        }
+        .card_invoice .wrap_table_transparent_2 .table th, .card_invoice .wrap_table_transparent_2 .table td {
+            background-color: transparent;
+            padding: 8px 0;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .card_invoice .wrap_table_transparent_2 .table thead th {
+            color: #6D727B;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 120%; /* 19.2px */
+            border-bottom: 1px solid #D5D7DB;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr td {
+            color: #6D727B;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.5;
+            border-bottom: 1px solid #D5D7DB;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr td a {
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr td a:hover {
+            text-decoration: underline;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr:last-child td {
+            border-bottom: 0;
+        }
+        .card_invoice .wrap_table_transparent_2 .table tbody tr:hover td a {
+            color: #2196F3;
+        }
+        .card_invoice .card-bg {
+            border-radius: 16px;
+            background: #F7F7F7;
+            padding: 12px 15px;
+            margin-bottom: 12px;
+        }
+        .card_invoice .label_info span{
+            margin: 0 5px;
+        }
+        .card_invoice .label_info span {
+            padding: 5px 5px;
+            display: inline-block;
+            border-radius: 8px;
+            border: 1px solid #D5D7DB;
+            color: #43464D;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 120%;
+            min-width: 49px;
+            text-align: center;
+        }
+        .card_invoice .card_body_info {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        .card_invoice .card_body_info .info_left {
+            color: #989B9F;
+        }
+        .card_invoice .card_body_info .info_left_content .label {
+            min-width: 100px;
+        }
+        .card_invoice .card_body_info .info_right {
+            color: #43464D;
+        }
+        .card_invoice .card_body_info .info_right .qr {
+            width: 81px;
+        }
+        .card_invoice .card_body_info.card_body_info_qr td.ps-120:last-child {
+            padding-left: 120px;
+        }
+        .card_invoice .card_body_info.card_body_info_qr .info_left_title {
+            color: #43464D;
+        }
+        .card_invoice .card_body_info.card_body_info_qr .info_left_content {
+            gap: 48px;
+        }
+        .card_invoice .card_body_info.card_body_info_qr .info_left_content .label {
+            font-size: 13px;
+            width: 200px;
+        }
+        .card_invoice .card_footer_info {
+            color: #43464D;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+        .table{
+            width: 100%;
+        }
+        .image img{
+            width: 120px;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="bl_home">
+<main class="main">
+    <div class="card_invoice">
+        <div class="card_header">
+
+            <table style="width: 100%; border: 0; border-collapse: collapse;">
+                <tr style="vertical-align: top;">
+                    <td style="width: 60%">
+                        <div class="card_header_title">
+                            <div class="title">
+                                Hóa đơn
+                            </div>
+                            <div class="sub_title">
+                                Số hóa đơn: 7206538
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="image">
+                            <img src="assets/images/logo_head.png" alt="">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="width: 100%; border: 0; border-collapse: collapse;">
+                <tr style="vertical-align: top;">
+                    <td style="width: 60%">
+                        <div class="card_info">
+                            <div class="card_info_title">
+                                Bên nhận hóa đơn
+                            </div>
+                            <div class="card_info_content">
+                                Yellow Swan Logistics s.r.o<br>
+                                Kurzova 2222/16 155 00 Praha <br>
+                                155 00 Praha <br>
+                                Česká republika <br>
+                                IČO: 09383280 <br>
+                                DIČ: CZ09383280
+                            </div>
+                            <div class="card_info_content">
+                                Ngày xuất hóa đơn: 01.07.2024<br>
+                                Hạn thanh toán: 15.07.2024<br>
+                                Số hóa đơn: 4235034532<br>
+                                Mã số thuế: DE234324<br>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card_info">
+                            <div class="card_info_title fw-bold">
+                                Bên xuất hóa đơn
+                            </div>
+                            <div class="card_info_content">
+                                <div class="info">
+                                    skicoo GmbH <br>
+                                    Eschborner Landstraße 42-50 Haus B <br>
+                                    60489 Frankfurt am Main <br>
+                                    Germany <br>
+                                    Tel.: +49 173 639 8535<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card_info">
+                            <div class="card_info_content">
+                                Ngân hàng: Deutsche Bank <br>
+                                Số tài khoản: 56834532047/5225 <br>
+                                Số thuế: 11715979 <br>
+                                VAT: CZ11715979
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="card_info">
+                <div class="card_info_content">
+                    Đây là hóa đơn gửi đối tác cho các công việc dịch vụ và marketing.
+                </div>
+            </div>
+        </div>
+        <div class="card_body mb-5">
+            <div class="wrap_table_transparent_2">
+                <div class="table-responsive">
+                    <table class="table align-middle table-bordered valign-th-top mb-0">
+                        <thead>
+                        <tr>
+                            <th class="text-nowrap text-center" scope="col">Thứ tự</th>
+                            <th class="text-nowrap text-center" scope="col">
+                                Mục
+                            </th>
+                            <th class="text-nowrap text-center" scope="col">
+                                Số lượng
+                            </th>
+                            <th class="text-nowrap text-center" scope="col">
+                                Đơn giá
+                            </th>
+                            <th class="text-nowrap text-center" scope="col">
+                                Thuế suất GTGT
+                            </th>
+                            <th class="text-nowrap text-end" scope="col">
+                                Amount
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                1.
+                            </td>
+                            <td>
+                                Dịch vụ chăm sóc khách hàng
+                            </td>
+                            <td class="text-center">
+                                1
+                            </td>
+                            <td class="text-center">
+                                3 250,00 Euro
+                            </td>
+                            <td class="text-center">
+                                19%
+                            </td>
+                            <td class="text-end">
+                                3 932,50 Euro
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1.
+                            </td>
+                            <td>
+                                Dịch vụ chăm sóc khách hàng
+                            </td>
+                            <td class="text-center">
+                                1
+                            </td>
+                            <td class="text-center">
+                                3 250,00 Euro
+                            </td>
+                            <td class="text-center">
+                                19%
+                            </td>
+                            <td class="text-end">
+                                3 932,50 Euro
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                1.
+                            </td>
+                            <td>
+                                Dịch vụ chăm sóc khách hàng
+                            </td>
+                            <td class="text-center">
+                                1
+                            </td>
+                            <td class="text-center">
+                                3 250,00 Euro
+                            </td>
+                            <td class="text-center">
+                                19%
+                            </td>
+                            <td class="text-end">
+                                3 932,50 Euro
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card-bg">
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 50%;">
+                                <div class="info_left">
+                                    <div class="label">
+                                        Tổng số tiền các mục
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 33%;">
+                                <div class="info_left d-flex flex-row align-items-center">
+                                    <div class="label">
+                                        Voucher giảm giá
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 33%; text-align: center">
+                                <div class="label_info" style="display: inline-block;">
+                                    <span>15,00%</span>
+                                    <span>3</span>
+                                </div>
+                            </td>
+                            <td style="width: 33%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 50%;">
+                                <div class="info_left">
+                                    <div class="label">
+                                        Tổng số tiền chưa gồm thuế
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 33%;">
+                                <div class="info_left d-flex flex-row align-items-center">
+                                    <div class="label">
+                                        Thuế GTGT
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 33%; text-align: center">
+                                <div class="label_info" style="display: inline-block;">
+                                    <span>7,00%</span>
+                                </div>
+                            </td>
+                            <td style="width: 33%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 33%;">
+                                <div class="info_left d-flex flex-row align-items-center">
+                                    <div class="label">
+                                        Thuế GTGT
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 33%; text-align: center">
+                                <div class="label_info" style="display: inline-block;">
+                                    <span>7,00%</span>
+                                </div>
+                            </td>
+                            <td style="width: 33%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="card_body_info d-flex flex-row align-items-center justify-content-between">
+                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                        <tr style="vertical-align: center;">
+                            <td style="width: 50%;">
+                                <div class="info_left">
+                                    <div class="label">
+                                        Tổng
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50%;">
+                                <div class="info_right" style="text-align: right;">
+                                    9 642,50 Euro
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="card_body_info card_body_info_qr">
+                <table style="border: 0; border-collapse: collapse;">
+                    <tr style="vertical-align: center;">
+                        <td>
+                            <div class="info_left">
+                                <div class="info_left_title fw-bold mb-4">
+                                    Thanh toán qua QR code
+                                </div>
+                                <div class="info_left_content d-flex flex-row align-items-center mb-4">
+                                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                                        <tr style="vertical-align: center;">
+                                            <td>
+                                                <div class="label">
+                                                    Hạn thanh toán đến:
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="label_info">
+                                                    <span>19,00%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="info_left_content d-flex flex-row align-items-center">
+                                    <table style="width: 100%; border: 0; border-collapse: collapse;">
+                                        <tr style="vertical-align: center;">
+                                            <td>
+                                                <div class="label">
+                                                    Số hóa đơn:
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="label_info">
+                                                    <span>19,00%</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="ps-120">
+                            <div class="info_right">
+                                <img src="assets/images/qr2.png" alt="" class="qr">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div class="card_footer">
+            <table style="width: 100%; border: 0; border-collapse: collapse;">
+                <tr style="vertical-align: top;">
+                    <td style="width: 33%">
+                        <div class="card_footer_info">
+                            Skicoo GmbH <br>
+                            60489 Frankfurt am Main, Germany <br>
+                            Tel.: +49 173 639 8535<br>
+                            Email: info@skicoo.com<br>
+                        </div>
+                    </td>
+                    <td style="width: 33%">
+                        <div class="card_footer_info">
+                            Nhà bank: Deutsche Bank<br>
+                            Iban: DE32 4353 5235 4500<br>
+                            BIC: COEA4V3GS<br>
+                        </div>
+                    </td>
+                    <td style="width: 33%">
+                        <div class="card_footer_info">
+                            Skicoo hóa đơn <br>
+                            Phòng tài chính: +49 173 4233 124 <br>
+                            invoices@skicoo.com
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

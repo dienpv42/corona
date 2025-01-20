@@ -2334,4 +2334,134 @@ input {
   flex: 1;
 }
 
+.card_invoice {
+  padding: 40px;
+  border-radius: 16px;
+  border: 2px solid var(--gray4, #9D9D9C);
+  background: #FFF;
+}
+.card_invoice .card_header_title {
+  margin-bottom: 48px;
+}
+.card_invoice .card_header_title .title {
+  color: #43464D;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+.card_invoice .card_header_title .sub_title {
+  color: #6D727B;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.card_invoice .card_info {
+  color: #6D727B;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  gap: 40px;
+}
+.card_invoice .card_info .card_info_title {
+  margin-bottom: 16px;
+}
+.card_invoice .card_info .card_info_content {
+  margin-bottom: 32px;
+}
+.card_invoice .card_info .card_info_content .image img {
+  width: 154px;
+}
+.card_invoice .wrap_table_transparent_2 {
+  margin-bottom: 16px;
+}
+.card_invoice .wrap_table_transparent_2 .table {
+  margin-bottom: 0;
+}
+.card_invoice .wrap_table_transparent_2 .table th, .card_invoice .wrap_table_transparent_2 .table td {
+  background-color: transparent;
+  padding: 20px 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.card_invoice .wrap_table_transparent_2 .table thead th {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+  border-bottom: 1px solid #D5D7DB;
+}
+.card_invoice .wrap_table_transparent_2 .table tbody tr td {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  border-bottom: 1px solid #D5D7DB;
+}
+.card_invoice .wrap_table_transparent_2 .table tbody tr td a {
+  text-decoration: none;
+  font-weight: 500;
+}
+.card_invoice .wrap_table_transparent_2 .table tbody tr td a:hover {
+  text-decoration: underline;
+}
+.card_invoice .wrap_table_transparent_2 .table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.card_invoice .card-bg {
+  border-radius: 16px;
+  background: #F7F7F7;
+  padding: 32px 48px;
+  margin-bottom: 48px;
+}
+.card_invoice .label_info {
+  gap: 32px;
+}
+.card_invoice .label_info span {
+  padding: 10px 24px;
+  display: inline-block;
+  border-radius: 8px;
+  border: 1px solid #D5D7DB;
+  color: #43464D;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 120%;
+  min-width: 100px;
+  text-align: center;
+}
+.card_invoice .card_body_info {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.card_invoice .card_body_info .info_left {
+  color: #989B9F;
+}
+.card_invoice .card_body_info .info_left_content .label {
+  min-width: 130px;
+}
+.card_invoice .card_body_info .info_right {
+  color: #43464D;
+}
+.card_invoice .card_body_info .info_right .qr {
+  width: 155px;
+}
+.card_invoice .card_body_info.card_body_info_qr {
+  gap: 120px;
+}
+.card_invoice .card_body_info.card_body_info_qr .info_left_title {
+  color: #43464D;
+}
+.card_invoice .card_body_info.card_body_info_qr .info_left_content {
+  gap: 48px;
+}
+.card_invoice .card_body_info.card_body_info_qr .info_left_content .label {
+  font-size: 16px;
+  width: 200px;
+}
+.card_invoice .card_footer_info {
+  color: #43464D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
 /*# sourceMappingURL=app.css.map */
