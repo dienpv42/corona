@@ -1,5 +1,5 @@
 @mixin SegoeUIVariable(){
-    font-family: 'SegoeUIVariable', sans-serif;
+    font-family: 'SegoeUIVariable', sans-serif !important;
 }
 @mixin text-style($fs, $lh, $cl, $fw:400){
     font-size: $fs;
