@@ -1173,7 +1173,7 @@
 
 
   table {
-    width: 100%;
+    width: 100% !important;
     border-collapse: collapse;
     position: relative;
 
@@ -2614,9 +2614,35 @@
 }
 .dataTable{
   @include SegoeUIVariable();
-  thead{
-    .sorting_asc,.sortable{
-      background-image: unset !important;
-    }
+  th.sorting:after {
+    content: " ↑↓"; /* Mũi tên tăng và giảm */
+    font-size: 20px;
+    color: #5E6D7B; /* Màu mặc định */
+    padding-left: 5px;
+  }
+
+  /* Khi cột được sắp xếp tăng dần */
+  th.sorting_asc:after {
+    content: " ↑↓"; /* Hiển thị cả hai mũi tên */
+    color: #333; /* Làm nổi bật */
+  }
+
+  /* Làm nổi bật mũi tên tăng */
+  th.sorting_asc:after {
+    content: " ↑↓";
+    color: #333;
+    font-weight: bold;
+  }
+
+  /* Khi cột được sắp xếp giảm dần */
+  th.sorting_desc:after {
+    content: " ↑↓"; /* Hiển thị cả hai mũi tên */
+    color: #333; /* Làm nổi bật */
+  }
+
+  /* Làm nổi bật mũi tên giảm */
+  th.sorting_desc:after {
+    content: " ↑↓";
+    color: #0000dd;
   }
 }
