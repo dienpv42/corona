@@ -2181,6 +2181,7 @@ input {
 .w-list-product .item .name {
   font-size: 20px;
   color: #575756;
+  flex: 1;
 }
 .w-list-product .item .nation {
   text-align: center;
