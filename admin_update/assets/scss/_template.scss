@@ -194,6 +194,8 @@
 }
 
 .container-fluid {
+  max-width: 1900px;
+  margin: auto;
   padding: 0 56px;
   @media (max-width: 991px) {
     padding: 0 15px;
@@ -604,6 +606,7 @@
 
 // form
 .select2-container--bootstrap-5 .select2-selection {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   border-radius: 12px;
   border: 1px solid #DDD;
   padding: 7px 16px;
@@ -612,7 +615,10 @@
   font-weight: 400;
   line-height: 150%;
   min-height: 41.5px;
-
+  background-image: var(--bs-form-select-bg-img);
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 16px 12px;
   &:focus {
     box-shadow: unset;
   }
@@ -828,6 +834,9 @@
 
   &.block {
     background: #FFCDCA;
+  }
+  &::placeholder{
+    opacity: .5;
   }
 }
 
@@ -1134,6 +1143,13 @@
 
         &:focus {
           box-shadow: unset;
+        }
+      }
+      &.active {
+        >*{
+          background-color: #F1F1F1;
+          border-color: #CDCDCD;
+          color: #575756;
         }
       }
     }
@@ -1497,6 +1513,7 @@
 }
 
 // nestable
+
 .wrap-nestable {
   .head {
     color: #575756;
@@ -1631,6 +1648,7 @@
     position: absolute;
     pointer-events: none;
     z-index: 9999;
+
   }
 
   .dd-dragel > .dd-item .dd-handle {
@@ -2646,4 +2664,8 @@
     content: " ↑↓";
     color: #0000dd;
   }
+}
+
+ol.dd-dragel.dd-list{
+  display: none !important;
 }

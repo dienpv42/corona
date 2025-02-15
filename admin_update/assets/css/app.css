@@ -310,6 +310,8 @@ input {
 }
 
 .container-fluid {
+  max-width: 1900px;
+  margin: auto;
   padding: 0 56px;
 }
 @media (max-width: 991px) {
@@ -668,6 +670,7 @@ input {
   transform: rotate(180deg);
 }
 .select2-container--bootstrap-5 .select2-selection {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   border-radius: 12px;
   border: 1px solid #DDD;
   padding: 7px 16px;
@@ -676,6 +679,10 @@ input {
   font-weight: 400;
   line-height: 150%;
   min-height: 41.5px;
+  background-image: var(--bs-form-select-bg-img);
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
 }
 .select2-container--bootstrap-5 .select2-selection:focus {
   box-shadow: unset;
@@ -855,6 +862,9 @@ input {
 }
 .form-control.block, .form-select.block, .group-select-label.block {
   background: #FFCDCA;
+}
+.form-control::placeholder, .form-select::placeholder, .group-select-label::placeholder {
+  opacity: 0.5;
 }
 
 .form-control.date {
@@ -1113,6 +1123,11 @@ input {
 }
 .nav-pagination .pagination .page-item .page-link:focus {
   box-shadow: unset;
+}
+.nav-pagination .pagination .page-item.active > * {
+  background-color: #F1F1F1;
+  border-color: #CDCDCD;
+  color: #575756;
 }
 
 .wrap-table .table-scroll {
@@ -2327,6 +2342,10 @@ input {
   color: #0000dd;
 }
 
+ol.dd-dragel.dd-list {
+  display: none !important;
+}
+
 .bl-body {
   font-family: "SegoeUIVariable", sans-serif !important;
   font-size: 17px;
@@ -2422,7 +2441,7 @@ input {
 }
 .bl-body .header .header-bottom .wrap-nav .nav .nav-item .nav-link {
   color: #5E6D7B;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 150%;
   padding: 1px 32px;
