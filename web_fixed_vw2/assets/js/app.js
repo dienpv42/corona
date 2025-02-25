@@ -282,6 +282,12 @@
         $('.wrap_menu_fixed, .bg_backgdrop').toggleClass('active');
     });
 
+    $('.btn-show-categories').on('click', function(e) {
+        e.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+        $('.wrap_more_categories').toggleClass('active');
+    });
+
+
     $(document).on('click', '.bg_backgdrop', function() {
         $(this).toggleClass('active');
         $('.btn-sidebar, .wrap_menu_fixed').toggleClass('active');
