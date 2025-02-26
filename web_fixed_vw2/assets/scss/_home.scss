@@ -4144,26 +4144,149 @@
     @media (max-width: $sizeMobile) {
       margin-bottom: size(20);
     }
-    >*{
+    >h1, >h2, >h3{
       color: #575756;
-      font-size: 48px;
+      font-size: 40px;
       font-weight: 700;
       line-height: 120%;
       @media (max-width: 1921px) {
-        font-size: sizeP(48);
+        font-size: sizeP(40);
 
       }
       @media (max-width: $sizeTablet) {
-        font-size: sizeT(30);
+        font-size: sizeT(25);
 
       }
       @media (max-width: $sizeMobile) {
-        font-size: size(30);
+        font-size: size(25);
+      }
+    }
+    .action{
+      .dropdown{
+        .dropdown-toggle{
+          border-radius: 4px;
+          border: 1px solid #CCC;
+          background: #FFF;
+          padding: 0;
+          &::after{
+            display: none;
+          }
+          &.show{
+            svg{
+              transform: rotate(180deg);
+            }
+          }
+          svg{
+            width: 32px;
+            height: auto;
+            transition: all .3s;
+            @media (max-width: 1921px) {
+              width: sizeP(32);
+            }
+            @media (max-width: $sizeTablet) {
+              width: sizeT(20);
+            }
+            @media (max-width: $sizeMobile) {
+              width: size(20);
+            }
+          }
+        }
+        .dropdown-menu{
+          padding: 12px;
+          gap: 32px;
+          width: 600px;
+          border-radius: 8px;
+          border: 1px solid #CCC;
+          background: #FFF;
+          @media (max-width: 1921px) {
+            width: sizeP(600);
+            padding: sizeP(12);
+            gap: sizeP(32);
+          }
+          @media (max-width: $sizeTablet) {
+            width: sizeT(600);
+            padding: sizeT(12);
+            gap: sizeT(32);
+          }
+          @media (max-width: $sizeMobile) {
+            width: size(300);
+            padding: size(12);
+            gap: size(32);
+          }
+          .wrap{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            @media (max-width: 1921px) {
+              gap: sizeP(16);
+            }
+            @media (max-width: $sizeTablet) {
+              gap: sizeT(12);
+            }
+            @media (max-width: $sizeMobile) {
+              gap: size(12);
+            }
+            .form-check{
+              width: calc(33% - 12px);
+              @media (max-width: 1921px) {
+                width: calcP(33%, 12);
+              }
+              @media (max-width: $sizeTablet) {
+                width: calcT(33%, 12);
+              }
+              @media (max-width: $sizeMobile) {
+                width: 100%;
+              }
+              .form-check-input{
+                width: 16px;
+                height: 16px;
+                border-radius: 2px;
+                border: 1px solid #CCC;
+                background: #FFF;
+                cursor: pointer;
+                &:checked{
+                  background-color: rgba(111, 190, 68, 1);
+                  border-color: rgba(111, 190, 68, 1);
+                  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m6 10 3 3 6-6"/></svg>');
+                }
+                &:focus{
+                  box-shadow: none;
+                }
+              }
+              .form-check-label{
+                @include line_text(1);
+                color: #706F6F;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 120%;
+              }
+            }
+          }
 
+        }
       }
     }
   }
   .section-content{
+    .content-title {
+      color: #5E6D7B;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 120%;
+      margin-bottom: sizeP(12);
+      @media (max-width: 1921px) {
+        font-size: sizeP(24);
+        margin-bottom: sizeP(12);
+      }
+      @media (max-width: $sizeTablet) {
+        font-size: sizeT(18);
+        margin-bottom: sizeT(12);
+      }
+      @media (max-width: $sizeMobile) {
+        font-size: size(18);
+        margin-bottom: size(12);
+      }
+    }
     .wrap-tags{
       display: flex;
       align-items: center;
@@ -4870,6 +4993,20 @@
             height: size(24);
             border-radius: size(4);
           }
+        }
+      }
+      .form-check{
+        .form-check-input{
+          &:checked{
+            background-color: #6FBE44;
+            border-color: #6FBE44;
+          }
+          &:focus{
+            box-shadow: none;
+          }
+        }
+        .form-check-label{
+          @include line_text(1);
         }
       }
     }
