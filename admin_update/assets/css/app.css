@@ -1470,9 +1470,6 @@ input {
   margin: 0;
   padding: 0;
 }
-.wrap-nestable .dd-item-group {
-  background: #F1F1F1;
-}
 .wrap-nestable .dd-item > button {
   display: none;
 }
@@ -1542,6 +1539,9 @@ input {
   justify-content: center;
   height: 56px;
   border-bottom: 1px solid #CDCDCD;
+}
+.wrap-nestable .dd3-content > *.block {
+  font-weight: 700;
 }
 .wrap-nestable .dd3-content > *.text-center {
   justify-content: center;

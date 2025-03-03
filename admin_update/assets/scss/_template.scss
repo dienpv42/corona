@@ -1613,7 +1613,7 @@
   }
 
   .dd-item-group {
-    background: #F1F1F1;
+    //background: #F1F1F1;
   }
 
   .dd-item > button {
@@ -1700,7 +1700,9 @@
       justify-content: center;
       height: 56px;
       border-bottom: 1px solid #CDCDCD;
-
+      &.block{
+        font-weight: 700;
+      }
       &.text-center {
         justify-content: center;
       }
