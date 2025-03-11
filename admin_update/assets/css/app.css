@@ -772,6 +772,14 @@ input {
 .form-group .group {
   position: relative;
 }
+.form-group .group .action {
+  position: relative;
+}
+.form-group .group .action .btn-delete {
+  position: absolute;
+  right: 0px;
+  top: -10px;
+}
 .form-group .group .btn-icon-inp {
   position: absolute;
   right: 15px;
@@ -1457,7 +1465,11 @@ input {
   list-style: none;
 }
 .wrap-nestable .dd-list .dd-list {
-  padding-left: 16px;
+  padding-left: 32px;
+}
+.wrap-nestable .dd-list .dd-list .dd3-content .block {
+  font-weight: 400;
+  color: #52C41A;
 }
 .wrap-nestable .dd-collapsed .dd-list {
   display: none;
