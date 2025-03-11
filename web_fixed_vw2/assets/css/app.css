@@ -10823,6 +10823,46 @@ input {
   font-family: "Bahnschrift";
   src: url("../fonts/BAHNSCHRIFT.TTF");
 }
+.btn {
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  color: #575756;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 150%;
+  display: inline-block;
+  padding: 6px 24px;
+  transition: all 0.3s;
+}
+@media (max-width: 1921px) {
+  .btn {
+    border-radius: 0.4166666667vw;
+    border: 0.0520833333vw solid #CCC;
+    font-size: 0.8854166667vw;
+    padding: 0.3125vw 1.25vw;
+  }
+}
+@media (max-width: 991px) {
+  .btn {
+    border-radius: 1.0430247718vw;
+    border: 0.1303780965vw solid #CCC;
+    font-size: 1.9556714472vw;
+    padding: 0.3911342894vw 1.5645371578vw;
+  }
+}
+@media (max-width: 575px) {
+  .btn {
+    border-radius: 2.1333333333vw;
+    border: 0.2666666667vw solid #CCC;
+    font-size: 4vw;
+    padding: 0.8vw 3.2vw;
+  }
+}
+.btn:hover {
+  border-color: #FF8A00;
+}
+
 .lb-text-danger {
   display: inline-block;
   padding: 4px 8px;
@@ -15773,14 +15813,15 @@ input {
 .section_all_cate .section-title .action .dropdown .dropdown-menu {
   padding: 12px;
   gap: 32px;
-  width: 600px;
+  width: 800px;
   border-radius: 8px;
   border: 1px solid #CCC;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.14);
   background: #FFF;
 }
 @media (max-width: 1921px) {
   .section_all_cate .section-title .action .dropdown .dropdown-menu {
-    width: 31.25vw;
+    width: 41.6666666667vw;
     padding: 0.625vw;
     gap: 1.6666666667vw;
   }
@@ -15800,41 +15841,21 @@ input {
   }
 }
 .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  padding: 0 16px;
 }
 @media (max-width: 1921px) {
   .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap {
-    gap: 0.8333333333vw;
+    padding: 0 0.8333333333vw;
   }
 }
 @media (max-width: 991px) {
   .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap {
-    gap: 1.5645371578vw;
+    padding: 0 1.5645371578vw;
   }
 }
 @media (max-width: 575px) {
   .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap {
-    gap: 3.2vw;
-  }
-}
-.section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check {
-  width: calc(33% - 12px);
-}
-@media (max-width: 1921px) {
-  .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check {
-    width: calc(33% - 0.625vw);
-  }
-}
-@media (max-width: 991px) {
-  .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check {
-    width: calc(33% - 1.5645371578vw);
-  }
-}
-@media (max-width: 575px) {
-  .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check {
-    width: 100%;
+    padding: 0 3.2vw;
   }
 }
 .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check .form-check-input {
@@ -15856,7 +15877,7 @@ input {
 .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check .form-check-label {
   word-break: break-word;
   display: -webkit-box;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -15864,6 +15885,21 @@ input {
   font-size: 16px;
   font-weight: 400;
   line-height: 120%;
+}
+@media (max-width: 1921px) {
+  .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check .form-check-label {
+    font-size: 0.8333333333vw;
+  }
+}
+@media (max-width: 991px) {
+  .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check .form-check-label {
+    font-size: 2.0860495437vw;
+  }
+}
+@media (max-width: 575px) {
+  .section_all_cate .section-title .action .dropdown .dropdown-menu .wrap .form-check .form-check-label {
+    font-size: 4.2666666667vw;
+  }
 }
 .section_all_cate .section-content .content-title {
   color: #5E6D7B;

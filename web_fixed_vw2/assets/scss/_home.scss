@@ -4194,12 +4194,13 @@
         .dropdown-menu{
           padding: 12px;
           gap: 32px;
-          width: 600px;
+          width: 800px;
           border-radius: 8px;
           border: 1px solid #CCC;
+          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.14);
           background: #FFF;
           @media (max-width: 1921px) {
-            width: sizeP(600);
+            width: sizeP(800);
             padding: sizeP(12);
             gap: sizeP(32);
           }
@@ -4214,29 +4215,29 @@
             gap: size(32);
           }
           .wrap{
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
+            //display: flex;
+            //flex-wrap: wrap;
+            padding: 0 16px;
             @media (max-width: 1921px) {
-              gap: sizeP(16);
+              padding: 0 sizeP(16);
             }
             @media (max-width: $sizeTablet) {
-              gap: sizeT(12);
+              padding: 0 sizeT(12);
             }
             @media (max-width: $sizeMobile) {
-              gap: size(12);
+              padding: 0 size(12);
             }
             .form-check{
-              width: calc(33% - 12px);
-              @media (max-width: 1921px) {
-                width: calcP(33%, 12);
-              }
-              @media (max-width: $sizeTablet) {
-                width: calcT(33%, 12);
-              }
-              @media (max-width: $sizeMobile) {
-                width: 100%;
-              }
+              //width: calc(33% - 12px);
+              //@media (max-width: 1921px) {
+              //  width: calcP(33%, 12);
+              //}
+              //@media (max-width: $sizeTablet) {
+              //  width: calcT(33%, 12);
+              //}
+              //@media (max-width: $sizeMobile) {
+              //  width: 100%;
+              //}
               .form-check-input{
                 width: 16px;
                 height: 16px;
@@ -4254,11 +4255,20 @@
                 }
               }
               .form-check-label{
-                @include line_text(1);
+                @include line_text(3);
                 color: #706F6F;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 120%;
+                @media (max-width: 1921px) {
+                  font-size: sizeP(16);
+                }
+                @media (max-width: $sizeTablet) {
+                  font-size: sizeT(16);
+                }
+                @media (max-width: $sizeMobile) {
+                  font-size: size(16);
+                }
               }
             }
           }

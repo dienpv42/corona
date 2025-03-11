@@ -1,3 +1,36 @@
+.btn{
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  color: #575756;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 150%;
+  display: inline-block;
+  padding: 6px 24px;
+  transition: all .3s;
+  @media (max-width: 1921px) {
+    border-radius: sizeP(8);
+    border: sizeP(1) solid #CCC;
+    font-size: sizeP(17);
+    padding: sizeP(6) sizeP(24);
+  }
+  @media (max-width: $sizeTablet) {
+    border-radius: sizeT(8);
+    border: sizeT(1) solid #CCC;
+    font-size: sizeT(15);
+    padding: sizeT(3) sizeT(12);
+  }
+  @media (max-width: $sizeMobile) {
+    border-radius: size(8);
+    border: size(1) solid #CCC;
+    font-size: size(15);
+    padding: size(3) size(12);
+  }
+  &:hover{
+    border-color: #FF8A00;
+  }
+}
 .lb-text-danger {
   display: inline-block;
   padding: 4px 8px;
