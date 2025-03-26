@@ -8398,6 +8398,12 @@ ol, ul {
   position: sticky;
   top: 150px;
 }
+@media only screen and (max-width: 767px) {
+  .ate-main .section-posts .blog__sidebar-wrapper {
+    position: relative;
+    top: 0;
+  }
+}
 .ate-main .section-posts .sidebar-wrapper {
   padding: 24px;
   box-shadow: 0px 0px 16px 8px rgba(200, 183, 255, 0.2);
@@ -8408,6 +8414,12 @@ ol, ul {
 .ate-main .section-posts .sidebar-list ul li a::before {
   display: none;
 }
+.ate-main .section-posts .postbox__content {
+  padding: 0;
+}
+.ate-main .section-posts .postbox__content .postbox__title {
+  font-size: 30px;
+}
 .ate-main .item-post {
   display: flex;
   flex-direction: row;
@@ -8415,6 +8427,11 @@ ol, ul {
   background-color: #fff;
   box-shadow: 0px 0px 16px 8px rgba(200, 183, 255, 0.2);
   border-radius: 8px;
+}
+@media only screen and (max-width: 574px) {
+  .ate-main .item-post {
+    align-items: center;
+  }
 }
 .ate-main .item-post .image {
   display: flex;
@@ -8425,9 +8442,31 @@ ol, ul {
   object-fit: cover;
   object-position: center;
 }
+@media only screen and (max-width: 991px) {
+  .ate-main .item-post .image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .ate-main .item-post .image img {
+    width: 100px;
+    height: 100%;
+  }
+}
 .ate-main .item-post .content {
   flex: 1;
   padding: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .ate-main .item-post .content {
+    padding: 16px 16px 16px 16px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .ate-main .item-post .content {
+    padding: 16px 16px 16px 16px;
+  }
 }
 .ate-main .item-post .content .calendar {
   margin-bottom: 5px;
@@ -8454,20 +8493,28 @@ ol, ul {
   user-select: none;
   word-break: break-word;
   display: -webkit-box;
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 @media only screen and (max-width: 991px) {
   .ate-main .item-post .content .title > * {
-    font-size: 15px;
+    font-size: 17px;
   }
 }
 @media only screen and (max-width: 574px) {
   .ate-main .item-post .content .title > * {
-    font-size: 14px;
+    font-size: 17px;
   }
+}
+.ate-main .item-post .content .desc {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=style.css.map */

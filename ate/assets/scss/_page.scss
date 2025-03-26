@@ -2,7 +2,12 @@
   .blog__sidebar-wrapper{
     position: sticky;
     top: 150px;
+    @media only screen and (max-width: 767px) {
+      position: relative;
+      top: 0;
+    }
   }
+
   .sidebar-wrapper{
     padding: 24px;
     box-shadow: 0px 0px 16px 8px rgba(200, 183, 255, 0.2);
@@ -16,6 +21,15 @@
       display: none;
     }
   }
+  .postbox__content{
+    padding: 0;
+    .postbox__title{
+      font-size: 30px;
+    }
+    .postbox__file{
+
+    }
+  }
 }
 
 .item-post {
@@ -25,6 +39,9 @@
   background-color: #fff;
   box-shadow: 0px 0px 16px 8px rgba(200, 183, 255, 0.2);
   border-radius: 8px;
+  @media only screen and (max-width: 574px) {
+    align-items: center;
+  }
   .image {
     display: flex;
     img {
@@ -32,12 +49,26 @@
       height: 250px;
       object-fit: cover;
       object-position: center;
+      @media only screen and (max-width: 991px) {
+        width: 200px;
+        height: 200px;
+      }
+      @media only screen and (max-width: 574px) {
+        width: 100px;
+        height: 100%;
+      }
     }
   }
 
   .content {
     flex: 1;
     padding: 24px;
+    @media only screen and (max-width: 991px) {
+      padding: 16px 16px 16px 16px;
+    }
+    @media only screen and (max-width: 574px) {
+      padding: 16px 16px 16px 16px;
+    }
     .calendar {
       margin-bottom: 5px;
       > * {
@@ -58,14 +89,17 @@
         font-size: 18px;
         line-height: 1.4;
         user-select: none;
-        @include line_text(4);
+        @include line_text(3);
         @media only screen and (max-width: 991px) {
-          font-size: 15px;
+          font-size: 17px;
         }
         @media only screen and (max-width: 574px) {
-          font-size: 14px;
+          font-size: 17px;
         }
       }
+    }
+    .desc{
+      @include line_text(4);
     }
   }
 }
