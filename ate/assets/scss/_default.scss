@@ -112,7 +112,7 @@ button:focus {
 }
 
 .capitalize {
-  text-transform: capitalize;
+  
 }
 
 h1,
@@ -134,19 +134,19 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 27px;
+  font-size: 22px;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h5 {
@@ -154,7 +154,7 @@ h5 {
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 ul {
@@ -169,11 +169,11 @@ li {
 
 p {
   font-family: $font-primary;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   color: $text-color;
   margin-bottom: 15px;
-  line-height: 27px;
+  line-height: 1.5;
 }
 
 *::-moz-selection {
@@ -497,7 +497,7 @@ p {
 .section__title h1 {
   font-size: 50px;
   line-height: 60px;
-  text-transform: capitalize;
+  
   margin-bottom: 10px;
 }
 .section__title-white h1 {
@@ -685,7 +685,7 @@ p {
   background: rgb(0 0 0 / 41%);
 }
 .page__title-inner h1 {
-  text-transform: capitalize;
+  
   color: $white;
   font-size: 60px;
   margin-bottom: 5px;
@@ -701,7 +701,7 @@ p {
   margin-bottom: 0;
 }
 .page__title-breadcrumb .breadcrumb-item {
-  text-transform: capitalize;
+  
   color: $white;
   font-size: 20px;
   font-weight: 500;
@@ -723,7 +723,7 @@ p {
 .sidebar-title h3 {
   position: relative;
   margin-bottom: 22px;
-  text-transform: capitalize;
+  
   padding-top: 4px;
 }
 .sidebar-title h3::before {
@@ -932,7 +932,7 @@ ol, ul {
       }
       a {
         color: #fff;
-        text-transform: capitalize;
+        
         padding: 24px 0;
         display: block;
         font-size: 16px;
@@ -1108,7 +1108,7 @@ ol, ul {
   line-height: 25px;
 }
 .header__info-text span:last-child {
-  text-transform: capitalize;
+  
 }
 .header__bottom {
   margin-bottom: -43px;
@@ -1170,7 +1170,7 @@ ol, ul {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
-  text-transform: capitalize;
+  
 }
 .info__content p {
   color: $white;
@@ -1182,7 +1182,7 @@ ol, ul {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
-  text-transform: capitalize;
+  
 }
 .info__contact ul li {
   margin-bottom: 10px;
@@ -1267,7 +1267,7 @@ ol, ul {
 .side-mobile-menu ul li ul li a {
   position: relative;
   padding-left: 15px;
-  text-transform: capitalize;
+  
   font-size: 16px;
 }
 .side-mobile-menu ul li ul li a:before {
@@ -1412,8 +1412,9 @@ ol, ul {
 .slider-content-3 {
   padding-left: 0;
 }
+
 .slider-content-3 span {
-  text-transform: capitalize;
+  
   font-size: 24px;
   margin-bottom: 30px;
   color: $white;
@@ -2328,7 +2329,7 @@ ol, ul {
 .appointment__form-inner input::placeholder, .appointment__form-inner textarea::placeholder {
   color: $white;
   font-size: 15px;
-  text-transform: capitalize;
+  
 }
 .appointment__form-inner textarea {
   height: 140px;
@@ -2590,7 +2591,7 @@ ol, ul {
   margin-right: 30px;
   margin-bottom: 25px;
   position: relative;
-  text-transform: capitalize;
+  
 }
 .case__menu a::before {
   position: absolute;
@@ -2765,7 +2766,7 @@ ol, ul {
 }
 .pricing__content h2 {
   margin-bottom: 25px;
-  text-transform: capitalize;
+  
 }
 .pricing__content p {
   position: relative;
@@ -2829,7 +2830,7 @@ ol, ul {
 .contact__input::placeholder {
   color: $white;
   font-size: 15px;
-  text-transform: capitalize;
+  
 }
 .contact__input:focus {
   border-color: $white;
@@ -3866,7 +3867,7 @@ ol, ul {
 .team__menu button {
   background: transparent;
   font-size: 18px;
-  text-transform: capitalize;
+  
   margin-right: 38px;
   margin-bottom: 25px;
   position: relative;
@@ -4278,7 +4279,7 @@ ol, ul {
 .project__content span {
   font-size: 16px;
   color: $white;
-  text-transform: capitalize;
+  
   display: inline-block;
   margin-bottom: 7px;
 }
@@ -4609,7 +4610,7 @@ ol, ul {
 }
 .footer__subscribe-form input::placeholder {
   font-size: 15px;
-  text-transform: capitalize;
+  
   color: $primary-color;
 }
 .footer__subscribe-form button i {
