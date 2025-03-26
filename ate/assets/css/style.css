@@ -670,10 +670,6 @@ button:focus {
   text-transform: uppercase;
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
 h1,
 h2,
 h3,
@@ -693,19 +689,19 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 26px;
 }
 
 h3 {
-  font-size: 27px;
+  font-size: 22px;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 h5 {
@@ -713,7 +709,7 @@ h5 {
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 ul {
@@ -727,11 +723,11 @@ li {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   color: #545c66;
   margin-bottom: 15px;
-  line-height: 27px;
+  line-height: 1.5;
 }
 
 *::-moz-selection {
@@ -1072,7 +1068,6 @@ p {
 .section__title h1 {
   font-size: 50px;
   line-height: 60px;
-  text-transform: capitalize;
   margin-bottom: 10px;
 }
 
@@ -1280,7 +1275,6 @@ p {
 }
 
 .page__title-inner h1 {
-  text-transform: capitalize;
   color: #ffffff;
   font-size: 60px;
   margin-bottom: 5px;
@@ -1297,7 +1291,6 @@ p {
 }
 
 .page__title-breadcrumb .breadcrumb-item {
-  text-transform: capitalize;
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
@@ -1321,7 +1314,6 @@ p {
 .sidebar-title h3 {
   position: relative;
   margin-bottom: 22px;
-  text-transform: capitalize;
   padding-top: 4px;
 }
 
@@ -1544,7 +1536,6 @@ ol, ul {
 }
 .main-menu ul li a {
   color: #fff;
-  text-transform: capitalize;
   padding: 24px 0;
   display: block;
   font-size: 16px;
@@ -1730,10 +1721,6 @@ ol, ul {
   line-height: 25px;
 }
 
-.header__info-text span:last-child {
-  text-transform: capitalize;
-}
-
 .header__bottom {
   margin-bottom: -43px;
   position: relative;
@@ -1801,7 +1788,6 @@ ol, ul {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
-  text-transform: capitalize;
 }
 
 .info__content p {
@@ -1815,7 +1801,6 @@ ol, ul {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 20px;
-  text-transform: capitalize;
 }
 
 .info__contact ul li {
@@ -1915,7 +1900,6 @@ ol, ul {
 .side-mobile-menu ul li ul li a {
   position: relative;
   padding-left: 15px;
-  text-transform: capitalize;
   font-size: 16px;
 }
 
@@ -2069,7 +2053,6 @@ ol, ul {
 }
 
 .slider-content-3 span {
-  text-transform: capitalize;
   font-size: 24px;
   margin-bottom: 30px;
   color: #ffffff;
@@ -3105,7 +3088,6 @@ ol, ul {
 .appointment__form-inner input::placeholder, .appointment__form-inner textarea::placeholder {
   color: #ffffff;
   font-size: 15px;
-  text-transform: capitalize;
 }
 
 .appointment__form-inner textarea {
@@ -3413,7 +3395,6 @@ ol, ul {
   margin-right: 30px;
   margin-bottom: 25px;
   position: relative;
-  text-transform: capitalize;
 }
 
 .case__menu a::before {
@@ -3609,7 +3590,6 @@ ol, ul {
 
 .pricing__content h2 {
   margin-bottom: 25px;
-  text-transform: capitalize;
 }
 
 .pricing__content p {
@@ -3679,7 +3659,6 @@ ol, ul {
 .contact__input::placeholder {
   color: #ffffff;
   font-size: 15px;
-  text-transform: capitalize;
 }
 
 .contact__input:focus {
@@ -4865,7 +4844,6 @@ ol, ul {
 .team__menu button {
   background: transparent;
   font-size: 18px;
-  text-transform: capitalize;
   margin-right: 38px;
   margin-bottom: 25px;
   position: relative;
@@ -5336,7 +5314,6 @@ ol, ul {
 .project__content span {
   font-size: 16px;
   color: #ffffff;
-  text-transform: capitalize;
   display: inline-block;
   margin-bottom: 7px;
 }
@@ -5716,7 +5693,6 @@ ol, ul {
 
 .footer__subscribe-form input::placeholder {
   font-size: 15px;
-  text-transform: capitalize;
   color: #003b70;
 }
 
@@ -8417,6 +8393,81 @@ ol, ul {
   list-style: decimal !important;
   color: #545c66;
   line-height: 2.1;
+}
+.ate-main .section-posts .blog__sidebar-wrapper {
+  position: sticky;
+  top: 150px;
+}
+.ate-main .section-posts .sidebar-wrapper {
+  padding: 24px;
+  box-shadow: 0px 0px 16px 8px rgba(200, 183, 255, 0.2);
+}
+.ate-main .section-posts .sidebar-list ul li a {
+  padding-left: 0;
+}
+.ate-main .section-posts .sidebar-list ul li a::before {
+  display: none;
+}
+.ate-main .item-post {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  background-color: #fff;
+  box-shadow: 0px 0px 16px 8px rgba(200, 183, 255, 0.2);
+  border-radius: 8px;
+}
+.ate-main .item-post .image {
+  display: flex;
+}
+.ate-main .item-post .image img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+.ate-main .item-post .content {
+  flex: 1;
+  padding: 24px;
+}
+.ate-main .item-post .content .calendar {
+  margin-bottom: 5px;
+}
+.ate-main .item-post .content .calendar > * {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media only screen and (max-width: 991px) {
+  .ate-main .item-post .content .calendar > * {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .ate-main .item-post .content .calendar > * {
+    font-size: 12px;
+  }
+}
+.ate-main .item-post .content .title > * {
+  font-weight: 600;
+  color: #003b70;
+  font-size: 18px;
+  line-height: 1.4;
+  user-select: none;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+@media only screen and (max-width: 991px) {
+  .ate-main .item-post .content .title > * {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .ate-main .item-post .content .title > * {
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
