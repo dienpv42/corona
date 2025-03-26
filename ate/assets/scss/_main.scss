@@ -1,0 +1,895 @@
+.ate-main {
+  /*-------------------------------
+    Custom Cursor CSS
+-------------------------------*/
+  .cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid $primary-color;
+    transition: all 150ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 1000;
+
+    &.hidden-mobie {
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+      @media only screen and (max-width: 574px) {
+        display: none;
+      }
+    }
+  }
+
+  .cursor-inner {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: $primary-color;
+    opacity: 0.9;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+    z-index: 1000;
+
+    &.hidden-mobie {
+      @media only screen and (max-width: 1024px) {
+        display: none;
+      }
+      @media only screen and (max-width: 574px) {
+        display: none;
+      }
+    }
+  }
+
+  .hover {
+    background-color: $primary-color;
+    border-color: transparent;
+    opacity: 0.8;
+    width: 20px;
+    height: 20px;
+    z-index: 1000;
+  }
+
+  .cursorinnerhover {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+  }
+
+  //header
+  #header-sticky {
+    .logo {
+      img {
+        width: auto;
+        height: 45px;
+        @media only screen and (max-width: 991px) {
+          height: 40px;
+        }
+        @media only screen and (max-width: 574px) {
+          height: 35px;
+        }
+      }
+    }
+
+    //menu phải
+    .menu-right {
+      .language {
+        background-color: $primary-color;
+        padding: 8px 12px;
+        border-radius: 50%;
+        color: $white;
+        font-weight: 600;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+
+      .search {
+        margin-right: 14px;
+        color: $white;
+        font-size: 15px;
+        padding: 8px 14px;
+        border-radius: 50%;
+        transition: 0.5s;
+
+        &:hover {
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  .sticky {
+    .search {
+      color: $primary-color !important;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $white;
+      }
+    }
+  }
+
+  // Section tieu diem, tin tuc
+  .tutorial {
+    transition: all .3s;
+
+    > * {
+      font-size: 12px;
+    }
+
+    h2 {
+      font-size: 12px;
+      color: $black;
+      @media only screen and (max-width: 991px) {
+        font-size: 12px;
+      }
+      @media only screen and (max-width: 574px) {
+        font-size: 12px;
+      }
+    }
+
+    &.section-title-white {
+      > * {
+        color: $white;
+      }
+    }
+
+    .sub-tile {
+
+    }
+  }
+
+  //tin tức mới
+  .section-news-slider {
+    width: 1200px;
+    max-width: calc(100% - 200px);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(0 59 112 / 25%);
+    gap: 16px;
+    padding: 16px;
+    border-radius: 8px;
+    &.hidden-news-mobile {
+      @media only screen and (max-width: 991px) {
+        opacity: 0;
+        visibility: hidden !important;
+      }
+      @media only screen and (max-width: 574px) {
+        opacity: 0;
+        visibility: hidden !important;
+      }
+    }
+
+    .one_news {
+      position: relative;
+      overflow: hidden;
+      flex: 1;
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+
+        .content {
+          background-color: $primary-color;
+          color: white;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 160px;
+        transition: transform 1s ease;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .content {
+        position: absolute;
+        bottom: 0;
+        padding: 5px 7px;
+        user-select: none;
+        text-align: start;
+        transition: all 0.5s ease-out;
+        background-image: linear-gradient(rgba(0, 59, 112, 0), rgb(0 59 112 / 59%), rgb(0 59 112 / 80%));
+
+        h5 {
+          color: white;
+          transition: 0.3s;
+          font-size: 13px;
+          @include line_text(2);
+          margin: 0;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+
+  //cuộn xuống
+  .scroll-down {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    @media only screen and (max-width: 991px) {
+      left: 50%;
+      right: 50%;
+    }
+    @media only screen and (max-width: 574px) {
+      left: 50%;
+      right: 50%;
+    }
+
+    &:hover {
+      .text {
+        color: $primary-color;
+      }
+    }
+
+    .text {
+      font-size: 15px;
+      color: $white;
+      user-select: none;
+      margin: 0;
+      line-height: 1.4;
+      font-weight: 500;
+      text-align: center;
+      transition: all .3s;
+    }
+
+    img {
+      width: 14px;
+      animation: move-slide 1.5s infinite;
+      @-webkit-keyframes move-slide {
+        0% {
+          opacity: 0;
+          transform: translateY(0px);
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(25px);
+        }
+      }
+    }
+  }
+
+  //tiêu điểm - tin tức - sự kiện
+  .section-highlights-news-events {
+    background-color: #f8f9fa;
+
+    .highlights {
+      .title-highlights {
+        > * {
+          @include title-h2;
+        }
+      }
+
+      .item-highlights {
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: 387px;
+          transition: 0.7s;
+          object-fit: cover;
+          object-position: center;
+          @media only screen and (max-width: 991px) {
+            width: 690px;
+            height: 366px;
+          }
+          @media only screen and (max-width: 574px) {
+            width: 495px;
+            height: 285px
+          }
+        }
+
+        .content {
+          position: absolute;
+          bottom: 0;
+          color: $white;
+          padding: 10px 20px;
+          user-select: none;
+          background-image: linear-gradient(rgba(0, 59, 112, 0), rgb(0 59 112 / 51%), rgb(0 59 112 / 68%));
+
+          a {
+            font-size: 20px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            line-height: 1.4;
+            @include line_text(3);
+            @media only screen and (max-width: 991px) {
+              font-size: 18px;
+            }
+            @media only screen and (max-width: 574px) {
+              font-size: 15px;
+            }
+          }
+
+          .calendar {
+            > * {
+              font-size: 15px;
+              font-weight: 300;
+            }
+          }
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+
+    .wrap-news {
+      .title {
+        > * {
+          @include title-h2;
+        }
+
+        @media only screen and (max-width: 991px) {
+          margin-top: 20px;
+        }
+        @media only screen and (max-width: 574px) {
+          margin-top: 20px;
+        }
+      }
+
+      .wrap-content {
+        //display: flex;
+        //flex-direction: column;
+        //gap: 24px;
+        .item {
+          display: flex;
+          flex-direction: row;
+          align-items: start;
+          gap: 16px;
+          margin-bottom: 24px;
+          .image {
+            a {
+              display: flex;
+
+              img {
+                width: 113px;
+                height: 113px;
+                object-fit: cover;
+                object-position: center;
+              }
+            }
+          }
+
+          .content {
+            flex: 1;
+            > * {
+              font-weight: 600;
+              color: #003b70;
+              font-size: 12px;
+              line-height: 1.4;
+              user-select: none;
+              @include line_text(6);
+            }
+          }
+        }
+      }
+    }
+    .see-more {
+      margin-top: 0;
+    }
+  }
+
+  //Hiệp hội
+  .section-about-the-association {
+    .about-left {
+      .title-association-home {
+        > * {
+          @include title-h2;
+        }
+      }
+
+      .section__content {
+        .content{
+          p {
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+
+    .about-right {
+      width: 100%;
+      height: 350px;
+      .img-association {
+        > * {
+          width: 100%;
+          height: 350px;
+          border-radius: 25px;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      .testimonial__video {
+        top: 0;
+        left: 0;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all ease-in-out 0.4s;
+        a{
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          top: 50%;
+        }
+      }
+      &:hover{
+        .testimonial__video {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  //Hội viên
+  .section-member {
+    .member__item{
+      img{
+        height: 100px;
+        @media only screen and (max-width: 991px) {
+          height: 60px;
+        }
+        @media only screen and (max-width: 574px) {
+          height: 60px;
+        }
+      }
+    }
+  }
+
+  //Tư vấn
+  .section-advise {
+    .img-Advise {
+      width: 100%;
+      height: 350px;
+      > * {
+        object-fit: cover;
+        object-position: center;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.7098039216);
+      }
+    }
+
+    .content {
+      .line-text {
+        @include line_text(3);
+        @media only screen and (max-width: 1024px) {
+          font-size: 14px;
+        }
+        @media only screen and (max-width: 574px) {
+          font-size: 14px;
+        }
+      }
+
+      .see-more2 {
+        color: $primary-color;
+
+        a {
+          padding-bottom: 2px;
+
+          &:hover {
+            i {
+              padding-left: 3px;
+            }
+          }
+
+          i {
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+  }
+
+  //liên hệ
+  .section-contact {
+    background-image: linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 32%)), url(../img/contact/contact1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f8f9fa;
+    background-size: cover;
+    //height: 400px;
+    padding: 105px 0;
+    background-attachment: fixed;
+
+    .tittle {
+      a {
+        h2 {
+          text-transform: uppercase;
+          color: $white;
+          @media only screen and (max-width: 1024px) {
+            font-size: 25px;
+          }
+          @media only screen and (max-width: 574px) {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    .see-more {
+      a {
+        color: $white;
+        border: 1px solid #ffffff8c;
+      }
+    }
+  }
+
+  //THư viện
+  .section-library {
+    background-color: #f8f9fa;
+    .title-library-home {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .image {
+        img {
+          width: 60px;
+        }
+      }
+      > * {
+        @include title-h2;
+        border-left: none;
+        line-height: 2.4;
+        padding-left: 4px;
+      }
+    }
+    .section__content {
+      .item {
+        margin-bottom: 16px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:hover {
+          a{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  // trang tin tức - sự kiên
+  .section-news-menu {
+    .section-tittle-main{
+      >*{
+        color: white;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        @media only screen and (max-width: 991px) {
+          font-size: 28px;
+        }
+        @media only screen and (max-width: 574px) {
+          font-size: 22px;
+        }
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .form-search {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        input {
+          background-color: #f0f8ff00;
+          border: 1px solid #c3c3c1;
+          padding: 6px 11px;
+          border-radius: 20px;
+          width: 100%;
+          color: white;
+          font: 20px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: white;
+            font-style: italic;
+            font-size: 15px;
+          }
+        }
+        button {
+          position: absolute;
+          right: 22px;
+          top: 6px;
+          background-color: #faebd700;
+          color: white;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .section-menu2{
+    padding: 10px 13px;
+    background-color: #003b70;
+    color: white;
+    @media only screen and (max-width: 991px) {
+      overflow-x: overlay;
+    }
+    @media only screen and (max-width: 574px) {
+      overflow-x: overlay;
+    }
+    &.sticky-menu2{
+      position: fixed;
+      top: 75px; /* Điều chỉnh để không đè lên menu 1 */
+      left: 0;
+      width: 100%;
+      color: white;
+      z-index: 800;
+      -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+      animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+      -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+      @media only screen and (max-width: 991px) {
+        top: 88px;
+        overflow-x: overlay;
+      }
+      @media only screen and (max-width: 574px) {
+        top: 88px;
+        overflow-x: overlay;
+      }
+    }
+    .case__menu{
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media only screen and (max-width: 991px) {
+          width: max-content;
+        }
+        @media only screen and (max-width: 574px) {
+          width: max-content;
+        }
+        li {
+          margin: 5px 10px;
+          a {
+            font-size: 17px;
+            @media only screen and (max-width: 991px) {
+              font-size: 16px;
+            }
+            @media only screen and (max-width: 574px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // tin tức
+  .section-news {
+    padding: 30px 0;
+    .all-news {
+      .item {
+        overflow: hidden;
+        margin-bottom: 30px;
+        img {
+          width: 100%;
+          height: 260px;
+          transition: 0.7s;
+          object-fit: cover;
+          object-position: center;
+          @media only screen and (max-width: 991px) {
+            width: 100%;
+            height: 260px;
+          }
+          @media only screen and (max-width: 574px) {
+            width: 100%;
+            height: 260px
+          }
+        }
+
+        .content {
+          position: absolute;
+          bottom: 0;
+          color: $white;
+          padding: 10px 20px;
+          user-select: none;
+          background-image: linear-gradient(rgba(0, 59, 112, 0), rgb(0 59 112 / 51%), rgb(0 59 112 / 68%));
+
+          a {
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-weight: 700;
+            line-height: 1.4;
+            @include line_text(3);
+            @media only screen and (max-width: 991px) {
+              font-size: 13px;
+            }
+            @media only screen and (max-width: 574px) {
+              font-size: 12px;
+            }
+          }
+
+          .calendar {
+            > * {
+              font-size: 15px;
+              font-weight: 300;
+              @media only screen and (max-width: 991px) {
+                font-size: 13px;
+              }
+              @media only screen and (max-width: 574px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+        @media only screen and (max-width: 991px) {
+          margin-bottom: 30px;
+        }
+        @media only screen and (max-width: 574px) {
+          margin-bottom: 30px;
+        }
+      }
+      .item2 {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 16px;
+        margin-bottom: 40px;
+        .image {
+          display: flex;
+
+          img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            @media only screen and (max-width: 991px) {
+              width: 100%;
+              height: 250px;
+            }
+            @media only screen and (max-width: 574px) {
+              width: 100%;
+              height: 180px;
+            }
+          }
+        }
+
+        .content {
+          flex: 1;
+          .calendar {
+            margin-bottom: 5px;
+            > * {
+              font-size: 14px;
+              font-weight: 400;
+              @media only screen and (max-width: 991px) {
+                font-size: 13px;
+              }
+              @media only screen and (max-width: 574px) {
+                font-size: 12px;
+              }
+            }
+          }
+          .tittle {
+            > * {
+              font-weight: 600;
+              color: #003b70;
+              font-size: 18px;
+              line-height: 1.4;
+              user-select: none;
+              @include line_text(4);
+              @media only screen and (max-width: 991px) {
+                font-size: 15px;
+              }
+              @media only screen and (max-width: 574px) {
+                font-size: 14px;
+              }
+            }
+          }
+          .p_content{
+            > * {
+              font-size: 15px;
+              line-height: 1.4;
+              user-select: none;
+              @include line_text(5);
+              @media only screen and (max-width: 991px) {
+                font-size: 14px;
+                @include line_text(3);
+              }
+              @media only screen and (max-width: 574px) {
+                font-size: 12px;
+                @include line_text(3);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Tin tức chi tiết
+  //menu trang tin tức chi tiết
+  .section-news-details {
+    .postbox {
+      .postbox__content {
+        .postbox__text {
+          .blog-inner-img {
+            img {
+              height: 500px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .section-mission {
+    .image {
+      img{
+        border-radius: 20px;
+      }
+    }
+  }
+  //ban chấp hành , ban thường vụ, ban kiểm tra
+  .section-committee {
+    .img-logo {
+      img {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+    .widget__abouts {
+      margin-bottom: 35px;
+      img {
+        border-radius: 0;
+        width: 100%;
+        max-width: 250px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 20px;
+
+      }
+    }
+  }
+  //danh sách hội viên
+  .section-members-list {
+    .member__item {
+      .testimonial__avatar {
+        img{
+          width: 200px;
+          height: 200px;
+          object-fit: contain;
+          object-position: center;
+          @media only screen and (max-width: 991px) {
+            width: 160px;
+          }
+          @media only screen and (max-width: 574px) {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}

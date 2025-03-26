@@ -1,0 +1,463 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: italic;
+  src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'dentco';
+  src:  url('fonts/dentco.eot@hg2v5b');
+  src:  url('fonts/dentco.eot@hg2v5b#iefix') format('embedded-opentype'),
+  url('fonts/dentco.ttf@hg2v5b') format('truetype'),
+  url('fonts/dentco.woff@hg2v5b') format('woff'),
+  url('fonts/dentco.svg@hg2v5b.xml#dentco') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dentco' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-question:before {
+  content: "\e96e";
+}
+.icon-download1:before {
+  content: "\e96f";
+}
+.icon-copy:before {
+  content: "\e970";
+}
+.icon-billing:before {
+  content: "\e971";
+}
+.icon-patient:before {
+  content: "\e972";
+}
+.icon-card:before {
+  content: "\e965";
+}
+.icon-micro:before {
+  content: "\e966";
+}
+.icon-molecular:before {
+  content: "\e967";
+
+  /*hình ADN nối nhau*/
+}
+.icon-chromosome:before {
+  content: "\e968";
+
+  /*hình chuỗi ADN*/
+}
+.icon-testtube:before {
+  content: "\e969";
+
+  /*hình 3 ống thuốc xét nhiệ*/
+}
+.icon-testtube2:before {
+  content: "\e96a";
+
+  /*hình ống thuốc hóa học có hình ADN*/
+}
+.icon-dropper:before {
+  content: "\e96b";
+
+  /*nhỏ thuốc thử nhiệm*/
+}
+.icon-download:before {
+  content: "\e96c";
+}
+.icon-labinstrument:before {
+  content: "\e96d";
+
+  /*hình cốc hóa học*/
+}
+.icon-gynecology:before {
+  content: "\e95b";
+
+  /*hình tử cung phụ nữ*/
+}
+.icon-brain:before {
+  content: "\e95c";
+
+  /*hình bộ não*/
+}
+.icon-cardiology:before {
+  content: "\e95d";
+
+  /*hình trái tim có nhịp tim*/
+}
+.icon-terapevt:before {
+  content: "\e95e";
+
+  /*đa khoa - tai nghe khám bệnh bsi*/
+}
+.icon-dental:before {
+  content: "\e95f";
+
+  /*khoa răng*/
+}
+.icon-genetics:before {
+  content: "\e960";
+
+  /*khoa virus - hình gen protein*/
+}
+.icon-farmalogy:before {
+  content: "\e961";
+
+  /*khoa bốc thuốc đông y*/
+}
+.icon-lab:before {
+  content: "\e962";
+
+  /*khoa xét nhiệm có các ống thuốc*/
+}
+.icon-pediatrics:before {
+  content: "\e963";
+
+  /*hình con gấu đeo ống nghe*/
+}
+.icon-traumatology:before {
+  content: "\e964";
+
+  /*hình đàn ông bó bột*/
+}
+.icon-birthday-cake:before {
+  content: "\e939";
+}
+.icon-emergency:before {
+  content: "\e93a";
+}
+.icon-tooth-1:before {
+  content: "\e93b";
+}
+.icon-hand:before {
+  content: "\e93c";
+}
+.icon-placeholder3:before {
+  content: "\e93d";
+}
+.icon-play:before {
+  content: "\e93e";
+}
+.icon-tooth-2:before {
+  content: "\e93f";
+}
+.icon-tooth-3:before {
+  content: "\e940";
+}
+.icon-tooth-4:before {
+  content: "\e941";
+}
+.icon-tooth-5:before {
+  content: "\e942";
+}
+.icon-zoob:before {
+  content: "\e943";
+}
+.icon-man:before {
+  content: "\e944";
+
+  /*hình đàn ông*/
+}
+.icon-mommy:before {
+  content: "\e945";
+
+  /*hình phụ nữ tóc dài*/
+}
+.icon-medicine:before {
+  content: "\e946";
+  /*hình cốc con rắn cây kim - khoa châm cứu*/
+}
+.icon-pharmacy:before {
+  content: "\e947";
+  /*hình cốc con rắn - quầy thuốc*/
+}
+.icon-principles:before {
+  content: "\e948";
+  /*hình người cầm 2 bên 2 cái cân*/
+}
+.icon-sign:before {
+  content: "\e949";
+  /*hình chữ ký*/
+}
+.icon-surgery:before {
+  content: "\e94a";
+  /*cái kéo*/
+}
+.icon-syringe:before {
+  content: "\e94b";
+  /*kim tiêm*/
+}
+.icon-ambulance:before {
+  content: "\e94c";
+  /*xe cứu thương*/
+}
+.icon-woman:before {
+  content: "\e94d";
+  /*bàn tay đỡ trái tim phụ nữ*/
+}
+.icon-body:before {
+  content: "\e94e";
+  /*Vòng eo phụ nữ*/
+}
+.icon-body1:before {
+  content: "\e94f";
+  /*Vòng eo và bắp đùi phụ nữ*/
+}
+.icon-doctor:before {
+  content: "\e950";
+  /*hình bác sĩ*/
+}
+.icon-first-aid-kit:before {
+  content: "\e951";
+  /*hộp cứu thương*/
+}
+.icon-flask:before {
+  content: "\e952";
+  /*triết suất*/
+}
+.icon-injecting:before {
+  content: "\e953";
+  /*kim tiêm - tiêm chủng*/
+}
+.icon-injecting-syringe:before {
+  content: "\e954";
+  /*kim tiêm to - tiêm chủng*/
+}
+.icon-search:before {
+  content: "\e955";
+}
+.icon-arrow-right:before {
+  content: "\e900";
+}
+.icon-birthday:before {
+  content: "\e901";
+}
+.icon-black-envelope:before {
+  content: "\e902";
+}
+.icon-calendar:before {
+  content: "\e903";
+}
+.icon-calendar2:before {
+  content: "\e904";
+}
+.icon-cart:before {
+  content: "\e905";
+}
+.icon-check-mark:before {
+  content: "\e906";
+  /*đã kiểm tra tích v*/
+}
+.icon-clock:before {
+  content: "\e907";
+}
+.icon-clock2:before {
+  content: "\e908";
+}
+.icon-dental-chair:before {
+  content: "\e909";
+  /*bàn khám nha khoa*/
+}
+.icon-email2:before {
+  content: "\e90a";
+}
+.icon-emergency-call:before {
+  content: "\e90b";
+  /*Gọi cấp cứu*/
+}
+.icon-error:before {
+  content: "\e90c";
+}
+.icon-facebook-logo:before {
+  content: "\e90d";
+}
+.icon-facebook-logo-circle:before {
+  content: "\e90e";
+}
+.icon-star:before {
+  content: "\e90f";
+}
+.icon-google-plus-circle:before {
+  content: "\e910";
+}
+.icon-google-plus1:before {
+  content: "\e911";
+  color: #f34a38;
+}
+.icon-health-care:before {
+  content: "\e912";
+  /*Hình chữ thập có hình người*/
+}
+.icon-clock3:before {
+  content: "\e913";
+}
+.icon-icon-implant:before {
+  content: "\e914";
+  /*Hình mũi khoan - cấy ghép*/
+}
+.icon-icon-orthodontics:before {
+  content: "\e915";
+  /*Trồng răng*/
+}
+.icon-icon-whitening:before {
+  content: "\e916";
+  /*Làm trắng răng*/
+}
+.icon-instagram:before {
+  content: "\e917";
+}
+.icon-link-symbol:before {
+  content: "\e918";
+}
+.icon-medical-kit:before {
+  content: "\e919";
+  /*hộp cứu thương răng*/
+}
+.icon-menu:before {
+  content: "\e91a";
+}
+.icon-paintbrush:before {
+  content: "\e91b";
+}
+.icon-pencil-writing:before {
+  content: "\e91c";
+}
+.icon-placeholder:before {
+  content: "\e91d";
+}
+.icon-placeholder2:before {
+  content: "\e91e";
+}
+.icon-price-tag:before {
+  content: "\e91f";
+}
+.icon-reply-black:before {
+  content: "\e920";
+}
+.icon-right-arrow:before {
+  content: "\e921";
+}
+.icon-left-arrow:before {
+  content: "\e92f";
+}
+.icon-left:before {
+  content: "\e922";
+}
+.icon-right:before {
+  content: "\e930";
+}
+.icon-top:before {
+  content: "\e931";
+}
+.icon-bottom:before {
+  content: "\e932";
+}
+.icon-smartphone:before {
+  content: "\e923";
+}
+.icon-team:before {
+  content: "\e924";
+  /*đội ngũ bác sĩ*/
+}
+.icon-telephone:before {
+  content: "\e925";
+}
+.icon-tick:before {
+  content: "\e926";
+}
+.icon-tooth:before {
+  content: "\e927";
+}
+.icon-tooth2:before {
+  content: "\e928";
+}
+.icon-tooth3:before {
+  content: "\e929";
+}
+.icon-twitter-logo-circle:before {
+  content: "\e92a";
+}
+.icon-twitter-logo:before {
+  content: "\e92b";
+}
+.icon-up-arrow:before {
+  content: "\e92c";
+}
+.icon-user:before {
+  content: "\e92d";
+}
+.icon-user2:before {
+  content: "\e92e";
+}
+.icon-world:before {
+  content: "\e959";
+}
+.icon-globe1:before {
+  content: "\e959";
+  /*hình quả cầu*/
+}
+.icon-internet1:before {
+  content: "\e959";
+}
+.icon-network:before {
+  content: "\e959";
+}
+.icon-close:before {
+  content: "\e937";
+}
+.icon-instagram-circle:before {
+  content: "\e933";
+}
+.icon-sphere:before {
+  content: "\e95a";
+}
+.icon-globe:before {
+  content: "\e95a";
+}
+.icon-internet:before {
+  content: "\e95a";
+}
+.icon-star-half:before {
+  content: "\e938";
+}
+.icon-innovation:before {
+  content: "\e956";
+  /*hình bóng đèn sáng*/
+}
+.icon-integrity:before {
+  content: "\e957";
+  /*Sắp xếp miếng ghép bộ não - đột quỵ*/
+}
+.icon-compassion:before {
+  content: "\e958";
+  /*hình bàn tay đỡ trái tim*/
+}
+.icon-pinterest-logo:before {
+  content: "\e934";
+}
+.icon-pinterest-circle:before {
+  content: "\e935";
+}
+.icon-google-logo:before {
+  content: "\e936";
+}
+
