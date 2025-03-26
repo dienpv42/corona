@@ -529,55 +529,219 @@
                 <i class="fa fa-arrow-right"></i>
             </a>
         </div>
-
-
     </section>
     <!-- contact area end-->
 
-    <!-- section product-->
-    <section class="section_">
-        <div class="container-main">
-
-            <div class="section_title">
-                <div class="title">
-                    <h2>Sản phẩm</h2>
+    <!-- section member-->
+    <section class="section_member section-padding">
+        <div class="container">
+            <div class="section-title2">
+                <div class="image">
+                    <img src="assets/img/logo/logo3.png" alt="">
                 </div>
-                <div class="sub_title">
-                    <p>Danh mục sản phẩm Eracomb</p>
-                </div>
+                <h2>
+                    <a href="javascript:void(0)" class="d-flex justify-content-center">
+                        Hội viên
+                    </a>
+                </h2>
             </div>
-            <div class="section_content position-relative">
-                <div class="swiper slide_product_{{ sizeof($products) > 7 ? '2' : '1' }}">
+            <div class="section_content p-relative">
+                <div class="swiper slide_member hide">
                     <div class="swiper-wrapper">
-                        @foreach($products as $key => $product)
                         <!-- item-->
                         <div class="swiper-slide">
-                            <div class="item_product">
+                            <div class="item_member">
                                 <div class="image">
-                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productModal-{{ $product['id'] }}">
-                                        <img src="{{ $product['thumbnail'] ? asset('storage/' . $product['thumbnail']) : asset('/assets/web/assets/images/products/product_1.png') }}" alt="">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
                                     </a>
                                 </div>
-                                <div class="content">
-                                    <div class="code">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productModal-{{ $product['id'] }}">
-                                            {{ @$product['name'] }}
-                                        </a>
-                                    </div>
-                                    <div class="name">
-                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productModal-{{ $product['id'] }}">
-                                            {{ @$product['short_description'] }}
-                                        </a>
-                                    </div>
-                                    @if(sizeof($product->colors) > 0)
-                                    <div class="wrap_color d-flex flex-row align-items-center justify-content-center">
-                                        @foreach($product->colors as $color)
-                                        <div class="color">
-                                            <img src="{{ $color['url'] ? asset('storage/' . $color['url']) : '' }}" alt="{{ $color['url'] ? pathinfo(preg_replace('/^\d+_/', '', basename($color['url'])), PATHINFO_FILENAME) : '' }}" title="{{ $color['url'] ? pathinfo(preg_replace('/^\d+_/', '', basename($color['url'])), PATHINFO_FILENAME) : '' }}">
-                                        </div>
-                                        @endforeach
-                                    </div>
-                                    @endif
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end item-->
+                        <!-- item-->
+                        <div class="swiper-slide">
+                            <div class="item_member">
+                                <div class="image">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/img/member/Logo_TH.png" alt="">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -585,107 +749,29 @@
                     </div>
                 </div>
                 <div class="wrap_arrow">
-                    <div class="swiper-button-prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M15 19.5L7.5 12L15 4.5" stroke="#0B6936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="swiper-pagination"></div>
                     <div class="swiper-button-next">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M9 19.5L16.5 12L9 4.5" stroke="#0B6936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
+<!--                    <div class="swiper-pagination">...</div>-->
+                    <div class="swiper-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 19.5L7.5 12L15 4.5" stroke="#0B6936" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="d-flex justify-content-center mt-4 see-more">
+            <a href="membership-list.html" class="btn-see-more1 btn-see-more2 wow flipInX" data-wow-delay=".3s">
+                Xem Tất cả
+                <i class="fa fa-arrow-right"></i>
+            </a>
+        </div>
     </section>
-    <!-- end section product-->
+    <!-- end section member-->
 
-    <!-- member area start -->
-    <section class="section-member testimonial__area p-relative box-105 section-padding">
-        <div class="testimonial__inner">
-            <div class="container">
-                <div class="section-title2">
-                    <div class="image">
-                        <img src="assets/img/logo/logo3.png" alt="">
-                    </div>
-                    <h2>
-                        <a href="javascript:void(0)" class="d-flex justify-content-center">
-                            Hội viên
-                        </a>
-                    </h2>
-                </div>
-                <div class="testimonial__slider-2">
-                    <div class="testimonial__slider-2-active owl-carousel">
-                        <div class="testimonial__item-2">
-                            <div class="member__item p-relative">
-                                <a class="#">
-                                    <img src="assets/img/member/Logo_TH.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="testimonial__item-2">
-                            <div class="member__item p-relative">
-                                <a class="#">
-                                    <img src="assets/img/member/Logo_TH.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="testimonial__item-2">
-                            <div class="member__item p-relative">
-                                <a class="#">
-                                    <img src="assets/img/member/Logo_TH.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="testimonial__item-2">
-                            <div class="member__item p-relative">
-                                <a class="#">
-                                    <img src="assets/img/member/Logo_TH.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="testimonial__item-2">
-                            <div class="member__item p-relative">
-                                <a class="#">
-                                    <img src="assets/img/member/Logo_TH.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="testimonial__item-2">
-                            <div class="member__item p-relative">
-                                <a class="#">
-                                    <img src="assets/img/member/Logo_TH.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="testimonial__item-2">
-                            <div class="member__item p-relative">
-                                <a class="#">
-                                    <img src="assets/img/member/Logo_TH.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="testimonial__item-2">
-                            <div class="member__item p-relative">
-                                <a class="#">
-                                    <img src="assets/img/member/Logo_TH.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center mt-4 see-more">
-                    <a href="javascript:void(0)" class="btn-see-more1 btn-see-more2 wow flipInX" data-wow-delay=".3s">
-                        Xem Tất cả
-                        <i class="fa fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- member area end -->
     <!-- services-library area start -->
     <section class="section-library services__area section-padding">
         <div class="container">

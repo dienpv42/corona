@@ -448,19 +448,95 @@
   }
 
   //Hội viên
-  .section-member {
-    .member__item{
-      img{
-        height: 100px;
-        @media only screen and (max-width: 991px) {
-          height: 60px;
-        }
-        @media only screen and (max-width: 574px) {
-          height: 60px;
+
+  .section_member {
+    .swiper {
+      transition: all .3s;
+      &.hide{
+        opacity: 0;
+        visibility: hidden;
+      }
+     .swiper-wrapper{
+       height: 200px;
+       .swiper-slide {
+         text-align: center;
+         font-size: 18px;
+         background: #fff;
+         height: calc((100% - 30px) / 2) !important;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+       }
+     }
+    }
+
+    .item_member {
+      width: 100%;
+      text-align: center;
+
+      .image {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 4px;
+        img {
+          width: 100%;
+          height: auto;
+          //border-radius: 8px;
+          //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
       }
     }
+
+    .wrap_arrow{
+      @media only screen and (max-width: 574px) {
+        display: none;
+      }
+      .swiper-button-prev{
+        transform: translateX(-100%);
+      }
+      .swiper-button-next{
+        transform: translateX(100%);
+      }
+      .swiper-button-prev, .swiper-button-next{
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #FFF;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+        transition: all .3s;
+        svg{
+          width: 24px;
+          height: 24px;
+          path{
+            transition: all .3s;
+          }
+        }
+        &::after{
+          display: none;
+        }
+        &:hover{
+          background: $primary-color;
+          border: 2px solid #FFF;
+          svg{
+            path{
+              stroke: #fff;
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        flex-grow: 1;
+        text-align: center;
+        color: $primary-color;
+        font-size: 14px;
+      }
+    }
   }
+
 
   //Tư vấn
   .section-advise {
@@ -604,7 +680,7 @@
           border-radius: 20px;
           width: 100%;
           color: white;
-          font: 20px;
+          font-size: 20px;
           &:focus {
             outline: none;
           }
@@ -621,6 +697,9 @@
           background-color: #faebd700;
           color: white;
           font-size: 20px;
+          i {
+            font-weight: 300;
+          }
         }
       }
     }
@@ -876,19 +955,33 @@
   //danh sách hội viên
   .section-members-list {
     .member__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .testimonial__avatar {
         img{
-          width: 200px;
-          height: 200px;
+          width: 150px;
+          height: 150px;
           object-fit: contain;
           object-position: center;
           @media only screen and (max-width: 991px) {
-            width: 160px;
+            width: 120px;
           }
           @media only screen and (max-width: 574px) {
-            width: 150px;
+            width: 120px;
           }
         }
+      }
+    }
+  }
+  //quyền và nghĩa vụ
+  .section-rights-duties {
+    .content {
+      padding-left: 22px;
+      li{
+        list-style: decimal !important;
+        color: $text-color;
+        line-height: 2.1;
       }
     }
   }
