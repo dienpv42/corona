@@ -708,7 +708,7 @@
     padding: 10px 13px;
     background-color: #003b70;
     color: white;
-    @media only screen and (max-width: 991px) {
+    @media only screen and (max-width: 1440px) {
       overflow-x: overlay;
     }
     @media only screen and (max-width: 574px) {
@@ -724,7 +724,7 @@
       -webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
       animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
       -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
-      @media only screen and (max-width: 991px) {
+      @media only screen and (max-width: 1440px) {
         top: 88px;
         overflow-x: overlay;
       }
@@ -738,7 +738,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        @media only screen and (max-width: 991px) {
+        @media only screen and (max-width: 1440px) {
           width: max-content;
         }
         @media only screen and (max-width: 574px) {

@@ -705,13 +705,14 @@ p {
   color: $white;
   font-size: 20px;
   font-weight: 500;
+  display: inline-block;
 }
 .page__title-breadcrumb .breadcrumb-item:hover {
   color: $secondary-color;
 }
 .page__title-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   color: $white;
-  content: "-";
+  content: ">";
 }
 
 /* sidebar */
@@ -2810,9 +2811,9 @@ ol, ul {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.contact__form {
-  margin-right: 155px;
-}
+//.contact__form {
+//  margin-right: 155px;
+//}
 .contact__input {
   width: 100%;
   border: 1px solid transparent;
