@@ -15,6 +15,7 @@
         text-transform: uppercase;
         color: $primary-color;
         font-size: 22px;
+        line-height: 1.5;
         @media only screen and (max-width: 991px) {
             font-size: 20px;
         }
@@ -53,6 +54,7 @@
     overflow: hidden;
     border: none;
     transition: all ease .5s;
+    background-color: transparent;
     @media only screen and (max-width: 991px) {
         padding: 0 10px;
     }
@@ -246,5 +248,96 @@
         border-left: none;
         line-height: 2.4;
         padding-left: 4px;
+    }
+}
+
+.wrap-content-editor {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 auto;
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        line-height: 1.4;
+        margin: 1em 0 0.8em;
+    }
+
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.75rem; }
+    h3 { font-size: 1.5rem; }
+    h4 { font-size: 1.25rem; }
+    h5 { font-size: 1.1rem; }
+    h6 { font-size: 1rem; }
+
+    p {
+        line-height: 1.8;
+        margin-bottom: 1em;
+    }
+
+    ul, ol {
+        padding-left: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    ul {
+        li{
+            list-style: disc;
+        }
+    }
+
+    ol {
+        li{
+            list-style: decimal;
+        }
+    }
+
+    li {
+        margin-bottom: 0.5em;
+    }
+
+    strong {
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    blockquote {
+        border-left: 4px solid $secondary-color;
+        padding-left: 1em;
+        color: $primary-color;
+        font-style: italic;
+        margin: 1.5em 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1.5em 0;
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 1em 0;
+        display: block;
     }
 }
