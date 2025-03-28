@@ -13,7 +13,7 @@
     left: 0;
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
-    z-index: 1000;
+    z-index: 2000;
 
     &.hidden-mobie {
       @media only screen and (max-width: 1024px) {
@@ -35,7 +35,7 @@
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: width 0.3s, height 0.3s, opacity 0.3s;
-    z-index: 1000;
+    z-index: 2000;
 
     &.hidden-mobie {
       @media only screen and (max-width: 1024px) {
@@ -553,6 +553,7 @@
     .content {
       .line-text {
         @include line_text(3);
+        text-align: justify;
         @media only screen and (max-width: 1024px) {
           font-size: 14px;
         }
@@ -705,10 +706,10 @@
     }
   }
   .section-menu2{
-    padding: 10px 13px;
+    padding: 5px 13px;
     background-color: #003b70;
     color: white;
-    @media only screen and (max-width: 1440px) {
+    @media only screen and (max-width: 991px) {
       overflow-x: overlay;
     }
     @media only screen and (max-width: 574px) {
@@ -734,7 +735,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        @media only screen and (max-width: 1440px) {
+        @media only screen and (max-width: 991px) {
           width: max-content;
         }
         @media only screen and (max-width: 574px) {
@@ -928,19 +929,13 @@
   }
   //ban chấp hành , ban thường vụ, ban kiểm tra
   .section-committee {
-    .img-logo {
-      img {
-        width: 100%;
-        max-width: 300px;
-      }
-    }
     .widget__abouts {
-      margin-bottom: 35px;
+      width: 250px;
       img {
         border-radius: 0;
         width: 100%;
-        max-width: 250px;
-        height: 250px;
+        //max-width: 250px;
+        height: 300px;
         object-fit: cover;
         object-position: center;
         margin-bottom: 20px;
@@ -978,4 +973,79 @@
 
   // import css page
   @import "page";
+
+  //search
+  .section-search{
+    width: 100%;
+    height: 100vh;
+    background-color: #003b70e0;
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    .close-search {
+      position: absolute;
+      left: 50%;
+      top: 10%;
+      button {
+        background-color: #0a53be00;
+        font-size: 20px;
+        i {
+          font-size: 30px;
+          color: white;
+        }
+      }
+    }
+    form {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%);
+      .form-search {
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        @media only screen and (max-width: 991px) {
+          width: 400px;
+        }
+        @media only screen and (max-width: 574px) {
+          width: 300px;
+        }
+        input {
+          background-color: #f0f8ff00;
+          border: 1px solid #c3c3c1;
+          padding: 6px 11px;
+          border-radius: 20px;
+          width: 100%;
+          color: white;
+          font-size: 20px;
+          &:focus {
+            outline: none;
+          }
+          &::placeholder {
+            color: white;
+            font-style: italic;
+            font-size: 15px;
+          }
+        }
+        button {
+          position: absolute;
+          right: 22px;
+          top: 6px;
+          background-color: #faebd700;
+          color: white;
+          font-size: 20px;
+          i {
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    &.show-search {
+      display: block;
+      animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
+    }
+  }
 }
