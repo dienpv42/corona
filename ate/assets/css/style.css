@@ -8055,6 +8055,8 @@ ol, ul {
 .ate-main .section-about-2 .about-right {
   width: 100%;
   height: 350px;
+  position: sticky;
+  top: 150px;
 }
 .ate-main .section-about-2 .about-right .img-association > * {
   width: 100%;
@@ -8095,7 +8097,14 @@ ol, ul {
 }
 @media only screen and (max-width: 991px) {
   .ate-main .section-about-3 .about-left .section__content.active .wrap-content-editor:before {
-    height: 51%;
+    height: 94%;
+    top: 0px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .ate-main .section-about-3 .about-left .section__content.active .wrap-content-editor:before {
+    height: 95%;
     top: 0px;
     width: 100%;
   }
@@ -8106,6 +8115,8 @@ ol, ul {
 .ate-main .section-about-3 .about-right {
   width: 100%;
   height: 350px;
+  position: sticky;
+  top: 150px;
 }
 .ate-main .section-about-3 .about-right .img-association > * {
   width: 100%;
