@@ -3512,13 +3512,15 @@ ol, ul {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .rc-text h6 {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.4;
   margin-bottom: 5px;
-  @include line_text(3);
+  @include line_text(5);
 }
 .rc-text h6 a:hover {
   color: $secondary-color;

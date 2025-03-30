@@ -4440,15 +4440,17 @@ ol, ul {
   border-radius: 50%;
   width: 100px;
   height: 100px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .rc-text h6 {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 1.4;
   margin-bottom: 5px;
   word-break: break-word;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -7178,6 +7180,40 @@ ol, ul {
   }
 }
 
+.section-title-center {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+.section-title-center > * {
+  text-transform: uppercase;
+  color: #003b70;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  .section-title-center > * {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .section-title-center > * {
+    font-size: 19px;
+  }
+}
+.section-title-center::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 40px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #eace5b;
+}
+
 .hover-anim-blue {
   position: relative;
   background-position: 0% 100%;
@@ -7510,6 +7546,11 @@ ol, ul {
   display: block;
 }
 
+.post-highlight {
+  color: #fe7b44;
+  font-weight: 600;
+}
+
 .ate-main {
   /*-------------------------------
       Custom Cursor CSS
@@ -7703,7 +7744,6 @@ ol, ul {
   text-overflow: ellipsis;
   margin: 0;
   line-height: 1.3;
-  text-align: justify;
 }
 .ate-main .scroll-down {
   position: absolute;
@@ -7825,7 +7865,7 @@ ol, ul {
   font-weight: 300;
 }
 .ate-main .section-highlights-news-events .highlights .item-highlights:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .ate-main .section-highlights-news-events .wrap-news .title > * {
   border-left: 5px solid #eace5b;
@@ -7851,6 +7891,12 @@ ol, ul {
   align-items: start;
   gap: 16px;
   margin-bottom: 24px;
+}
+.ate-main .section-highlights-news-events .wrap-news .wrap-content .item:hover img {
+  transform: scale(1.1);
+}
+.ate-main .section-highlights-news-events .wrap-news .wrap-content .item .image {
+  overflow: hidden;
 }
 .ate-main .section-highlights-news-events .wrap-news .wrap-content .item .image a {
   display: flex;
@@ -7883,6 +7929,9 @@ ol, ul {
 }
 .ate-main .section-highlights-news-events .see-more {
   margin-top: 0;
+}
+.ate-main .section-about-the-association {
+  background-color: #f8f9fa;
 }
 .ate-main .section-about-the-association .about-left .title-association-home > * {
   border-left: 5px solid #eace5b;
@@ -8120,6 +8169,7 @@ ol, ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0 10px;
 }
 .ate-main .section-news-menu form .form-search {
   width: 400px;
@@ -8413,16 +8463,38 @@ ol, ul {
 .ate-main .section-mission .image img {
   border-radius: 20px;
 }
-.ate-main .section-committee .widget__abouts {
-  width: 250px;
-}
 .ate-main .section-committee .widget__abouts img {
-  border-radius: 0;
   width: 100%;
-  height: 300px;
+  border-radius: 0;
+  max-width: 200px;
+  height: 250px;
   object-fit: cover;
   object-position: center;
   margin-bottom: 20px;
+}
+.ate-main .section-committee .widget__abouts p {
+  text-align: justify;
+}
+.ate-main .section-committee .widget__abouts h5 {
+  font-size: 18px;
+}
+.ate-main .section-committee .widget__abouts .position {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.ate-main .section-committee .widget__abouts.widget__abouts-first {
+  max-width: 800px;
+  align-items: center;
+}
+.ate-main .section-committee .widget__abouts.widget__abouts-first img {
+  max-width: 300px;
+  height: auto;
+}
+.ate-main .section-committee .widget__abouts.widget__abouts-first .content {
+  flex: 1;
+}
+.ate-main .section-committee .widget__abouts.widget__abouts-first .content h5 {
+  font-size: 20px;
 }
 .ate-main .section-members-list .member__item {
   display: flex;
@@ -8484,22 +8556,10 @@ ol, ul {
 .ate-main .item-post .image img {
   width: 45px;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
   margin-left: 8px;
   border-radius: 8px;
-}
-@media only screen and (max-width: 991px) {
-  .ate-main .item-post .image img {
-    width: 100px;
-    height: 120px;
-  }
-}
-@media only screen and (max-width: 574px) {
-  .ate-main .item-post .image img {
-    width: 100px;
-    height: 100%;
-  }
 }
 .ate-main .item-post .content {
   flex: 1;
@@ -8570,10 +8630,14 @@ ol, ul {
   overflow: hidden;
   height: 100%;
 }
+.ate-main .item-post-2:hover img {
+  transform: scale(1.1);
+}
 .ate-main .item-post-2 .img-post {
   position: relative;
   width: 100%;
   padding-top: 50%;
+  overflow: hidden;
 }
 .ate-main .item-post-2 .img-post img {
   position: absolute;
@@ -8584,6 +8648,7 @@ ol, ul {
   object-fit: cover;
   object-position: center;
   border-radius: 0;
+  transition: 0.5s;
 }
 .ate-main .item-post-2 .content {
   flex: 1;
@@ -8658,6 +8723,9 @@ ol, ul {
   overflow: hidden;
   height: 100%;
 }
+.ate-main .item-post-3:hover img {
+  transform: scale(1.1);
+}
 @media only screen and (max-width: 574px) {
   .ate-main .item-post-3 {
     align-items: center;
@@ -8665,6 +8733,7 @@ ol, ul {
 }
 .ate-main .item-post-3 .image {
   display: flex;
+  overflow: hidden;
 }
 .ate-main .item-post-3 .image img {
   width: 160px;
@@ -8735,7 +8804,7 @@ ol, ul {
 }
 @media only screen and (max-width: 574px) {
   .ate-main .item-post-3 .content .title > * {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .ate-main .item-post-3 .content .desc {
@@ -8754,6 +8823,9 @@ ol, ul {
   overflow: hidden;
   height: 100%;
 }
+.ate-main .item-post-4:hover img {
+  transform: scale(1.1);
+}
 .ate-main .item-post-4 .img-post {
   position: relative;
   width: 100%;
@@ -8770,9 +8842,6 @@ ol, ul {
   border-radius: 0;
   transition: 0.7s;
 }
-.ate-main .item-post-4 .img-post:hover img {
-  transform: scale(1.2);
-}
 .ate-main .item-post-4 .content {
   position: absolute;
   bottom: 0;
@@ -8780,6 +8849,7 @@ ol, ul {
   user-select: none;
   background-image: linear-gradient(rgba(0, 59, 112, 0), rgba(0, 59, 112, 0.51), rgba(0, 59, 112, 0.68));
   color: #ffffff;
+  width: 100%;
 }
 @media only screen and (max-width: 991px) {
   .ate-main .item-post-4 .content {
@@ -8791,16 +8861,28 @@ ol, ul {
     padding: 16px;
   }
 }
-.ate-main .item-post-4 .content .tittle_main {
+.ate-main .item-post-4 .content .lb-highlight {
   display: inline-block;
-  background-color: #eace5b;
+  background-color: #ea5b5b;
   margin-bottom: 10px;
+  box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.27);
 }
-.ate-main .item-post-4 .content .tittle_main > * {
+.ate-main .item-post-4 .content .lb-highlight > * {
   color: #ffffff;
   padding: 6px 10px;
   line-height: 1.3;
   margin: 0;
+  font-size: 18px;
+}
+@media only screen and (max-width: 991px) {
+  .ate-main .item-post-4 .content .lb-highlight > * {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .ate-main .item-post-4 .content .lb-highlight > * {
+    font-size: 15px;
+  }
 }
 .ate-main .item-post-4 .content .calendar {
   margin-bottom: 5px;
@@ -8811,12 +8893,12 @@ ol, ul {
 }
 @media only screen and (max-width: 991px) {
   .ate-main .item-post-4 .content .calendar > * {
-    font-size: 17px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 574px) {
   .ate-main .item-post-4 .content .calendar > * {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .ate-main .item-post-4 .content .title h3 > * {
@@ -8824,7 +8906,6 @@ ol, ul {
   letter-spacing: 1px;
   font-weight: 700;
   line-height: 1.4;
-  text-align: justify;
   color: #ffffff;
   word-break: break-word;
   display: -webkit-box;
@@ -8835,22 +8916,12 @@ ol, ul {
 }
 @media only screen and (max-width: 991px) {
   .ate-main .item-post-4 .content .title h3 > * {
-    font-size: 18px;
-  }
-}
-@media only screen and (max-width: 574px) {
-  .ate-main .item-post-4 .content .title h3 > * {
-    font-size: 15px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .ate-main .item-post-4 .content .title h3 > * {
     font-size: 15px;
   }
 }
 @media only screen and (max-width: 574px) {
   .ate-main .item-post-4 .content .title h3 > * {
-    font-size: 15px;
+    font-size: 14px;
   }
 }
 .ate-main .item-post-4 .content .desc {

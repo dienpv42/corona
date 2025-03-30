@@ -210,7 +210,6 @@
           @include line_text(2);
           margin: 0;
           line-height: 1.3;
-          text-align: justify;
         }
       }
     }
@@ -269,7 +268,6 @@
       }
     }
   }
-
   //tiêu điểm - tin tức - sự kiện
   .section-highlights-news-events {
     background-color: #f8f9fa;
@@ -332,9 +330,9 @@
         }
 
         &:hover {
-          img {
-            transform: scale(1.2);
-          }
+             img {
+               transform: scale(1.1);
+             }
         }
       }
     }
@@ -363,7 +361,13 @@
           align-items: start;
           gap: 16px;
           margin-bottom: 24px;
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
           .image {
+            overflow: hidden;
             a {
               display: flex;
 
@@ -400,9 +404,9 @@
       margin-top: 0;
     }
   }
-
   //Hiệp hội
   .section-about-the-association {
+    background-color: #f8f9fa;
     .about-left {
       .title-association-home {
         > * {
@@ -677,6 +681,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      margin: 0 10px ;
       .form-search {
         width: 400px;
         display: flex;
@@ -938,16 +943,38 @@
   //ban chấp hành , ban thường vụ, ban kiểm tra
   .section-committee {
     .widget__abouts {
-      width: 250px;
       img {
-        border-radius: 0;
         width: 100%;
-        //max-width: 250px;
-        height: 300px;
+        border-radius: 0;
+        max-width: 200px;
+        height: 250px;
         object-fit: cover;
         object-position: center;
         margin-bottom: 20px;
-
+      }
+      p{
+        text-align: justify;
+      }
+      h5 {
+        font-size: 18px;
+      }
+      .position{
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      &.widget__abouts-first{
+        max-width: 800px;
+        align-items: center;
+        img{
+          max-width: 300px;
+          height: auto;
+        }
+        .content{
+          flex: 1;
+          h5{
+            font-size: 20px;
+          }
+        }
       }
     }
   }
