@@ -295,14 +295,13 @@
 
       .item-highlights {
         overflow: hidden;
-
+        border-radius: 8px;
         img {
           width: 100%;
-          height: 387px;
+          height: 351px;
           transition: 0.7s;
           object-fit: cover;
           object-position: center;
-
           @media only screen and (max-width: 991px) {
             width: 690px;
             height: 366px;
@@ -356,31 +355,13 @@
     }
 
     .wrap-news {
-      .title {
-        >* {
-          @include title-h2;
-        }
-
-        @media only screen and (max-width: 991px) {
-          margin-top: 20px;
-        }
-
-        @media only screen and (max-width: 574px) {
-          margin-top: 20px;
-        }
-      }
-
       .wrap-content {
-
-        //display: flex;
-        //flex-direction: column;
-        //gap: 24px;
         .item {
           display: flex;
           flex-direction: row;
           align-items: start;
           gap: 16px;
-          margin-bottom: 24px;
+          //margin-bottom: 24px;
 
           &:hover {
             img {
@@ -390,13 +371,13 @@
 
           .image {
             overflow: hidden;
-
+            border-radius: 8px;
             a {
               display: flex;
 
               img {
-                width: 113px;
-                height: 113px;
+                width: 140px;
+                height: 100px;
                 object-fit: cover;
                 object-position: center;
               }
@@ -433,8 +414,7 @@
 
   //Hiệp hội
   .section-about-the-association {
-    background-color: #f8f9fa;
-
+    //background-color: #f8f9fa;
     .about-left {
       .title-association-home {
         >* {
@@ -546,7 +526,6 @@
     }
   }
 
-  //Hiệp hội
   .section-about-2 {
     padding-top: 60px;
 
@@ -684,6 +663,58 @@
     }
   }
 
+  .section-about-4 {
+    padding-top: 60px;
+
+    @media only screen and (max-width: 991px) {
+      padding-top: 40px;
+    }
+
+    @media only screen and (max-width: 574px) {
+      padding-top: 30px;
+    }
+
+    .about-left {
+      .section__content {
+        &.active {
+          position: relative;
+
+          .wrap-content-editor {
+            max-height: 350px;
+            overflow: hidden;
+
+            &:before {
+              content: "";
+              height: 90%;
+              right: 0;
+              position: absolute;
+              top: 0;
+              width: 100%;
+              z-index: 9;
+              background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgb(255 255 255 / 26%), #ffffff);
+              //@media only screen and (max-width: 991px) {
+              //  height: 94%;
+              //  top: 0px;
+              //  width: 100%;
+              //}
+              //@media only screen and (max-width: 574px) {
+              //  height: 95%;
+              //  top: 0px;
+              //  width: 100%;
+              //}
+            }
+          }
+        }
+        .wrap-content-editor{
+          ol{
+            li{
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
   //Hội viên
 
   .section_member {

@@ -4448,6 +4448,7 @@ ol, ul {
   font-size: 15px;
   line-height: 1.4;
   margin-bottom: 5px;
+  font-weight: 500;
   word-break: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -5538,7 +5539,7 @@ ol, ul {
 }
 
 .footer__logo {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .footer__logo img {
   height: 65px;
@@ -7809,10 +7810,11 @@ ol, ul {
 }
 .ate-main .section-highlights-news-events .highlights .item-highlights {
   overflow: hidden;
+  border-radius: 8px;
 }
 .ate-main .section-highlights-news-events .highlights .item-highlights img {
   width: 100%;
-  height: 387px;
+  height: 351px;
   transition: 0.7s;
   object-fit: cover;
   object-position: center;
@@ -7867,43 +7869,25 @@ ol, ul {
 .ate-main .section-highlights-news-events .highlights .item-highlights:hover img {
   transform: scale(1.1);
 }
-.ate-main .section-highlights-news-events .wrap-news .title > * {
-  border-left: 5px solid #eace5b;
-  padding-left: 14px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  color: #003b70;
-  font-size: 25px;
-}
-@media only screen and (max-width: 991px) {
-  .ate-main .section-highlights-news-events .wrap-news .title {
-    margin-top: 20px;
-  }
-}
-@media only screen and (max-width: 574px) {
-  .ate-main .section-highlights-news-events .wrap-news .title {
-    margin-top: 20px;
-  }
-}
 .ate-main .section-highlights-news-events .wrap-news .wrap-content .item {
   display: flex;
   flex-direction: row;
   align-items: start;
   gap: 16px;
-  margin-bottom: 24px;
 }
 .ate-main .section-highlights-news-events .wrap-news .wrap-content .item:hover img {
   transform: scale(1.1);
 }
 .ate-main .section-highlights-news-events .wrap-news .wrap-content .item .image {
   overflow: hidden;
+  border-radius: 8px;
 }
 .ate-main .section-highlights-news-events .wrap-news .wrap-content .item .image a {
   display: flex;
 }
 .ate-main .section-highlights-news-events .wrap-news .wrap-content .item .image a img {
-  width: 113px;
-  height: 113px;
+  width: 140px;
+  height: 100px;
   object-fit: cover;
   object-position: center;
 }
@@ -7929,9 +7913,6 @@ ol, ul {
 }
 .ate-main .section-highlights-news-events .see-more {
   margin-top: 0;
-}
-.ate-main .section-about-the-association {
-  background-color: #f8f9fa;
 }
 .ate-main .section-about-the-association .about-left .title-association-home > * {
   border-left: 5px solid #eace5b;
@@ -8124,6 +8105,39 @@ ol, ul {
   border-radius: 25px;
   object-fit: cover;
   object-position: center;
+}
+.ate-main .section-about-4 {
+  padding-top: 60px;
+}
+@media only screen and (max-width: 991px) {
+  .ate-main .section-about-4 {
+    padding-top: 40px;
+  }
+}
+@media only screen and (max-width: 574px) {
+  .ate-main .section-about-4 {
+    padding-top: 30px;
+  }
+}
+.ate-main .section-about-4 .about-left .section__content.active {
+  position: relative;
+}
+.ate-main .section-about-4 .about-left .section__content.active .wrap-content-editor {
+  max-height: 350px;
+  overflow: hidden;
+}
+.ate-main .section-about-4 .about-left .section__content.active .wrap-content-editor:before {
+  content: "";
+  height: 90%;
+  right: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.26), #ffffff);
+}
+.ate-main .section-about-4 .about-left .section__content .wrap-content-editor ol li {
+  font-size: 16px;
 }
 .ate-main .section_member .swiper {
   transition: all 0.3s;
@@ -9098,6 +9112,48 @@ ol, ul {
 }
 .ate-main .section-contact__info .tittle > * {
   line-height: 1.3;
+}
+.ate-main .item {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 16px;
+}
+.ate-main .item:hover img {
+  transform: scale(1.1);
+}
+.ate-main .item .image {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.ate-main .item .image a {
+  display: flex;
+}
+.ate-main .item .image a img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  object-position: center;
+}
+.ate-main .item .content {
+  flex: 1;
+}
+.ate-main .item .content > * {
+  font-weight: 600;
+  color: #003b70;
+  font-size: 13px;
+  line-height: 1.4;
+  user-select: none;
+  text-align: justify;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ate-main .item .content:hover a {
+  color: black;
 }
 .ate-main .section-search {
   width: 100%;

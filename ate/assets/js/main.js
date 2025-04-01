@@ -951,5 +951,9 @@
     event.preventDefault();
     $("#about-5 .btn-see-more1.btn-see-more2").css("display", "none");
   });
-
+  $("#about-6 .see-more").on("click", function (event) {
+    $("#about-6.section__content").removeClass("active");
+    event.preventDefault();
+    $("#about-6 .btn-see-more1.btn-see-more2").css("display", "none");
+  });
 })(jQuery);
