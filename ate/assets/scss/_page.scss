@@ -445,7 +445,7 @@
   flex-direction: row;
   align-items: start;
   gap: 16px;
-  //margin-bottom: 24px;
+  margin-bottom: 16px;
 
   &:hover {
     img {
@@ -477,13 +477,30 @@
       font-size: 13px;
       line-height: 1.4;
       user-select: none;
-      text-align: justify;
       @include line_text(5);
     }
 
     &:hover {
       a {
         color: black;
+      }
+    }
+  }
+}
+//tin leeen quan
+.section-recent-post {
+  .item-post{
+    box-shadow: 0 0 0 0;
+    .img-post{
+      img{
+        width: 35px;
+        height: auto;
+      }
+    }
+    .content{
+      padding: 10px;
+      h3{
+        font-size: 13px;
       }
     }
   }

@@ -913,6 +913,50 @@
     });
     $(".slide_member").removeClass("hide");
   });
+  //
+  $(document).ready(function () {
+    const spaceBetweenVW = 20; // Định nghĩa giá trị `spaceBetweenVW` nếu cần
+    const slideMember = new Swiper(".slide_library", {
+      speed: 1500,
+      spaceBetween: spaceBetweenVW,
+      slidesPerView: 3,
+      grid: {
+        rows: 1,
+      },
+      autoplay: true,
+      navigation: {
+        nextEl: ".section-library .swiper-button-next",
+        prevEl: ".section-library .swiper-button-prev",
+      },
+      pagination: {
+        el: ".section-library .swiper-pagination",
+        type: "fraction",
+      },
+      breakpoints: {
+        1280: {
+          slidesPerView: 3,
+          grid: {
+            rows: 1,
+          },
+        },
+        992: {
+          slidesPerView: 2,
+          grid: {
+            rows: 1,
+          },
+        },
+        0: {
+          spaceBetween: spaceBetweenVW,
+          slidesPerView: 1,
+          grid: {
+            rows: 1,
+          },
+        },
+      },
+    });
+    $(".slide_library").removeClass("hide");
+  });
+
   //search
   $(".search").on("click", function (event) {
     $(".section-search").addClass("show-search");
