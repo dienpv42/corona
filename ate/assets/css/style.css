@@ -8321,10 +8321,9 @@ ol, ul {
   flex-direction: row;
   align-items: start;
   gap: 16px;
-  margin-bottom: 16px;
 }
 .ate-main .section-library .swiper .swiper-wrapper .swiper-slide .section__content .item-2 .image img {
-  width: 86px;
+  width: 89px;
   height: auto;
   object-fit: cover;
   object-position: center;
@@ -9199,7 +9198,6 @@ ol, ul {
   flex-direction: row;
   align-items: start;
   gap: 16px;
-  margin-bottom: 16px;
 }
 .ate-main .item:hover img {
   transform: scale(1.1);
