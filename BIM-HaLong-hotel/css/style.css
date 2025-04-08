@@ -41,7 +41,15 @@
  39. Responsive (Media Query)
  
 ------------------------------------------------------- */
-
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf");
+  }
 
 /* ======= Basic style ======= */
 html,
@@ -61,7 +69,7 @@ body {
     word-wrap: break-word;
 }
 body {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.75em;
@@ -69,8 +77,8 @@ body {
     overflow-x: hidden !important;
 }
 p {
-    font-family: 'Barlow', sans-serif;
-    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
     font-weight: 400;
     line-height: 1.75em;
     color: #666;
@@ -83,7 +91,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Gilda Display', serif;;
+    font-family: "Montserrat", sans-serif;;
     font-weight: 400;
     line-height: 1.25em;
     margin: 0 0 20px 0;
@@ -108,7 +116,7 @@ a:hover {
 }
 b {
     font-weight: 400;
-    color: #aa8453;
+    color: #edbe8c;
 }
 
 /* text field */
@@ -138,7 +146,7 @@ textarea {
     display: block;
     width: 100%;
     line-height: 1.5em;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #666;
@@ -149,7 +157,7 @@ textarea {
 input:focus,
 textarea:focus {
     border-bottom-width: 1px;
-    border-color: #aa8453;
+    border-color: #edbe8c;
 }
 input[type="submit"],
 input[type="reset"],
@@ -191,20 +199,20 @@ input[type="checkbox"] {
 }
 input[type="submit"] {
     font-weight: 400;
-    font-family: 'Gilda Display', serif;;
+    font-family: "Montserrat", sans-serif;;
     text-transform: uppercase;
-    background: #aa8453;
+    background: #edbe8c;
     color: #fff;
     padding: 8px 24px;
     margin: 0;
     position: relative;
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .alert-success {
     background: transparent;
     color: #666;
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
     border-radius: 0px;
 }
 
@@ -239,7 +247,7 @@ blockquote {
     color: #666;
 }
 blockquote p {
-    font-family: inherit;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 0 !important;
     color: inherit;
     max-width: 650px;
@@ -249,7 +257,7 @@ blockquote p {
 }
 blockquote:before {
     content: '\e645';
-    font-family: 'Themify';
+    font-family: "Montserrat", sans-serif;;
     position: absolute;
     right: 40px;
     bottom: 40px;
@@ -273,7 +281,7 @@ blockquote cite {
     line-height:1;
     margin-top: 22px;
     font-style:normal;
-    color: #aa8453;
+    color: #edbe8c;
     font-weight: 400;
 }
 blockquote cite:before {
@@ -285,7 +293,7 @@ blockquote cite:before {
     height: 1px;
     border-top: 1px solid; 
     border-color:inherit;
-    color: #aa8453;
+    color: #edbe8c;
 }
 
 
@@ -353,7 +361,7 @@ blockquote cite:before {
     font-weight: 600;
 }
 .count {
-    font-family: 'Gilda Display', serif;;
+    font-family: "Montserrat", sans-serif;;
 }
 .valign {
     display: -webkit-box;
@@ -411,7 +419,7 @@ color: #666;
 color: #222;
 }
 .color-5 {
-color: #aa8453;
+color: #edbe8c;
 }
 
 /* star - white  */
@@ -481,15 +489,15 @@ color: #aa8453;
 /* ======= Selection style ======= */
 ::-webkit-selection {
     color: #fff;
-    background: #aa8453;
+    background: #edbe8c;
 }
 ::-moz-selection {
     color: #fff;
-    background: #aa8453;
+    background: #edbe8c;
 }
 ::selection {
     color: #fff;
-    background: #aa8453;
+    background: #edbe8c;
 }
 
 
@@ -548,7 +556,7 @@ color: #aa8453;
     top: -1px;
     left: -1px;
     border: 1px solid transparent;
-    border-top: 1px solid #aa8453;
+    border-top: 1px solid #edbe8c;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -590,8 +598,8 @@ color: #aa8453;
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: #aa8453;
-    border: 1px solid #aa8453;
+    background: #edbe8c;
+    border: 1px solid #edbe8c;
 }
 
 
@@ -733,12 +741,12 @@ color: #aa8453;
     height: 40px;
     line-height: 34px;
     background: transparent;
-    color: #8e6d45;
+    color: #edbe8c;
     font-size: 11px;
     margin-right: 15px;
     margin-left: 15px;
     cursor: pointer;
-    border: 1px solid #8e6d45;
+    border: 1px solid #edbe8c;
     border-radius: 100%;
     transition: all 0.2s ease-in-out;
     transform: scale(1.0);
@@ -756,7 +764,7 @@ color: #aa8453;
     transform: scale(0.9);
     background: transparent;
     border: 1px solid #b19777;
-    color: #8e6d45;
+    color: #edbe8c;
 }
 @media screen and (max-width: 768px) {
     .clients .owl-theme .owl-nav,
@@ -790,26 +798,26 @@ color: #aa8453;
     padding: 0 0 120px 0;
 }
 .section-padding h6 {
-    color: #aa8453;
+    color: #edbe8c;
     font-size: 20px;
     margin-bottom: 20px;
 }
 .section-subtitle {
-    font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #666;
     text-transform: uppercase;
     position: relative;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     margin-bottom: 5px;
 }
 .section-subtitle span {
- color: #aa8453;
+ color: #edbe8c;
 }
 .section-title {
     font-size: 34px;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #222;
     position: relative;
@@ -843,12 +851,12 @@ color: #aa8453;
     color: #FFF;
 }
 .navbar .navbar-nav .nav-link {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #fff;
     margin: 1px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     -webkit-transition: all .4s;
     transition: all .4s;
@@ -859,13 +867,13 @@ color: #aa8453;
     color: #fff;
 }
 .navbar .navbar-nav .nav-link:hover {
-    color: #aa8453;
+    color: #edbe8c;
 }
 /* .navbar .navbar-nav .active {
-    color: #aa8453 !important;
+    color: #edbe8c !important;
 } */
 .navbar .navbar-nav .active i {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .nav-scroll {
     background: #fff;
@@ -886,13 +894,13 @@ color: #aa8453;
 }
 .nav-scroll .navbar-toggler-icon,
 .nav-scroll .icon-bar {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .nav-scroll .navbar-nav .nav-link {
     color: #222;
 }
 /* .nav-scroll .navbar-nav .active {
-    color: #aa8453 !important;
+    color: #edbe8c !important;
 } */
 .nav-scroll .navbar-nav .logo {
     padding: 15px 0;
@@ -905,13 +913,13 @@ color: #aa8453;
     margin-bottom: 0px;
 }
 .nav-scroll .logo-wrapper .logo h2 {
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 27px;
     font-weight: 400;
     display: block;
     width: 100%;
     position: relative;
-    color: #aa8453;
+    color: #edbe8c;
     margin-bottom: 0;
     padding: 20px 0;
     letter-spacing: 1px;
@@ -919,7 +927,7 @@ color: #aa8453;
 }
 .nav-scroll .logo-wrapper .logo span {
     display: block;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 10px;
     color: #222;
     font-weight: 400;
@@ -935,13 +943,13 @@ color: #aa8453;
     float: left;
 }
 .logo-wrapper .logo h2 {
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 27px;
     font-weight: 400;
     display: block;
     width: 100%;
     position: relative;
-    color: #aa8453;
+    color: #edbe8c;
     margin-bottom: 0;
     padding: 20px 0;
     letter-spacing: 1px;
@@ -954,7 +962,7 @@ color: #aa8453;
 }
 .logo-wrapper .logo span {
     display: block;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 10px;
     color: #fff;
     font-weight: 400;
@@ -982,11 +990,11 @@ color: #aa8453;
     color: #222;
 }
 .nav-scroll .navbar-nav .active i {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .navbar .dropdown-menu .dropdown-item {
     padding: 5px 0;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #222;
@@ -1007,7 +1015,7 @@ color: #aa8453;
 .navbar .dropdown-menu .dropdown:hover > .dropdown-item,
 .navbar .dropdown-menu .dropdown-item.active,
 .navbar .dropdown-menu .dropdown-item:hover {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .navbar .dropdown-toggle::after {
     display: none;
@@ -1119,7 +1127,7 @@ color: #aa8453;
         color: #222 !important;
     }
     .nav-scroll .navbar-collapse .active {
-        color: #aa8453 !important;
+        color: #edbe8c !important;
     } 
     .navbar .dropdown-menu .dropdown-item {
         padding: 0 15px;
@@ -1165,7 +1173,7 @@ color: #aa8453;
         color: #222;
     }
     .nav-scroll .dropdown .nav-link.active i {
-    color: #aa8453;
+    color: #edbe8c;
     }
 
     .navbar .navbar-collapse {
@@ -1198,11 +1206,11 @@ color: #aa8453;
 }
 
 .header .caption h4 {
-    font-family: 'Barlow Condensed', serif;;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     color: #fff;
     margin-bottom: 20px;
     margin-top: 20px;
@@ -1212,7 +1220,7 @@ color: #aa8453;
 .header .caption h1 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Gilda Display', serif;;
+    font-family: "Montserrat", sans-serif;;
     font-size: 45px;
     text-transform: uppercase;
     line-height: 1.35em;
@@ -1227,7 +1235,7 @@ color: #aa8453;
 .header .caption h3 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Gilda Display', serif;;
+    font-family: "Montserrat", sans-serif;;
     font-size: 48px;
     text-transform: uppercase;
     line-height: 1.35em;
@@ -1339,7 +1347,7 @@ hr {
 .owl-theme .owl-nav [class*=owl-]:hover {
     transform: scale(0.9);
     background: transparent;
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
     color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -1398,14 +1406,14 @@ hr {
     transition: .3s all ease;
     display: block;
     color: #fff;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .slider-fade .owl-dots .owl-dot span {
     background: transparent;
     display: none
 }
 .slider-fade .owl-dots .owl-dot.active {
-    color: #aa8453
+    color: #edbe8c
 }
 .slider-fade .owl-dot:before {
     counter-increment: dots;
@@ -1432,7 +1440,7 @@ hr {
 .header div.reservation .call {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     letter-spacing: 5px;
     font-size: 12px;
@@ -1441,9 +1449,9 @@ hr {
 } 
 
 .header div.reservation .call span {
-       font-family: 'Gilda Display', serif;
+       font-family: "Montserrat", sans-serif;
     font-size: 24px;
-    color: #aa8453;
+    color: #edbe8c;
     letter-spacing: 1px;
 } 
 
@@ -1464,7 +1472,7 @@ hr {
     transform: rotate(90deg);
 }
 .header div.reservation a .icon:hover {
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
 }
 @media screen and (max-width: 992px) {
     .header div.reservation {
@@ -1507,8 +1515,8 @@ hr {
 }
 .slider .owl-theme .owl-dots .owl-dot.active span,
 .slider .owl-theme .owl-dots .owl-dot:hover span {
-    background: #aa8453;
-    border: 1px solid #aa8453;
+    background: #edbe8c;
+    border: 1px solid #edbe8c;
 }
 /* bounce */
 .header .arrow {
@@ -1535,7 +1543,7 @@ hr {
 }
 
 .header .arrow i:hover {
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
 }
 .header .arrow i:hover:after {
     -webkit-transform: scale(1.2);
@@ -1582,7 +1590,7 @@ hr {
     position: relative;
 }
 .kenburns-inner .caption h4 {
-    font-family: 'Barlow Condensed', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1597,7 +1605,7 @@ hr {
 .kenburns-inner .caption h3 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
     line-height: 1.35em;
@@ -1611,7 +1619,7 @@ hr {
 .kenburns-inner .caption h1 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 55px;
     text-transform: uppercase;
     line-height: 1.35em;
@@ -1665,7 +1673,7 @@ hr {
 .kenburns-section div.reservation .call {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     letter-spacing: 5px;
     font-size: 12px;
@@ -1673,9 +1681,9 @@ hr {
     margin-top: 15px;
 } 
 .kenburns-section div.reservation .call span {
-       font-family: 'Gilda Display', serif;
+       font-family: "Montserrat", sans-serif;
     font-size: 24px;
-    color: #aa8453;
+    color: #edbe8c;
     letter-spacing: 1px;
 } 
 .kenburns-section div.reservation .icon {
@@ -1695,7 +1703,7 @@ hr {
     transform: rotate(90deg);
 }
 .kenburns-section div.reservation a .icon:hover {
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
 }
 
 /* bounce */
@@ -1723,7 +1731,7 @@ hr {
 }
 
 .kenburns-section .arrow i:hover {
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
 }
 .kenburns-section .arrow i:hover:after {
     -webkit-transform: scale(1.2);
@@ -1833,10 +1841,10 @@ hr {
     color: #fff;
     font-size: 15px;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     background: transparent;
     border: 1px solid rgba(255,255,255,0.5);
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 10px 3px;
     line-height: 1.5em;
 }
@@ -1853,23 +1861,23 @@ hr {
     font-weight: 400;
     color: #fff;
     margin-bottom: 5px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: inline;
 
         
 }
 .slider-grid-bg .grid-con:hover .subtitle {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .slider-grid-bg .grid-con-active .subtitle {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .slider-grid-bg .title {
     display: block;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 27px;
     line-height: 1.25em;
     letter-spacing: 0px;
@@ -1909,7 +1917,7 @@ hr {
 }
 
 .slider-grid-bg .arrow i:hover {
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
 }
 .slider-grid-bg .arrow i:hover:after {
     -webkit-transform: scale(1.2);
@@ -1951,7 +1959,7 @@ hr {
     background-position: center;
 }
 .banner-header.full-height h4 {
-    font-family: 'Barlow Condensed', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 400;
     text-transform: uppercase;
@@ -1964,7 +1972,7 @@ hr {
 .banner-header.full-height h1 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 55px;
     text-transform: uppercase;
     line-height: 1.35em;
@@ -1982,7 +1990,7 @@ hr {
 .banner-header.full-height h3 {
     position: relative;
     margin-bottom: 20px;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 48px;
     text-transform: uppercase;
     line-height: 1.35em;
@@ -1998,13 +2006,13 @@ hr {
 .banner-header h5 {
     color: #fff;
     font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     letter-spacing: 6px;
     margin-bottom: 10px;
 }
 .banner-header h5 a {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .banner-header p {
     font-size: 15px;
@@ -2012,7 +2020,7 @@ hr {
     color: #fff;
 }
 .banner-header p a {
-    color: #aa8453;
+    color: #edbe8c;
 }
 /* author & date */
 .banner-header .author .avatar {
@@ -2039,7 +2047,7 @@ hr {
     margin-right: 20px
 }
 .banner-header .post .date-comment i {
-    color: #aa8453;
+    color: #edbe8c;
     font-size: 18px;
     margin-right: 5px;
 }
@@ -2127,7 +2135,7 @@ hr {
 }
 .video-fullscreen-wrap h3 {
     position: relative;
-    font-family: 'Libre Caslon Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 60px;
     line-height: 1em;
     color: #fff;
@@ -2238,7 +2246,7 @@ hr {
 }
 .team .info .social a {
     font-size: 15px;
-    color: #aa8453;
+    color: #edbe8c;
     margin: 0 5px;
 }
 .team .info .social a:hover {
@@ -2291,10 +2299,10 @@ hr {
     color: #fff;
     font-size: 15px;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     background: transparent;
     border: 1px solid rgba(255,255,255,0.5);
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 10px 3px;
     line-height: 1.5em;
 }
@@ -2325,9 +2333,9 @@ hr {
     position: relative;
     color: #fff;
     font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: inline;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 .rooms1 .item .con h6 i {
@@ -2338,7 +2346,7 @@ hr {
 .rooms1 .item .con h5 a {
     position: relative;
     color: #fff;
-    font-size: 27px;
+    font-size: 24px;
     font-weight: 400;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -2361,7 +2369,7 @@ hr {
     padding: 11px 30px;
 }
 .rooms1 .item .con .butn-light:hover {
-    border-color: #aa8453;
+    border-color: #edbe8c;
 }
 /* line animation */
 .rooms1 .item .line {
@@ -2390,7 +2398,7 @@ hr {
   color: #fff;
   font-size: 10px;
   text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   line-height: 1.2em;
   padding-bottom: 20px;
     float: left;
@@ -2400,9 +2408,9 @@ hr {
 }
 /* permalink */
 .rooms1 .item .con .permalink {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: #fff;
     height: 0;
@@ -2427,7 +2435,7 @@ hr {
 }
 .rooms1 .item .con .permalink a:hover,
 .rooms1 .item .con .permalink i:hover {
-color: #aa8453;
+color: #edbe8c;
 }
 
 
@@ -2489,18 +2497,18 @@ color: #aa8453;
 .rooms2 .caption h3,
 .rooms2 .caption h3 a {
     font-size: 24px;
-    color: #ab8a62;
+    color: #edbe8c;
     margin-bottom: 0px;
 }
 .rooms2 .caption h3 span {
     font-size: 15px;
     color: #666;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .rooms2 .caption h6 {
     display: inline-block;
     color: #666;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 10px;
     margin-bottom: 10px;
@@ -2538,12 +2546,12 @@ color: #aa8453;
 }
 .rooms2 .caption .info-wrapper .date {
     color: #222;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     background: transparent;
-    border: 1px solid #ab8a62;
+    border: 1px solid #edbe8c;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding: 3px 12px;
 }
 .rooms2 .caption .info-wrapper .date:hover {
@@ -2584,15 +2592,15 @@ hr.border-2 {
     display: inline-block;
     position: relative;
     text-transform: uppercase;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .link-btn i {
     margin-left: 3px;
     font-size: 15px;
-    color: #aa8453;
+    color: #edbe8c;
 }
 .link-btn:before {
     content: '';
@@ -2601,7 +2609,7 @@ hr.border-2 {
     bottom: 0;
     width: 0;
     height: 1px;
-    background-color: #aa8453;
+    background-color: #edbe8c;
     -webkit-transition: all ease 0.4s;
     transition: all ease 0.4s
 }
@@ -2619,7 +2627,7 @@ hr.border-2 {
 }
 .reservations .icon span {
     font-size: 40px;
-    color: #8e6d45;
+    color: #edbe8c;
 }
 .reservations .icon.color-1 span {
     font-size: 40px;
@@ -2634,8 +2642,8 @@ hr.border-2 {
     
 }
 .reservations .text a {
-    font-size: 27px;
-    color: #8e6d45;
+    font-size: 22px;
+    color: #edbe8c;
     letter-spacing: -1px;
 }
 .reservations .text a.color-1 {
@@ -2703,10 +2711,10 @@ hr.border-2 {
     color: #fff;
     font-size: 15px;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     background: transparent;
     border: 1px solid rgba(255,255,255,0.5);
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding: 10px 3px;
     line-height: 1.5em;
 }
@@ -2728,8 +2736,8 @@ hr.border-2 {
     color: #fff;
     font-size: 15px;
     font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
-    letter-spacing: 3px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -2779,11 +2787,11 @@ hr.border-2 {
 }
 .rooms3 .square2 h6 {
     position: relative;
-    color: #aa8453;
+    color: #edbe8c;
     font-size: 15px;
     font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
-    letter-spacing: 3px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
@@ -2801,7 +2809,7 @@ hr.border-2 {
     color: #666;
 }
 .rooms3 .btn-line a:hover {
-    border-bottom: 1px solid #aa8453;
+    border-bottom: 1px solid #edbe8c;
     color: #666;
 }
 .rooms3 .square-flip .square2 {
@@ -2885,7 +2893,7 @@ hr.border-2 {
 /* ======= Rooms Page style ======= */
 .rooms-page h6 {
     position: relative;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     color: #222;
 }
@@ -2908,7 +2916,7 @@ hr.border-2 {
 }
 .page-list-icon span {
     font-size: 18px;
-    color: #aa8453;
+    color: #edbe8c;
 }
 .page-list-text {
     margin-left: 15px;
@@ -2967,6 +2975,7 @@ hr.border-2 {
     margin-bottom: 30px;
     line-height: 1;
     border: 1px solid #f1eeeb;
+    height: 250px;
 }
 .facilties .single-facility h5 {
     font-size: 24px;
@@ -2986,7 +2995,7 @@ hr.border-2 {
 */
 .facilties .single-facility span {
   font-size: 45px;
-  color: #aa8453;
+  color: #edbe8c;
   line-height: 1;
   margin-bottom: 20px;
   display: inline-block;
@@ -2996,6 +3005,12 @@ hr.border-2 {
 .facilties .single-facility p {
     margin: 0;
     color: #666;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .facilties .single-facility .facility-shape {
     position: absolute;
@@ -3032,7 +3047,7 @@ hr {
 }
 .room-facilities ul li i {
     margin-right: 10px;
-    color: #aa8453;
+    color: #edbe8c;
     font-size: 20px;
 }
 
@@ -3070,14 +3085,14 @@ hr {
 .services .content .date h3 {
     font-size: 65px;
     font-weight: 500;
-    color: #aa8453;
+    color: #edbe8c;
     margin-bottom: 0px;
 }
 .services .content .date h6 {
     color: #666;
     letter-spacing: 2px;
     font-size: 10px;
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
 }
@@ -3087,17 +3102,25 @@ hr {
 }
 .services .content .cont h4 {
     margin: 0 0 10px 0;
-    font-size: 32px;
+    font-size: 28px;
     color: #222;
     font-weight: 400;
     line-height: 1.5em;
+}
+.services .content .cont p {
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .services .content .cont .more {
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #aa8453;
+  color: #edbe8c;
   padding-left: 40px;
   position: relative;
 }
@@ -3105,7 +3128,7 @@ hr {
   content: '';
   width: 30px;
   height: 1px;
-  background: #aa8453;
+  background: #edbe8c;
   position: absolute;
   top: 50%;
   left: 0px;
@@ -3115,14 +3138,14 @@ hr {
 }
 .services .content .info h6 {
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #666;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     margin-bottom: 5px;
 }
 .services .content .info .tags {
-  color: #aa8453;
+  color: #edbe8c;
 }
 @media screen and (max-width: 991px) {
     .services .content .cont h4 {
@@ -3165,14 +3188,14 @@ hr {
     height: 40px;
     line-height: 30px;
     border-radius: 50%;
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
     opacity: 0;
     -webkit-transition: all .5s;
     transition: all .5s;
 }
 .restaurant-menu .owl-theme .owl-nav [class*=owl-]:hover {
     background: transparent;
-    color: #aa8453;
+    color: #edbe8c;
 }
 .restaurant-menu .bg-img .owl-theme .owl-nav [class*=owl-] {
     color: #fff;
@@ -3205,11 +3228,11 @@ hr {
     position: relative;
     background: transparent;
     padding: 15px;
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
 }
 .restaurant-menu .tabs-icon .owl-item.actived .item .icon,
 .restaurant-menu .tabs-icon .item.active .icon {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .restaurant-menu .restaurant-menu-content .cont {
     display: none;
@@ -3219,10 +3242,10 @@ hr {
 }
 .restaurant-menu .restaurant-menu-content .cont h5 {
     font-size: 20px;
-    color: #aa8453;
+    color: #edbe8c;
     margin-bottom: 10px;
     text-align: left;
-    border-bottom: 1px dashed #aa8453;
+    border-bottom: 1px dashed #edbe8c;
     line-height: 2em;
 }
 .restaurant-menu .restaurant-menu-content .cont p {
@@ -3410,16 +3433,16 @@ button.mfp-arrow {
     z-index: 0;
 }
 .play-button.color {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .play-button.color .circle-fill circle {
-    fill: #aa8453;
+    fill: #edbe8c;
 }
 
 
 /* video section */
 .video-wrapper {
-    min-height: 500px;
+    min-height: 440px;
 }
 .video-wrapper .vid {
     position: relative;
@@ -3434,7 +3457,7 @@ button.mfp-arrow {
     transform: scale(0);
 }
 .video-wrapper .vid .vid-butn .icon {
-    color: #aa8453;
+    color: #edbe8c;
     width: 100px;
     height: 100px;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -3502,7 +3525,7 @@ button.mfp-arrow {
 .video-gallery-polygon:hover {
     background: #fff;
     border: 1px solid #fff;
-    color: #aa8453;
+    color: #edbe8c;
 }
 /* testimonials style */
 .testimonials-box {
@@ -3512,15 +3535,15 @@ button.mfp-arrow {
     margin-bottom: 90px;
 }
 .testimonials-box .head-box h6 {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     margin-bottom: 10px;
 }
 .testimonials-box .head-box h4 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 400;
     color: #fff;
     margin-bottom: 10px;
@@ -3578,11 +3601,11 @@ button.mfp-arrow {
     margin-bottom: 0px;
     padding-top: 0px;
     font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     line-height: 1em;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .testimonials .item .info span {
     font-size: 12px;
@@ -3666,8 +3689,8 @@ button.mfp-arrow {
     margin-bottom: 15px;
 }
 .ui-datepicker .ui-datepicker-header {
-    background: #aa8453;
-    border: #aa8453;
+    background: #edbe8c;
+    border: #edbe8c;
     color: #fff;
 }
 .ui-datepicker {
@@ -3691,21 +3714,21 @@ button.mfp-arrow {
 .ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
-    border: 1px solid #aa8453;
-    background: #aa8453;
+    border: 1px solid #edbe8c;
+    background: #edbe8c;
     font-weight: normal;
     color: #fff;
 }
 .ui-datepicker .ui-datepicker-prev:after {
     font-size: 10px;
     content: "\e64a";
-    font-family: "themify";
+    font-family: "Montserrat", sans-serif;
     color: #fff;
 }
 .ui-datepicker .ui-datepicker-next:before {
     font-size: 10px;
     content: "\e649";
-    font-family: "themify";
+    font-family: "Montserrat", sans-serif;
     color: #fff;
     float: right;
 }
@@ -3720,16 +3743,16 @@ button.mfp-arrow {
     border: none;
     margin: 0;
     width: 100%;
-    background: #aa8453;
+    background: #edbe8c;
     color: #fff;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     text-decoration: none;
     line-height: 62px;
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease-out;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 .btn-form1-submit:hover {
@@ -3760,9 +3783,9 @@ button.mfp-arrow {
     top: 23px;
     pointer-events: none;
     content: "\e6b6";
-    font-family: "themify";
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    color: #aa8453;
+    color: #edbe8c;
     line-height: 1;
 }
 .input1_inner input {
@@ -3800,9 +3823,9 @@ button.mfp-arrow {
     top: 25px;
     pointer-events: none;
     content: "\e64b";
-    font-family: "themify";
+    font-family: "Montserrat", sans-serif;
     font-size: 10px;
-    color: #aa8453;
+    color: #edbe8c;
     font-weight: normal;
     line-height: 15px;
 }
@@ -3866,11 +3889,11 @@ button.mfp-arrow {
     padding-left: 0;
 }
 .select2-container--default .select2-results__option[aria-selected=true] {
-    background: #aa8453;
+    background: #edbe8c;
     color: #fff;
 }
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background: #aa8453;
+    background: #edbe8c;
     color: #fff;
 }
 /* responsive */
@@ -3932,7 +3955,7 @@ button.mfp-arrow {
 }
 .booking-box .head-box h6 {
     font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #666;
     text-transform: uppercase;
@@ -3941,7 +3964,7 @@ button.mfp-arrow {
     margin-bottom: 10px;
 }
 .booking-box .head-box h4 {
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 27px;
     font-weight: 400;
     color: #222;
@@ -3973,7 +3996,7 @@ button.mfp-arrow {
 .pricing-card .name {
     line-height: 1;
     margin: 0;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     color: #222;
     margin-bottom: 20px;
@@ -3985,18 +4008,18 @@ button.mfp-arrow {
     text-transform: uppercase;
     color: #666;
     margin-bottom: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .pricing-card .amount {
   margin: 0;
   line-height: 1;
- font-family: 'Gilda Display', serif;
+ font-family: "Montserrat", sans-serif;
   font-size: 40px;
   margin-bottom: 20px;
-    color: #aa8453;
+    color: #edbe8c;
 }
 .pricing-card .amount span {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     color: #666;
 }
@@ -4020,7 +4043,7 @@ button.mfp-arrow {
     left: 0;
     transform: translateY(-50%);
     font-size: 15px;
-    color: #aa8453;
+    color: #edbe8c;
 }
 .pricing-card .list li i.unavailable {
   color: #666;
@@ -4063,7 +4086,7 @@ button.mfp-arrow {
     height: 100%
 }
 .position-title {
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 400;
     position: relative;
@@ -4075,7 +4098,7 @@ button.mfp-arrow {
     color: #222;
 }
 .position-title span {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #666;
     font-size: 15px;
     display: block;
@@ -4083,7 +4106,7 @@ button.mfp-arrow {
     letter-spacing: 0px;
 }
 .position-location {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     -webkit-transition: color .3s;
     transition: color .3s;
@@ -4093,7 +4116,7 @@ button.mfp-arrow {
     color: #666;
 }
 .position-location span {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
     color: #222;
     display: block;
@@ -4107,7 +4130,7 @@ button.mfp-arrow {
     color: #222;
 }
 .position-time span {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #666;
     display: block;
     text-transform: none;
@@ -4116,14 +4139,14 @@ button.mfp-arrow {
 .position-icon {
     font-size: 15px;
     line-height: 1;
-    color: #aa8453;
+    color: #edbe8c;
 }
 .position-icon i {
     display: inline-block
 }
 /* hover */
 .position:hover {
-    background-color: #aa8453;
+    background-color: #edbe8c;
 }
 .position:hover .position-title,
 .position:hover .position-title span,
@@ -4202,10 +4225,10 @@ button.mfp-arrow {
     padding-right: 60px;
     color: #222;
     transition: all 500ms ease;
-    font-family: 'Gilda Display', serif;;
+    font-family: "Montserrat", sans-serif;;
 }
 .accordion-box .block .acc-btn .count {
-  color: #aa8453;
+  color: #edbe8c;
   padding-right: 3px;
 }
 .accordion-box .block .acc-btn:before {
@@ -4215,15 +4238,15 @@ button.mfp-arrow {
     height: 30px;
     font-size: 14px;
     font-weight: normal;
-    color: #aa8453;
+    color: #edbe8c;
     line-height: 30px;
     content: "\e61a";
-    font-family: "Themify";
+    font-family: "Montserrat", sans-serif;
     transition: all 500ms ease;
 }
 .accordion-box .block .acc-btn.active {
   background-color: #fff;
-    color: #aa8453;
+    color: #edbe8c;
 }
 .accordion-box .block .acc-btn.active:before {
   color: "Themify";
@@ -4288,15 +4311,15 @@ button.mfp-arrow {
     text-align: center;
 }
 .news .item .date span {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: block;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #fff;
 }
 .news .item .date i {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: block;
     font-size: 24px;
     font-style: normal;
@@ -4315,12 +4338,12 @@ button.mfp-arrow {
     position: relative;
 }
 .news .item .con .category {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 5px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .news .item .con .category a {
     margin-right: 5px;
@@ -4339,14 +4362,20 @@ button.mfp-arrow {
 .news .item .con h5,
 .news .item .con h5 a {
     color: #222;
-    font-size: 24px;
-    font-family: 'Gilda Display', serif;;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;;
     font-weight: 400;
     margin-bottom: 0px;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .news .item .con h5:hover,
 .news .item .con h5 a:hover {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .news .item .con p {
     color: #fff;
@@ -4397,15 +4426,15 @@ button.mfp-arrow {
     text-align: center;
 }
 .news2 .post-img .date span {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: block;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #fff;
 }
 .news2 .post-img .date i {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: block;
     font-size: 24px;
     font-style: normal;
@@ -4419,9 +4448,9 @@ button.mfp-arrow {
     display: block;
     font-weight: 400;
 	font-size: 12px;
-    letter-spacing: 3px;
-    color: #aa8453;
-    font-family: 'Barlow', sans-serif;
+    letter-spacing: 2px;
+    color: #edbe8c;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
 	margin-bottom: 5px;
 }
@@ -4432,19 +4461,19 @@ button.mfp-arrow {
     color: #222;
 }
 .news2 .post-cont h5 a:hover {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .news2 .post-cont .date {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-top: 0px;
     font-size: 12px;
     text-align: right;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	text-transform: uppercase;
 	margin-bottom: 5px;
 }
 .news2 .post-cont .date a {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .news2 .post-cont i {
     color: #ccc;
@@ -4472,10 +4501,10 @@ button.mfp-arrow {
     color: #666;
 }
 .news2-sidebar .widget ul li a.active {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .news2-sidebar .widget ul li a:hover {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .news2-sidebar .widget ul li:last-child {
     margin-bottom: 0;
@@ -4542,7 +4571,7 @@ button.mfp-arrow {
 }
 .news2-sidebar ul.tags li:hover,
 .news2-sidebar ul.tags li a:hover {
-    background-color: #aa8453;
+    background-color: #edbe8c;
     color: #fff;
 }
 /* pagination */
@@ -4565,7 +4594,7 @@ button.mfp-arrow {
     color: #666;
     font-weight: 400;
     border: 1px solid rgba(102,102,102,0.1);
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
     border-radius: 100%;
 }
@@ -4576,13 +4605,13 @@ button.mfp-arrow {
     opacity: 1;
     text-decoration: none;
     background: transparent;
-    border: 1px solid #aa8453;
-    color: #aa8453;
+    border: 1px solid #edbe8c;
+    color: #edbe8c;
 }
 .news-pagination-wrap li a.active {
     background-color: transparent;
-    border: 1px solid #aa8453;
-    color: #aa8453;
+    border: 1px solid #edbe8c;
+    color: #edbe8c;
 }
 @media screen and (max-width: 768px) {
     .news-pagination-wrap {
@@ -4603,11 +4632,11 @@ button.mfp-arrow {
 .post-comment-section h3 {
     font-size: 20px;
     color: #222;
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 15px;
 }
 .post-comment-section h3 span {
-    font-family: 'Barlow', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 12px;
     color: #666;
     margin-left: 15px;
@@ -4634,7 +4663,7 @@ button.mfp-arrow {
 }
 .post-repay {
     font-size: 14px;
-    color: #aa8453;
+    color: #edbe8c;
     margin: 0;
     font-weight: 400;
 }
@@ -4659,15 +4688,15 @@ button.mfp-arrow {
 }
 .butn-dark a {
     font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    background: #ab8a62;
+    background: #edbe8c;
     color: #fff;
     padding: 13px 22px;
     margin: 0;
     position: relative;
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .butn-dark a:after {
     content: '';
@@ -4685,6 +4714,7 @@ button.mfp-arrow {
 .butn-dark a span {
     position: relative;
     z-index: 2;
+    font-weight: 600;
 }
 .butn-dark a:hover:after {
     width: 100%;
@@ -4702,7 +4732,7 @@ button.mfp-arrow {
 }
 .butn-light a {
     font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     background: transparent;
     color: #fff;
@@ -4710,7 +4740,7 @@ button.mfp-arrow {
     margin: 0;
     position: relative;
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     border: 1px solid rgba(255,255,255,0.5);
 }
 .butn-light a:after {
@@ -4745,15 +4775,15 @@ button.mfp-arrow {
     position: relative;
     line-height: 1.2em;
     font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
-    background: #ab8a62;
+    background: #edbe8c;
     color: #fff;
     padding: 13px 22px;
     margin: 0;
     position: relative;
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .butn-dark2:after {
     content: '';
@@ -4771,6 +4801,7 @@ button.mfp-arrow {
 .butn-dark2 span {
     position: relative;
     z-index: 2;
+    font-weight: 600;
 }
 .butn-dark2:hover:after {
     width: 100%;
@@ -4786,7 +4817,7 @@ button.mfp-arrow {
     position: relative;
     line-height: 1.2em;
     font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     background: transparent;
     color: #fff;
@@ -4794,7 +4825,7 @@ button.mfp-arrow {
     margin: 0;
     position: relative;
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     border: 1px solid rgba(255,255,255,0.5);
 }
 .butn-light2:after {
@@ -4851,18 +4882,18 @@ button.mfp-arrow {
 .comming h6 {
     color: #fff;
     font-size: 15px;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 30px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .comming h3 {
     font-size: 48px;
     color: #fff;
     position: relative;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     margin-bottom: 0px;
 }
 .comming h2 {
@@ -4878,7 +4909,7 @@ button.mfp-arrow {
     margin-bottom: 0px;
     position: relative;
     color: transparent;
-    -webkit-text-stroke: 1px #aa8453;
+    -webkit-text-stroke: 1px #edbe8c;
     opacity: .8;
     line-height: 160px;
 }
@@ -4895,7 +4926,7 @@ button.mfp-arrow {
     width: 100%;
     padding: 11px 50px 11px 11px;
     background-color: transparent;
-    border: 1px solid #aa8453;
+    border: 1px solid #edbe8c;
     border-radius: 0px;
     color: #fff;
     margin-bottom: 15px;
@@ -4905,7 +4936,7 @@ button.mfp-arrow {
     color: #fff;
 }
 .comming form button {
-    background-color: #aa8453;
+    background-color: #edbe8c;
     padding: 6px 20px;
     border-radius: 0px;
     color: #fff;
@@ -4914,9 +4945,9 @@ button.mfp-arrow {
     top: 4px;
     right: 4px;
     cursor: pointer;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 15px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 400;
     outline: none;
@@ -4933,13 +4964,13 @@ button.mfp-arrow {
 .go-back a {
 	color: #fff;
 	display: inline-block;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Montserrat", sans-serif;
 	font-size: 15px;
     text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 }
 .go-back a:hover {
-	color: #aa8453;
+	color: #edbe8c;
 }
 .go-back a span{
 	transition: all .5s;
@@ -4975,7 +5006,7 @@ button.mfp-arrow {
   padding: 20px 60px 20px 30px;
   height: 70px;
   display: block;
- font-family: 'Barlow', sans-serif;
+ font-family: "Montserrat", sans-serif;
   font-size: 15px;
   background: #f4f4f4;
   color: #666;
@@ -5067,7 +5098,7 @@ button.mfp-arrow {
 }
 .footer-about-social-list a:hover {
   background-color: transparent;
-  color: #aa8453;
+  color: #edbe8c;
 }
 .footer-explore-list li + li {
   margin-top: 3px;
@@ -5082,7 +5113,7 @@ button.mfp-arrow {
 }
 .footer-explore-list li a:hover {
   padding-left: 15px;
-  color: #aa8453;
+  color: #edbe8c;
 }
 .footer-explore-list li a:before {
   position: absolute;
@@ -5092,7 +5123,7 @@ button.mfp-arrow {
   width: 6px;
   height: 6px;
   content: "";
-  background-color: #aa8453;
+  background-color: #edbe8c;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   opacity: 0;
@@ -5120,7 +5151,7 @@ button.mfp-arrow {
   margin: 0;
 }
 .footer-contact-phone {
-    font-family: 'Gilda Display', serif;
+    font-family: "Montserrat", sans-serif;
   font-size: 24px;
   color: #fff;
   font-weight: 400;
@@ -5149,13 +5180,13 @@ button.mfp-arrow {
   left: 0;
   right: 0;
   height: 1px;
-  background-color: #aa8453;
+  background-color: #edbe8c;
   content: "";
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
 .footer-contact-mail:hover:before {
-  background-color: #aa8453;
+  background-color: #edbe8c;
 }
 
 
@@ -5221,7 +5252,7 @@ select {
   transition: all 500ms ease;
 }
 .footer-bottom-copy-right a:hover {
-  color: #aa8453;
+  color: #edbe8c;
 }
 
 
@@ -5291,10 +5322,10 @@ select {
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
 .progress-wrap::after {
-    color: #aa8453;
+    color: #edbe8c;
 }
 .progress-wrap svg.progress-circle path {
-    stroke: #aa8453;
+    stroke: #edbe8c;
 }
 
 

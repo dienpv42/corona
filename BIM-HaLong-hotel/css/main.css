@@ -8,7 +8,7 @@
 }
 .bim-hotel .header .caption h1{
     font-size: 36px;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 .bim-hotel .section-padding {
     padding: 60px 0;
@@ -56,7 +56,7 @@
 }
 
 .bim-hotel nav .breadcrumb .breadcrumb-item.active {
-    color: #ab8a62;
+    color: #edbe8c;
 }
 
 .bim-hotel .gallery-container {
@@ -104,7 +104,7 @@
 }
 
 .bim-hotel .thumbnail-container .thumb.active {
-    border: 2px solid #ab8a62;
+    border: 2px solid #edbe8c;
     padding: 2px;
 }
 .bim-hotel .utilities .page-list{
@@ -118,7 +118,8 @@
 }
 .bim-hotel .booking .content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 28px;
 }
 .bim-hotel .booking .content .item{
     margin-right: 20px;
