@@ -969,6 +969,6 @@
     event.preventDefault();
     $(this).closest(".section__content").removeClass("active");
     event.preventDefault();
-    $(this).find(".btn-see-more1.btn-see-more2").css("display", "none");
+    $(this).css("display", "none");
   });
 })(jQuery);
