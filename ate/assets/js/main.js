@@ -965,39 +965,10 @@
     $(".section-search").removeClass("show-search");
   });
   // quyền
-
-  $("#about-1 .see-more").on("click", function (event) {
-    $("#about-1.section__content").removeClass("active");
+  $(".section__content .btn-see-more1.btn-see-more2").on("click", function (event) {
     event.preventDefault();
-    $("#about-1 .btn-see-more1.btn-see-more2").css("display", "none");
-  });
-
-  $("#about-2 .see-more").on("click", function (event) {
-    $("#about-2.section__content").removeClass("active");
+    $(this).closest(".section__content").removeClass("active");
     event.preventDefault();
-    $("#about-2 .btn-see-more1.btn-see-more2").css("display", "none");
-  });
-
-  $("#about-3 .see-more").on("click", function (event) {
-    $("#about-3.section__content").removeClass("active");
-    event.preventDefault();
-    $("#about-3 .btn-see-more1.btn-see-more2").css("display", "none");
-  });
-
-  $("#about-4 .see-more").on("click", function (event) {
-    $("#about-4.section__content").removeClass("active");
-    event.preventDefault();
-    $("#about-4 .btn-see-more1.btn-see-more2").css("display", "none");
-  });
-
-  $("#about-5 .see-more").on("click", function (event) {
-    $("#about-5.section__content").removeClass("active");
-    event.preventDefault();
-    $("#about-5 .btn-see-more1.btn-see-more2").css("display", "none");
-  });
-  $("#about-6 .see-more").on("click", function (event) {
-    $("#about-6.section__content").removeClass("active");
-    event.preventDefault();
-    $("#about-6 .btn-see-more1.btn-see-more2").css("display", "none");
+    $(this).find(".btn-see-more1.btn-see-more2").css("display", "none");
   });
 })(jQuery);
