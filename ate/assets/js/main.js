@@ -966,9 +966,7 @@
   });
   // quyền
   $(".section__content .btn-see-more1.btn-see-more2").on("click", function (event) {
-    event.preventDefault();
     $(this).closest(".section__content").removeClass("active");
-    event.preventDefault();
     $(this).css("display", "none");
   });
 })(jQuery);

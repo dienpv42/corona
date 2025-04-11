@@ -7917,8 +7917,13 @@ ol, ul {
   color: #003b70;
   font-size: 25px;
 }
-.ate-main .section-about-the-association .about-left .section__content .content p {
-  line-height: 1.8;
+.ate-main .section-about-the-association .about-left .section__content .wrap-content-editor {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .ate-main .section-about-the-association .about-right {
   width: 100%;
@@ -7945,6 +7950,9 @@ ol, ul {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
+}
+.ate-main .section-about-the-association .about-right .testimonial__video a i.fa-play {
+  line-height: 56px;
 }
 .ate-main .section-about-the-association .about-right:hover .testimonial__video {
   opacity: 1;
@@ -7982,6 +7990,9 @@ ol, ul {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
+}
+.ate-main .section-about .about-right .testimonial__video a i.fa-play {
+  line-height: 56px;
 }
 .ate-main .section-about .about-right:hover .testimonial__video {
   opacity: 1;
@@ -8055,6 +8066,9 @@ ol, ul {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
+}
+.ate-main .section-about-2 .about-right .testimonial__video a i.fa-play {
+  line-height: 56px;
 }
 .ate-main .section-about-2 .about-right:hover .testimonial__video {
   opacity: 1;
@@ -8134,6 +8148,9 @@ ol, ul {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 50%;
+}
+.ate-main .section-about-3 .about-right .testimonial__video a i.fa-play {
+  line-height: 56px;
 }
 .ate-main .section-about-3 .about-right:hover .testimonial__video {
   opacity: 1;

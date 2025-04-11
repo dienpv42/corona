@@ -423,10 +423,8 @@
       }
 
       .section__content {
-        .content {
-          p {
-            line-height: 1.8;
-          }
+        .wrap-content-editor {
+          @include line_text(9)
         }
       }
     }
@@ -459,6 +457,9 @@
           left: 50%;
           transform: translate(-50%, -50%);
           top: 50%;
+          i.fa-play {
+              line-height: 56px;
+          }
         }
       }
 
@@ -514,6 +515,9 @@
           left: 50%;
           transform: translate(-50%, -50%);
           top: 50%;
+          i.fa-play {
+            line-height: 56px;
+          }
         }
       }
 
@@ -606,6 +610,9 @@
           left: 50%;
           transform: translate(-50%, -50%);
           top: 50%;
+          i.fa-play {
+            line-height: 56px;
+          }
         }
       }
 
@@ -700,6 +707,9 @@
           left: 50%;
           transform: translate(-50%, -50%);
           top: 50%;
+          i.fa-play {
+            line-height: 56px;
+          }
         }
       }
 
