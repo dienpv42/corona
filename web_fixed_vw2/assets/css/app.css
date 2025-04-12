@@ -11090,6 +11090,130 @@ input {
   color: #6FBE44;
 }
 
+.dropdown-filter .dropdown-toggle {
+  border-radius: 4px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  padding: 0;
+}
+.dropdown-filter .dropdown-toggle::after {
+  display: none;
+}
+.dropdown-filter .dropdown-toggle.show svg {
+  transform: rotate(180deg);
+}
+.dropdown-filter .dropdown-toggle svg {
+  width: 32px;
+  height: auto;
+  transition: all 0.3s;
+}
+@media (max-width: 1921px) {
+  .dropdown-filter .dropdown-toggle svg {
+    width: 1.6666666667vw;
+  }
+}
+@media (max-width: 991px) {
+  .dropdown-filter .dropdown-toggle svg {
+    width: 2.6075619296vw;
+  }
+}
+@media (max-width: 575px) {
+  .dropdown-filter .dropdown-toggle svg {
+    width: 5.3333333333vw;
+  }
+}
+.dropdown-filter .dropdown-menu {
+  padding: 12px;
+  gap: 32px;
+  width: 800px;
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.14);
+  background: #FFF;
+}
+@media (max-width: 1921px) {
+  .dropdown-filter .dropdown-menu {
+    width: 41.6666666667vw;
+    padding: 0.625vw;
+    gap: 1.6666666667vw;
+  }
+}
+@media (max-width: 991px) {
+  .dropdown-filter .dropdown-menu {
+    width: 78.2268578879vw;
+    padding: 1.5645371578vw;
+    gap: 4.1720990874vw;
+  }
+}
+@media (max-width: 575px) {
+  .dropdown-filter .dropdown-menu {
+    width: 80vw;
+    padding: 3.2vw;
+    gap: 8.5333333333vw;
+  }
+}
+.dropdown-filter .form-check .form-check-input {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid #CCC;
+  background: #FFF;
+  cursor: pointer;
+}
+.dropdown-filter .form-check .form-check-input:checked {
+  background-color: rgb(111, 190, 68);
+  border-color: rgb(111, 190, 68);
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="none" stroke="%23fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m6 10 3 3 6-6"/></svg>');
+}
+.dropdown-filter .form-check .form-check-input:focus {
+  box-shadow: none;
+}
+.dropdown-filter .form-check .form-check-label {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #706F6F;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 120%;
+}
+@media (max-width: 1921px) {
+  .dropdown-filter .form-check .form-check-label {
+    font-size: 0.8333333333vw;
+  }
+}
+@media (max-width: 991px) {
+  .dropdown-filter .form-check .form-check-label {
+    font-size: 2.0860495437vw;
+  }
+}
+@media (max-width: 575px) {
+  .dropdown-filter .form-check .form-check-label {
+    font-size: 4.2666666667vw;
+  }
+}
+.dropdown-filter .wrap {
+  padding: 0 16px;
+}
+@media (max-width: 1921px) {
+  .dropdown-filter .wrap {
+    padding: 0 0.8333333333vw;
+  }
+}
+@media (max-width: 991px) {
+  .dropdown-filter .wrap {
+    padding: 0 1.5645371578vw;
+  }
+}
+@media (max-width: 575px) {
+  .dropdown-filter .wrap {
+    padding: 0 3.2vw;
+  }
+}
+
 :root {
   --star-color: #d1d1d1;
   --star-background: #fc0;
