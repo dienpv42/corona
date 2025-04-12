@@ -403,7 +403,7 @@
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by </p>
                 </div>
                 <div class="wrap-btn mt-3 mb-4 text-center">
-                    <a href="" class="btn">Xem thêm</a>
+                    <a href="javascript:void(0)" class="btn">Xem thêm</a>
                 </div>
                 <div class="content">
                     <img src="assets/images/1x/banner.png" alt="">
@@ -3924,8 +3924,8 @@
 </script>
 <script>
     $(document).ready(function () {
-        const $content = $('.content-more');
-        const $btn = $('.wrap-btn');
+        const $content = $('.section-content-more .content-more');
+        const $btn = $('.section-content-more .wrap-btn');
         const lineHeight = parseFloat($content.css('line-height'));
         const maxHeight = lineHeight * 5;
 
