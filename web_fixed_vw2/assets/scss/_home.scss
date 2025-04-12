@@ -3083,7 +3083,9 @@
         @media (max-width: $sizeMobile) {
           font-size: size(13);
         }
-
+        a{
+          color: #3598db; text-decoration: underline;
+        }
         > * {
           margin-bottom: 16px;
           @media (max-width: 1921px) {
@@ -4353,6 +4355,12 @@
         }
       }
     }
+    .content-more.collapsed {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
     .content{
       ul {
         margin-bottom: 12px;
@@ -4393,6 +4401,10 @@
             }
           }
         }
+      }
+
+      a{
+        color: #3598db; text-decoration: underline;
       }
 
       p {

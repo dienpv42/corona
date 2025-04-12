@@ -350,7 +350,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-content">
+            <div class="section-content section-content-more">
                 <div class="wrap-tags">
                     <a href="#">Thuốc bổ</a>
                     <a href="#">Thuốc bổ</a>
@@ -362,7 +362,7 @@
                 <div class="content-title">
                     Mô tả sản phẩm
                 </div>
-                <div class="content">
+                <div class="content content-more">
                     <ul>
                         <li>
                             <strong>Contrary to popular belief, Lorem Ipsum is not simply random text.</strong>
@@ -398,14 +398,20 @@
                             Contrary to popular belief, Lorem Ipsum is not simply random text.
                         </li>
                     </ul>
+                    <p><a href="">Contrary to popular</a> belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by </p>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by </p>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by </p>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by </p>
+                </div>
+                <div class="wrap-btn mt-3 mb-4 text-center">
+                    <a href="" class="btn">Xem thêm</a>
+                </div>
+                <div class="content">
                     <img src="assets/images/1x/banner.png" alt="">
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by </p>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by </p>
                     <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by </p>
                 </div>
+
             </div>
 <!--            <div class="section_head">-->
 <!--                <ul class="nav nav-tabs" id="detailTab" role="tablist">-->
@@ -3911,6 +3917,34 @@
         // Gọi lại hàm showItems khi thay đổi kích thước cửa sổ
         $(window).resize(function() {
             showItems();
+        });
+    });
+
+
+</script>
+<script>
+    $(document).ready(function () {
+        const $content = $('.content-more');
+        const $btn = $('.wrap-btn');
+        const lineHeight = parseFloat($content.css('line-height'));
+        const maxHeight = lineHeight * 5;
+
+        if ($content.prop('scrollHeight') > maxHeight) {
+            $content.addClass('collapsed');
+            $btn.show();
+        } else {
+            $btn.hide();
+        }
+
+        $btn.find('a').on('click', function (e) {
+            e.preventDefault();
+            $content.toggleClass('collapsed');
+
+            if ($content.hasClass('collapsed')) {
+                $(this).text('Xem thêm');
+            } else {
+                $(this).text('Thu gọn');
+            }
         });
     });
 </script>

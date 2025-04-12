@@ -580,6 +580,19 @@
         }
 
         .card_form {
+
+          .group_input{
+            gap: 24px;
+            @media (max-width: 1921px) {
+              gap: sizeP(24);
+            }
+            @media (max-width: $sizeTablet) {
+              gap: sizeT(16);
+            }
+            @media (max-width: $sizeMobile) {
+              gap: size(16);
+            }
+          }
           hr {
             max-width: 200px;
             margin: 40px auto 40px;
@@ -633,6 +646,33 @@
             }
 
             .form-control {
+              font-size: 20px;
+              margin-bottom: 0;
+              color: #5E6D7B;
+              border-radius: 16px;
+              border: 1px solid #9D9D9C;
+              padding: 14px 24px;
+              @media (max-width: 1921px) {
+                font-size: sizeP(20);
+                border-radius: sizeP(16);
+                border: sizeP(1) solid #9D9D9C;
+                padding: sizeP(14) sizeP(24);
+              }
+              @media (max-width: $sizeTablet) {
+                padding: sizeT(14) sizeT(24);
+                font-size: sizeT(15);
+                border-radius: sizeT(8);
+                border: sizeT(1) solid #9D9D9C;
+              }
+              @media (max-width: $sizeMobile) {
+                padding: size(14) size(24);
+                font-size: size(15);
+                border-radius: size(8);
+                border: size(1) solid #9D9D9C;
+              }
+            }
+
+            .form-select {
               font-size: 20px;
               margin-bottom: 0;
               color: #5E6D7B;
