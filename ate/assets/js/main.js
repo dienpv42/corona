@@ -174,22 +174,39 @@
     }
   });
 
-  $(".smooth-scroll-down").on("click", function (event) {
-    var target = $(this.getAttribute("href"));
+  // $(".smooth-scroll-down").on("click", function (event) {
+  //   var target = $(this.getAttribute("href"));
+  //
+  //   if (target.length) {
+  //     event.preventDefault();
+  //
+  //     $("html, body").animate(
+  //         {
+  //           scrollTop: target.offset().top - 70,
+  //         },
+  //         {
+  //           duration: 400,
+  //           easing: 'swing'
+  //         }
+  //     );
+  //   }
+  // });
 
-    if (target.length) {
-      event.preventDefault();
+  $('.smooth-scroll-down').on('click', function(e) {
 
-      $("html, body")
-        .stop()
-        .animate(
-          {
-            scrollTop: target.offset().top - 70,
-          },
-          800
-        );
+    var target = $(this).attr('href').split('#')[1];
+
+    if(target) {
+      var targetElement = $('#' + target);
+      var targetOffset = targetElement.offset().top;
+
+      // Cuộn đến vị trí phần tử, trừ đi 70px
+      $('html, body').animate({
+        scrollTop: targetOffset - 70
+      }, 200);
     }
   });
+
 
   //Animate the scroll to yop
 
@@ -915,7 +932,8 @@
   });
   //
   $(document).ready(function () {
-    const spaceBetweenVW = 20; // Định nghĩa giá trị `spaceBetweenVW` nếu cần
+    const spaceBetweenVW = 20; // Khoảng cách giữa các slide (đơn vị VW)
+
     const slideMember = new Swiper(".slide_library", {
       speed: 1500,
       spaceBetween: spaceBetweenVW,
@@ -935,25 +953,17 @@
       breakpoints: {
         1280: {
           slidesPerView: 3,
-          grid: {
-            rows: 1,
-          },
         },
         992: {
           slidesPerView: 2,
-          grid: {
-            rows: 1,
-          },
         },
         0: {
-          spaceBetween: spaceBetweenVW,
           slidesPerView: 1,
-          grid: {
-            rows: 1,
-          },
+          spaceBetween: spaceBetweenVW,
         },
       },
     });
+
     $(".slide_library").removeClass("hide");
   });
 
@@ -965,8 +975,29 @@
     $(".section-search").removeClass("show-search");
   });
   // quyền
-  $(".section__content .btn-see-more1.btn-see-more2").on("click", function (event) {
+  $(".section__content div.btn-see-more1.btn-see-more2").on("click", function (event) {
     $(this).closest(".section__content").removeClass("active");
     $(this).css("display", "none");
   });
+
+  $(document).ready(function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = urlParams.get("page");
+
+    if (page && parseInt(page) >= 2) {
+      const targetSection = $("#target-section");
+      if (targetSection.length) {
+        // Thay đổi giá trị offset nếu cần
+        const offset = targetSection.offset().top - 100;
+        $("html, body").stop().animate(
+            {
+              scrollTop: offset
+            },
+            200,
+            "swing"
+        );
+      }
+    }
+  });
+
 })(jQuery);

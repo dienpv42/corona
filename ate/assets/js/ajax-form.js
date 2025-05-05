@@ -1,48 +1,1 @@
-$(function() {
-
-	// Get the form.
-	var form = $('#contact-form');
-
-	// Get the messages div.
-	var formMessages = $('.ajax-response');
-
-	// Set up an event listener for the contact form.
-	$(form).submit(function(e) {
-		// Stop the browser from submitting the form.
-		e.preventDefault();
-
-		// Serialize the form data.
-		var formData = $(form).serialize();
-
-		// Submit the form using AJAX.
-		$.ajax({
-			type: 'POST',
-			url: $(form).attr('action'),
-			data: formData
-		})
-		.done(function(response) {
-			// Make sure that the formMessages div has the 'success' class.
-			$(formMessages).removeClass('error');
-			$(formMessages).addClass('success');
-
-			// Set the message text.
-			$(formMessages).text(response);
-
-			// Clear the form.
-			$('#contact-form input,#contact-form textarea').val('');
-		})
-		.fail(function(data) {
-			// Make sure that the formMessages div has the 'error' class.
-			$(formMessages).removeClass('success');
-			$(formMessages).addClass('error');
-
-			// Set the message text.
-			if (data.responseText !== '') {
-				$(formMessages).text(data.responseText);
-			} else {
-				$(formMessages).text('Oops! An error occured and your message could not be sent.');
-			}
-		});
-	});
-
-});
+$(function () {    $("#contact-form").submit(function (event) {        var valid = true;        $(".error-message").hide();        $(".contact__input").css("border", "");        var name = $("#name").val().trim();        if (name === "") {            valid = false;            showError("#name", "Tên là bắt buộc");        }        var email = $("#email").val().trim();        var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;        if (email === "") {            valid = false;            showError("#email", "Email là bắt buộc");        } else if (!emailPattern.test(email)) {            valid = false;            showError("#email", "Email không hợp lệ");        }        var phone = $("#phone").val().trim();        var phonePattern = /^\d{10,15}$/;        if (phone === "") {            valid = false;            showError("#phone", "Số điện thoại là bắt buộc");        } else if (!phonePattern.test(phone)) {            valid = false;            showError("#phone", "Số điện thoại không hợp lệ");        }        var title = $("#title").val().trim();        if (title === "") {            valid = false;            showError("#title", "Tiêu đề là bắt buộc");        }        var message = $("#message").val().trim();        if (message === "") {            valid = false;            showError("#message", "Nội dung là bắt buộc");        }        if (!valid) {            event.preventDefault();        }    });    $(".contact__input").on("input", function () {        var id = $(this).attr("id");        var value = $(this).val().trim();        if (value !== "") {            clearError(`#${id}`);        }        if (id === "email") {            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;            if (!emailPattern.test(value) && value !== "") {                showError(`#${id}`, "Email không hợp lệ");            } else {                clearError(`#${id}`);            }        }        if (id === "phone") {            var phonePattern = /^\d{10,15}$/;            if (!phonePattern.test(value) && value !== "") {                showError(`#${id}`, "Số điện thoại không hợp lệ");            } else {                clearError(`#${id}`);            }        }    });    function showError(selector, message) {        $(selector).css("border", "1px solid red");        $(selector).next(".error-message").text(message).show();    }    function clearError(selector) {        $(selector).css("border", "");        $(selector).next(".error-message").hide();    }    $('#contact-form').on('submit', function (e) {        e.preventDefault();        let formData = $(this).serialize();        let url = $(this).attr('action');        if (!init.conf.ajax_sending) {            $.ajax({                url: url,                method: 'POST',                data: formData,                beforeSend: function () {                    init.conf.ajax_sending = true;                },                success: function (response) {                    if (response.success) {                        init.showNoty('Liên hệ đã gửi thành công!', 'success');                        $('#contact-form')[0].reset();                    } else {                        init.showNoty('Có lỗi xảy ra, vui lòng thử lại.', 'error');                    }                    init.conf.ajax_sending = false;                },                complete: function () {                    init.conf.ajax_sending = false;                },                error: function (xhr) {                    init.showNoty('Đã xảy ra lỗi khi gửi yêu cầu.', 'error');                }            });        }    });});
