@@ -290,14 +290,14 @@
       img {
         display: block;
         width: 100%;
-        height: 540px;
+        //height: 540px;
         object-fit: cover;
         object-position: center;
         @media (max-width: 1440px) {
-          height: sizeP(540);
+          //height: sizeP(540);
         }
         @media (max-width: $sizeMb) {
-          height: size(152);
+          //height: size(152);
         }
       }
     }
@@ -834,12 +834,12 @@
 
           .title {
             color: $--primary;
-            font-size: 44px;
+            font-size: 39px;
             font-weight: 700;
             line-height: 120%; /* 52.8px */
             margin-bottom: 16px;
             @media (max-width: 1440px) {
-              font-size: sizeP(44);
+              font-size: sizeP(39);
               margin-bottom: sizeP(16);
             }
             @media (max-width: $sizeMb) {

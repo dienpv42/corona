@@ -1,0 +1,20 @@
+// Cấu hình lại breakpoint
+$grid-breakpoints: (
+        xs: 0,
+        sm: 575px, // Chỉnh sửa sm bắt đầu từ 575px
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+// Tự động sinh các giá trị cột theo breakpoint
+$container-max-widths: (
+        sm: 540px,  // Điều chỉnh kích thước container cho sm nếu cần
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1320px
+);
+// Import Bootstrap SCSS
+@import "bootstrap/bootstrap";
