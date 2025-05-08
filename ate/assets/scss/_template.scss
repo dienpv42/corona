@@ -287,6 +287,7 @@
     line-height: 1.8;
     margin: 0 auto;
     text-align: justify;
+    color: $text-color;
     h1, h2, h3, h4, h5, h6 {
         font-weight: 700;
         line-height: 1.4;
@@ -301,6 +302,7 @@
     h6 { font-size: 1rem; }
 
     p {
+        color: $text-color;
         line-height: 1.8;
         margin-bottom: 1em;
     }
@@ -308,20 +310,24 @@
     ul, ol {
         padding-left: 1.5em;
         margin-bottom: 1em;
+        color: $text-color;
     }
 
     ul {
         li{
             list-style: disc;
+            color: $text-color;
         }
     }
 
     ol {
         li{
             list-style: decimal;
+            color: $text-color;
             ul {
                 li{
                     list-style: lower-alpha;
+                    color: $text-color;
                 }
             }
         }
@@ -329,10 +335,12 @@
 
     li {
         margin-bottom: 0.5em;
+        color: $text-color;
     }
 
     strong {
         font-weight: bold;
+        color: $text-color;
     }
 
     em {
@@ -352,6 +360,7 @@
         color: $primary-color;
         font-style: italic;
         margin: 1.5em 0;
+        color: $text-color;
     }
 
     table {
@@ -363,11 +372,13 @@
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
+            color: $text-color;
         }
 
         th {
             background-color: #f2f2f2;
             font-weight: 600;
+            color: $text-color;
         }
     }
 

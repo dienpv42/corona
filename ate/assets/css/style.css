@@ -599,7 +599,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: normal;
-  color: #545c66;
+  color: #000;
   line-height: 27px;
 }
 
@@ -725,7 +725,7 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: normal;
-  color: #545c66;
+  color: #000;
   margin-bottom: 15px;
   line-height: 1.5;
 }
@@ -822,7 +822,7 @@ p {
 }
 
 .black-soft-bg {
-  background: #545c66;
+  background: #000;
 }
 
 .pink-soft-bg {
@@ -3859,7 +3859,7 @@ ol, ul {
   height: 50px;
   line-height: 50px;
   font-size: 22px;
-  color: #545c66;
+  color: #000;
   background-color: #fbf7f3;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -4045,7 +4045,7 @@ ol, ul {
 }
 
 .testimonial__info-3 span {
-  color: #545c66;
+  color: #000;
 }
 
 .testimonial__video {
@@ -4407,7 +4407,7 @@ ol, ul {
 }
 
 .search-form input::placeholder {
-  color: #545c66;
+  color: #000;
 }
 
 .search-form button {
@@ -4704,7 +4704,7 @@ ol, ul {
 }
 
 .conatct-post-form input::placeholder {
-  color: #545c66;
+  color: #000;
 }
 
 .conatct-post-form textarea {
@@ -4718,7 +4718,7 @@ ol, ul {
 }
 
 .conatct-post-form textarea::placeholder {
-  color: #545c66;
+  color: #000;
 }
 
 .contact-icon::after {
@@ -4929,7 +4929,7 @@ ol, ul {
   transform: translateY(-50%);
   width: 6px;
   height: 1px;
-  background: #545c66;
+  background: #000;
 }
 
 .team__experience-item .team__experience-meta span:last-child::before {
@@ -7463,6 +7463,7 @@ ol, ul {
   line-height: 1.8;
   margin: 0 auto;
   text-align: justify;
+  color: #000;
 }
 .wrap-content-editor h1, .wrap-content-editor h2, .wrap-content-editor h3, .wrap-content-editor h4, .wrap-content-editor h5, .wrap-content-editor h6 {
   font-weight: 700;
@@ -7488,27 +7489,34 @@ ol, ul {
   font-size: 1rem;
 }
 .wrap-content-editor p {
+  color: #000;
   line-height: 1.8;
   margin-bottom: 1em;
 }
 .wrap-content-editor ul, .wrap-content-editor ol {
   padding-left: 1.5em;
   margin-bottom: 1em;
+  color: #000;
 }
 .wrap-content-editor ul li {
   list-style: disc;
+  color: #000;
 }
 .wrap-content-editor ol li {
   list-style: decimal;
+  color: #000;
 }
 .wrap-content-editor ol li ul li {
   list-style: lower-alpha;
+  color: #000;
 }
 .wrap-content-editor li {
   margin-bottom: 0.5em;
+  color: #000;
 }
 .wrap-content-editor strong {
   font-weight: bold;
+  color: #000;
 }
 .wrap-content-editor em {
   font-style: italic;
@@ -7525,6 +7533,7 @@ ol, ul {
   color: #003b70;
   font-style: italic;
   margin: 1.5em 0;
+  color: #000;
 }
 .wrap-content-editor table {
   width: 100%;
@@ -7535,10 +7544,12 @@ ol, ul {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: left;
+  color: #000;
 }
 .wrap-content-editor table th {
   background-color: #f2f2f2;
   font-weight: 600;
+  color: #000;
 }
 .wrap-content-editor img {
   max-width: 100%;
@@ -7548,7 +7559,7 @@ ol, ul {
 }
 
 .wrap-sapo {
-  color: #545c66;
+  color: #000;
   font-size: 16px;
   font-style: italic;
   font-weight: 600;
