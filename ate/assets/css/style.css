@@ -8226,7 +8226,7 @@ ol, ul {
   visibility: hidden;
 }
 .ate-main .section_member .swiper .swiper-wrapper {
-  height: 200px;
+  height: 400px;
 }
 .ate-main .section_member .swiper .swiper-wrapper .swiper-slide {
   text-align: center;
@@ -8821,11 +8821,13 @@ ol, ul {
   margin-bottom: 20px;
 }
 .ate-main .section-committee .widget__abouts.widget__abouts-first {
-  max-width: 800px;
+  width: 600px;
+  max-width: 100%;
   align-items: center;
 }
 .ate-main .section-committee .widget__abouts.widget__abouts-first img {
-  max-width: 300px;
+  width: 300px;
+  max-width: 100%;
   height: auto;
 }
 .ate-main .section-committee .widget__abouts.widget__abouts-first .content {

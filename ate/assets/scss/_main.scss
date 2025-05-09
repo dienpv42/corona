@@ -803,7 +803,7 @@
       }
 
       .swiper-wrapper {
-        height: 200px;
+        height: 400px;
 
         .swiper-slide {
           text-align: center;
@@ -820,12 +820,10 @@
     .item_member {
       width: 100%;
       text-align: center;
-
       .image {
         width: 100%;
         margin: 0 auto;
         padding: 0 4px;
-
         img {
           width: 100%;
           height: auto;
@@ -1469,11 +1467,13 @@
       }
 
       &.widget__abouts-first {
-        max-width: 800px;
+        width: 600px;
+        max-width: 100%;
         align-items: center;
 
         img {
-          max-width: 300px;
+          width: 300px;
+          max-width: 100%;
           height: auto;
         }
 
