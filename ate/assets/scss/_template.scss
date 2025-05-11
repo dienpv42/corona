@@ -397,6 +397,13 @@
     font-weight: 600;
     line-height: 1.4;
     margin-bottom: 20px;
+    @media only screen and (max-width: 991px) {
+        font-size: 15px;
+      }
+
+    @media only screen and (max-width: 574px) {
+    font-size: 14px;
+    }
 }
 
 .post-highlight{
