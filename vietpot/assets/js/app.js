@@ -4,7 +4,7 @@
     var $window = $(window),
         $body = $("body");
 
-    var slideBanner, slideProduct1, slideProduct2; // Declare variables at the top level
+    var slideBanner, slideCooperate, slideProduct1, slideProduct2; // Declare variables at the top level
 
     slideBanner = new Swiper(".slide_banner", {
         slidesPerView: 1,
@@ -21,6 +21,24 @@
         pagination: {
             clickable: true,
             el: '.section_banner .swiper-pagination',
+        },
+    });
+
+    slideCooperate = new Swiper(".slide_cooperate", {
+        slidesPerView: 1,
+        speed: 1000,
+        loop: true,
+        spaceBetween: 0,
+        slidesPerGroup: 1,
+        effect: "fade",
+        autoplay: false,
+        navigation: {
+            nextEl: ".section_cooperate .swiper-button-next",
+            prevEl: ".section_cooperate .swiper-button-prev",
+        },
+        pagination: {
+            clickable: true,
+            el: '.section_cooperate .swiper-pagination',
         },
     });
 
@@ -228,12 +246,12 @@
         $('.btn-sidebar, .wrap_menu_fixed').toggleClass('active');
     });
 
-    $window.on("load", function() {
-        AOS.init({
-            easing: "ease",
-            once: true,
-            disable: 'mobile'
-        });
-    });
+    // $window.on("load", function() {
+    //     AOS.init({
+    //         easing: "ease",
+    //         once: true,
+    //         disable: 'mobile'
+    //     });
+    // });
 
 })(window.jQuery);

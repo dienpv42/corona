@@ -141,12 +141,12 @@
           }
           img {
             width: auto;
-            height: 56px;
+            height: 45px;
             @media (max-width: 1440px) {
-              height: sizeP(56);
+              height: sizeP(45);
             }
             @media (max-width: $sizeMb) {
-              height: size(64);
+              height: size(45);
             }
           }
 
@@ -175,13 +175,15 @@
       }
 
       .map {
-        display: flex;
         position: relative;
         img {
-          width: 420px;
+          width: 416px;
           max-width: 100%;
+          margin-top: -5px;
+          height: auto;
           @media (max-width: 1440px) {
-            width: sizeP(420);
+            margin-top: sizeP(5)*-1;
+            width: sizeP(416);
           }
           @media (max-width: $sizeMb) {
             width: 100%;

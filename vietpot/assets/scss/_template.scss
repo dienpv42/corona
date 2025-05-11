@@ -118,6 +118,8 @@ hr{
 .dropdown-menu {
   padding: 0 24px;
   border-radius: 16px;
+  box-shadow: 0 1px 6px 0 #0f100f88;
+  border: unset;
   @media (max-width: 1440px) {
     padding: 0 sizeP(24);
     border-radius: sizeP(16);
@@ -150,7 +152,7 @@ hr{
     background: #FFF;
     white-space: nowrap;
     @media (max-width: 1440px) {
-      padding: sizeP(24) 0;
+      padding: sizeP(20) 0;
       font-size: sizeP(16);
     }
     @media (max-width: $sizeMb) {

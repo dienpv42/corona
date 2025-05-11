@@ -24,13 +24,20 @@
     visibility: visible;
   }
 }
+.text-link {
+  color: $--gray;
+  transition: all .3s;
+  &:hover{
+    color: $--primary;
+  }
+}
 .btn{
   padding: 12px 16px;
   border-radius: 12px;
   border: 1px solid #AFB5B9;
   background: #FFF;
   color: $--gray;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.15;
   transition: all .3s;
@@ -38,7 +45,7 @@
     padding: sizeP(12) sizeP(16);
     border-radius: sizeP(12);
     border: sizeP(1) solid #AFB5B9;
-    font-size: sizeP(14);
+    font-size: sizeP(16);
   }
   @media (max-width: $sizeMb) {
     padding: size(4) size(8);
@@ -211,67 +218,74 @@
 }
 
 .swiper-button-prev, .swiper-button-next {
-  width: 56px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #FFF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background: unset;
   transition: all .3s;
   top: 50%;
   transform: translateY(-50%);
   margin: 0;
+  padding: 8px;
+  border-radius: 50%;
   @media (max-width: 1441px) {
-    width: sizeP(56);
-    height: sizeP(100);
-    box-shadow: 0px sizeP(4) sizeP(4) 0px rgba(0, 0, 0, 0.25);
+    width: sizeP(50);
+    height: sizeP(50);
+    padding: sizeP(8);
   }
   @media (max-width: $sizeMb) {
     width: size(28);
-    height: size(48);
-    box-shadow: 0px size(4) size(4) 0px rgba(0, 0, 0, 0.25);
+    height: size(28);
+    padding: size(5);
   }
   svg {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: auto;
     @media (max-width: $sizeMb) {
-      width: sizeP(40);
-      height: sizeP(40);
+      width: sizeP(50);
     }
     @media (max-width: $sizeMb) {
-      width: size(20);
-      height: size(20);
+      width: size(30);
     }
     path {
       transition: all .3s;
     }
   }
-
+  .text-\[\#D0D5DD\] {
+    --tw-text-opacity: 1;
+    color: rgb(159, 171, 193);
+  }
   &::after {
     display: none;
   }
+  &:hover{
+    background-color: rgb(31, 41, 55, .2);
+    .text-\[\#D0D5DD\] {
+      color: rgb(255 255 255);
+    }
+  }
+
 }
 
 .swiper-button-prev{
-  border-radius: 0px 8px 8px 0px;
-  left: 0;
+  left: 15px;
   @media (max-width: 1441px) {
-    border-radius: 0px sizeP(8) sizeP(8) 0px;
+    left: sizeP(15);
   }
   @media (max-width: $sizeMb) {
-    border-radius: 0px size(8) size(8) 0px;
+    left: size(10);
   }
 }
 
 .swiper-button-next {
-  border-radius: 8px 0px 0px 8px;
-  right: 0;
+  right: 15px;
   @media (max-width: 1441px) {
-    border-radius: sizeP(8) 0px 0px sizeP(8);
+    right: sizeP(15);
   }
   @media (max-width: $sizeMb) {
-    border-radius: size(8) 0px 0px size(8);
+    right: size(10);
   }
 }
 
@@ -281,25 +295,25 @@
     height: 12px;
     margin-right: 16px;
     background-color: #fff;
-    border: 1px solid $--primary;
+    border: 1px solid unset;
     transition: all .3s;
     @media (max-width: 1441px) {
       width: sizeP(12);
       height: sizeP(12);
       margin-right: sizeP(16);
-      border: sizeP(1) solid $--primary;
+      border: sizeP(1) solid unset;
     }
     @media (max-width: $sizeMb) {
       width: size(6);
       height: size(6);
-      border: size(1) solid $--primary;
+      border: size(1) solid unset;
       margin-right: size(16);
     }
     &:last-child{
       margin-right: 0;
     }
     &.swiper-pagination-bullet-active{
-      background-color: $--primary;
+      background-color: #fff;
     }
   }
 }
