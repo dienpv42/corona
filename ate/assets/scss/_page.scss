@@ -27,6 +27,12 @@
 
     .postbox__title {
       font-size: 30px;
+      @media only screen and (max-width: 991px) {
+        font-size: 25px;
+      }
+      @media only screen and (max-width: 574px) {
+        font-size:20px
+      }
     }
 
     .postbox__file {}
@@ -502,6 +508,26 @@
       h3{
         font-size: 13px;
       }
+    }
+  }
+}
+.page__title-inner{
+  h1 {
+    @media only screen and (max-width: 991px) {
+      font-size: 35px;
+    }
+
+    @media only screen and (max-width: 574px) {
+      font-size: 30px;
+    }
+  }
+  .breadcrumb-item{
+    @media only screen and (max-width: 991px) {
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 574px) {
+      font-size: 12px;
     }
   }
 }

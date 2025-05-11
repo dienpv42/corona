@@ -804,7 +804,13 @@
 
       .swiper-wrapper {
         height: 400px;
-
+        @media only screen and (max-width: 991px) {
+          height: 400px;
+        }
+  
+        @media only screen and (max-width: 574px) {
+          height: 250px;
+        }
         .swiper-slide {
           text-align: center;
           font-size: 18px;
