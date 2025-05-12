@@ -90,9 +90,9 @@
         flex-direction: column;
       }
       .nav-item {
-        margin-right: 24px;
+        margin-right: 17px;
         @media (max-width: 1440px) {
-          margin-right: sizeP(24);
+          margin-right: sizeP(17);
         }
         @media (max-width: $sizeMb) {
 

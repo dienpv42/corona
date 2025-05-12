@@ -296,14 +296,14 @@
 
     .swiper-pagination {
       position: absolute;
-      bottom: 40px;
+      bottom: 15px;
       left: 50%;
       transform: translateX(-50%);
       @media (max-width: 1440px) {
-        bottom: sizeP(40);
+        bottom: sizeP(15);
       }
       @media (max-width: $sizeMb) {
-        bottom: size(20);
+        bottom: size(10);
       }
     }
     .upload-box{
@@ -999,6 +999,43 @@
 }
 
 .section_cooperate {
+  &.section_cooperate_layer{
+    .item {
+      position: relative;
+      &:nth-child(odd) {
+        padding-left: 60px;
+        padding-right: 212px;
+        @media (max-width: 1440px) {
+          padding-left: sizeP(60);
+          padding-right: sizeP(212);
+        }
+        @media (max-width: $sizeMb) {
+          padding: 0;
+        }
+      }
+
+      &:nth-child(even) {
+        padding-right: 60px;
+        padding-left: 212px;
+        @media (max-width: 1440px) {
+          padding-right: sizeP(60);
+          padding-left: sizeP(212);
+        }
+        @media (max-width: $sizeMb) {
+          padding: 0;
+        }
+      }
+
+      @for $i from 1 through 20 {
+        &:nth-child(#{$i}) {
+          z-index: #{21 - $i}; // Đặt z-index từ 5 đến 1
+          @media (max-width: $sizeMb) {
+            z-index: unset;
+          }
+        }
+      }
+    }
+  }
   .section_content {
     @media (max-width: $sizeMb) {
       display: flex;
@@ -1050,9 +1087,9 @@
         border-radius: 16px;
         background: #FFF;
         box-shadow: 10px 32px 64px 0px rgba(0, 0, 0, 0.16);
-        padding: 32px 60px;
+        padding: 16px 60px;
         @media (max-width: 1440px) {
-          padding: sizeP(32) sizeP(60);
+          padding: sizeP(16) sizeP(60);
           border-radius: sizeP(16);
           box-shadow: sizeP(10) sizeP(32) sizeP(64) 0px rgba(0, 0, 0, 0.16);
         }
@@ -1066,15 +1103,15 @@
 
         .image {
           img {
-            width: 258px;
-            height: 258px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             object-position: center;
             border-radius: 16px;
             @media (max-width: 1440px) {
               border-radius: sizeP(16);
-              width: sizeP(258);
-              height: sizeP(258);
+              width: sizeP(200);
+              height: sizeP(200);
             }
             @media (max-width: $sizeMb) {
               width: size(59);
@@ -1100,10 +1137,10 @@
             font-size: 27px;
             font-weight: 700;
             line-height: 120%; /* 32.4px */
-            margin-bottom: 24px;
+            margin-bottom: 12px;
             @media (max-width: 1440px) {
               font-size: sizeP(27);
-              margin-bottom: sizeP(24);
+              margin-bottom: sizeP(12);
             }
             @media (max-width: $sizeMb) {
               font-size: size(16);
@@ -1115,10 +1152,10 @@
             font-size: 20px;
             font-weight: 400;
             line-height: 150%; /* 30px */
-            margin-bottom: 24px;
+            margin-bottom: 12px;
             @media (max-width: 1440px) {
               font-size: sizeP(20);
-              margin-bottom: sizeP(24);
+              margin-bottom: sizeP(12);
             }
             @media (max-width: $sizeMb) {
               font-size: size(15);
@@ -1166,16 +1203,8 @@
 }
 
 .section_trans_partner {
-  background: linear-gradient(180deg, #FFF 0%, #ECFAFF 11.17%, #CDE3EB 16.17%, #599bb3 33%, #25647ce8 55%, rgb(14 76 99 / 90%) 64%, #4a9ab7ed 91%, rgb(71 149 199 / 22%) 104%, rgb(33 150 243 / 8%) 100%);
+  background: linear-gradient(180deg, #FFF 0%, #ECFAFF 11.17%, #CDE3EB 16.17%, #599bb3 33%, rgba(37, 100, 124, 0.9098039216) 55%, rgba(14, 76, 99, 0.9) 64%, rgb(74 154 183) 100%, rgba(71, 149, 199, 0.22) 105%, rgba(33, 150, 243, 0.08) 100%);
   .section_content {
-    margin-bottom: 50px;
-    @media (max-width: 1440px) {
-      margin-bottom: sizeP(50);
-    }
-    @media (max-width: $sizeMb) {
-      margin-bottom: size(24);
-    }
-
     .description {
       max-width: 888.5px;
       margin: auto;
@@ -1234,10 +1263,9 @@
           font-size: sizeP(20);
         }
         @media (max-width: $sizeMb) {
-          font-size: size(14);
+          font-size: size(12);
         }
         &:hover{
-          transform: translate(-50%, -50%) scale(1.1);
           text-shadow: 2px 4px 8px #FFF;
           @media (max-width: 1440px) {
             text-shadow: sizeP(2) sizeP(4) sizeP(8) #FFF;
@@ -1287,14 +1315,14 @@
 
         &:hover {
           text-shadow: 2px 4px 8px #FFF;
-          box-shadow: 2px 4px 8px 0px #FFF;
+          box-shadow: 2px 4px 6px 0px #eaeaea6b;
           @media (max-width: 1440px) {
             text-shadow: sizeP(2) sizeP(4) sizeP(8) #FFF;
-            box-shadow: sizeP(2) sizeP(4) sizeP(8) 0px #FFF;
+            box-shadow: sizeP(2) sizeP(4) sizeP(6) 0px #eaeaea6b;
           }
           @media (max-width: $sizeMb) {
             text-shadow: size(2) size(4) size(8) #FFF;
-            box-shadow: size(2) size(4) size(8) 0px #FFF;
+            box-shadow: size(2) size(4) size(6) 0px #eaeaea6b;
           }
         }
 
@@ -1493,6 +1521,10 @@
 }
 
 .section_banner_short {
+  .wrapper{
+    display: flex;
+    width: 100%;
+  }
   img {
     width: 100%;
   }

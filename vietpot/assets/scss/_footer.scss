@@ -1,36 +1,37 @@
 .footer {
+  border-top: 1px solid #b3b3b3f2;
+  @media (max-width: 1440px) {
+    border-top: sizeP(1) solid #b3b3b3f2;
+  }
+  @media (max-width: $sizeMb) {
+    border-top: size(1) solid #b3b3b3f2;
+  }
   .footer_top {
-    padding: 40px 0;
-    background: linear-gradient(0deg, rgba(33, 150, 243, 0.20) 0%, rgba(33, 150, 243, 0.20) 100%), #FFF;
-    @media (max-width: 1440px) {
-      padding: sizeP(40) 0;
+    background: linear-gradient(180deg, rgb(79 156 183) 0%, rgba(74, 154, 183, 0.85) 16%, rgba(74, 154, 183, 0.48) 55%, rgba(74, 154, 183, 0.17) 80%, rgba(74, 154, 183, 0) 91%, rgba(71, 149, 199, 0) 77%, rgba(33, 150, 243, 0) 76%);
+    &.footer_top_w{
+      background: #fff;
     }
-    @media (max-width: $sizeMb) {
-      padding: size(34) 0;
+    .text-connect{
+      color: $--gray-1;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      @media (max-width: 1440px) {
+        font-size: sizeP(16);
+        line-height: sizeP(24);
+      }
+      @media (max-width: $sizeMb) {
+        font-size: size(16);
+        line-height: size(24);
+      }
     }
     .wrapper {
       .wrapper-left {
-        width: calc(100% - 444px);
-        @media (max-width: 1440px) {
-          $s444p: sizeP(444);
-          width: calc(100% - $s444p);
-        }
-        @media (max-width: $sizeMb) {
-          width: 100%;
-        }
-        .row {
-          margin-bottom: 32px;
-          @media (max-width: 1440px) {
-            margin-bottom: sizeP(32);
-          }
-          @media (max-width: $sizeMb) {
-            margin-bottom: 0;
-          }
-        }
+        flex: 1;
       }
 
       .wrap_info {
-        color: $--gray;
+        color: $--gray-1;
         font-size: 16px;
         font-weight: 400;
         line-height: 120%;
@@ -55,6 +56,7 @@
             }
 
             a {
+              transition: all .3s;
               &.btn_change_lang {
                 svg {
                   margin-left: 5px;
@@ -70,39 +72,56 @@
                     width: size(16);
                     height: size(16);
                   }
+                  path{
+                    fill: $--gray-1;
+                  }
                 }
 
                 &:after {
                   display: none;
                 }
               }
-            }
-            .dropdown-menu .dropdown-item {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
+              &:hover {
+                color: $--primary;
+                svg {
+                  path{
+                      fill: $--primary;
+                  }
+                }
+              }
             }
             .dropdown-menu {
+              overflow: hidden;
+              padding: 0;
               .dropdown-item {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-
+                padding: 15px;
+                @media (max-width: 1440px) {
+                  padding: sizeP(15);
+                }
+                @media (max-width: $sizeMb) {
+                  padding: size(12);
+                }
+                &:hover{
+                  background-color: #f8f9fa;
+                }
                 .flag {
-                  width: 47.761px;
-                  height: 32px;
+                  width: 30px;
+                  height: 20px;
                   border-radius: 4px;
                   object-fit: cover;
                   object-position: center;
                   margin-right: 8px;
                   @media (max-width: 1440px) {
-                    width: sizeP(47.761);
-                    height: sizeP(32);
+                    width: sizeP(30);
+                    height: sizeP(20);
                     border-radius: sizeP(4);
                     margin-right: sizeP(8);
                   }
                   @media (max-width: $sizeMb) {
-                    width: size(23.881);
+                    width: size(23);
                     height: size(16);
                     border-radius: size(4);
                     margin-right: size(4);
@@ -112,7 +131,6 @@
                 span {
                   color: $--gray;
                   font-size: 15px;
-                  font-weight: 700;
                   line-height: 120%;
                   @media (max-width: 1440px) {
                     font-size: sizeP(15);
@@ -128,10 +146,15 @@
       }
 
       .social {
+        margin-top: 18px;
+        @media (max-width: 1440px) {
+          margin-top: sizeP(18);
+        }
         @media (max-width: $sizeMb) {
-          margin-bottom: size(18);
+          margin-top: 0;
         }
         a {
+          display: flex;
           margin-right: 16px;
           @media (max-width: 1440px) {
             margin-right: sizeP(16);
@@ -141,25 +164,51 @@
           }
           img {
             width: auto;
-            height: 45px;
+            height: 40px;
             @media (max-width: 1440px) {
-              height: sizeP(45);
+              height: sizeP(40);
             }
             @media (max-width: $sizeMb) {
-              height: size(45);
+              height: size(30);
             }
           }
 
         }
         .w_social{
+          a{
+            display: flex;
+          }
           img {
+            color: $--gray-1;
+            width: auto;
+            height: 36px;
+            @media (max-width: 1440px) {
+              height: sizeP(36);
+            }
+            @media (max-width: $sizeMb) {
+              height: size(36);
+            }
+            path{
+              fill: $--gray-1;
+            }
+          }
+          svg {
+            color: $--gray-1;
+            width: auto;
+            height: 40px;
+            @media (max-width: 1440px) {
+              height: sizeP(40);
+            }
             @media (max-width: $sizeMb) {
               height: size(40);
+            }
+            path{
+              fill: $--gray-1;
             }
           }
         }
         .text {
-          color: $--gray;
+          color: $--gray-1;
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
@@ -176,24 +225,27 @@
 
       .map {
         position: relative;
-        img {
-          width: 416px;
+        img, svg {
+          width: auto;
           max-width: 100%;
-          margin-top: -5px;
-          height: auto;
+          height: 152px;
           @media (max-width: 1440px) {
-            margin-top: sizeP(5)*-1;
-            width: sizeP(416);
+            height: sizeP(152);
           }
           @media (max-width: $sizeMb) {
             width: 100%;
+            height: auto;
+          }
+          path{
+            fill: #c7c7c7;
+            stroke: #fff;
           }
         }
         .shop, .store{
           position: absolute;
           border-radius: 8px;
           border: 1px solid #AFB5B9;
-          background: #FFF;
+          background: #f7f7f7;
           box-shadow: 2px 4px 16px 0px rgba(33, 150, 243, 0.32);
           padding: 4px 16px;
           display: flex;
@@ -221,11 +273,11 @@
           }
           span{
             color: #6D727B;
-            font-size: 27px;
+            font-size: 20px;
             font-weight: 700;
             line-height: 1;
             @media (max-width: 1440px) {
-              font-size: sizeP(27);
+              font-size: sizeP(20);
             }
             @media (max-width: $sizeMb) {
               font-size: size(20);
@@ -233,11 +285,11 @@
           }
         }
         .shop{
-          top: 85px;
-          left: 69px;
+          top: 40px;
+          left: 19px;
           @media (max-width: 1440px) {
-            top: sizeP(85);
-            left: sizeP(69);
+            top: sizeP(40);
+            left: sizeP(19);
           }
           @media (max-width: $sizeMb) {
             top: size(66);
@@ -245,11 +297,11 @@
           }
         }
         .store{
-          top: 137px;
-          left: 202px;
+          top: 86px;
+          left: 106px;
           @media (max-width: 1440px) {
-            top: sizeP(137);
-            left: sizeP(202);
+            top: sizeP(86);
+            left: sizeP(106);
           }
           @media (max-width: $sizeMb) {
             top: size(119);

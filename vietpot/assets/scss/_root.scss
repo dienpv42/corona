@@ -25,10 +25,17 @@
   }
 }
 .text-link {
-  color: $--gray;
+  color: $--primary;
   transition: all .3s;
+  font-size: 18px;
+  @media (max-width: 1440px) {
+    font-size: sizeP(18);
+  }
+  @media (max-width: $sizeMb) {
+    font-size: size(14);
+  }
   &:hover{
-    color: $--primary;
+    color: #4caf50;
   }
 }
 .btn{
