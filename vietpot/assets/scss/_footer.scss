@@ -1,15 +1,30 @@
 .footer {
-  border-top: 1px solid #b3b3b3f2;
-  @media (max-width: 1440px) {
-    border-top: sizeP(1) solid #b3b3b3f2;
-  }
-  @media (max-width: $sizeMb) {
-    border-top: size(1) solid #b3b3b3f2;
+  //border-top: 1px solid;
+  //@media (max-width: 1440px) {
+  //  border-top: sizeP(1) solid;
+  //}
+  //@media (max-width: $sizeMb) {
+  //  border-top: size(1) solid;
+  //}
+  //border-color: rgb(199, 199, 199);
+  //&.footer_w{
+  //  border-color: rgb(233 233 233);
+  //}\
+  .scroll-top{
+    color: #FFF;
+    display: block;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    background-color: #397d96;
+    &:hover{
+      opacity: .9;
+    }
   }
   .footer_top {
     background: linear-gradient(180deg, rgb(79 156 183) 0%, rgba(74, 154, 183, 0.85) 16%, rgba(74, 154, 183, 0.48) 55%, rgba(74, 154, 183, 0.17) 80%, rgba(74, 154, 183, 0) 91%, rgba(71, 149, 199, 0) 77%, rgba(33, 150, 243, 0) 76%);
     &.footer_top_w{
-      background: #fff;
+      background: #f0f8fd;
     }
     .text-connect{
       color: $--gray-1;

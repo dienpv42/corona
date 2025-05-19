@@ -214,7 +214,7 @@
             font-size: 16px;
             &.btn_color{
               color: #fff;
-              background-color: #94C459;
+              background-color: #4caf50;
               border: 1px solid #F39200;
             }
           }
@@ -225,8 +225,8 @@
 }
 
 .swiper-button-prev, .swiper-button-next {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,34 +235,30 @@
   top: 50%;
   transform: translateY(-50%);
   margin: 0;
-  padding: 8px;
   border-radius: 50%;
   @media (max-width: 1441px) {
-    width: sizeP(50);
-    height: sizeP(50);
-    padding: sizeP(8);
+    width: sizeP(45);
+    height: sizeP(45);
   }
   @media (max-width: $sizeMb) {
     width: size(28);
     height: size(28);
-    padding: size(5);
   }
   svg {
-    width: 50px;
+    width: 28px;
     height: auto;
     @media (max-width: $sizeMb) {
-      width: sizeP(50);
+      width: sizeP(28);
     }
     @media (max-width: $sizeMb) {
-      width: size(30);
+      width: size(16);
     }
     path {
-      transition: all .3s;
     }
   }
   .text-\[\#D0D5DD\] {
     --tw-text-opacity: 1;
-    color: rgb(159, 171, 193);
+    color: rgb(33 150 243);
   }
   &::after {
     display: none;

@@ -1,34 +1,27 @@
 .section_form_login {
-  padding: 80px 0;
-  @media (max-width: 1440px) {
-    padding: sizeP(80) 0;
-  }
-  @media (max-width: $sizeMb) {
-    padding: size(40) size(20);
-  }
   hr {
     border-radius: 16px;
     max-width: 230px;
-    margin: 52px auto 52px;
-    border-top: 5px solid #D5D7DB;
+    margin: 32px auto 32px;
+    border-top: 3px solid #D5D7DB;
     @media (max-width: 1440px) {
       border-radius: sizeP(16);
       max-width: sizeP(230);
-      margin: sizeP(52) auto sizeP(52);
-      border-top: sizeP(5) solid #D5D7DB;
+      margin: sizeP(32) auto sizeP(32);
+      border-top: sizeP(3) solid #D5D7DB;
     }
     @media (max-width: $sizeMb) {
       max-width: size(161);
-      margin: size(40) auto size(40);
-      border-top: size(5) solid #D5D7DB;
+      margin: size(20) auto size(20);
+      border-top: size(3) solid #D5D7DB;
     }
   }
   .card_forms {
-    width: 735px;
+    width: 500px;
     max-width: 100%;
     margin: 0 auto;
     @media (max-width: 1440px) {
-      width: sizeP(735);
+      width: sizeP(550);
     }
     @media (max-width: $sizeMb) {
       width: 100%;
@@ -37,40 +30,75 @@
   .card_forms {
     border-radius: 16px;
     background: #FFF;
-    box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.20);
-    padding: 40px;
-    margin-bottom: 40px;
+    //box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.20);
+    padding: 0 40px;
     @media (max-width: 1440px) {
       border-radius: sizeP(16);
-      box-shadow: sizeP(2) sizeP(4) sizeP(32) 0px rgba(0, 0, 0, 0.20);
-      padding: sizeP(40);
-      margin-bottom: sizeP(40);
+      //box-shadow: sizeP(2) sizeP(4) sizeP(32) 0px rgba(0, 0, 0, 0.20);
+      padding: 0 sizeP(40);
     }
     @media (max-width: $sizeMb) {
       border-radius: size(16);
       background: #FFF;
-      box-shadow: size(2) size(4) size(32) 0px rgba(0, 0, 0, 0.20);
-      padding: size(20);
-      margin-bottom: size(40);
+      //box-shadow: size(2) size(4) size(32) 0px rgba(0, 0, 0, 0.20);
+      padding: 0 size(20);
+    }
+
+    &.card_forms_login {
+      box-shadow: 2px 4px 15px 0px rgb(0 0 0 / 14%);
+      padding: 40px;
+      @media (max-width: 1440px) {
+        box-shadow: sizeP(2) sizeP(4) sizeP(15) 0px rgb(0 0 0 / 14%);
+        padding: sizeP(40);
+      }
+      @media (max-width: $sizeMb) {
+        box-shadow: size(2) size(4) size(15) 0px rgb(0 0 0 / 14%);
+        padding: size(20);
+      }
     }
 
     &:last-child {
       margin-bottom: 0;
     }
 
+    .alert{
+      padding: 9px;
+      font-size: 16px;
+      @media (max-width: 1440px) {
+        padding: sizeP(9);
+        font-size: sizeP(16);
+      }
+      @media (max-width: $sizeMb) {
+        padding: size(8);
+        font-size: size(14);
+      }
+      .btn-close{
+        font-size: 12px;
+        padding: 15px;
+        @media (max-width: 1440px) {
+          font-size: sizeP(12);
+          padding: sizeP(15);
+        }
+        @media (max-width: $sizeMb) {
+          font-size: size(12);
+          padding: size(15);
+        }
+      }
+    }
+
     .card_title {
       color: $--gray;
       text-align: center;
-      font-size: 27px;
-      font-weight: 700;
+      font-size: 24px;
+      font-weight: 500;
       line-height: 120%;
-      margin-bottom: 48px;
+      margin-bottom: 24px;
       @media (max-width: 1440px) {
-        font-size: sizeP(27);
-        margin-bottom: sizeP(48);
+        font-size: sizeP(24);
+        margin-bottom: sizeP(24);
       }
       @media (max-width: $sizeMb) {
-        font-size: size(27);
+        font-size: size(16);
         margin-bottom: size(24);
       }
     }
@@ -100,27 +128,108 @@
     }
 
     .card_form {
-      .form-group {
-        margin-bottom: 24px;
+      .form-check{
+        margin-top: 12px;
         @media (max-width: 1440px) {
-          margin-bottom: sizeP(24);
+          margin-top: sizeP(12);
+        }
+        @media (max-width: $sizeMb) {
+          margin-top: size(12);
+        }
+      }
+      .form-check .form-check-input {
+        margin-right: 8px;
+        margin-top: -5px;
+        @media (max-width: 1440px) {
+        }
+        @media (max-width: $sizeMb) {
+        }
+      }
+      .form-check .form-check-label{
+        color: #6D727B;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        @media (max-width: 1440px) {
+          font-size: sizeP(16);
+          margin-bottom: sizeP(10);
+        }
+        @media (max-width: $sizeMb) {
+          font-size: size(16);
+          margin-bottom: size(10);
+        }
+      }
+      .form-group {
+        margin-bottom: 16px;
+        @media (max-width: 1440px) {
+          margin-bottom: sizeP(16);
         }
         @media (max-width: $sizeMb) {
           margin-bottom: size(12);
         }
 
+        &.mt-end{
+          margin-top: 32px;
+          @media (max-width: 1440px) {
+            margin-top: sizeP(32);
+          }
+          @media (max-width: $sizeMb) {
+            margin-top: size(24);
+          }
+        }
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        .group{
+          position: relative;
+          .btn-eye{
+            display: flex;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 12px;
+            cursor: pointer;
+            @media (max-width: 1440px) {
+              right: sizeP(12);
+            }
+            @media (max-width: $sizeMb) {
+              right: size(12);
+            }
+            svg{
+              width: 20px;
+              height: auto;
+              @media (max-width: 1440px) {
+                  width: sizeP(20);
+              }
+              @media (max-width: $sizeMb) {
+                  width: size(20);
+              }
+            }
+            &:hover{
+              color: $--primary;
+
+            }
+          }
+        }
+
+        .form-control{
+
+        }
+
         .form-label {
           color: #6D727B;
           font-size: 16px;
-          font-weight: 400;
-          margin-bottom: 12px;
+          font-weight: 500;
+          margin-bottom: 10px;
           @media (max-width: 1440px) {
             font-size: sizeP(16);
-            margin-bottom: sizeP(12);
+            margin-bottom: sizeP(10);
           }
           @media (max-width: $sizeMb) {
             font-size: size(16);
-            margin-bottom: size(12);
+            margin-bottom: size(10);
           }
         }
 
@@ -129,6 +238,7 @@
           color: #4CAF50;
           font-size: 16px;
           font-weight: 400;
+          transition: all .3s;
           @media (max-width: 1440px) {
             margin-top: sizeP(12);
             font-size: sizeP(16);
@@ -136,6 +246,31 @@
           @media (max-width: $sizeMb) {
             margin-top: size(12);
             font-size: size(14);
+          }
+          &:hover{
+            color:  $--primary;
+          }
+        }
+        .text-create-account{
+          text-align: center;
+          margin-top: 12px;
+          color: #6D727B;
+          font-size: 16px;
+          font-weight: 400;
+          transition: all .3s;
+          @media (max-width: 1440px) {
+            margin-top: sizeP(12);
+            font-size: sizeP(16);
+          }
+          @media (max-width: $sizeMb) {
+            margin-top: size(12);
+            font-size: size(14);
+          }
+          a{
+            color: #4CAF50;
+            &:hover{
+              color:  $--primary;
+            }
           }
         }
       }
@@ -149,4 +284,59 @@
     }
   }
 
+}
+.section_link_login {
+  .section_content {
+    .wrapper {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      max-width: 500px;
+      margin: auto;
+      @media (max-width: 1440px) {
+        gap: sizeP(32);
+        max-width: sizeP(500);
+      }
+      @media (max-width: $sizeMb) {
+        gap: size(12);
+        max-width: 100%;
+      }
+      .nav-item{
+        flex: 1 1 calc(50% - 16px);
+        >*{
+          width: 100%;
+          text-align: center;
+        }
+      }
+      .lb_link {
+        display: inline-block;
+        flex: 1 1 calc(50% - 16px);
+        text-align: center;
+        border-radius: 16px;
+        border: 1px solid #AFB5B9;
+        color: #43464D;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.3; /* 150% */
+        background-color: #fff;
+        @media (max-width: 1441px) {
+          padding: sizeP(10);
+          font-size: sizeP(16);
+          border-radius: sizeP(16);
+          border: sizeP(1) solid #AFB5B9;
+        }
+        @media (max-width: $sizeMb) {
+          padding: size(12);
+          font-size: size(16);
+          border-radius: size(16);
+          border: size(1) solid #AFB5B9;
+        }
+
+        &:hover, &.active {
+          background: rgba(33, 150, 243, 0.20);
+        }
+      }
+    }
+  }
 }

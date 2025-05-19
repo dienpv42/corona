@@ -19,9 +19,9 @@
     }
   }
   .wrapper {
-    height: 88px;
+    height: 93px;
     @media (max-width: 1440px) {
-      height: sizeP(88);
+      height: sizeP(93);
     }
     @media (max-width: $sizeMb) {
       height: size(48);
@@ -103,13 +103,13 @@
 
         .nav-link {
           color: $--gray;
-          font-size: 20px;
+          font-size: 18px;
           font-weight: 500;
           line-height: 120%;
           padding: 12px;
           transition: all .3s;
           @media (max-width: 1440px) {
-            font-size: sizeP(20);
+            font-size: sizeP(18);
             padding: sizeP(12);
           }
           @media (max-width: $sizeMb) {
