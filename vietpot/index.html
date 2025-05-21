@@ -1222,40 +1222,109 @@
                 $(window).scrollTop(0);
                 setTimeout(() => $('html').css('scroll-behavior', ''), 100);
             });
-        });
-        // Initialize the brand name slider with auto width
-        // Initialize the brand name slider with auto width
-        var cooperateSlider = new Swiper(".wrap_slider_cooperate", {
-            centeredSlides: true,
-            loop: true,
-            slidesPerView: "auto",
-            slideToClickedSlide: true,
-        });
+            function calculateSpaceBetween() {
+                var width = window.innerWidth;
+                if (width > 1440) {
+                    return 32;
+                } else if (width >= 992) {
+                    return width * 0.0222; // 0.83333333333%
+                } else {
+                    return width * 0.032; // 3.2%
+                }
+            }
 
-        // Initialize the images slider
-        var imagesSlider = new Swiper(".images_slider_main", {
-            slidesPerView: 1,
-            allowTouchMove: false,
-            speed: 500
-        });
+            var spaceBetweenVW = calculateSpaceBetween();
+            // Initialize the brand name slider with auto width
+            var cooperateSlider = new Swiper(".wrap_slider_cooperate", {
+                centeredSlides: true,
+                slideToClickedSlide: true,
+                speed: 500,
+                loop: true,
+                spaceBetween: spaceBetweenVW,
+                slidesPerView: 5,
+                touchRatio: 2,
+                loopAdditionalSlides: 3,
+                loopFillGroupWithBlank: true,
+                watchSlidesProgress: true,
+                observer: true,
+                observeParents: true,
+                // autoplay: {
+                //     delay: 3000,
+                //     disableOnInteraction: false
+                // },
+                navigation: {
+                    nextEl: ".wrap_slider_cooperate .swiper-button-next",
+                    prevEl: ".wrap_slider_cooperate .swiper-button-prev",
+                },
+                breakpoints: {
+                    1921: {
+                        slidesPerView: 5
+                    },
+                    992: {
+                        slidesPerView: 5,
+                    },
+                    575: {
+                        slidesPerView: 4,
+                    },
+                    0: {
+                        slidesPerView: 4,
+                    },
+                },
+                on: {
+                    init: function() {
+                        this.update();
+                    }
+                }
+            });
 
-        // Initialize the content slider
-        var infoSlider = new Swiper(".wrap_info_slider", {
-            slidesPerView: 1,
-            allowTouchMove: false,
-            speed: 500
-        });
+            // Initialize the images slider
+            var imagesSlider = new Swiper(".images_slider_main", {
+                slidesPerView: 1,
+                allowTouchMove: false,
+                speed: 500
+            });
 
-        // Connect the sliders
-        cooperateSlider.on('slideChange', function () {
-            imagesSlider.slideTo(cooperateSlider.activeIndex);
-            infoSlider.slideTo(cooperateSlider.activeIndex);
-        });
+            // Initialize the content slider
+            var infoSlider = new Swiper(".wrap_info_slider", {
+                slidesPerView: 1,
+                allowTouchMove: false,
+                speed: 500
+            });
 
-        // Replace your existing click event listener with this:
-        cooperateSlider.on('click', function () {
-            imagesSlider.slideTo(cooperateSlider.clickedIndex);
-            infoSlider.slideTo(cooperateSlider.clickedIndex);
+            // Connect the sliders - fixing the synchronization
+            cooperateSlider.on('slideChange', function () {
+                // Get real index for looped slider
+                let realIndex = cooperateSlider.realIndex;
+                imagesSlider.slideTo(realIndex);
+                infoSlider.slideTo(realIndex);
+            });
+
+            // When clicking on a slide
+            cooperateSlider.on('click', function (swiper, event) {
+                setTimeout(function() {
+                    // Force update to handle loop slides properly
+                    cooperateSlider.update();
+
+                    // After update, sync the other sliders using realIndex
+                    let realIndex = cooperateSlider.realIndex;
+                    imagesSlider.slideTo(realIndex);
+                    infoSlider.slideTo(realIndex);
+
+                    // For edge cases (3rd from beginning/end)
+                    if (cooperateSlider.clickedIndex !== undefined) {
+                        // If clicking on a clone slide (3rd from beginning/end)
+                        let clickedIndex = cooperateSlider.clickedIndex;
+                        let slideCount = cooperateSlider.slides.length - cooperateSlider.loopedSlides * 2;
+
+                        // Determine if we're in the edge area (3rd from start or end)
+                        if (clickedIndex < 3 || clickedIndex >= slideCount - 3) {
+                            cooperateSlider.updateSlides();
+                            cooperateSlider.updateProgress();
+                            cooperateSlider.updateSlidesClasses();
+                        }
+                    }
+                }, 100);
+            });
         });
 
 
