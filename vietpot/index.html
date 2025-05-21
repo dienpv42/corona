@@ -1243,11 +1243,17 @@
                 spaceBetween: spaceBetweenVW,
                 slidesPerView: 5,
                 touchRatio: 2,
-                loopAdditionalSlides: 3,
+                loopAdditionalSlides: 5,
+                loopedSlides: 5,
                 loopFillGroupWithBlank: true,
                 watchSlidesProgress: true,
                 observer: true,
                 observeParents: true,
+                updateOnImagesReady: true,
+                normalizeSlideIndex: true,
+                preventClicksPropagation: false, // Added to prevent click propagation issues
+                preventInteractionOnTransition: true, // Added to prevent interaction during transition
+                slideActiveClass: 'swiper-slide-active',
                 // autoplay: {
                 //     delay: 3000,
                 //     disableOnInteraction: false
@@ -1300,30 +1306,38 @@
             });
 
             // When clicking on a slide
-            cooperateSlider.on('click', function (swiper, event) {
-                setTimeout(function() {
-                    // Force update to handle loop slides properly
-                    cooperateSlider.update();
-
-                    // After update, sync the other sliders using realIndex
-                    let realIndex = cooperateSlider.realIndex;
-                    imagesSlider.slideTo(realIndex);
-                    infoSlider.slideTo(realIndex);
-
-                    // For edge cases (3rd from beginning/end)
-                    if (cooperateSlider.clickedIndex !== undefined) {
-                        // If clicking on a clone slide (3rd from beginning/end)
-                        let clickedIndex = cooperateSlider.clickedIndex;
-                        let slideCount = cooperateSlider.slides.length - cooperateSlider.loopedSlides * 2;
-
-                        // Determine if we're in the edge area (3rd from start or end)
-                        if (clickedIndex < 3 || clickedIndex >= slideCount - 3) {
-                            cooperateSlider.updateSlides();
-                            cooperateSlider.updateProgress();
-                            cooperateSlider.updateSlidesClasses();
-                        }
+            cooperateSlider.on('click', function () {
+                // Get the currently clicked slide index
+                let clickedIndex = cooperateSlider.clickedIndex;
+                console.log(clickedIndex);
+                
+                if (clickedIndex !== undefined) {
+                    // Calculate the real index (accounting for loop)
+                    let realIndex;
+                    if (cooperateSlider.params.loop) {
+                        realIndex = cooperateSlider.clickedSlide ? 
+                            parseInt(cooperateSlider.clickedSlide.getAttribute('data-swiper-slide-index'), 10) : 
+                            cooperateSlider.realIndex;
+                    } else {
+                        realIndex = clickedIndex;
                     }
-                }, 100);
+                    
+                    // Force the slider to the clicked position
+                    cooperateSlider.slideToLoop(realIndex, 300, true);
+                    
+                    // Sync other sliders after a short delay to ensure proper transition
+                    setTimeout(function() {
+                        imagesSlider.slideTo(realIndex);
+                        infoSlider.slideTo(realIndex);
+                    }, 50);
+                }
+            });
+            
+            // Additional event to ensure sync after transition completes
+            cooperateSlider.on('slideChangeTransitionEnd', function () {
+                let realIndex = cooperateSlider.realIndex;
+                imagesSlider.slideTo(realIndex);
+                infoSlider.slideTo(realIndex);
             });
         });
 
