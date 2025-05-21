@@ -8,14 +8,14 @@
 @import "nestable";
 .bl_home {
   @include SVNGilroy();
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   @media (max-width: 1440px) {
-    font-size: sizeP(20);
+    font-size: sizeP(16);
   }
   @media (max-width: $sizeMb) {
-    font-size: size(14);
+    font-size: size(16);
   }
   @import "header";
   @import "main";
