@@ -41,6 +41,25 @@
             el: '.section_cooperate .swiper-pagination',
         },
     });
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('.wrap_menu_more').length &&
+            !$(e.target).hasClass('btn-action-menu-more') &&
+            $('.wrap_menu_more.active').length) {
+            $('.wrap_menu_more').removeClass('active');
+        }
+    });
+
+    $(document).on('click', '.btn-action-menu-more', function(e) {
+        e.preventDefault(); // Ngăn chặn hành vi mặc định của thẻ <a>
+        $('.btn-action-menu-more').closest('.wrap_menu_more').toggleClass('active');
+    });
+
+    $(document).on('click', '.wrap_menu_more .w_content a', function(e) {
+        setTimeout(function() {
+            $('.wrap_menu_more').removeClass('active');
+        }, 300);
+    });
+
 
     $(document).ready(function() {
         // Set background image from data attribute
