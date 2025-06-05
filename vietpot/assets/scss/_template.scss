@@ -116,12 +116,14 @@ hr{
 }
 
 .dropdown-menu {
-  padding: 0 24px;
+  padding: 0 15px;
   border-radius: 16px;
   box-shadow: 0 1px 6px 0 #0f100f88;
   border: unset;
+  max-height: 400px;
+  overflow: auto;
   @media (max-width: 1440px) {
-    padding: 0 sizeP(24);
+    padding: 0 sizeP(15);
     border-radius: sizeP(16);
   }
   @media (max-width: $sizeMb) {
@@ -913,6 +915,11 @@ hr{
     background-color: $--primary;
     border-color: $--primary;
     color: #fff;
+  }
+  &:disabled{
+    border: 1px solid #ababab;
+    background: #ababab;
+    pointer-events: none;
   }
 }
 
