@@ -340,12 +340,16 @@
       height: size(6);
       border: size(1) solid unset;
       margin-right: size(16);
+      border: size(1) solid $--primary;
     }
     &:last-child{
       margin-right: 0;
     }
     &.swiper-pagination-bullet-active{
       background-color: #fff;
+      @media (max-width: $sizeMb) {
+        background-color: $--primary;
+      }
     }
   }
 }

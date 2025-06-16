@@ -45,6 +45,10 @@
   padding-left: size(20);
   padding-right: size(20);
 }
+@mixin none_pd_scroll_mb() {
+  margin-left: size(20)*-1;
+  margin-right: size(20)*-1;
+}
 @mixin no_scroll_bar() {
   &::-webkit-scrollbar {
     @media (max-width: $sizeMb) {

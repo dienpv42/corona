@@ -17,6 +17,14 @@
     padding: 15px 0;
     font-size: 14px;
     background-color: #397d96;
+    @media (max-width: 1440px) {
+      padding: sizeP(15) 0;
+      font-size: sizeP(14);
+    }
+    @media (max-width: $sizeMb) {
+      padding: size(10) 0;
+      font-size: size(12);
+    }
     &:hover{
       opacity: .9;
     }

@@ -4,7 +4,7 @@
     padding: sizeP(80) 0;
   }
   @media (max-width: $sizeMb) {
-    padding: size(20) 0;
+    padding: size(26) 0;
   }
 }
 
@@ -14,7 +14,7 @@
     padding-top: sizeP(80);
   }
   @media (max-width: $sizeMb) {
-    padding-top: size(40);
+    padding-top: size(26);
   }
 }
 
@@ -24,7 +24,7 @@
     padding-bottom: sizeP(80);
   }
   @media (max-width: $sizeMb) {
-    padding-bottom: size(40);
+    padding-bottom: size(26);
   }
 }
 
@@ -34,7 +34,7 @@
     padding-top: sizeP(80);
   }
   @media (max-width: $sizeMb) {
-    padding-top: size(40);
+    padding-top: size(26);
   }
 }
 
@@ -44,7 +44,7 @@
     padding: sizeP(40) 0;
   }
   @media (max-width: $sizeMb) {
-    padding: size(20) 0;
+    padding: size(13) 0;
   }
 }
 
@@ -54,7 +54,7 @@
     padding-top: sizeP(40);
   }
   @media (max-width: $sizeMb) {
-    padding-top: size(20);
+    padding-top: size(13);
   }
 }
 
@@ -64,7 +64,7 @@
     padding-bottom: sizeP(40);
   }
   @media (max-width: $sizeMb) {
-    padding-bottom: size(20);
+    padding-bottom: size(13);
   }
 }
 
@@ -285,9 +285,6 @@
 
 .section_banner {
   overflow: hidden;
-  @media (max-width: $sizeMb) {
-    margin-top: size(26);
-  }
   .wrapper {
     position: relative;
     .item-banner {
@@ -299,6 +296,9 @@
         object-fit: cover;
         object-position: center;
         aspect-ratio: 1440 / 530;
+        @media (max-width: $sizeMb) {
+          aspect-ratio: 375 / 250;
+        }
       }
     }
 
@@ -311,7 +311,7 @@
         bottom: sizeP(15);
       }
       @media (max-width: $sizeMb) {
-        bottom: size(10);
+        bottom: size(16)*-1;
       }
     }
     .upload-box{
@@ -555,11 +555,10 @@
         }
         @media (max-width: $sizeMb) {
           padding-bottom: size(2);
-          margin-bottom: size(12);
-          @include pd_scroll_mb();
+          margin-bottom: size(13);
+          @include none_pd_scroll_mb();
           @include no_scroll_bar();
         }
-
 
         .nav-slider {
           min-width: 100%;
@@ -584,7 +583,7 @@
 
             }
             @media (max-width: $sizeMb) {
-              height: size(3);
+              height: size(1.5);
             }
           }
         }
@@ -624,10 +623,10 @@
             }
 
             img {
-              width: 100%;
+              width: auto;
               height: auto;
               max-height: 100%;
-              max-width: fit-content;
+              max-width: 100%;
             }
 
             &.active, &:hover {
@@ -647,6 +646,7 @@
                   bottom: sizeP(33)*-1;
                 }
                 @media (max-width: $sizeMb) {
+                  width: size(80);
                   height: size(5);
                   left: 50%;
                   transform: translateX(-50%);
@@ -698,6 +698,7 @@
         @media (max-width: $sizeMb) {
           flex-direction: column;
           gap: size(12);
+          margin-top: size(16);
         }
         .wrap_images_slider {
           width: 466px;
@@ -972,7 +973,7 @@
           max-height: calcC(100vh, 216);
         }
         @media (max-width: $sizeMb) {
-          top: size(100);
+          top: size(40);
           border-radius: size(12);
           box-shadow: size(5) size(10) size(24) 0 rgba(0, 0, 0, 0.25);
           padding: 0px size(20) size(20) size(20);
@@ -1090,6 +1091,9 @@
     }
   }
   .wrap_content_cooperate_right{
+    @media (max-width: $sizeMb) {
+      margin-top: size(16);
+    }
     .images {
       img {
         max-height: 300px;
@@ -1099,6 +1103,7 @@
           max-height: sizeP(300);
         }
         @media (max-width: $sizeMb) {
+          border-radius: size(16);
           max-height: 100%;
         }
       }
@@ -1534,7 +1539,8 @@
         height: sizeP(628);
       }
       @media (max-width: $sizeMb) {
-        height: size(250);
+        height: size(189);
+        @include none_pd_scroll_mb();
       }
       .text-action{
         position: absolute;
@@ -1552,7 +1558,7 @@
           font-size: sizeP(20);
         }
         @media (max-width: $sizeMb) {
-          font-size: size(12);
+          font-size: size(9);
         }
         &:hover{
           text-shadow: 2px 4px 8px #FFF;
@@ -1572,8 +1578,8 @@
           height: sizeP(461);
         }
         @media (max-width: $sizeMb) {
-          width: size(150);
-          height: size(150);
+          width: size(132);
+          height: size(132);
         }
       }
 
@@ -1596,10 +1602,10 @@
           font-size: sizeP(20);
         }
         @media (max-width: $sizeMb) {
-          padding: size(6) size(8);
+          padding: size(4) size(6);
           border: size(1) solid #FFF;
-          border-radius: size(16);
-          font-size: size(9);
+          border-radius: size(6);
+          font-size: size(11);
         }
 
         &:hover {
@@ -1630,8 +1636,8 @@
             right: sizeP(837);
           }
           @media (max-width: $sizeMb) {
-            top: size(40);
-            right: size(210);
+            top: size(32);
+            right: size(240);
           }
         }
 
@@ -1643,7 +1649,7 @@
             right: sizeP(899);
           }
           @media (max-width: $sizeMb) {
-            right: size(250);
+            right: size(260);
           }
         }
 
@@ -1655,8 +1661,8 @@
             right: sizeP(844);
           }
           @media (max-width: $sizeMb) {
-            top: size(180);
-            right: size(220);
+            top: size(124);
+            right: size(240);
           }
         }
 
@@ -1674,8 +1680,8 @@
             left: sizeP(844);
           }
           @media (max-width: $sizeMb) {
-            top: size(180);
-            left: size(220);
+            top: size(127);
+            left: size(240);
           }
         }
 
@@ -1687,7 +1693,7 @@
             left: sizeP(899);
           }
           @media (max-width: $sizeMb) {
-            left: size(250);
+            left: size(260);
           }
         }
 
@@ -1699,8 +1705,8 @@
             left: sizeP(837);
           }
           @media (max-width: $sizeMb) {
-            top: size(40);
-            left: size(210);
+            top: size(32);
+            left: size(240);
           }
         }
       }
