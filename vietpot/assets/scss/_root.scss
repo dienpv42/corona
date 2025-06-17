@@ -252,7 +252,6 @@
     }
   }
 }
-
 .swiper-button-prev, .swiper-button-next {
   width: 45px;
   height: 45px;
@@ -270,6 +269,7 @@
     height: sizeP(45);
   }
   @media (max-width: $sizeMb) {
+    display: none;
     width: size(28);
     height: size(28);
   }
