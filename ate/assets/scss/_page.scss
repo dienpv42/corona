@@ -5,6 +5,16 @@
     padding: 24px;
     box-shadow: 0px 0px 16px 8px rgba(200, 183, 255, 0.2);
 
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+    }
+
+    @media only screen and (max-width: 574px) {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+    }
+
     .sidebar-list {
       font-size: 15px;
 
@@ -279,11 +289,11 @@
         font-weight: 400;
 
         @media only screen and (max-width: 991px) {
-          font-size: 13px;
+          font-size: 11px;
         }
 
         @media only screen and (max-width: 574px) {
-          font-size: 13px;
+          font-size: 11px;
         }
       }
     }
@@ -329,7 +339,9 @@
     position: relative;
     width: 100%;
     padding-top: 50%; // 2:1 ratio (600:300)
-
+    @media only screen and (max-width: 574px) {
+      height: 245px
+    }
     img {
       position: absolute;
       top: 0;
