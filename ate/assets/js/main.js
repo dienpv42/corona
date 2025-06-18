@@ -133,11 +133,33 @@
 
   // 05. Mobile Menu Js
 
+  // Kích hoạt metisMenu nếu cần
   $("#mobile-menu-active").metisMenu();
 
-  $("#mobile-menu-active .has-dropdown > a").on("click", function (e) {
-    e.preventDefault();
-  });
+  $(".side-mobile-menu ul li.has-dropdown > a").on("click", function (e) {
+    const linkWidth = this.clientWidth; // Chiều rộng của thẻ <a>
+    const clickPosition = e.offsetX; // Vị trí click bên trong thẻ <a>
+    const isAfterClick = clickPosition > linkWidth - 30; // Kiểm tra nếu click gần phải (gần mũi tên)
+
+    if (isAfterClick) {
+        e.preventDefault(); // Ngăn chuyển hướng khi click vào ::after
+        const $this = $(this); // Chuyển sang jQuery object để dễ thao tác
+        const isExpanded = $this.attr("aria-expanded") === "true";
+        const submenu = $this.siblings(".submenu");
+
+        if (isExpanded) {
+            submenu.stop(true, true).slideUp(300, function () {
+                $(this).css("height", ""); // Xóa style height sau khi ẩn
+            });
+            $this.attr("aria-expanded", "false");
+        } else {
+            submenu.stop(true, true).slideDown(300, function () {
+                $(this).css("height", ""); // Xóa style height sau khi hiển thị
+            });
+            $this.attr("aria-expanded", "true");
+        }
+    }
+});
 
   ////////////////////////////////////////////////////
 
