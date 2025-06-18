@@ -44,6 +44,25 @@
         @media (max-width: $sizeMb) {
           width: size(20);
         }
+        &:first-child{
+          display: block;
+        }
+        &:last-child{
+          display: none;
+        }
+        path{
+          fill: #706F6F;
+        }
+      }
+      &.open{
+        img, svg{
+          &:first-child{
+            display: none;
+          }
+          &:last-child{
+            display: block;
+          }
+        }
       }
     }
 
@@ -51,6 +70,12 @@
       display: block;
       position: relative;
       z-index: 99;
+      @media (max-width: $sizeMb) {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
       img {
         width: auto;
         height: 56px;
@@ -64,20 +89,25 @@
       }
     }
   }
-
+  .wrap_right{
+    position: relative;
+    z-index: 99;
+  }
   .wrap_menu {
     transition: all .3s;
     @media (max-width: $sizeMb) {
       position: fixed;
       z-index: 98;
-      height: 100%;
-      width: 50%;
+      height: auto;
+      width: 100%;
       top: 0;
       left: 0;
       transform: translateX(-100%);
       background-color: #fff;
-      padding-top: size(48);
-      padding-left: size(20);
+      text-align: center;
+      padding-top: size(60);
+      //padding-left: size(20);
+      padding-bottom: size(50);
     }
     &.active{
       @media (max-width: $sizeMb) {
@@ -87,7 +117,6 @@
     }
     .nav {
       @media (max-width: $sizeMb) {
-        flex-direction: column;
       }
       .nav-item {
         margin-right: 17px;
@@ -95,12 +124,37 @@
           margin-right: sizeP(17);
         }
         @media (max-width: $sizeMb) {
-
+          margin-right: 0;
+          width: 50%;
         }
         &:last-child {
           margin-right: 0;
         }
-
+        .btn-link{
+          display: inline-block;
+          padding: 12px 16px;
+          border-radius: 12px;
+          border: 1px solid #AFB5B9;
+          background: #FFF;
+          color: $--gray;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.15;
+          transition: all .3s;
+          text-decoration: none;
+          @media (max-width: 1441px) {
+            padding: sizeP(12) sizeP(16);
+            border-radius: sizeP(12);
+            border: sizeP(1) solid #AFB5B9;
+            font-size: sizeP(16);
+          }
+          @media (max-width: $sizeMb) {
+            padding: size(10) size(10);
+            border-radius: size(12);
+            border: size(1) solid #C9CBCF;
+            font-size: size(16);
+          }
+        }
         .nav-link {
           color: $--gray;
           font-size: 18px;
