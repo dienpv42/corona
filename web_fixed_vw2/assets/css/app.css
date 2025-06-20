@@ -19900,21 +19900,21 @@ input {
     margin-bottom: 8vw;
   }
 }
-.section_method_payment .wrap_method_payment .w_select a:hover, .section_method_payment .wrap_method_payment .w_select a .active {
+.section_method_payment .wrap_method_payment .w_select a:hover, .section_method_payment .wrap_method_payment .w_select a.active {
   border: 2px solid #94C459;
 }
 @media (max-width: 1921px) {
-  .section_method_payment .wrap_method_payment .w_select a:hover, .section_method_payment .wrap_method_payment .w_select a .active {
+  .section_method_payment .wrap_method_payment .w_select a:hover, .section_method_payment .wrap_method_payment .w_select a.active {
     border: 0.1041666667vw solid #94C459;
   }
 }
 @media (max-width: 991px) {
-  .section_method_payment .wrap_method_payment .w_select a:hover, .section_method_payment .wrap_method_payment .w_select a .active {
+  .section_method_payment .wrap_method_payment .w_select a:hover, .section_method_payment .wrap_method_payment .w_select a.active {
     border: 0.1955671447vw solid #F7931D;
   }
 }
 @media (max-width: 575px) {
-  .section_method_payment .wrap_method_payment .w_select a:hover, .section_method_payment .wrap_method_payment .w_select a .active {
+  .section_method_payment .wrap_method_payment .w_select a:hover, .section_method_payment .wrap_method_payment .w_select a.active {
     border: 0.4vw solid #F7931D;
   }
 }

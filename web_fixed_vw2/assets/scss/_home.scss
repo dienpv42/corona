@@ -7549,7 +7549,7 @@
           margin-bottom: size(30);
         }
 
-        &:hover, .active {
+        &:hover, &.active {
           border: 2px solid #94C459;
           @media (max-width: 1921px) {
             border: sizeP(2) solid #94C459;
