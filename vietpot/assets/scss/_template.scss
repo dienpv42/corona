@@ -22,6 +22,27 @@
     font-weight: 400;
   }
 }
+.text-large-message {
+  color: #4CAF50;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 120%;
+  @media (max-width: 1440px) {
+    font-size: sizeP(27);
+  }
+  @media (max-width: $sizeMb) {
+    font-size: size(20);
+  }
+  &.success{
+    color: #4CAF50;
+  }
+  &.warning{
+    color: #FF9800;
+  }
+  &.danger{
+    color: #F44336;
+  }
+}
 hr{
   border-color: #CDCDCD;
   opacity: 1;
@@ -868,6 +889,7 @@ hr{
 }
 
 .lb-small-success {
+  display: inline-block;
   padding: 10px;
   color: #ffffff;
   font-size: 16px;
@@ -942,7 +964,7 @@ hr{
     border: sizeP(1) solid $--primary;
   }
   @media (max-width: $sizeMb) {
-    padding: size(16);
+    padding: size(10) size(16);
     font-size: size(16);
     border-radius: size(16);
     border: size(1) solid $--primary;
@@ -3108,6 +3130,17 @@ hr{
           }
           @media (max-width: $sizeMb) {
             font-size: size(27);
+          }
+          span{
+            font-size: 20px;
+            font-weight: 400;
+            @media (max-width: 1440px) {
+              font-size: sizeP(20);
+            }
+            @media (max-width: $sizeMb) {
+              display: block;
+              font-size: size(20);
+            }
           }
         }
 

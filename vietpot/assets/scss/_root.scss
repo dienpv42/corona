@@ -74,6 +74,31 @@
   }
 }
 
+.btn-link-gray {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: 1px solid #AFB5B9;
+  background: #FFF;
+  color: $--gray;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.15;
+  transition: all .3s;
+  @media (max-width: 1441px) {
+    padding: sizeP(6) sizeP(16);
+    border-radius: sizeP(8);
+    border: sizeP(1) solid #AFB5B9;
+    font-size: sizeP(16);
+  }
+  @media (max-width: $sizeMb) {
+    padding: size(6) size(16);
+    border-radius: size(8);
+    border: size(1) solid #C9CBCF;
+    font-size: size(14);
+  }
+}
+
 .btn-default {
   display: inline-block;
   padding: 16px 32px;
