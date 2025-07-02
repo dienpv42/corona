@@ -1108,8 +1108,55 @@
     @media (max-width: $sizeMb) {
       font-size: size(16);
     }
+    &.active{
+      transform: scale(1.1);
+      font-weight: 600;
+      transition: all 1s;
+    }
   }
 
+}
+
+.wrap_menu_short_flex{
+  margin-bottom: 24px;
+  overflow-x: auto;
+  @media (max-width: 1440px) {
+    margin-bottom: sizeP(24);
+  }
+  @media (max-width: $sizeMb) {
+    margin-bottom: size(12);
+  }
+  .wrap{
+    width: max-content;
+    gap: 32px;
+    @media (max-width: 1440px) {
+      gap: sizeP(32);
+    }
+    @media (max-width: $sizeMb) {
+      gap: size(12);
+    }
+    .brand-name-item {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      color: #43464D;
+      font-size: 22px;
+      font-weight: 500;
+      opacity: .5;
+      transform: scale(.7);
+      @media (max-width: 1441px) {
+        font-size: sizeP(22);
+      }
+      @media (max-width: $sizeMb) {
+        font-size: size(18);
+      }
+      &.active{
+        transform: scale(1);
+        opacity: 1;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 .section_cooperate_info{
