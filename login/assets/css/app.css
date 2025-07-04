@@ -10817,6 +10817,99 @@ input {
   font-weight: 400;
   line-height: 22px;
 }
+.bl-main .login-wrapper-verify {
+  min-height: 100vh;
+  background-size: cover;
+}
+.bl-main .login-wrapper-verify .header {
+  padding: 40px 0 70px;
+}
+.bl-main .login-wrapper-verify .header .lang a {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.bl-main .login-wrapper-verify .header .lang a::after {
+  display: none;
+}
+.bl-main .login-wrapper-verify .main .wrap-back {
+  margin-bottom: 10px;
+}
+.bl-main .login-wrapper-verify .main .wrap-back a {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1677FF;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify {
+  padding: 32px 16px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 640px;
+  margin: auto;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify .icon {
+  margin-bottom: 28px;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify .title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 46px;
+  margin-bottom: 12px;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify .description {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 500px;
+  margin: 0 auto 24px;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify .description a {
+  color: #1677FF;
+  text-decoration: underline;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify .countdown {
+  width: 320px;
+  max-width: 100%;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.02);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 auto 24px;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify .countdown a {
+  color: #1677FF;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify .support {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 500px;
+  margin: 0 auto 24px;
+}
+.bl-main .login-wrapper-verify .main .wrap-verify .support a {
+  color: #1677FF;
+  text-decoration: underline;
+}
 .bl-main .login-wrapper {
   min-height: 100vh;
   background-color: #f7f9fc;
@@ -10877,6 +10970,28 @@ input {
 .bl-main .login-wrapper .login-left .wrapper .content-main .login-form .wrap-form .form-group {
   width: 100%;
 }
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .wrap-form .form-group .group {
+  position: relative;
+}
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .wrap-form .form-group .group .icon-action {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+}
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .wrap-form .form-group .group .icon-action svg {
+  width: 16px;
+  height: 16px;
+}
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .wrap-form .form-group .group .icon-action.icon-action-eye {
+  cursor: pointer;
+}
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .wrap-form .form-group .group .icon-action.icon-action-eye svg path {
+  fill: rgba(0, 0, 0, 0.4509803922);
+}
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .wrap-form .form-group .group .form-control {
+  padding-right: 32px;
+}
 .bl-main .login-wrapper .login-left .wrapper .content-main .login-form .form-label {
   font-size: 14px;
   font-weight: 400;
@@ -10891,6 +11006,25 @@ input {
 }
 .bl-main .login-wrapper .login-left .wrapper .content-main .login-form .form-control:focus {
   box-shadow: unset;
+}
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .form-check .form-check-label {
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .error-message {
+  margin-top: 6px;
+  color: #F5222D;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+.bl-main .login-wrapper .login-left .wrapper .content-main .login-form .text-policy a {
+  color: #1677FF;
+  text-decoration: underline;
 }
 .bl-main .login-wrapper .login-left .wrapper .content-main .login-form .btn-continue {
   height: 40px;
