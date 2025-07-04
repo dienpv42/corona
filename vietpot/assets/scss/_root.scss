@@ -36,6 +36,9 @@
   }
   &:hover{
     color: #4caf50;
+    @media (max-width: $sizeMb) {
+      color: $--primary;
+    }
   }
 }
 .btn{
@@ -56,10 +59,10 @@
     font-size: sizeP(16);
   }
   @media (max-width: $sizeMb) {
-    padding: size(4) size(8);
+    padding: size(3) size(12);
     border-radius: size(12);
-    border: size(1) solid #AFB5B9;
-    font-size: size(14);
+    border: size(.5) solid #C9CBCF;
+    font-size: size(9);
   }
   &:hover{
     border: 1px solid $--primary;
@@ -70,6 +73,32 @@
     }
   }
 }
+
+.btn-link-gray {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: 1px solid #AFB5B9;
+  background: #FFF;
+  color: $--gray;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.15;
+  transition: all .3s;
+  @media (max-width: 1441px) {
+    padding: sizeP(6) sizeP(16);
+    border-radius: sizeP(8);
+    border: sizeP(1) solid #AFB5B9;
+    font-size: sizeP(16);
+  }
+  @media (max-width: $sizeMb) {
+    padding: size(6) size(16);
+    border-radius: size(8);
+    border: size(1) solid #C9CBCF;
+    font-size: size(14);
+  }
+}
+
 .btn-default {
   display: inline-block;
   padding: 16px 32px;
@@ -252,7 +281,6 @@
     }
   }
 }
-
 .swiper-button-prev, .swiper-button-next {
   width: 45px;
   height: 45px;
@@ -270,6 +298,7 @@
     height: sizeP(45);
   }
   @media (max-width: $sizeMb) {
+    display: none;
     width: size(28);
     height: size(28);
   }
@@ -340,12 +369,16 @@
       height: size(6);
       border: size(1) solid unset;
       margin-right: size(16);
+      border: size(1) solid $--primary;
     }
     &:last-child{
       margin-right: 0;
     }
     &.swiper-pagination-bullet-active{
       background-color: #fff;
+      @media (max-width: $sizeMb) {
+        background-color: $--primary;
+      }
     }
   }
 }

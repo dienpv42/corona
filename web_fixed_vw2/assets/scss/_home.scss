@@ -4642,6 +4642,13 @@
           @media (max-width: $sizeMobile) {
             height: size(228);
           }
+          a{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+          }
           img {
             width: auto;
             height: 100%;
@@ -7549,7 +7556,7 @@
           margin-bottom: size(30);
         }
 
-        &:hover, .active {
+        &:hover, &.active {
           border: 2px solid #94C459;
           @media (max-width: 1921px) {
             border: sizeP(2) solid #94C459;

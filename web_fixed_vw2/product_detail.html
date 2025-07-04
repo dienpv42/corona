@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/fancybox.css">
     <script>
         var timestamp = new Date().getTime();
         document.write('<link rel="stylesheet" href="assets/css/app.css?v=' + timestamp + '">');
@@ -318,22 +319,30 @@
                                         <div class="swiper-wrapper swiper-wrapper-img_main">
                                             <div class="swiper-slide">
                                                 <div class="image">
-                                                    <img src="assets/images/3x/product_size_11@3x.png">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="assets/images/3x/product_size_11@3x.png">
+                                                    </a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="image">
-                                                    <img src="assets/images/3x/product_size_1@3x.png">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="assets/images/3x/product_size_1@3x.png">
+                                                    </a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="image">
-                                                    <img src="assets/images/3x/product_size_1@3x.png">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="assets/images/3x/product_size_1@3x.png">
+                                                    </a>
                                                 </div>
                                             </div>
                                             <div class="swiper-slide">
                                                 <div class="image">
-                                                    <img src="assets/images/3x/product_size_11@3x.png">
+                                                    <a href="javascript:void(0)">
+                                                        <img src="assets/images/3x/product_size_1@3x.png">
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -2746,6 +2755,7 @@
 <script src="assets/js/jquery-migrate.js"></script>
 <script src="assets/js/jquery-ui.min.js"></script>
 <script src="assets/js/plugincollection.js"></script>
+<script src="assets/js/fancybox.umd.js"></script>
 <script>
     document.write('<script src="assets/js/app.js?v=' + timestamp + '"><\/script>');
 </script>
@@ -2795,12 +2805,89 @@
 
             // data star
             var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
-
-
         });
 
+        // Fancybox initialization for product images - directly in the product detail page
+        function initProductGallery() {
+            // Check if Fancybox is loaded
+            if (typeof Fancybox === 'undefined') {
+                console.error('Fancybox library not loaded');
+                return;
+            }
+            
+            // Find all product images
+            const $productImages = $('.wrap_image_product .swiper-slide .image a');
+            
+            // If there are no images, exit
+            if (!$productImages.length) {
+                return;
+            }
+            
+            // Collect all gallery items at once
+            const galleryItems = [];
+            
+            // Remove any existing event handlers first
+            $productImages.off('click');
+            
+            // Add each image to the gallery items array
+            $productImages.each(function(index) {
+                const $img = $(this).find('img');
+                const src = $img.attr('src');
+                const alt = $img.attr('alt') || 'Product Image ' + (index + 1);
+                
+                // Add to gallery
+                galleryItems.push({
+                    src: src,
+                    caption: alt,
+                    thumb: src
+                });
+                
+                // Set data attributes
+                $(this).attr('data-fancybox-index', index);
+                $(this).attr('href', 'javascript:;');
+            });
+            
+            // Bind a single click handler to all product images
+            $productImages.on('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const index = parseInt($(this).attr('data-fancybox-index')) || 0;
+                
+                // Open Fancybox with all gallery items
+                Fancybox.show(galleryItems, {
+                    startIndex: index,
+                    loop: true,
+                    Toolbar: {
+                        display: [
+                            { id: "prev", position: "center" },
+                            { id: "counter", position: "center" },
+                            { id: "next", position: "center" },
+                            "zoom",
+                            "slideshow",
+                            "fullScreen",
+                            "download",
+                            "thumbs",
+                            "close"
+                        ]
+                    },
+                    Thumbs: {
+                        autoStart: true
+                    },
+                    Carousel: {
+                        transition: "slide"
+                    }
+                });
+                
+                return false;
+            });
+            
+            console.log('Fancybox initialized for product gallery with ' + galleryItems.length + ' images');
+        }
+        
+        // Initialize Fancybox
+        initProductGallery();
     });
-
 </script>
 </body>
 </html>
