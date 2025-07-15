@@ -1529,6 +1529,16 @@ hr {
   border-color: #2196F3;
   color: #fff;
 }
+.lb-xxsmall.active-success {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: #fff;
+}
+.lb-xxsmall.active-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+}
 
 .lb-small-success {
   display: inline-block;
@@ -4064,6 +4074,25 @@ hr {
 @media (max-width: 575px) {
   .modal-custom .modal-dialog .modal-content .modal-body {
     padding: 8.5333333333vw;
+  }
+}
+.modal-custom .modal-dialog .modal-content .modal-body .wrap_content_text {
+  color: #343434;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 120%; /* 24px */
+  margin-bottom: 32px;
+}
+@media (max-width: 1440px) {
+  .modal-custom .modal-dialog .modal-content .modal-body .wrap_content_text {
+    font-size: 1.25vw;
+    margin-bottom: 2.2222222222vw;
+  }
+}
+@media (max-width: 575px) {
+  .modal-custom .modal-dialog .modal-content .modal-body .wrap_content_text {
+    font-size: 4vw;
+    margin-bottom: 4.2666666667vw;
   }
 }
 .modal-custom .modal-dialog .modal-content .modal-body .wrap_confirm {

@@ -943,6 +943,16 @@ hr{
     border-color: $--primary;
     color: #fff;
   }
+  &.active-success {
+    background-color: $--success;
+    border-color: $--success;
+    color: #fff;
+  }
+  &.active-danger {
+    background-color: $--danger;
+    border-color: $--danger;
+    color: #fff;
+  }
 }
 
 .lb-small-success {
@@ -3379,7 +3389,21 @@ hr{
         @media (max-width: $sizeMb) {
           padding: size(32);
         }
-
+        .wrap_content_text{
+          color: #343434;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 120%; /* 24px */
+          margin-bottom: 32px;
+          @media (max-width: 1440px) {
+            font-size: sizeP(18);
+            margin-bottom: sizeP(32);
+          }
+          @media (max-width: $sizeMb) {
+            font-size: size(15);
+            margin-bottom: size(16);
+          }
+        }
         .wrap_confirm {
           color: #343434;
           text-align: center;
