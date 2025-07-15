@@ -6965,6 +6965,25 @@
     padding: size(18) size(20) size(9);
   }
 
+  &.section_step_order{
+    padding: 40px 0 40px;
+    color: #596A77;
+    font-size: 28px;
+    font-weight: 700;
+    @media (max-width: 1921px) {
+      padding: sizeP(40) 0 sizeP(40);
+      font-size: sizeP(28);
+    }
+    @media (max-width: $sizeTablet) {
+      font-size: sizeT(14);
+      padding: sizeT(18) sizeT(48) sizeT(16);
+    }
+    @media (max-width: $sizeMobile) {
+      font-size: size(14);
+      padding: size(18) size(20) size(9);
+    }
+  }
+
   .wrap_content {
     width: 1200px;
     margin: auto;
@@ -6983,6 +7002,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
+      
       .label {
         margin-bottom: 22px;
         white-space: nowrap;
@@ -6994,6 +7014,14 @@
         }
         @media (max-width: $sizeMobile) {
           margin-bottom: size(22);
+        }
+      }
+
+      &.item-select-order{
+        width: 100%;
+        flex-direction: unset;
+        .label{
+          white-space: unset;
         }
       }
 
@@ -8363,6 +8391,57 @@
           width: sizeT(180);
           height: sizeT(56);
           font-size: sizeT(20);
+          border-radius: sizeT(16);
+          border: sizeT(2) solid #F7941D;
+        }
+        @media (max-width: $sizeMobile) {
+          height: auto;
+          margin: size(12) 0 0 0 !important;
+          padding: size(12) size(15);
+          font-size: size(13);
+          width: 100%;
+          text-align: center;
+          border-radius: size(8);
+        }
+
+        &:hover {
+          background-color: #F39200;
+          border: 1px solid #94C459;
+          @media (max-width: 1921px) {
+            border: sizeP(1) solid #94C459;
+          }
+          @media (max-width: $sizeTablet) {
+            border: sizeT(1) solid #94C459;
+          }
+          @media (max-width: $sizeMobile) {
+            border: size(1) solid #94C459;
+          }
+        }
+      }
+
+      .btn_choose {
+        width: auto;
+        height: 72px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 16px;
+        border: 2px solid #F7941D;
+        background: #6FBE44;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s;
+        padding: 15px 30px;
+        @media (max-width: 1921px) {
+          height: sizeP(72);
+          font-size: sizeP(20);
+          border-radius: sizeP(16);
+          border: sizeP(2) solid #F7941D;
+        }
+        @media (max-width: $sizeTablet) {
+          height: sizeT(56);
+          font-size: sizeT(18);
           border-radius: sizeT(16);
           border: sizeT(2) solid #F7941D;
         }
