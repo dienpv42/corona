@@ -3433,14 +3433,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 0;
     @media (max-width: 1921px) {
       margin-bottom: sizeP(5);
+      padding: sizeP(10) 0;
     }
     @media (max-width: $sizeTablet) {
       margin-bottom: sizeT(5);
+      padding: sizeT(5) 0;
     }
     @media (max-width: $sizeMobile) {
       margin-bottom: size(5);
+      padding: size(5) 0;
     }
 
     a {
@@ -6126,19 +6130,94 @@
       font-size: size(14);
     }
 
-    h2, h3, h4, h5 {
+    a{
+      color: #3163AE;
+      text-decoration: underline;
+      transition: all .3s;
+
+      &:hover {
+        color: #F39200;
+      }
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0 0 25px;
+      @media (max-width: 1921px) {
+        margin: sizeP(25) 0 sizeP(25);
+      }
+      @media (max-width: $sizeTablet) {
+        margin: sizeT(20) 0 sizeT(20);
+      }
+      @media (max-width: $sizeMobile) {
+        margin: size(20) 0 size(20);
+      }
+    }
+
+    h2 {
       color: #575756;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 700;
       line-height: 120%;
       @media (max-width: 1921px) {
-        font-size: sizeP(28);
+        font-size: sizeP(26);
       }
       @media (max-width: $sizeTablet) {
         font-size: sizeT(20);
       }
       @media (max-width: $sizeMobile) {
         font-size: size(20);
+      }
+    }
+
+    h3 {
+      color: #575756;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 120%;
+      @media (max-width: 1921px) {
+        font-size: sizeP(24);
+      }
+      @media (max-width: $sizeTablet) {
+        font-size: sizeT(18);
+      }
+      @media (max-width: $sizeMobile) {
+        font-size: size(18);
+      }
+    }
+
+    h4 {
+      color: #575756;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 120%;
+      @media (max-width: 1921px) {
+        font-size: sizeP(22);
+      }
+      @media (max-width: $sizeTablet) {
+        font-size: sizeT(16);
+      }
+      @media (max-width: $sizeMobile) {
+        font-size: size(16);
+      }
+    }
+
+    h5 {
+      color: #575756;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 120%;
+      @media (max-width: 1921px) {
+        font-size: sizeP(20);
+      }
+      @media (max-width: $sizeTablet) {
+        font-size: sizeT(14);
+      }
+      @media (max-width: $sizeMobile) {
+        font-size: size(14);
       }
     }
 
@@ -6159,7 +6238,7 @@
     p {
       margin-bottom: 32px;
       @media (max-width: 1921px) {
-        margin-bottom: sizeP(32);
+        margin-bottom: sizeP(24);
       }
       @media (max-width: $sizeTablet) {
         margin-bottom: sizeT(16);
@@ -7559,27 +7638,27 @@
         display: inline-block;
         text-align: center;
         padding: 4px 15px;
-        border: 2px solid #000001;
+        border: 2px solid #dedede;
         border-radius: 15px;
         transition: all .3s;
         margin-bottom: 32px;
         @media (max-width: 1921px) {
           padding: sizeP(4) sizeP(15);
-          border: sizeP(2) solid #000001;
+          border: sizeP(2) solid #dedede;
           border-radius: sizeP(15);
           margin-bottom: sizeP(32);
         }
         @media (max-width: $sizeTablet) {
           width: 100%;
           padding: sizeT(4) sizeT(15);
-          border: sizeT(1.5) solid #6FBE44;
+          border: sizeT(1.5) solid #dedede;
           border-radius: sizeT(16);
           margin-bottom: sizeT(16);
         }
         @media (max-width: $sizeMobile) {
           width: 100%;
           padding: size(4) size(15);
-          border: size(1.5) solid #6FBE44;
+          border: size(1.5) solid #dedede;
           border-radius: size(15);
           margin-bottom: size(30);
         }

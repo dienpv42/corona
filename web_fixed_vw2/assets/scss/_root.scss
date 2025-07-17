@@ -311,7 +311,8 @@
 
               }
               @media (max-width: $sizeTablet) {
-
+                font-size: sizeT(20);
+                margin-bottom: sizeT(16);
               }
               @media (max-width: $sizeMobile) {
                 font-size: size(20);
@@ -329,10 +330,96 @@
                 font-size: sizeP(20);
               }
               @media (max-width: $sizeTablet) {
-
+                font-size: sizeT(15);
               }
               @media (max-width: $sizeMobile) {
                 font-size: size(15);
+              }
+              h2,
+              h3,
+              h4,
+              h5 {
+                margin: 0 0 25px;
+                @media (max-width: 1921px) {
+                  margin: sizeP(25) 0 sizeP(25);
+                }
+                @media (max-width: $sizeTablet) {
+                  margin: sizeT(20) 0 sizeT(20);
+                }
+                @media (max-width: $sizeMobile) {
+                  margin: size(20) 0 size(20);
+                }
+              }
+              
+              h2 {
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 120%;
+                color: #575756;
+                @media (max-width: 1921px) {
+                  font-size: sizeP(26);
+                }
+                @media (max-width: $sizeTablet) {
+                  font-size: sizeT(24);
+                }
+                @media (max-width: $sizeMobile) {
+                  font-size: size(24);
+                }
+              }
+              h3 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 120%;
+                color: #575756;
+                @media (max-width: 1921px) {
+                  font-size: sizeP(24);
+                }
+                @media (max-width: $sizeTablet) {
+                  font-size: sizeT(22);
+                }
+                @media (max-width: $sizeMobile) {
+                  font-size: size(22);
+                }
+              }
+              h4 {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 120%;
+                color: #575756;
+                @media (max-width: 1921px) {
+                  font-size: sizeP(22);
+                }
+                @media (max-width: $sizeTablet) {
+                  font-size: sizeT(20);
+                }
+                @media (max-width: $sizeMobile) {
+                  font-size: size(20);
+                }
+              }
+              h5 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 120%;
+                color: #575756;
+                @media (max-width: 1921px) {
+                  font-size: sizeP(20);
+                }
+                @media (max-width: $sizeTablet) {
+                  font-size: sizeT(18);
+                }
+                @media (max-width: $sizeMobile) {
+                  font-size: size(18);
+                }
+              }
+
+              a {
+                color: #3163AE;
+                text-decoration: underline;
+                transition: all .3s;
+
+                &:hover {
+                  color: #F39200;
+                }
               }
 
               &.error {
