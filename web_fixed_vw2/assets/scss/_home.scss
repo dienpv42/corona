@@ -7832,12 +7832,14 @@
           border: 1px solid #CCC;
           overflow: hidden;
           margin-right: 32px;
+          padding: 10px;
           @media (max-width: 1921px) {
             width: sizeP(150);
             height: sizeP(150);
             border-radius: sizeP(16);
             border: sizeP(1) solid #CCC;
             margin-right: sizeP(32);
+            padding: sizeP(10);
           }
           @media (max-width: $sizeTablet) {
             width: sizeT(118);
@@ -7845,6 +7847,7 @@
             border-radius: sizeT(8);
             border: sizeT(1) solid #CCC;
             margin-right: sizeT(20);
+            padding: sizeT(5);
           }
           @media (max-width: $sizeMobile) {
             width: size(60);
@@ -7852,6 +7855,7 @@
             border-radius: size(8);
             border: size(1) solid #CCC;
             margin-right: size(12);
+            padding: size(5);
           }
 
           img {
@@ -8245,8 +8249,26 @@
             right: 0;
             bottom: 0;
           }
+
+          svg {
+            transition: all .3s;
+            width: 24px;
+            height: auto;
+            color: #9a9a9a;
+            transform: rotate(0);
+            @media (max-width: 1921px) {
+              width: sizeP(24);
+            }
+            @media (max-width: $sizeTablet) {
+              width: sizeT(24);
+            }
+            @media (max-width: $sizeMobile) {
+              width: size(24);
+            }
+          }
+
           .dropdown-toggle {
-            i {
+            i, svg {
               transition: all .3s;
               width: 24px;
               height: 26px;
