@@ -5,7 +5,7 @@
     @media (max-width: 1440px) {
       width: sizeP(872);
     }
-    @media (max-width: $sizeMb) {
+    @media (max-width: $sizeTablet) {
       width: 100%;
     }
     .section_title {
@@ -18,6 +18,10 @@
       @media (max-width: 1440px) {
         font-size: sizeP(30);
         margin-bottom: sizeP(32);
+      }
+      @media (max-width: $sizeTablet) {
+        font-size: sizeT(30);
+        margin-bottom: sizeT(16);
       }
       @media (max-width: $sizeMb) {
         font-size: size(30);
@@ -36,6 +40,9 @@
         @media (max-width: 1440px) {
           font-size: sizeP(18);
         }
+        @media (max-width: $sizeTablet) {
+          font-size: sizeT(14);
+        }
         @media (max-width: $sizeMb) {
           font-size: size(14);
         }
@@ -43,6 +50,9 @@
           margin-bottom: 20px;
           @media (max-width: 1440px) {
             margin-bottom: sizeP(20);
+          }
+          @media (max-width: $sizeTablet) {
+            margin-bottom: sizeT(16);
           }
           @media (max-width: $sizeMb) {
             margin-bottom: size(16);
@@ -56,12 +66,19 @@
       }
 
       .image {
+        margin-top: 32px;
         margin-bottom: 32px;
         @media (max-width: 1440px) {
           margin-bottom: sizeP(32);
+          margin-top: sizeP(32);
+        }
+        @media (max-width: $sizeTablet) {
+          margin-bottom: sizeT(16);
+          margin-top: sizeT(16);
         }
         @media (max-width: $sizeMb) {
           margin-bottom: size(16);
+          margin-top: size(16);
         }
         img {
           max-width: 100%;

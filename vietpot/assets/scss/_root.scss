@@ -5,6 +5,9 @@
   @media (max-width: 1921px) {
     --star-size: sizeP(20);
   }
+  @media (max-width: $sizeTablet) {
+    --star-size: sizeT(20);
+  }
   @media (max-width: $sizeMb) {
     --star-size: size(20);
   }
@@ -31,12 +34,15 @@
   @media (max-width: 1440px) {
     font-size: sizeP(18);
   }
+  @media (max-width: $sizeTablet) {
+    font-size: sizeT(13);
+  }
   @media (max-width: $sizeMb) {
     font-size: size(14);
   }
   &:hover{
     color: #4caf50;
-    @media (max-width: $sizeMb) {
+    @media (max-width: $sizeTablet) {
       color: $--primary;
     }
   }
@@ -58,6 +64,12 @@
     border: sizeP(1) solid #AFB5B9;
     font-size: sizeP(16);
   }
+  @media (max-width: $sizeTablet) {
+    padding: sizeT(6) sizeT(12);
+    border-radius: sizeT(12);
+    border: sizeT(.5) solid #C9CBCF;
+    font-size: sizeT(11);
+  }
   @media (max-width: $sizeMb) {
     padding: size(3) size(12);
     border-radius: size(12);
@@ -68,6 +80,9 @@
     border: 1px solid $--primary;
     background-color: #fff;
     color: $--primary;
+    @media (max-width: $sizeTablet) {
+      border: sizeT(1) solid $--primary;
+    }
     @media (max-width: 1441px) {
       border: sizeP(1) solid $--primary;
     }
@@ -91,6 +106,12 @@
     border: sizeP(1) solid #AFB5B9;
     font-size: sizeP(16);
   }
+  @media (max-width: $sizeTablet) {
+    padding: sizeT(6) sizeT(16);
+    border-radius: sizeT(8);
+    border: sizeT(1) solid #C9CBCF;
+    font-size: sizeT(14);
+  }
   @media (max-width: $sizeMb) {
     padding: size(6) size(16);
     border-radius: size(8);
@@ -108,6 +129,11 @@
     padding: sizeP(16) sizeP(32);
     font-size: sizeP(16);
     border-radius: sizeP(16);
+  }
+  @media (max-width: $sizeTablet) {
+    padding: sizeT(12) sizeT(16);
+    font-size: sizeT(14);
+    border-radius: sizeT(12);
   }
   @media (max-width: $sizeMb) {
     padding: size(12) size(16);
@@ -128,6 +154,11 @@
     padding: sizeP(16) sizeP(32);
     font-size: sizeP(16);
     border-radius: sizeP(16);
+  }
+  @media (max-width: $sizeTablet) {
+    padding: sizeT(12) sizeT(16);
+    font-size: sizeT(14);
+    border-radius: sizeT(12);
   }
   @media (max-width: $sizeMb) {
     padding: size(12) size(16);
@@ -297,8 +328,12 @@
     width: sizeP(45);
     height: sizeP(45);
   }
-  @media (max-width: $sizeMb) {
+  @media (max-width: $sizeTablet) {
     display: none;
+    width: sizeT(28);
+    height: sizeT(28);
+  }
+  @media (max-width: $sizeMb) {
     width: size(28);
     height: size(28);
   }
@@ -308,10 +343,11 @@
     @media (max-width: $sizeMb) {
       width: sizeP(28);
     }
+    @media (max-width: $sizeTablet) {
+      width: sizeT(16);
+    }
     @media (max-width: $sizeMb) {
       width: size(16);
-    }
-    path {
     }
   }
   .text-\[\#D0D5DD\] {
@@ -335,6 +371,9 @@
   @media (max-width: 1441px) {
     left: sizeP(15);
   }
+  @media (max-width: $sizeTablet) {
+    left: sizeT(10);
+  }
   @media (max-width: $sizeMb) {
     left: size(10);
   }
@@ -344,6 +383,9 @@
   right: 15px;
   @media (max-width: 1441px) {
     right: sizeP(15);
+  }
+  @media (max-width: $sizeTablet) {
+    right: sizeT(10);
   }
   @media (max-width: $sizeMb) {
     right: size(10);
@@ -364,6 +406,13 @@
       margin-right: sizeP(16);
       border: sizeP(1) solid unset;
     }
+    @media (max-width: $sizeTablet) {
+      width: sizeT(6);
+      height: sizeT(6);
+      border: sizeT(1) solid unset;
+      margin-right: sizeT(16);
+      border: sizeT(1) solid $--primary;
+    }
     @media (max-width: $sizeMb) {
       width: size(6);
       height: size(6);
@@ -376,7 +425,7 @@
     }
     &.swiper-pagination-bullet-active{
       background-color: #fff;
-      @media (max-width: $sizeMb) {
+      @media (max-width: $sizeTablet) {
         background-color: $--primary;
       }
     }
@@ -388,7 +437,7 @@
     opacity: 0;
     visibility: hidden;
     transition: all .3s;
-    @media (max-width: $sizeMb) {
+    @media (max-width: $sizeTablet) {
       opacity: 1;
       visibility: visible;
     }

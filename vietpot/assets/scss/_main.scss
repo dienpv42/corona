@@ -7,12 +7,19 @@
     max-width: 100%;
     padding: 0 sizeP(70);
   }
+  @media (max-width: $sizeTablet) {
+    padding: 0 sizeT(20);
+  }
   @media (max-width: $sizeMb) {
     padding: 0 size(20);
   }
 }
 .main {
   min-height: calc(100vh - 320px);
+  @media (max-width: $sizeTablet) {
+    padding-top: sizeT(60);
+    min-height: calc(100vh - 31vw);
+  }
   @media (max-width: $sizeMb) {
     padding-top: size(50);
     min-height: auto;
@@ -22,6 +29,9 @@
     @media (max-width: 1440px) {
       margin: 0 sizeP(16)*-1;
     }
+    @media (max-width: $sizeTablet) {
+      margin: 0 sizeT(16)*-1;
+    }
     @media (max-width: $sizeMb) {
       margin: 0 size(16)*-1;
     }
@@ -29,6 +39,9 @@
       padding: 0 16px;
       @media (max-width: 1440px) {
         padding: 0 sizeP(16);
+      }
+      @media (max-width: $sizeTablet) {
+        padding: 0 sizeT(16);
       }
       @media (max-width: $sizeMb) {
         padding: 0 size(16);

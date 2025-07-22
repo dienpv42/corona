@@ -5,7 +5,7 @@
   @media (max-width: 1440px) {
     box-shadow: 0px sizeP(12) sizeP(24) 0px rgba(0, 0, 0, 0.12);
   }
-  @media (max-width: $sizeMb) {
+  @media (max-width: $sizeTablet) {
     box-shadow: unset;
     position: fixed;
     z-index: 99;
@@ -14,6 +14,9 @@
     top: 0;
   }
   &.active{
+    @media (max-width: $sizeTablet) {
+      box-shadow: 0px sizeT(6) sizeT(12) 0px rgba(0, 0, 0, 0.12);
+    }
     @media (max-width: $sizeMb) {
       box-shadow: 0px size(6) size(12) 0px rgba(0, 0, 0, 0.12);
     }
@@ -22,6 +25,9 @@
     height: 93px;
     @media (max-width: 1440px) {
       height: sizeP(93);
+    }
+    @media (max-width: $sizeTablet) {
+      height: sizeT(60);
     }
     @media (max-width: $sizeMb) {
       height: size(48);
@@ -34,13 +40,19 @@
       z-index: 99;
       margin-right: 8px;
       display: none;
+      @media (max-width: $sizeTablet) {
+        margin-right: sizeT(8);
+        display: block;
+      }
       @media (max-width: $sizeMb) {
-        margin-right: size(8);
         display: block;
       }
       img, svg {
         width: 20px;
         height: auto;
+        @media (max-width: $sizeTablet) {
+          width: sizeT(25);
+        }
         @media (max-width: $sizeMb) {
           width: size(20);
         }
@@ -70,7 +82,7 @@
       display: block;
       position: relative;
       z-index: 99;
-      @media (max-width: $sizeMb) {
+      @media (max-width: $sizeTablet) {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -82,6 +94,9 @@
         display: block;
         @media (max-width: 1440px) {
           height: sizeP(56);
+        }
+        @media (max-width: $sizeTablet) {
+          height: sizeT(40);
         }
         @media (max-width: $sizeMb) {
           height: size(32);
@@ -95,7 +110,7 @@
   }
   .wrap_menu {
     transition: all .3s;
-    @media (max-width: $sizeMb) {
+    @media (max-width: $sizeTablet) {
       position: fixed;
       z-index: 98;
       height: auto;
@@ -105,25 +120,29 @@
       transform: translateX(-100%);
       background-color: #fff;
       text-align: center;
+      padding-top: sizeT(60);
+      padding-bottom: sizeT(50);
+    }
+    @media (max-width: $sizeMb) {
       padding-top: size(60);
-      //padding-left: size(20);
       padding-bottom: size(50);
     }
     &.active{
-      @media (max-width: $sizeMb) {
+      @media (max-width: $sizeTablet) {
         transform: translateX(0);
+        box-shadow: 0px sizeT(12) sizeT(24) 0px rgba(0, 0, 0, 0.12);
+      }
+      @media (max-width: $sizeMb) {
         box-shadow: 0px size(12) size(24) 0px rgba(0, 0, 0, 0.12);
       }
     }
     .nav {
-      @media (max-width: $sizeMb) {
-      }
       .nav-item {
         margin-right: 17px;
         @media (max-width: 1440px) {
           margin-right: sizeP(17);
         }
-        @media (max-width: $sizeMb) {
+        @media (max-width: $sizeTablet) {
           margin-right: 0;
           width: 50%;
         }
@@ -148,6 +167,12 @@
             border: sizeP(1) solid #AFB5B9;
             font-size: sizeP(16);
           }
+          @media (max-width: $sizeTablet) {
+            padding: sizeT(10) sizeT(10);
+            border-radius: sizeT(12);
+            border: sizeT(1) solid #C9CBCF;
+            font-size: sizeT(16);
+          }
           @media (max-width: $sizeMb) {
             padding: size(10) size(10);
             border-radius: size(12);
@@ -166,8 +191,12 @@
             font-size: sizeP(18);
             padding: sizeP(12);
           }
-          @media (max-width: $sizeMb) {
+          @media (max-width: $sizeTablet) {
             display: inline-block;
+            font-size: sizeT(16);
+            padding: sizeT(12) 0;
+          }
+          @media (max-width: $sizeMb) {
             font-size: size(16);
             padding: size(12) 0;
           }
@@ -181,6 +210,10 @@
 
             @media (max-width: 1440px) {
               border-radius: sizeP(8);
+            }
+            @media (max-width: $sizeTablet) {
+              border-radius: sizeT(8);
+              padding: sizeT(12);
             }
             @media (max-width: $sizeMb) {
               border-radius: size(8);
@@ -198,6 +231,9 @@
       @media (max-width: 1440px) {
         margin-right: sizeP(16);
       }
+      @media (max-width: $sizeTablet) {
+        margin-right: sizeT(8);
+      }
       @media (max-width: $sizeMb) {
         margin-right: size(8);
       }
@@ -206,11 +242,24 @@
       }
     }
 
+    .wrap_account{
+      position: relative;
+      .dropdown-menu {
+        left: 50% !important;
+        top: 120% !important;
+        transform: translateX(-50%) !important;
+        width: max-content;
+      }
+    }
+
     .w_lang {
       position: relative;
       padding: 10px 0;
       @media (max-width: 1440px) {
         padding: sizeP(10) 0;
+      }
+      @media (max-width: $sizeTablet) {
+        padding: sizeT(4) 0;
       }
       @media (max-width: $sizeMb) {
         padding: size(4) 0;
@@ -227,6 +276,10 @@
           padding-right: 0 !important;
           font-size: sizeP(15);
         }
+        @media (max-width: $sizeTablet) {
+          padding-right: 0 !important;
+          font-size: sizeT(13);
+        }
         @media (max-width: $sizeMb) {
           padding-right: 0 !important;
           font-size: size(13);
@@ -237,8 +290,11 @@
           @media (max-width: 1440px) {
             font-size: sizeP(15);
           }
-          @media (max-width: $sizeMb) {
+          @media (max-width: $sizeTablet) {
             display: none;
+            font-size: sizeT(13);
+          }
+          @media (max-width: $sizeMb) {
             font-size: size(13);
           }
         }
@@ -270,6 +326,12 @@
             border-radius: sizeP(4);
             margin-right: sizeP(8);
           }
+          @media (max-width: $sizeTablet) {
+            width: sizeT(35);
+            height: sizeT(25);
+            border-radius: sizeT(4);
+            margin-right: sizeT(4);
+          }
           @media (max-width: $sizeMb) {
             width: size(23.881);
             height: size(16);
@@ -285,6 +347,9 @@
             width: sizeP(24);
             height: auto;
           }
+          @media (max-width: $sizeTablet) {
+            width: sizeT(20);
+          }
           @media (max-width: $sizeMb) {
             width: size(16);
           }
@@ -297,7 +362,7 @@
         transform: translateX(-50%) !important;
         overflow: hidden;
         padding: 0;
-        @media (max-width: $sizeMb) {
+        @media (max-width: $sizeTablet) {
           left: unset !important;
           transform: unset !important;
         }
@@ -308,6 +373,9 @@
           padding: 15px;
           @media (max-width: 1440px) {
             padding: sizeP(15);
+          }
+          @media (max-width: $sizeTablet) {
+            padding: sizeT(15);
           }
           @media (max-width: $sizeMb) {
             padding: size(12);
@@ -328,6 +396,12 @@
               border-radius: sizeP(4);
               margin-right: sizeP(8);
             }
+            @media (max-width: $sizeTablet) {
+              width: sizeT(23);
+              height: sizeT(16);
+              border-radius: sizeT(4);
+              margin-right: sizeT(4);
+            }
             @media (max-width: $sizeMb) {
               width: size(23);
               height: size(16);
@@ -342,6 +416,9 @@
             line-height: 120%;
             @media (max-width: 1440px) {
               font-size: sizeP(15);
+            }
+            @media (max-width: $sizeTablet) {
+              font-size: sizeT(12);
             }
             @media (max-width: $sizeMb) {
               font-size: size(12);

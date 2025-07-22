@@ -74,6 +74,11 @@
   @return $result * 1vw;
 }
 
+@function sizeT($number, $windowWidth: 767) {
+  $result: math.div(100 * $number, $windowWidth);
+  @return $result * 1vw;
+}
+
 @function sizeP($number, $windowWidth: 1440) {
   $result: math.div(100 * $number, $windowWidth);
   @return $result * 1vw;

@@ -21,6 +21,10 @@
       padding: sizeP(15) 0;
       font-size: sizeP(14);
     }
+    @media (max-width: $sizeTablet) {
+      padding: sizeT(10) 0;
+      font-size: sizeT(12);
+    }
     @media (max-width: $sizeMb) {
       padding: size(10) 0;
       font-size: size(12);
@@ -47,6 +51,10 @@
         font-size: sizeP(16);
         line-height: sizeP(24);
       }
+      @media (max-width: $sizeTablet) {
+        font-size: sizeT(16);
+        line-height: sizeT(24);
+      }
       @media (max-width: $sizeMb) {
         font-size: size(16);
         line-height: size(24);
@@ -63,6 +71,9 @@
           justify-content: center;
         }
         img{
+          @media (max-width: $sizeTablet) {
+            height: sizeT(64);
+          }
           @media (max-width: $sizeMb) {
             height: size(64);
           }
@@ -80,6 +91,9 @@
         @media (max-width: 1440px) {
           font-size: sizeP(16);
         }
+        @media (max-width: $sizeTablet) {
+          font-size: sizeT(12);
+        }
         @media (max-width: $sizeMb) {
           font-size: size(14);
           margin-bottom: size(18);
@@ -91,6 +105,9 @@
             margin-bottom: 8px;
             @media (max-width: 1440px) {
               margin-bottom: sizeP(8);
+            }
+            @media (max-width: $sizeTablet) {
+              margin-bottom: sizeT(5);
             }
             @media (max-width: $sizeMb) {
               margin-bottom: size(8);
@@ -110,6 +127,11 @@
                     margin-left: sizeP(5);
                     width: sizeP(24);
                     height: sizeP(24);
+                  }
+                  @media (max-width: $sizeTablet) {
+                    margin-left: sizeT(5);
+                    width: sizeT(16);
+                    height: sizeT(16);
                   }
                   @media (max-width: $sizeMb) {
                     margin-left: size(5);
@@ -145,6 +167,9 @@
                 @media (max-width: 1440px) {
                   padding: sizeP(15);
                 }
+                @media (max-width: $sizeTablet) {
+                  padding: sizeT(12);
+                }
                 @media (max-width: $sizeMb) {
                   padding: size(12);
                 }
@@ -164,6 +189,12 @@
                     border-radius: sizeP(4);
                     margin-right: sizeP(8);
                   }
+                  @media (max-width: $sizeTablet) {
+                    width: sizeT(23);
+                    height: sizeT(16);
+                    border-radius: sizeT(4);
+                    margin-right: sizeT(4);
+                  }
                   @media (max-width: $sizeMb) {
                     width: size(23);
                     height: size(16);
@@ -178,6 +209,9 @@
                   line-height: 120%;
                   @media (max-width: 1440px) {
                     font-size: sizeP(15);
+                  }
+                  @media (max-width: $sizeTablet) {
+                    font-size: sizeT(12);
                   }
                   @media (max-width: $sizeMb) {
                     font-size: size(12);
@@ -229,6 +263,9 @@
         @media (max-width: 1440px) {
           margin-top: sizeP(18);
         }
+        @media (max-width: $sizeTablet) {
+          margin-top: sizeT(11);
+        }
         @media (max-width: $sizeMb) {
           margin-top: 0;
         }
@@ -238,6 +275,9 @@
           @media (max-width: 1440px) {
             margin-right: sizeP(16);
           }
+          @media (max-width: $sizeTablet) {
+            margin-right: sizeT(12);
+          }
           @media (max-width: $sizeMb) {
             margin-right: 0;
           }
@@ -246,6 +286,9 @@
             height: 40px;
             @media (max-width: 1440px) {
               height: sizeP(40);
+            }
+            @media (max-width: $sizeTablet) {
+              height: sizeT(50);
             }
             @media (max-width: $sizeMb) {
               height: size(30);
@@ -264,6 +307,9 @@
             @media (max-width: 1440px) {
               height: sizeP(36);
             }
+            @media (max-width: $sizeTablet) {
+              height: sizeT(30);
+            }
             @media (max-width: $sizeMb) {
               height: size(36);
             }
@@ -277,6 +323,9 @@
             height: 40px;
             @media (max-width: 1440px) {
               height: sizeP(40);
+            }
+             @media (max-width: $sizeTablet) {
+              height: sizeT(32);
             }
             @media (max-width: $sizeMb) {
               height: size(40);
@@ -294,6 +343,10 @@
           @media (max-width: 1440px) {
             font-size: sizeP(16);
             line-height: sizeP(24);
+          }
+          @media (max-width: $sizeTablet) {
+            font-size: sizeT(16);
+            line-height: sizeT(24);
           }
           @media (max-width: $sizeMb) {
             font-size: size(16);
@@ -316,6 +369,10 @@
           height: 152px;
           @media (max-width: 1440px) {
             height: sizeP(152);
+          }
+          @media (max-width: $sizeTablet) {
+            margin-left: sizeT(20);
+            height: sizeT(110);
           }
           @media (max-width: $sizeMb) {
             width: 100%;
@@ -352,6 +409,14 @@
             font-size: sizeP(16);
             gap: sizeP(2);
           }
+          @media (max-width: $sizeTablet) {
+            border-radius: sizeT(8);
+            border: sizeT(1) solid #AFB5B9;
+            box-shadow: sizeT(2) sizeT(4) sizeT(16) 0px rgba(33, 150, 243, 0.32);
+            padding: sizeT(3) sizeT(10);
+            font-size: sizeT(12);
+            gap: sizeT(2);
+          }
           @media (max-width: $sizeMb) {
             border-radius: size(8);
             border: size(1) solid #AFB5B9;
@@ -368,6 +433,9 @@
             @media (max-width: 1440px) {
               font-size: sizeP(20);
             }
+            @media (max-width: $sizeTablet) {
+              font-size: sizeT(16);
+            }
             @media (max-width: $sizeMb) {
               font-size: size(20);
             }
@@ -380,6 +448,10 @@
             top: sizeP(40);
             left: sizeP(19);
           }
+          @media (max-width: $sizeTablet) {
+            top: sizeT(25);
+            left: sizeT(25);
+          }
           @media (max-width: $sizeMb) {
             top: size(44);
             left: size(25);
@@ -391,6 +463,10 @@
           @media (max-width: 1440px) {
             top: sizeP(86);
             left: sizeP(106);
+          }
+          @media (max-width: $sizeTablet) {
+            top: sizeT(60);
+            left: sizeT(90);
           }
           @media (max-width: $sizeMb) {
             top: size(90);
@@ -428,6 +504,9 @@
     @media (max-width: 1440px) {
       padding: sizeP(12) 0;
     }
+    @media (max-width: $sizeTablet) {
+      padding: sizeT(12) 0;
+    }
     @media (max-width: $sizeMb) {
       padding: size(12) 0;
     }
@@ -440,6 +519,9 @@
       @media (max-width: 1440px) {
         font-size: sizeP(14);
         line-height: sizeP(20);
+      }
+      @media (max-width: $sizeTablet) {
+        font-size: sizeT(11);
       }
       @media (max-width: $sizeMb) {
         text-align: center;

@@ -11,934 +11,236 @@
     <link rel="stylesheet" href="assets/css/plugin-collection.css">
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/splide.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
 </head>
 <body class="bl_home">
-    <header class="header">
-        <div class="container-main">
-            <div class="wrapper d-flex flex-row align-items-center justify-content-between">
-                <div class="wrap_left d-flex flex-row align-items-center">
-                    <a href="javascript:void(0)" class="btn-menu">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.5 5H17.5M2.5 10H17.5M2.5 15H17.5" stroke="#706F6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <svg focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true" fill-rule="evenodd" viewBox="64 64 896 896"><path d="M799.86 166.31c.02 0 .04.02.08.06l57.69 57.7c.04.03.05.05.06.08a.12.12 0 010 .06c0 .03-.02.05-.06.09L569.93 512l287.7 287.7c.04.04.05.06.06.09a.12.12 0 010 .07c0 .02-.02.04-.06.08l-57.7 57.69c-.03.04-.05.05-.07.06a.12.12 0 01-.07 0c-.03 0-.05-.02-.09-.06L512 569.93l-287.7 287.7c-.04.04-.06.05-.09.06a.12.12 0 01-.07 0c-.02 0-.04-.02-.08-.06l-57.69-57.7c-.04-.03-.05-.05-.06-.07a.12.12 0 010-.07c0-.03.02-.05.06-.09L454.07 512l-287.7-287.7c-.04-.04-.05-.06-.06-.09a.12.12 0 010-.07c0-.02.02-.04.06-.08l57.7-57.69c.03-.04.05-.05.07-.06a.12.12 0 01.07 0c.03 0 .05.02.09.06L512 454.07l287.7-287.7c.04-.04.06-.05.09-.06a.12.12 0 01.07 0z"></path></svg>
+ <header class="header">
+    <div class="container-main">
+        <div class="wrapper d-flex flex-row align-items-center justify-content-between">
+            <div class="wrap_left d-flex flex-row align-items-center">
+                <a href="javascript:void(0)" class="btn-menu">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 5H17.5M2.5 10H17.5M2.5 15H17.5" stroke="#706F6F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <svg focusable="false" data-icon="close" width="1em" height="1em" fill="currentColor" aria-hidden="true" fill-rule="evenodd" viewBox="64 64 896 896"><path d="M799.86 166.31c.02 0 .04.02.08.06l57.69 57.7c.04.03.05.05.06.08a.12.12 0 010 .06c0 .03-.02.05-.06.09L569.93 512l287.7 287.7c.04.04.05.06.06.09a.12.12 0 010 .07c0 .02-.02.04-.06.08l-57.7 57.69c-.03.04-.05.05-.07.06a.12.12 0 01-.07 0c-.03 0-.05-.02-.09-.06L512 569.93l-287.7 287.7c-.04.04-.06.05-.09.06a.12.12 0 01-.07 0c-.02 0-.04-.02-.08-.06l-57.69-57.7c-.04-.03-.05-.05-.06-.07a.12.12 0 010-.07c0-.03.02-.05.06-.09L454.07 512l-287.7-287.7c-.04-.04-.05-.06-.06-.09a.12.12 0 010-.07c0-.02.02-.04.06-.08l57.7-57.69c.03-.04.05-.05.07-.06a.12.12 0 01.07 0c.03 0 .05.02.09.06L512 454.07l287.7-287.7c.04-.04.06-.05.09-.06a.12.12 0 01.07 0z"></path></svg>
+                </a>
+                <a href="index.html" class="logo">
+                    <img src="assets/images/png/logo.png" alt="">
+                </a>
+            </div>
+            <div class="wrap_menu wrap_menu_fixed">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            Vietpot
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="customer.html" class="nav-link">
+                            Khách hàng
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partner.html" class="nav-link">
+                            Đối tác
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cooperate.html" class="nav-link">
+                            Hợp tác
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="data_admin.html" class="nav-link">
+                            Dữ liệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0);" class="nav-link">
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="wrap_right d-flex flex-row align-items-center">
+                <div class="wrap_account">
+                    <a href="javascript:void(0)" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg viewBox="64 64 896 896" data-icon="user" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path></svg>
                     </a>
-                    <a href="index.html" class="logo">
-                        <img src="assets/images/png/logo.png" alt="">
-                    </a>
-                </div>
-                <div class="wrap_menu wrap_menu_fixed">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="about.html" class="nav-link">
-                                Vietpot
+                    <ul class="dropdown-menu" style="">
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0);">
+                                <span>Thông tin tài khoản</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a href="customer.html" class="nav-link">
-                                Khách hàng
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="partner.html" class="nav-link">
-                                Đối tác
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="cooperate.html" class="nav-link">
-                                Hợp tác
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="data_admin.html" class="nav-link">
-                                Dữ liệu
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="javascript:void(0);" class="nav-link">
-                                Liên hệ
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0);">
+                                <span>Đăng xuất</span>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="wrap_right d-flex flex-row align-items-center">
-                    <div class="wrap_account">
-                        <a href="javascript:void(0)" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <svg viewBox="64 64 896 896" data-icon="user" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class=""><path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path></svg>
-                        </a>
-                        <ul class="dropdown-menu" style="">
-                            <li>
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <span>Thông tin tài khoản</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <span>Đăng xuất</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="w_lang">
-                        <a href="javascript:void(0);" class="btn_change_lang dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="assets/images/png/flag_vn.png" alt="" class="flag">
-                            <span>Tiếng Việt</span>
-                        </a>
-                        <ul class="dropdown-menu" style="">
-                            <li>
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <img src="assets/images/png/flag_vn.png" alt="" class="flag">
-                                    <span>Tiếng Việt</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <img src="assets/images/png/flag_ces.png" alt="" class="flag">
-                                    <span>česky</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="javascript:void(0);">
-                                    <img src="assets/images/png/flag_en.png" alt="" class="flag">
-                                    <span>English</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="w_lang">
+                    <a href="javascript:void(0);" class="btn_change_lang dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/png/flag_vn.png" alt="" class="flag">
+                        <span>Tiếng Việt</span>
+                    </a>
+                    <ul class="dropdown-menu" style="">
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0);">
+                                <img src="assets/images/png/flag_vn.png" alt="" class="flag">
+                                <span>Tiếng Việt</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0);">
+                                <img src="assets/images/png/flag_ces.png" alt="" class="flag">
+                                <span>česky</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0);">
+                                <img src="assets/images/png/flag_en.png" alt="" class="flag">
+                                <span>English</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="main">
+
+    <div class="section_page_detail section-padding-50">
+        <div class="container-main">
+            <div class="section_title">
+                <div class="title">
+                    <h1>Lập trình viên PHP</h1>
+                </div>
+            </div>
+            <div class="section-content">
+                <div class="desc">
+                    <h3>Mô tả công việc</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <h3>Địa điểm</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <h3>Yêu cầu</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <h3>Quyền lợi</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                </div>
+                <div class="wrap-btn text-center">
+                    <a href="#" class="lb-xsmall me-3">
+                        In thông tin
+                    </a>
+                    <a href="#" class="lb-xsmall active-primary" data-bs-toggle="modal" data-bs-target="#modalRegister">
+                        Nộp hồ sơ
+                    </a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
 
-    <main class="main">
-        <!-- section banner -->
-        <section class="section_banner section-padding-bottom-50">
-            <div class="wrapper position-relative">
-                <div class="slide_banner swiper-container position-relative">
-                    <div class="swiper-wrapper">
-                        <!-- item-->
-                        <div class="swiper-slide">
-                            <a href="javascript:void(0)" class="item-banner">
-                                <img src="assets/images/banner_gray.png" alt="banner">
-                            </a>
-                        </div>
-                        <!-- end item-->
-                        <!-- item-->
-                        <div class="swiper-slide">
-                            <a href="javascript:void(0)" class="item-banner">
-                                <img src="assets/images/banner.png" alt="banner">
-                            </a>
-                        </div>
-                        <!-- end item-->
-                        <!-- item-->
-                        <div class="swiper-slide">
-                            <a href="javascript:void(0)" class="item-banner">
-                                <img src="assets/images/banner.png" alt="banner">
-                            </a>
-                        </div>
-                        <!-- end item-->
-                    </div>
-                    <div class="wrap_swiper-button-prev">
-                        <div class="swiper-button-prev">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="group-hover:text-white text-[#D0D5DD] h-[30px]  translate-x-[-1px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path></svg>
-                        </div>
-                        <div class="swiper-button-next">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="group-hover:text-white text-[#D0D5DD] h-[30px]  translate-x-[1px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path></svg>
-                        </div>
-                    </div>
+    <div class="modal fade modal-custom" id="modalRegister" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thông tin hồ sơ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9.99935 18.4583C5.33383 18.4583 1.54102 14.6655 1.54102 9.99996C1.54102 5.33444 5.33383 1.54163 9.99935 1.54163C14.6649 1.54163 18.4577 5.33444 18.4577 9.99996C18.4577 14.6655 14.6649 18.4583 9.99935 18.4583ZM9.99935 1.79163C5.47321 1.79163 1.79102 5.47382 1.79102 9.99996C1.79102 14.5261 5.47321 18.2083 9.99935 18.2083C14.5255 18.2083 18.2077 14.5261 18.2077 9.99996C18.2077 5.47382 14.5255 1.79163 9.99935 1.79163Z"
+                                  fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M7.72861 12.4465L7.72251 12.4526L7.71663 12.4589C7.71335 12.4624 7.70628 12.4684 7.69236 12.4739C7.67775 12.4797 7.65941 12.4834 7.64049 12.4834C7.62281 12.4834 7.60729 12.4802 7.59397 12.4748C7.58111 12.4696 7.56706 12.4612 7.55238 12.4465C7.53085 12.425 7.51758 12.3942 7.51758 12.3584C7.51758 12.3225 7.53085 12.2918 7.55238 12.2703L7.19883 11.9167L7.55238 12.2703L12.269 7.5536L11.9191 7.20369L12.269 7.5536C12.2906 7.53208 12.3213 7.5188 12.3572 7.5188C12.393 7.5188 12.4237 7.53208 12.4453 7.5536C12.4668 7.57513 12.4801 7.60586 12.4801 7.64172C12.4801 7.67757 12.4668 7.7083 12.4453 7.72983L7.72861 12.4465Z"
+                                  fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M12.3572 12.9834C12.1988 12.9834 12.0405 12.925 11.9155 12.8L7.19883 8.08338C6.95716 7.84172 6.95716 7.44172 7.19883 7.20005C7.44049 6.95838 7.84049 6.95838 8.08216 7.20005L12.7988 11.9167C13.0405 12.1584 13.0405 12.5584 12.7988 12.8C12.6738 12.925 12.5155 12.9834 12.3572 12.9834Z"
+                                  fill="#6D727B"/>
+                        </svg>
+                    </button>
                 </div>
-
-                <div class="swiper-pagination"></div>
-            </div>
-        </section>
-        <!-- end section banner -->
-        <!-- section about -->
-        <section class="section_about section-padding-top section-padding-50">
-            <div class="container-main">
-                <div class="wrapper d-flex flex-column flex-md-row align-items-start">
-                    <div class="wrap_content wrap_content_hide">
-                        <div class="title" data-aos="fade-up" data-aos-duration="1000">
-                            <h2>
-                                Khách hàng <br>
-                                <span>- “Vietpot hỗ trợ khách hàng liên lạc và hợp tác với các công ty.”</span>
-                            </h2>
-                        </div>
-                        <div class="content content_hide" data-aos="fade-up" data-aos-duration="1500">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                            </p>
-                            <p>
-                                standard dummy text ever since the 1500s
-                            </p>
-                        </div>
-                        <div class="wrap-btn">
-                            <a href="javascript:void(0);" class="text-link btn-show-text">Xem thêm</a>
-                        </div>
-                    </div>
-                    <div class="images" data-aos="fade-left" data-aos-duration="2000">
-                        <img src="assets/images/about.png" alt="about">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end about -->
-
-        <!-- section partner -->
-        <section class="section_partner section-padding-50">
-            <div class="container-main">
-                <div class="section_title">
-                    <div class="title">
-                        <h2>Đối tác <br> <span>Thương hiệu đồng hành cùng Vietpot trên thị trường</span></h2>
-                    </div>
-                </div>
-                <div class="section_content">
-                    <div class="wrapper">
-                        <div class="wrap_nav_partner position-relative" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="slide_product swiper position-relative nav-slider">
-                                <div class="swiper-wrapper">
-                                    <!-- item-->
-                                    <div class="swiper-slide">
-                                        <div class="item">
-                                            <a href="javascript:void(0);" class="nav-link active">
-                                                <img src="assets/images/partner/nav_1.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- item-->
-                                    <div class="swiper-slide">
-                                        <div class="item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                <img src="assets/images/partner/nav_1.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- item-->
-                                    <div class="swiper-slide">
-                                        <div class="item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                <img src="assets/images/partner/nav_1.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- item-->
-                                    <div class="swiper-slide">
-                                        <div class="item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                <img src="assets/images/partner/nav_1.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- item-->
-                                    <div class="swiper-slide">
-                                        <div class="item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                <img src="assets/images/partner/nav_1.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- item-->
-                                    <div class="swiper-slide">
-                                        <div class="item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                <img src="assets/images/partner/nav_1.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <!-- item-->
-                                    <div class="swiper-slide">
-                                        <div class="item">
-                                            <a href="javascript:void(0);" class="nav-link">
-                                                <img src="assets/images/partner/nav_1.png" alt="">
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap_swiper-button">
-                                    <div class="swiper-button-prev">
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="group-hover:text-white text-[#D0D5DD] h-[30px]  translate-x-[-1px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path></svg>
-                                    </div>
-                                    <div class="swiper-button-next">
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="group-hover:text-white text-[#D0D5DD] h-[30px]  translate-x-[1px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path></svg>
-                                    </div>
-                                </div>
+                <div class="modal-body">
+                    <div class="wrap_form_modal">
+                        <div class="form-group">
+                            <div class="form-label">
+                                Họ tên <span>*</span>
                             </div>
-                        </div>
-                        <div class="wrap_product" data-aos="fade-up" data-aos-duration="500">
-                            <div class="wrap_list swiper-nav-hover position-relative">
-                                <div class="slide_product swiper position-relative">
-                                    <div class="swiper-wrapper">
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_1.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_2.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_3.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_4.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_5.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_6.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_1.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_1.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_1.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_1.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_1.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_1.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-
-                                        <!-- item-->
-                                        <div class="swiper-slide">
-                                            <div class="item">
-                                                <div class="image">
-                                                    <a href="javascript:void(0);">
-                                                        <img src="assets/images/product/product_1.png" alt="">
-                                                    </a>
-                                                </div>
-                                                <div class="name">
-                                                    <a href="javascript:void(0);">Tên sản phẩm</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- end item-->
-                                    </div>
-                                    <div class="wrap_swiper-button">
-                                        <div class="swiper-button-prev">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="32" viewBox="0 0 19 32" fill="none">
-                                                <path d="M18.1562 0.841893C18.4237 1.10703 18.6359 1.42196 18.7807 1.76865C18.9255 2.11535 19 2.48701 19 2.86235C19 3.23769 18.9255 3.60935 18.7807 3.95605C18.6359 4.30274 18.4237 4.61767 18.1562 4.88281L6.96085 16.0025L18.1562 27.1222C18.6957 27.658 18.9988 28.3848 18.9988 29.1426C18.9988 29.9005 18.6957 30.6272 18.1562 31.1631C17.6167 31.699 16.885 32 16.122 32C15.359 32 14.6273 31.699 14.0878 31.1631L0.843815 18.0086C0.576328 17.7435 0.364115 17.4286 0.21932 17.0819C0.0745277 16.7352 0 16.3635 0 15.9882C0 15.6128 0.0745277 15.2412 0.21932 14.8945C0.364115 14.5478 0.576328 14.2328 0.843815 13.9677L14.0878 0.813233C15.1842 -0.275808 17.0309 -0.275807 18.1562 0.841893Z" fill="#575756"/>
-                                            </svg>
-                                        </div>
-                                        <div class="swiper-button-next">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                                <path d="M11.8438 4.84189C11.5763 5.10703 11.3641 5.42196 11.2193 5.76865C11.0745 6.11535 11 6.48701 11 6.86235C11 7.23769 11.0745 7.60935 11.2193 7.95605C11.3641 8.30274 11.5763 8.61767 11.8438 8.88281L23.0391 20.0025L11.8438 31.1222C11.3043 31.658 11.0012 32.3848 11.0012 33.1426C11.0012 33.9005 11.3043 34.6272 11.8438 35.1631C12.3833 35.699 13.115 36 13.878 36C14.641 36 15.3727 35.699 15.9122 35.1631L29.1562 22.0086C29.4237 21.7435 29.6359 21.4286 29.7807 21.0819C29.9255 20.7352 30 20.3635 30 19.9882C30 19.6128 29.9255 19.2412 29.7807 18.8945C29.6359 18.5478 29.4237 18.2328 29.1562 17.9677L15.9122 4.81323C14.8158 3.72419 12.9691 3.72419 11.8438 4.84189Z" fill="#575756"/>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap_content_partner" data-aos="fade-up" data-aos-duration="1000">
-                            <div class="wrap_images_slider">
-                                <div class="swiper-detail swiper">
-                                    <div class="swiper-wrapper swiper-wrapper-img_main">
-                                        <div class="swiper-slide">
-                                            <div class="image">
-                                                <img src="assets/images/partner/image_slider.png">
-                                                <a href="#" class="link">
-                                                    <svg focusable="false" data-icon="link" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M574 665.4a8.03 8.03 0 00-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 00-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 000 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 000 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 00-11.3 0L372.3 598.7a8.03 8.03 0 000 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"></path></svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image">
-                                                <img src="assets/images/partner/image_slider.png">
-                                                <a href="#" class="link">
-                                                    <svg focusable="false" data-icon="link" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M574 665.4a8.03 8.03 0 00-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 00-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 000 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 000 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 00-11.3 0L372.3 598.7a8.03 8.03 0 000 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"></path></svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image">
-                                                <img src="assets/images/partner/image_slider.png">
-                                                <a href="#" class="link">
-                                                    <svg focusable="false" data-icon="link" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M574 665.4a8.03 8.03 0 00-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 00-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 000 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 000 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 00-11.3 0L372.3 598.7a8.03 8.03 0 000 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"></path></svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image">
-                                                <img src="assets/images/partner/image_slider.png">
-                                                <a href="#" class="link">
-                                                    <svg focusable="false" data-icon="link" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M574 665.4a8.03 8.03 0 00-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 00-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 000 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 000 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 00-11.3 0L372.3 598.7a8.03 8.03 0 000 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"></path></svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image">
-                                                <img src="assets/images/partner/image_slider.png">
-                                                <a href="#" class="link">
-                                                    <svg focusable="false" data-icon="link" width="1em" height="1em" fill="currentColor" aria-hidden="true" viewBox="64 64 896 896"><path d="M574 665.4a8.03 8.03 0 00-11.3 0L446.5 781.6c-53.8 53.8-144.6 59.5-204 0-59.5-59.5-53.8-150.2 0-204l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3l-39.8-39.8a8.03 8.03 0 00-11.3 0L191.4 526.5c-84.6 84.6-84.6 221.5 0 306s221.5 84.6 306 0l116.2-116.2c3.1-3.1 3.1-8.2 0-11.3L574 665.4zm258.6-474c-84.6-84.6-221.5-84.6-306 0L410.3 307.6a8.03 8.03 0 000 11.3l39.7 39.7c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c53.8-53.8 144.6-59.5 204 0 59.5 59.5 53.8 150.2 0 204L665.3 562.6a8.03 8.03 0 000 11.3l39.8 39.8c3.1 3.1 8.2 3.1 11.3 0l116.2-116.2c84.5-84.6 84.5-221.5 0-306.1zM610.1 372.3a8.03 8.03 0 00-11.3 0L372.3 598.7a8.03 8.03 0 000 11.3l39.6 39.6c3.1 3.1 8.2 3.1 11.3 0l226.4-226.4c3.1-3.1 3.1-8.2 0-11.3l-39.5-39.6z"></path></svg>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Thumbnails -->
-                                <div class="swiper swiper-container-thumbs">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="image-thumb">
-                                                <img src="assets/images/partner/image_slider.png">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-thumb">
-                                                <img src="assets/images/partner/image_slider.png">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-thumb">
-                                                <img src="assets/images/partner/image_slider.png">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-thumb">
-                                                <img src="assets/images/partner/image_slider.png">
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="image-thumb">
-                                                <img src="assets/images/partner/image_slider.png">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="wrap_content wrap_content_hide">
-                                <div class="wrap_top">
-                                    <div class="title">
-                                        Hãng bia Budvar
-                                    </div>
-                                    <div class="sub_title">
-                                        Hãng bia Budvar
-                                    </div>
-                                    <div class="content content_hide">
-                                        <p>Hãng bia Budvar, còn được biết đến với tên gọi Budweiser Budvar, là một nhà máy bia nổi tiếng của Cộng hòa Séc. Được thành lập vào năm 1895 tại thành phố České Budějovice (hay còn gọi là Budweis), Budvar nổi tiếng với việc sản xuất bia lager chất lượng cao theo các phương pháp ủ truyền thống.</p>
-                                        <p>Sản phẩm nổi bật nhất của Budvar là loại bia pale lager, thường được gọi là bia lager Séc hoặc Pilsner. Budvar tự hào sử dụng các nguyên liệu như hoa bia Saaz, mạch nha Moravia và nước từ các giếng nước ngầm, cùng với quá trình ủ bia kéo dài. Điều này tạo ra một loại bia có hương vị cân bằng, đậm đà, và đặc trưng với vị đắng nhẹ nhàng.</p>
-                                        <p>Budvar được coi là một thương hiệu có uy tín trong thế giới bia, đặc biệt là với những người yêu thích các phương pháp ủ bia truyền thống của châu Âu và hương vị đặc trưng của bia lager Séc.</p>
-                                    </div>
-                                </div>
-                                <div class="wrap_btn">
-                                    <div class="wrap_btn_left">
-                                        <a href="javascript:void(0);" class="text-link">www.budvar.cz</a>
-                                        <a href="javascript:void(0);" class="text-link">www.budvar.cz</a>
-                                    </div>
-                                    <a href="javascript:void(0);" class="text-link btn-show-text">Xem thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end partner -->
-
-        <!-- section cooperate -->
-        <section class="section_cooperate_info section-padding-50">
-            <div class="container-main">
-                <div class="section_title d-flex flex-row align-content-center justify-content-between position-relative">
-                    <div class="title">
-                        <h2>Hợp tác cùng VIETPOT</h2>
-                    </div>
-                    <div class="wrap_menu_cooperate d-flex flex-row align-items-center justify-content-between">
-                        <div class="wrap_menu_more">
-                            <a href="javascript:void(0);" class="btn-action-menu-more">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 32 32" fill="none">
-                                    <path d="M5 14C4.73478 14 4.48043 13.8946 4.29289 13.7071C4.10536 13.5195 4 13.2652 4 13V5.00195C4 4.73674 4.10536 4.48238 4.29289 4.29485C4.48043 4.10731 4.73478 4.00195 5 4.00195H13C13.2652 4.00195 13.5196 4.10731 13.7071 4.29485C13.8946 4.48238 14 4.73674 14 5.00195V13C14 13.2652 13.8946 13.5195 13.7071 13.7071C13.5196 13.8946 13.2652 14 13 14H5ZM19 14C18.7348 14 18.4804 13.8946 18.2929 13.7071C18.1054 13.5195 18 13.2652 18 13V5.00195C18 4.73674 18.1054 4.48238 18.2929 4.29485C18.4804 4.10731 18.7348 4.00195 19 4.00195H26.998C27.2632 4.00195 27.5176 4.10731 27.7051 4.29485C27.8926 4.48238 27.998 4.73674 27.998 5.00195V13C27.998 13.2652 27.8926 13.5195 27.7051 13.7071C27.5176 13.8946 27.2632 14 26.998 14H19ZM5 28C4.73478 28 4.48043 27.8946 4.29289 27.7071C4.10536 27.5195 4 27.2652 4 27V19C4 18.7347 4.10536 18.4804 4.29289 18.2928C4.48043 18.1053 4.73478 18 5 18H13C13.2652 18 13.5196 18.1053 13.7071 18.2928C13.8946 18.4804 14 18.7347 14 19V27C14 27.2652 13.8946 27.5195 13.7071 27.7071C13.5196 27.8946 13.2652 28 13 28H5ZM19 28C18.7348 28 18.4804 27.8946 18.2929 27.7071C18.1054 27.5195 18 27.2652 18 27V19C18 18.7347 18.1054 18.4804 18.2929 18.2928C18.4804 18.1053 18.7348 18 19 18H26.998C27.2632 18 27.5176 18.1053 27.7051 18.2928C27.8926 18.4804 27.998 18.7347 27.998 19V27C27.998 27.2652 27.8926 27.5195 27.7051 27.7071C27.5176 27.8946 27.2632 28 26.998 28H19Z" fill="#5E6D7B"></path>
-                                </svg>
-                            </a>
-                            <div class="w_content">
-                                <div class="title">
-                                    Danh mục tổng hợp
-                                </div>
-                                <div class="content">
-                                    <a href="javascript:void(0);">Budvar</a>
-                                    <a href="javascript:void(0);">Pilsner Urquell</a>
-                                    <a href="javascript:void(0);">Staropramen</a>
-                                    <a href="javascript:void(0);">Coca-Cola</a>
-                                    <a href="javascript:void(0);">Heineken</a>
-                                    <a href="javascript:void(0);">Budvar</a>
-                                    <a href="javascript:void(0);">Pilsner Urquell</a>
-                                    <a href="javascript:void(0);">Staropramen</a>
-                                    <a href="javascript:void(0);">Coca-Cola</a>
-                                    <a href="javascript:void(0);">Heineken</a>
-                                    <a href="javascript:void(0);">Budvar</a>
-                                    <a href="javascript:void(0);">Pilsner Urquell</a>
-                                    <a href="javascript:void(0);">Staropramen</a>
-                                    <a href="javascript:void(0);">Coca-Cola</a>
-                                    <a href="javascript:void(0);">Heineken</a>
-                                    <a href="javascript:void(0);">Budvar</a>
-                                    <a href="javascript:void(0);">Pilsner Urquell</a>
-                                    <a href="javascript:void(0);">Staropramen</a>
-                                    <a href="javascript:void(0);">Coca-Cola</a>
-                                    <a href="javascript:void(0);">Heineken</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="wrapper d-flex flex-column flex-md-row">
-                    <div class="wrap_left wrap_content_cooperate_left d-md-block d-none">
-                        <div class="wrap_info position-relative">
-                            <div class="item" data-id="1">
-                                <div class="title">
-                                    <h2>Layout 1</h2>
-                                </div>
-                                <div class="content">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                                </div>
-                                <div class="wrap-btn">
-                                    <a href="javascript:void(0);" class="text-link">Xem thêm</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrap_content position-relative">
-                        <div class="wrap_menu_short">
-                            <div id="brand-slider" class="splide mounted">
-                                <div class="splide__track">
-                                    <ul class="splide__list">
-                                        <li class="splide__slide" data-key="1" data-id="1">
-                                            <a href="javascript:void(0);" class="brand-name">Budvar</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="2" data-id="2">
-                                            <a href="javascript:void(0);" class="brand-name">Pilsner Urquell</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="3" data-id="1">
-                                            <a href="javascript:void(0);" class="brand-name">Staropramen</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="4" data-id="2">
-                                            <a href="javascript:void(0);" class="brand-name">Coca-Cola</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="5" data-id="1">
-                                            <a href="javascript:void(0);" class="brand-name">Heineken</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="6" data-id="2">
-                                            <a href="javascript:void(0);" class="brand-name">Bavaria</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="7" data-id="1">
-                                            <a href="javascript:void(0);" class="brand-name">Budvar</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="8" data-id="2">
-                                            <a href="javascript:void(0);" class="brand-name">Pilsner Urquell</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="9" data-id="1">
-                                            <a href="javascript:void(0);" class="brand-name">Staropramen</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="10" data-id="2">
-                                            <a href="javascript:void(0);" class="brand-name">Coca-Cola</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="11" data-id="1">
-                                            <a href="javascript:void(0);" class="brand-name">Heineken</a>
-                                        </li>
-                                        <li class="splide__slide" data-key="12" data-id="2">
-                                            <a href="javascript:void(0);" class="brand-name">Bavaria</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap_content_cooperate_right d-md-block d-none">
-                            <div class="images position-relative" data-id="1">
-                                <img src="assets/images/demo2.jpg" alt="Pilsner Urquell">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrap_content_mb">
-                        <div class="wrap_content_cooperate_default_top d-md-none">
-                        </div>
-                        <div class="wrap_content_cooperate_default_bottom d-md-none">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end partner -->
-
-<!--        &lt;!&ndash; section cooperate &ndash;&gt;-->
-<!--        <section class="section_cooperate section-padding-50">-->
-<!--            <div class="container-main">-->
-<!--                <div class="section_title">-->
-<!--                    <div class="title">-->
-<!--                        <h2>Hợp tác cùng VIETPOT</h2>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="section_content position-relative">-->
-<!--                    <div class="slide_cooperate swiper-container position-relative">-->
-<!--                        <div class="swiper-wrapper">-->
-<!--                            <div class="swiper-slide">-->
-<!--                                <div class="item" data-aos="fade-up" data-aos-duration="1000">-->
-<!--                                    <div class="wrap d-flex flex-row align-items-center justify-content-between">-->
-<!--                                        <div class="image">-->
-<!--                                            <img src="assets/images/cooperate/cooperate_1.png" alt="">-->
-<!--                                        </div>-->
-<!--                                        <div class="content">-->
-<!--                                            <div class="title">-->
-<!--                                                Budvar-->
-<!--                                            </div>-->
-<!--                                            <div class="desc">-->
-<!--                                                Understanding the steps needed to beat your competitors is essential when understanding the length of the project, and how we will effectively tackle your digital marketing.​ We also make sure to get you the most value for your money.​-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="swiper-slide">-->
-<!--                                <div class="item" data-aos="fade-up" data-aos-duration="1000">-->
-<!--                                    <div class="wrap d-flex flex-row align-items-center justify-content-between">-->
-<!--                                        <div class="image">-->
-<!--                                            <img src="assets/images/cooperate/cooperate_2.png" alt="">-->
-<!--                                        </div>-->
-<!--                                        <div class="content">-->
-<!--                                            <div class="title">-->
-<!--                                                Budvar-->
-<!--                                            </div>-->
-<!--                                            <div class="desc">-->
-<!--                                                Understanding the steps needed to beat your competitors is essential when understanding the length of the project, and how we will effectively tackle your digital marketing.​ We also make sure to get you the most value for your money.​-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="swiper-slide">-->
-<!--                                <div class="item" data-aos="fade-up" data-aos-duration="1000">-->
-<!--                                    <div class="wrap d-flex flex-row align-items-center justify-content-between">-->
-<!--                                        <div class="content">-->
-<!--                                            <div class="title">-->
-<!--                                                Budvar-->
-<!--                                            </div>-->
-<!--                                            <div class="desc">-->
-<!--                                                Understanding the steps needed to beat your competitors is essential when understanding the length of the project, and how we will effectively tackle your digital marketing.​ We also make sure to get you the most value for your money.​-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                        <div class="image">-->
-<!--                                            <img src="assets/images/cooperate/cooperate_1.png" alt="">-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="wrap_swiper-button-prev">-->
-<!--                            <div class="swiper-button-prev">-->
-<!--                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="group-hover:text-white text-[#D0D5DD] h-[30px]  translate-x-[-1px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path></svg>-->
-<!--                            </div>-->
-<!--                            <div class="swiper-button-next">-->
-<!--                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="group-hover:text-white text-[#D0D5DD] h-[30px]  translate-x-[1px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path></svg>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="swiper-pagination"></div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </section>-->
-<!--        &lt;!&ndash; section end cooperate &ndash;&gt;-->
-
-        <!-- section section_trans_partner -->
-        <section class="section_trans_partner section-padding-top-50 section-padding-bottom">
-            <div class="container-main">
-                <div class="section_title">
-                    <div class="title">
-                        <h2>Chuyển đổi số cùng đối tác</h2>
-                    </div>
-                </div>
-                <div class="section_content">
-                    <div class="description" data-aos="fade-up" data-aos-duration="500">
-                        Nền tảng chuyển đổi số (Digital Transformation Platform) là một hệ thống hoặc bộ công cụ tích hợp giúp các hãng thay đổi cách thức hoạt động, quản lý dữ liệu, và tương tác với khách hàng bằng cách tận dụng nền tảng công nghệ số. Các nền tảng này thường bao gồm dịch vụ và công cụ hỗ trợ tự động hóa quy trình, phân tích dữ liệu, quản lý mối quan hệ khách hàng (CRM), thương mại điện tử và nhiều lĩnh vực khác.
-                    </div>
-                    <div class="wrap_img" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="assets/images/img_partner.png" alt="" class="d-none d-md-block">
-                        <img src="assets/images/img_partner_mb.png" alt="" class="d-md-none">
-                        <a href="javascript:void(0);" class="text-action d-none d-md-block">
-                            DIGITAL <br>
-                            TRANSFORMATION
-                        </a>
-                        <div class="wrap_text">
-                            <a href="javascript:void(0);" class="text">
-                                Điện toán đám mây
-                            </a>
-                            <a href="javascript:void(0);" class="text">
-                                Tương tác khách hàng
-                            </a>
-                            <a href="javascript:void(0);" class="text">
-                                Bán cáo tổng thể
-                            </a>
-                            <a href="javascript:void(0);" class="text">
-                                Service
-                            </a>
-                            <a href="javascript:void(0);" class="text">
-                                Nền tảng dành cho đối tác
-                            </a>
-                            <a href="javascript:void(0);" class="text">
-                                Tự động hóa
-                            </a>
-                            <a href="javascript:void(0);" class="text">
-                                Quản lý thị trường
-                            </a>
-                            <a href="javascript:void(0);" class="text">
-                                Phân tích dữ liệu
-                            </a>
-                        </div>
-                    </div>
-                    <div class="wrap_btn_info">
-                        <a href="#">
-                            Cần biết thêm thông tin về chuyển đổi số
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- section end section_trans_partner -->
-
-        <!-- section contact -->
-        <section class="section_contact section-padding-50 d-none">
-            <div class="container-main">
-                <div class="section_title">
-                    <div class="title">
-                        <h2>Liên hệ</h2>
-                    </div>
-                </div>
-                <div class="section_content">
-                    <div class="wrap_form">
-                        <form action="">
                             <div class="group">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="E-mail của bạn">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Số điện thoại của bạn">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" rows="6"></textarea>
-                                </div>
-                                <div class="form-group flex-row justify-content-end">
-                                    <button type="submit" class="btn">
-                                        Gửi
-                                    </button>
-                                </div>
+                                <input type="text" class="form-control">
                             </div>
-                        </form>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-label">
+                                Nội dung
+                            </div>
+                            <div class="group">
+                                <textarea type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-label">
+                                CV <span>*</span>
+                            </div>
+                            <div class="group group-upload-image" data-key="1">
+                                <img src="" alt="" class="img-preview" id="img-preview-1">
+                                <input type="file" id="image-1" hidden="">
+                                <label class="form-label-upload" for="image-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M8.75043 12.81V11.6029L7.89688 12.4564L7.17688 13.1764L7.53043 13.53L7.17688 13.1764C7.08214 13.2712 6.91872 13.2712 6.82398 13.1764C6.72925 13.0817 6.72925 12.9183 6.82398 12.8235L8.82398 10.8235C8.8935 10.754 9.00665 10.7324 9.09347 10.7696L9.10049 10.7726L9.1076 10.7754C9.18512 10.8058 9.25043 10.8933 9.25043 11V17C9.25043 17.1338 9.13429 17.25 9.00043 17.25C8.86657 17.25 8.75043 17.1338 8.75043 17V12.81Z" fill="#2196F3" stroke="#2196F3"></path>
+                                        <path d="M11.0004 13.7499C10.8104 13.7499 10.6204 13.6799 10.4704 13.5299L8.47043 11.5299C8.18043 11.2399 8.18043 10.7599 8.47043 10.4699C8.76043 10.1799 9.24043 10.1799 9.53043 10.4699L11.5304 12.4699C11.8204 12.7599 11.8204 13.2399 11.5304 13.5299C11.3804 13.6799 11.1904 13.7499 11.0004 13.7499Z" fill="#2196F3"></path>
+                                        <path d="M15 22.75H9C3.57 22.75 1.25 20.43 1.25 15V9C1.25 3.57 3.57 1.25 9 1.25H14C14.41 1.25 14.75 1.59 14.75 2C14.75 2.41 14.41 2.75 14 2.75H9C4.39 2.75 2.75 4.39 2.75 9V15C2.75 19.61 4.39 21.25 9 21.25H15C19.61 21.25 21.25 19.61 21.25 15V10C21.25 9.59 21.59 9.25 22 9.25C22.41 9.25 22.75 9.59 22.75 10V15C22.75 20.43 20.43 22.75 15 22.75Z" fill="#2196F3"></path>
+                                        <path d="M22 10.75H18C14.58 10.75 13.25 9.41999 13.25 5.99999V1.99999C13.25 1.69999 13.43 1.41999 13.71 1.30999C13.99 1.18999 14.31 1.25999 14.53 1.46999L22.53 9.46999C22.74 9.67999 22.81 10.01 22.69 10.29C22.57 10.57 22.3 10.75 22 10.75ZM14.75 3.80999V5.99999C14.75 8.57999 15.42 9.24999 18 9.24999H20.19L14.75 3.80999Z" fill="#2196F3"></path>
+                                    </svg>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" data-bs-target="#modalNoti" data-bs-toggle="modal" class="lb-xsmall-primary pd-s-100 pd-e-100">Lưu</button>
+                </div>
             </div>
-        </section>
-        <!-- section end contact -->
+        </div>
+    </div>
 
-    </main>
+    <!--  modal -->
+    <div class="modal fade modal-custom" id="modalNoti" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Thông báo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M9.99935 18.4583C5.33383 18.4583 1.54102 14.6655 1.54102 9.99996C1.54102 5.33444 5.33383 1.54163 9.99935 1.54163C14.6649 1.54163 18.4577 5.33444 18.4577 9.99996C18.4577 14.6655 14.6649 18.4583 9.99935 18.4583ZM9.99935 1.79163C5.47321 1.79163 1.79102 5.47382 1.79102 9.99996C1.79102 14.5261 5.47321 18.2083 9.99935 18.2083C14.5255 18.2083 18.2077 14.5261 18.2077 9.99996C18.2077 5.47382 14.5255 1.79163 9.99935 1.79163Z"
+                                  fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M7.72861 12.4465L7.72251 12.4526L7.71663 12.4589C7.71335 12.4624 7.70628 12.4684 7.69236 12.4739C7.67775 12.4797 7.65941 12.4834 7.64049 12.4834C7.62281 12.4834 7.60729 12.4802 7.59397 12.4748C7.58111 12.4696 7.56706 12.4612 7.55238 12.4465C7.53085 12.425 7.51758 12.3942 7.51758 12.3584C7.51758 12.3225 7.53085 12.2918 7.55238 12.2703L7.19883 11.9167L7.55238 12.2703L12.269 7.5536L11.9191 7.20369L12.269 7.5536C12.2906 7.53208 12.3213 7.5188 12.3572 7.5188C12.393 7.5188 12.4237 7.53208 12.4453 7.5536C12.4668 7.57513 12.4801 7.60586 12.4801 7.64172C12.4801 7.67757 12.4668 7.7083 12.4453 7.72983L7.72861 12.4465Z"
+                                  fill="#6D727B" stroke="#6D727B"/>
+                            <path d="M12.3572 12.9834C12.1988 12.9834 12.0405 12.925 11.9155 12.8L7.19883 8.08338C6.95716 7.84172 6.95716 7.44172 7.19883 7.20005C7.44049 6.95838 7.84049 6.95838 8.08216 7.20005L12.7988 11.9167C13.0405 12.1584 13.0405 12.5584 12.7988 12.8C12.6738 12.925 12.5155 12.9834 12.3572 12.9834Z"
+                                  fill="#6D727B"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-large-message success text-center">
+                        Hồ sơ đã được gửi thành công!
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="lb-xsmall-primary pd-s-100 pd-e-100">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 
-    <footer class="footer">
+<footer class="footer">
         <a href="javascript:void(0)" class="scroll-top">
             Lên đầu trang
         </a>
@@ -1166,447 +468,17 @@
                 </div>
             </div>
         </div>
-    </footer>
-
-    <div class="bg_backgdrop"></div>
-
-    <!-- js-->
-    <script src="assets/js/jquery-main.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery-migrate.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
-    <script src="assets/js/plugincollection.js"></script>
-    <script src="assets/js/splide.min.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script>
-        const brandData = {
-            1: {
-                type: 1,
-                info: {
-                    title: "Brand 2 Title",
-                    content: `
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>`,
-                },
-                image: "assets/images/demo2.jpg",
-            },
-            2: {
-                type: 2,
-                info: {
-                    title: "Brand 2 Title",
-                    content: `
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>`,
-                },
-                image: "assets/images/demo2.jpg",
-            },
-            3: {
-                type: 1,
-                info: {
-                    title: "Brand 2 Title",
-                    content: `
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>standard dummy text ever since the 1500s</p>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>`,
-                },
-                image: "assets/images/demo2.jpg",
-            },
-        };
-
-        function calculateSpaceBetween() {
-            let width = window.innerWidth;
-            if (width > 1440) {
-                return 16;
-            } else if (width >= 992) {
-                return width * 0.0122; // 0.83333333333%
-            } else {
-                return width * 0.022; // 3.2%
-            }
-        }
-
-        $('.scroll-top').click(function(e) {
-            e.preventDefault();
-            $('html').css('scroll-behavior', 'auto');
-            $(window).scrollTop(0);
-            setTimeout(() => $('html').css('scroll-behavior', ''), 100);
-        });
-
-        $(document).ready(function() {
-
-            $(document).ready(function () {
-                $('.btn-show-text').click(function () {
-                    const $wrap = $(this).closest('.wrap_content_hide');
-                    const $content = $wrap.find('.content_hide');
-
-                    const isExpanded = $content.hasClass('show-all');
-
-                    $content.toggleClass('show-all');
-
-                    $(this).text(isExpanded ? 'Xem thêm' : 'Thu gọn');
-
-                    // Nếu đang mở => thu gọn => scroll về vị trí khối cha
-                    if (isExpanded) {
-                        $wrap[0].scrollIntoView({ behavior: 'auto', block: 'start' });
-                    }
-                });
-            });
-
-            // Initialize the brand slider with Splide - hide arrows and enable click to center
-            var spaceSlider = calculateSpaceBetween();
-            var brandSlider = new Splide('#brand-slider', {
-                type: 'loop',
-                focus: 'center',
-                autoWidth: true,  // Enable auto width for items
-                arrows: true,
-                pagination: false,
-                gap: spaceSlider,
-                speed: 0,
-                trimSpace: false, // Prevents trimming spaces between slides
-                updateOnMove: true,
-                start: Math.floor(document.querySelectorAll('#brand-slider .splide__slide').length / 2),
-                classes: {
-                    arrows: 'splide__arrows custom-arrows',
-                    arrow: 'splide__arrow custom-arrow',
-                    prev: 'splide__arrow--prev custom-prev',
-                    next: 'splide__arrow--next custom-next',
-                },
-                breakpoints: {
-                    1440: {
-                        gap: spaceSlider,
-                    },
-                    992: {
-                        gap: spaceSlider,
-                    },
-                    767: {
-                        gap: spaceSlider,
-                    }
-                }
-            }).mount();
-            document.querySelector('.custom-prev').innerHTML = '' + '<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>';
-            document.querySelector('.custom-next').innerHTML = '' + '<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>';
+</footer>
 
 
-            // More robust active class management for Splide slider
-            function updateActiveClass() {
-                // Clear all active classes
-                let slides = document.querySelectorAll('#brand-slider .splide__slide');
-                slides.forEach(slide => {
-                    slide.classList.remove('active');
-                });
+<div class="bg_backgdrop"></div>
 
-                // Use a setTimeout to ensure this runs after Splide's internal updates
-                // Get the visible slide - the one truly in center
-                const visibleSlide = brandSlider.Components.Elements.slides[brandSlider.index];
-
-                // Find all instances of this slide (original and clones)
-                const slideId = visibleSlide.getAttribute('data-key');
-                const allMatchingSlides = document.querySelectorAll(`#brand-slider .splide__slide[data-key="${slideId}"]`);
-
-                // Only add active class to the visible one
-                allMatchingSlides.forEach(slide => {
-                    if (slide.classList.contains('is-visible') ||
-                        slide.classList.contains('is-active')) {
-                        slide.classList.add('active');
-                        $('#brand-slider').removeClass('mounted');
-                        console.log('Added active to slide with data-id:', slideId);
-                    }
-                });
-            }
-
-
-            // Change event handlers to capture all relevant events
-            brandSlider.on('mounted move moved', function() {
-                updateActiveClass();
-            });
-
-            // Add event listeners to the prev and next buttons
-            document.querySelector('.splide__arrow--prev').addEventListener('click', function () {
-                updateBrandDataOnArrowClick();
-            });
-
-            document.querySelector('.splide__arrow--next').addEventListener('click', function () {
-                updateBrandDataOnArrowClick();
-            });
-
-            // Function to update brandData based on the active slide
-            function updateBrandDataOnArrowClick() {
-                const activeSlide = document.querySelector('#brand-slider .splide__slide.is-active');
-                const dataId = activeSlide.getAttribute('data-id');
-                const data = brandData[dataId];
-
-                if (data) {
-                    const wrapRightElements = document.querySelectorAll('.wrap_content_cooperate_right');
-                    const wrapLeftElements = document.querySelectorAll('.wrap_content_cooperate_left');
-                    const wrapDTElements = document.querySelectorAll('.wrap_content_cooperate_default_top');
-                    const wrapDBElements = document.querySelectorAll('.wrap_content_cooperate_default_bottom');
-                    wrapDTElements.forEach(wrap => {
-                        // Example: Update the innerHTML for each element
-                        wrap.innerHTML = `
-                            <div class="images position-relative">
-                                <img src="${data.image}" alt="${data.info.title}">
-                            </div>
-                        `;
-                    });
-                    wrapDBElements.forEach(wrap => {
-                        // Example: Update the innerHTML for each element
-                        wrap.innerHTML = `
-                            <div class="wrap_info position-relative">
-                                <div class="item">
-                                    <div class="title">
-                                        <h2>${data.info.title}</h2>
-                                    </div>
-                                    <div class="content">
-                                        ${data.info.content}
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    });
-                    if (data.type === 1) {
-                        // Show images in wrap_content_right
-                        wrapRightElements.forEach(wrapRight => {
-                            // Example: Update the innerHTML for each element
-                            wrapRight.innerHTML = `
-                            <div class="images position-relative">
-                                <img src="${data.image}" alt="${data.info.title}">
-                            </div>
-                        `;
-                        });
-                        wrapLeftElements.forEach(wrapLeft => {
-                        // Example: Update the innerHTML for each element
-                            wrapLeft.innerHTML = `
-                                    <div class="wrap_info position-relative">
-                                        <div class="item">
-                                            <div class="title">
-                                                <h2>${data.info.title}</h2>
-                                            </div>
-                                            <div class="content">
-                                                ${data.info.content}
-                                            </div>
-                                        </div>
-                                    </div>
-                                `;
-                        });
-                    } else if (data.type === 2) {
-                        // Show wrap_info in wrap_content_right
-                        wrapRightElements.forEach(wrapRight => {
-                            wrapRight.innerHTML = `
-                            <div class="wrap_info position-relative">
-                                <div class="item">
-                                    <div class="title">
-                                        <h2>${data.info.title}</h2>
-                                    </div>
-                                    <div class="content">
-                                        ${data.info.content}
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                        });
-                        wrapLeftElements.forEach(wrapLeft => {
-                            wrapLeft.innerHTML = `
-                                <div class="images position-relative">
-                                    <img src="${data.image}" alt="${data.info.title}">
-                                </div>
-                            `;
-                        });
-
-                    }
-                } else {
-                    console.error('No data found for data-id:', dataId);
-                }
-            }
-
-            // Add click event to each slide to center it
-            document.querySelectorAll('#brand-slider .splide__slide').forEach(function(slide, index) {
-                slide.addEventListener('click', function() {
-                    const dataKey = this.getAttribute('data-key');
-                    const dataId = this.getAttribute('data-id');
-                    const data = brandData[dataId];
-                    if (data) {
-                        const wrapRightElements = document.querySelectorAll('.wrap_content_cooperate_right');
-                        const wrapLeftElements = document.querySelectorAll('.wrap_content_cooperate_left');
-                        const wrapDTElements = document.querySelectorAll('.wrap_content_cooperate_default_top');
-                        const wrapDBElements = document.querySelectorAll('.wrap_content_cooperate_default_bottom');
-                        wrapDTElements.forEach(wrap => {
-                            // Example: Update the innerHTML for each element
-                            wrap.innerHTML = `
-                            <div class="images position-relative">
-                                <img src="${data.image}" alt="${data.info.title}">
-                            </div>
-                        `;
-                        });
-                        wrapDBElements.forEach(wrap => {
-                            // Example: Update the innerHTML for each element
-                            wrap.innerHTML = `
-                                <div class="wrap_info position-relative">
-                                    <div class="item">
-                                        <div class="title">
-                                            <h2>${data.info.title}</h2>
-                                        </div>
-                                        <div class="content">
-                                            ${data.info.content}
-                                        </div>
-                                    </div>
-                                </div>
-                            `;
-                        });
-                        if (data.type === 1) {
-                            // Show images in wrap_content_right
-                            wrapRightElements.forEach(wrapRight => {
-                                // Example: Update the innerHTML for each element
-                                wrapRight.innerHTML = `
-                            <div class="images position-relative">
-                                <img src="${data.image}" alt="${data.info.title}">
-                            </div>
-                        `;
-                            });
-                            wrapLeftElements.forEach(wrapLeft => {
-                                // Example: Update the innerHTML for each element
-                                wrapLeft.innerHTML = `
-                                    <div class="wrap_info position-relative">
-                                        <div class="item">
-                                            <div class="title">
-                                                <h2>${data.info.title}</h2>
-                                            </div>
-                                            <div class="content">
-                                                ${data.info.content}
-                                            </div>
-                                        </div>
-                                    </div>
-                                `;
-                            });
-                        } else if (data.type === 2) {
-                            // Show wrap_info in wrap_content_right
-                            wrapRightElements.forEach(wrapRight => {
-                                wrapRight.innerHTML = `
-                            <div class="wrap_info position-relative">
-                                <div class="item">
-                                    <div class="title">
-                                        <h2>${data.info.title}</h2>
-                                    </div>
-                                    <div class="content">
-                                        ${data.info.content}
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                            });
-                            wrapLeftElements.forEach(wrapLeft => {
-                                wrapLeft.innerHTML = `
-                                <div class="images position-relative">
-                                    <img src="${data.image}" alt="${data.info.title}">
-                                </div>
-                            `;
-                            });
-
-                        }
-                    } else {
-                        console.error('No data found for data-id:', dataId);
-                    }
-
-                    // Get all slides with this data-id (original and clones)
-                    const slidesWithSameId = document.querySelectorAll(`#brand-slider .splide__slide[data-key="${dataKey}"]`);
-
-                    // Find which one is closest to the current visible center
-                    const currentIndex = brandSlider.index;
-                    const slidesArray = brandSlider.Components.Elements.slides;
-
-                    let bestTargetIndex = -1;
-                    let smallestDifference = Infinity;
-
-                    // Find the closest instance of this slide to the current position
-                    slidesWithSameId.forEach(sameIdSlide => {
-                        const slideIndex = Array.from(slidesArray).indexOf(sameIdSlide);
-                        if (slideIndex >= 0) {
-                            const difference = Math.abs(slideIndex - currentIndex);
-                            if (difference < smallestDifference) {
-                                smallestDifference = difference;
-                                bestTargetIndex = slideIndex;
-                            }
-                        }
-                    });
-                    if (bestTargetIndex >= 0) {
-                        setTimeout(function (){
-                            brandSlider.Components.Controller.go(bestTargetIndex, true);
-                        }, 100)
-                    }
-                });
-            });
-
-            // Rest of your code for other sliders
-            var slideProduct = new Swiper(".slide_product", {
-                speed: 500,
-                loop: true,
-                spaceBetween: 32,
-                slidesPerView: 6,
-                slidesPerGroup: 6,
-                touchRatio: 2,
-                autoplay: false,
-                navigation: {
-                    nextEl: ".slide_product .swiper-button-next",
-                    prevEl: ".slide_product .swiper-button-prev",
-                },
-                breakpoints: {
-                    1921: {
-                        slidesPerView: 6,
-                        slidesPerGroup: 6,
-                        spaceBetween: 32,
-                    },
-                    992: {
-                        slidesPerView: 4,
-                        slidesPerGroup: 4,
-                        spaceBetween: 32,
-                    },
-                    768: {
-                        slidesPerView: 4,
-                        slidesPerGroup: 4,
-                        spaceBetween: 12,
-                    },
-                    0: {
-                        loop: false,
-                        slidesPerView: 2.2,
-                        slidesPerGroup: 2,
-                        spaceBetween: 12,
-                    },
-                },
-            });
-
-
-            var swiperProductDetail = new Swiper('.swiper-detail', {
-                loop: true,
-                spaceBetween: 0,
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-                // effect: "fade",
-                thumbs: {
-                    swiper: {
-                        el: '.swiper-container-thumbs',
-                        loop: true,
-                        slidesPerView: 4,
-                        spaceBetween: 32,
-                        freeMode: true,
-                        watchSlidesProgress: true,
-                        breakpoints: {
-                            992: {
-                                spaceBetween: 32
-                            },
-                            0: {
-                                spaceBetween: 12
-                            }
-                        }
-                    },
-                },
-            });
-        });
-    </script>
+<!-- js-->
+<script src="assets/js/jquery-main.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery-migrate.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/plugincollection.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>

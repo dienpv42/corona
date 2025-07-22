@@ -111,8 +111,11 @@ hr{
   @media (max-width: 1440px) {
     padding-right: sizeP(30) !important;
   }
+  @media (max-width: $sizeTablet) {
+    padding-right: sizeT(25) !important;
+  }
   @media (max-width: $sizeMb) {
-
+    padding-right: size(20) !important;
   }
 }
 
@@ -131,8 +134,15 @@ hr{
     width: sizeP(20);
     height: sizeP(20);
   }
+  @media (max-width: $sizeTablet) {
+    right: sizeT(8);
+    width: sizeT(15);
+    height: sizeT(15);
+  }
   @media (max-width: $sizeMb) {
-
+    right: size(8);
+    width: size(10);
+    height: size(10);  
   }
 }
 
@@ -147,6 +157,10 @@ hr{
     padding: 0 sizeP(15);
     border-radius: sizeP(16);
   }
+  @media (max-width: $sizeTablet) {
+    padding: 0 sizeT(12);
+    border-radius: sizeT(16);
+  }
   @media (max-width: $sizeMb) {
     padding: 0 size(12);
     border-radius: size(16);
@@ -157,8 +171,11 @@ hr{
     @media (max-width: 1440px) {
       border-bottom: sizeP(1) solid #D5D7DB;
     }
+    @media (max-width: $sizeTablet) {
+      border-bottom: sizeT(1) solid #D5D7DB;
+    }
     @media (max-width: $sizeMb) {
-
+      border-bottom: size(1) solid #D5D7DB;
     }
 
     &:last-child {
@@ -177,6 +194,10 @@ hr{
     @media (max-width: 1440px) {
       padding: sizeP(20) 0;
       font-size: sizeP(16);
+    }
+    @media (max-width: $sizeTablet) {
+      padding: sizeT(10) 0;
+      font-size: sizeT(13);   
     }
     @media (max-width: $sizeMb) {
       padding: size(12) 0;
@@ -269,6 +290,13 @@ hr{
     border-radius: sizeP(16);
     border: sizeP(1) solid #d5d5d5;
     min-height: sizeP(42);
+  }
+  @media (max-width: $sizeTablet) {
+    font-size: sizeT(14);
+    padding: sizeT(10);
+    border-radius: sizeT(12);
+    border: sizeT(1) solid #d5d5d5;
+    min-height: sizeT(42);
   }
   @media (max-width: $sizeMb) {
     font-size: size(14);
@@ -719,6 +747,12 @@ hr{
     border-radius: sizeP(16);
     border: sizeP(1) solid #AFB5B9;
   }
+  @media (max-width: $sizeTablet) {
+    padding: sizeT(16) sizeT(32);
+    font-size: sizeT(16);
+    border-radius: sizeT(16);
+    border: sizeT(1) solid #AFB5B9;
+  }
   @media (max-width: $sizeMb) {
     padding: size(16) size(32);
     font-size: size(16);
@@ -786,6 +820,12 @@ hr{
     border-radius: sizeP(16);
     border: sizeP(1) solid #AFB5B9;
   }
+  @media (max-width: $sizeTablet) {
+    padding: sizeT(10) sizeT(3);
+    font-size: sizeT(13);
+    border-radius: sizeT(12);
+    border: sizeT(1) solid #AFB5B9;
+  }
   @media (max-width: $sizeMb) {
     padding: size(10) size(3);
     font-size: size(13);
@@ -802,6 +842,11 @@ hr{
       margin-top: sizeP(2)*-1;
       width: sizeP(20);
       margin-left: sizeP(8);
+    }
+    @media (max-width: $sizeTablet) {
+      margin-top: sizeT(2)*-1;
+      width: sizeT(15);
+      margin-left: sizeT(3);
     }
     @media (max-width: $sizeMb) {
       margin-top: size(2)*-1;
@@ -972,6 +1017,12 @@ hr{
     font-size: sizeP(16);
     border-radius: sizeP(16);
     border: sizeP(1) solid $--success;
+  }
+  @media (max-width: $sizeTablet) {
+    padding: sizeT(12);
+    font-size: sizeT(16);
+    border-radius: sizeT(16);
+    border: sizeT(1) solid $--success;
   }
   @media (max-width: $sizeMb) {
     padding: size(12);
